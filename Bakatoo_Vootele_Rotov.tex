@@ -1,31 +1,104 @@
 \documentclass{article}
 
+\usepackage[a4paper]{geometry}
+\usepackage{amssymb,amsmath}
 \usepackage[utf8]{inputenc}
 \usepackage{enumerate}
+\usepackage{color}
+
+\setlength\parindent{0pt}
+\newenvironment{tightcenter}{%
+  \setlength\topsep{0pt}
+  \setlength\parskip{0pt}
+  \begin{center}
+}{%
+  \end{center}
+}
 
 \author{Vootele Rõtov}
 \title{Bakatöö}
 \begin{document}
 
-\section*{Miks ma käesolevat asja teen?}
+\section*{Spikker}
+
+{\color{cyan} - komentaarid}
+
+{\color{blue}Sinine - asjad, mille õigsust peaks kontrollima}
+
+
+{\color{cyan}\section*{Miks ma käesolevat asja teen?}
 
 Panen kirja mõned põhjused, miks ma tegelen selle asjaga:
 \begin{enumerate}[I]
 \item Sellest on kellegile kasu - loodan realselt, et saan hakkama mingi toreda asjaga, millest keegi(näiteks Marguse psühholoogidest sõbrad) kasu saab.
 \item Saab kätte selle paberi, mis teeb minust parema inimese. 
 \item Midagi uut, olen juba päris pikalt tarkust ühes formaadis kuula õppejõudu, tööta läbi tema poolt valitud materjalid, esita see õppejõule, äkki selline formaat, kus tuleb ise otsida ja ise mõelda meeldib.
-\item Väljakutse kah, kuigi viimaste aastatega on enesemotivatsioon kõvasti paranenud, ei ole see veel seal, kus ta olla võiks. Loodetavasti "treenin" seda aspekti.
-\end{enumerate}
+\item Väljakutse, kuigi viimaste aastatega on enesemotivatsioon kõvasti paranenud, ei ole see veel seal, kus ta olla võiks. Loodetavasti "treenin" seda aspekti.
+\end{enumerate}}
 
 \section*{Mida me teen?}
 
-Meil on valikvastutsega küsimustik, kõik küsimusid 5 palli skaalal. Vaja oleks mudelit, mille põhjal hinnata ühe küsimuse vastust ülejäänud küsimuste põhjal.
+Meil on valikvastutsega küsimustik milles on $n$ küsimust, kõik küsimusid 5 palli skaalal. Vaja oleks mudelit, mille põhjal hinnata vastust \"uhele k\"usimusele, kui on teada vastused $n-1$ küsimusele. {\color{blue} Mudel oleks kasutatav näiteks vastuste kvaliteedi hindamisel. Näiteks, juhul kui k\"simustiku viimasele k\"usimusele pakutud vastus on mudeli põhjal äärmiselt ebatõenäoline, võime eeldada, et tegemist on erindiga(vastaja "väsis" ja viimane k\"usimusele vastati kõige esimese variandiga.} 
 
-Põhimõteliselt on mitmeid erinevaid lahendusi. Margus pakkus välja järgmise mõtte : 
+Olemas on mitmeid erinevaid lahendusi. Margus pakkus välja järgmise mõtte : 
 
 \textit{Kolmas mõte oleks aga lineariseerida muutuja valides kordajad "optimaalselt" nii, et kokku oleks (lineaarsete s.o. pearsoni) korellatsioonide summa maksimaalne.}
 
-Minu \"ulesanne: analüüsida, kas see lahendus idee on mõistlik ja kui on mõislik, siis välja mõelda, kuidas see lahendus täpselt võiks välja näha. 
+Minu \"ulesanne: analüüsida, kas see lahendus idee on mõistlik ja kui on mõistlik, siis välja mõelda, kuidas see lahendus täpselt võiks välja näha. 
+
+\section*{Altervatiivid}
+
+\begin{enumerate}
+\item Kõige triviaalsem viis: kõikide k\"usimuste vastused kujutama hulgale \{1,2,3,4,5\}, leiame mudeli, mille võime kirjeldada valitud k\"usimust on suurim. Tegemist on ilmselt vaikimisi variandiga ehk loodud mudelit peab võrdlema 
+\item Selle asemel, et kujutada hulgale {1,2,3,4,5}, leiame sobivad vasted nii, et mudeli kirjeldav jõud oleks suurim. Oht selles, et meie mudel kirjeldab väga hästi olemasolevat valimit, \"utlemata suurt midagi \"uldkogumi kohta. {\color{blue} Huvitav oleks, kas lihsalt nii midagi teha ei annaks ? Overfittimise vastu saaks, aga vaja oleks valimit, mis oleks piisavalt suur, et seda kaheks jagada(midagi, mille pealt mudelit ehitada ja midagi, mille pealt seda validifitseerida}. 
+\item {\color{blue} Midagi veel? Peab uurima.}
+\end{enumerate}
+
+\section*{Marguse idee lahtikirjutatuna}
+
+
+Meil on muutujad $K_1,K_2,...,K_n, K_i \in \{1,2,3,4,5\}$. Teisendame need muutujateks  $L_1, L_2,L_2,...,L_n$, tuues sisse väärtused $\{a_i,b_i,c_i,d_i,e_i\} ~ i \in {1,2,...n}$, nii et kehtib järgnev : $K_i = 1 \implies L_i = a_i, K_i = 2 \implies L_i = b_i,..., K_i = 5 \implies L_i = e_i$. Lisame kitsendused:
+\begin{enumerate}
+\item $E(L_i) = 0$, st $ p_{ia}*a_i+p_{ib}*b_i+p_{ic}*c_i+p_{id}*d_i+p_{ie}*e$
+
+\item $D(L_i) = 1$, st $p_{ia}*(a_i)^2+ p_{ib}*(b_i)^2 + p_{ic}*(c_i)^2 + p_{id}*(d_i)^2 + p_{ie}*(e_i) = 1 $
+\end{enumerate} 
+Olgu meil $P$ {\color{cyan} ( n x n maatriks, aga missugune ?)} ja $x$: 
+\vspace{10pt}
+\begin{tightcenter}
+$P = {Pr[K_{i/5} = (i mod 5) +1 ~ \&  ~ K_{j/5} = (j mod 5) +1]}_{i, j}$ 
+
+{\color{cyan} (Ei oska seda kuidagi mõistlikult lugeda, otse kirjast kopeeritud )}
+\end{tightcenter}
+\vspace{10pt}
+\begin{tightcenter}
+$x = (a_1,b_1,c_1,d_1,e_1,a_2,b_2,c_2,d_2,e_2,...,a_n,b_n,c_n,d_n,e_n)$
+\end{tightcenter}
+\vspace{10pt}
+
+Siis $x^TPx = \sum \limits_{i=1}^n \sum \limits_{j=1}^n COV(L_i,L_j)$ {\color{cyan} ( Kirja põhjal $ xPx $, aga kui $P$ ikkagi on maatriks, siis peaks vast ikka $x^T$ olema ?)}
+
+Selle põhjal saame moodustada \textit{Quadratically constrained quadratic programm}-i, kus \textit{objective function} {\color{cyan} (Eesti keels kulufunktsioon?)} on $max ~ x^TPx$ ja piiravateks fukntsioonideks on funktsioonid $R_i^Tx = 0,  i \in {1,2,...,n}$, kus $R_i = (\underbrace{0,0,...0,0}_{(i-1)*5}p_ia,p_ib,p_ic,p_id,p_ie,\underbrace{0,0,...,0,0}_{(n-i)*5})$ ja funktsioonid $x^TP_ix = 1, i \in {1,2,...,n}$, kus 
+
+\begin{equation*}
+P_i =
+\begin{pmatrix}
+p_{ja}&0&\cdots &0 \\
+0&p_{jb}&\cdots &0 \\
+\vdots & \vdots & \ddots & \vdots \\
+0&0&\cdots & p_{je} \\
+\end{pmatrix}
+,~p_j\alpha =
+\begin{cases} 
+0 & L j \neq i \\ 
+p_i\alpha & i = j \geq 0 
+\end{cases}
+, \alpha \in \{a,b,c,d,e\}
+\end{equation*}
+
+
+
+
 
 
 
