@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.11.6)  4 FEB 2013 23:32
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.11.6)  6 FEB 2013 19:36
 entering extended mode
 **Bakatoo_Vootele_Rotov.tex
 (K:\mata_baka\mata_baka\Bakatoo_Vootele_Rotov.tex
@@ -368,18 +368,18 @@ Package: ltxcmds 2011/04/18 v1.20 LaTeX kernel commands for general use (HO)
 \Gread@gobject=\count102
 ))
 (K:\mata_baka\mata_baka\Bakatoo_Vootele_Rotov.aux)
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -431,51 +431,55 @@ upp-pdf.mkii"
 \makeMPintoPDFobject=\count108
 \everyMPtoPDFconversion=\toks26
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 41.
+LaTeX Font Info:    Try loading font information for U+msa on input line 42.
  (K:\MikTeX\tex\latex\amsfonts\umsa.fd
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 41.
+LaTeX Font Info:    Try loading font information for U+msb on input line 42.
  (K:\MikTeX\tex\latex\amsfonts\umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 52.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 53.
 (K:\MikTeX\tex\latex\base\omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 52.
-
-Overfull \hbox (16.82825pt too wide) in paragraph at lines 60--62
-\OT1/cmr/m/n/10 Meil on muu-tu-jad $\OML/cmm/m/it/10 K[]; K[]; :::; K[]; K[] \O
-MS/cmsy/m/n/10 2 f\OT1/cmr/m/n/10 1\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 2\OML/cmm
-/m/it/10 ; \OT1/cmr/m/n/10 3\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 4\OML/cmm/m/it/1
-0 ; \OT1/cmr/m/n/10 5\OMS/cmsy/m/n/10 g$\OT1/cmr/m/n/10 . Teisendame need muu-t
-u-jateks $\OML/cmm/m/it/10 L[]; L[]; L[]; :::; L[]$\OT1/cmr/m/n/10 ,
- []
-
-[1
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 53.
+ [1
 
 {J:/Documents and Settings/Voss/Local Settings/Application Data/MiKTeX/2.9/pdft
-ex/config/pdftex.map}] [2] (K:\mata_baka\mata_baka\Bakatoo_Vootele_Rotov.aux) )
- 
+ex/config/pdftex.map}]
+Overfull \hbox (45.62303pt too wide) in paragraph at lines 63--64
+[]\OT1/cmr/m/n/10 Kujutama vaartused $\OML/cmm/m/it/10 K[]; K[]; :::; K[]$ \O
+T1/cmr/m/n/10 muu-tu-jateks $\OML/cmm/m/it/10 L[]; L[]; L[]; :::; L[]$\OT1/cmr/
+m/n/10 , tu-ues sisse vaartused $\OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 a[]; b[];
+ c[]; d[]; e[]\OMS/cmsy/m/n/10 g []\OML/cmm/m/it/10 i \OMS/cmsy/m/n/10 2$
+ []
+
+
+Overfull \hbox (34.35777pt too wide) in paragraph at lines 150--150
+ [] 
+ []
+
+[2] [3] (K:\mata_baka\mata_baka\Bakatoo_Vootele_Rotov.aux) ) 
 Here is how much of TeX's memory you used:
- 2612 strings out of 494045
- 31565 string characters out of 3155590
- 95548 words of memory out of 3000000
- 5888 multiletter control sequences out of 15000+200000
+ 2613 strings out of 494045
+ 31573 string characters out of 3155590
+ 104548 words of memory out of 3000000
+ 5889 multiletter control sequences out of 15000+200000
  6290 words of font info for 25 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
- 27i,9n,24p,619b,152s stack positions out of 5000i,500n,10000p,200000b,50000s
-<K:/MikTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><K:/MikTeX/fonts/type1/pub
-lic/amsfonts/cm/cmex10.pfb><K:/MikTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb
-><K:/MikTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><K:/MikTeX/fonts/type1/pub
-lic/amsfonts/cm/cmr10.pfb><K:/MikTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><K
-:/MikTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><K:/MikTeX/fonts/type1/publi
-c/amsfonts/cm/cmsy7.pfb><K:/MikTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on Bakatoo_Vootele_Rotov.pdf (2 pages, 112486 bytes).
+ 27i,23n,24p,524b,278s stack positions out of 5000i,500n,10000p,200000b,50000s
+<K:/MikTeX/fonts/ty
+pe1/public/amsfonts/cm/cmbx12.pfb><K:/MikTeX/fonts/type1/public/amsfonts/cm/cme
+x10.pfb><K:/MikTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><K:/MikTeX/fonts/t
+ype1/public/amsfonts/cm/cmmi7.pfb><K:/MikTeX/fonts/type1/public/amsfonts/cm/cmr
+10.pfb><K:/MikTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><K:/MikTeX/fonts/type
+1/public/amsfonts/cm/cmsy10.pfb><K:/MikTeX/fonts/type1/public/amsfonts/cm/cmsy7
+.pfb><K:/MikTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on Bakatoo_Vootele_Rotov.pdf (3 pages, 113573 bytes).
 PDF statistics:
- 45 PDF objects out of 1000 (max. 8388607)
+ 48 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -6,6 +6,7 @@
 \usepackage{enumerate}
 \usepackage{color}
 
+
 \setlength\parindent{0pt}
 \newenvironment{tightcenter}{%
   \setlength\topsep{0pt}
@@ -21,9 +22,9 @@
 
 \section*{Spikker}
 
-{\color{cyan} - komentaarid}
+{\color{cyan} Helesinine- komentaarid}
 
-{\color{blue}Sinine - asjad, mille õigsust peaks kontrollima}
+{\color{blue} Tumesinine - asjad, mille õigsust peaks kontrollima}
 
 
 {\color{cyan}\section*{Miks ma käesolevat asja teen?}
@@ -38,7 +39,7 @@ Panen kirja mõned põhjused, miks ma tegelen selle asjaga:
 
 \section*{Mida me teen?}
 
-Meil on valikvastutsega küsimustik milles on $n$ küsimust, kõik küsimusid 5 palli skaalal. Vaja oleks mudelit, mille põhjal hinnata vastust \"uhele k\"usimusele, kui on teada vastused $n-1$ küsimusele. {\color{blue} Mudel oleks kasutatav näiteks vastuste kvaliteedi hindamisel. Näiteks, juhul kui k\"simustiku viimasele k\"usimusele pakutud vastus on mudeli põhjal äärmiselt ebatõenäoline, võime eeldada, et tegemist on erindiga(vastaja "väsis" ja viimane k\"usimusele vastati kõige esimese variandiga.} 
+Meil on valikvastutsega küsimustik milles on $n$ küsimust, kõik küsimusid 5 palli skaalal. Vaja on mudelit, mis aitaks anal\"u\"usida k\"usimuste skaalat ehk seda, kas hindamise skaalal asuvad k\"simused sama kaugel. Selline mudel on kasutatav k\"simustike täiendamiseks. 
 
 Olemas on mitmeid erinevaid lahendusi. Margus pakkus välja järgmise mõtte : 
 
@@ -54,29 +55,102 @@ Minu \"ulesanne: analüüsida, kas see lahendus idee on mõistlik ja kui on mõi
 \item {\color{blue} Midagi veel? Peab uurima.}
 \end{enumerate}
 
-\section*{Marguse idee lahtikirjutatuna}
+\section*{\"Ulesande matemaatiline p\"ustitus}
 
 
-Meil on muutujad $K_1,K_2,...,K_n, K_i \in \{1,2,3,4,5\}$. Teisendame need muutujateks  $L_1, L_2,L_2,...,L_n$, tuues sisse väärtused $\{a_i,b_i,c_i,d_i,e_i\} ~ i \in {1,2,...n}$, nii et kehtib järgnev : $K_i = 1 \implies L_i = a_i, K_i = 2 \implies L_i = b_i,..., K_i = 5 \implies L_i = e_i$. Lisame kitsendused:
+Meil on muutujad $K_1,K_2,...,K_n, K_i \in \{1,2,3,4,5\}$, mis omavad tähendust kui vastused uuritava k\"usitluse k\"usimustele. Toome sisse ka tähistused $p_{i \alpha}, i \in \{1,2,...,n\}, \alpha \in \{1,2,3,4,5\}$, kus $p_{i \alpha}$ tähistab tõenäosust, et k\"usimusele $K_i$ anti vastus $\alpha$. 
+
+Kujutama väärtused $K_1,K_2,...,K_n$ muutujateks  $L_1, L_2,L_2,...,L_n$, tuues sisse väärtused $\{a_i,b_i,c_i,d_i,e_i\} ~ i \in {1,2,...n}$, nii et kehtib järgnev : 
+
+\begin{equation*}
+K_i = 1 \implies L_i = a_i, K_i = 2 \implies L_i = b_i,..., K_i = 5 \implies L_i = e_i
+\end{equation*}
+
+
+Lisame kitsendused:
 \begin{enumerate}
-\item $E(L_i) = 0$, st $ p_{ia}*a_i+p_{ib}*b_i+p_{ic}*c_i+p_{id}*d_i+p_{ie}*e$
+\item $E(L_i) = 0$, st $ p_{i1}*a_i+p_{i2}*b_i+p_{i3}*c_i+p_{i4}*d_i+p_{i5}*e$
 
-\item $D(L_i) = 1$, st $p_{ia}*(a_i)^2+ p_{ib}*(b_i)^2 + p_{ic}*(c_i)^2 + p_{id}*(d_i)^2 + p_{ie}*(e_i) = 1 $
+\item $D(L_i) = 1$, st $p_{i1}*(a_i)^2+ p_{i2}*(b_i)^2 + p_{i3}*(c_i)^2 + p_{i4}*(d_i)^2 + p_{i5}*(e_i) = 1 $
 \end{enumerate} 
-Olgu meil $P$ {\color{cyan} ( n x n maatriks, aga missugune ?)} ja $x$: 
-\vspace{10pt}
-\begin{tightcenter}
-$P = {Pr[K_{i/5} = (i mod 5) +1 ~ \&  ~ K_{j/5} = (j mod 5) +1]}_{i, j}$ 
 
-{\color{cyan} (Ei oska seda kuidagi mõistlikult lugeda, otse kirjast kopeeritud )}
-\end{tightcenter}
-\vspace{10pt}
+Olgu meil tõenäosuste maatriks $P$:
 \begin{tightcenter}
-$x = (a_1,b_1,c_1,d_1,e_1,a_2,b_2,c_2,d_2,e_2,...,a_n,b_n,c_n,d_n,e_n)$
+\begin{equation*}
+P =
+\begin{pmatrix}
+p_{(11)(11)}&p_{(11)(12)}&p_{(11)(13)}&p_{(11)(14)}&p_{(11)(15)}&p_{(11)(21)}&\cdots&p_{(11)(n5)} \\
+p_{(12)(11)}&p_{(12)(12)}&p_{(12)(13)}&p_{(12)(14)}&p_{(12)(15)}&p_{(12)(21)}&\cdots&p_{(12)(n5)} \\
+\vdots&\vdots&\vdots&\vdots&\vdots&\vdots&\ddots&\vdots \\
+p_{(n5)(11)}&p_{(n5)(12)}&p_{(n5)(13)}&p_{(n5)(14)}&p_{(n5)(15)}&p_{(n5)(21)}&\cdots&p_{(n5)(n5)} \\
+\end{pmatrix} 
+\end{equation*}
 \end{tightcenter}
-\vspace{10pt}
 
-Siis $x^TPx = \sum \limits_{i=1}^n \sum \limits_{j=1}^n COV(L_i,L_j)$ {\color{cyan} ( Kirja põhjal $ xPx $, aga kui $P$ ikkagi on maatriks, siis peaks vast ikka $x^T$ olema ?)}
+kus  $p_{(i \alpha) (j \beta)}, i,j \in \{1,2,...,n\}, \alpha , \beta \in \{1,2,3,4,5\}$ tähistab tõenäousust, et k\"usimusele $Ki$ anti vastus $\alpha$ ja k\"usimusele $Kj$ anti vastus $\beta$. 
+
+Paneme tähele, et kuna $p_{(i \alpha)( i \alpha)} = 1$, siis avaldub eelnev maatriks ka järgnevalt:
+
+\begin{tightcenter}
+\begin{equation*}
+P =
+\begin{pmatrix}
+1&p_{(11)(12)}&p_{(11)(13)}&p_{(11)(14)}&p_{(11)(15)}&p_{(11)(21)}&\cdots&p_{(11)(n5)} \\
+p_{(12)(11)}&1&p_{(12)(13)}&p_{(12)(14)}&p_{(12)(15)}&p_{(12)(21)}&\cdots&p_{(12)(n5)} \\
+\vdots&\vdots&\vdots&\vdots&\vdots&\vdots&\ddots&\vdots \\
+p_{(n5)(11)}&p_{(n5)(12)}&p_{(n5)(13)}&p_{(n5)(14)}&p_{(n5)(15)}&p_{(n5)(21)}&\cdots&1\\
+\end{pmatrix} 
+\end{equation*}
+\end{tightcenter}
+
+
+Olgu meil ka ka vektor $x$:
+
+\begin{tightcenter}
+\begin{equation*}
+x = (a_1,b_1,c_1,d_1,e_1,a_2,b_2,c_2,d_2,e_2,...,a_n,b_n,c_n,d_n,e_n)
+\end{equation*}
+\end{tightcenter}
+
+
+Siis $xPx^T = \sum \limits_{i=1}^n \sum \limits_{j=1}^n COV(L_i,L_j)$. Veendume selles:
+\begin{tightcenter}
+\begin{equation*}
+\begin{split}
+xPx^T =
+\begin{pmatrix}
+a_1 & b_1 & \cdots & e_n 
+\end{pmatrix}
+\begin{pmatrix}
+p_{(11)(11)}&p_{(11)(12)}&\cdots&p_{(11)(n5)} \\
+p_{(12)(11)}&p_{(12)(12)}&\cdots&p_{(12)(n5)} \\
+\vdots&\vdots&\ddots&\vdots \\
+p_{(n5)(11)}&p_{(n5)(12)}&\cdots&p_{(n5)(n5)} \\
+\end{pmatrix} 
+\begin{pmatrix}
+a_1 \\
+b_1 \\
+\vdots \\
+e_n 
+\end{pmatrix}
+= \\
+= 
+\begin{pmatrix}
+a_{1}p_{(11)(11)} + b_{1}p_{(12)(11)} + \cdots + e_{n}p_{(n5)(11)} & \cdots &  a_{1}p_{(11)(13)} + b_{1}p_{(12)(13)}+ \cdots + e_{n}p_{(n5)(13)} \\
+\end{pmatrix}
+\begin{pmatrix}
+a_1 \\
+b_1 \\
+\vdots \\
+e_n 
+\end{pmatrix}
+=\\
+=
+\end{split}
+\end{equation*}
+\end{tightcenter}
+
+
 
 Selle põhjal saame moodustada \textit{Quadratically constrained quadratic programm}-i, kus \textit{objective function} {\color{cyan} (Eesti keels kulufunktsioon?)} on $max ~ x^TPx$ ja piiravateks fukntsioonideks on funktsioonid $R_i^Tx = 0,  i \in {1,2,...,n}$, kus $R_i = (\underbrace{0,0,...0,0}_{(i-1)*5}p_ia,p_ib,p_ic,p_id,p_ie,\underbrace{0,0,...,0,0}_{(n-i)*5})$ ja funktsioonid $x^TP_ix = 1, i \in {1,2,...,n}$, kus 
 
@@ -90,8 +164,8 @@ p_{ja}&0&\cdots &0 \\
 \end{pmatrix}
 ,~p_j\alpha =
 \begin{cases} 
-0 & L j \neq i \\ 
-p_i\alpha & i = j \geq 0 
+0 &  j \neq i \\ 
+p_i\alpha & i = j 
 \end{cases}
 , \alpha \in \{a,b,c,d,e\}
 \end{equation*}
