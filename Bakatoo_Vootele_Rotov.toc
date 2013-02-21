@@ -1,0 +1,5 @@
+\select@language {estonian}
+\contentsline {section}{\numberline {1}T\IeC {\"o}\IeC {\"o} \"ulesehitus}{3}{section.1}
+\contentsline {section}{\numberline {2}Taustinfo}{3}{section.2}
+\contentsline {section}{\numberline {3}Mida me teen?}{3}{section.3}
+\contentsline {section}{\numberline {4}Lisa}{7}{section.4}

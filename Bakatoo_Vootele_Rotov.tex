@@ -1,10 +1,27 @@
-\documentclass{article}
+\documentclass[a4paper]{article}
 
 \usepackage[a4paper]{geometry}
 \usepackage{amssymb,amsmath}
 \usepackage[utf8]{inputenc}
 \usepackage{enumerate}
 \usepackage{color}
+\usepackage{graphicx}
+\usepackage[estonian]{babel}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{float}
+\usepackage{cite}
+\usepackage{etoolbox}
+\usepackage[hidelinks]{hyperref}
+
+\makeatletter
+\patchcmd{\HyField@FlagsRadioButton}{\HyField@SetFlag{Ff}{Radio}}{}{}{}
+\makeatother
+\def\DefaultOptionsofRadio{print}
+
+
+
+\definecolor{background_example}{HTML}{E0DCDE}
+
 
 
 \setlength\parindent{0pt}
@@ -19,6 +36,14 @@
 \author{Vootele Rõtov}
 \title{Bakatöö}
 \begin{document}
+
+\maketitle
+
+\pagebreak
+
+\tableofcontents
+
+\pagebreak
 
 \section*{Spikker}
 
@@ -37,7 +62,133 @@ Panen kirja mõned põhjused, miks ma tegelen selle asjaga:
 \item Väljakutse, kuigi viimaste aastatega on enesemotivatsioon kõvasti paranenud, ei ole see veel seal, kus ta olla võiks. Loodetavasti "treenin" seda aspekti.
 \end{enumerate}}
 
-\section*{Mida me teen?}
+\section{Töö \"ulesehitus}
+Esiteks, toome sisse lugejale vajaliku taustinfo, seejärel kirjeldame probleemip\"ustitust. Sellele järgneb töö eesmärgi matemaatiline p\"ustitus.
+
+\section{Taustinfo}
+
+Käesolev uurimus tegeleb k\"simustikega, milles soovitakse hinnanguid mingile arvule väidetele viie pallisel Likerti skaalal. Näiteks: \footnote{Näited terviklikest k\"usimustikest lisades, \hyperref[likert1]{joonis \ref*{likert1}} ja \hyperref[likert2]{joonis \ref*{likert2}}}
+
+\vspace{10pt}
+
+\begin{figure}[H]
+
+
+\colorbox{background_example}{\parbox{\textwidth}{
+
+\vspace{1mm}
+
+Käesoleva bakalaureusetöö \"ulesehitus on loogiline.
+
+\vspace{5pt}
+
+\begin{Form}
+\def\DefaultWidthofChoiceMenu{12pt}%
+
+
+
+\ChoiceMenu[bordercolor = gray,disabled = true,name=optionE,radio,radiosymbol=\ding{108}]{\mbox{}}\null Ei nõustu 
+\ChoiceMenu[bordercolor = gray,disabled = true,name=optionD,radio,radiosymbol=\ding{108}]{\mbox{}}\null Ei nõustu osaliselt
+\ChoiceMenu[bordercolor = gray,disabled = true,name=optionC,radio,radiosymbol=\ding{108}]{\mbox{}}\null Nii ja naa
+\ChoiceMenu[bordercolor = gray,disabled = true, name=optionB,radio,radiosymbol=\ding{108}]{\mbox{}}\null Nõustun osaliselt
+\ChoiceMenu[bordercolor = gray,disabled = true,name=optionA,radio,radiosymbol=\ding{108}]{\mbox{}}\null Nõustun
+
+
+\end{Form}}}
+\caption{Näide väitest, millile palutakse hinnangut Likerti skaalal}
+\label{likert_question}
+\end{figure}
+
+
+
+
+
+
+
+
+\section{Mida me teen?}
+
+
+\begin{figure}[H]
+
+
+\colorbox{background_example}
+	{\parbox
+		{\textwidth}
+			{
+			\setlength{\unitlength}{1mm}
+			\begin{picture}(148,15)
+				\put(0,12){Käesoleva bakalaureusetöö \"ulesehitus on loogiline.}
+				\put(0,7){\line(1,0){14}}
+				\put(8,1){Ei nõustu}
+				\put(16,7){\circle{4}}
+				\put(16,7){\circle*{2}}
+				\put(18,7){\line(1,0){25}}
+				\put(32,1){Ei nõustu osaliselt}
+				\put(45,7){\circle{4}}
+				\put(45,7){\circle*{2}}
+				\put(47,7){\line(1,0){25}}
+				\put(67,1){Nii ja Naa}
+				\put(74,7){\circle{4}}
+				\put(74,7){\circle*{2}}
+				\put(76,7){\line(1,0){25}}
+				\put(92,1){Nõustun osaliselt}
+				\put(103,7){\circle{4}}
+				\put(103,7){\circle*{2}}
+				\put(105,7){\line(1,0){25}}
+				\put(126,1){Nõustun}
+				\put(132,7){\circle{4}}
+				\put(132,7){\circle*{2}}
+				\put(134,7){\vector(1,0){14}}
+			\end{picture}
+		}
+		
+	}
+\caption{Näide, kuidas hinnangud skaalal vaikimisi paigutuvad}
+\label{quiz}
+\end{figure}
+
+\begin{figure}
+
+
+	\colorbox{background_example}
+	{\parbox
+		{\textwidth}
+			{
+			\setlength{\unitlength}{1mm}
+			\begin{picture}(148,15)
+				\put(0,12){Käesoleva bakalaureusetöö \"ulesehitus on loogiline.}
+				\put(0,7){\line(1,0){8}}
+				\put(2,1){Ei nõustu}
+				\put(10,7){\circle{4}}
+				\put(10,7){\circle*{2}}
+				\put(12,7){\line(1,0){18}}
+				\put(19,1){Ei nõustu osaliselt}
+				\put(32,7){\circle{4}}
+				\put(32,7){\circle*{2}}
+				\put(34,7){\line(1,0){20}}
+				\put(49,1){Nii ja Naa}
+				\put(56,7){\circle{4}}
+				\put(56,7){\circle*{2}}
+				\put(58,7){\line(1,0){33}}
+				\put(82,1){Nõustun osaliselt}
+				\put(93,7){\circle{4}}
+				\put(93,7){\circle*{2}}
+				\put(95,7){\line(1,0){30}}
+				\put(121,1){Nõustun}
+				\put(127,7){\circle{4}}
+				\put(127,7){\circle*{2}}
+				\put(129,7){\vector(1,0){19}}
+			\end{picture}
+		}
+	}
+
+\caption{Näide hinnangute paiknemisest skaalal,kus on arvestatud hindajate  suhtumist autorisse}
+\label{quiz}
+
+\end{figure}
+
+
 
 Meil on valikvastutsega küsimustik milles on $n$ küsimust, kõik küsimusid 5 palli skaalal. Vaja on mudelit, mis aitaks anal\"u\"usida k\"usimuste skaalat ehk seda, kas hindamise skaalal asuvad k\"simused sama kaugel. Selline mudel on kasutatav k\"simustike täiendamiseks. 
 
@@ -60,19 +211,23 @@ Minu \"ulesanne: analüüsida, kas see lahendus idee on mõistlik ja kui on mõi
 
 Meil on muutujad $K_1,K_2,...,K_n, K_i \in \{1,2,3,4,5\}$, mis omavad tähendust kui vastused uuritava k\"usitluse k\"usimustele. Toome sisse ka tähistused $p_{i \alpha}, i \in \{1,2,...,n\}, \alpha \in \{1,2,3,4,5\}$, kus $p_{i \alpha}$ tähistab tõenäosust, et k\"usimusele $K_i$ anti vastus $\alpha$. 
 
-Kujutama väärtused $K_1,K_2,...,K_n$ muutujateks  $L_1, L_2,L_2,...,L_n$, tuues sisse väärtused $\{a_i,b_i,c_i,d_i,e_i\} ~ i \in {1,2,...n}$, nii et kehtib järgnev : 
+Kujutama väärtused $K_1,K_2,...,K_n$ muutujateks  $L_1, L_2,L_2,...,L_n$, tuues sisse väärtused $\Gamma_i = \{\gamma_{1i},\gamma_{2i},\gamma_{3i},\gamma_{4i},\gamma_{5i}\} ~ i \in {1,2,...n}$, nii et kehtib järgnev : 
 
 \begin{equation*}
-K_i = 1 \implies L_i = a_i, K_i = 2 \implies L_i = b_i,..., K_i = 5 \implies L_i = e_i
+K_i = 1 \implies L_i = \gamma_{i1}, K_i = 2 \implies L_i = \gamma_{i2},\cdots, K_i = 5 \implies L_i =\gamma_{i5}
 \end{equation*}
 
 
 Lisame kitsendused:
-\begin{enumerate}
-\item $E(L_i) = 0$, st $ p_{i1}*a_i+p_{i2}*b_i+p_{i3}*c_i+p_{i4}*d_i+p_{i5}*e$
+\begin{equation}
+E(L_i) = p_{i1}*\gamma_{i1}+p_{i2}*\gamma_{i2}+p_{i3}*\gamma_{i3}+
+p_{i4}*\gamma_{i4}+p_{i5}*\gamma_{i5}=0
+\end{equation}
 
-\item $D(L_i) = 1$, st $p_{i1}*(a_i)^2+ p_{i2}*(b_i)^2 + p_{i3}*(c_i)^2 + p_{i4}*(d_i)^2 + p_{i5}*(e_i) = 1 $
-\end{enumerate} 
+\begin{equation}
+D(L_i) = 
+p_{i1}*(\gamma_{i1})^2+ p_{i2}*(\gamma_{i2})^2 + p_{i3}*(\gamma_{i3})^2 + p_{i4}*(\gamma_{i4})^2 + p_{i5}*(\gamma_{i5}) = 1 
+\end{equation}
 
 Olgu meil tõenäosuste maatriks $P$:
 \begin{tightcenter}
@@ -87,7 +242,7 @@ p_{(n5)(11)}&p_{(n5)(12)}&p_{(n5)(13)}&p_{(n5)(14)}&p_{(n5)(15)}&p_{(n5)(21)}&\c
 \end{equation*}
 \end{tightcenter}
 
-kus  $p_{(i \alpha) (j \beta)}, i,j \in \{1,2,...,n\}, \alpha , \beta \in \{1,2,3,4,5\}$ tähistab tõenäousust, et k\"usimusele $Ki$ anti vastus $\alpha$ ja k\"usimusele $Kj$ anti vastus $\beta$. 
+kus  $p_{(i \alpha) (j \beta)}, i,j \in \{1,2,...,n\}, \alpha , \beta \in \{1,2,3,4,5\}$ tähistab tõenäousust, et k\"usimusele $K_i$ anti vastus $\alpha$ ja k\"usimusele $K_j$ anti vastus $\beta$. 
 
 Paneme tähele, et kuna $p_{(i \alpha)( i \alpha)} = 1$, siis avaldub eelnev maatriks ka järgnevalt:
 
@@ -104,11 +259,11 @@ p_{(n5)(11)}&p_{(n5)(12)}&p_{(n5)(13)}&p_{(n5)(14)}&p_{(n5)(15)}&p_{(n5)(21)}&\c
 \end{tightcenter}
 
 
-Olgu meil ka ka vektor $x$:
+Defineerime  vektori $x$:
 
 \begin{tightcenter}
 \begin{equation*}
-x = (a_1,b_1,c_1,d_1,e_1,a_2,b_2,c_2,d_2,e_2,...,a_n,b_n,c_n,d_n,e_n)
+x = (\gamma_{11},\gamma_{12},\gamma_{13} ,\gamma_{14},\gamma_{15},\gamma_{21},\gamma_{22},\gamma_{23},\gamma_{24},\gamma_{25}, \cdots ,\gamma_{n1},\gamma_{n2},\gamma_{n3},\gamma_{n4},\gamma_{n5})
 \end{equation*}
 \end{tightcenter}
 
@@ -116,10 +271,10 @@ x = (a_1,b_1,c_1,d_1,e_1,a_2,b_2,c_2,d_2,e_2,...,a_n,b_n,c_n,d_n,e_n)
 Siis $xPx^T = \sum \limits_{i=1}^n \sum \limits_{j=1}^n COV(L_i,L_j)$. Veendume selles:
 \begin{tightcenter}
 \begin{equation*}
-\begin{split}
+\begin{gathered}
 xPx^T =
 \begin{pmatrix}
-a_1 & b_1 & \cdots & e_n 
+\gamma_{11} & \gamma_{12} & \cdots & \gamma_{n5} 
 \end{pmatrix}
 \begin{pmatrix}
 p_{(11)(11)}&p_{(11)(12)}&\cdots&p_{(11)(n5)} \\
@@ -128,25 +283,30 @@ p_{(12)(11)}&p_{(12)(12)}&\cdots&p_{(12)(n5)} \\
 p_{(n5)(11)}&p_{(n5)(12)}&\cdots&p_{(n5)(n5)} \\
 \end{pmatrix} 
 \begin{pmatrix}
-a_1 \\
-b_1 \\
+\gamma_{11} \\
+\gamma_{12} \\
 \vdots \\
-e_n 
+\gamma_{n5}
 \end{pmatrix}
 = \\
 = 
 \begin{pmatrix}
-a_{1}p_{(11)(11)} + b_{1}p_{(12)(11)} + \cdots + e_{n}p_{(n5)(11)} & \cdots &  a_{1}p_{(11)(13)} + b_{1}p_{(12)(13)}+ \cdots + e_{n}p_{(n5)(13)} \\
+\sum \limits_{j=1}^n \sum \limits_{l=1}^5 \gamma_{jl}p_{(jl)(11)}& \sum \limits_{j=1}^n \sum \limits_{l=1}^5 \gamma_{jl}p_{(jl)(12)} & \cdots &  \sum \limits_{j=1}^n \sum \limits_{l=1}^5 \gamma_{jl}p_{(jl)(n5)} \\
 \end{pmatrix}
 \begin{pmatrix}
-a_1 \\
-b_1 \\
+\gamma_{11} \\
+\gamma_{12} \\
 \vdots \\
-e_n 
+\gamma_{n5}
 \end{pmatrix}
 =\\
 =
-\end{split}
+\sum \limits_{j=1}^n \sum \limits_{l=1}^5 \gamma_{jl}p_{(jl)(11)} + \sum \limits_{j=1}^n \sum \limits_{l=1}^5 \gamma_{jl}p_{(jl)(12)} + \cdots +  \sum \limits_{j=1}^n \sum \limits_{l=1}^5 \gamma_{jl}p_{(jl)(n5)}=\\
+= \sum \limits_{i=1}^{n} \sum \limits_{k=1}^{5} \sum \limits_{j=1}^n \sum \limits_{l=1}^5 \gamma_{jl}p_{(jl)(ik)} \gamma_{ik} 
+= \sum \limits_{i=1}^{n}  \sum \limits_{j=1}^n \sum \limits_{k=1}^{5} \sum \limits_{l=1}^5 \gamma_{jl}p_{(jl)(ik)} \gamma_{ik} =
+\sum \limits_{i=1}^{n} \sum \limits_{j=1}^n E(L_iL_j) = \\
+\underset{(1)}{=} \sum \limits_{i=1}^{n} \sum \limits_{j=1}^n E(L_iL_j) - E(L_i)E(L_j) = \sum \limits_{i=1}^{n} \sum \limits_{j=1}^n COV(L_i,L_j)
+\end{gathered}
 \end{equation*}
 \end{tightcenter}
 
@@ -171,9 +331,26 @@ p_i\alpha & i = j
 \end{equation*}
 
 
+\pagebreak
+\section{Lisa}
 
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{ois_tagasiside_toodeldud.png}
+\caption{Näide Tartu \"Ulikooli õppeinfo s\"usteemi tagasiside ankeedist, kus rakendatakse Likerti skaalat \cite{UT}}
+\label{likert1}
+\end{figure}
 
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.5\textwidth, height = 0.7\textwidth]{Example_Likert_Scale.png}
+\caption{Näide k\"usimustikust, kus rakendatud Likerti skaalat, k\"usimused on paigutatud nende järjestikulisus rõhutamiseks teljele\cite{Smith}}
+\label{likert2}
+\end{figure}
 
+\pagebreak
+\bibliography{mata_baka}{}
+\bibliographystyle{plain}
 
 
 \end{document}
