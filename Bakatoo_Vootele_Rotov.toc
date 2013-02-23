@@ -1,5 +1,11 @@
 \select@language {estonian}
 \contentsline {section}{\numberline {1}T\IeC {\"o}\IeC {\"o} \"ulesehitus}{3}{section.1}
 \contentsline {section}{\numberline {2}Taustinfo}{3}{section.2}
-\contentsline {section}{\numberline {3}Mida me teen?}{3}{section.3}
-\contentsline {section}{\numberline {4}Lisa}{7}{section.4}
+\contentsline {subsection}{\numberline {2.1}Likerti skaala }{3}{subsection.2.1}
+\contentsline {paragraph}{Likerti skaala - j\IeC {\"a}rjestikskaala v\IeC {\~o}i intervallskaala?}{3}{section*.4}
+\contentsline {subsection}{\numberline {2.2}Sisemine j\IeC {\"a}rjekindlus}{4}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}Cronbachi alfa}{4}{subsection.2.3}
+\contentsline {paragraph}{Miks ma taandan selles t\IeC {\"o}\IeC {\"o}s sisemise j\IeC {\"a}rjekindluse m\IeC {\~o}\IeC {\~o}tmise Cronbachi alfale?}{4}{section*.5}
+\contentsline {paragraph}{Milliseid piirangud seab Cronbachi alfa kasutamine?}{5}{section*.6}
+\contentsline {section}{\numberline {3}\"Ulesande p\"ustitus}{5}{section.3}
+\contentsline {section}{\numberline {4}Lisa}{8}{section.4}
