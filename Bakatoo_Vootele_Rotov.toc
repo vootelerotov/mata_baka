@@ -3,9 +3,10 @@
 \contentsline {section}{\numberline {2}Taustinfo}{3}{section.2}
 \contentsline {subsection}{\numberline {2.1}Likerti skaala }{3}{subsection.2.1}
 \contentsline {paragraph}{Likerti skaala - j\IeC {\"a}rjestikskaala v\IeC {\~o}i intervallskaala?}{3}{section*.4}
-\contentsline {subsection}{\numberline {2.2}Sisemine j\IeC {\"a}rjekindlus}{4}{subsection.2.2}
-\contentsline {subsection}{\numberline {2.3}Cronbachi alfa}{4}{subsection.2.3}
-\contentsline {paragraph}{Miks ma taandan selles t\IeC {\"o}\IeC {\"o}s sisemise j\IeC {\"a}rjekindluse m\IeC {\~o}\IeC {\~o}tmise Cronbachi alfale?}{4}{section*.5}
-\contentsline {paragraph}{Milliseid piirangud seab Cronbachi alfa kasutamine?}{5}{section*.6}
-\contentsline {section}{\numberline {3}\"Ulesande p\"ustitus}{5}{section.3}
-\contentsline {section}{\numberline {4}Lisa}{8}{section.4}
+\contentsline {subsection}{\numberline {2.2}Reliaablus}{4}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}Sisemine reliaablus}{4}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.4}Cronbachi alfa}{5}{subsection.2.4}
+\contentsline {paragraph}{Miks ma taandan selles t\IeC {\"o}\IeC {\"o}s sisemise j\IeC {\"a}rjekindluse m\IeC {\~o}\IeC {\~o}tmise Cronbachi alfale?}{5}{section*.5}
+\contentsline {paragraph}{Milliseid piirangud seab Cronbachi alfa kasutamine?}{6}{section*.6}
+\contentsline {section}{\numberline {3}\"Ulesande p\"ustitus}{6}{section.3}
+\contentsline {section}{\numberline {4}Lisa}{10}{section.4}

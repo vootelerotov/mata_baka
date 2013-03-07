@@ -1,0 +1,17 @@
+'''
+Created on Mar 2, 2013
+
+@author: Voss
+'''
+
+module = __import__("solver") 
+
+def main():
+    solver = module.solver(0,0)
+
+
+if __name__ == '__main__':
+    pass
+
+
+main()

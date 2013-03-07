@@ -105,9 +105,22 @@ Käesoleva bakalaureusetöö \"ulesehitus on loogiline.
 
 Lugejal võib tekkida õigustatud k\"usimus, kuidas põhjendab autor Likerti skaala käsitlemist intervall kui Likerti skaala oli algselt mõeldud järjestikskaalana ning  selle kasutamise osas intervallskaalana on autorid pigem skeptilised. \cite{Jamieson2004} Autori ei tunne ennast pädevana otsustamaks, kas Likerti skaala selline tõlgendamine on õigustatud, k\"ull aga on praktitkas selline tõlgendus piisavalt levinud, et selle valdkonna uurimine õigustatud oleks. Siinkohal märgin ära, et kriitikute \"uks levinumaid argumente on see, et "hea" ja "väga hea" keskmine ei ole mingil loomulikul viisil tõlgendatav kui  "hea + pool", millega autor nõustub ning loodab pakuda sellele alternatiivset tõlgendust. 
 
-\subsection{Sisemine järjekindlus}
+\subsection{Reliaablus}
+Testi reliaabluseks nimetatakse testi omadust saada sama subjekti erinevatel mõõtmistel sama tulemus. Kõrge reliaablusega testi tulemuste juhuslik viga on väike. Järgnev joonis illustreerib reliaabluse konseptsiooni, suhestades teda teiste testi karakteristiku, valiidsusega.
 
-K\"usimustiku sisemiseks järjekindluseks (\textit{internal consistency}){(\color{cyan} Parem tõlge ?)} hindab testi erinevate k\"usimuste vastuste järjepidevust ehk seda, kui hästi erivenad k\"usimused \"uhiselt mõõdavad mingit konstruktsiooni.\cite[177] {Henson2001} Piltlikult väljendudes, olgu meil järgnev k\"usimustik: 
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.75\textwidth, height = 0.8\textwidth]{Reliability_and_validity.png}
+\caption{Reliaabluse (\textit{reliability}) ja valiidsuse (\textit{validity}) omavahelist suhestumine.  \cite{Dilmen2008}}
+\label{reliability_and_validity}
+\end{figure}
+
+Reliaabluse mõõtmiste viisidest on osutunud popularseimaks sisemise reliaabluse leidmine, näiteks ameerika teadusajakirjas \textit{Directory of Unpublished Expermintal Mental Measures} ilmunud uurimustest kolm neljandiku kasutas just sisemist reliaablust testi reliaabluse hindamiseks.\cite[177] {Henson2001} Järgnevalt vaatleme just seda reliaabluse mõõtmise viisi. 
+
+
+\subsection{Sisemine reliaablus}
+
+K\"usimustiku sisemine reliaablus (\textit{internal consistency})hindab testi erinevate k\"usimuste vastuste järjepidevust ehk seda, kui hästi on kooskõlas \"uhist  konstruktsiooni hindavad k\"usimused.\cite[177] {Henson2001} Piltlikult väljendudes, olgu meil järgnev k\"usimustik: 
 
 \begin{figure}[H]
 
@@ -191,27 +204,28 @@ K\"usimustiku sisemiseks järjekindluseks (\textit{internal consistency}){(\colo
 \label{quiz_consistency}
 \end{figure}
 
-Siin on mõõdetavaks konstruktsiooniks käesoleva bakalaureusetöö \"ulesehitus ning sisemiseks järjekindluks on vajalik kolme k\"usimuse tugev korreleeritus. Sisemise korreleeritus on enim kasutatud testi usaldusväärsuse mõõdik, näiteks ameerika teadusajakirjas \textit{Directory of Unpublished Expermintal Mental Measures} ilmunud uurimustest kolm neljandiku kasutas just sisemist järjekindlust.\cite[177] {Henson2001}
+Siin on mõõdetavaks konstruktsiooniks käesoleva bakalaureusetöö \"ulesehitus ning sisemiseks reliaabluseks on vajalik kolmele näites toodud k\"usimusele antud vastuste kooskõla.
 
 
 
 \subsection{Cronbachi alfa}
 
-Cronbachi alfa on levinud sisemise järjekindlust iseloomustav näitaja, mis on defineeritud järgnevalt:
+Cronbachi alfa on levinud sisemist reliaablust iseloomustav näitaja, mis on defineeritud järgnevalt:
 
 \begin{equation}
-(\frac{k}{k-1})( 1 - \frac{\sum s_i^2}{s_t^2})
+(\frac{k}{k-1})( 1 - \frac{\sum \sigma_i^2}{\sigma_t^2})
 \end{equation}
 
-kus $k$ tähistab k\"usimuste arvu, $s_i$ on standart viga \"uhe k\"usimuse piires ja $s_t$ on standartviga \"ule testi kogutulemuste.\cite[396]{Cronbach2004}
+kus $k$ tähistab k\"usimuste arvu, $\sigma_i$ on standardviga \"uhe k\"usimuse piires ja $\sigma_t$ on standardviga \"ule testi kogutulemuste.\cite[396]{Cronbach2004}
 
 {\color{cyan} Siia selgitav näidis tabel/joonis vajalik?}
+
 
 \paragraph{Miks ma taandan selles töös sisemise järjekindluse mõõtmise Cronbachi alfale?}\mbox{}\\*
 
 Kuna Cronbach'i alfal on mitmeid puuduseid, millest mõningad toodud ära David Streineri artikklis \cite[101-102]{Streiner2010} ning isegi mõõdiku autor Lee Cronbach soovitab oma 1951 aastal töötatud mõõdiku asemel kasutatada alternatiivseid mõõdikuid \cite{Cronbach2004}, on oluline vastata alapealkirjas p\"ustitatid k\"usimusele. Kaks peamist põhjust on järgnevad:
 \begin{enumerate}[I]
-\item Cronbachi alfa on hetkel kõige kasutatavaim mõõdik ps\"uhhomeetriliste testide juures. Seetõttu on väljapakutud meetod testide loojatele arusaadav ning loodetavasti kasutamiskõlblikum.
+\item Cronbachi alfa on hetkel kõige kasutatavaim mõõdik sisemise reliaabluse mõõtmiseks ps\"uhhomeetriliste testide juures. Seetõttu on väljapakutud meetod testide tulemuste anal\"u\"usiatele tutav ning seega loodetavasti lihtsamini kasutatav.
 \item Cronbachi alfa leidmine on arvutuslikult k\"ullalitki lihtne. Kuna käesolev töö peamine eesmärk on selgitada, kas väljapakutud lähenemine on mõistlik, siis ei ole parematest mõõdikutest potensiaalselt saadav kasu piisavalt suur, et tasa teha \"ulesande lahendamise raskendumist. Jutul, kui töö tulemus on aga positiivne tuleks  uurida ka teiste mõõdikute võimalikku kasutamist.
 
 \end{enumerate}
@@ -236,7 +250,7 @@ Tooksin esile kaks tähtsamat piirangut:
 
 \section{\"Ulesande p\"ustitus}
 
-Selle töö raames loodame välja pakkuda viisi, kuidas paigutada intervall skaalal erinevaid vastuseid Likerti skaalal. Eesmärk on leida parem paigutus kui naiivne meetod, kus eeldatakse, et erinevate hinnagute vahekaugused on samad. Vaatleme kahte näidet:
+Selle töö raames loodame välja pakkuda viisi, kuidas paigutada intervallskaalal erinevaid vastuseid Likerti skaalalt. Eesmärk on leida parem paigutus kui naiivne meetod, kus eeldatakse, et erinevate hinnagute vahekaugused on samad. Vaatleme kahte näidet:
 
 
 \begin{figure}[H]
@@ -314,12 +328,12 @@ Selle töö raames loodame välja pakkuda viisi, kuidas paigutada intervall skaa
 	}
 
 \caption{Näide alternatiivset võimalikku hinnangute paiknemisest skaalal}
-\label{quiz}
+\label{quiz1}
 
 \end{figure}
 
 Kui me tahame pakkuda välja alternatiive naiivsele hinnangule peab meil olema põhjendus, miks välja pakutud lahendus kirjeldab realsust täpsemalt. Pakume välja järmise lahenduse: 
-\"uritame leida naiivsest skaalast parema nii, et k\"usitluse sisemine järjekindlus (\textit{internal consistency}) oleks võimalikult suur. Piirame ennast sellega, et  hinnangute esialge järjestus ei tohi muutuda. Sisemise järjekindluse maksimiseerimise taandame antud töö käigus Cronbachi alfal maksimiseerimisele.\footnote{Põhjendus, miks selline taandamine on tehtud on äratoodud peat\"ukkis \hyperref[sec:Cronbach]{\ref*{sec:Cronbach}}.} 
+\"uritame leida naiivsest skaalast p nii, et k\"usitluse sisemine reliaablus oleks võimalikult suur. Piirame ennast sellega, et  hinnangute esialge järjestus ei tohi muutuda. Sisemise järjekindluse maksimeerimise taandame antud töö käigus Cronbachi alfal maksimeerimisele.\footnote{Põhjendus, miks selline taandamine on tehtud on äratoodud peat\"ukkis \hyperref[sec:Cronbach]{\ref*{sec:Cronbach}}.} 
  
 
 \section*{Altervatiivid}
@@ -333,15 +347,36 @@ Kui me tahame pakkuda välja alternatiive naiivsele hinnangule peab meil olema p
 
 \section*{\"Ulesande matemaatiline p\"ustitus}
 
+Olgu meil k\"usimusitk $n$-k\"usimusega. Toome sisse juhuslikud suurused $K_1,K_2,...,K_n, K_i \in \{1,2,3,4,5\}$, mis omavad tähendust kui vastused uuritava k\"usitluse k\"usimustele. Toome sisse ka tähistused $p_{i \alpha}, i \in \{1,2,...,n\}, \alpha \in \{1,2,3,4,5\}$, kus $p_{i \alpha}$ tähistab olemasolevate andmete põhjal antud hinnangut tõenäosusesele, et k\"usimusele $K_i$ anti vastus $\alpha$. 
 
-Meil on muutujad $K_1,K_2,...,K_n, K_i \in \{1,2,3,4,5\}$, mis omavad tähendust kui vastused uuritava k\"usitluse k\"usimustele. Toome sisse ka tähistused $p_{i \alpha}, i \in \{1,2,...,n\}, \alpha \in \{1,2,3,4,5\}$, kus $p_{i \alpha}$ tähistab tõenäosust, et k\"usimusele $K_i$ anti vastus $\alpha$. 
+Tuletame meelde Cronbachi alfa definitsiooni:
 
+
+\begin{equation*}
+(\frac{k}{k-1})( 1 - \frac{\sum \sigma_i^2}{\sigma_t^2})
+\end{equation*}
+
+Paneme tähele, et toodud eelduste põhjal avalduks vaadeldava k\"usimustiku korral alfa järgnevalt:
+
+ 
+\begin{equation*}
+(\frac{k}{k-1})( 1 - \frac{\sum \sigma_i^2}{\sigma_t^2}) = \frac{n}{n-1}\left(1 - \frac
+{\sum \limits_{i=0}^n D(K_i)}{D(\sum \limits_{i=0}^n K_i)}\right)
+\end{equation*}
+
+Võttes arvesse, et $D(\sum \limits_{i=0}^n K_i) = \sum \limits_{i=0}^n \sum \limits_{j=0}^n COV(K_i,K_j)$ saame eelneva kirjutada järgnevalt:
+
+\begin{equation*}
+(\frac{k}{k-1})( 1 - \frac{\sum \sigma_i^2}{\sigma_t^2}) = \frac{n}{n-1}\left(1 - \frac
+{\sum \limits_{i=0}^n D(K_i)}{\sum \limits_{i=0}^n \sum \limits_{j=0}^n COV(K_i,K_j)}\right)
+\end{equation*}
+
+Sellisel kujul antud CronBach'i alfa maksimeerimine keeruline, selle edasiseks lihtsustamiseks normeerime k\"usimused järgnevalt esitatud idee järgi.
 Kujutama väärtused $K_1,K_2,...,K_n$ muutujateks  $L_1, L_2,L_2,...,L_n$, tuues sisse väärtused $\Gamma_i = \{\gamma_{1i},\gamma_{2i},\gamma_{3i},\gamma_{4i},\gamma_{5i}\} ~ i \in {1,2,...n}$, nii et kehtib järgnev : 
 
 \begin{equation*}
 K_i = 1 \implies L_i = \gamma_{i1}, K_i = 2 \implies L_i = \gamma_{i2},\cdots, K_i = 5 \implies L_i =\gamma_{i5}
 \end{equation*}
-
 
 Lisame kitsendused:
 \begin{equation}
@@ -351,16 +386,145 @@ p_{i4}*\gamma_{i4}+p_{i5}*\gamma_{i5}=0
 
 \begin{equation}
 D(L_i) = 
-p_{i1}*(\gamma_{i1})^2+ p_{i2}*(\gamma_{i2})^2 + p_{i3}*(\gamma_{i3})^2 + p_{i4}*(\gamma_{i4})^2 + p_{i5}*(\gamma_{i5}) = 1 
+p_{i1}*(\gamma_{i1})^2+ p_{i2}*(\gamma_{i2})^2 + p_{i3}*(\gamma_{i3})^2 + p_{i4}*(\gamma_{i4})^2 + p_{i5}*(\gamma_{i5})^2 = 1 
 \end{equation}
-
-
-
-Eelnev normeerimine on tehtud eesmärgiga lihtsustada arvutusi, kuna meid huvitab vastuste relatiivne paiknemine võime edasipidi uurida normeeritud vastuseid. Formuleerima järjekorra säilitamis tingimuse:
 
 \begin{equation}
 \gamma_{i1} \leq \gamma_{i2}  \leq \gamma_{i3} \leq \gamma_{i4} \leq \gamma_{i5}
 \end{equation}
+
+
+Paneme tähele, et sellisel kujul olevaid k\"usimusi sisaldava testi Cronbachi alfa esitub kujul:
+
+\begin{equation}
+\alpha = \frac{n}{n-1}\left(1 - \frac
+{n}{\sum \limits_{i=0}^n \sum \limits_{j=0}^n COV(L_i,L_j)}\right)
+\end{equation}
+
+Siit näeme, et sellisel juhul taandub Cronbachi alfa maksimeerimine avaldise $\sum \limits_{i=0}^n \sum \limits_{j=0}^n COV(L_i,L_j)$ maksimeerimisele. Paneme tähele, et põhimõtelist rolli k\"usimuse skaala ei mängi - uurime hinnangute suhtelist paigutatust, mitte absoluutset. Siiski, kuna uuritavaid teste vaadeltakse tavaliselt viiepalli skaalal, siis võime viia pärast sobivate kordajate leidmist veel \"uhe teisenduse, mis viib vahemikkust $(-1,1)$ vahemikku $(0,5)$, säilitades hinnangute (mida oleme tähistanud $\gamma$-dega) omavaheliste kauguste suhte.
+
+\begin{figure}[H]
+
+\colorbox{background_example}
+	{\parbox
+		{\textwidth}
+			{
+			\setlength{\unitlength}{1mm}
+			\begin{picture}(148,55)
+				\put(0,52){Käesoleva bakalaureusetöö \"ulesehitus on loogiline.}
+				\put(0,47){\line(1,0){14}}
+				\put(15,41){1}
+				\put(16,47){\circle{4}}
+				{\color{violet}\put(16,47){\circle*{2}}}
+				\put(18,47){\line(1,0){25}}
+				\put(44,41){2}
+				\put(45,47){\circle{4}}
+				{\color{blue}\put(45,47){\circle*{2}}}
+				\put(47,47){\line(1,0){25}}
+				\put(73,41){3}
+				\put(74,47){\circle{4}}
+				{\color{green}\put(74,47){\circle*{2}}}
+				\put(76,47){\line(1,0){25}}
+				\put(102,41){4}
+				\put(103,47){\circle{4}}
+				{\color{yellow}\put(103,47){\circle*{2}}}
+				\put(105,47){\line(1,0){25}}
+				\put(131,41){5}
+				\put(132,47){\circle{4}}
+				{\color{red}\put(132,47){\circle*{2}}}
+				\put(134,47){\vector(1,0){14}}
+				
+				
+				
+				\put(74,39){\vector(0,-1){9}}
+				
+				
+				\put(21,27){\line(1,0){11}}
+				\put(23,21){-1}
+				
+				\put(34,27){\circle{4}}
+				{\color{violet}\put(34,27){\circle*{2}}}
+				\put(31,21){-0.8}				
+				
+				\put(36,27){\line(1,0){31}}
+				
+				\put(69,27){\circle{4}}
+				{\color{blue}\put(69,27){\circle*{2}}}
+				\put(66,21){-0.1}	
+				
+				\put(71,27){\line(1,0){6}}
+				
+				\put(73,21){0}
+				
+				\put(79,27){\circle{4}}
+				{\color{green}\put(79,27){\circle*{2}}}
+				\put(77,21){0.1}	
+				
+				\put(81,27){\line(1,0){6}}
+				
+				\put(89,27){\circle{4}}
+				{\color{yellow}\put(89,27){\circle*{2}}}
+				\put(87,21){0.3}	
+				
+				\put(91,27){\line(1,0){6}}
+				
+				
+				\put(99,27){\circle{4}}
+				{\color{red}\put(99,27){\circle*{2}}}
+				\put(97,21){0.5}	
+				
+				\put(101,27){\vector(1,0){24}}
+				
+				\put(123,21){1}
+				
+				
+				\put(74,19){\vector(0,-1){9}}
+				
+				
+				\put(0,7){\line(1,0){25.6}}
+				\put(15,1){1}
+				
+				
+				\put(27.6,7){\circle{4}}
+				{\color{violet}\put(27.6,7){\circle*{2}}}
+				\put(29.6,7){\line(1,0){36.5}}
+				
+				\put(44,1){2}
+				
+				\put(68.1,7){\circle{4}}
+				{\color{blue}\put(68.1,7){\circle*{2}}}
+				
+				\put(70.1,7){\line(1,0){7.7}}
+				
+				\put(73,1){3}
+				
+				\put(79.8,7){\circle{4}}
+				{\color{green}\put(79.8,7){\circle*{2}}}
+				
+				\put(81.8,7){\line(1,0){7.6}}
+				\put(102,1){4}
+				
+				
+				\put(91.4,7){\circle{4}}
+				{\color{yellow}\put(91.4,7){\circle*{2}}}
+				
+				\put(93.4,7){\line(1,0){7.6}}
+				\put(131,1){5}
+				
+				\put(103,7){\circle{4}}
+				{\color{red}\put(103,7){\circle*{2}}}
+				\put(105,7){\vector(1,0){43}}
+				
+				
+				
+			\end{picture}
+		}
+		
+	}
+\caption{Illutstratsioon kujutusest, mis viib hulgast $ran(K_i)$ hulka $ran(L_i)$ ning seejärel teisendus hulgast $ran(L_i)$ viipalli skaalale, säilitades hinnagute vahelised kaugused  }
+\label{projection}
+\end{figure}
+
 
 Olgu meil tõenäosuste maatriks $P$:
 \begin{tightcenter}
@@ -377,16 +541,16 @@ p_{(n5)(11)}&p_{(n5)(12)}&p_{(n5)(13)}&p_{(n5)(14)}&p_{(n5)(15)}&p_{(n5)(21)}&\c
 
 kus  $p_{(i \alpha) (j \beta)}, i,j \in \{1,2,...,n\}, \alpha , \beta \in \{1,2,3,4,5\}$ tähistab tõenäousust, et k\"usimusele $K_i$ anti vastus $\alpha$ ja k\"usimusele $K_j$ anti vastus $\beta$. 
 
-Paneme tähele, et kuna $p_{(i \alpha)( i \alpha)} = 1$, siis avaldub eelnev maatriks ka järgnevalt:
+Paneme tähele, et kuna $p_{(i \alpha)( i \alpha)} = p_{i \alpha}$, siis avaldub eelnev maatriks ka järgnevalt:
 
 \begin{tightcenter}
 \begin{equation*}
 P =
 \begin{pmatrix}
-1&p_{(11)(12)}&p_{(11)(13)}&p_{(11)(14)}&p_{(11)(15)}&p_{(11)(21)}&\cdots&p_{(11)(n5)} \\
-p_{(12)(11)}&1&p_{(12)(13)}&p_{(12)(14)}&p_{(12)(15)}&p_{(12)(21)}&\cdots&p_{(12)(n5)} \\
+p_{i \alpha}&p_{(11)(12)}&p_{(11)(13)}&p_{(11)(14)}&p_{(11)(15)}&p_{(11)(21)}&\cdots&p_{(11)(n5)} \\
+p_{(12)(11)}&p_{i \alpha}&p_{(12)(13)}&p_{(12)(14)}&p_{(12)(15)}&p_{(12)(21)}&\cdots&p_{(12)(n5)} \\
 \vdots&\vdots&\vdots&\vdots&\vdots&\vdots&\ddots&\vdots \\
-p_{(n5)(11)}&p_{(n5)(12)}&p_{(n5)(13)}&p_{(n5)(14)}&p_{(n5)(15)}&p_{(n5)(21)}&\cdots&1\\
+p_{(n5)(11)}&p_{(n5)(12)}&p_{(n5)(13)}&p_{(n5)(14)}&p_{(n5)(15)}&p_{(n5)(21)}&\cdots&p_{i \alpha}\\
 \end{pmatrix} 
 \end{equation*}
 \end{tightcenter}
@@ -480,6 +644,8 @@ p_i\alpha & i = j
 \caption{Näide k\"usimustikust, kus rakendatud Likerti skaalat, k\"usimused on paigutatud nende järjestikulisus rõhutamiseks teljele\cite{Smith}}
 \label{likert2}
 \end{figure}
+
+
 
 \pagebreak
 \bibliography{mata_baka}{}
