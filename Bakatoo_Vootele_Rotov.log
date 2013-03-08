@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.11.6)  7 MAR 2013 15:48
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.11.6)  9 MAR 2013 00:57
 entering extended mode
 **Bakatoo_Vootele_Rotov.tex
 (K:\mata_baka\mata_baka\Bakatoo_Vootele_Rotov.tex
@@ -554,20 +554,20 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 \Hy@SectionHShift=\skip46
 )
 (K:\mata_baka\mata_baka\Bakatoo_Vootele_Rotov.aux)
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -620,7 +620,7 @@ upp-pdf.mkii"
 \everyMPtoPDFconversion=\toks28
 )
 \AtBeginShipoutBox=\box31
-Package hyperref Info: Link coloring OFF on input line 38.
+Package hyperref Info: Link coloring OFF on input line 39.
  (K:\MikTeX\tex\latex\hyperref\nameref.sty
 Package: nameref 2010/04/30 v2.40 Cross-referencing by name of section
 
@@ -629,19 +629,19 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count123
 )
-LaTeX Info: Redefining \ref on input line 38.
-LaTeX Info: Redefining \pageref on input line 38.
-LaTeX Info: Redefining \nameref on input line 38.
+LaTeX Info: Redefining \ref on input line 39.
+LaTeX Info: Redefining \pageref on input line 39.
+LaTeX Info: Redefining \nameref on input line 39.
 
 (K:\mata_baka\mata_baka\Bakatoo_Vootele_Rotov.out)
 (K:\mata_baka\mata_baka\Bakatoo_Vootele_Rotov.out)
 \@outlinefile=\write3
-LaTeX Font Info:    Try loading font information for U+msa on input line 41.
+LaTeX Font Info:    Try loading font information for U+msa on input line 42.
 
 (K:\MikTeX\tex\latex\amsfonts\umsa.fd
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 41.
+LaTeX Font Info:    Try loading font information for U+msb on input line 42.
  (K:\MikTeX\tex\latex\amsfonts\umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 )
@@ -652,16 +652,16 @@ ex/config/pdftex.map}] (K:\mata_baka\mata_baka\Bakatoo_Vootele_Rotov.toc)
 \tf@toc=\write4
 
 [2]
-LaTeX Font Info:    Try loading font information for U+pzd on input line 99.
+LaTeX Font Info:    Try loading font information for U+pzd on input line 100.
  (K:\MikTeX\tex\latex\psnfss\upzd.fd
 File: upzd.fd 2001/06/04 font definitions for U/pzd.
 )
-Overfull \hbox (6.0pt too wide) in paragraph at lines 99--100
+Overfull \hbox (6.0pt too wide) in paragraph at lines 100--101
 [][][][][][][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 104--105
+Underfull \hbox (badness 10000) in paragraph at lines 105--106
 
  []
 
@@ -669,128 +669,119 @@ Underfull \hbox (badness 10000) in paragraph at lines 104--105
 File: Reliability_and_validity.png Graphic file (type png)
 
 <use Reliability_and_validity.png>
-Package pdftex.def Info: Reliability_and_validity.png used on input line 113.
+Package pdftex.def Info: Reliability_and_validity.png used on input line 114.
 (pdftex.def)             Requested size: 313.68459pt x 334.62029pt.
 
 
-LaTeX Warning: Citation `Dilmen2008' on page 4 undefined on input line 114.
+LaTeX Warning: Citation `Dilmen2008' on page 4 undefined on input line 115.
 
 
-Overfull \hbox (1.776pt too wide) in paragraph at lines 118--119
+Overfull \hbox (1.776pt too wide) in paragraph at lines 119--120
 []\OT1/cmr/m/n/10 Reliaabluse m[]o[]otmiste vii-si-dest on osu-tu-nud po-pu-lar
 -sei-maks si-se-mise re-liaab-lu-se leid-mi-ne, n[]aiteks
  []
 
 
-Overfull \hbox (2.8449pt too wide) in paragraph at lines 202--202
+Overfull \hbox (2.8449pt too wide) in paragraph at lines 203--203
 [][] 
  []
 
 
-Overfull \hbox (9.33333pt too wide) in paragraph at lines 202--203
+Overfull \hbox (9.33333pt too wide) in paragraph at lines 203--204
 [][][][][][][] 
  []
 
 [4 <K:/mata_baka/mata_baka/Reliability_and_validity.png>]
-Overfull \hbox (1.13716pt too wide) in paragraph at lines 213--214
+Overfull \hbox (1.13716pt too wide) in paragraph at lines 214--215
 \OT1/cmr/m/n/10 Cronbachi al-fa on le-vi-nud si-se-mist re-liaab-lust ise-loo-m
 us-tav n[]aitaja, mis on de-fi-nee-ri-tud j[]argnevalt: 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 224--225
+Underfull \hbox (badness 10000) in paragraph at lines 225--226
 
  []
 
 
-Overfull \hbox (7.6929pt too wide) in paragraph at lines 226--227
+Overfull \hbox (7.6929pt too wide) in paragraph at lines 227--228
 \OT1/cmr/m/n/10 m[]o[]odiku ase-mel ka-su-ta-ta-da al-ter-na-tiiv-seid m[]o[]od
 ikuid [[]1[]], on olu-li-ne vas-ta-ta ala-peal-kir-jas p[]ustitatid
  []
 
 
-Overfull \hbox (41.49722pt too wide) in paragraph at lines 228--229
+Overfull \hbox (41.49722pt too wide) in paragraph at lines 229--230
 []\OT1/cmr/m/n/10 Cronbachi al-fa on het-kel k[]oige ka-su-ta-ta-vaim m[]o[]odi
 k si-se-mise re-liaab-lu-se m[]o[]otmiseks ps[]uhhomeetriliste
  []
 
 
-Overfull \hbox (1.99834pt too wide) in paragraph at lines 229--230
+Overfull \hbox (1.99834pt too wide) in paragraph at lines 230--231
 []\OT1/cmr/m/n/10 Cronbachi al-fa leid-mi-ne on ar-vu-tus-li-kult k[]ullalitki 
 liht-ne. Ku-na k[]aesolev t[]o[]o pea-mi-ne eesm[]ark
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 233--234
+Underfull \hbox (badness 10000) in paragraph at lines 234--235
 
  []
 
 [5]
-Overfull \hbox (3.08159pt too wide) in paragraph at lines 238--239
+Overfull \hbox (3.08159pt too wide) in paragraph at lines 239--240
 []\OT1/cmr/m/n/10 K[]usimustikud ei to-hi ol-la lii-ga pi-kad, Cronbac-hi al-fa
  pee-gel-dab li-saks si-se-mise-le j[]arjekindlusele
  []
 
 
-Overfull \hbox (2.8449pt too wide) in paragraph at lines 290--290
+Overfull \hbox (2.8449pt too wide) in paragraph at lines 291--291
 [][] 
  []
 
 
-Overfull \hbox (9.33333pt too wide) in paragraph at lines 290--291
+Overfull \hbox (9.33333pt too wide) in paragraph at lines 291--292
 [][][][][][][] 
  []
 
 
-Overfull \hbox (2.8449pt too wide) in paragraph at lines 328--328
+Overfull \hbox (2.8449pt too wide) in paragraph at lines 329--329
 [][] 
  []
 
 
-Overfull \hbox (9.33333pt too wide) in paragraph at lines 328--329
+Overfull \hbox (9.33333pt too wide) in paragraph at lines 329--330
 [][][][][][][] 
  []
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 343.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 344.
 
 (K:\MikTeX\tex\latex\base\omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 343.
- [6]
-Overfull \hbox (25.60608pt too wide) in paragraph at lines 350--351
-\OT1/cmr/m/n/10 Olgu meil k[]usimusitk $\OML/cmm/m/it/10 n$\OT1/cmr/m/n/10 -k[]
-usimusega. Too-me sis-se ju-hus-li-kud suu-ru-sed $\OML/cmm/m/it/10 K[]; K[]; :
-::; K[]; K[] \OMS/cmsy/m/n/10 2 f\OT1/cmr/m/n/10 1\OML/cmm/m/it/10 ; \OT1/cmr/m
-/n/10 2\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 3\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 4
-\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 5\OMS/cmsy/m/n/10 g$\OT1/cmr/m/n/10 ,
- []
-
-[7]
-Overfull \hbox (2.8449pt too wide) in paragraph at lines 523--523
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 344.
+ [6] [7]
+Overfull \hbox (2.8449pt too wide) in paragraph at lines 529--529
 [][] 
  []
 
 
-Overfull \hbox (9.33333pt too wide) in paragraph at lines 523--524
+Overfull \hbox (9.33333pt too wide) in paragraph at lines 529--530
 [][][][][][][] 
  []
 
-[8] [9] <ois_tagasiside_toodeldud.png, id=168, 1139.25626pt x 542.025pt>
+[8] [9] [10] <ois_tagasiside_toodeldud.png, id=172, 1139.25626pt x 542.025pt>
 File: ois_tagasiside_toodeldud.png Graphic file (type png)
 
 <use ois_tagasiside_toodeldud.png>
-Package pdftex.def Info: ois_tagasiside_toodeldud.png used on input line 636.
+Package pdftex.def Info: ois_tagasiside_toodeldud.png used on input line 649.
 (pdftex.def)             Requested size: 334.60422pt x 159.19298pt.
 
-<Example_Likert_Scale.png, id=171, 1003.75pt x 1525.7pt>
+<Example_Likert_Scale.png, id=175, 1003.75pt x 1525.7pt>
 File: Example_Likert_Scale.png Graphic file (type png)
 
 <use Example_Likert_Scale.png>
-Package pdftex.def Info: Example_Likert_Scale.png used on input line 643.
+Package pdftex.def Info: Example_Likert_Scale.png used on input line 656.
 (pdftex.def)             Requested size: 209.12428pt x 292.77277pt.
- [10 <K:/mata_baka/mata_baka/ois_tagasiside_toodeldud.png> <K:/mata_baka/mata_b
+ [11 <K:/mata_baka/mata_baka/ois_tagasiside_toodeldud.png> <K:/mata_baka/mata_b
 aka/Example_Likert_Scale.png>]
 (K:\mata_baka\mata_baka\Bakatoo_Vootele_Rotov.bbl
 Overfull \hbox (498.52278pt too wide) in paragraph at lines 10--14
@@ -806,12 +797,12 @@ edia.org/wiki/File:Example[]Likert[]Scale.svg.
  []
 
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 655.
- [11]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 655.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 668.
+ [12]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 668.
  (K:\mata_baka\mata_baka\Bakatoo_Vootele_Rotov.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 655.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 655.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 668.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 668.
 Package rerunfilecheck Info: File `Bakatoo_Vootele_Rotov.out' has not changed.
 (rerunfilecheck)             Checksum: 271EA224827F791B627797D0042F057F;461.
 
@@ -820,13 +811,13 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 7827 strings out of 494045
- 106197 string characters out of 3155590
- 223881 words of memory out of 3000000
+ 7828 strings out of 494045
+ 106204 string characters out of 3155590
+ 230909 words of memory out of 3000000
  10929 multiletter control sequences out of 15000+200000
  12514 words of font info for 48 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
- 29i,14n,35p,818b,491s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 29i,16n,35p,818b,491s stack positions out of 5000i,500n,10000p,200000b,50000s
 <K:/MikTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><K:/MikTeX/fonts/type1/p
 ublic/amsfonts/cm/cmbx12.pfb><K:/MikTeX/fonts/type1/public/amsfonts/cm/cmex10.p
 fb><K:/MikTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><K:/MikTeX/fonts/type1/
@@ -840,9 +831,9 @@ amsfonts/cm/cmsy7.pfb><K:/MikTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><K:/
 MikTeX/fonts/type1/public/amsfonts/latxfont/lcircle1.pfb><K:/MikTeX/fonts/type1
 /public/amsfonts/latxfont/line10.pfb><K:/MikTeX/fonts/type1/urw/zapfding/uzdr.p
 fb>
-Output written on Bakatoo_Vootele_Rotov.pdf (11 pages, 370063 bytes).
+Output written on Bakatoo_Vootele_Rotov.pdf (12 pages, 372592 bytes).
 PDF statistics:
- 259 PDF objects out of 1000 (max. 8388607)
- 62 named destinations out of 1000 (max. 500000)
+ 263 PDF objects out of 1000 (max. 8388607)
+ 63 named destinations out of 1000 (max. 500000)
  114 words of extra memory for PDF output out of 10000 (max. 10000000)
 

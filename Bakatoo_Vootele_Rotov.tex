@@ -13,6 +13,7 @@
 \usepackage{etoolbox}
 \usepackage[hidelinks]{hyperref}
 
+\allowdisplaybreaks
 \makeatletter
 \patchcmd{\HyField@FlagsRadioButton}{\HyField@SetFlag{Ff}{Radio}}{}{}{}
 \makeatother
@@ -347,7 +348,7 @@ Kui me tahame pakkuda välja alternatiive naiivsele hinnangule peab meil olema p
 
 \section*{\"Ulesande matemaatiline p\"ustitus}
 
-Olgu meil k\"usimusitk $n$-k\"usimusega. Toome sisse juhuslikud suurused $K_1,K_2,...,K_n, K_i \in \{1,2,3,4,5\}$, mis omavad tähendust kui vastused uuritava k\"usitluse k\"usimustele. Toome sisse ka tähistused $p_{i \alpha}, i \in \{1,2,...,n\}, \alpha \in \{1,2,3,4,5\}$, kus $p_{i \alpha}$ tähistab olemasolevate andmete põhjal antud hinnangut tõenäosusesele, et k\"usimusele $K_i$ anti vastus $\alpha$. 
+Olgu meil k\"usimusitk $n$-väitega, iga näite kohta palutakse hinnangut 5-palli Likerti skaalal. Hinnanguid võime vaadelda kui  juhuslike suurusei $K_1,K_2,...,K_n, K_iw$ mille muutumispiirkonnaks on hulk $\{1,2,3,4,5\}$. Toome sisse ka tähistused $p_{i \alpha}, i \in \{1,2,...,n\}, \alpha \in \{1,2,3,4,5\}$, kus $p_{i \alpha}$ tähistab olemasolevate andmete põhjal antud hinnangut tõenäosusesele, et k\"usimusele $K_i$ anti hinnang $\alpha$. 
 
 Tuletame meelde Cronbachi alfa definitsiooni:
 
@@ -370,38 +371,43 @@ Võttes arvesse, et $D(\sum \limits_{i=0}^n K_i) = \sum \limits_{i=0}^n \sum \li
 (\frac{k}{k-1})( 1 - \frac{\sum \sigma_i^2}{\sigma_t^2}) = \frac{n}{n-1}\left(1 - \frac
 {\sum \limits_{i=0}^n D(K_i)}{\sum \limits_{i=0}^n \sum \limits_{j=0}^n COV(K_i,K_j)}\right)
 \end{equation*}
+Vastavalt \"ulesande p\"ustituses toodud ideele soovime leida sellise viisi hinnangute tõlgendamiseks, et Cronbachi alfa oleks maksimaalne. Kujutama juhuslikud suurused $K_1,K_2,...,K_n$ juhuslikeks suurusteks $L_1, L_2,L_2,...,L_n$, kusjuures juhusliku suurus $L_i$ määramispiirkond \"uhtib suuruse $K_i$ määramispiirkonnaga ning $L_i$ saab väärtusi hulgast $\Lambda_i = \{\lambda_{1i},\lambda_{2i},\lambda_{3i},\lambda_{4i},\lambda_{5i}\} ~ i \in {1,2,...n}$. Lisaks säilitagu  kehtigu järgnevad kitsendused: 
 
-Sellisel kujul antud CronBach'i alfa maksimeerimine keeruline, selle edasiseks lihtsustamiseks normeerime k\"usimused järgnevalt esitatud idee järgi.
-Kujutama väärtused $K_1,K_2,...,K_n$ muutujateks  $L_1, L_2,L_2,...,L_n$, tuues sisse väärtused $\Gamma_i = \{\gamma_{1i},\gamma_{2i},\gamma_{3i},\gamma_{4i},\gamma_{5i}\} ~ i \in {1,2,...n}$, nii et kehtib järgnev : 
 
 \begin{equation*}
-K_i = 1 \implies L_i = \gamma_{i1}, K_i = 2 \implies L_i = \gamma_{i2},\cdots, K_i = 5 \implies L_i =\gamma_{i5}
+\lambda_{i1} < \lambda_{i2}  < \lambda_{i3} < \lambda_{i4} < \lambda_{i5}
 \end{equation*}
 
-Lisame kitsendused:
+{\color{cyan} Siin peavad ikka ranged võrratused olema ,(0,0,0,0,1) ei kõlba.}
+
+\begin{equation*}
+K_i = 1 \implies L_i = \lambda_{i1}, K_i = 2 \implies L_i = \lambda_{i2},\cdots, K_i = 5 \implies L_i =\lambda_{i5}
+\end{equation*}
+
+Paneme tähele, et Cronbachi alfa arvutamine, niisiis ka maksimeerimne, on endiselt keeruline. Siinkohal märgime, et hinnangute tõlgenduste juures ei huvita meid mitte absoluutne vaid suhteline paigutus. Niisiis võime oma juhusliku suurusi piirate järgnevaga:
+
+
 \begin{equation}
-E(L_i) = p_{i1}*\gamma_{i1}+p_{i2}*\gamma_{i2}+p_{i3}*\gamma_{i3}+
-p_{i4}*\gamma_{i4}+p_{i5}*\gamma_{i5}=0
+E(L_i) = p_{i1}*\lambda_{i1}+p_{i2}*\lambda_{i2}+p_{i3}*\lambda_{i3}+
+p_{i4}*\lambda_{i4}+p_{i5}*\lambda_{i5}=0
 \end{equation}
 
 \begin{equation}
 D(L_i) = 
-p_{i1}*(\gamma_{i1})^2+ p_{i2}*(\gamma_{i2})^2 + p_{i3}*(\gamma_{i3})^2 + p_{i4}*(\gamma_{i4})^2 + p_{i5}*(\gamma_{i5})^2 = 1 
-\end{equation}
-
-\begin{equation}
-\gamma_{i1} \leq \gamma_{i2}  \leq \gamma_{i3} \leq \gamma_{i4} \leq \gamma_{i5}
+p_{i1}*(\lambda_{i1})^2+ p_{i2}*(\lambda_{i2})^2 + p_{i3}*(\lambda_{i3})^2 + p_{i4}*(\lambda_{i4})^2 + p_{i5}*(\lambda_{i5})^2 = 1 
 \end{equation}
 
 
-Paneme tähele, et sellisel kujul olevaid k\"usimusi sisaldava testi Cronbachi alfa esitub kujul:
+Paneme tähele, et sellisel kujul olevaid k\"usimusi sisaldava testi Cronbachi alfa esitub lihtsamal kujul:
 
 \begin{equation}
 \alpha = \frac{n}{n-1}\left(1 - \frac
 {n}{\sum \limits_{i=0}^n \sum \limits_{j=0}^n COV(L_i,L_j)}\right)
 \end{equation}
 
-Siit näeme, et sellisel juhul taandub Cronbachi alfa maksimeerimine avaldise $\sum \limits_{i=0}^n \sum \limits_{j=0}^n COV(L_i,L_j)$ maksimeerimisele. Paneme tähele, et põhimõtelist rolli k\"usimuse skaala ei mängi - uurime hinnangute suhtelist paigutatust, mitte absoluutset. Siiski, kuna uuritavaid teste vaadeltakse tavaliselt viiepalli skaalal, siis võime viia pärast sobivate kordajate leidmist veel \"uhe teisenduse, mis viib vahemikkust $(-1,1)$ vahemikku $(0,5)$, säilitades hinnangute (mida oleme tähistanud $\gamma$-dega) omavaheliste kauguste suhte.
+Siit näeme, et sellisel juhul taandub Cronbachi alfa maksimeerimine avaldise $\sum \limits_{i=0}^n \sum \limits_{j=0}^n COV(L_i,L_j)$ maksimeerimisele. {\color{cyan} Järgev on täiesti trivaalne mapping Y = (X+1)*2 +1 vms. Põhjus miks ta siia sisse tõin oli soov rõhutada absoluutse skaala ebaolulisust. Võib välja jääda.}Kuna uuritavaid teste vaadeltakse tavaliselt viiepalli skaalal, siis võime viia pärast sobivate kordajate leidmist veel \"uhe teisenduse, mis viib vahemikkust $(-1,1)$ vahemikku $(0,5)$, säilitades hinnangute (mida oleme tähistanud $\lambda$-dega) omavaheliste kauguste suhte. 
+
+Kogu eelnevalt tehtud illustreerib järgmine joonis, kus autor on p\"u\"udnud selgitada \"uhe juhusliku suuruse määramispiirkonna muutuse läbi eelnevalt kirjeldatud protsesside. 
 
 \begin{figure}[H]
 
@@ -521,7 +527,7 @@ Siit näeme, et sellisel juhul taandub Cronbachi alfa maksimeerimine avaldise $\
 		}
 		
 	}
-\caption{Illutstratsioon kujutusest, mis viib hulgast $ran(K_i)$ hulka $ran(L_i)$ ning seejärel teisendus hulgast $ran(L_i)$ viipalli skaalale, säilitades hinnagute vahelised kaugused  }
+\caption{Illutstratsioon sellest, kuidas suhestub hulk $ran(K_i)$ hulka $ran(L_i)$ ning see omakorda hulka, mis tekib peale teisendust hulgast $ran(L_i)$ viipalli skaalale, säilitades hinnagute vahelised kaugused  }
 \label{projection}
 \end{figure}
 
@@ -560,7 +566,7 @@ Defineerime  vektori $x$:
 
 \begin{tightcenter}
 \begin{equation*}
-x = (\gamma_{11},\gamma_{12},\gamma_{13} ,\gamma_{14},\gamma_{15},\gamma_{21},\gamma_{22},\gamma_{23},\gamma_{24},\gamma_{25}, \cdots ,\gamma_{n1},\gamma_{n2},\gamma_{n3},\gamma_{n4},\gamma_{n5})
+x = (\lambda_{11},\lambda_{12},\lambda_{13} ,\lambda_{14},\lambda_{15},\lambda_{21},\lambda_{22},\lambda_{23},\lambda_{24},\lambda_{25}, \cdots ,\lambda_{n1},\lambda_{n2},\lambda_{n3},\lambda_{n4},\lambda_{n5})
 \end{equation*}
 \end{tightcenter}
 
@@ -571,7 +577,7 @@ Siis $xPx^T = \sum \limits_{i=1}^n \sum \limits_{j=1}^n COV(L_i,L_j)$. Veendume 
 \begin{gathered}
 xPx^T =
 \begin{pmatrix}
-\gamma_{11} & \gamma_{12} & \cdots & \gamma_{n5} 
+\lambda_{11} & \lambda_{12} & \cdots & \lambda_{n5} 
 \end{pmatrix}
 \begin{pmatrix}
 p_{(11)(11)}&p_{(11)(12)}&\cdots&p_{(11)(n5)} \\
@@ -580,27 +586,27 @@ p_{(12)(11)}&p_{(12)(12)}&\cdots&p_{(12)(n5)} \\
 p_{(n5)(11)}&p_{(n5)(12)}&\cdots&p_{(n5)(n5)} \\
 \end{pmatrix} 
 \begin{pmatrix}
-\gamma_{11} \\
-\gamma_{12} \\
+\lambda_{11} \\
+\lambda_{12} \\
 \vdots \\
-\gamma_{n5}
+\lambda_{n5}
 \end{pmatrix}
 = \\
 = 
 \begin{pmatrix}
-\sum \limits_{j=1}^n \sum \limits_{l=1}^5 \gamma_{jl}p_{(jl)(11)}& \sum \limits_{j=1}^n \sum \limits_{l=1}^5 \gamma_{jl}p_{(jl)(12)} & \cdots &  \sum \limits_{j=1}^n \sum \limits_{l=1}^5 \gamma_{jl}p_{(jl)(n5)} \\
+\sum \limits_{j=1}^n \sum \limits_{l=1}^5 \lambda_{jl}p_{(jl)(11)}& \sum \limits_{j=1}^n \sum \limits_{l=1}^5 \lambda_{jl}p_{(jl)(12)} & \cdots &  \sum \limits_{j=1}^n \sum \limits_{l=1}^5 \lambda_{jl}p_{(jl)(n5)} \\
 \end{pmatrix}
 \begin{pmatrix}
-\gamma_{11} \\
-\gamma_{12} \\
+\lambda_{11} \\
+\lambda_{12} \\
 \vdots \\
-\gamma_{n5}
+\lambda_{n5}
 \end{pmatrix}
 =\\
 =
-\sum \limits_{j=1}^n \sum \limits_{l=1}^5 \gamma_{jl}p_{(jl)(11)} + \sum \limits_{j=1}^n \sum \limits_{l=1}^5 \gamma_{jl}p_{(jl)(12)} + \cdots +  \sum \limits_{j=1}^n \sum \limits_{l=1}^5 \gamma_{jl}p_{(jl)(n5)}=\\
-= \sum \limits_{i=1}^{n} \sum \limits_{k=1}^{5} \sum \limits_{j=1}^n \sum \limits_{l=1}^5 \gamma_{jl}p_{(jl)(ik)} \gamma_{ik} 
-= \sum \limits_{i=1}^{n}  \sum \limits_{j=1}^n \sum \limits_{k=1}^{5} \sum \limits_{l=1}^5 \gamma_{jl}p_{(jl)(ik)} \gamma_{ik} =
+\sum \limits_{j=1}^n \sum \limits_{l=1}^5 \lambda_{jl}p_{(jl)(11)} + \sum \limits_{j=1}^n \sum \limits_{l=1}^5 \lambda_{jl}p_{(jl)(12)} + \cdots +  \sum \limits_{j=1}^n \sum \limits_{l=1}^5 \lambda_{jl}p_{(jl)(n5)}=\\
+= \sum \limits_{i=1}^{n} \sum \limits_{k=1}^{5} \sum \limits_{j=1}^n \sum \limits_{l=1}^5 \lambda_{jl}p_{(jl)(ik)} \lambda_{ik} 
+= \sum \limits_{i=1}^{n}  \sum \limits_{j=1}^n \sum \limits_{k=1}^{5} \sum \limits_{l=1}^5 \lambda_{jl}p_{(jl)(ik)} \lambda_{ik} =
 \sum \limits_{i=1}^{n} \sum \limits_{j=1}^n E(L_iL_j) = \\
 \underset{(1)}{=} \sum \limits_{i=1}^{n} \sum \limits_{j=1}^n E(L_iL_j) - E(L_i)E(L_j) = \sum \limits_{i=1}^{n} \sum \limits_{j=1}^n COV(L_i,L_j)
 \end{gathered}
@@ -608,24 +614,31 @@ p_{(n5)(11)}&p_{(n5)(12)}&\cdots&p_{(n5)(n5)} \\
 \end{tightcenter}
 
 
+Eelneva põhjal piisab meile Cronbachi alfa leidmiseks ruutvõrrandi $xPx^T$ maksimeerimisest, arvestades eelnevalt äratoodud piiranguid $L_i$ keskväärtusele ja dispersioonile..
+Selle põhjal saame p\"ustitada  \textit{Quadratically constrained quadratic programm}'i {\color{cyan}Mingi pädev eestikeelne termin selle kohta ?} t\"u\"upi otpimeerimis probleemi, mille lahendus annab meile otsitavad tõlgendused. Teeme seda:  
 
-Selle põhjal saame moodustada \textit{Quadratically constrained quadratic programm}-i, kus \textit{objective function} {\color{cyan} (Eesti keels kulufunktsioon?)} on $max ~ x^TPx$ ja piiravateks fukntsioonideks on funktsioonid $R_i^Tx = 0,  i \in {1,2,...,n}$, kus $R_i = (\underbrace{0,0,...0,0}_{(i-1)*5}p_ia,p_ib,p_ic,p_id,p_ie,\underbrace{0,0,...,0,0}_{(n-i)*5})$ ja funktsioonid $x^TP_ix = 1, i \in {1,2,...,n}$, kus 
 
-\begin{equation*}
+
+\begin{gather}
+max ~ x^TPx  \notag \\
+R_i^Tx = 0,  i \in {1,2,...,n} \notag \\
+ R_i = (\underbrace{0,0,...0,0}_{(i-1)*5}p_ia,p_ib,p_ic,p_id,p_ie, \underbrace{0,0,...,0,0}_{(n-i)*5})  \displaybreak[1] \\
+x^TP_ix = 1, i \in \{1,2,...,n\}, ~
 P_i =
 \begin{pmatrix}
 p_{ja}&0&\cdots &0 \\
 0&p_{jb}&\cdots &0 \\
 \vdots & \vdots & \ddots & \vdots \\
 0&0&\cdots & p_{je} \\
-\end{pmatrix}
-,~p_j\alpha =
+\end{pmatrix} \notag \\
+p_j\alpha = 
 \begin{cases} 
-0 &  j \neq i \\ 
+0 &  j \neq i  \\ 
 p_i\alpha & i = j 
 \end{cases}
-, \alpha \in \{a,b,c,d,e\}
-\end{equation*}
+, \alpha \in \{a,b,c,d,e\} \notag
+\end{gather}
+
 
 
 \pagebreak

@@ -9,4 +9,4 @@
 \contentsline {paragraph}{Miks ma taandan selles t\IeC {\"o}\IeC {\"o}s sisemise j\IeC {\"a}rjekindluse m\IeC {\~o}\IeC {\~o}tmise Cronbachi alfale?}{5}{section*.5}
 \contentsline {paragraph}{Milliseid piirangud seab Cronbachi alfa kasutamine?}{6}{section*.6}
 \contentsline {section}{\numberline {3}\"Ulesande p\"ustitus}{6}{section.3}
-\contentsline {section}{\numberline {4}Lisa}{10}{section.4}
+\contentsline {section}{\numberline {4}Lisa}{11}{section.4}
