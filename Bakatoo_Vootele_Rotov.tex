@@ -21,8 +21,8 @@
 
 
 
-\definecolor{background_example}{HTML}{E0DCDE}
-
+\definecolor{background_example}{HTML}{EDEDED}
+%E0DCDE
 
 
 \setlength\parindent{0pt}
@@ -346,7 +346,7 @@ Kui me tahame pakkuda välja alternatiive naiivsele hinnangule peab meil olema p
 \item {\color{blue} Midagi veel? Peab uurima.}
 \end{enumerate}
 
-\section*{\"Ulesande matemaatiline p\"ustitus}
+\section{\"Ulesande matemaatiline p\"ustitus}
 
 Olgu meil k\"usimusitk $n$-väitega, iga näite kohta palutakse hinnangut 5-palli Likerti skaalal. Hinnanguid võime vaadelda kui  juhuslike suurusei $K_1,K_2,...,K_n, K_iw$ mille muutumispiirkonnaks on hulk $\{1,2,3,4,5\}$. Toome sisse ka tähistused $p_{i \alpha}, i \in \{1,2,...,n\}, \alpha \in \{1,2,3,4,5\}$, kus $p_{i \alpha}$ tähistab olemasolevate andmete põhjal antud hinnangut tõenäosusesele, et k\"usimusele $K_i$ anti hinnang $\alpha$. 
 
@@ -615,7 +615,7 @@ p_{(n5)(11)}&p_{(n5)(12)}&\cdots&p_{(n5)(n5)} \\
 
 
 Eelneva põhjal piisab meile Cronbachi alfa leidmiseks ruutvõrrandi $xPx^T$ maksimeerimisest, arvestades eelnevalt äratoodud piiranguid $L_i$ keskväärtusele ja dispersioonile..
-Selle põhjal saame p\"ustitada  \textit{Quadratically constrained quadratic programm}'i {\color{cyan}Mingi pädev eestikeelne termin selle kohta ?} t\"u\"upi otpimeerimis probleemi, mille lahendus annab meile otsitavad tõlgendused. Teeme seda:  
+Selle põhjal saame p\"ustitada  \textit{Quadratically constrained quadratic programm(QCQP)}'i {\color{cyan}Mingi pädev eestikeelne termin selle kohta ?} t\"u\"upi optimeerimis probleemi, mille lahendus annab meile otsitavad tõlgendused. Teeme seda:  
 
 
 
@@ -638,6 +638,12 @@ p_i\alpha & i = j
 \end{cases}
 , \alpha \in \{a,b,c,d,e\} \notag
 \end{gather}
+
+\section{Lahenduse idee}
+{\color{cyan} Kas probleem on SDP t\"u\"upi või SDP? Miidlale kirjutan vast nendes k\"usimustes. Mingi sissejuhatav jutt QCQP ja SDP kohta, kas algusessse taust peat\"ukki või pigem teksti sisse ?}
+P\"ustitatud optimeerimis probleemi lahendamiseks teisendame probleemi \textit{semidefinite programming(SDP)} t\"u\"upi optimeerimis\"ulesandeks ning seejärel lahendame saadud \"ulesande.
+
+\section{Teisendus \textit{QCQP} t\"u\"upi \"ulesandelt \textit{SDP} t\"u\"upi \"ulesandele}
 
 
 
