@@ -7,6 +7,9 @@
 \contentsline {subsection}{\numberline {2.3}Sisemine reliaablus}{4}{subsection.2.3}
 \contentsline {subsection}{\numberline {2.4}Cronbachi alfa}{5}{subsection.2.4}
 \contentsline {paragraph}{Miks ma taandan selles t\IeC {\"o}\IeC {\"o}s sisemise j\IeC {\"a}rjekindluse m\IeC {\~o}\IeC {\~o}tmise Cronbachi alfale?}{5}{section*.5}
-\contentsline {paragraph}{Milliseid piirangud seab Cronbachi alfa kasutamine?}{6}{section*.6}
+\contentsline {paragraph}{Milliseid piirangud seab Cronbachi alfa kasutamine?}{5}{section*.6}
 \contentsline {section}{\numberline {3}\"Ulesande p\"ustitus}{6}{section.3}
-\contentsline {section}{\numberline {4}Lisa}{11}{section.4}
+\contentsline {section}{\numberline {4}\"Ulesande matemaatiline p\"ustitus}{7}{section.4}
+\contentsline {section}{\numberline {5}Lahenduse idee}{10}{section.5}
+\contentsline {section}{\numberline {6}Teisendus \textit {QCQP} t\"u\"upi \"ulesandelt \textit {SDP} t\"u\"upi \"ulesandele}{10}{section.6}
+\contentsline {section}{\numberline {7}Lisa}{12}{section.7}

@@ -1,0 +1,465 @@
+\documentclass[aspectratio=149]{beamer}
+
+\setlength{\paperwidth}{17.5cm}
+\setlength{\paperheight}{12cm}
+
+
+\usepackage{amssymb,amsmath}
+\usepackage[utf8]{inputenc}
+\usepackage{enumerate}
+\usepackage{color}
+\usepackage{graphicx}
+\usepackage[estonian]{babel}
+\usepackage{xcolor}
+\usepackage{float}
+\usepackage{cite}
+\usepackage{etoolbox}
+\usepackage{hyperref}
+
+
+\allowdisplaybreaks
+\makeatletter
+\patchcmd{\HyField@FlagsRadioButton}{\HyField@SetFlag{Ff}{Radio}}{}{}{}
+\makeatother
+\def\DefaultOptionsofRadio{print}
+
+
+
+\definecolor{background_example}{HTML}{EDEDED}
+%E0DCDE
+
+\begin{document}
+  \begin{frame}
+    \frametitle{Millest räägime}
+    \begin{enumerate}[I]
+    \item Taust
+    \item \"Ulesande p\"ustitus
+    \item Matemaatiline p\"ustitus
+    \item Lahendus idee 
+    \item Probleemid/võimalused  
+    
+    \end{enumerate}
+    %Content goes here
+  \end{frame}
+  \begin{frame}
+    \frametitle{Taust}
+    \framesubtitle{Likerti skaalal k\"usimus}
+    \begin{figure}[H]
+
+
+		\colorbox{background_example}{\parbox{\textwidth}{
+
+		\vspace{1mm}
+
+		Käesoleva bakalaureusetöö \"ulesehitus on loogiline.
+
+		\vspace{5pt}
+		
+		\begin{Form}
+			\def\DefaultWidthofChoiceMenu{12pt}%
+
+
+			\scriptsize
+			\ChoiceMenu[bordercolor = gray,disabled = 						true,name=optionE,radio,radiosymbol=\ding{108}]{\mbox{}}\null Ei nõustu
+			\ChoiceMenu[bordercolor = gray,disabled = true,name=optionD,radio,radiosymbol=\ding{108}]{\mbox{}}\null Ei nõustu osaliselt
+			\ChoiceMenu[bordercolor = gray,disabled = true,name=optionC,radio,radiosymbol=\ding{108}]{\mbox{}}\null Nii ja naa
+			\ChoiceMenu[bordercolor = gray,disabled = true, name=optionB,radio,radiosymbol=\ding{108}]{\mbox{}}\null Nõustun osaliselt
+			\ChoiceMenu[bordercolor = gray,disabled = true,name=optionA,radio,radiosymbol=\ding{108}]{\mbox{}}\null Nõustun
+			\normalsize
+
+
+\end{Form}}}
+\caption{Näide väitest, millele palutakse hinnangut Likerti skaalal}
+\label{likert_question}
+	\end{figure}
+
+  \end{frame}
+  \begin{frame}
+  	\frametitle{Taust}
+    \framesubtitle{Reliaablus}
+    \begin{figure}[H]
+		\centering
+		\includegraphics[width=0.5\textwidth, height = 0.6\textwidth]			{Reliability_and_validity.png}
+		\caption{Reliaabluse (\textit{reliability}) ja valiidsuse (\textit{validity}) omavahelist suhestumine. }
+		\label{reliability_and_validity}
+\end{figure}
+
+  \end{frame}
+  \begin{frame}
+  	\frametitle{Taust}
+  	\framesubtitle{Sisemine reliaablus}
+  	\begin{figure}[H]
+
+\colorbox{background_example}
+	{\parbox
+		{148mm}
+			{
+			\setlength{\unitlength}{1mm}
+			\begin{picture}(148,55)
+				\put(0,52){Käesolevat bakalaureusetööd on lihte lugeda.}
+				\put(0,47){\line(1,0){14}}
+				\put(8,41){Ei nõustu}
+				\put(16,47){\circle{4}}
+				\put(16,47){\circle*{2}}
+				\put(18,47){\line(1,0){25}}
+				\put(32,41){Ei nõustu osaliselt}
+				\put(45,47){\circle{4}}
+				\put(45,47){\circle*{2}}
+				\put(47,47){\line(1,0){25}}
+				\put(67,41){Nii ja Naa}
+				\put(74,47){\circle{4}}
+				\put(74,47){\circle*{2}}
+				\put(76,47){\line(1,0){25}}
+				\put(92,41){Nõustun osaliselt}
+				\put(103,47){\circle{4}}
+				\put(103,47){\circle*{2}}
+				\put(105,47){\line(1,0){25}}
+				\put(126,41){Nõustun}
+				\put(132,47){\circle{4}}
+				\put(132,47){\circle*{2}}
+				\put(134,47){\vector(1,0){14}}
+				\put(0,32){Mulle meeldib käesoleva bakalaureusetöö \"ulesehitus.}
+				\put(0,27){\line(1,0){14}}
+				\put(8,21){Ei nõustu}
+				\put(16,27){\circle{4}}
+				\put(16,27){\circle*{2}}
+				\put(18,27){\line(1,0){25}}
+				\put(32,21){Ei nõustu osaliselt}
+				\put(45,27){\circle{4}}
+				\put(45,27){\circle*{2}}
+				\put(47,27){\line(1,0){25}}
+				\put(67,21){Nii ja Naa}
+				\put(74,27){\circle{4}}
+				\put(74,27){\circle*{2}}
+				\put(76,27){\line(1,0){25}}
+				\put(92,21){Nõustun osaliselt}
+				\put(103,27){\circle{4}}
+				\put(103,27){\circle*{2}}
+				\put(105,27){\line(1,0){25}}
+				\put(126,21){Nõustun}
+				\put(132,27){\circle{4}}
+				\put(132,27){\circle*{2}}
+				\put(134,27){\vector(1,0){14}}
+				\put(0,12){Käesoleva bakalaureusetöö \"ulesehitus on loogiline.}
+				\put(0,7){\line(1,0){14}}
+				\put(8,1){Ei nõustu}
+				\put(16,7){\circle{4}}
+				\put(16,7){\circle*{2}}
+				\put(18,7){\line(1,0){25}}
+				\put(32,1){Ei nõustu osaliselt}
+				\put(45,7){\circle{4}}
+				\put(45,7){\circle*{2}}
+				\put(47,7){\line(1,0){25}}
+				\put(67,1){Nii ja Naa}
+				\put(74,7){\circle{4}}
+				\put(74,7){\circle*{2}}
+				\put(76,7){\line(1,0){25}}
+				\put(92,1){Nõustun osaliselt}
+				\put(103,7){\circle{4}}
+				\put(103,7){\circle*{2}}
+				\put(105,7){\line(1,0){25}}
+				\put(126,1){Nõustun}
+				\put(132,7){\circle{4}}
+				\put(132,7){\circle*{2}}
+				\put(134,7){\vector(1,0){14}}
+			\end{picture}
+		}
+		
+	}
+\caption{K\"usimustik bakalaureusetöö \"ulesehituse kohta }
+\label{quiz_consistency}
+\end{figure}
+  \end{frame}
+  \begin{frame}
+  \frametitle{Taust}
+  \framesubtitle{Cronbachi alfa}
+  
+\begin{equation*}
+\alpha =(\frac{k}{k-1})( 1 - \frac{\sum \sigma_i^2}{\sigma_t^2})
+\end{equation*}
+  Kus:
+  \begin{itemize}
+  \item $k$ --- k\"usimuste arv, 
+  \item $\sigma_i$ --- standardviga \"uhe k\"usimuse piires,
+  \item $\sigma_t$ --- standardviga \"ule testi kogutulemuste.
+  \end{itemize}
+  
+  Alternatiivselt:
+\begin{equation*}
+(\frac{k}{k-1})( 1 - \frac{\sum \sigma_i^2}{\sigma_t^2}) = \frac{n}{n-1}\left(1 - \frac
+{\sum \limits_{i=0}^n D(K_i)}{\sum \limits_{i=0}^n \sum \limits_{j=0}^n COV(K_i,K_j)}\right)
+\end{equation*}
+   
+  \end{frame}
+  \begin{frame}
+  \frametitle{\"Ulesande p\"ustitus}
+  \framesubtitle{Eesmärk}
+  Suurem tõlgendusvõime k\"usimuse kohta:
+  \begin{itemize}
+  \item L\"uhemad testid (sama tõlgendusvõime )
+  \item Täpsemad testi (sama pikkus)
+  \end{itemize}
+  \end{frame}
+  \begin{frame}
+  \frametitle{\"Ulesande p\"ustitus}
+  \framesubtitle{Näide}
+  \begin{figure}[H]
+
+
+		\colorbox{background_example}{\parbox{\textwidth}{
+
+		\vspace{1mm}
+
+		Käesoleva bakalaureusetöö \"ulesehitus on loogiline.
+
+		\vspace{5pt}
+		
+		\begin{Form}
+			\def\DefaultWidthofChoiceMenu{12pt}%
+
+
+			\scriptsize
+			\ChoiceMenu[bordercolor = gray,disabled = 						true,name=optionE,radio,radiosymbol=\ding{108}]{\mbox{}}\null Ei nõustu
+			\ChoiceMenu[bordercolor = gray,disabled = true,name=optionD,radio,radiosymbol=\ding{108}]{\mbox{}}\null Ei nõustu osaliselt
+			\ChoiceMenu[bordercolor = gray,disabled = true,name=optionC,radio,radiosymbol=\ding{108}]{\mbox{}}\null Nii ja naa
+			\ChoiceMenu[bordercolor = gray,disabled = true, name=optionB,radio,radiosymbol=\ding{108}]{\mbox{}}\null Nõustun osaliselt
+			\ChoiceMenu[bordercolor = gray,disabled = true,name=optionA,radio,radiosymbol=\ding{108}]{\mbox{}}\null Nõustun
+			\normalsize
+
+
+\end{Form}}}
+\caption{Näide väitest, millele palutakse hinnangut Likerti skaalal}
+\label{likert_question}
+	\end{figure}
+
+  
+  \end{frame}
+  \begin{frame}
+   \frametitle{\"Ulesande p\"ustitus}
+  \framesubtitle{Näide}
+\begin{figure}[H]
+
+
+\colorbox{background_example}
+	{\parbox
+		{148mm}
+			{
+			\setlength{\unitlength}{1mm}
+			\begin{picture}(148,15)
+				\put(0,12){Käesoleva bakalaureusetöö \"ulesehitus on loogiline.}
+				\put(0,7){\line(1,0){14}}
+				\put(8,1){Ei nõustu}
+				\put(16,7){\circle{4}}
+				\put(16,7){\circle*{2}}
+				\put(18,7){\line(1,0){25}}
+				\put(32,1){Ei nõustu osaliselt}
+				\put(45,7){\circle{4}}
+				\put(45,7){\circle*{2}}
+				\put(47,7){\line(1,0){25}}
+				\put(67,1){Nii ja Naa}
+				\put(74,7){\circle{4}}
+				\put(74,7){\circle*{2}}
+				\put(76,7){\line(1,0){25}}
+				\put(92,1){Nõustun osaliselt}
+				\put(103,7){\circle{4}}
+				\put(103,7){\circle*{2}}
+				\put(105,7){\line(1,0){25}}
+				\put(126,1){Nõustun}
+				\put(132,7){\circle{4}}
+				\put(132,7){\circle*{2}}
+				\put(134,7){\vector(1,0){14}}
+			\end{picture}
+		}
+		
+	}
+\caption{Näide, kuidas hinnangud skaalal naiivset meetodit kasutudes paigutuvad}
+\label{quiz}
+\end{figure}
+\begin{figure}[H]
+
+
+	\colorbox{background_example}
+	{\parbox
+		{148mm}
+			{
+			\setlength{\unitlength}{1mm}
+			\begin{picture}(148,15)
+				\put(0,12){Käesoleva bakalaureusetöö \"ulesehitus on loogiline.}
+				\put(0,7){\line(1,0){8}}
+				\put(2,1){Ei nõustu}
+				\put(10,7){\circle{4}}
+				\put(10,7){\circle*{2}}
+				\put(12,7){\line(1,0){18}}
+				\put(19,1){Ei nõustu osaliselt}
+				\put(32,7){\circle{4}}
+				\put(32,7){\circle*{2}}
+				\put(34,7){\line(1,0){20}}
+				\put(49,1){Nii ja Naa}
+				\put(56,7){\circle{4}}
+				\put(56,7){\circle*{2}}
+				\put(58,7){\line(1,0){33}}
+				\put(82,1){Nõustun osaliselt}
+				\put(93,7){\circle{4}}
+				\put(93,7){\circle*{2}}
+				\put(95,7){\line(1,0){30}}
+				\put(121,1){Nõustun}
+				\put(127,7){\circle{4}}
+				\put(127,7){\circle*{2}}
+				\put(129,7){\vector(1,0){19}}
+			\end{picture}
+		}
+	}
+
+\caption{Näide alternatiivset võimalikku hinnangute paiknemisest skaalal}
+\label{quiz1}
+
+\end{figure}
+  \end{frame}
+    \begin{frame}
+   \frametitle{\"Ulesande p\"ustitus}
+  \framesubtitle{Mille alusel skaalat välja pakkuda?}
+Pakume välja järmise lahenduse: 
+\"uritame leida sobivat skaalat nii, et k\"usitluse sisemine reliaablus oleks võimalikult suur. Piirame ennast sellega, et  hinnangute esialge järjestus ei tohi muutuda. Sisemise järjekindluse maksimeerimise taandame antud töö käigus Cronbachi alfal maksimeerimisele.
+  \end{frame}
+  \begin{frame}
+  \begin{figure}[H]
+
+\colorbox{background_example}
+	{\parbox
+		{148mm}
+			{
+			\setlength{\unitlength}{1mm}
+			\begin{picture}(148,70)
+				\put(0,52){Käesoleva bakalaureusetöö \"ulesehitus on loogiline.}
+				\put(0,47){\line(1,0){14}}
+				\put(15,41){1}
+				\put(16,47){\circle{4}}
+				{\color{violet}\put(16,47){\circle*{2}}}
+				\put(18,47){\line(1,0){25}}
+				\put(44,41){2}
+				\put(45,47){\circle{4}}
+				{\color{blue}\put(45,47){\circle*{2}}}
+				\put(47,47){\line(1,0){25}}
+				\put(73,41){3}
+				\put(74,47){\circle{4}}
+				{\color{green}\put(74,47){\circle*{2}}}
+				\put(76,47){\line(1,0){25}}
+				\put(102,41){4}
+				\put(103,47){\circle{4}}
+				{\color{yellow}\put(103,47){\circle*{2}}}
+				\put(105,47){\line(1,0){25}}
+				\put(131,41){5}
+				\put(132,47){\circle{4}}
+				{\color{red}\put(132,47){\circle*{2}}}
+				\put(134,47){\vector(1,0){14}}
+				
+				
+				
+				\put(74,39){\vector(0,-1){9}}
+				
+				
+				\put(21,27){\line(1,0){11}}
+				\put(23,21){-1}
+				
+				\put(34,27){\circle{4}}
+				{\color{violet}\put(34,27){\circle*{2}}}
+				\put(31,21){-0.8}				
+				
+				\put(36,27){\line(1,0){31}}
+				
+				\put(69,27){\circle{4}}
+				{\color{blue}\put(69,27){\circle*{2}}}
+				\put(66,21){-0.1}	
+				
+				\put(71,27){\line(1,0){6}}
+				
+				\put(73,21){0}
+				
+				\put(79,27){\circle{4}}
+				{\color{green}\put(79,27){\circle*{2}}}
+				\put(77,21){0.1}	
+				
+				\put(81,27){\line(1,0){6}}
+				
+				\put(89,27){\circle{4}}
+				{\color{yellow}\put(89,27){\circle*{2}}}
+				\put(87,21){0.3}	
+				
+				\put(91,27){\line(1,0){6}}
+				
+				
+				\put(99,27){\circle{4}}
+				{\color{red}\put(99,27){\circle*{2}}}
+				\put(97,21){0.5}	
+				
+				\put(101,27){\vector(1,0){24}}
+				
+				\put(123,21){1}
+				
+				
+			
+				
+				
+				
+			\end{picture}
+		}
+		
+	}
+\caption{Illutstratsioon sellest, kuidas suhestub hulk $ran(K_i)$ hulka $ran(L_i)$}
+\label{projection}
+\end{figure}
+
+  \end{frame}
+  \begin{frame}
+  \frametitle{Matemaatiline p\"ustitus}
+  \framesubtitle{Ruutkitsendustega
+ruutplaneerimisülesanne}
+  \begin{gather}
+max ~ x^TPx  \notag \\
+s.t. ~ R_i^Tx = 0,  i \in {1,2,...,n} \notag \\
+x^TP_ix = 1, i \in \{1,2,...,n\} \notag \\
+ R_i = (\underbrace{0,0,...0,0}_{(i-1)*5}p_ia,p_ib,p_ic,p_id,p_ie, \underbrace{0,0,...,0,0}_{(n-i)*5})  \displaybreak[1] \notag \\
+P_i =
+\begin{pmatrix}
+p_{ja}&0&\cdots &0 \\
+0&p_{jb}&\cdots &0 \\
+\vdots & \vdots & \ddots & \vdots \\
+0&0&\cdots & p_{je} \\
+\end{pmatrix} \notag \\
+p_j\alpha = 
+\begin{cases} 
+0 &  j \neq i  \\ 
+p_i\alpha & i = j 
+\end{cases}
+, \alpha \in \{a,b,c,d,e\} \notag
+\end{gather}
+\end{frame}
+\begin{frame}
+\frametitle{Lahenduse idee}
+P\"ustitatud optimeerimis probleemi lahendamiseks teisendame probleemi \textit{semidefinite programming(SDP)} t\"u\"upi optimeerimis\"ulesandeks ning seejärel lahendame saadud \"ulesande.
+\end{frame}
+\begin{frame}
+\frametitle{Lahenduse idee}
+\framesubtitle{SDP} 
+\begin{itemize}
+\item Optimeerimis \"ulesande t\"u\"up, kõiki lineaaroptimeerimis \"ulesandeid saab esitada SDP-na.
+\item Töötati välja ca 40 aastat tagasi, viimase kahek\"umne aastaga populaarseks saanud.
+\end{itemize}
+\end{frame}
+\begin{frame}
+Probleemid ja võimalused.
+\begin{itemize}
+\item Kuradi seinakontaktid.
+\item Kuidas teha kindlaks, kas pakutud skaala ikkagi on mõistlik?
+\item SOCP.
+\item Alternatiivid alfale.
+\end{itemize}
+\end{frame}
+\begin{frame}
+\frametitle{Viimane slaid}
+Tänud kuulamast!
+
+Repo aadress: \url{https://github.com/vootelerotov/mata_baka}
+\end{frame}
+% etc
+\end{document}
