@@ -3,13 +3,19 @@
 \contentsline {section}{\numberline {2}Taustinfo}{3}{section.2}
 \contentsline {subsection}{\numberline {2.1}Likerti skaala }{3}{subsection.2.1}
 \contentsline {paragraph}{Likerti skaala - j\IeC {\"a}rjestikskaala v\IeC {\~o}i intervallskaala?}{3}{section*.4}
-\contentsline {subsection}{\numberline {2.2}Reliaablus}{4}{subsection.2.2}
-\contentsline {subsection}{\numberline {2.3}Sisemine reliaablus}{4}{subsection.2.3}
-\contentsline {subsection}{\numberline {2.4}Cronbachi alfa}{5}{subsection.2.4}
-\contentsline {paragraph}{Miks ma taandan selles t\IeC {\"o}\IeC {\"o}s sisemise j\IeC {\"a}rjekindluse m\IeC {\~o}\IeC {\~o}tmise Cronbachi alfale?}{5}{section*.5}
-\contentsline {paragraph}{Milliseid piirangud seab Cronbachi alfa kasutamine?}{5}{section*.6}
-\contentsline {section}{\numberline {3}\"Ulesande p\"ustitus}{6}{section.3}
-\contentsline {section}{\numberline {4}\"Ulesande matemaatiline p\"ustitus}{7}{section.4}
-\contentsline {section}{\numberline {5}Lahenduse idee}{10}{section.5}
-\contentsline {section}{\numberline {6}Teisendus \textit {QCQP} t\"u\"upi \"ulesandelt \textit {SDP} t\"u\"upi \"ulesandele}{10}{section.6}
-\contentsline {section}{\numberline {7}Lisa}{12}{section.7}
+\contentsline {subsection}{\numberline {2.2}Valiidsus ja reliaablus}{4}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}Reliaabluse formaalne definitsioon}{4}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.4}Sisemine reliaablus}{7}{subsection.2.4}
+\contentsline {subsection}{\numberline {2.5}Cronbachi alfa}{7}{subsection.2.5}
+\contentsline {paragraph}{Miks ma taandan selles t\IeC {\"o}\IeC {\"o}s sisemise j\IeC {\"a}rjekindluse m\IeC {\~o}\IeC {\~o}tmise Cronbachi alfale?}{8}{section*.5}
+\contentsline {paragraph}{Milliseid piiranguid seab Cronbachi alfa kasutamine?}{8}{section*.6}
+\contentsline {section}{\numberline {3}\"Ulesande p\"ustitus}{8}{section.3}
+\contentsline {section}{\numberline {4}\"Ulesande matemaatiline p\"ustitus}{9}{section.4}
+\contentsline {section}{\numberline {5}\IeC {\"U}lesande t\"u\"ubi keerekuse anal\"u\"us}{13}{section.5}
+\contentsline {subsection}{\numberline {5.1}Kahendt\IeC {\"a}isarv programm}{13}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}NP-Hard probleemid}{13}{subsection.5.2}
+\contentsline {section}{\numberline {6}\"Ulesande anal\"u\"usiks vajalik taust}{13}{section.6}
+\contentsline {subsection}{\numberline {6.1}Kumerus}{13}{subsection.6.1}
+\contentsline {section}{\numberline {7}Lahenduse idee}{13}{section.7}
+\contentsline {section}{\numberline {8}Teisendus \textit {QCQP} t\"u\"upi \"ulesandelt \textit {SDP} t\"u\"upi \"ulesandele}{14}{section.8}
+\contentsline {section}{\numberline {9}Lisa}{16}{section.9}

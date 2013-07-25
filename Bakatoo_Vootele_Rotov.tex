@@ -1,7 +1,8 @@
-\documentclass[a4paper]{article}
+ \documentclass[a4paper]{article}
 
 \usepackage[a4paper]{geometry}
 \usepackage{amssymb,amsmath}
+\usepackage{amsthm}
 \usepackage[utf8]{inputenc}
 \usepackage{enumerate}
 \usepackage{color}
@@ -11,6 +12,7 @@
 \usepackage{float}
 \usepackage{cite}
 \usepackage{etoolbox}
+\usepackage{theoremref}
 \usepackage[hidelinks]{hyperref}
 
 \allowdisplaybreaks
@@ -36,6 +38,12 @@
 
 \author{Vootele Rõtov}
 \title{Bakatöö}
+
+\numberwithin{equation}{section}
+\theoremstyle{definition}
+\newtheorem{kumer_hulk}[equation]{Definitsioon}
+\newtheorem{kumer_f}[equation]{Definitsioon}
+
 \begin{document}
 
 \maketitle
@@ -104,10 +112,11 @@ Käesoleva bakalaureusetöö \"ulesehitus on loogiline.
 
 \paragraph{Likerti skaala -  järjestikskaala või intervallskaala?}\mbox{}\\*
 
-Lugejal võib tekkida õigustatud k\"usimus, kuidas põhjendab autor Likerti skaala käsitlemist intervallskaalana kui Likerti skaala oli algselt mõeldud järjestikskaalana ning  selle kasutamise osas intervallskaalana on autorid pigem skeptilised \cite{Jamieson2004}. Sellest hoolimata on intervallksaala tõlgendus praktikas piisavalt levinud, et selle valdkonna uurimine õigustatud oleks. Siinkohal vajab esile toomist, et kriitikute \"uks levinumaid argumente on see, et "`hea"'  ja "`väga hea"'  keskmine ei ole  loomulikul viisil tõlgendatav kui "`hea + pool"', millega autor ka nõustub ning loodab pakkuda sellele alternatiivset tõlgendust. 
+Lugejal võib tekkida õigustatud k\"usimus, kuidas põhjendab autor Likerti skaala käsitlemist intervallskaalana, kui Likerti skaala oli algselt mõeldud järjestikskaalana ning  selle kasutamise osas intervallskaalana on autorid pigem skeptilised \cite{Jamieson2004}. Sellest hoolimata on intervallksaala tõlgendus praktikas piisavalt levinud, et selle valdkonna uurimine õigustatud oleks. Siinkohal vajab esile toomist, et kriitikute \"uks levinumaid argumente on see, et "`hea"'  ja "`väga hea"'  keskmine ei ole  loomulikul viisil tõlgendatav kui "`hea + pool"', millega autor ka nõustub ning loodab pakkuda sellele alternatiivset tõlgendust. 
 
-\subsection{Reliaablus}
-Testi reliaabluseks nimetatakse testi omadust saada sama subjekti erinevatel mõõtmistel sama tulemus. Kõrge reliaablusega testi tulemuste juhuslik viga on väike. Järgnev joonis illustreerib reliaabluse kontseptsiooni, suhestades teda testi teise karakteristikuga --- valiidsusega.
+\subsection{Valiidsus ja reliaablus}
+Testi \textbf{valiidsus} on testi karakteristik, mis iseloomustab testi võimet mõõta seda, mida ta disainiti mõõtma. 
+Testi \textbf{reliaablus} on testi omadust saada sama subjekti erinevatel mõõtmistel sama testiga sama tulemus. Järgnev joonis illustreerib reliaabluse ja valiidsuse mõisteid.
 
 \begin{figure}[H]
 \centering
@@ -116,12 +125,118 @@ Testi reliaabluseks nimetatakse testi omadust saada sama subjekti erinevatel mõ
 \label{reliability_and_validity}
 \end{figure}
 
+On selge, et testi kõrge valiidsus on vajalik tingimus selleks, et test oleks kasutatav h\"upoteesi kontrolliks või mingite järelduste tegemiseks. Teoreetiliselt on võimalik ps\"uhhomeetriline test, mille valiidsus on suur ja reliaablus väike, kui eeldada et mõõtmisviga on sõltumatu juhuslik suurus, eeldus mida ka tavaliselt tehakse. Intuitiivselt on selge, et selline test ei praktikas kasutatav, kuna me ei oska väheste mõõtmiste raames hinnata mõõtmisvigade suurust ning piisavalt suure arvu mõõtmiste teostamine ei ole reaalselt võimalik, seega on praktikas testi kõrge reliaablus vajalik tingimus testi kõrgeks valiidsuseks.    
+
+\subsection{Reliaabluse formaalne definitsioon}
+Definitsioon andmisel võtame aluseks Melvin Novicki klassikalisest testiteooria \cite{Novick1966}\cite{Lord1968} tõlgendusest \cite[109]{Sijtsma2009}. 
+
+Olgu meil mingi kogum $I$ testile vastajaid ning mingisugune test, milles on $k$ k\"usimust ning olgu $X_{i}^{j}$ juhuslik suurus, mille jaotusfunktsioon sõltub vastajast, mille võimalike väärtusi vaatleme kui k\"usimuse $j$ vastuse arvulist tõlgendust mingi vastaja $i$ jaotusele vastavalt. Defineerime vastaja $i$ testi tulemuse $X_{+i}$ kui 
+
+\begin{equation*}
+X_{+i} = \sum \limits_{j=1}^k X_{i}^{j} \text{.}
+\end{equation*}
+
+
+Kuna juhusliku suuruste summa on samuti juhuslik suurus {\color{cyan} Okey lugeda juhuslik suurus selliseks mõisteks, mida ei ole vaja defineerida?} siis on $X_{+j}$ juhuslik suurus, mille jaotusfunktsioon on vastajast sõltuv.
+Analoogiliselt võime vaadelda ka testi tulemusi \"ule kõigi vastajate - sellisel juhul olgu $X^{j}$ juhuslik suurus mida iseloomustav jaotusfunktsioon kirjeldab kuidas vastajate populatsioon vastab k\"usimusele $j$  ning testi tulemus $X$ on defineeritav kui
+
+\begin{equation*}
+X = \sum \limits_{j=1}^k X^{j} \text{.}
+\end{equation*}
+
+Defineerime k\"usimuse tegeliku tulemuse vastaja $i$ jaoks kui testi tulemuse keskväärtuse {\color{cyan} Vajalik def ? } ehk
+
+\begin{equation*}
+t_i = \epsilon  \left[ X_{+i} \right] \text{.}\footnote{Tähistame keskväärtuse tähega $\epsilon$ kuna tavapärane tähistus $E$ leiab antud käsitluses teistsuguse rolli.}
+\end{equation*}
+
+Paneme tähele, et vaadeldes tegeliku tulemust \"ule kõigi vastajate võime rääkide tegelikust tulemusest kui juhuslikust suurusest, mida tähistame $T$ ja mille võimalike väärtuste hulk on $\left\lbrace t_i ~ | ~ i \in I \right\rbrace$.
+
+Tõlgendame vastaja $i$ testi tulemuse ja tegeliku tulemuse vahet mõõtmisveana, tähistame seda $E_i$. Seega $X_{+i} = t_i + E_i$. Analoogiliselt saame tõlgendada viga \"ule kõigi vastajate kui juhusliku suurust $E$, kusjuures $X = T + E$.
+
+Paneme tähele, et eelneva põhjal on vastaja $i$ mõõtmisvea keskväärtus $0$. Tõepoolest, kuna tegeliku tulemuse definitsiooni põhjal $\epsilon \left[ X_{+i} \right] = t_i$, siis saame mõõtmisvea definitsiooni arvesse võttes 
+\begin{equation*}
+ t_i = \epsilon \left[ X_{+i} \right] = \epsilon \left[ t_i + E_i \right] = \epsilon \left[ t_i \right] + \epsilon \left[ E_i \right] = t_i + \epsilon \left[ E_i \right] \implies \epsilon \left[ E_i \right] = 0 \text{.}
+\end{equation*}
+
+Lisaks on lihtne märgata, et  $D \left[ X_i \right] = D \left[ E_i \right]$, sest 
+\begin{equation*}
+D \left[ X_i \right] = D \left[ E_i + t_i \right] = D \left[ E_i \right] \text{.}
+\end{equation*}  
+
+Eelnevates definitsioonides keskendusime testi tulemuste mõtestamisele fikseeritud vastaja korral, tuues paralleelselt sisse analoogilised mõisted \"ule mingi vastajate kogumi. Kuna reeglina mõtestatakse teste praktikas mingi vastajate kogumi raames, siis keskendume ka meie edaspidi sellele.
+
+Niisiis, olgu meil meli mingi vastajate kogum $I$ ja eespool kirjeldatud juhuslikud suurused $X,T,E$, kusjuures $X = T + E$.
+
+
+Järgevalt esitame neli keskset klassikalise testi teooria eeldust \cite[10]{DeGruijter2005}:
+\begin{enumerate}[I]
+\item mõõtmisvea keskväärtus \"ule vastajate populatsiooni on 0 ehk 
+\begin{equation*}
+\epsilon \left[ E \right] = 0 \text{,}
+\end{equation*}
+\item korrelatsioon {\color{cyan} Def vajalik?} mõõtmisvea ja tegeliku tulemuse vahel \"ule vastajate kogumi on $0$ ehk
+\begin{equation*}
+corr \left( T, E \right) = 0 \text{.}
+\end{equation*} 
+\item Olgu meil sama testi kaks erinevat mõõtmist \"ule vastajate kogumi $I$, mille tulemused on $X$ ja $X`$, kusjuures $X = T + E$ ja $X` = T` + E`$. Siis \"uhe mõõtmise tegelik tulemus ei korreleeru teise mõõtmisveaga ehk
+\begin{equation*}
+corr \left( T, E' \right) = 0 \text{,}
+\end{equation*}   
+\item lisaks sellele ei korreleeru ka erinevate mõõtmiste mõõtmisvead ehk
+\begin{equation*}
+corr \left( E, E' \right) = 0 \text{.}
+\end{equation*}
+\end{enumerate}
+
+Järgnevalt toome sisse paralleelse testi mõiste. Kaks testi, mille tulemused \"ule kõigi vastajate kogumi $I$ on $X$ ja $X'$ on paralleelsed parajasti siis, kui kehtivad järgmised väited :
+\begin{enumerate}
+\item $t_i = t_i' ~ \forall i \in I$
+\item $D \left[ X \right] = D \left[ X' \right]$ {\color{cyan} Dispersiooni definitsioon vajalik ? }
+\end{enumerate}
+
+
+
+Paralleelse testi abil saame klassikalise testiteooria raames defineerida reliaabluse. Olgu meil kaks paralleelselt testi, mille tulemused \"ule vastajate kogumi $I$ on vastavalt $X$,$X'$ kus kumbgi ei ole konstante juhuslik suurus. Testi, mille tulemus on $X$,  reliaablus \"ule vastajate kogumi $I$ on võrdne $X$ ja $X'$ korrelatsiooniga (Pearsoni mõttes), mida tähistame $\rho_{XX'}$, formaalselt
+
+{\color{cyan}korrelatsiooni (ja kovariatsiooni definistioonid vajalikud?}
+\begin{equation*}
+\rho_{XX'} = corr \left( X,X' \right) \text{.}
+\end{equation*} 
+
+Paralleelse testi definitsiooni ja klassikalise testiteooria eelduste põhjal kehtib \begin{gather*}
+\rho_{XX'} = \frac{cov(XX')}{\sqrt{D \left[ X \right] D \left[ X' \right]}} =   
+\frac{\epsilon \left[XX' \right] - \epsilon \left[X \right] \epsilon \left[ X' \right]}{D \left[ X \right]} = \\ 
+= \frac{\epsilon \left[\left(T + E \right) \left( T' + E ' \right) \right] - \epsilon \left[T + E \right] \epsilon \left[ T'+E' \right]}{D \left[ X \right]} = \\
+= \frac{\epsilon \left[\left(T + E \right) \left( T + E ' \right) \right] - \left( \epsilon \left[T \right] - \epsilon \left[ E \right] \right) \left( \epsilon \left[ T \right] - \epsilon \left[ E' \right] \right)}{D \left[ X \right]} = \\
+= \frac{\epsilon \left[T^2 + TE + TE' + EE'  \right] -  \epsilon \left[T \right]  \epsilon \left[ T \right]}{D \left[ X \right]} = \\
+= \frac{\epsilon \left[T^2 \right]  + \epsilon \left[ TE \right] + \epsilon \left[ TE' \right] + \epsilon \left[ EE'  \right] -  \epsilon \left[T \right]^2}{D \left[ X \right]} 
+= \frac{\epsilon \left[T^2 \right] - \epsilon \left[ T \right]^2}{D \left [ X \right] } = \\ 
+= \frac{cov(T,T)}{D \left[ X \right]} = \frac{D \left[T \right]}{D \left[ X \right]} \text{.}
+\end{gather*}
+
+Paneme tähele, et eelneva põhjal $\rho_{XX'} \in \left[0,1 \right]$. Samuti märgime, et kuna $T = X - E$, siis kehtib
+\begin{equation*}
+\rho_{XX'} = \frac{D \left[ T \right]}{D \left[ X \right] } = \frac{D \left[ X - E \right]}{D \left[ X \right] } = \frac{D \left[X \right] - D \left[ E \right]}{D \left[ X \right]} = 1 - \frac{D \left[ E \right]}{D \left[ X \right]} \text{.}
+\end{equation*}
+
+Eelneva põhjal on selge, et väide  "testi reliaablus on suurem" on samaväärne järgmise kolme väitega\cite[110]{Sijtsma2009}:
+\begin{enumerate}
+\item testi korrellatsioon paralleelse testiga on suurem,
+\item testi tegeliku tulemuse dispersioon on suurem võrreldes testi tulemuse dispersiooniga,
+\item testi mõõtmisvea dispersioon on väiksem võrreldes testi tulemuse dispersiooniga.
+\end{enumerate}
+
+Märgime, et klassikalise testiteooria raames defineeritud reliaablus sobib kokku paragraafi alguses antud mitteformaalse definitsiooniga, kuna paralleelseks testiks võib lugeda ka sama testi uuesti läbiviimise sama vastajate kogumi peal, kusjuures klassikalise testiteooia eeldused ei ole väga kitsendavad, kui suudame tagada selle, et testis ei esine s\"usteematilisi mõõtmisvigu. 
+
+Kuna testi tegelik tulemus on suurus, mida me prakikas ei tea ning ka paralleelsete testide läbiviimine ei ole tihti võimalik on kasutusele võetud mitmeid praktikas kasututavaid hinnanguid, mis on reliaabluse alumisteks tõketeks. Järgnevalt vaatleme mõningaid neist.
+ 
 Reliaabluse mõõtmise viisidest on osutunud popularseimaks sisemise reliaabluse leidmine, näiteks kolm neljandikku Ameerika \"Uhendriikide teadusajakirjas "`\textit{Directory of Unpublished Experimental Mental Measures}"' ilmunud uurimustest kasutas testi reliaabluse hindamiseks justnimelt sisemist reliaablust \cite[177] {Henson2001}. Järgnevalt vaatleme  seda reliaabluse mõõtmise viisi lähemalt. 
 
 
 \subsection{Sisemine reliaablus}
 
-K\"usimustiku sisemine reliaablus (\textit{internal consistency})hindab testi erinevate k\"usimuste vastuste järjepidevust ehk seda, kui hästi on kooskõlas \"uhist  konstruktsiooni hindavad k\"usimused\cite[177] {Henson2001}. Piltlikult väljendudes, olgu meil järgnev k\"usimustik: 
+K\"usimustiku sisemine reliaablus (\textit{internal consistency}) hindab testi erinevate k\"usimuste vastuste järjepidevust ehk seda, kui hästi on kooskõlas \"uhist  konstruktsiooni hindavad k\"usimused\cite[177] {Henson2001}. Piltlikult väljendudes, olgu meil järgnev k\"usimustik: 
 
 \begin{figure}[H]
 
@@ -224,19 +339,19 @@ kus $k$ tähistab k\"usimuste arvu, $\sigma_i$ on standardviga \"uhe k\"usimuse 
 
 \paragraph{Miks ma taandan selles töös sisemise järjekindluse mõõtmise Cronbachi alfale?}\mbox{}\\*
 
-Kuna Cronbach'i alfal on mitmeid puuduseid, millest mõningad toodud ära David Streineri artikklis \cite[101-102]{Streiner2010} ning isegi mõõdiku autor Lee Cronbach soovitab oma 1951 aastal töötatud mõõdiku asemel kasutatada alternatiivseid mõõdikuid \cite{Cronbach2004}, on oluline vastata alapealkirjas p\"ustitatid k\"usimusele. Kaks peamist põhjust on järgnevad:
+Kuna Cronbach'i alfal on mitmeid puuduseid, millest mõningad on toodud ära David Streineri artiklis \cite[101-102]{Streiner2010}, ning isegi mõõdiku autor Lee Cronbach soovitab oma 1951. aastal välja töötatud mõõdiku asemel kasutatada alternatiivseid mõõdikuid \cite{Cronbach2004}, on oluline vastata alapealkirjas p\"ustitatud k\"usimusele. Kaks peamist põhjust on järgnevad:
 \begin{enumerate}[I]
-\item Cronbachi alfa on hetkel kõige kasutatavaim mõõdik sisemise reliaabluse mõõtmiseks ps\"uhhomeetriliste testide juures. Seetõttu on väljapakutud meetod testide tulemuste anal\"u\"usiatele tutav ning seega loodetavasti lihtsamini kasutatav.
-\item Cronbachi alfa leidmine on arvutuslikult k\"ullalitki lihtne. Kuna käesolev töö peamine eesmärk on selgitada, kas väljapakutud lähenemine on mõistlik, siis ei ole parematest mõõdikutest potensiaalselt saadav kasu piisavalt suur, et tasa teha \"ulesande lahendamise raskendumist. Jutul, kui töö tulemus on aga positiivne tuleks  uurida ka teiste mõõdikute võimalikku kasutamist.
+\item Cronbachi alfa on hetkel kõige kasutatavam mõõdik sisemise reliaabluse mõõtmiseks ps\"uhho-meetriliste testide juures. Seetõttu on väljapakutud meetod testide tulemuste anal\"u\"usijatele tuttav ning seega loodetavasti lihtsamini kasutatav.
+\item Cronbachi alfa leidmine on arvutuslikult k\"ullaltki lihtne. Kuna käesoleva töö peamine eesmärk on selgitada, kas väljapakutud lähenemine on mõistlik, siis ei ole parematest mõõdikutest potentsiaalselt saadav kasu piisavalt suur, et tasa teha \"ulesande lahendamise raskemaks muutumist. Juhul, kui töö tulemus on aga positiivne,  tuleks uurida ka teiste mõõdikute võimalikku kasutamist.
 
 \end{enumerate}
 
-\paragraph{Milliseid piirangud seab Cronbachi alfa kasutamine?}\mbox{}\\*
+\paragraph{Milliseid piiranguid seab Cronbachi alfa kasutamine?}\mbox{}\\*
 
 Tooksin esile kaks tähtsamat piirangut:
 \begin{enumerate}[I]
-\item Uuritavate k\"usimustike puhul peaks sama konstruktsiooniga tegelema võimalikult palju k\"usimusi, vältima peaks k\"usimustikke, kus \"he konstruktsiooni kohta on alla kolme k\"usimuse.
-\item K\"usimustikud ei tohi olla liiga pikad, Cronbachi alfa peegeldab lisaks sisemisele järjekindlusele ka k\"usimustiku pikkust. \cite[101]{Streiner2010} Liiga pikka k\"usimustiku puhul on oht, et pikkusest saab domineerv osa Cronbachi alfast.
+\item Uuritavate k\"usimustike puhul peaks sama konstruktsiooniga tegelema võimalikult palju k\"usimusi, vältima peaks k\"usimustikke, kus \"uhe konstruktsiooni kohta on alla kolme k\"usimuse.
+\item K\"usimustikud ei tohi olla liiga pikad, Cronbachi alfa peegeldab lisaks sisemisele järjekindlusele ka k\"usimustiku pikkust. \cite[101]{Streiner2010} Liiga pika k\"usimustiku puhul on oht, et pikkusest saab domineerv osa Cronbachi alfast.
 \end{enumerate}
 
 \label{sec:Cronbach}
@@ -251,7 +366,7 @@ Tooksin esile kaks tähtsamat piirangut:
 
 \section{\"Ulesande p\"ustitus}
 
-Selle töö raames loodame välja pakkuda viisi, kuidas paigutada intervallskaalal erinevaid vastuseid Likerti skaalalt. Eesmärk on leida parem paigutus kui naiivne meetod, kus eeldatakse, et erinevate hinnagute vahekaugused on samad. Vaatleme kahte näidet:
+Selle töö raames loodame välja pakkuda viisi, kuidas paigutada intervallskaalal erinevaid vastuseid Likerti skaalalt. Eesmärk on leida parem paigutus kui vaikimisi meetod, kus eeldatakse, et erinevate hinnagute vahekaugused on samad. Vaatleme kahte näidet:
 
 
 \begin{figure}[H]
@@ -289,7 +404,7 @@ Selle töö raames loodame välja pakkuda viisi, kuidas paigutada intervallskaal
 		}
 		
 	}
-\caption{Näide, kuidas hinnangud skaalal naiivset meetodit kasutudes paigutuvad}
+\caption{Näide, kuidas hinnangud skaalal hetkel vaikimisi meetodit kasutades paigutuvad}
 \label{quiz}
 \end{figure}
 
@@ -328,27 +443,27 @@ Selle töö raames loodame välja pakkuda viisi, kuidas paigutada intervallskaal
 		}
 	}
 
-\caption{Näide alternatiivset võimalikku hinnangute paiknemisest skaalal}
+\caption{Näide hinnangute alternatiivsest paiknemisest skaalal}
 \label{quiz1}
 
 \end{figure}
 
-Kui me tahame pakkuda välja alternatiive naiivsele hinnangule peab meil olema põhjendus, miks välja pakutud lahendus kirjeldab realsust täpsemalt. Pakume välja järmise lahenduse: 
-\"uritame leida naiivsest skaalat nii, et k\"usitluse sisemine reliaablus oleks võimalikult suur. Piirame ennast sellega, et  hinnangute esialge järjestus ei tohi muutuda. Sisemise järjekindluse maksimeerimise taandame antud töö käigus Cronbachi alfal maksimeerimisele.\footnote{Põhjendus, miks selline taandamine on tehtud on äratoodud peat\"ukkis \hyperref[sec:Cronbach]{\ref*{sec:Cronbach}}.} 
+Kui me tahame välja pakkuda alternatiive vaikimisi hinnangule, peab meil olema põhjendus, miks välja pakutud lahendus kirjeldab reaalsust täpsemalt. Pakume välja järgmise lahenduse: 
+\"uritame leida hinnangute paiknemist skaalal nii, et k\"usitluse sisemine reliaablus oleks võimalikult suur. Piirame ennast sellega, et  hinnangute esialgne järjestus ei tohi muutuda. Sisemise järjekindluse maksimeerimise taandame antud töö käigus Cronbachi alfa maksimeerimisele.\footnote{Põhjendus, miks selline taandamine on tehtud, on ära toodud peat\"ukis \hyperref[sec:Cronbach]{\ref*{sec:Cronbach}}.} 
  
 
 \section*{Altervatiivid}
 
 {\color{cyan} Ilmselt siit edasi ei lähe, lendab praeguses lahenduses välja (kui just mingi vahva idee peale ei tule). Võib-olla pakkuda siin välja alternatiive Cronbach'i alfa abil sobivate vahekauguste leidmisele) }
 \begin{enumerate}
-\item Kõige triviaalsem viis: kõikide k\"usimuste vastused kujutama hulgale \{1,2,3,4,5\}, leiame mudeli, mille võime kirjeldada valitud k\"usimust on suurim. Tegemist on ilmselt vaikimisi variandiga ehk loodud mudelit peab võrdlema 
-\item Selle asemel, et kujutada hulgale {1,2,3,4,5}, leiame sobivad vasted nii, et mudeli kirjeldav jõud oleks suurim. Oht selles, et meie mudel kirjeldab väga hästi olemasolevat valimit, \"utlemata suurt midagi \"uldkogumi kohta. {\color{blue} Huvitav oleks, kas lihsalt nii midagi teha ei annaks ? Overfittimise vastu saaks, aga vaja oleks valimit, mis oleks piisavalt suur, et seda kaheks jagada(midagi, mille pealt mudelit ehitada ja midagi, mille pealt seda validifitseerida}. 
+\item Kõige triviaalsem viis: kujutame kõikide k\"usimuste vastused hulgale $\left\lbrace 1,2,3,4,5 \right\rbrace$ , leiame mudeli, mille võime kirjeldada valitud k\"usimust on suurim. Tegemist on ilmselt vaikimisi variandiga ehk loodud mudelit peab võrdlema 
+\item Selle asemel, et kujutada hulgale $\left\lbrace 1,2,3,4,5 \right\rbrace$, leiame sobivad vasted nii, et mudeli kirjeldav jõud oleks suurim. Sellise lähenemise oht seisneb selles, et meie mudel kirjeldab väga hästi olemasolevat valimit, kuid ei \"utle suurt midagi \"uldkogumi kohta. {\color{blue} Huvitav oleks, kas lihsalt nii midagi teha ei annaks ? Overfittimise vastu saaks, aga vaja oleks valimit, mis oleks piisavalt suur, et seda kaheks jagada(midagi, mille pealt mudelit ehitada ja midagi, mille pealt seda validifitseerida}. 
 \item {\color{blue} Midagi veel? Peab uurima.}
 \end{enumerate}
 
 \section{\"Ulesande matemaatiline p\"ustitus}
 
-Olgu meil k\"usimusitk $n$-väitega, iga näite kohta palutakse hinnangut 5-palli Likerti skaalal. Hinnanguid võime vaadelda kui  juhuslike suurusei $K_1,K_2,...,K_n, K_iw$ mille muutumispiirkonnaks on hulk $\{1,2,3,4,5\}$. Toome sisse ka tähistused $p_{i \alpha}, i \in \{1,2,...,n\}, \alpha \in \{1,2,3,4,5\}$, kus $p_{i \alpha}$ tähistab olemasolevate andmete põhjal antud hinnangut tõenäosusesele, et k\"usimusele $K_i$ anti hinnang $\alpha$. 
+Olgu meil k\"usimustik $n$-väitega, kus iga näite kohta palutakse hinnangut 5-palli Likerti skaalal. Hinnanguid võime vaadelda kui juhuslikke suurusi $K_1,K_2,...,K_n, K_iw$ mille muutumispiirkonnaks on hulk $\{1,2,3,4,5\}$. Toome sisse ka tähistused $p_{i \alpha}, i \in \{1,2,...,n\}, \alpha \in \{1,2,3,4,5\}$, kus $p_{i \alpha}$ tähistab olemasolevate andmete põhjal antud hinnangut tõenäosusele, et k\"usimusele $K_i$ anti hinnang $\alpha$. 
 
 Tuletame meelde Cronbachi alfa definitsiooni:
 
@@ -371,7 +486,7 @@ Võttes arvesse, et $D(\sum \limits_{i=0}^n K_i) = \sum \limits_{i=0}^n \sum \li
 (\frac{k}{k-1})( 1 - \frac{\sum \sigma_i^2}{\sigma_t^2}) = \frac{n}{n-1}\left(1 - \frac
 {\sum \limits_{i=0}^n D(K_i)}{\sum \limits_{i=0}^n \sum \limits_{j=0}^n COV(K_i,K_j)}\right)
 \end{equation*}
-Vastavalt \"ulesande p\"ustituses toodud ideele soovime leida sellise viisi hinnangute tõlgendamiseks, et Cronbachi alfa oleks maksimaalne. Kujutama juhuslikud suurused $K_1,K_2,...,K_n$ juhuslikeks suurusteks $L_1, L_2,L_2,...,L_n$, kusjuures juhusliku suurus $L_i$ määramispiirkond \"uhtib suuruse $K_i$ määramispiirkonnaga ning $L_i$ saab väärtusi hulgast $\Lambda_i = \{\lambda_{1i},\lambda_{2i},\lambda_{3i},\lambda_{4i},\lambda_{5i}\} ~ i \in {1,2,...n}$. Lisaks säilitagu  kehtigu järgnevad kitsendused: 
+Vastavalt \"ulesande p\"ustituses toodud ideele soovime leida sellise viisi hinnangute tõlgendamiseks, et Cronbachi alfa oleks maksimaalne. Kujutame juhuslikud suurused $K_1,K_2,...,K_n$ juhuslikeks suurusteks $L_1, L_2,L_2,...,L_n$, kusjuures juhusliku suuruse $L_i$ määramispiirkond \"uhtib suuruse $K_i$ määramispiirkonnaga ning $L_i$ saab väärtusi hulgast $\Lambda_i = \{\lambda_{1i},\lambda_{2i},\lambda_{3i},\lambda_{4i},\lambda_{5i}\} ~ i \in {1,2,...n}$. Lisaks kehtigu järgnevad kitsendused: 
 
 
 \begin{equation*}
@@ -384,7 +499,7 @@ Vastavalt \"ulesande p\"ustituses toodud ideele soovime leida sellise viisi hinn
 K_i = 1 \implies L_i = \lambda_{i1}, K_i = 2 \implies L_i = \lambda_{i2},\cdots, K_i = 5 \implies L_i =\lambda_{i5}
 \end{equation*}
 
-Paneme tähele, et Cronbachi alfa arvutamine, niisiis ka maksimeerimne, on endiselt keeruline. Siinkohal märgime, et hinnangute tõlgenduste juures ei huvita meid mitte absoluutne vaid suhteline paigutus. Niisiis võime oma juhusliku suurusi piirate järgnevaga:
+Paneme tähele, et Cronbachi alfa arvutamine, seega ka maksimeerimine, on endiselt keeruline. Siinkohal märgime, et hinnangute tõlgenduste juures ei huvita meid mitte absoluutne, vaid suhteline paigutus. Niisiis võime juhuslikke suurusi piirata järgnevate kitsendustega:
 
 
 \begin{equation}
@@ -398,14 +513,14 @@ p_{i1}*(\lambda_{i1})^2+ p_{i2}*(\lambda_{i2})^2 + p_{i3}*(\lambda_{i3})^2 + p_{
 \end{equation}
 
 
-Paneme tähele, et sellisel kujul olevaid k\"usimusi sisaldava testi Cronbachi alfa esitub lihtsamal kujul:
+Paneme tähele, et sellisel skaalal olevaid k\"usimusi sisaldava testi Cronbachi alfa esitub lihtsamal kujul:
 
 \begin{equation}
 \alpha = \frac{n}{n-1}\left(1 - \frac
 {n}{\sum \limits_{i=0}^n \sum \limits_{j=0}^n COV(L_i,L_j)}\right)
 \end{equation}
 
-Siit näeme, et sellisel juhul taandub Cronbachi alfa maksimeerimine avaldise $\sum \limits_{i=0}^n \sum \limits_{j=0}^n COV(L_i,L_j)$ maksimeerimisele. {\color{cyan} Järgev on täiesti trivaalne mapping Y = (X+1)*2 +1 vms. Põhjus miks ta siia sisse tõin oli soov rõhutada absoluutse skaala ebaolulisust. Võib välja jääda.}Kuna uuritavaid teste vaadeltakse tavaliselt viiepalli skaalal, siis võime viia pärast sobivate kordajate leidmist veel \"uhe teisenduse, mis viib vahemikkust $(-1,1)$ vahemikku $(0,5)$, säilitades hinnangute (mida oleme tähistanud $\lambda$-dega) omavaheliste kauguste suhte. 
+Siit näeme, et sellisel juhul taandub Cronbachi alfa maksimeerimine avaldise $\sum \limits_{i=0}^n \sum \limits_{j=0}^n COV(L_i,L_j)$ maksimeerimisele. {\color{cyan} Järgev on täiesti trivaalne mapping Y = (X+1)*2 +1 vms. Põhjus miks ta siia sisse tõin oli soov rõhutada absoluutse skaala ebaolulisust. Võib välja jääda.}Kuna uuritavaid teste vaadeldakse tavaliselt 5-palli skaalal, siis pärast sobivate kordajate leidmist võime teha veel \"uhe teisenduse, mis viib vahemikkust $(-1,1)$ vahemikku $(0,5)$, säilitades hinnangute (mida oleme tähistanud $\lambda$-dega) omavaheliste kauguste suhte. {\color{cyan} normeerime } 
 
 Kogu eelnevalt tehtud illustreerib järgmine joonis, kus autor on p\"u\"udnud selgitada \"uhe juhusliku suuruse määramispiirkonna muutuse läbi eelnevalt kirjeldatud protsesside. 
 
@@ -527,7 +642,7 @@ Kogu eelnevalt tehtud illustreerib järgmine joonis, kus autor on p\"u\"udnud se
 		}
 		
 	}
-\caption{Illutstratsioon sellest, kuidas suhestub hulk $ran(K_i)$ hulka $ran(L_i)$ ning see omakorda hulka, mis tekib peale teisendust hulgast $ran(L_i)$ viipalli skaalale, säilitades hinnagute vahelised kaugused  }
+\caption{Illustratsioon sellest, kuidas suhestub hulk $ran(K_i)$ hulka $ran(L_i)$ ning see omakorda hulka, mis tekib peale teisendust hulgast $ran(L_i)$ 5-palli skaalale, säilitades hinnagute vahelised kaugused  }
 \label{projection}
 \end{figure}
 
@@ -545,7 +660,7 @@ p_{(n5)(11)}&p_{(n5)(12)}&p_{(n5)(13)}&p_{(n5)(14)}&p_{(n5)(15)}&p_{(n5)(21)}&\c
 \end{equation*}
 \end{tightcenter}
 
-kus  $p_{(i \alpha) (j \beta)}, i,j \in \{1,2,...,n\}, \alpha , \beta \in \{1,2,3,4,5\}$ tähistab tõenäousust, et k\"usimusele $K_i$ anti vastus $\alpha$ ja k\"usimusele $K_j$ anti vastus $\beta$. 
+kus  $p_{(i \alpha) (j \beta)}, i,j \in \{1,2,...,n\}, \alpha , \beta \in \{1,2,3,4,5\}$ tähistab tõenäosust, et k\"usimusele $K_i$ anti vastus $\alpha$ ja k\"usimusele $K_j$ anti vastus $\beta$. 
 
 Paneme tähele, et kuna $p_{(i \alpha)( i \alpha)} = p_{i \alpha}$, siis avaldub eelnev maatriks ka järgnevalt:
 
@@ -615,12 +730,12 @@ p_{(n5)(11)}&p_{(n5)(12)}&\cdots&p_{(n5)(n5)} \\
 
 
 Eelneva põhjal piisab meile Cronbachi alfa leidmiseks ruutvõrrandi $xPx^T$ maksimeerimisest, arvestades eelnevalt äratoodud piiranguid $L_i$ keskväärtusele ja dispersioonile..
-Selle põhjal saame p\"ustitada  \textit{Quadratically constrained quadratic programm(QCQP)}'i {\color{cyan}Mingi pädev eestikeelne termin selle kohta ?} t\"u\"upi optimeerimis probleemi, mille lahendus annab meile otsitavad tõlgendused. Teeme seda:  
+Selle põhjal saame p\"ustitada  \textit{Quadratically constrained quadratic programm(QCQP)}'i {\color{cyan}Mingi pädev eestikeelne termin selle kohta ?} t\"u\"upi optimeerimisprobleemi, mille lahendus annab meile otsitavad tõlgendused. Teeme seda:  
 
 
 
 \begin{gather}
-max ~ x^TPx  \notag \\
+min ~ x^T(-P)x  \notag \\
 R_i^Tx = 0,  i \in {1,2,...,n} \notag \\
  R_i = (\underbrace{0,0,...0,0}_{(i-1)*5}p_ia,p_ib,p_ic,p_id,p_ie, \underbrace{0,0,...,0,0}_{(n-i)*5})  \displaybreak[1] \\
 x^TP_ix = 1, i \in \{1,2,...,n\}, ~
@@ -638,6 +753,53 @@ p_i\alpha & i = j
 \end{cases}
 , \alpha \in \{a,b,c,d,e\} \notag
 \end{gather}
+
+\section{Ülesande t\"u\"ubi keerekuse anal\"u\"us}
+Järgnevas anal\"u\"usime ruutkitsendustega ruuplaneerimis\"ulesannete keerukust \"uldisemalt. Kõigepealt defineerime \"uldkuju, selleks on,
+\begin{equation}
+\begin{gathered}
+\label{QCQP}
+min~ \frac{1}{2}x^T P_0 x + q_0^Tx  \\
+\frac{1}{2}x^T P_i x + q_i^Tx + r_i \leq 0 , i \in \left\lbrace 1,...,m \right\rbrace, \\
+Ax = b, P_0,P_i \in R^{n \times n}, x,q_0,q_i \in R^{n}, \text{kus x on optimeeritav muutuja.} 
+\end{gathered}
+\end{equation}
+Paneme tähele, et kitsendused $x_i(x_i-1) \leq 0 $, $x_i(1-x_i) \leq 0 $ rahuldavad probleemi  \eqref{QCQP} kitsendustele pandud tingimusi. Tõepoolest, toodud kitsendused saab viia kujule
+\begin{equation*}
+\begin{gathered}
+x^TP_i x + (-q_i^T) x \leq 0, \\
+x^T(-P_i)x + q_i^Tx \leq 0, P_i =
+\begin{cases}
+p_ii = 1 \\ 
+p_jk = 0, j,k \neq i
+\end{cases}, 
+q_i = \begin{cases}
+q_i = 1 \\
+q_j = 0, j \neq i
+\end{cases}.
+\end{gathered}
+\end{equation*}
+Eelnevad kitsendused on samaväärsed kitsendusega $x_i(x_i-1) = 0$, mis on samaväärne kitsendusega $x_i \in \left\lbrace 0,1 \right\rbrace$. Niisiis saab kahendtäisarv-programmi (binary integer program, 0-1 integer program) esitada eelnevalt kirjeldatud kujul.
+
+\subsection{Kahendtäisarv programm}
+ Kahendtäisarv-programm on optimeerimisprobleem, kus kõik muutujad peavad saama väärtusi hulgast $\left\lbrace 0,1 \right\rbrace$. Kahendtäisarv-programmi kanooniline kuju on 
+\begin{equation}
+\begin{gathered}
+\label{binary}
+max~ c^T x \\
+Ax \leq b, \\
+x_i \in  \left\lbrace 0,1 \right\rbrace, \\
+a \in A, b_0 \in  b, c_0 \in c \implies a,b_0,c_0 \in \mathbb{Z} 
+\end{gathered}
+\end{equation}
+
+\subsection{NP-Hard probleemid}
+
+\section{\"Ulesande anal\"u\"usiks vajalik taust}
+\subsection{Kumerus}
+\begin{kumer_f}
+Olgu 
+\end{kumer_f}
 
 \section{Lahenduse idee}
 {\color{cyan} Kas probleem on SDP t\"u\"upi või SDP? Miidlale kirjutan vast nendes k\"usimustes. Mingi sissejuhatav jutt QCQP ja SDP kohta, kas algusessse taust peat\"ukki või pigem teksti sisse ?}
@@ -720,7 +882,7 @@ I_k & Q_i^T x \\
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.5\textwidth, height = 0.7\textwidth]{Example_Likert_Scale.png}
-\caption{Näide k\"usimustikust, kus rakendatud Likerti skaalat, k\"usimused on paigutatud nende järjestikulisus rõhutamiseks teljele\cite{Smith}}
+\caption{Näide k\"usimustikust, kus on rakendatud Likerti skaalat; k\"usimused on paigutatud nende järjestikulisuse rõhutamiseks teljele\cite{Smith}}
 \label{likert2}
 \end{figure}
 
