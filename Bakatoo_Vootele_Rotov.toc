@@ -1,21 +1,33 @@
 \select@language {estonian}
-\contentsline {section}{\numberline {1}T\IeC {\"o}\IeC {\"o} \"ulesehitus}{3}{section.1}
-\contentsline {section}{\numberline {2}Taustinfo}{3}{section.2}
-\contentsline {subsection}{\numberline {2.1}Likerti skaala }{3}{subsection.2.1}
-\contentsline {paragraph}{Likerti skaala - j\IeC {\"a}rjestikskaala v\IeC {\~o}i intervallskaala?}{3}{section*.4}
-\contentsline {subsection}{\numberline {2.2}Valiidsus ja reliaablus}{4}{subsection.2.2}
-\contentsline {subsection}{\numberline {2.3}Reliaabluse formaalne definitsioon}{4}{subsection.2.3}
-\contentsline {subsection}{\numberline {2.4}Sisemine reliaablus}{7}{subsection.2.4}
-\contentsline {subsection}{\numberline {2.5}Cronbachi alfa}{7}{subsection.2.5}
-\contentsline {paragraph}{Miks ma taandan selles t\IeC {\"o}\IeC {\"o}s sisemise j\IeC {\"a}rjekindluse m\IeC {\~o}\IeC {\~o}tmise Cronbachi alfale?}{8}{section*.5}
-\contentsline {paragraph}{Milliseid piiranguid seab Cronbachi alfa kasutamine?}{8}{section*.6}
-\contentsline {section}{\numberline {3}\"Ulesande p\"ustitus}{8}{section.3}
-\contentsline {section}{\numberline {4}\"Ulesande matemaatiline p\"ustitus}{9}{section.4}
-\contentsline {section}{\numberline {5}\IeC {\"U}lesande t\"u\"ubi keerekuse anal\"u\"us}{13}{section.5}
-\contentsline {subsection}{\numberline {5.1}Kahendt\IeC {\"a}isarv programm}{13}{subsection.5.1}
-\contentsline {subsection}{\numberline {5.2}NP-Hard probleemid}{13}{subsection.5.2}
-\contentsline {section}{\numberline {6}\"Ulesande anal\"u\"usiks vajalik taust}{13}{section.6}
-\contentsline {subsection}{\numberline {6.1}Kumerus}{13}{subsection.6.1}
-\contentsline {section}{\numberline {7}Lahenduse idee}{13}{section.7}
-\contentsline {section}{\numberline {8}Teisendus \textit {QCQP} t\"u\"upi \"ulesandelt \textit {SDP} t\"u\"upi \"ulesandele}{14}{section.8}
-\contentsline {section}{\numberline {9}Lisa}{16}{section.9}
+\contentsline {section}{\numberline {1}Sissejuhatus}{4}{section.1}
+\contentsline {section}{\numberline {2}Taustinfo ja probleemip\IeC {\"u}stitus}{5}{section.2}
+\contentsline {subsection}{\numberline {2.1}Taustinfo}{5}{subsection.2.1}
+\contentsline {subsubsection}{\numberline {2.1.1}K\IeC {\"u}simustik, k\IeC {\"u}simus ja Likerti skaala}{5}{subsubsection.2.1.1}
+\contentsline {subsubsection}{\numberline {2.1.2}Likerti skaala t\IeC {\~o}lgendamine intervallskaalana}{5}{subsubsection.2.1.2}
+\contentsline {subsubsection}{\numberline {2.1.3}Testi valiidsus}{6}{subsubsection.2.1.3}
+\contentsline {subsubsection}{\numberline {2.1.4}Testi reliaablus}{6}{subsubsection.2.1.4}
+\contentsline {subsubsection}{\numberline {2.1.5}Valiidsuse ja reliaabluse suhe}{6}{subsubsection.2.1.5}
+\contentsline {subsubsection}{\numberline {2.1.6}Sisemine j\IeC {\"a}rjepidevus}{7}{subsubsection.2.1.6}
+\contentsline {subsection}{\numberline {2.2}Probleemi p\IeC {\"u}stitus}{8}{subsection.2.2}
+\contentsline {section}{\numberline {3}Reliaablus klassikalises testiteoorias}{9}{section.3}
+\contentsline {subsection}{\numberline {3.1}Reliaabluse definitsioon}{9}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Reliaabluse hindamine}{15}{subsection.3.2}
+\contentsline {section}{\numberline {4}Alumised t\IeC {\~o}kked reliaablusele}{16}{section.4}
+\contentsline {subsubsection}{\numberline {4.0.1}Alumine t\IeC {\~o}ke $\lambda _1$}{16}{subsubsection.4.0.1}
+\contentsline {subsubsection}{\numberline {4.0.2}Alumine t\IeC {\~o}ke $\lambda _2$}{17}{subsubsection.4.0.2}
+\contentsline {subsubsection}{\numberline {4.0.3}Alumine t\IeC {\~o}ke $\lambda 3$}{19}{subsubsection.4.0.3}
+\contentsline {subsubsection}{\numberline {4.0.4}Alumine t\IeC {\~o}ke $\lambda _4$}{20}{subsubsection.4.0.4}
+\contentsline {subsubsection}{\numberline {4.0.5}Alumine t\IeC {\~o}ke $glb$}{20}{subsubsection.4.0.5}
+\contentsline {subsection}{\numberline {4.1}Cronbachi alfa}{21}{subsection.4.1}
+\contentsline {paragraph}{Miks ma taandan selles t\IeC {\"o}\IeC {\"o}s sisemise j\IeC {\"a}rjekindluse m\IeC {\~o}\IeC {\~o}tmise Cronbachi alfale?}{21}{section*.2}
+\contentsline {section}{\numberline {5}\"Ulesande p\"ustitus}{22}{section.5}
+\contentsline {section}{\numberline {6}\"Ulesande matemaatiline p\"ustitus}{22}{section.6}
+\contentsline {section}{\numberline {7}\IeC {\"U}lesande t\"u\"ubi keerekuse anal\"u\"us}{26}{section.7}
+\contentsline {subsection}{\numberline {7.1}Kahendt\IeC {\"a}isarv programm}{27}{subsection.7.1}
+\contentsline {subsection}{\numberline {7.2}NP-Hard probleemid}{27}{subsection.7.2}
+\contentsline {section}{\numberline {8}\"Ulesande anal\"u\"usiks vajalik taust}{27}{section.8}
+\contentsline {subsection}{\numberline {8.1}Kumerus}{27}{subsection.8.1}
+\contentsline {section}{\numberline {9}Lahenduse idee}{27}{section.9}
+\contentsline {section}{\numberline {10}Teisendus \textit {QCQP} t\"u\"upi \"ulesandelt \textit {SDP} t\"u\"upi \"ulesandele}{27}{section.10}
+\contentsline {section}{\numberline {11}Teek}{29}{section.11}
+\contentsline {section}{\numberline {12}Lisa}{30}{section.12}

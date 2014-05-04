@@ -828,6 +828,7 @@ matplotlib.tests.test_artist|J:\Python32\lib\site-packages\matplotlib\tests\test
 matplotlib.tests.test_axes|J:\Python32\lib\site-packages\matplotlib\tests\test_axes.py
 matplotlib.tests.test_backend_pdf|J:\Python32\lib\site-packages\matplotlib\tests\test_backend_pdf.py
 matplotlib.tests.test_backend_pgf|J:\Python32\lib\site-packages\matplotlib\tests\test_backend_pgf.py
+matplotlib.tests.test_backend_qt4|J:\Python32\lib\site-packages\matplotlib\tests\test_backend_qt4.py
 matplotlib.tests.test_backend_svg|J:\Python32\lib\site-packages\matplotlib\tests\test_backend_svg.py
 matplotlib.tests.test_basic|J:\Python32\lib\site-packages\matplotlib\tests\test_basic.py
 matplotlib.tests.test_cbook|J:\Python32\lib\site-packages\matplotlib\tests\test_cbook.py
@@ -839,6 +840,7 @@ matplotlib.tests.test_dviread|J:\Python32\lib\site-packages\matplotlib\tests\tes
 matplotlib.tests.test_figure|J:\Python32\lib\site-packages\matplotlib\tests\test_figure.py
 matplotlib.tests.test_image|J:\Python32\lib\site-packages\matplotlib\tests\test_image.py
 matplotlib.tests.test_legend|J:\Python32\lib\site-packages\matplotlib\tests\test_legend.py
+matplotlib.tests.test_lines|J:\Python32\lib\site-packages\matplotlib\tests\test_lines.py
 matplotlib.tests.test_mathtext|J:\Python32\lib\site-packages\matplotlib\tests\test_mathtext.py
 matplotlib.tests.test_mlab|J:\Python32\lib\site-packages\matplotlib\tests\test_mlab.py
 matplotlib.tests.test_patches|J:\Python32\lib\site-packages\matplotlib\tests\test_patches.py

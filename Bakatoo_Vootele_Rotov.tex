@@ -1,4 +1,4 @@
- \documentclass[a4paper]{article}
+\documentclass[a4paper,12pt]{article}
 
 \usepackage[a4paper]{geometry}
 \usepackage{amssymb,amsmath}
@@ -14,6 +14,14 @@
 \usepackage{etoolbox}
 \usepackage{theoremref}
 \usepackage[hidelinks]{hyperref}
+\usepackage{tikz}
+\usepackage{framed}
+\usepackage[framemethod=tikz]{mdframed}
+\usepackage{diagbox}
+\usepackage{pifont}
+
+\renewcommand\thefootnote{\ding{\numexpr171+\value{footnote}}}
+
 
 \allowdisplaybreaks
 \makeatletter
@@ -35,14 +43,50 @@
 }{%
   \end{center}
 }
+\newsavebox{\thisOne}
+\newenvironment{meeldetuletus}{
+	\begin{lrbox}{\thisOne}
+		\begin{minipage}{0.95\textwidth} \vspace{0.25em} {\scriptsize \textsc{meeldetuletuseks}} \linebreak \vspace{-2em}
+} 
+{  
+ \end{minipage}\end{lrbox}{
+ 		
+ 			\begin{mdframed}[tikzsetting={draw=black,dashed,line width=0.5pt, dash pattern = on 10pt off 3pt},%
+ 			linecolor=background_example,backgroundcolor=background_example,outerlinewidth=1pt]
+ 			\usebox{\thisOne}
+ 			\end{mdframed}
+ 		
+ 		
+ 	}
+}
+\newsavebox{\boxTwo}
+\newenvironment{naide}{
+    \begin{lrbox}{\boxTwo}
+        \begin{minipage}{\textwidth}
+    }
+    {\end{minipage}\end{lrbox}
+    	\colorbox{background_example}{\usebox{\boxTwo}}
+    }
 
 \author{Vootele Rõtov}
 \title{Bakatöö}
 
 \numberwithin{equation}{section}
 \theoremstyle{definition}
+\newtheorem*{elementaarsyndmus}{Definitsioon}
+\newtheorem*{toenaosus}{Definitsioon}
+\newtheorem*{juhuslik_suurus}{Definitsioon}
+\newtheorem*{jaotus}{Definitsioon}
+\newtheorem*{keskvaartus}{Definitsioon}
+\newtheorem*{dispersioon}{Definitsioon}
+\newtheorem{keskvaartus_konstant}[equation]{Lause}
+\newtheorem{dispersioon_konstant}[equation]{Lause}
+\newtheorem*{kovariatsioon}{Definitsioon}
+\newtheorem*{korrelatsioon}{Definitsioon}
+\newtheorem{summa_dispersioon}[equation]{Lause}
 \newtheorem{kumer_hulk}[equation]{Definitsioon}
 \newtheorem{kumer_f}[equation]{Definitsioon}
+
 
 \begin{document}
 
@@ -54,31 +98,29 @@
 
 \pagebreak
 
-\section*{Spikker}
+\section{Sissejuhatus}
 
-{\color{cyan} Helesinine- komentaarid}
+Käesoleva bakalaureuse töö on saanud motivatsiooni psühholoogide praktilisest probleemist - kuidas hinnata nende töövaldkonnas tihti kasutatavate valikvastustega testide headust. Tuleb välja, et ühe testide headust kirjeldava karakteristiku - reliaabluse, hindamiseks sobivad vahendid saame klassikalise testiteooria (\textit{Classical Test Theory}) nimelise matemaatilise teooria tulemuste põhjal. 
 
-{\color{blue} Tumesinine - asjad, mille õigsust peaks kontrollima}
+Töö esimeses osas anname vajaliku taustinfo ja probleemipüstituse. Seejärel ehitame üles meile vajamineva osa klassikalisest testiteooriast. Kolmandas peatükkis võrdleme erinevaid võimalusie reliaabluse hindamiseks, nii täpsuse kui ka arvutusliku keerukuse suhtes. Seejärel vaatleme põgusalt ühte võimalikku lähenemist järjestikskaala tõlgendamiseks intervallskaalana, mis kasutab ära eelnevalt uuritud reliaabluse hinnanguid ja sättestab tõlgendamis probleemi optimiseerimisprobleemina.
+
+Töö eesmärgiks on anda eesti keelne ülevaade klassikalisest testiteooria alustest, mida autorile teadaolevalt ei ole käsitletud matemaatilisest aspektist vaadelduna - olemasolevad käsitlused on mõeldud praktiliseks abivahendiks psühholoogile ning seetõttu teistsuguse lähenemisega. Peale selle on töö eesmärgiks ka reliaabluse hindamiseks sobivate vahendite tutvustamine tasemel, millest võiks loodetavasti kasu olla ka teste koostavatele praktikutele. Uurimuse viimases osas loodame lugejale tutvustada tavapärasest teistsuguse lähenemist testi tulemuste kvantitiivsele tõlgendamisele, mis tugineb viimase aja edusammudele optimiseerimise valdkonnas.
 
 
-{\color{cyan}\section*{Miks ma käesolevat asja teen?}
+Lisaks loetavale dokumendile on töö väljundiks ka teek, mis sisaldab funktsioone kõigi töös välja toodud hinnangute leidmiseks testi tulemuste põhjal ning leiab loodetavasti psühholoogide poolt kasutamist. 
 
-Panen kirja mõned põhjused, miks ma tegelen selle asjaga:
-\begin{enumerate}[I]
-\item Sellest on kellegile kasu - loodan realselt, et saan hakkama mingi toreda asjaga, millest keegi(näiteks Marguse psühholoogidest sõbrad) kasu saab.
-\item Saab kätte selle paberi, mis teeb minust parema inimese. 
-\item Midagi uut, olen juba päris pikalt tarkust ühes formaadis kuula õppejõudu, tööta läbi tema poolt valitud materjalid, esita see õppejõule, äkki selline formaat, kus tuleb ise otsida ja ise mõelda meeldib.
-\item Väljakutse, kuigi viimaste aastatega on enesemotivatsioon kõvasti paranenud, ei ole see veel seal, kus ta olla võiks. Loodetavasti "treenin" seda aspekti.
-\end{enumerate}}
 
-\section{Töö \"ulesehitus}
-Esiteks tutvustame lugejale vajalikku taustinfot, seejärel kirjeldame probleemip\"ustitust. Sellele järgneb töö eesmärgi matemaatiline p\"ustitus.
+\pagebreak
 
-\section{Taustinfo}
 
-\subsection{Likerti skaala
-}
-Käesolev uurimus tegeleb k\"usimustikega (\textit{Likert scale}), milles soovitakse hinnanguid teatud arvule väidetele (\textit{Likert item}) viie pallisel Likerti skaalal \cite{Edmondson}. Näiteks: \footnote{Näited terviklikest k\"usimustikest on lisades, \hyperref[likert1]{joonisel \ref*{likert1}} ja \hyperref[likert2]{ \ref*{likert2}}}
+
+\section{Taustinfo ja probleemipüstitus}
+
+\subsection{Taustinfo}
+
+\subsubsection{Küsimustik, küsimus ja Likerti skaala}
+
+Käesolev uurimus tegeleb k\"usimustikega (\textit{Likert scale}), milles soovitakse hinnanguid teatud arvule küsimustele (\textit{Likert item}) $n$ pallisel Likerti skaalal \cite{Edmondson}, kus $n$ jääb enamasi kahe ja kümne vahele. Käsitleme Likerti skaalasid, mis on sümmeetrilised, see tähendab, et positiivsete ja negatiivsete vastuse variantide arv on sama. Näiteks:\footnote{Näited terviklikest k\"usimustikest on lisades, \hyperref[likert1]{joonisel \ref*{likert1}} ja \hyperref[likert2]{ \ref*{likert2}}}
 
 \vspace{10pt}
 
@@ -97,12 +139,13 @@ Käesoleva bakalaureusetöö \"ulesehitus on loogiline.
 \def\DefaultWidthofChoiceMenu{12pt}%
 
 
-
-\ChoiceMenu[bordercolor = gray,disabled = true,name=optionE,radio,radiosymbol=\ding{108}]{\mbox{}}\null Ei nõustu 
-\ChoiceMenu[bordercolor = gray,disabled = true,name=optionD,radio,radiosymbol=\ding{108}]{\mbox{}}\null Ei nõustu osaliselt
-\ChoiceMenu[bordercolor = gray,disabled = true,name=optionC,radio,radiosymbol=\ding{108}]{\mbox{}}\null Nii ja naa
-\ChoiceMenu[bordercolor = gray,disabled = true, name=optionB,radio,radiosymbol=\ding{108}]{\mbox{}}\null Nõustun osaliselt
-\ChoiceMenu[bordercolor = gray,disabled = true,name=optionA,radio,radiosymbol=\ding{108}]{\mbox{}}\null Nõustun
+\small{
+	\CheckBox[bordercolor = gray,name=optionE]{\mbox{}} Ei nõustu 
+	\CheckBox[bordercolor = gray,name=optionD]{\mbox{}} Ei nõustu osaliselt
+	\CheckBox[bordercolor = gray,name=optionC]{\mbox{}} Nii ja naa
+	\CheckBox[bordercolor = gray,name=optionC]{\mbox{}}  Nõustun osaliselt
+	\CheckBox[checked,bordercolor = gray,name=optionC]{\mbox{}} Nõustun
+}
 
 
 \end{Form}}}
@@ -110,133 +153,112 @@ Käesoleva bakalaureusetöö \"ulesehitus on loogiline.
 \label{likert_question}
 \end{figure}
 
-\paragraph{Likerti skaala -  järjestikskaala või intervallskaala?}\mbox{}\\*
+\subsubsection{Likerti skaala tõlgendamine intervallskaalana}
 
-Lugejal võib tekkida õigustatud k\"usimus, kuidas põhjendab autor Likerti skaala käsitlemist intervallskaalana, kui Likerti skaala oli algselt mõeldud järjestikskaalana ning  selle kasutamise osas intervallskaalana on autorid pigem skeptilised \cite{Jamieson2004}. Sellest hoolimata on intervallksaala tõlgendus praktikas piisavalt levinud, et selle valdkonna uurimine õigustatud oleks. Siinkohal vajab esile toomist, et kriitikute \"uks levinumaid argumente on see, et "`hea"'  ja "`väga hea"'  keskmine ei ole  loomulikul viisil tõlgendatav kui "`hea + pool"', millega autor ka nõustub ning loodab pakkuda sellele alternatiivset tõlgendust. 
-
-\subsection{Valiidsus ja reliaablus}
-Testi \textbf{valiidsus} on testi karakteristik, mis iseloomustab testi võimet mõõta seda, mida ta disainiti mõõtma. 
-Testi \textbf{reliaablus} on testi omadust saada sama subjekti erinevatel mõõtmistel sama testiga sama tulemus. Järgnev joonis illustreerib reliaabluse ja valiidsuse mõisteid.
+Likerti skaala tõlgendamisel intervallksaalana on väljakujunenud tava seada valikvastustele vastavusse järjestatud täisarvud, kusjuures mida posiitiivsem vastuseevariant, seda suurem temale vastavusse seatud arv. Reeglina kasutatakse kas arve alates ühest kuni valikvastuste arvuni või valitakse välja täisarvud nii, et neutraalsele vastusevariandile vastab null.
 
 \begin{figure}[H]
-\centering
-\includegraphics[width=0.75\textwidth, height = 0.8\textwidth]{Reliability_and_validity.png}
-\caption{Reliaabluse (\textit{reliability}) ja valiidsuse (\textit{validity}) omavahelist suhestumine.  \cite{Dilmen2008}}
-\label{reliability_and_validity}
+
+\colorbox{background_example}{\parbox{\textwidth}{
+
+\vspace{1mm}
+
+Käesoleva bakalaureusetöö \"ulesehitus on loogiline.
+
+\vspace{5pt}
+
+\begin{tikzpicture}
+\node at (0,0) {};
+\draw[very thick, ->] (0.625em,0em) -- (0.625em,1.5em) node[label=above: -2] {};
+\draw[very thick, ->] (6.375em,0em) -- (6.375em,1.5em) node[label=above: -1] {};
+\draw[very thick, ->] (15.75em,0em) -- (15.75em,1.5em) node[label=above: 0] {};
+\draw[very thick, ->] (21.625em,0em) -- (21.625em,1.5em) node[label=above: 1] {};
+\draw[very thick, ->] (30.5em,0em) -- (30.5em,1.5em) node[label=above: 2] {};
+\end{tikzpicture}
+
+\begin{Form}
+\def\DefaultWidthofChoiceMenu{12pt}%
+\small{
+\CheckBox[bordercolor = gray,name=optionE1]{\mbox{}} Ei nõustu 
+\CheckBox[bordercolor = gray,name=optionD1]{\mbox{}} Ei nõustu osaliselt
+\CheckBox[bordercolor = gray,name=optionC1]{\mbox{}} Nii ja naa
+\CheckBox[checked,bordercolor = gray,name=optionC1]{\mbox{}}  Nõustun osaliselt
+\CheckBox[bordercolor = gray,name=optionC1]{\mbox{}} Nõustun
+}
+\end{Form}
+
+
+
+\begin{tikzpicture}
+\node at (0,0) {};
+\draw[very thick, ->] (0.625em,0em) -- (0.625em,-1.5em) node[label=below: 1] {};
+\draw[very thick, ->] (6.375em,0em) -- (6.375em,-1.5em) node[label=below: 2] {};
+\draw[very thick, ->] (15.75em,0em) -- (15.75em,-1.5em) node[label=below: 3] {};
+\draw[very thick, ->] (21.625em,0em) -- (21.625em,-1.5em) node[label=below: 4] {};
+\draw[very thick, ->] (30.5em,0em) -- (30.5em,-1.5em) node[label=below: 5] {};
+\end{tikzpicture}}}
+\caption{Näide kahest levinumast Likerti skaala tõlgendusest invtervallskaalana }
+\label{likert_question}
 \end{figure}
 
-On selge, et testi kõrge valiidsus on vajalik tingimus selleks, et test oleks kasutatav h\"upoteesi kontrolliks või mingite järelduste tegemiseks. Teoreetiliselt on võimalik ps\"uhhomeetriline test, mille valiidsus on suur ja reliaablus väike, kui eeldada et mõõtmisviga on sõltumatu juhuslik suurus, eeldus mida ka tavaliselt tehakse. Intuitiivselt on selge, et selline test ei praktikas kasutatav, kuna me ei oska väheste mõõtmiste raames hinnata mõõtmisvigade suurust ning piisavalt suure arvu mõõtmiste teostamine ei ole reaalselt võimalik, seega on praktikas testi kõrge reliaablus vajalik tingimus testi kõrgeks valiidsuseks.    
+Lugejal võib tekkida õigustatud k\"usimus, kuidas põhjendab autor Likerti skaala käsitlemist intervallskaalana, kui Likerti skaala on olemuseslt järjestikskaala ning selle tõlgendamises intervallskaalana on vastuoluline küsimus, näiteks \cite{Jamieson2004}. Siinkohal tõdeme, et Likerti skaala tõlgendamine intervallksaalana on praktikas piisavalt levinud, et selle valdkonna uurimine õigustatud oleks - olenamat selle teoreetilisest põhjendatusest.  Siinkohal väärib autori silmis esile toomist kriitikute \"uks levinumaid argumente -  "`hea"'  ja "`väga hea"'  keskmine ei ole  loomulikul viisil tõlgendatav kui "`hea + pool"' ehk pole mingit põhjust eeldada, et kõikide küsimuste omavaheline kaugus on mingil põhjusel võrdne. Autor nõustub selle kriitikaga ning loodab töö neljandas osas pakkuda alternatiivse tõlgendusviisi. 
 
-\subsection{Reliaabluse formaalne definitsioon}
-Definitsioon andmisel võtame aluseks Melvin Novicki klassikalisest testiteooria \cite{Novick1966}\cite{Lord1968} tõlgendusest \cite[109]{Sijtsma2009}. 
+\subsubsection{Testi valiidsus}
 
-Olgu meil mingi kogum $I$ testile vastajaid ning mingisugune test, milles on $k$ k\"usimust ning olgu $X_{i}^{j}$ juhuslik suurus, mille jaotusfunktsioon sõltub vastajast, mille võimalike väärtusi vaatleme kui k\"usimuse $j$ vastuse arvulist tõlgendust mingi vastaja $i$ jaotusele vastavalt. Defineerime vastaja $i$ testi tulemuse $X_{+i}$ kui 
+Testi \textbf{valiidsus} on testi karakteristik, mis iseloomustab testi võimet mõõta seda, mida ta disainiti mõõtma. Enamikes käsitlustes vaadeltakse valiidsust kui väärtust intervall skaalal nulli ja ühe vahel.
 
-\begin{equation*}
-X_{+i} = \sum \limits_{j=1}^k X_{i}^{j} \text{.}
-\end{equation*}
+Näitena, kaal mis näitab 75 kilo kaaluva inimese kaaluks 74,5 kilo omab kõrgemat valiidsust kui kaal, mis sama inimese puhul näitab kaaluks 65 kilo.   
 
+Arusaadavatel põhjustel on testi valiidsus äärmiselt oluline ning psühholoogiliste testide valiidsuse hindamine on olnud üks psühhomeetria põhilistest uurimisobjektidest. Sellega seoses on palju tööd tehtud ka valiidsuse definitsiooni täpsemaks muutmisega, võrreldes selle paragrahvi alguses antud väga intuitiivse definitsiooniga. Kuna valiidsus on selle töö raames vajalik vaid taustinfona probleemi mõttestamisel tundub antud lihtne definitsioon aga sobivaim. 
 
-Kuna juhusliku suuruste summa on samuti juhuslik suurus {\color{cyan} Okey lugeda juhuslik suurus selliseks mõisteks, mida ei ole vaja defineerida?} siis on $X_{+j}$ juhuslik suurus, mille jaotusfunktsioon on vastajast sõltuv.
-Analoogiliselt võime vaadelda ka testi tulemusi \"ule kõigi vastajate - sellisel juhul olgu $X^{j}$ juhuslik suurus mida iseloomustav jaotusfunktsioon kirjeldab kuidas vastajate populatsioon vastab k\"usimusele $j$  ning testi tulemus $X$ on defineeritav kui
+\subsubsection{Testi reliaablus}
 
-\begin{equation*}
-X = \sum \limits_{j=1}^k X^{j} \text{.}
-\end{equation*}
+Testi \textbf{reliaablus} on testi omadust saada sama subjekti erinevatel mõõtmistel sama testiga sama tulemus ehk testi stabiilsus. Nagu valiidsus, on ka reliaablus reeglina määratud intervall skaalal, nulli ja ühe vahel. 
 
-Defineerime k\"usimuse tegeliku tulemuse vastaja $i$ jaoks kui testi tulemuse keskväärtuse {\color{cyan} Vajalik def ? } ehk
+Näitena, kaal mis näitab 75 kilo kaaluva inimese kaaluks 74,5 kilo igal kaalumisel omab kõrgemat reliaablust kui kaal, mis näitab juhuslikult kas 74,5 kilo või 75,5 kilo. 
 
-\begin{equation*}
-t_i = \epsilon  \left[ X_{+i} \right] \text{.}\footnote{Tähistame keskväärtuse tähega $\epsilon$ kuna tavapärane tähistus $E$ leiab antud käsitluses teistsuguse rolli.}
-\end{equation*}
+Reliaabluse täpsema, matemaatilise definitsioone anname edaspidi. 
 
-Paneme tähele, et vaadeldes tegeliku tulemust \"ule kõigi vastajate võime rääkide tegelikust tulemusest kui juhuslikust suurusest, mida tähistame $T$ ja mille võimalike väärtuste hulk on $\left\lbrace t_i ~ | ~ i \in I \right\rbrace$.
+\subsubsection{Valiidsuse ja reliaabluse suhe}
 
-Tõlgendame vastaja $i$ testi tulemuse ja tegeliku tulemuse vahet mõõtmisveana, tähistame seda $E_i$. Seega $X_{+i} = t_i + E_i$. Analoogiliselt saame tõlgendada viga \"ule kõigi vastajate kui juhusliku suurust $E$, kusjuures $X = T + E$.
+Valiidsuse ja reliaabluse suhestamisel kerkib kiiresti üles loomulik küsimus - kas test võib olla samaaegselt suure valiidsuse ja väikse reliaablusega? Eelpool antud definitsioonid jättavad selle küsimuse lahtiseks - vaatleme järgmist olukorda:
 
-Paneme tähele, et eelneva põhjal on vastaja $i$ mõõtmisvea keskväärtus $0$. Tõepoolest, kuna tegeliku tulemuse definitsiooni põhjal $\epsilon \left[ X_{+i} \right] = t_i$, siis saame mõõtmisvea definitsiooni arvesse võttes 
-\begin{equation*}
- t_i = \epsilon \left[ X_{+i} \right] = \epsilon \left[ t_i + E_i \right] = \epsilon \left[ t_i \right] + \epsilon \left[ E_i \right] = t_i + \epsilon \left[ E_i \right] \implies \epsilon \left[ E_i \right] = 0 \text{.}
-\end{equation*}
+\begin{figure}[H]
+\colorbox{background_example}{\parbox{\textwidth}{
+\begin{tikzpicture}
+  \draw (0,0) -- (35em,0);
+  \foreach \x/\xtext in {2.5/74,10/\text{74,5},17.5/75,25/\text{75,5},32.5/76}
+  	\draw (\x em,0.75em) -- (\x em,-0.75em) node [anchor=north] {$\xtext$};
+  \filldraw[fill=red!60,draw=red!80!black] (17.5em,0) circle [radius = 0.6em];
+  \foreach \y in {2.5,17.5,32.5}
+  	\filldraw[fill=green!75,draw=green!30!black] (\y em, 0) circle [radius = 0.4em];
+  \filldraw[fill=blue!100,draw=blue!80] (10em,0) circle [radius = 0.5em];
+  \filldraw[fill=blue!60,draw=blue!70] (10em,0) circle [radius = 0.4em];
+  \filldraw[fill=blue!20,draw=blue!60] (10em,0) circle [radius = 0.3em];
+  \filldraw[fill=green!75,draw=green!30!black] (1.5 em, -3em) circle [radius = 0.4em];
+  \node[label=right: - Kaalu $1$ tulemused] at (1.5 em, -3em) {};
+  \filldraw[fill=blue!60,draw=blue!70!black] (15em,-3em) circle [radius = 0.4em];
+  \node[label=right: - Kaalu $2$ tulemused] at (15 em, -3em) {};
+  \filldraw[fill=red!60,draw=blue!80!black] (27.5em,-3em) circle [radius = 0.4em];
+  \node[label=right: - Tegelik kaal] at (27.5 em, -3em) {};
+  
+  
+  
+\end{tikzpicture}
+}}
+\caption{Kaalumiste tulemused kahe erineva kaaluga kolmel katsel}
+\end{figure}
 
-Lisaks on lihtne märgata, et  $D \left[ X_i \right] = D \left[ E_i \right]$, sest 
-\begin{equation*}
-D \left[ X_i \right] = D \left[ E_i + t_i \right] = D \left[ E_i \right] \text{.}
-\end{equation*}  
+Kui mõista valiidsust kui testi keskmist tulemust, siis võime väita, et esimene kaal on väiksema reliaabluse aga suurema valiidsusega. Selline valiidsuse mõttestamine aga ei ole küsimustike modeleleerimise korral otstarbekas - katsete kordamine on enamasti keeruline ning väheste mõõtmistulemuste põhjal ei ole võimalik tegeliku väikese reliaablusega testi tulemust välja selgitada. 
 
-Eelnevates definitsioonides keskendusime testi tulemuste mõtestamisele fikseeritud vastaja korral, tuues paralleelselt sisse analoogilised mõisted \"ule mingi vastajate kogumi. Kuna reeglina mõtestatakse teste praktikas mingi vastajate kogumi raames, siis keskendume ka meie edaspidi sellele.
-
-Niisiis, olgu meil meli mingi vastajate kogum $I$ ja eespool kirjeldatud juhuslikud suurused $X,T,E$, kusjuures $X = T + E$.
-
-
-Järgevalt esitame neli keskset klassikalise testi teooria eeldust \cite[10]{DeGruijter2005}:
-\begin{enumerate}[I]
-\item mõõtmisvea keskväärtus \"ule vastajate populatsiooni on 0 ehk 
-\begin{equation*}
-\epsilon \left[ E \right] = 0 \text{,}
-\end{equation*}
-\item korrelatsioon {\color{cyan} Def vajalik?} mõõtmisvea ja tegeliku tulemuse vahel \"ule vastajate kogumi on $0$ ehk
-\begin{equation*}
-corr \left( T, E \right) = 0 \text{.}
-\end{equation*} 
-\item Olgu meil sama testi kaks erinevat mõõtmist \"ule vastajate kogumi $I$, mille tulemused on $X$ ja $X`$, kusjuures $X = T + E$ ja $X` = T` + E`$. Siis \"uhe mõõtmise tegelik tulemus ei korreleeru teise mõõtmisveaga ehk
-\begin{equation*}
-corr \left( T, E' \right) = 0 \text{,}
-\end{equation*}   
-\item lisaks sellele ei korreleeru ka erinevate mõõtmiste mõõtmisvead ehk
-\begin{equation*}
-corr \left( E, E' \right) = 0 \text{.}
-\end{equation*}
-\end{enumerate}
-
-Järgnevalt toome sisse paralleelse testi mõiste. Kaks testi, mille tulemused \"ule kõigi vastajate kogumi $I$ on $X$ ja $X'$ on paralleelsed parajasti siis, kui kehtivad järgmised väited :
-\begin{enumerate}
-\item $t_i = t_i' ~ \forall i \in I$
-\item $D \left[ X \right] = D \left[ X' \right]$ {\color{cyan} Dispersiooni definitsioon vajalik ? }
-\end{enumerate}
+Seega, meie vaadeldava olukorra - psühholoogiliste testide - korral on mingi valiidsuse taseme jaoks tarvilik tingimus mingi reliaabluse tase.    
 
 
+\subsubsection{Sisemine järjepidevus}
 
-Paralleelse testi abil saame klassikalise testiteooria raames defineerida reliaabluse. Olgu meil kaks paralleelselt testi, mille tulemused \"ule vastajate kogumi $I$ on vastavalt $X$,$X'$ kus kumbgi ei ole konstante juhuslik suurus. Testi, mille tulemus on $X$,  reliaablus \"ule vastajate kogumi $I$ on võrdne $X$ ja $X'$ korrelatsiooniga (Pearsoni mõttes), mida tähistame $\rho_{XX'}$, formaalselt
+Reliaabluse kui termini probleemiks on tema mitmetähenduslikus. Toome siinkohal ära ühe mõiste,  mida tihti samuti reliaablusena tuntakse.
 
-{\color{cyan}korrelatsiooni (ja kovariatsiooni definistioonid vajalikud?}
-\begin{equation*}
-\rho_{XX'} = corr \left( X,X' \right) \text{.}
-\end{equation*} 
-
-Paralleelse testi definitsiooni ja klassikalise testiteooria eelduste põhjal kehtib \begin{gather*}
-\rho_{XX'} = \frac{cov(XX')}{\sqrt{D \left[ X \right] D \left[ X' \right]}} =   
-\frac{\epsilon \left[XX' \right] - \epsilon \left[X \right] \epsilon \left[ X' \right]}{D \left[ X \right]} = \\ 
-= \frac{\epsilon \left[\left(T + E \right) \left( T' + E ' \right) \right] - \epsilon \left[T + E \right] \epsilon \left[ T'+E' \right]}{D \left[ X \right]} = \\
-= \frac{\epsilon \left[\left(T + E \right) \left( T + E ' \right) \right] - \left( \epsilon \left[T \right] - \epsilon \left[ E \right] \right) \left( \epsilon \left[ T \right] - \epsilon \left[ E' \right] \right)}{D \left[ X \right]} = \\
-= \frac{\epsilon \left[T^2 + TE + TE' + EE'  \right] -  \epsilon \left[T \right]  \epsilon \left[ T \right]}{D \left[ X \right]} = \\
-= \frac{\epsilon \left[T^2 \right]  + \epsilon \left[ TE \right] + \epsilon \left[ TE' \right] + \epsilon \left[ EE'  \right] -  \epsilon \left[T \right]^2}{D \left[ X \right]} 
-= \frac{\epsilon \left[T^2 \right] - \epsilon \left[ T \right]^2}{D \left [ X \right] } = \\ 
-= \frac{cov(T,T)}{D \left[ X \right]} = \frac{D \left[T \right]}{D \left[ X \right]} \text{.}
-\end{gather*}
-
-Paneme tähele, et eelneva põhjal $\rho_{XX'} \in \left[0,1 \right]$. Samuti märgime, et kuna $T = X - E$, siis kehtib
-\begin{equation*}
-\rho_{XX'} = \frac{D \left[ T \right]}{D \left[ X \right] } = \frac{D \left[ X - E \right]}{D \left[ X \right] } = \frac{D \left[X \right] - D \left[ E \right]}{D \left[ X \right]} = 1 - \frac{D \left[ E \right]}{D \left[ X \right]} \text{.}
-\end{equation*}
-
-Eelneva põhjal on selge, et väide  "testi reliaablus on suurem" on samaväärne järgmise kolme väitega\cite[110]{Sijtsma2009}:
-\begin{enumerate}
-\item testi korrellatsioon paralleelse testiga on suurem,
-\item testi tegeliku tulemuse dispersioon on suurem võrreldes testi tulemuse dispersiooniga,
-\item testi mõõtmisvea dispersioon on väiksem võrreldes testi tulemuse dispersiooniga.
-\end{enumerate}
-
-Märgime, et klassikalise testiteooria raames defineeritud reliaablus sobib kokku paragraafi alguses antud mitteformaalse definitsiooniga, kuna paralleelseks testiks võib lugeda ka sama testi uuesti läbiviimise sama vastajate kogumi peal, kusjuures klassikalise testiteooia eeldused ei ole väga kitsendavad, kui suudame tagada selle, et testis ei esine s\"usteematilisi mõõtmisvigu. 
-
-Kuna testi tegelik tulemus on suurus, mida me prakikas ei tea ning ka paralleelsete testide läbiviimine ei ole tihti võimalik on kasutusele võetud mitmeid praktikas kasututavaid hinnanguid, mis on reliaabluse alumisteks tõketeks. Järgnevalt vaatleme mõningaid neist.
- 
-Reliaabluse mõõtmise viisidest on osutunud popularseimaks sisemise reliaabluse leidmine, näiteks kolm neljandikku Ameerika \"Uhendriikide teadusajakirjas "`\textit{Directory of Unpublished Experimental Mental Measures}"' ilmunud uurimustest kasutas testi reliaabluse hindamiseks justnimelt sisemist reliaablust \cite[177] {Henson2001}. Järgnevalt vaatleme  seda reliaabluse mõõtmise viisi lähemalt. 
-
-
-\subsection{Sisemine reliaablus}
-
-K\"usimustiku sisemine reliaablus (\textit{internal consistency}) hindab testi erinevate k\"usimuste vastuste järjepidevust ehk seda, kui hästi on kooskõlas \"uhist  konstruktsiooni hindavad k\"usimused\cite[177] {Henson2001}. Piltlikult väljendudes, olgu meil järgnev k\"usimustik: 
+Sisemine järjepidavus (\textit{internal consistency} on testi karrakteristik, mis iseloomustab testi erinevate k\"usimuste vastuste järjepidevust ehk seda, kui hästi on kooskõlas \"uhist  konstruktsiooni hindavad k\"usimused\cite[177] {Henson2001}. Piltlikult väljendudes, olgu meil järgnev k\"usimustik: 
 
 \begin{figure}[H]
 
@@ -322,6 +344,561 @@ K\"usimustiku sisemine reliaablus (\textit{internal consistency}) hindab testi e
 
 Siin on mõõdetavaks konstruktsiooniks käesoleva bakalaureusetöö \"ulesehitus ning sisemiseks reliaabluseks on vajalik kolmele näites toodud k\"usimusele antud vastuste kooskõla.
 
+Selle karrakteristiku mõõtmiseks võimalik kasutada sisemise järjepidavuse teste. Segadust suurendab veelgi see, et üks nendest testidest leiab kasutamist ka meie poolt defineeritud reliaabluse hindamisel. Loodame, et nende kahe karakterisitku eristamine aitab lugejal käesolevas töös kergemini orienteeruda.
+
+Märgime, et lisaks toodud kahele definitsioonile on ka teisi reliaabluse definitsioone \cite{Cronbach1947}, mis aga selle töö kontekstis ei tohiks segadust tekitada ning  mille äratoomist siin ei ole autor pidanud vajalikus.
+
+
+\subsection{Probleemi püstitus}
+
+Käesolevo tööga üritame pakkuda lahendusti kahele probleemile. Esimene nendest seisneb testi reliaabluse hindamises - kas on võimalik testi tulemuste põhjal hinnata selle testi reliaablust? 
+Teine probleem lähtub esimesest - kui reliaabluse hindamine on võimalik, kas siis on võimalik kasutada saadud hinnangut Likerti skaala paremaks tõlgendamiseks intervallskaalana? Esimese probleemi rangeks mõtestamiseks vaatleme järgnevalt reliaablust ühe matemaatilise raamisitku - klassikalie testiteooria - kontekstis.
+
+\pagebreak
+
+
+\section{Reliaablus klassikalises testiteoorias}
+Järgevas võtame aluseks Melvin Novicki klassikalise testiteooria \cite{Novick1966a}\cite{Lord1968} ja selle tõlgenduse Klaas Sijtsma poolt. \cite[109]{Sijtsma2009}
+
+\subsection{Reliaabluse definitsioon}
+
+\begin{meeldetuletus}
+\begin{elementaarsyndmus}
+\textit{Elementaarsündmuseks} nimetatakse juhusliku katse võimaliku tulemust.
+\end{elementaarsyndmus}
+\begin{toenaosus}
+\textit{Tõenäosuseks} nimetatakse funktsiooni $P$, mis igale sündmusele $A \in 2^{\Omega}$, kus $\Omega$ on mingi juhusliku katse kõikvõimalikke elementaarsündmuste hulk, seab vastavusse arvu $P(A)$, nii et on täidetud järgmised nõuded:
+\begin{enumerate}
+\item $P(A) \geq 0, \forall A \in 2^{\Omega}$,
+\item $P(\Omega) =1$, $P(\emptyset) = 0$,
+\item Kui sündmused $A_1,A_2,...$ on teineteist välistavad, siis 
+\begin{equation*}
+ P\left( \bigcup \limits_{i=1}^{\infty} A_i \right) = \sum \limits_{i=1}^{\infty}P \left( A_i \right)
+\end{equation*}.
+\end{enumerate}
+\end{toenaosus}
+\begin{juhuslik_suurus}
+\textit{Diskreetseks juhuslikus suuruseks} nimetatakse funktsiooni $X : \Omega \to \mathbb{R}$, mis võtab kas lõpliku või loenduva arvu erinevaid väärtusi $x_1,x_2,...(x_n)$.
+\end{juhuslik_suurus}
+\end{meeldetuletus}
+
+Olgu meil mingi kogum $I$ testile vastajaid ning küsimustik, milles on $k$ k\"usimust, kus iga küsimus on $l$-pallisel Likerti skaalal. On loomulik eeldada, et nii vastajate arv, küsimuste arv kui ka Likerti skaala suurus on lõplikud. Me võime vaadelda testi läbiviimist kui juhusliku katset ning kõike erinevaid võimalikke vastjate poolt küsimustele antud vastuste kombinatsioone kui elementaarsündmusi, tähistame saadud elementaarsündmuste hulga kui $\Omega$. Eeldame ka tõenäosuse $P : 2^{\Omega} \to \mathbb{R}$ olemasolu, mida tõlgendame kui testi tulemuste esinemissagededuse kirjeldust. 
+
+\begin{figure}[H]
+\begin{naide}
+\begin{center}
+\begin{tabular}{ | c | c c c |}
+\hline
+\diagbox{Vastaja}{Küsimus} & I & II & II \\
+\hline
+A & Nõustun osaliselt & Nii ja naa & Nõustun \\
+B & Ei nõustu osaliselt & Nõustun & Nii ja naa \\
+C & Ei nõustu & Nõustun osaliselt & Nii ja naa \\
+\hline
+\end{tabular}
+\end{center}
+\end{naide}
+\caption{Näide testi läbiviimisest kui elementaarsündmusest }
+\end{figure}
+
+Olgu $X_{i}^{j}$ hulgal $\Omega$ määratud juhuslik suurus, mille võimalike väärtusi vaatleme kui vastaja $i$ poolt k\"usimusele $j$ antud vastuse arvulist tõlgendust. On selge, et sellise tõlgenduse korral on juhusliku suuruse $X_{i}^{j}$ muutumispiirkond lõplik - selle hulga võimsus ei ole suurem kui $l$ ning järelikult on juhuslik suurus $X_{i}^{j}$ diskreetne. Defineerime vastaja $i$ testi tulemuse $X_{i}$ kui 
+
+\begin{equation*}
+X_{i} = \sum \limits_{j=1}^k X_{i}^{j} \text{.}
+\end{equation*}
+
+
+Paneme tähele, et $X_{i}$ on samuti diskreetne juhuslik suurus - tõepoolest, kuna tegemist on diskreetsete juhuslike suuruste summaga, siis on ta funktsioon hulgast $\Omega$ hulka $\mathbb{R}$. Lisaks, kuna kõikide liidetavate muutumispiirkond on tõkkestatud arvuga $l$ ning liidetavaid on $k$, siis ei saa funktsiooni muutumispiirkonna võimsus olla suurem kui $l^k$.
+
+
+\begin{meeldetuletus}
+\begin{jaotus} Disktreetse juhusliku suuruse $X$ \textit{jaotuseks} nimetatakse paaride komplekti $\left(x_i,p_i \right), i=1,2,...$, kus $x_i$ on juhusliku suuruse võimalik väärtus ning $p_i = P(\left\lbrace \omega | X(\omega) = x_i, \omega \in \Omega \right\rbrace)$. 
+\end{jaotus}
+\begin{keskvaartus}
+Diskreetse juhusliku suuruse $X$, mille jaotuseks $K$ on paaride komplekt $k_i = \left(x_i,p_i \right), i=1,2,...$, \textit{keskväärtuseks} nimetatakse arvu
+\begin{equation*}
+ \epsilon X = \sum \limits_{\lbrace i | k_i \in K \rbrace} x_i p_i 
+\end{equation*}
+eeldusel, et see rida koondub absoluutselt.
+\end{keskvaartus}
+\begin{dispersioon}
+Juhusliku suuruse $X$ \textit{dispersiooniks} nimetatakse arvu $DX = \epsilon (X-\epsilon X)^2$.
+\end{dispersioon}
+\end{meeldetuletus}
+
+Triviaalse juhu vältimiseks eeldame edaspidi, et juhuslike suuruste $X_{i}$ dispersioonid on  nullist erinevad. Defineerime küsimustiku tegeliku tulemuse vastaja $i$ jaoks kui testi tulemuse keskväärtuse  ehk
+
+\begin{equation*}
+t_i = \epsilon  \left[ X_{i} \right] \text{.}\footnote{Tähistame keskväärtuse tähega $\epsilon$ kuna tavapärane tähistus $E$ leiab antud käsitluses teistsuguse rolli.}
+\end{equation*}
+
+Kuna juhusliku suuruse $X_{i}$ võimalike väärtuste arv on lõplik on ka tema keskväärtus $t_i$ lõplik. 
+
+
+Tõlgendame vastaja $i$ testi tulemuse ja tegeliku tulemuse vahet mõõtmisveana, tähistame seda $E_i$. Seega $X_{i} = t_i + E_i$.
+
+
+\begin{meeldetuletus}
+\begin{keskvaartus_konstant}
+\thlabel{keskvaartus_konstant}
+Kui $X$ on diskreetne juhuslik suurus, jaotusega $K$, kus $K$ on paaride komplekt $k_i =(x_i,p_i), i=1,2,...$  ning $c$ on mingi konstant siis \linebreak $\epsilon(X+c) = \epsilon(X)+c$
+\end{keskvaartus_konstant}
+\begin{proof}
+\begin{align*}
+&\epsilon(X+c) = \sum \limits_{\lbrace i | k_i \in K \rbrace} (x_i + c) p_i  = \sum \limits_{\lbrace i | k_i \in K \rbrace} x_i p_i + \sum \limits_{\lbrace i | k_i \in K \rbrace} c p_i = \\ &= \sum \limits_{\lbrace i | k_i \in K \rbrace} x_i p_i + c \sum \limits_{\lbrace i | k_i \in K \rbrace}  p_i  =   \sum \limits_{\lbrace i | k_i \in K \rbrace} x_i p_i + c  = \epsilon(X) + c
+\end{align*}
+\end{proof}
+\begin{dispersioon_konstant}
+\thlabel{dispersioon_konstant}
+Juhuslikule suurusele konstandi liitmine ei muuda dispersiooni : $D(X + c) = DX$
+\end{dispersioon_konstant}
+\begin{proof}
+\begin{equation*}
+D(X+c) = \epsilon[X+c - \epsilon(X+c)] \overset{\text{\thref{keskvaartus_konstant}}}{=} \epsilon[X+c - \epsilon(X) + c ] = \epsilon[X - \epsilon(X)] = DX
+\end{equation*}
+\end{proof}
+\end{meeldetuletus}
+
+Paneme tähele, et eelneva põhjal on vastaja $i$ mõõtmisvea keskväärtus võrdne nulliga. Tõepoolest, kuna tegeliku tulemuse definitsiooni põhjal $\epsilon \left[ X_{i} \right] = t_i$, siis saame mõõtmisvea definitsiooni arvesse võttes 
+
+\begin{equation*}
+ t_i = \epsilon \left[ X_{i} \right] = \epsilon \left[ t_i + E_i \right] \overset{\text{\thref{keskvaartus_konstant}}}{=} t_i + \epsilon \left[ E_i \right] \implies \epsilon \left[ E_i \right] = 0 \text{.}
+\end{equation*}
+
+Lisaks on lihtne märgata, et  $D \left[ X_{i} \right] = D \left[ E_i \right]$, sest 
+\begin{equation*}
+D \left[ X_{i} \right] = D \left[ E_i + t_i \right] \overset{\text{\thref{dispersioon_konstant}}}{=} D \left[ E_i \right] \text{.}
+\end{equation*}  
+
+Eelnevates definitsioonides keskendusime testi tulemuste mõtestamisele fikseeritud vastaja korral. Kuna reeglina mõtestatakse teste praktikas mingi vastajate kogumi raames, siis keskendume ka meie edaspidi sellele.
+
+Vaatleme elementaarsündmustena hulga $I \times \Omega$ elemente ning tõenäosusena funktsiooni 
+\begin{align*}
+P_p : 2^{I \times \Omega} \to \mathbb{R} \text{,} \\
+P_p(A) = \frac{\sum \limits_{(i,\omega)\in A} P(\lbrace \omega \rbrace)}{|I|} \text{.}
+\end{align*} 
+
+
+Paneme tähele, et sellel elemntaarsündmuste hulgal võime määrata diskreetse juhusliku suuruse $T$, nii et
+\begin{equation*}
+T\left((i, \omega)\right) = t_i, i \in I \text{.}
+\end{equation*}
+
+Seda juhuliku suurust tõlgendame kui küsimustiku tegelikku tulemust. Defineerime testi vaadeldava tulemuse kui diskreetse juhusliku suuruse $X$, nii et
+
+\begin{equation*}
+X \left (i, \omega) \right) = X_i (\omega) 
+\end{equation*}
+ 
+ja testi vea kui diskreetse juhusliku suuruse $E$, nii et
+
+\begin{equation*}
+E \left( (i, \omega) \right) = E_i (\omega) \text{.}
+\end{equation*}
+
+Paneme tähele, et kehtib $X = E + T$, tõepoolest olgu meil suvaline paar $\left(i, \omega \right) \in I \times \Omega$, siis 
+
+\begin{equation*}
+X \left( ( i, \omega ) \right) = X_i (\omega) \overset{def}{=}  t_i + E_i(\omega) = T \left( (i, \omega) \right) + E \left( ( i, \omega ) \right) \text{.} 
+\end{equation*}
+
+Eeldame edaspidises, et $X$ ei ole konstante juhuslik suurus - vastupidisel juhul on olukord triviaalne ja seetõttu ebahuvitav.
+
+Defineerisime testi iseloomustavad juhuslikud suurused kasutades vastaja tulemusi iseloomustavaid juhuslike suurusi - analoogiliselt võime jõuda nende juhuslike suurusteni ka läbi kindlat küsimust iseloomustava juhusliku suuruse. Selles veendumiseks defineerime juhusliku suuruse  $X'$ üle elementaarsündmuste hulga $I \times \Omega$, nii et
+\begin{equation*}
+	X'\left( ( i, \omega ) \right) = \sum \limits_{j=1}^{k} X^{j} \left(i, \omega \right) \text{,}	
+\end{equation*}
+kus $X^{j}$ on diskreetne juhuslik suurus, mida tõlgendame kui $j$ küsimuse vaadeldava tulemuse ja mis on määratud kui
+\begin{equation*}
+X^{j} \left( (i, \omega ) \right) = X_{i}^{j} \left( \omega \right) \text{.}
+\end{equation*}
+
+Veendume, et juhuslikud suurused $X'$ ja $X$ on võrdsed. Tõepoolest, olgu $(i,\omega) \in I \times \Omega$ suvaline paar, siis
+\begin{equation*}
+	X \left (i, \omega) \right) = X_i (\omega) = \sum \limits_{i=1}^{k}X_{i}^{j}(\omega) = \sum \limits_{i=1}^{k}X^{j}\left((i, \omega )\right) = X' \left( (i, \omega ) \right) \text{.}	 
+\end{equation*}
+
+Analoogiliset võime üles ehitada ka ka juhusliku suurustega $T$ ja $E$ võrdsed juhuslikud suurused.
+
+\begin{meeldetuletus}
+\begin{kovariatsioon}
+Juhusliku suuruste $X$ ja $Y$ \textit{kovariatsiooniks} nimetatakse suurust
+\begin{equation*}
+cov(X,Y) = \epsilon \left( X - \epsilon X \right)\left(Y - \epsilon Y \right) \text{.}
+\end{equation*}
+\end{kovariatsioon}
+\begin{korrelatsioon}
+Juhusliku suuruste $X$ ja $Y$ \textit{korrelatsioonikordajaks} nimetatakse suurust 
+\begin{equation*}
+\rho (X,Y) = \frac{cov(X,Y)}{\sqrt{DX}\sqrt{DY}} 
+\end{equation*}
+\end{korrelatsioon}
+\begin{summa_dispersioon}
+\thlabel{summa_dispersioon}
+Juhuslikke suuruste $X$ ja $Y$ puhul kehtib 
+\begin{equation*}
+D(X + Y) = D(X) + D(Y) + cov(X,Y)
+\end{equation*} 
+\begin{proof}
+\begin{align*}
+&D(X + Y) \overset{def}{=}\epsilon[X + Y - \epsilon(X + Y)]^2\overset{\text{$\epsilon$ lin.} }{=}  \epsilon [X - \epsilon X + Y + \epsilon Y]^2 = \\
+& = \epsilon(X - \epsilon X)^2 + 2\epsilon (X - \epsilon X)(Y - \epsilon Y) + \epsilon (Y - \epsilon Y)^2   
+ \overset{\text{cov ~ def}}{=}  \\  & = D(X) + D(Y) + 2cov(X,Y)
+\end{align*}
+\end{proof}
+\end{summa_dispersioon}
+\end{meeldetuletus}
+
+Järgnevalt toome sisse paralleelse küsimustiku mõiste. Kaks küsimustiku, mille vaadeldavad tulemused üle kõigi vastajate kogumi $I$ on $X = T + E$ ja $X' = T' + E'$,  on paralleelsed parajasti siis, kui kehtivad järgmised väited :
+\begin{enumerate}
+\item $t_i = t_i' ~ \forall i \in I $,
+\item $D \left[ E \right] = D \left[ E' \right]$. 
+\end{enumerate}
+
+{\color{blue} Järgnevalt eeldame, et mõõtevead ei korreleeru ühegi teise juhusliku suurusega.}
+
+Paneme tähele, et kahe paraleelse küsimustiku $X$ ja $X'$ korral kehtib:
+
+\begin{align*}
+&D[X] = D[T] + D[E] + 2cov(T,E) = D[T] + D[E] = \\
+&= D[T'] + D[E'] = D[T'] + D[E'] + 2cov(T',E') = D[X']
+\end{align*}
+
+Paralleelse testi abil saame klassikalise testiteooria raames defineerida reliaabluse. Olgu meil kaks paralleelselt testi, mille tulemused \"ule vastajate kogumi $I$ on vastavalt $X$,$X'$ kus kumbgi ei ole konstante juhuslik suurus. Testi, mille tulemus on $X$,  reliaablus \"ule vastajate kogumi $I$ on võrdne $X$ ja $X'$ korrelatsioonikordajaga, mida tähistame $\rho_{XX'}$, formaalselt
+
+\begin{equation*}
+\rho_{XX'} = corr \left( X,X' \right) \text{.}
+\end{equation*} 
+
+Paralleelse testi definitsiooni ja tehtud eelduste põhjal kehtib \begin{gather*}
+\rho_{XX'} = \frac{cov(XX')}{\sqrt{D \left[ X \right] D \left[ X' \right]}} =   
+\frac{\epsilon \left[XX' \right] - \epsilon \left[X \right] \epsilon \left[ X' \right]}{D \left[ X \right]} = \\ 
+= \frac{\epsilon \left[\left(T + E \right) \left( T' + E ' \right) \right] - \epsilon \left[T + E \right] \epsilon \left[ T'+E' \right]}{D \left[ X \right]} = \\
+= \frac{\epsilon \left[\left(T + E \right) \left( T + E ' \right) \right] - \left( \epsilon \left[T \right] - \epsilon \left[ E \right] \right) \left( \epsilon \left[ T \right] - \epsilon \left[ E' \right] \right)}{D \left[ X \right]} = \\
+= \frac{\epsilon \left[T^2 + TE + TE' + EE'  \right] -  \epsilon \left[T \right]  \epsilon \left[ T \right]}{D \left[ X \right]} = \\
+= \frac{\epsilon \left[T^2 \right]  + \epsilon \left[ TE \right] + \epsilon \left[ TE' \right] + \epsilon \left[ EE'  \right] -  \epsilon \left[T \right]^2}{D \left[ X \right]} 
+= \frac{\epsilon \left[T^2 \right] - \epsilon \left[ T \right]^2}{D \left [ X \right] } = \\ 
+= \frac{cov(T,T)}{D \left[ X \right]} = \frac{D \left[T \right]}{D \left[ X \right]} \text{.}
+\end{gather*}
+
+Paneme tähele, et eelneva põhjal $\rho_{XX'} \in \left[0,1 \right]$. Samuti märgime, et kuna $T = X - E$, siis kehtib
+\begin{equation}
+\label{eq:reliability}
+\rho_{XX'} = \frac{D \left[ T \right]}{D \left[ X \right] } = \frac{D \left[ X - E \right]}{D \left[ X \right] } = \frac{D \left[X \right] - D \left[ E \right]}{D \left[ X \right]} = 1 - \frac{D \left[ E \right]}{D \left[ X \right]} \text{.}
+\end{equation}
+
+
+
+Eelneva põhjal on selge, et väide  ``testi  reliaablus on suurem'' on samaväärne järgmise kolme väitega\cite[110]{Sijtsma2009}:
+\begin{enumerate}
+\item testi korrellatsioon paralleelse testiga on suurem,
+\item testi tegeliku tulemuse dispersioon on suurem võrreldes testi tulemuse dispersiooniga,
+\item testi mõõtmisvea dispersioon on väiksem võrreldes testi tulemuse dispersiooniga.
+\end{enumerate}
+
+Märgime, et klassikalise testiteooria raames defineeritud reliaablus sobib kokku eelmises peatükkis antud mitteformaalse definitsiooniga, kuna paralleelseks testiks võib lugeda ka sama testi uuesti läbiviimise sama vastajate kogumi peal. Lisaks on klassikalise testiteooria eeldused nõrgad ning suhteliselt lihtsasti tagatavad. 
+
+Kuna testi tegelik tulemus on suurus, mida me prakikas ei tea ning ka paralleelsete testide läbiviimine ei ole tihti võimalik on kasutusele on üritatud on võimalus testi reliaablust hinnata meie jaoks oluline. Järgnevalt vaatleme, kuidas seda teha.
+
+
+
+\subsection{Reliaabluse hindamine}
+
+Järgnev käsitlus tugineb Jacksoni ja Anguwamba 1977. aasta artiklile.\cite{Jackson1977}
+
+Olgu meil küsimustik, milles on $k$ k\"usimust. Vaatleme seda klassikalise testi teooria raames ning olgu $X$ küsimustiku vaadeldav tulemus, $T$ küsimustiku tegelik tulemus ning $E$ küsimustiku mõõtmisviga. Tähistama fikseeritud k\"usimuse $i, i \in \left\lbrace 1,2,\ldots,k \right\rbrace$ vaadeltavat tulemust kui $X_i$, tegeliku tulemust kui $T_i$ ning mõõtmisviga $E_i$. Paneme tähele, et kui eelnevas peatükkis tähistasime alaindeksiga küsimusele vastajat siis edaspidi tähistama sellega kindlat küsimust. 
+
+Vaatleme testi k\"usimuste tulemuste ja mõõtmisvea vektoreid: $\left( X_1, X_2, X_3, \ldots, X_n \right)$, $\left( T_1, T_2, T_3, \ldots, T_n \right)$, $\left( E_1, E_2, E_3, \ldots, E_n \right)$. Eeldame, et meil on olemas nihketa hinnangud nende vektorite kovaratsioonimaatriksitele , mida tähistame vastavalt $\Sigma_X, \Sigma_T, \Sigma_E$. Seega, 
+\begin{equation*}
+\Sigma_X = 
+\begin{pmatrix}
+cov \left(X_1,X_1 \right) && cov\left( X_1,X_2 \right) && cov \left( X_1,X_3 \right) && \cdots && cov \left( X_1,X_k \right) \\
+cov \left(X_2, X_1 \right) && cov \left(X_2, X_2 \right) && cov \left(X_2, X_3 \right) && \cdots && cov \left(X_2, X_n \right) \\
+cov \left(X_3, X_1 \right) && cov \left(X_3, X_2 \right) && cov \left(X_3, X_3 \right) && \cdots && cov \left(X_n, X_n \right) \\
+\vdots && \vdots && \vdots && \ddots && \vdots \\
+cov \left(X_n, X_1 \right) && cov \left(X_n, X_2 \right) && cov \left(X_n, X_3 \right) && \cdots && cov \left(X_n, X_n \right) \\
+\end{pmatrix}.
+\end{equation*}
+
+Klassikalise testiteooria kohaselt on kehtib $corr \left( E_i, T_j \right) = 0 $, millest järeldub et ka $cov \left( E_i, T_j \right) =0$. 
+Seega, $cov \left( X_i, X_j \right) = cov \left( T_i + E_i, T_j + E_j \right) = cov \left( T_i,T_j \right) + cov \left( T_i,E_j \right) + cov \left( E_i,T_j \right)+ cov \left( E_i, E_j \right) = cov \left( T_i,T_j \right) + cov \left(E_i,E_j \right)$. Siit saame, et 
+\begin{equation}
+\label{eq:sigma_x_=_sigma_t_+_sigma_e}
+\Sigma_X = \Sigma_T + \Sigma_E
+\end{equation}
+Lisaks saame klassikalisele testiteooria tuginedes, et juhul kui $i \neq j$, siis $corr \left( E_i, E_j \right) = 0$ ning ka $cov \left( E_i, E_j \right) = 0$.
+Sellest tulenevalt kehtib
+\begin{equation}
+\Sigma_E = 
+\begin{pmatrix}
+cov \left(E_1,E_1 \right) && 0 && 0 && \cdots && 0 \\
+0 && cov \left(E_2, E_2 \right) && 0 && \cdots && 0 \\
+0 && 0 && cov \left(E_3, E_3 \right) && \cdots && 0 \\
+\vdots && \vdots && \vdots && \ddots && \vdots \\
+0 && 0 &&  0 && \cdots && cov \left(E_n, E_n \right) \\
+\end{pmatrix}.
+\end{equation}
+
+Tähistame edaspidi maatriksi $\Sigma_X$ elemente  $x_{ij}$, maatriksi $\Sigma_T$ elemente $x_{ij}$ ning maatriksi $\Sigma_E$ peadiagonaali elemente $\theta_i$. Seega, kui $i \neq j$, siis $t_{ij} = x_{ij}$ ning $t_{ii} = x_{ii} - \theta_i$.
+
+Tuletame meelde, et kehtib (\ref{eq:reliability}) ning seega on testi reliaablus võrdub avaldisega $1 - \frac{D \left[ E \right]}{D \left[ X \right]}$. 
+
+Järgnevalt kasutame ära seda, et summa dispersioon võrdub liidetavate kovariatsioonimaatriksi elementide summana {\color{cyan} Tõestust vaja ?} ning arvestades mõõtmisvea kovariatsioonimaatriksi eripärasid, saame võrduse 
+
+\begin{equation}
+\label{eq:reliability_cov}
+1 - \frac{D \left[ E \right]}{D \left[ X \right]} = 1 - \frac{\sum_i \theta_i }{\sum_i \sum_j x_{ij}}.
+\end{equation}
+
+Edaspidises peame meeles, et kuna $\Sigma_X, \Sigma_T$ ja $ \Sigma_E$ on kovariatsioonimaatriksid ning seega ka mittenegatiivselt määratud { \color{cyan} Tõestus vaja ?}. Tuletame meelde, et see, et maatrix $C \in mat(n)$ on mittenegatiivselt määratud on samaväärne sellega, et  $\forall v \in Mat(n,1) ~ v^{T} C V \geq 0$.
+\section{Alumised tõkked reliaablusele}
+
+Järgnevalt vaatleme viite alumist tõket reliaablusele, millest neli - $lambda_1,lambda_2,lambda_3,lambda_4$; pakkus aastal 1945 välja Louis Guttman \cite{Guttman1945}. Viienda vaadeldava tõkke pakkusid välja Jackson ja Anguwamba oma 1977 aasta artiklis \cite{Jackson1977}. Kõik tõkked tuletame tuginedes Jacksoni ja Anguwamba artiklile.
+
+\subsubsection{Alumine tõke $\lambda_1$}
+
+Vaatleme kovariatsioonimaatriksit $\Sigma_T \in Mat(k)$. Leidugu maatriksi peadiagonaalil element, mis on negatiivne. Olgu selle elemendi indeks $i$. Olgu $v$ vektor, millel on $k$ elementi, kusjuures 
+\begin{equation}
+v_j =
+\begin{cases}
+1, j = 1 \\
+0, j \neq 1
+\end{cases} 
+\end{equation} 
+
+Paneme tähele, et n\"u\"ud $v^T \Sigma_T v = t_i < 0$. Seega ei ole maatriks enam positiivselt määratud ja ei saa olla kovariatsioonimaatriks.
+
+Seega iga $i$ peab kehtima $t_i \geq 0$ ning seega $\theta_i < x_i$ {\color{cyan}Kas on okay peadiagonaalile viidata \"uhe indeksiga? Peaks kuhugi kirjutama või minema \"ule kahe indeksi peale ? }.
+
+Seega ka $\sum \nolimits_i \theta \leq \sum \nolimits x_i$. Seega saame \ref{eq:reliability_cov} põhjal kirja panna reliaabluse alumise tõkku, mida tähistame kui $\lambda_1$,
+\begin{equation}
+\lambda_1 = 1 - \frac{\sum_i x_i}{\sum_i \sum_j x_{ij}} \leq  1 - \frac{\sum_i \theta_i}{\sum_i \sum_j x_{ij}} =  1 - \frac{D \left[ E \right]}{D \left[ X \right]}.
+\end{equation} 
+
+\subsubsection{Alumine tõke $\lambda_2$}
+
+Enne järgmise alumise tõke tuletamist, veendume et kehtivad kaks abitulemust.
+
+Olgu meil mitte-negatiivselt määratud s\"ummeetriline maatriks $C, C \in Mat(n)$. Näitame, et sellisel juhul kehtib väide, et iga $i,j$ korral
+\begin{equation*}
+c_{i}c_{j} \geq c_{ij}^2 
+\end{equation*}
+
+Valime suvaliselt $i$ ja $j$, nii et $i \neq j, i,j \leq n$ ning $\alpha \in \mathbb{R}$. Olgu meil $n$-vektor $v$, kus
+\begin{equation*}
+v_k =
+\begin{cases}
+1, k=i \\
+\alpha, k=j \\
+0, k \not \in \lbrace i, j \rbrace \\
+\end{cases}
+\end{equation*}.
+
+Kuna $C$ on eelduste kohaselt mitte-negatiivlet määratud, siis peab kehtima 
+\begin{equation}
+\label{eq:sd-toestus-maatriks-korrutis}
+0 \leq v^{T}Cv = 
+\begin{pmatrix}
+\mathbf{0}^T & 1 & \mathbf{0'}^T & \alpha & \mathbf{0''}^T
+\end{pmatrix}
+\begin{pmatrix}
+c_{11} && \cdots && c_{1n} \\
+\vdots && \ddots && \vdots \\
+c_{n1} && \cdots && c_{nn}  
+\end{pmatrix}
+\begin{pmatrix}
+\mathbf{0}^T & 1 & \mathbf{0'}^T & \alpha & \mathbf{0''}^T
+\end{pmatrix},
+\end{equation}
+
+kus $\mathbf{0},\mathbf{0'},\mathbf{0''}$ on null vektorit pikkustega vastavlt $i-1,j-i-1, n -j$.
+
+
+
+Arvutame avaldise \ref{eq:sd-toestus-maatriks-korrutis} väärtuse:
+
+\begin{equation*}
+\begin{split}
+v^{T}Cv =
+\begin{pmatrix}
+\mathbf{0}^T & 1 & \mathbf{0'}^T & \alpha & \mathbf{0''}^T
+\end{pmatrix}
+\begin{pmatrix}
+c_{11} && \cdots && c_{1n} \\
+\vdots && \ddots && \vdots \\
+c_{n1} && \cdots && c_{nn}  
+\end{pmatrix}
+\begin{pmatrix}
+\mathbf{0}^T & 1 & \mathbf{0'}^T & \alpha & \mathbf{0''}^T
+\end{pmatrix} = \\
+= \begin{pmatrix}
+\mathbf{0}^T & 1 & \mathbf{0'}^T & \alpha & \mathbf{0''}^T
+\end{pmatrix}
+\begin{pmatrix}
+c_{1i} + \alpha c_{1j} \\
+\vdots \\
+a_{ni} + \alpha c_{nj} 
+\end{pmatrix}
+= c_{i} + \alpha c_{ij} + \alpha c_{ji} + \alpha^2 c_{j} = c_i + 2 \alpha c_{ij} + \alpha^2 c_{j}.
+\end{split}
+\end{equation*}
+
+
+See, et saadud ruutvõrratus on rahuldatud on samaväärne sellega, et 
+\begin{equation*}
+c_{ij}^2 - c_{i}c_{j} \leq 0,
+\end{equation*}
+milles me soovisimegi veenduda. Eelneva arutelu pärineb Ivar Tammeraidi raamatust \cite{Tammeraid1999}.  
+
+Paneme n\"u\"ud tähele, et kehtib järgvev algebraline samasus:  
+\begin{equation*}
+\left( \sum_i x_i \right)^2 =   \sum_i x_i^2 + \underset{i \neq j}{\sum_i \sum_j} x_i x_j
+\end{equation*}
+
+Kuna eelnev kehtib, siis kehtib ka 
+
+\begin{equation*}
+2 \left( n-1 \right) \left( \sum_i x_i \right)^2 =  2 \left( n-1 \right) \sum_i x_i^2 + 2 \left( n-1 \right) \underset{i \neq j}{\sum_i \sum_j} x_i x_j
+\end{equation*}
+
+Liidetavad teistmoodi grupeerides saame, et
+\begin{equation*}
+\begin{gathered}
+2 \left( n-1 \right) \sum_i x_i^2 + 2 \left( n-1 \right) \underset{i \neq j}{\sum_i \sum_j} x_i x_j = \\
+= \left( x_{1}^2 - 2 x_1 x_2 + x_{2}^2 \right) + \left( x_{1}^2 - 2 x_1 x_3 + x_{3}^2 \right) + \cdots + \left( x_{2}^2 - 2 x_1 x_2 + x_{1}^2 \right) + \cdots + 2n \underset{i \neq j}{\sum_i \sum_j} x_i x_j = \\
+= \underset{i \neq j}{\sum_i \sum_j} (x_i -  x_j)^2 + 2n \underset{i \neq j}{\sum_i \sum_j} x_i x_j
+\end{gathered}
+\end{equation*}
+
+Vaatleme jällegi kovariatsiooni maatriksit $\Sigma_E$. Märkame, et kehtib järgnev:
+
+\begin{equation*}
+tr \left( \Sigma_E \right) = \sum_i \theta_i = \sum_i x_i - \sum_i t_i 
+\end{equation*}.
+
+Eelnevalt käsitletud algebralise samasuse põhjal on lihtne veenduda, et kehtib
+
+\begin{equation*}
+\sum_i t_i = \sqrt{\frac{\underset{i \neq j}{\sum_i \sum_j} (t_i -  t_j)^2 + 2n \left( \underset{i \neq j}{\sum_i \sum_j} t_i t_j \right) }{2 \left( n -1 \right)}} \geq \sqrt{\frac{ n \left( \underset{i \neq j}{\sum_i \sum_j} t_i t_j \right) }{\left( n -1 \right)}}
+\end{equation*}
+
+Arvestades, et kovariatsioonimaatriks on mitte-negatiivselt määratud ning seda, et kui $i \neq j$ siis $t_{ij} = x_{ij}$ , saame eelnevalt tõestatud abitulemuse põhjal väita, et
+
+\begin{equation*}
+\sum_i t_i  \geq \sqrt{\frac{ n \left( \underset{i \neq j}{\sum_i \sum_j} t_i t_j \right) }{\left( n -1 \right)}} \geq \sqrt{\frac{ n \left( \underset{i \neq j}{\sum_i \sum_j} x_{ij}^2 \right) }{\left( n -1 \right)}}
+\end{equation*} 
+
+Selle taustal saame defineerida alumise tõkke reliaablusele, mida tähistame $\lambda_2$:
+
+\begin{equation*}
+\lambda_2 = 1 - \frac{\sum_i x_i - \sqrt{\frac{ n \left( \underset{i \neq j}{\sum_i \sum_j} x_{ij}^2 \right) }{\left( n -1 \right)}}}{\sum_i \sum_j x_{ij}} \leq 1 - \frac{\sum_i x_i - \sum_i t_i}{\sum_i \sum_j x_{ij}} =   1 - \frac{\sum_i \theta_i}{\sum_i \sum_j x_{ij}} =  1 - \frac{D \left[ E \right]}{D \left[ X \right]} \text{.}
+\end{equation*}
+
+
+\subsubsection{Alumine tõke $\lambda3$}
+
+Vaatleme jällegi kovariatsioonimaatriksit $\Sigma_T$. Olgu meil $n$-vektor $v$, mille elment kohal $i$ on $1$ ja element kohal $j$ on $-1$. Kuna kovariatsioonimaatriks peab olema mittenegatiivselt määratud siis peab kehtima
+
+\begin{equation*}
+\label{eq:psd 1 -1 vector}
+0 \leq v^T \Sigma_T v = v^T 
+\begin{pmatrix}
+t_{1i} - t_{1j} \\
+t_{2i} - t_{2j} \\
+\vdots \\
+t_{ni} - t{nj} \\
+\end{pmatrix}
+= t_{i} + t_{j} - 2 t_{ij} \text{,}
+\end{equation*}
+
+võttes arvesse seda, et kui $i \neq j$, siis $x_{ij} = t_{ij}$ saame, et $t_i + t_j \geq 2 x_{ij}$. 
+
+Teame, et võimalusi valida $i$ ja $j$ nii, et $i \neq j$ on $n \left( n -1 \right)$. Summeerides kõik võimalikud võrratused saame, et
+\begin{equation*}
+2 \left( n - 1 \right) \sum_i t_i \geq 2  \underset{i \neq j}{\sum_i \sum_j} x_{ij},
+\end{equation*}
+mis on samaväärne sellega, et
+
+\begin{equation*}
+\sum_i t_i \geq  \frac{1}{n - 1} \underset{i \neq j}{\sum_i \sum_j} x_{ij}.
+\end{equation*}
+
+
+Niisiis, oleme saanud järgmise alumise tõkke reliaablusele, 
+\begin{equation*}
+\lambda_3 = 1 - \frac{\sum_i x_i - \frac{1}{n-1}{\underset{i \neq j}{\sum_i \sum_j} x_{ij}}}{\sum_i \sum_j x_{ij}} \leq  1 - \frac{\sum_i x_i - \sum_i t_i}{\sum_i \sum_j x_{ij}} =   1 - \frac{\sum_i \theta_i}{\sum_i \sum_j x_{ij}} =  1 - \frac{D \left[ E \right]}{D \left[ X \right]} \text{.}
+\end{equation*}
+
+Tõkke lihtsustamisel algebraliste samaväärsustega saame, et
+
+\begin{equation*}
+\begin{gathered}
+\lambda_3 = 1 - \frac{\sum_i x_i - \frac{1}{n-1}{\underset{i \neq j}{\sum_i \sum_j} x_{ij}}}{\sum_i \sum_j x_{ij}} =  \frac{\sum_i \sum_j x_{ij} -  \sum_i x_i + \frac{1}{n-1}{\underset{i \neq j}{\sum_i \sum_j} x_{ij}}  }{\sum_i \sum_j x_{ij}} = \\
+= \frac{{\underset{i \neq j}{\sum_i \sum_j} x_{ij}} + \frac{1}{n-1}{\underset{i \neq j}{\sum_i \sum_j} x_{ij}}}{\sum_i \sum_j x_{ij}} = \frac{n}{n-1} \left( \frac{\underset{i \neq j}{\sum_i \sum_j} x_{ij}}{\sum_i \sum_j x_{ij}} \right) = \frac{n}{n-1} \left(1 - \frac{\sum_i x_{i}}{\sum_i \sum_j x_{ij}} \right).
+\end{gathered}
+\end{equation*}
+
+Tuletades meelde tõkke $\lambda_1$ definitsiooni on ilmne, et
+\begin{equation}
+\label{eq:lambda_3_from_lambda_1}
+\lambda_3 = \frac{n\ \lambda_1}{n-1}.
+\end{equation}
+ 
+
+ 
+\subsubsection{Alumine tõke $\lambda_4$}
+
+Nagu eelmise kahe tõkku puhul, vaatleme kovariatsioonimaatriksit $\Sigma_T$. Olgu meil vektor $v$ selline, et $\lvert {v_i} \rvert = 1$ iga $i \leq n, i \in \mathbb{N}$ korral.    
+Teame, et kehtib
+\begin{equation*}
+0 \leq v^{T} \Sigma_T v,
+\end{equation*}
+seega arvestades kovariatsioonimaatriksi $\Sigma_E$ omadusi saame võrduse \eqref{eq:sigma_x_=_sigma_t_+_sigma_e} põhjal 
+
+\begin{equation*}
+\sum_i \theta_i = \sum_i v_{i}^{2} \theta_i = v^{T} \Sigma_E v \leq v^{T} \Sigma_X v.
+\end{equation*}
+
+Seega, iga võimaliku $v$ korral saame alumise tõkke reliaablusele. Tõepoolest, \eqref{eq:reliability_cov} põhjal iga $v$ korral,  
+\begin{equation*}
+1 - \frac{v^T \Sigma_X v}{\sum_i \sum_j x_{ij}} \leq 1 - \frac{\sum_i \theta_i}{\sum_i \sum_j x_{ij}} = 1 - \frac{D \left[ E \right]}{ D \left[X \right]  }
+\end{equation*} 
+Defineerime alumise tõkke $\lambda_4$ kui maksimumi kõikidest sellistest tõkketest, seega
+
+\begin{equation*}
+\lambda_4  = \underset{v}{max} \left( 1 - \frac{v^{T} \Sigma_X v}{\sum_i \sum_j x_{ij}} \right).
+\end{equation*}
+
+
+\subsubsection{Alumine tõke $glb$}
+
+Me teame, et kehtib \eqref{eq:sigma_x_=_sigma_t_+_sigma_e} ning teame, et $\Sigma_X$, $\Sigma_T$ ja $\Sigma_E$ on kovariatsioonimaatriksid, seega ka mitte-negatiivselt määratud.
+
+Paneme tähele, et tänu $\Sigma_E$ struktuurile on tema mittenegatiivsus samaväärne sellega, et $0 \leq \theta_i$ iga $i$ korral {\color{cyan} Tõestus? Iseenesest väga lihtne}. 
+
+\"Uritame n\"u\"ud  leida vea suurimat võimaliku dispersiooni, mis on \eqref{eq:reliability} põhjal samaväärne summaga $\sum_i \theta_i$, arvestades eelnevalt kirjeldatud piiranguid. Saame selle panna kirja järgneva optimiseerimis\"ulesandena:
+\begin{equation}
+\begin{gathered}
+max \sum_i \theta_i \\
+\theta_i > 0 \\
+\Sigma_X = \Sigma_T + \Sigma_E \\
+\Sigma_T \succeq 0, \\
+\end{gathered} 
+\end{equation} 
+
+kus kirjapilt $\Sigma_T \succeq 0$ tähistab tingimust "$\Sigma_T$ on mittenegatiivselt määratud". 
+
+Olgu $z$ eelneva optimiseerimis\"ulesande lahend mingi fikseeritud vaadelud tulemuste kovariatsioonimaatrikis $\Sigma_X$ korral. Tähistame tähekombinatsiooniga $glb$, mis tuleneb fraasist \textit{greatest lower bound}, $z$ abil saadud alumise tõkku reliaablusele ehk
+
+\begin{equation*}
+glb = 1 - \frac{z}{\sum_i \sum_j x_{ij}}.
+\end{equation*}  
+
+Panemet tähele, et kuna $z$ on maksimaalne vea dispersioon fikseeritud $\Sigma_X$ korral, siis on alumine tõke $glb$ minimaalne võimalik reliaablus. Siit aga saame, et iga teine reliaabluse alumine tõke peab olema väiksem võrdne tõkega $glb$. Seega on $glb$ suurim võimalik alumine tõke. 
+
+
+
+
 
 
 \subsection{Cronbachi alfa}
@@ -346,15 +923,6 @@ Kuna Cronbach'i alfal on mitmeid puuduseid, millest mõningad on toodud ära Dav
 
 \end{enumerate}
 
-\paragraph{Milliseid piiranguid seab Cronbachi alfa kasutamine?}\mbox{}\\*
-
-Tooksin esile kaks tähtsamat piirangut:
-\begin{enumerate}[I]
-\item Uuritavate k\"usimustike puhul peaks sama konstruktsiooniga tegelema võimalikult palju k\"usimusi, vältima peaks k\"usimustikke, kus \"uhe konstruktsiooni kohta on alla kolme k\"usimuse.
-\item K\"usimustikud ei tohi olla liiga pikad, Cronbachi alfa peegeldab lisaks sisemisele järjekindlusele ka k\"usimustiku pikkust. \cite[101]{Streiner2010} Liiga pika k\"usimustiku puhul on oht, et pikkusest saab domineerv osa Cronbachi alfast.
-\end{enumerate}
-
-\label{sec:Cronbach}
 
 
 
@@ -451,15 +1019,6 @@ Selle töö raames loodame välja pakkuda viisi, kuidas paigutada intervallskaal
 Kui me tahame välja pakkuda alternatiive vaikimisi hinnangule, peab meil olema põhjendus, miks välja pakutud lahendus kirjeldab reaalsust täpsemalt. Pakume välja järgmise lahenduse: 
 \"uritame leida hinnangute paiknemist skaalal nii, et k\"usitluse sisemine reliaablus oleks võimalikult suur. Piirame ennast sellega, et  hinnangute esialgne järjestus ei tohi muutuda. Sisemise järjekindluse maksimeerimise taandame antud töö käigus Cronbachi alfa maksimeerimisele.\footnote{Põhjendus, miks selline taandamine on tehtud, on ära toodud peat\"ukis \hyperref[sec:Cronbach]{\ref*{sec:Cronbach}}.} 
  
-
-\section*{Altervatiivid}
-
-{\color{cyan} Ilmselt siit edasi ei lähe, lendab praeguses lahenduses välja (kui just mingi vahva idee peale ei tule). Võib-olla pakkuda siin välja alternatiive Cronbach'i alfa abil sobivate vahekauguste leidmisele) }
-\begin{enumerate}
-\item Kõige triviaalsem viis: kujutame kõikide k\"usimuste vastused hulgale $\left\lbrace 1,2,3,4,5 \right\rbrace$ , leiame mudeli, mille võime kirjeldada valitud k\"usimust on suurim. Tegemist on ilmselt vaikimisi variandiga ehk loodud mudelit peab võrdlema 
-\item Selle asemel, et kujutada hulgale $\left\lbrace 1,2,3,4,5 \right\rbrace$, leiame sobivad vasted nii, et mudeli kirjeldav jõud oleks suurim. Sellise lähenemise oht seisneb selles, et meie mudel kirjeldab väga hästi olemasolevat valimit, kuid ei \"utle suurt midagi \"uldkogumi kohta. {\color{blue} Huvitav oleks, kas lihsalt nii midagi teha ei annaks ? Overfittimise vastu saaks, aga vaja oleks valimit, mis oleks piisavalt suur, et seda kaheks jagada(midagi, mille pealt mudelit ehitada ja midagi, mille pealt seda validifitseerida}. 
-\item {\color{blue} Midagi veel? Peab uurima.}
-\end{enumerate}
 
 \section{\"Ulesande matemaatiline p\"ustitus}
 
@@ -866,6 +1425,15 @@ I_k & Q_i^T x \\
 \end{pmatrix} \succeq 0 \notag
 \end{gather}
 
+\section{Teek}
+
+Põhjendan siin ka lühidalt Pythoni eeliseid teegi realiseerimisel, alternatiividega (näiteks Java või MATLAB) võrreldes:
+\begin{enumerate}
+\item Python on hetkel keel, millega programeerimisalased õppingud tavaliselt algavad. Näiteks Tartu Ülikoolis õpetatakse programeerimist keeles Python nii matemaatika-informaatika teaduskonnale suunatud aines kui ka teistele huvilistele suunatud aines "Programeerimise alused", mida 2013/2014 aasta kevadel kuulas 150 inimest. Autor loodab, et nende seas on ka mõned psühholoogia tudengid.
+\item Pythonil on läbi NumPy ja SciPy teekide väga hea arvutuslik tugi soovitud hinnangute implementeerimiseks.
+\item Pythoni teek on väga lihte integreerida mõne veebiraamistikuga, mis võiks olla loodava teegi üks rakenduskohti.
+\item Python on vabavara ning kõigile tasuta kasutatav.
+\end{enumerate}
 
 
 
