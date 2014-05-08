@@ -13,20 +13,20 @@
 \contentsline {subsection}{\numberline {3.2}Vajalikud taustteadimesd reliaabluse hindamiseks}{14}{subsection.3.2}
 \contentsline {section}{\numberline {4}Alumised t\IeC {\~o}kked reliaablusele}{18}{section.4}
 \contentsline {subsection}{\numberline {4.1}Alumine t\IeC {\~o}ke $\lambda _1$}{18}{subsection.4.1}
-\contentsline {subsection}{\numberline {4.2}Alumine t\IeC {\~o}ke $\lambda _2$}{18}{subsection.4.2}
-\contentsline {subsection}{\numberline {4.3}Alumine t\IeC {\~o}ke $\lambda 3$}{20}{subsection.4.3}
+\contentsline {subsection}{\numberline {4.2}Alumine t\IeC {\~o}ke $\lambda _2$}{19}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Alumine t\IeC {\~o}ke $\lambda 3$}{21}{subsection.4.3}
 \contentsline {subsection}{\numberline {4.4}Alumine t\IeC {\~o}ke $\lambda _4$}{22}{subsection.4.4}
-\contentsline {subsection}{\numberline {4.5}Alumine t\IeC {\~o}ke $glb$}{22}{subsection.4.5}
-\contentsline {subsection}{\numberline {4.6}Cronbachi alfa}{23}{subsection.4.6}
-\contentsline {paragraph}{Miks ma taandan selles t\IeC {\"o}\IeC {\"o}s sisemise j\IeC {\"a}rjekindluse m\IeC {\~o}\IeC {\~o}tmise Cronbachi alfale?}{23}{section*.2}
+\contentsline {subsection}{\numberline {4.5}Alumine t\IeC {\~o}ke $glb$}{23}{subsection.4.5}
+\contentsline {subsection}{\numberline {4.6}Cronbachi alfa}{24}{subsection.4.6}
+\contentsline {paragraph}{Miks ma taandan selles t\IeC {\"o}\IeC {\"o}s sisemise j\IeC {\"a}rjekindluse m\IeC {\~o}\IeC {\~o}tmise Cronbachi alfale?}{24}{section*.2}
 \contentsline {section}{\numberline {5}\"Ulesande p\"ustitus}{24}{section.5}
-\contentsline {section}{\numberline {6}\"Ulesande matemaatiline p\"ustitus}{24}{section.6}
-\contentsline {section}{\numberline {7}\IeC {\"U}lesande t\"u\"ubi keerekuse anal\"u\"us}{28}{section.7}
+\contentsline {section}{\numberline {6}\"Ulesande matemaatiline p\"ustitus}{25}{section.6}
+\contentsline {section}{\numberline {7}\IeC {\"U}lesande t\"u\"ubi keerekuse anal\"u\"us}{29}{section.7}
 \contentsline {subsection}{\numberline {7.1}Kahendt\IeC {\"a}isarv programm}{29}{subsection.7.1}
-\contentsline {subsection}{\numberline {7.2}NP-Hard probleemid}{29}{subsection.7.2}
-\contentsline {section}{\numberline {8}\"Ulesande anal\"u\"usiks vajalik taust}{29}{section.8}
-\contentsline {subsection}{\numberline {8.1}Kumerus}{29}{subsection.8.1}
-\contentsline {section}{\numberline {9}Lahenduse idee}{29}{section.9}
-\contentsline {section}{\numberline {10}Teisendus \textit {QCQP} t\"u\"upi \"ulesandelt \textit {SDP} t\"u\"upi \"ulesandele}{29}{section.10}
+\contentsline {subsection}{\numberline {7.2}NP-Hard probleemid}{30}{subsection.7.2}
+\contentsline {section}{\numberline {8}\"Ulesande anal\"u\"usiks vajalik taust}{30}{section.8}
+\contentsline {subsection}{\numberline {8.1}Kumerus}{30}{subsection.8.1}
+\contentsline {section}{\numberline {9}Lahenduse idee}{30}{section.9}
+\contentsline {section}{\numberline {10}Teisendus \textit {QCQP} t\"u\"upi \"ulesandelt \textit {SDP} t\"u\"upi \"ulesandele}{30}{section.10}
 \contentsline {section}{\numberline {11}Teek}{31}{section.11}
-\contentsline {section}{\numberline {12}Lisa}{32}{section.12}
+\contentsline {section}{\numberline {12}Lisa}{33}{section.12}

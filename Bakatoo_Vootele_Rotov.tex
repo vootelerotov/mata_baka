@@ -658,7 +658,7 @@ Kuna testi tegelik tulemus on suurus, mida me prakikas ei tea ning ka paralleels
 \subsection{Vajalikud taustteadimesd reliaabluse hindamiseks}
 
 Järgnev käsitlus tugineb Jacksoni ja Anguwamba 1977. aasta artiklile.\cite{Jackson1977}
-Olgu meil küsimustik, milles on $k$ k\"usimust. Vaatleme seda klassikalise testi teooria raames ning olgu $X$ küsimustiku vaadeldav tulemus, $T$ küsimustiku tegelik tulemus ning $E$ küsimustiku mõõtmisviga. Vaatleme iga küsimust kui ühest küsimusest koosnevat alamküsimustiku ja tähistama fikseeritud k\"usimuse $ i \in \left\lbrace 1,2,\ldots,k \right\rbrace$ vaadeltavat tulemust kui $X_i$, tegeliku tulemust kui $T_i$ ning mõõtmisviga $E_i$. Seega $X = \sum \limits_{i=0}^{k} X_i$, $T = \sum \limits_{i=0}^{k} T_i$ ja $E = \sum \limits_{i=0}^{k} E_i$ . Paneme tähele, et kui eelnevas peatükkis tähistasime alaindeksiga küsimusele vastajat siis edaspidi tähistama sellega kindlat küsimust. 
+Olgu meil vastajate populatsioon $I$, üle mille me vaatleme küsimustiku, milles on $k$ k\"usimust. Vaatleme seda küsimustiku klassikalise testiteooria raames ning olgu $X$ küsimustiku vaadeldav tulemus, $T$ küsimustiku tegelik tulemus ning $E$ küsimustiku mõõtmisviga. Vaatleme iga küsimust kui ühest küsimusest koosnevat alamküsimustiku ja tähistama fikseeritud k\"usimuse $ i \in \left\lbrace 1,2,\ldots,k \right\rbrace$ vaadeltavat tulemust kui $X_i$, tegeliku tulemust kui $T_i$ ning mõõtmisviga $E_i$. Seega $X = \sum \limits_{i=0}^{k} X_i$, $T = \sum \limits_{i=0}^{k} T_i$ ja $E = \sum \limits_{i=0}^{k} E_i$ . Paneme tähele, et kui eelnevas peatükkis tähistasime alaindeksiga küsimusele vastajat siis edaspidi tähistama sellega kindlat küsimust. 
 
 Vaatleme testi k\"usimuste tulemuste ja mõõtmisvea vektoreid: $\left( X_1, X_2, X_3, \ldots, X_n \right)$, $\left( T_1, T_2, T_3, \ldots, T_n \right)$, $\left( E_1, E_2, E_3, \ldots, E_n \right)$. Tähistame nende vektorite kovariatsioonimaatriksid\footnote{Praktikas ei ole kovariatsioonimaatriksid meil teada, kuid meil on võimalik valimi põhjal saada hinnang vaadeldavate tulemuste kovariatsioonimaatriksile }, vastavalt $\Sigma_X, \Sigma_T, \Sigma_E$. Seega, 
 \small
@@ -698,13 +698,13 @@ cov \left(E_1,E_1 \right) && 0 && 0 && \cdots && 0 \\
 \end{equation}
 \normalsize
 
-Tähistame edaspidi maatriksi $\Sigma_X$ elemente  $x_{ij}$, maatriksi $\Sigma_T$ elemente $x_{ij}$ ning maatriksi $\Sigma_E$ peadiagonaali elemente $\theta_i$. Seega, kui $i \neq j$, siis $t_{ij} = x_{ij}$ ning $t_{ii} = x_{ii} - \theta_i$.
+Tähistame edaspidi maatriksi $\Sigma_X$ elemente  $x_{ij}$, maatriksi $\Sigma_T$ elemente $t_{ij}$ ning maatriksi $\Sigma_E$ peadiagonaali elemente $\theta_i$. Seega, kui $i \neq j$, siis $t_{ij} = x_{ij}$ ning $t_{ii} = x_{ii} - \theta_i$.
 
 Tuletame meelde, et eelmises peatükkis veendusime (\ref{eq:reliability}), et testi reliaablus võrdub avaldisega $1 - \frac{D \left[ E \right]}{D \left[ X \right]}$. 
 
 Veendume, et juhuslike suuruste summa summa dispersioon võrdub liidetavate kovariatsioonimaatriksi elementide summaga ehk kui $X = \sum \limits_{i=1}^k$  ja $\Sigma_X$ on vektori $(X_1,X_2,\ldots,X_K)$ kovariatsioonimaatriks siis
 \begin{equation*}
-D[X] = \sum \limits_{i=1}^k \sum \limits_{j=1}^k {\Sigma_X}_{ij} \text{.}
+D[X] = \sum \limits_{i=1}^k \sum \limits_{j=1}^k {x}_{ij} \text{.}
 \end{equation*}
 
 Eelnevas veendumiseks paneme tähele, et 
@@ -714,7 +714,7 @@ D[X] =  D[X_1 + X_2 + \ldots + X_k] \overset{\text{\thref{summa_dispersioon}}}{=
 + 2[ cov(X_1,X_2) + cov(X_1,X_3) + \ldots + cov(X_1,X_k)] \text{.}
 \end{gather*}
 
-Näeme, et tegemist on rekkurentse võrrandiga. Arvestades, et $cov(X,X) = D[X]$ (vt.(\ref{eq:corr_equals_var_over_var})), näeme, et igale liidetavale eelnevas summas vastab mingite kovariatsioonimaatriksite elementide summa, kusjuures kõik kovariatsioonimaatriksi elemendid kuuluvad täpselt ühte nendest summadest. Kovariatsiooni maatriksi jagunemist illustreerib järgnev tabel, kus sinisega on tähistatud $D[X_1]$, punasega liidetavad, mille summa on võrdne arvuga $2[ cov(X_1,X_2) + cov(X_1,X_3) + \ldots + cov(X_1,X_k)]$ ja rohelisega liikmed, mille summast moodustub $D[X_1 + X_2 + \ldots + X_k]$.
+Näeme, et tegemist on rekkurentse võrrandiga. Arvestades, et $cov(X,X) = D[X]$ (vt.(\ref{eq:corr_equals_var_over_var})), näeme, et igale liidetavale eelnevas summas vastab mingite kovariatsioonimaatriksite elementide summa, kusjuures kõik kovariatsioonimaatriksi elemendid kuuluvad täpselt ühte nendest summadest. Kovariatsiooni maatriksi jagunemist illustreerib järgnev tabel, kus sinisega on tähistatud $D[X_1]$, punasega liidetavad, mille summa on võrdne arvuga $2[ cov(X_1,X_2) + cov(X_1,X_3) + \ldots + cov(X_1,X_k)]$ ja rohelisega liikmed, mille summast moodustub $D[X_1 + X_2 + \ldots + X_k]$. Siinkohal meenutame, et kovariatsioon on sümmeetriline ning seega $cov(X_i,X_j) = cov(X_j,X_i)$.
 
 
 \begin{figure}[H]
@@ -744,6 +744,7 @@ Arvestades maatriksi \ref{eq:sigma_E} ehitust, saame võrduse
 \end{mittenegatiivselt_maaratud}
 \end{meeldetuletus}
 
+
 Veendume järgnevalt, et iga kovariatsioonimaatriks ning järelikult ka $\Sigma_X, \Sigma_T$ ja $ \Sigma_E$ on mittenegatiivselt määratud. 
 
 \begin{meeldetuletus}
@@ -763,7 +764,7 @@ cov(X,\alpha Y) = \epsilon \left[ \left( X - \epsilon \left[ X \right] \right) \
 \end{proof}
 \end{meeldetuletus}
 
-Olgu meil suvaliste juhuslike suuruste vektor $X_1,X_2,\ldots,X_n$ , kun $n \in \mathbb{N}$ ja olgu $\Sigma_X$ selle vektori kovariatsioonimaatriks. Olgu meil suvaline $k$-vektor $v = (v_1,v_2,\ldots,v_n)$. Konstrueerime uue juhuslike suuruste vektori ($X_1',X_2',\ldots,X_n')$, kusjuures $X_i' = v_i X_i$ ning olgu $\Sigma_X'$ selle vektori kovariatsioonimaatriks. Vaatleme juhusliku suurust $X' = \sum \limits_{i=1}^n X_i'$. Kuna eelneva põhjal $D[X'] = \sum \limits_{i=1}^n \sum \limits_{j=1}^n {\Sigma_X'}_{ij} $ ja definitsiooni põhjal $D[X'] \geq 0$, siis $\sum \limits_{i=1}^n \sum \limits_{j=1}^n {\Sigma_X}_{ij} \geq 0$. Kuna $\Sigma_X'$ on kovariatsioonimaatriks siis,
+Olgu meil suvaliste juhuslike suuruste vektor $X_1,X_2,\ldots,X_n$ , kun $n \in \mathbb{N}$ ja olgu $\Sigma_X$ selle vektori kovariatsioonimaatriks. Olgu meil suvaline $k$-vektor $v = (v_1,v_2,\ldots,v_n)$. Konstrueerime uue juhuslike suuruste vektori ($X_1',X_2',\ldots,X_n')$, kusjuures $X_i' = v_i X_i$ ning olgu $\Sigma_X'$ selle vektori kovariatsioonimaatriks. Vaatleme juhusliku suurust $X' = \sum \limits_{i=1}^n X_i'$. Kuna eelneva põhjal $D[X'] = \sum \limits_{i=1}^n \sum \limits_{j=1}^n {\Sigma_X'}_{ij} $ ja definitsiooni põhjal $D[X'] \geq 0$, siis $\sum \limits_{i=1}^n \sum \limits_{j=1}^n {\Sigma_X'}_{ij} \geq 0$. Kuna $\Sigma_X'$ on kovariatsioonimaatriks siis,
 \begin{equation}
 \label{eq:kov_maatriksi_summa}
 \sum \limits_{i=1}^n \sum \limits_{j=1}^n {\Sigma_X'}_{ij} = \sum \limits_{i=1}^n \sum \limits_{j=1}^n cov(v_iX_i,v_jX_j) \overset{\text{\thref{konstant_kovariatsioon}}}{=} \sum \limits_{i=1}^n \sum \limits_{j=1}^n v_i v_j cov(X_i,X_j) \text{.}
@@ -785,28 +786,37 @@ Seega $v^T \Sigma_X v \geq 0$ ning kuna $v$ oli valitud suvaliselt siis on $\Sig
 Sellega oleme andund reliaablusele matemaatilise definitsiooni ning mõtestanud lahti vajaminevad taustteadmised reliaabluse hindamiseks. Järgnevalt tuletame mõned alumised tõkked reliaablusele.   
 
   
- {\color{red}- - - SIIA MAANI REFAKTOREERITUD! EDASI OMAL VASTUTUSEL! - - - -} 
+
 
 \section{Alumised tõkked reliaablusele}
 
 Järgnevalt vaatleme viite alumist tõket reliaablusele, millest neli - $\lambda_1,\lambda_2,\lambda_3,\lambda_4$; pakkus aastal 1945 välja Louis Guttman \cite{Guttman1945}. Viienda vaadeldava tõkke pakkusid välja Jackson ja Anguwamba oma 1977 aasta artiklis \cite{Jackson1977}. Kõik tõkked tuletame tuginedes Jacksoni ja Anguwamba artiklile.
 
+Olgu meil vastajate kogum $I$, üle mille me vaatleme $k$ küsimusest koosnev küsimustik, mille vaadeldav tulemus on $X$, tegelik tulemus on $T$ ja mõõtmisviga üle on $E$. Nummerdame küsimused arvudega $1$ kuni $k$. Vaatleme igat küsimust eraldi alamküsimustikuna, ning olgu $X_i$ küsimuse $i$ vaadeldav tulemus, $T_i$ küsimuse $i$ tegelik tulemus ja $E_i$ küsimuse $i$ mõõtmisviga. Analoogiliselt eelmise peatükiga tähistame vektorite $(X_1,X_2,\ldots X_k)$, $(T_1,T_2,\ldots,T_k)$ ja $(E_1,E_2,\ldots,E_k)$ kovariatsioonimaatrikseid kui $\Sigma_X,\Sigma_T,\Sigma_E \in Mat_{k}\left(\mathbb{R}\right)$. Nagu eelmises peatükkis, tähistame ka siin maatriksi $\Sigma_X$ elemente kui $x_{ij}$, maatriksi $\Sigma_T$ elemente kui $t_{ij}$ ning maatriksi $\Sigma_E$ peadiagonaali elemente $\theta_i$. Edaspidi vaatleme selles peatükkis küsimustiku, mille vaadeldav tulemus on $X$, reliaabluse alumisi tõkkeid.
+
 \subsection{Alumine tõke $\lambda_1$}
 
-Vaatleme kovariatsioonimaatriksit $\Sigma_T \in Mat(k)$. Leidugu maatriksi peadiagonaalil element, mis on negatiivne. Olgu selle elemendi indeks $i$. Olgu $v$ vektor, millel on $k$ elementi, kusjuures 
-\begin{equation}
+Vaatleme kovariatsioonimaatriksit $\Sigma_T$. Eeldame vastuväiteliselt, et maatriksi $\Sigma_T$ peadiagonaalil leidub element, mis on negatiivne. Olgu selleks elemendiiks  $t_{ii}$. Olgu $v$ vektor, millel on $k$ elementi, kusjuures 
+\begin{equation*}
 v_j =
 \begin{cases}
 1, j = 1 \\
 0, j \neq 1
 \end{cases} 
-\end{equation} 
+\text{.}
+\end{equation*} 
 
-Paneme tähele, et n\"u\"ud $v^T \Sigma_T v = t_i < 0$. Seega ei ole maatriks enam positiivselt määratud ja ei saa olla kovariatsioonimaatriks.
+Paneme tähele, et n\"u\"ud $v^T \Sigma_T v = t_{ii} < 0$. Tõepoolest,
+\begin{equation*}
+v^T \Sigma_T v = 
+\begin{pmatrix}
+t_{i1} & t_{i2} &  \hdots & t_{ik}\\
+\end{pmatrix} v = t_{ii} \text{.}
+\end{equation*} Seega ei ole maatriks enam positiivselt määratud, mis on eelmises peatükkis läbiviidud arutelu põhjal vastuolus sellega, et $\Sigma_T$ on kovariatsioonimaatriks .
 
-Seega iga $i$ peab kehtima $t_i \geq 0$ ning seega $\theta_i < x_i$ {\color{cyan}Kas on okay peadiagonaalile viidata \"uhe indeksiga? Peaks kuhugi kirjutama või minema \"ule kahe indeksi peale ? }.
+Seega iga $i$ peab kehtima $t_{ii} \geq 0$ ning kuna eelmise peatüki põhjal $\Sigma_X = \Sigma_T + \Sigma_E$, siis peab kehtima $\theta_i < x_{ii}$ iga $i, 1 \leq i \leq k$ korral.
 
-Seega ka $\sum \nolimits_i \theta \leq \sum \nolimits x_i$. Seega saame \ref{eq:reliability_cov} põhjal kirja panna reliaabluse alumise tõkku, mida tähistame kui $\lambda_1$,
+Seega ka $\sum \limits_{i=1}^k \theta_i \leq \sum \limits_{i=1}^k x_{ii}$. Võttes arvesse võrdust (\ref{eq:reliability_cov}), oleme saanud küsimustiku, mille vaadeldav tulemus on $X$,  reliaablusele alumise tõkke, mida tähistame kui $\lambda_1$, kus
 \begin{equation}
 \lambda_1 = 1 - \frac{\sum_i x_i}{\sum_i \sum_j x_{ij}} \leq  1 - \frac{\sum_i \theta_i}{\sum_i \sum_j x_{ij}} =  1 - \frac{D \left[ E \right]}{D \left[ X \right]}.
 \end{equation} 
@@ -815,22 +825,22 @@ Seega ka $\sum \nolimits_i \theta \leq \sum \nolimits x_i$. Seega saame \ref{eq:
 
 Enne järgmise alumise tõke tuletamist, veendume et kehtivad kaks abitulemust.
 
-Olgu meil mitte-negatiivselt määratud s\"ummeetriline maatriks $C, C \in Mat(n)$. Näitame, et sellisel juhul kehtib väide, et iga $i,j$ korral
+Olgu meil mitte-negatiivselt määratud s\"ummeetriline maatriks $C, C \in Mat_{n}(\mathbb{R})$. Näitame, et sellisel juhul kehtib väide, et iga $i,j$ korral
 \begin{equation*}
-c_{i}c_{j} \geq c_{ij}^2 
+c_{ii}c_{jj} \geq c_{ij}^2 \text{.}
 \end{equation*}
 
-Valime suvaliselt $i$ ja $j$, nii et $i \neq j, i,j \leq n$ ning $\alpha \in \mathbb{R}$. Olgu meil $n$-vektor $v$, kus
+Valime suvaliselt $i$ ja $j$, nii et $i \neq j, 1 \leq i,j \leq n$ ning $\alpha \in \mathbb{R}$. Olgu meil $n$-vektor $v$, kus
 \begin{equation*}
 v_k =
 \begin{cases}
 1, k=i \\
 \alpha, k=j \\
 0, k \not \in \lbrace i, j \rbrace \\
-\end{cases}
-\end{equation*}.
+\end{cases} \text{.}
+\end{equation*}
 
-Kuna $C$ on eelduste kohaselt mitte-negatiivlet määratud, siis peab kehtima 
+Kuna eelduste kohaselt on $C$ mitte-negatiivlet määratud, siis peab kehtima 
 \begin{equation}
 \label{eq:sd-toestus-maatriks-korrutis}
 0 \leq v^{T}Cv = 
@@ -843,18 +853,22 @@ c_{11} && \cdots && c_{1n} \\
 c_{n1} && \cdots && c_{nn}  
 \end{pmatrix}
 \begin{pmatrix}
-\mathbf{0}^T & 1 & \mathbf{0'}^T & \alpha & \mathbf{0''}^T
-\end{pmatrix},
+\mathbf{0} \\ 
+1 \\
+\mathbf{0'} \\
+\alpha \\
+\mathbf{0''} 
+\end{pmatrix} \text{,}
 \end{equation}
 
-kus $\mathbf{0},\mathbf{0'},\mathbf{0''}$ on null vektorit pikkustega vastavlt $i-1,j-i-1, n -j$.
+kus $\mathbf{0},\mathbf{0'},\mathbf{0''}$ on null vektorid pikkustega vastavalt $i-1,j-i-1, n -j$.
 
 
 
 Arvutame avaldise \ref{eq:sd-toestus-maatriks-korrutis} väärtuse:
 
 \begin{equation*}
-\begin{split}
+\begin{gathered}
 v^{T}Cv =
 \begin{pmatrix}
 \mathbf{0}^T & 1 & \mathbf{0'}^T & \alpha & \mathbf{0''}^T
@@ -865,8 +879,12 @@ c_{11} && \cdots && c_{1n} \\
 c_{n1} && \cdots && c_{nn}  
 \end{pmatrix}
 \begin{pmatrix}
-\mathbf{0}^T & 1 & \mathbf{0'}^T & \alpha & \mathbf{0''}^T
-\end{pmatrix} = \\
+\mathbf{0} \\ 
+1 \\
+\mathbf{0'} \\
+\alpha \\
+\mathbf{0''} 
+\end{pmatrix}  =\\
 = \begin{pmatrix}
 \mathbf{0}^T & 1 & \mathbf{0'}^T & \alpha & \mathbf{0''}^T
 \end{pmatrix}
@@ -875,20 +893,22 @@ c_{1i} + \alpha c_{1j} \\
 \vdots \\
 a_{ni} + \alpha c_{nj} 
 \end{pmatrix}
-= c_{i} + \alpha c_{ij} + \alpha c_{ji} + \alpha^2 c_{j} = c_i + 2 \alpha c_{ij} + \alpha^2 c_{j}.
-\end{split}
+= c_{ii} + \alpha c_{ij} + \alpha c_{ji} + \alpha^2 c_{jj} = c_{ii} + 2 \alpha c_{ij} + \alpha^2 c_{jj} \text{.}
+\end{gathered}
 \end{equation*}
 
 
-See, et saadud ruutvõrratus on rahuldatud on samaväärne sellega, et 
+Seega saame, et $ 0 \leq c_{ii} + 2\alpha{c_ij} + c_{jj}$. See, et saadud ruutvõrratus on kehtib on samaväärne sellega, et selle ruutvõrrandi diskriminant ei ole nullist suurem. Seega,   
 \begin{equation*}
-c_{ij}^2 - c_{i}c_{j} \leq 0,
+c_{ij}^2 - c_{i}c_{j} \leq 0 \text{,} 
 \end{equation*}
-milles me soovisimegi veenduda. Eelneva arutelu pärineb Ivar Tammeraidi raamatust \cite{Tammeraid1999}.  
+milles me soovisimegi veenduda. Eelneva arutelu idee pärineb Ivar Tammeraidi õppikust. \cite{Tammeraid1999}.  
+
+ {\color{red}- - - SIIA MAANI REFAKTOREERITUD! EDASI OMAL VASTUTUSEL! - - - -} 
 
 Paneme n\"u\"ud tähele, et kehtib järgvev algebraline samasus:  
 \begin{equation*}
-\left( \sum_i x_i \right)^2 =   \sum_i x_i^2 + \underset{i \neq j}{\sum_i \sum_j} x_i x_j
+\left( \sum_i x_{ii} \right)^2 =   \sum_i x_{ii}^2 + \underset{i \neq j}{\sum_i \sum_j} x_i x_j \text{.}
 \end{equation*}
 
 Kuna eelnev kehtib, siis kehtib ka 

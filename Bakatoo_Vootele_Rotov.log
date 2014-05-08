@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.4.24)  6 MAY 2014 20:20
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.4.24)  8 MAY 2014 23:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1474,174 +1474,617 @@ Overfull \hbox (1.88602pt too wide) in paragraph at lines 745--745
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 749--750
+Package mdframed Warning: You got a bad break
+(mdframed)                because the last box will be empty
+(mdframed)                you have to change it manually
+(mdframed)                by changing the text, the space
+(mdframed)                or something else on input line 745.
+
+
+Overfull \vbox (5.25801pt too high) detected at line 745
+ []
+
+Package mdframed Info: Box was splittet wrong
+ starting loop to iterate the splitting point
+(mdframed)              on input line 745.
+
+Overfull \vbox (6.25801pt too high) detected at line 745
+ []
+
+
+Overfull \vbox (7.25801pt too high) detected at line 745
+ []
+
+
+Overfull \vbox (8.25801pt too high) detected at line 745
+ []
+
+
+Overfull \vbox (9.25801pt too high) detected at line 745
+ []
+
+
+Overfull \vbox (10.25801pt too high) detected at line 745
+ []
+
+
+Overfull \vbox (11.25801pt too high) detected at line 745
+ []
+
+
+Overfull \vbox (12.25801pt too high) detected at line 745
+ []
+
+
+Overfull \vbox (13.25801pt too high) detected at line 745
+ []
+
+
+Overfull \vbox (14.25801pt too high) detected at line 745
+ []
+
+
+Overfull \vbox (15.25801pt too high) detected at line 745
+ []
+
+
+Overfull \vbox (16.25801pt too high) detected at line 745
+ []
+
+
+Overfull \vbox (17.25801pt too high) detected at line 745
+ []
+
+
+Overfull \vbox (18.25801pt too high) detected at line 745
+ []
+
+
+Overfull \vbox (19.25801pt too high) detected at line 745
+ []
+
+
+Overfull \vbox (20.25801pt too high) detected at line 745
+ []
+
+
+Overfull \vbox (21.25801pt too high) detected at line 745
+ []
+
+
+Overfull \vbox (22.25801pt too high) detected at line 745
+ []
+
+
+Overfull \vbox (23.25801pt too high) detected at line 745
+ []
+
+
+Overfull \vbox (24.25801pt too high) detected at line 745
+ []
+
+
+Overfull \vbox (25.25801pt too high) detected at line 745
+ []
+
+
+Overfull \vbox (26.25801pt too high) detected at line 745
+ []
+
+
+Overfull \vbox (27.25801pt too high) detected at line 745
+ []
+
+
+Overfull \vbox (28.25801pt too high) detected at line 745
+ []
+
+
+Overfull \vbox (29.25801pt too high) detected at line 745
+ []
+
+
+Overfull \vbox (30.25801pt too high) detected at line 745
+ []
+
+
+Overfull \vbox (31.25801pt too high) detected at line 745
+ []
+
+
+Overfull \vbox (32.25801pt too high) detected at line 745
+ []
+
+
+Overfull \vbox (33.25801pt too high) detected at line 745
+ []
+
+
+Overfull \vbox (34.25801pt too high) detected at line 745
+ []
+
+
+Overfull \vbox (35.25801pt too high) detected at line 745
+ []
+
+
+Overfull \vbox (36.25801pt too high) detected at line 745
+ []
+
+
+Overfull \vbox (37.25801pt too high) detected at line 745
+ []
+
+
+Overfull \vbox (38.25801pt too high) detected at line 745
+ []
+
+
+Overfull \vbox (39.25801pt too high) detected at line 745
+ []
+
+
+Overfull \vbox (40.25801pt too high) detected at line 745
+ []
+
+
+Overfull \vbox (41.25801pt too high) detected at line 745
+ []
+
+
+Overfull \vbox (42.25801pt too high) detected at line 745
+ []
+
+
+Overfull \vbox (43.25801pt too high) detected at line 745
+ []
+
+
+Overfull \vbox (44.25801pt too high) detected at line 745
+ []
+
+
+Overfull \vbox (45.25801pt too high) detected at line 745
+ []
+
+
+Overfull \vbox (46.25801pt too high) detected at line 745
+ []
+
+
+Overfull \vbox (47.25801pt too high) detected at line 745
+ []
+
+
+Overfull \vbox (48.25801pt too high) detected at line 745
+ []
+
+
+Overfull \vbox (49.25801pt too high) detected at line 745
+ []
+
+
+Overfull \vbox (50.25801pt too high) detected at line 745
+ []
+
+
+Overfull \vbox (51.25801pt too high) detected at line 745
+ []
+
+
+Overfull \vbox (52.25801pt too high) detected at line 745
+ []
+
+
+Overfull \vbox (53.25801pt too high) detected at line 745
+ []
+
+
+Overfull \vbox (54.25801pt too high) detected at line 745
+ []
+
+
+Overfull \vbox (55.25801pt too high) detected at line 745
+ []
+
+
+Overfull \vbox (56.25801pt too high) detected at line 745
+ []
+
+
+Overfull \vbox (57.25801pt too high) detected at line 745
+ []
+
+
+Overfull \vbox (58.25801pt too high) detected at line 745
+ []
+
+
+Overfull \vbox (59.25801pt too high) detected at line 745
+ []
+
+
+Overfull \vbox (60.25801pt too high) detected at line 745
+ []
+
+
+Overfull \vbox (61.25801pt too high) detected at line 745
+ []
+
+
+Overfull \vbox (62.25801pt too high) detected at line 745
+ []
+
+
+Overfull \vbox (63.25801pt too high) detected at line 745
+ []
+
+
+Overfull \vbox (64.25801pt too high) detected at line 745
+ []
+
+
+Overfull \vbox (65.25801pt too high) detected at line 745
+ []
+
+
+Overfull \vbox (66.25801pt too high) detected at line 745
+ []
+
+
+Overfull \vbox (67.25801pt too high) detected at line 745
+ []
+
+
+Overfull \vbox (68.25801pt too high) detected at line 745
+ []
+
+
+Overfull \vbox (69.25801pt too high) detected at line 745
+ []
+
+
+Overfull \vbox (70.25801pt too high) detected at line 745
+ []
+
+
+Overfull \vbox (71.25801pt too high) detected at line 745
+ []
+
+
+Overfull \vbox (72.25801pt too high) detected at line 745
+ []
+
+
+Overfull \vbox (73.25801pt too high) detected at line 745
+ []
+
+
+Overfull \vbox (74.25801pt too high) detected at line 745
+ []
+
+
+Overfull \vbox (75.25801pt too high) detected at line 745
+ []
+
+
+Overfull \vbox (76.25801pt too high) detected at line 745
+ []
+
+
+Overfull \vbox (77.25801pt too high) detected at line 745
+ []
+
+
+Overfull \vbox (78.25801pt too high) detected at line 745
+ []
+
+
+Overfull \vbox (79.25801pt too high) detected at line 745
+ []
+
+
+Overfull \vbox (80.25801pt too high) detected at line 745
+ []
+
+
+Overfull \vbox (81.25801pt too high) detected at line 745
+ []
+
+
+Overfull \vbox (82.25801pt too high) detected at line 745
+ []
+
+
+Overfull \vbox (83.25801pt too high) detected at line 745
+ []
+
+
+Overfull \vbox (84.25801pt too high) detected at line 745
+ []
+
+
+Overfull \vbox (85.25801pt too high) detected at line 745
+ []
+
+
+Overfull \vbox (86.25801pt too high) detected at line 745
+ []
+
+
+Overfull \vbox (87.25801pt too high) detected at line 745
+ []
+
+
+Overfull \vbox (88.25801pt too high) detected at line 745
+ []
+
+
+Overfull \vbox (89.25801pt too high) detected at line 745
+ []
+
+
+Overfull \vbox (90.25801pt too high) detected at line 745
+ []
+
+
+Overfull \vbox (91.25801pt too high) detected at line 745
+ []
+
+
+Overfull \vbox (92.25801pt too high) detected at line 745
+ []
+
+
+Overfull \vbox (93.25801pt too high) detected at line 745
+ []
+
+
+Overfull \vbox (94.25801pt too high) detected at line 745
+ []
+
+
+Overfull \vbox (95.25801pt too high) detected at line 745
+ []
+
+
+Overfull \vbox (96.25801pt too high) detected at line 745
+ []
+
+
+Overfull \vbox (97.25801pt too high) detected at line 745
+ []
+
+
+Overfull \vbox (98.25801pt too high) detected at line 745
+ []
+
+
+Overfull \vbox (99.25801pt too high) detected at line 745
+ []
+
+
+Overfull \vbox (100.25801pt too high) detected at line 745
+ []
+
+
+Overfull \vbox (101.25801pt too high) detected at line 745
+ []
+
+
+Overfull \vbox (102.25801pt too high) detected at line 745
+ []
+
+
+Overfull \vbox (103.25801pt too high) detected at line 745
+ []
+
+
+Overfull \vbox (104.25801pt too high) detected at line 745
+ []
+
+
+Overfull \vbox (105.25801pt too high) detected at line 745
+ []
+
+
+Overfull \vbox (106.25801pt too high) detected at line 745
+ []
+
+
+Package mdframed Warning: correct box splittet fails
+ It seems you are using a non splittable contents
+(mdframed)                 on input line 745.
+
+Package mdframed Info: You first box width is to small
+ mdframed fixed it
+(mdframed)              on input line 745.
+[16]
+Underfull \hbox (badness 10000) in paragraph at lines 750--751
 []\OT1/cmr/m/sc/8 meeldetuletuseks
  []
 
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 764.
+(mdframed)              on input line 765.
 
-Overfull \hbox (1.88602pt too wide) in paragraph at lines 764--764
+Overfull \hbox (1.88602pt too wide) in paragraph at lines 765--765
 [][] 
  []
 
-[16]
-Package mdframed Info: Not enough space on this page on input line 764.
- [17]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 794.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\lambda' on input line 794.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 794.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 794.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 814.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\lambda' on input line 814.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 814.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 814.
-
-[18]
-Overfull \hbox (14.2724pt too wide) in paragraph at lines 880--880
-[] 
+[17]
+Overfull \hbox (10.6592pt too wide) in paragraph at lines 795--796
+[]\OT1/cmr/m/n/12 Olgu meil vas-ta-ja-te ko-gum $\OML/cmm/m/it/12 I$\OT1/cmr/m/
+n/12 , []ule mil-le me vaat-le-me $\OML/cmm/m/it/12 k$ \OT1/cmr/m/n/12 k[]usimu
+sest koos-nev k[]usimustik,
  []
 
 
-Overfull \hbox (54.91878pt too wide) detected at line 907
+Overfull \hbox (36.77626pt too wide) in paragraph at lines 795--796
+\OT1/cmr/m/n/12 mer-da-me k[]usimused ar-vu-de-ga $1$ kuni $\OML/cmm/m/it/12 k$
+\OT1/cmr/m/n/12 . Vaat-le-me igat k[]usimust eral-di alamk[]usimustikuna,
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 797.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\lambda' on input line 797.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 797.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 797.
+
+
+Overfull \hbox (14.66536pt too wide) in paragraph at lines 815--816
+\OT1/cmr/m/n/12 Seega ei ole maat-riks enam po-si-tiiv-selt m[]a[]aratud, mis o
+n eel-mises peat[]ukkis l[]abiviidud
+ []
+
+[18]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 824.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\lambda' on input line 824.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 824.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 824.
+
+
+Overfull \hbox (29.85745pt too wide) detected at line 898
 [] []
  []
 
 [19]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 934.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\lambda' on input line 934.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 934.
+Overfull \hbox (54.91878pt too wide) detected at line 927
+[] []
+ []
 
 [20]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 985.
+(hyperref)                removing `math shift' on input line 954.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\lambda' on input line 985.
+(hyperref)                removing `\lambda' on input line 954.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 985.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 985.
+(hyperref)                removing `math shift' on input line 954.
 
 [21]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1009.
+(hyperref)                removing `math shift' on input line 1005.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1009.
+(hyperref)                removing `\lambda' on input line 1005.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 1005.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 1005.
 
 [22]
-Underfull \hbox (badness 10000) in paragraph at lines 1053--1054
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 1029.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 1029.
+
+[23]
+Underfull \hbox (badness 10000) in paragraph at lines 1073--1074
 
  []
 
 
-Overfull \hbox (25.74866pt too wide) in paragraph at lines 1057--1058
+Overfull \hbox (25.74866pt too wide) in paragraph at lines 1077--1078
 []\OT1/cmr/m/n/12 Cronbachi al-fa on het-kel k[]oige ka-su-ta-ta-vam m[]o[]odik
  si-se-mise re-liaab-lu-se m[]o[]otmiseks
  []
 
-[23]
-Overfull \hbox (2.8449pt too wide) in paragraph at lines 1110--1110
+
+Overfull \hbox (2.8449pt too wide) in paragraph at lines 1130--1130
 [][] 
  []
 
 
-Overfull \hbox (9.91663pt too wide) in paragraph at lines 1110--1111
+Overfull \hbox (9.91663pt too wide) in paragraph at lines 1130--1131
 [][][][][][][] 
  []
 
-
-Overfull \hbox (2.8449pt too wide) in paragraph at lines 1148--1148
+[24]
+Overfull \hbox (2.8449pt too wide) in paragraph at lines 1168--1168
 [][] 
  []
 
 
-Overfull \hbox (9.91663pt too wide) in paragraph at lines 1148--1149
+Overfull \hbox (9.91663pt too wide) in paragraph at lines 1168--1169
 [][][][][][][] 
  []
 
 
-LaTeX Warning: Hyper reference `sec:Cronbach' on page 24 undefined on input lin
-e 1156.
+LaTeX Warning: Hyper reference `sec:Cronbach' on page 25 undefined on input lin
+e 1176.
 
 
-LaTeX Warning: Reference `sec:Cronbach' on page 24 undefined on input line 1156
+LaTeX Warning: Reference `sec:Cronbach' on page 25 undefined on input line 1176
 .
 
 
-Overfull \hbox (0.6215pt too wide) in paragraph at lines 1161--1162
+Overfull \hbox (0.6215pt too wide) in paragraph at lines 1181--1182
 \OT1/cmr/m/n/12 ker-ti skaa-lal. Hin-nan-gu-id v[]oime vaa-del-da kui ju-hus-li
 k-ke suu-ru-si $\OML/cmm/m/it/12 K[]; K[]; :::; K[]; K[]w$
  []
 
-[24]
-Overfull \hbox (19.16202pt too wide) in paragraph at lines 1178--1179
+
+Overfull \hbox (19.16202pt too wide) in paragraph at lines 1198--1199
 []\OT1/cmr/m/n/12 V[]ottes ar-ves-se, et $\OML/cmm/m/it/12 D\OT1/cmr/m/n/12 ([]
  \OML/cmm/m/it/12 K[]\OT1/cmr/m/n/12 ) = [] [] \OML/cmm/m/it/12 COV\OT1/cmr/m/n
 /12 (\OML/cmm/m/it/12 K[]; K[]\OT1/cmr/m/n/12 )$ saa-me eel-ne-va kir-ju-ta-da 
 j[]argnevalt: 
  []
 
-
-Overfull \hbox (64.57227pt too wide) in paragraph at lines 1218--1219
+[25]
+Overfull \hbox (64.57227pt too wide) in paragraph at lines 1238--1239
 []\OT1/cmr/m/n/12 Siit n[]aeme, et sel-li-sel ju-hul taan-dub Cronbac-hi al-fa 
 mak-si-mee-ri-mi-ne aval-di-se $[] [] \OML/cmm/m/it/12 COV\OT1/cmr/m/n/12 (\OML
 /cmm/m/it/12 L[]; L[]\OT1/cmr/m/n/12 )$
  []
 
-[25]
-Overfull \hbox (2.8449pt too wide) in paragraph at lines 1339--1339
+[26]
+Overfull \hbox (2.8449pt too wide) in paragraph at lines 1359--1359
 [][] 
  []
 
 
-Overfull \hbox (9.91663pt too wide) in paragraph at lines 1339--1340
+Overfull \hbox (9.91663pt too wide) in paragraph at lines 1359--1360
 [][][][][][][] 
  []
 
 
-Overfull \hbox (6.94902pt too wide) in paragraph at lines 1358--1359
+Overfull \hbox (6.94902pt too wide) in paragraph at lines 1378--1379
 []\OT1/cmr/m/n/12 kus $\OML/cmm/m/it/12 p[]; i; j \OMS/cmsy/m/n/12 2 f\OT1/cmr/
 m/n/12 1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2\OML/cmm/m/it/12 ; :::; n\OMS/cmsy/
 m/n/12 g\OML/cmm/m/it/12 ; ; ^^L \OMS/cmsy/m/n/12 2 f\OT1/cmr/m/n/12 1\OML/cmm
@@ -1650,38 +2093,38 @@ m/n/12 g\OML/cmm/m/it/12 ; ; ^^L \OMS/cmsy/m/n/12 2 f\OT1/cmr/m/n/12 1\OML/cmm
 T1/cmr/m/n/12 t[]ahistab t[]oen[]aosust, et k[]usimusele
  []
 
-[26]
-Overfull \hbox (0.86531pt too wide) detected at line 1423
+[27]
+Overfull \hbox (0.86531pt too wide) detected at line 1443
 [] []
  []
 
-[27]
-Overfull \hbox (29.2514pt too wide) in paragraph at lines 1453--1454
+[28]
+Overfull \hbox (29.2514pt too wide) in paragraph at lines 1473--1474
 \OT1/cmr/m/n/12 J[]argnevas anal[]u[]usime ruut-kit-sen-dus-te-ga ruu-pla-nee-r
 i-mis[]ulesannete kee-ru-kust []uldisemalt.
  []
 
-[28]
-Overfull \hbox (2.1648pt too wide) in paragraph at lines 1503--1503
+[29]
+Overfull \hbox (2.1648pt too wide) in paragraph at lines 1523--1523
 []\OT1/cmr/bx/n/17.28 Teisendus \OT1/cmr/bx/it/17.28 QCQP \OT1/cmr/bx/n/17.28 t
 []u[]upi []ulesandelt \OT1/cmr/bx/it/17.28 SDP \OT1/cmr/bx/n/17.28 t[]u[]upi
  []
 
-[29] [30] [31]
-<ois_tagasiside_toodeldud.png, id=499, 1139.25626pt x 542.025pt>
+[30] [31] [32]
+<ois_tagasiside_toodeldud.png, id=502, 1139.25626pt x 542.025pt>
 File: ois_tagasiside_toodeldud.png Graphic file (type png)
 
 <use ois_tagasiside_toodeldud.png>
-Package pdftex.def Info: ois_tagasiside_toodeldud.png used on input line 1581.
+Package pdftex.def Info: ois_tagasiside_toodeldud.png used on input line 1601.
 (pdftex.def)             Requested size: 334.60422pt x 159.19298pt.
 
-<Example_Likert_Scale.png, id=502, 1003.75pt x 1525.7pt>
+<Example_Likert_Scale.png, id=505, 1003.75pt x 1525.7pt>
 File: Example_Likert_Scale.png Graphic file (type png)
 
 <use Example_Likert_Scale.png>
-Package pdftex.def Info: Example_Likert_Scale.png used on input line 1588.
+Package pdftex.def Info: Example_Likert_Scale.png used on input line 1608.
 (pdftex.def)             Requested size: 209.12428pt x 292.77277pt.
- [32 <./ois_tagasiside_toodeldud.png>] [33 <./Example_Likert_Scale.png>] (./Bak
+ [33 <./ois_tagasiside_toodeldud.png>] [34 <./Example_Likert_Scale.png>] (./Bak
 atoo_Vootele_Rotov.bbl
 Underfull \hbox (badness 10000) in paragraph at lines 24--29
 []\OT1/cmr/m/n/12 Diane R. Ed-mond-son.  Li-kert Sca-les: A His-tory.
@@ -1715,18 +2158,18 @@ Underfull \hbox (badness 3838) in paragraph at lines 61--64
 ti-miza-tion.
  []
 
-[34]
+[35]
 Underfull \hbox (badness 10000) in paragraph at lines 82--85
 []\OT1/cmr/m/n/12 Nicholas Smith.  Examp-le of Li-kert Sca-le.
  []
 
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1600.
- [35]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1600.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1620.
+ [36]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1620.
  (./Bakatoo_Vootele_Rotov.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1600.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1600.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1620.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1620.
 
 Package rerunfilecheck Info: File `Bakatoo_Vootele_Rotov.out' has not changed.
 (rerunfilecheck)             Checksum: 0EEC513BFFE379C7E4F671DFCDB47886;2102.
@@ -1740,12 +2183,12 @@ LaTeX Warning: There were multiply-defined labels.
  ) 
 Here is how much of TeX's memory you used:
  23421 strings out of 494468
- 408310 string characters out of 6166395
- 525542 words of memory out of 5000000
+ 408305 string characters out of 6166395
+ 522542 words of memory out of 5000000
  26019 multiletter control sequences out of 15000+600000
  19227 words of font info for 71 fonts, out of 8000000 for 9000
  350 hyphenation exceptions out of 8191
- 56i,24n,76p,903b,856s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 56i,20n,76p,959b,872s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/te
@@ -1767,10 +2210,10 @@ mf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist
 type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/
 public/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/u
 rw/zapfding/uzdr.pfb>
-Output written on Bakatoo_Vootele_Rotov.pdf (35 pages, 412335 bytes).
+Output written on Bakatoo_Vootele_Rotov.pdf (36 pages, 414975 bytes).
 PDF statistics:
- 634 PDF objects out of 1000 (max. 8388607)
- 520 compressed objects within 6 object streams
+ 637 PDF objects out of 1000 (max. 8388607)
+ 522 compressed objects within 6 object streams
  146 named destinations out of 1000 (max. 500000)
  319 words of extra memory for PDF output out of 10000 (max. 10000000)
 
