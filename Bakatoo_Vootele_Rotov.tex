@@ -904,54 +904,67 @@ c_{ij}^2 - c_{i}c_{j} \leq 0 \text{,}
 \end{equation*}
 milles me soovisimegi veenduda. Eelneva arutelu idee pärineb Ivar Tammeraidi õppikust. \cite{Tammeraid1999}.  
 
- {\color{red}- - - SIIA MAANI REFAKTOREERITUD! EDASI OMAL VASTUTUSEL! - - - -} 
 
-Paneme n\"u\"ud tähele, et kehtib järgvev algebraline samasus:  
+Paneme tähele, et kehtib järgvev võrdus 
 \begin{equation*}
-\left( \sum_i x_{ii} \right)^2 =   \sum_i x_{ii}^2 + \underset{i \neq j}{\sum_i \sum_j} x_i x_j \text{.}
+\left( \sum \limits_{i=1}^k x_{ii} \right)^2 = \sum \limits_{i=1}^k \sum \limits_{j=1}^k x_{ii} x_{jj} =   \sum \limits_{i=1}^k x_{ii}^2 + \sum \limits_{i=1}^k  \left( \sum \limits_{j=1}^{i-1} x_{ii} x_{jj} + \sum \limits_{m=i+1}^k {x_{ii}}{x_{mm}} \right) \text{.}
 \end{equation*}
 
-Kuna eelnev kehtib, siis kehtib ka 
+Järelikult kehtib ka 
 
 \begin{equation*}
-2 \left( n-1 \right) \left( \sum_i x_i \right)^2 =  2 \left( n-1 \right) \sum_i x_i^2 + 2 \left( n-1 \right) \underset{i \neq j}{\sum_i \sum_j} x_i x_j
+2 \left( k-1 \right) \left( \sum \limits_{i=1}^k x_{ii} \right)^2 =  2 \left( k-1 \right) \sum \limits_{i=1}^k x_{ii}^2  + 2 \left( k-1 \right) \sum \limits_{i=1}^k  \left( \sum \limits_{j=1}^{i-1} x_{ii} x_{jj} + \sum \limits_{m=i+1}^k {x_{ii}}{x_{mm}} \right) \text{.}
 \end{equation*}
 
 Liidetavad teistmoodi grupeerides saame, et
 \begin{equation*}
 \begin{gathered}
-2 \left( n-1 \right) \sum_i x_i^2 + 2 \left( n-1 \right) \underset{i \neq j}{\sum_i \sum_j} x_i x_j = \\
-= \left( x_{1}^2 - 2 x_1 x_2 + x_{2}^2 \right) + \left( x_{1}^2 - 2 x_1 x_3 + x_{3}^2 \right) + \cdots + \left( x_{2}^2 - 2 x_1 x_2 + x_{1}^2 \right) + \cdots + 2n \underset{i \neq j}{\sum_i \sum_j} x_i x_j = \\
-= \underset{i \neq j}{\sum_i \sum_j} (x_i -  x_j)^2 + 2n \underset{i \neq j}{\sum_i \sum_j} x_i x_j
+2 \left( k-1 \right) \sum \limits_{i=1}^k x_{ii}^2  + 2 \left( k-1 \right) \sum \limits_{i=1}^k  \left( \sum \limits_{j=1}^{i-1} x_{ii} x_{jj} + \sum \limits_{m=i+1}^k {x_{ii}}{x_{mm}} \right) = \\
+= \left( x_{11}^2 - 2 x_{11} x_{22} + x_{22}^2 \right) + \left( x_{11}^2 - 2 x_{11} x_{33} + x_{33}^2 \right) + \cdots +\left( x_{11}^2 - 2 x_{11} x_{kk} + x_{kk}^2 \right) + \\
++ \left( x_{22}^2 - 2 x_{22} x_{11} + x_{11}^2 \right) + 
+ +  \left( x_{22}^2 - 2 x_{22} x_{33} + x_{33}^2 \right) + \cdots + \left( x_{22}^2 - 2 x_{22} x_{kk} + x_{kk}^2 \right) + \\
+ + \cdots + \\
+ + \left( x_{kk}^2 - 2 x_{kk} x_{11} + x_{11}^2 \right) + \left( x_{kk}^2 - 2 x_{kk} x_{11} + x_{11}^2 \right) + \cdots + \left( x_{kk}^2 - 2 x_{kk} x_{k-1 k-1} + x_{k-1 k-1}^2 \right) + \\
+ + 2 k \sum \limits_{i=1}^k  \left( \sum \limits_{j=1}^{i-1} x_{ii} x_{jj} + \sum \limits_{m=i+1}^k {x_{ii}}{x_{mm}} \right) =\\
+= \sum \limits_{i=1}^k  \left( \sum \limits_{j=1}^{i-1} (x_{ii} - x_{jj})^2 + \sum \limits_{m=i+1}^k ({x_{ii}} - {x_{mm}})^2 \right) +  2 k \sum \limits_{i=1}^k  \left( \sum \limits_{j=1}^{i-1} x_{ii} x_{jj} + \sum \limits_{m=i+1}^k {x_{ii}}{x_{mm}} \right)
 \end{gathered}
 \end{equation*}
 
-Vaatleme jällegi kovariatsiooni maatriksit $\Sigma_E$. Märkame, et kehtib järgnev:
+Vaatleme jällegi kovariatsiooni maatriksit $\Sigma_E$. Märkame, et kuna $x_{ii} = \theta_i + t_{ii}$ iga $ 1 \leq i \leq k$, siis kehtib järgnev:
 
 \begin{equation*}
-tr \left( \Sigma_E \right) = \sum_i \theta_i = \sum_i x_i - \sum_i t_i 
+ \sum_i \theta_i = \sum_i x_{ii} - \sum_i t_{ii} 
 \end{equation*}.
 
-Eelnevalt käsitletud algebralise samasuse põhjal on lihtne veenduda, et kehtib
+Märgime, et kuna kovariatsioon on definitsioon põhjal sümmeetriline siis on ka vektori $(Y_1,Y_2,\ldots,Y_n)$ kovariatsioonimaatriks $\Sigma_Y$ sümmeetriline. Tõepoolest, iga $1 \leq i,j \leq n$ korral,  
 
 \begin{equation*}
-\sum_i t_i = \sqrt{\frac{\underset{i \neq j}{\sum_i \sum_j} (t_i -  t_j)^2 + 2n \left( \underset{i \neq j}{\sum_i \sum_j} t_i t_j \right) }{2 \left( n -1 \right)}} \geq \sqrt{\frac{ n \left( \underset{i \neq j}{\sum_i \sum_j} t_i t_j \right) }{\left( n -1 \right)}}
-\end{equation*}
+{\Sigma_Y}_{ij} = cov(Y_i,Y_j) = cov(Y_j,Y_i) = {\Sigma_Y}_{ji} \text{.}
+\end{equation*} 
+
+Eelnevalt käsitletud algebralise samasuse ning kovariatsioonimaatriksite mitte-negatiivselt määratuse ja sümmetrilisuse põhjal kehtib
+
+\begin{gather*}
+\sum_i t_{ii} = \sqrt{\frac{\sum \limits_{i=1}^k  \left( \sum \limits_{j=1}^{i-1} (t_{ii} - t_{jj})^2 + \sum \limits_{m=i+1}^k ({t_{ii}} - {t_{mm}})^2 \right) +  2 k \sum \limits_{i=1}^k  \left( \sum \limits_{j=1}^{i-1} t_{ii} t_{jj} + \sum \limits_{m=i+1}^k {t_{ii}}{t_{mm}} \right)}{2 \left( k -1 \right)}} \geq \\ 
+\geq  \sqrt{\frac{ k \sum \limits_{i=1}^k  \left( \sum \limits_{j=1}^{i-1} t_{ii} t_{jj} + \sum \limits_{m=i+1}^k {t_{ii}}{t_{mm}} \right)}{\left( k -1 \right)}}
+\end{gather*}
 
 Arvestades, et kovariatsioonimaatriks on mitte-negatiivselt määratud ning seda, et kui $i \neq j$ siis $t_{ij} = x_{ij}$ , saame eelnevalt tõestatud abitulemuse põhjal väita, et
 
 \begin{equation*}
-\sum_i t_i  \geq \sqrt{\frac{ n \left( \underset{i \neq j}{\sum_i \sum_j} t_i t_j \right) }{\left( n -1 \right)}} \geq \sqrt{\frac{ n \left( \underset{i \neq j}{\sum_i \sum_j} x_{ij}^2 \right) }{\left( n -1 \right)}}
+\sum_i t_{ii}  \geq \sqrt{\frac{ k \sum \limits_{i=1}^k  \left( \sum \limits_{j=1}^{i-1} t_{ii} t_{jj} + \sum \limits_{m=i+1}^k {t_{ii}}{t_{mm}} \right)}{\left( k -1 \right)}} \geq \sqrt{\frac{ k \sum \limits_{i=1}^k  \left( \sum \limits_{j=1}^{i-1} x_{ij}^2 + \sum \limits_{m=i+1}^k {x_{im}^2} \right)}{\left( k -1 \right)}}
 \end{equation*} 
 
 Selle taustal saame defineerida alumise tõkke reliaablusele, mida tähistame $\lambda_2$:
 
 \begin{equation*}
-\lambda_2 = 1 - \frac{\sum_i x_i - \sqrt{\frac{ n \left( \underset{i \neq j}{\sum_i \sum_j} x_{ij}^2 \right) }{\left( n -1 \right)}}}{\sum_i \sum_j x_{ij}} \leq 1 - \frac{\sum_i x_i - \sum_i t_i}{\sum_i \sum_j x_{ij}} =   1 - \frac{\sum_i \theta_i}{\sum_i \sum_j x_{ij}} =  1 - \frac{D \left[ E \right]}{D \left[ X \right]} \text{.}
+\lambda_2 = 1 - \frac{\sum_i x_{ii} - \sqrt{\frac{ k \sum \limits_{i=1}^k  \left( \sum \limits_{j=1}^{i-1} x_{ij}^2 + \sum \limits_{m=i+1}^k {x_{im}^2} \right)}{\left( k -1 \right)}}}{\sum_i \sum_j x_{ij}} \leq 1 - \frac{\sum_i x_i - \sum_i t_i}{\sum_i \sum_j x_{ij}} =   1 - \frac{\sum_i \theta_i}{\sum_i \sum_j x_{ij}} =  1 - \frac{D \left[ E \right]}{D \left[ X \right]} \text{.}
 \end{equation*}
 
 
 \subsection{Alumine tõke $\lambda3$}
+
+ {\color{red}- - - SIIA MAANI REFAKTOREERITUD! EDASI OMAL VASTUTUSEL! - - - -} 
 
 Vaatleme jällegi kovariatsioonimaatriksit $\Sigma_T$. Olgu meil $n$-vektor $v$, mille elment kohal $i$ on $1$ ja element kohal $j$ on $-1$. Kuna kovariatsioonimaatriks peab olema mittenegatiivselt määratud siis peab kehtima
 

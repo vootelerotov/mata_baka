@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.4.24)  8 MAY 2014 23:04
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.4.24)  9 MAY 2014 22:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1970,121 +1970,138 @@ Overfull \hbox (29.85745pt too wide) detected at line 898
  []
 
 [19]
-Overfull \hbox (54.91878pt too wide) detected at line 927
+Overfull \hbox (3.65031pt too wide) detected at line 917
+\OT1/cmr/m/n/12 2 [] [][] = 2 [] [] \OML/cmm/m/it/12 x[] \OT1/cmr/m/n/12 + 2 []
+ [] [] []
+ []
+
+
+Overfull \hbox (39.27399pt too wide) detected at line 931
 [] []
  []
 
 [20]
+Overfull \hbox (35.62985pt too wide) in paragraph at lines 950--950
+[] 
+ []
+
+
+Overfull \hbox (43.07837pt too wide) detected at line 962
+\OML/cmm/m/it/12 ^^U[] \OT1/cmr/m/n/12 = 1 \OMS/cmsy/m/n/12 ^^@ [] ^^T \OT1/cmr
+/m/n/12 1 \OMS/cmsy/m/n/12 ^^@ [] \OT1/cmr/m/n/12 = 1 \OMS/cmsy/m/n/12 ^^@ [] \
+OT1/cmr/m/n/12 = 1 \OMS/cmsy/m/n/12 ^^@ [][]
+ []
+
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 954.
+(hyperref)                removing `math shift' on input line 965.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\lambda' on input line 954.
+(hyperref)                removing `\lambda' on input line 965.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 954.
+(hyperref)                removing `math shift' on input line 965.
 
 [21]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1005.
+(hyperref)                removing `math shift' on input line 1018.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\lambda' on input line 1005.
+(hyperref)                removing `\lambda' on input line 1018.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 1005.
+(hyperref)                removing `subscript' on input line 1018.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1005.
+(hyperref)                removing `math shift' on input line 1018.
 
 [22]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1029.
+(hyperref)                removing `math shift' on input line 1042.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1029.
+(hyperref)                removing `math shift' on input line 1042.
 
 [23]
-Underfull \hbox (badness 10000) in paragraph at lines 1073--1074
+Underfull \hbox (badness 10000) in paragraph at lines 1086--1087
 
  []
 
 
-Overfull \hbox (25.74866pt too wide) in paragraph at lines 1077--1078
+Overfull \hbox (25.74866pt too wide) in paragraph at lines 1090--1091
 []\OT1/cmr/m/n/12 Cronbachi al-fa on het-kel k[]oige ka-su-ta-ta-vam m[]o[]odik
  si-se-mise re-liaab-lu-se m[]o[]otmiseks
  []
 
-
-Overfull \hbox (2.8449pt too wide) in paragraph at lines 1130--1130
+[24]
+Overfull \hbox (2.8449pt too wide) in paragraph at lines 1143--1143
 [][] 
  []
 
 
-Overfull \hbox (9.91663pt too wide) in paragraph at lines 1130--1131
+Overfull \hbox (9.91663pt too wide) in paragraph at lines 1143--1144
 [][][][][][][] 
  []
 
-[24]
-Overfull \hbox (2.8449pt too wide) in paragraph at lines 1168--1168
+
+Overfull \hbox (2.8449pt too wide) in paragraph at lines 1181--1181
 [][] 
  []
 
 
-Overfull \hbox (9.91663pt too wide) in paragraph at lines 1168--1169
+Overfull \hbox (9.91663pt too wide) in paragraph at lines 1181--1182
 [][][][][][][] 
  []
 
 
 LaTeX Warning: Hyper reference `sec:Cronbach' on page 25 undefined on input lin
-e 1176.
+e 1189.
 
 
-LaTeX Warning: Reference `sec:Cronbach' on page 25 undefined on input line 1176
+LaTeX Warning: Reference `sec:Cronbach' on page 25 undefined on input line 1189
 .
 
 
-Overfull \hbox (0.6215pt too wide) in paragraph at lines 1181--1182
+Overfull \hbox (0.6215pt too wide) in paragraph at lines 1194--1195
 \OT1/cmr/m/n/12 ker-ti skaa-lal. Hin-nan-gu-id v[]oime vaa-del-da kui ju-hus-li
 k-ke suu-ru-si $\OML/cmm/m/it/12 K[]; K[]; :::; K[]; K[]w$
  []
 
-
-Overfull \hbox (19.16202pt too wide) in paragraph at lines 1198--1199
+[25]
+Overfull \hbox (19.16202pt too wide) in paragraph at lines 1211--1212
 []\OT1/cmr/m/n/12 V[]ottes ar-ves-se, et $\OML/cmm/m/it/12 D\OT1/cmr/m/n/12 ([]
  \OML/cmm/m/it/12 K[]\OT1/cmr/m/n/12 ) = [] [] \OML/cmm/m/it/12 COV\OT1/cmr/m/n
 /12 (\OML/cmm/m/it/12 K[]; K[]\OT1/cmr/m/n/12 )$ saa-me eel-ne-va kir-ju-ta-da 
 j[]argnevalt: 
  []
 
-[25]
-Overfull \hbox (64.57227pt too wide) in paragraph at lines 1238--1239
+
+Overfull \hbox (64.57227pt too wide) in paragraph at lines 1251--1252
 []\OT1/cmr/m/n/12 Siit n[]aeme, et sel-li-sel ju-hul taan-dub Cronbac-hi al-fa 
 mak-si-mee-ri-mi-ne aval-di-se $[] [] \OML/cmm/m/it/12 COV\OT1/cmr/m/n/12 (\OML
 /cmm/m/it/12 L[]; L[]\OT1/cmr/m/n/12 )$
  []
 
 [26]
-Overfull \hbox (2.8449pt too wide) in paragraph at lines 1359--1359
+Overfull \hbox (2.8449pt too wide) in paragraph at lines 1372--1372
 [][] 
  []
 
 
-Overfull \hbox (9.91663pt too wide) in paragraph at lines 1359--1360
+Overfull \hbox (9.91663pt too wide) in paragraph at lines 1372--1373
 [][][][][][][] 
  []
 
 
-Overfull \hbox (6.94902pt too wide) in paragraph at lines 1378--1379
+Overfull \hbox (6.94902pt too wide) in paragraph at lines 1391--1392
 []\OT1/cmr/m/n/12 kus $\OML/cmm/m/it/12 p[]; i; j \OMS/cmsy/m/n/12 2 f\OT1/cmr/
 m/n/12 1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2\OML/cmm/m/it/12 ; :::; n\OMS/cmsy/
 m/n/12 g\OML/cmm/m/it/12 ; ; ^^L \OMS/cmsy/m/n/12 2 f\OT1/cmr/m/n/12 1\OML/cmm
@@ -2094,18 +2111,18 @@ T1/cmr/m/n/12 t[]ahistab t[]oen[]aosust, et k[]usimusele
  []
 
 [27]
-Overfull \hbox (0.86531pt too wide) detected at line 1443
+Overfull \hbox (0.86531pt too wide) detected at line 1456
 [] []
  []
 
 [28]
-Overfull \hbox (29.2514pt too wide) in paragraph at lines 1473--1474
+Overfull \hbox (29.2514pt too wide) in paragraph at lines 1486--1487
 \OT1/cmr/m/n/12 J[]argnevas anal[]u[]usime ruut-kit-sen-dus-te-ga ruu-pla-nee-r
 i-mis[]ulesannete kee-ru-kust []uldisemalt.
  []
 
 [29]
-Overfull \hbox (2.1648pt too wide) in paragraph at lines 1523--1523
+Overfull \hbox (2.1648pt too wide) in paragraph at lines 1536--1536
 []\OT1/cmr/bx/n/17.28 Teisendus \OT1/cmr/bx/it/17.28 QCQP \OT1/cmr/bx/n/17.28 t
 []u[]upi []ulesandelt \OT1/cmr/bx/it/17.28 SDP \OT1/cmr/bx/n/17.28 t[]u[]upi
  []
@@ -2115,14 +2132,14 @@ Overfull \hbox (2.1648pt too wide) in paragraph at lines 1523--1523
 File: ois_tagasiside_toodeldud.png Graphic file (type png)
 
 <use ois_tagasiside_toodeldud.png>
-Package pdftex.def Info: ois_tagasiside_toodeldud.png used on input line 1601.
+Package pdftex.def Info: ois_tagasiside_toodeldud.png used on input line 1614.
 (pdftex.def)             Requested size: 334.60422pt x 159.19298pt.
 
 <Example_Likert_Scale.png, id=505, 1003.75pt x 1525.7pt>
 File: Example_Likert_Scale.png Graphic file (type png)
 
 <use Example_Likert_Scale.png>
-Package pdftex.def Info: Example_Likert_Scale.png used on input line 1608.
+Package pdftex.def Info: Example_Likert_Scale.png used on input line 1621.
 (pdftex.def)             Requested size: 209.12428pt x 292.77277pt.
  [33 <./ois_tagasiside_toodeldud.png>] [34 <./Example_Likert_Scale.png>] (./Bak
 atoo_Vootele_Rotov.bbl
@@ -2164,12 +2181,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 82--85
  []
 
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1620.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1633.
  [36]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1620.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1633.
  (./Bakatoo_Vootele_Rotov.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1620.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1620.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1633.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1633.
 
 Package rerunfilecheck Info: File `Bakatoo_Vootele_Rotov.out' has not changed.
 (rerunfilecheck)             Checksum: 0EEC513BFFE379C7E4F671DFCDB47886;2102.
@@ -2184,7 +2201,7 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  23421 strings out of 494468
  408305 string characters out of 6166395
- 522542 words of memory out of 5000000
+ 525542 words of memory out of 5000000
  26019 multiletter control sequences out of 15000+600000
  19227 words of font info for 71 fonts, out of 8000000 for 9000
  350 hyphenation exceptions out of 8191
@@ -2210,7 +2227,7 @@ mf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist
 type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/
 public/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/u
 rw/zapfding/uzdr.pfb>
-Output written on Bakatoo_Vootele_Rotov.pdf (36 pages, 414975 bytes).
+Output written on Bakatoo_Vootele_Rotov.pdf (36 pages, 417876 bytes).
 PDF statistics:
  637 PDF objects out of 1000 (max. 8388607)
  522 compressed objects within 6 object streams
