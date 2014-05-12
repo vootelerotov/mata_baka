@@ -16,17 +16,14 @@
 \contentsline {subsection}{\numberline {4.2}Alumine t\IeC {\~o}ke $\lambda _2$}{19}{subsection.4.2}
 \contentsline {subsection}{\numberline {4.3}Alumine t\IeC {\~o}ke $\lambda 3$}{22}{subsection.4.3}
 \contentsline {subsection}{\numberline {4.4}Alumine t\IeC {\~o}ke $\lambda _4$}{23}{subsection.4.4}
-\contentsline {subsection}{\numberline {4.5}Alumine t\IeC {\~o}ke $glb$}{23}{subsection.4.5}
-\contentsline {subsection}{\numberline {4.6}Cronbachi alfa}{24}{subsection.4.6}
-\contentsline {paragraph}{Miks ma taandan selles t\IeC {\"o}\IeC {\"o}s sisemise j\IeC {\"a}rjekindluse m\IeC {\~o}\IeC {\~o}tmise Cronbachi alfale?}{24}{section*.2}
-\contentsline {section}{\numberline {5}\"Ulesande p\"ustitus}{25}{section.5}
-\contentsline {section}{\numberline {6}\"Ulesande matemaatiline p\"ustitus}{25}{section.6}
-\contentsline {section}{\numberline {7}\IeC {\"U}lesande t\"u\"ubi keerekuse anal\"u\"us}{29}{section.7}
-\contentsline {subsection}{\numberline {7.1}Kahendt\IeC {\"a}isarv programm}{30}{subsection.7.1}
-\contentsline {subsection}{\numberline {7.2}NP-Hard probleemid}{30}{subsection.7.2}
-\contentsline {section}{\numberline {8}\"Ulesande anal\"u\"usiks vajalik taust}{30}{section.8}
-\contentsline {subsection}{\numberline {8.1}Kumerus}{30}{subsection.8.1}
-\contentsline {section}{\numberline {9}Lahenduse idee}{30}{section.9}
-\contentsline {section}{\numberline {10}Teisendus \textit {QCQP} t\"u\"upi \"ulesandelt \textit {SDP} t\"u\"upi \"ulesandele}{30}{section.10}
-\contentsline {section}{\numberline {11}Teek}{32}{section.11}
-\contentsline {section}{\numberline {12}Lisa}{33}{section.12}
+\contentsline {subsection}{\numberline {4.5}Alumine t\IeC {\~o}ke $glb$}{24}{subsection.4.5}
+\contentsline {subsection}{\numberline {4.6}Hinnangute kasutatavus praktikas}{25}{subsection.4.6}
+\contentsline {section}{\numberline {5}Intervallskaal alternatiivne t\IeC {\~o}lgendamine}{26}{section.5}
+\contentsline {subsection}{\numberline {5.1}Vastuste t\IeC {\~o}lgendamine intervallskaalal}{26}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Reliaabluse hindamine}{26}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.3}L\IeC {\"a}henemise korrektsus}{27}{subsection.5.3}
+\contentsline {subsection}{\numberline {5.4}Alternatiivse t\IeC {\~o}lgenduse matemaatiline s\IeC {\~o}nastus}{28}{subsection.5.4}
+\contentsline {section}{\numberline {6}Lahenduse idee}{31}{section.6}
+\contentsline {section}{\numberline {7}Teisendus \textit {QCQP} t\"u\"upi \"ulesandelt \textit {SDP} t\"u\"upi \"ulesandele}{31}{section.7}
+\contentsline {section}{\numberline {8}Teek}{32}{section.8}
+\contentsline {section}{\numberline {9}Lisa}{34}{section.9}
