@@ -1,4 +1,4 @@
-\documentclass[a4paper,12pt]{article}
+\documentclass[a4paper,12pt,oneside]{article}
 
 \usepackage[a4paper]{geometry}
 \usepackage{amssymb,amsmath}
@@ -20,8 +20,28 @@
 \usepackage{diagbox}
 \usepackage{pifont}
 \usepackage{colortbl}
+\usepackage{minted}
+\usepackage{caption}
+\usepackage[parfill]{parskip}
+\usepackage{verbatim}
+\usepackage{tocbibind}
+
+\DeclareCaptionType{mytype}[Typename][List of mytype]
+
+\newenvironment{customFloatWrap}{}{}
+
+\newfloat{Programm}{thp}{prog}
+% replace minted@colorbg definition
+% also, remove minted@bgbox definition
+% or replace all usages with mdframed directly
+\renewenvironment{minted@colorbg}[1]{%
+ % may want to leave out "style=default" to allow users some control
+ % instead set linewidth=0 as the default, and leave only bgcolor setting
+ \begin{mdframed}[style=default,linewidth=0,backgroundcolor=#1]}
+ {\end{mdframed}}
 
 \renewcommand\thefootnote{\ding{\numexpr171+\value{footnote}}}
+
 
 
 \allowdisplaybreaks
@@ -36,7 +56,7 @@
 %E0DCDE
 
 
-\setlength\parindent{0pt}
+%\setlength\parindent{0pt}
 \newenvironment{tightcenter}{%
   \setlength\topsep{0pt}
   \setlength\parskip{0pt}
@@ -47,7 +67,7 @@
 \newsavebox{\thisOne}
 \newenvironment{meeldetuletus}{
 	\begin{lrbox}{\thisOne}
-		\begin{minipage}{0.95\textwidth} \vspace{0.25em} {\scriptsize \textsc{meeldetuletuseks}} \linebreak \vspace{-2em}
+		\begin{minipage}{0.95\textwidth} \vspace{0.25em} {\scriptsize \textsc{meeldetuletuseks}} \linebreak \vspace{-0.5em}
 } 
 {  
  \end{minipage}\end{lrbox}{
@@ -70,7 +90,8 @@
     }
 
 \author{Vootele Rõtov}
-\title{Bakatöö}
+\title{Valikvastustega küsimustike reliaabluse hindamine}
+
 
 \numberwithin{equation}{section}
 \theoremstyle{definition}
@@ -94,9 +115,58 @@
 
 \begin{document}
 
-\maketitle
+
+\makeatletter
+\begin{titlepage}
+\begin{center}
+
+{\large TARTU ÜLIKOOL}\\[0.3cm]
+{\large MATEMAATIKA-INFORMAATIKATEADUSKOND}\\[0.3cm]
+{\large Matemaatika instituut}\\[0.3cm]
+{\large Matemaatika eriala} %\\[3cm]
+
+\vfill
+{\large \@author}\\[0.3cm]
+{\huge \textbf{\@title}}\\[0.3cm]
+{\large Bakalaureusetöö (6 EAP)} %\\[3cm]
+
+\vfill
+
+\begin{flushright}
+{\large Juhendaja: Margus Niitsoo}
+\end{flushright}
+
+\vfill
+
+\begin{flushleft}
+{\large
+Autor: \dotfill ``.....'' juuni \the\year \\
+Juhendaja: \dotfill ``.....'' juuni \the\year
+}
+\end{flushleft}
+
+\vfill
+
+{\large TARTU \the\year}
+
+\end{center}
+\end{titlepage}
+\makeatother
 
 \pagebreak
+
+
+\section*{Lühikokkuvõte}
+Käesolev bakalaureusetöö vaatleb erinevaid võimalusi valikvastustega küsimustike reliaabluse hindamiseks ühe küsimustike läbiviimise põhjal. Töö käigus antakse lugejale vajaminevad taustteadmised valikvastustega küsimustikest ning nende karakteristikutest, defineeritakse reliaablus klassikalise testiteooria kontekstis, antakse vajalik matemaatiline baas reliaabluse hinnangute tuletamiseks, tuletatakse viis hinnangut reliaablusele ja tutvustatakse programmiteeki, mis sisaldab programme tuletatud hinnangute leidmiseks testi läbiviimisel saadud andmete põhjal.
+
+\textsc{võtmesõnad:} Psühhomeetria, klassikaline testiteooria,  reliaablus, valikvastustega küsimustik, Cronbachi alfa, Guttmani lambda, glb. 
+
+
+
+\section*{Abstract}
+
+
+
 
 \tableofcontents
 
@@ -104,16 +174,20 @@
 
 \section{Sissejuhatus}
 
-Käesoleva bakalaureuse töö on saanud motivatsiooni psühholoogide praktilisest probleemist - kuidas hinnata nende töövaldkonnas tihti kasutatavate valikvastustega testide headust. Tuleb välja, et ühe testide headust kirjeldava karakteristiku - reliaabluse, hindamiseks sobivad vahendid saame klassikalise testiteooria (\textit{Classical Test Theory}) nimelise matemaatilise teooria tulemuste põhjal. 
+Käesolev bakalaureusetöö on motiveeritud psühholoogide probleemist - kuidas hinnata nende töövaldkonnas tihti kasutatavate valikvastustega küsimustike usaldusväärsust. 
 
-Töö esimeses osas anname vajaliku taustinfo ja probleemipüstituse. Seejärel ehitame üles meile vajamineva osa klassikalisest testiteooriast - defineerime reliaabluse ning rajame vundamendi selle hindamiseks. Järgneval vaatleme erinevaid võimalusie reliaabluse hindamiseks. Lõpetuseks uurime põgusalt ühte võimalikku lähenemist järjestikskaala tõlgendamiseks intervallskaalana, mis kasutab ära eelnevalt uuritud reliaabluse hinnanguid ja sättestab tõlgendamis probleemi optimiseerimisprobleemina.
+Sellest lähtuvalt on töö põhieesmärgiks pakkuda valikvastustega küsimustike hindamiseks lihtsasti kasutatavaid kvantitatiivseid meetodeid. Lisaks sellele loodab autor pakkuda eestikeelset ülevaadet ühest valikvastustega testidega seotud matemaatiliselt raamistikust - olemasolevad käsitlused on pigem praktilised abivahendid psühholoogidele. 
 
-Tööl on kaks põhilist eesmärki. Esimene nendest on anda eesti keelne ülevaade klassikalisest testiteooria alustest, mida autorile teadaolevalt ei ole käsitletud matemaatilisest aspektist vaadelduna - olemasolevad käsitlused on mõeldud praktiliseks abivahendiks psühholoogile ning seetõttu teistsuguse lähenemisega.
-Teiseks selle töö eesmärgiks on reliaabluse hindamiseks sobivate vahendite tutvustamine tasemel, millest võiks loodetavasti kasu olla ka teste koostavatele praktikutele.
+Töö esimeses osas anname vajaliku taustinfo, definitsioonid ja probleemipüstituse. Seejärel ehitame üles meile vajamineva osa probleemi vaatlemiseks sobivast matemaatilisest teooriast - defineerime testi usaldusväärsuse ning rajame vundamendi selle hindamiseks. Järgnevalt tuletame mõningaid erinevad usaldusväärsuse hinnangud. Töö viimases osas tutvustame autori poolt loodud programmiteeki, mis sisaldab eelnevalt tutvustatud hinnangute implementatsioone.
 
-Lisaks loetavale dokumendile on töö väljundiks ka teek, mis sisaldab funktsioone kõigi töös välja toodud hinnangute leidmiseks testi tulemuste põhjal ning leiab loodetavasti psühholoogide poolt kasutamist. 
+Autori eesmärgiks on see, et antud tekst oleks lihtsasti järgitav keskmisele bakalaureuseõpe läbinud matemaatikatudengile - valdkonna spetsiifilised matemaatilised definitsioonid ja tulemused on meeldetuletuseks töö käigus jooksvalt ära toodud. 
 
-Autori eesmärgiks on see, et antud tekst oleks lihtsasti järgitav igale keskmisele kolmanda kursuse läbinud matemaatikatudengile - valdkonna spetsiifilised matemaatilised definitsioonid ja tulemused on meeldetuletuseks töö käigus jooksvalt ära toodud. 
+Autor loodab, et loodud programmiteek leiab psühholoogide poolt kasutamist. 
+
+
+
+
+
 
 \pagebreak
 
@@ -121,11 +195,11 @@ Autori eesmärgiks on see, et antud tekst oleks lihtsasti järgitav igale keskmi
 
 \section{Taustinfo ja probleemipüstitus}
 
-Järgnevalt anname vajalikud taustateadmised probleemi mõtestamiseks ning peatüki lõpetuseks püstitame käesoleva töö kesksed probleemid.
+Järgnevalt anname vajalikud taustateadmised probleemi mõtestamiseks ning peatüki lõpetuseks püstitame käesoleva töö keskse probleemi.
 
 \subsection{Küsimustik, küsimus ja Likerti skaala}
 
-Käesolev uurimus tegeleb k\"usimustikega (\textit{Likert scale}), milles soovitakse hinnanguid teatud arvule küsimustele (\textit{Likert item}) $n$ pallisel Likerti skaalal \cite{Edmondson}, kus $n$ jääb enamasi kahe ja kümne vahele. Käsitleme Likerti skaalasid, mis on sümmeetrilised, see tähendab, et positiivsete ja negatiivsete vastuse variantide arv on sama. Näiteks:\footnote{Näited terviklikest k\"usimustikest on lisades, \hyperref[likert1]{joonisel \ref*{likert1}} ja \hyperref[likert2]{ \ref*{likert2}}}
+Käesolev uurimus tegeleb k\"usimustikega (\textit{Likert scale}),  milles soovitakse hinnanguid teatud arvule küsimustele (\textit{Likert item}) $n$ pallisel Likerti skaalal \cite{Edmondson}, kus $n$ jääb enamasi kahe ja kümne vahele.  Käsitleme Likerti skaalasid, mis on sümmeetrilised, see tähendab, et positiivsete ja negatiivsete vastuse variantide arv on sama. Näiteks:\footnote{Näited terviklikest k\"usimustikest on lisades, \hyperref[likert1]{joonisel \ref*{likert1}} ja \hyperref[likert2]{ \ref*{likert2}}}
 
 \vspace{10pt}
 
@@ -206,21 +280,21 @@ Käesoleva bakalaureusetöö \"ulesehitus on loogiline.
 \label{likert_question}
 \end{figure}
 
-Lugejal võib tekkida õigustatud k\"usimus, kuidas põhjendab autor Likerti skaala käsitlemist intervallskaalana, kui Likerti skaala on olemuseslt järjestikskaala ning selle tõlgendamises intervallskaalana on vastuoluline küsimus, näiteks \cite{Jamieson2004}. Siinkohal tõdeme, et Likerti skaala tõlgendamine intervallksaalana on praktikas piisavalt levinud, et selle valdkonna uurimine õigustatud oleks - olenamat selle teoreetilisest põhjendatusest.  Siinkohal väärib autori silmis esile toomist kriitikute \"uks levinumaid argumente -  "`hea"'  ja "`väga hea"'  keskmine ei ole  loomulikul viisil tõlgendatav kui "`hea + pool"' ehk pole mingit põhjust eeldada, et kõikide küsimuste omavaheline kaugus on mingil põhjusel võrdne. Autor nõustub selle kriitikaga ning loodab töö neljandas osas pakkuda alternatiivse tõlgendusviisi. 
+Lugejal võib tekkida õigustatud k\"usimus, kuidas põhjendab autor Likerti skaala käsitlemist intervallskaalana, kui Likerti skaala on olemuseslt järjestikskaala ning selle tõlgendamises intervallskaalana on vastuoluline küsimus, näiteks \cite{Jamieson2004}. Siinkohal tõdeme, et Likerti skaala tõlgendamine intervallksaalana on praktikas piisavalt levinud, et selle valdkonna uurimine õigustatud oleks - olenamat selle teoreetilisest põhjendatusest.  Siinkohal väärib autori silmis esile toomist kriitikute \"uks levinumaid argumente -  "`hea"'  ja "`väga hea"'  keskmine ei ole  loomulikul viisil tõlgendatav kui "`hea + pool"' ehk pole mingit põhjust eeldada, et kõikide küsimuste omavaheline kaugus on mingil põhjusel võrdne. 
 
 
 
-\subsection{Testi valiidsus}
+\subsection{Küsimustiku valiidsus}
 
-Testi \textbf{valiidsus} on testi karakteristik, mis iseloomustab testi võimet mõõta seda, mida ta disainiti mõõtma. Enamikes käsitlustes vaadeltakse valiidsust kui väärtust intervall skaalal nulli ja ühe vahel.
+Küsimustiku \textbf{valiidsus} on küsimustiku karakteristik, mis iseloomustab testi võimet mõõta seda, mida ta disainiti mõõtma. Enamikes käsitlustes vaadeltakse valiidsust kui väärtust intervall skaalal nulli ja ühe vahel.
 
-Näitena, kaal mis näitab 75 kilo kaaluva inimese kaaluks 74,5 kilo omab kõrgemat valiidsust kui kaal, mis sama inimese puhul näitab kaaluks 65 kilo.   
+Näitena, olgu meil küsimustikuks kaal, mille näitu vaatleme kui küsimustiku tulemust kaalutava isiku puhul. Kaal, mis näitab 75 kilo kaaluva inimese kaaluks 74,5 kilo omab kõrgemat valiidsust kui kaal, mis sama inimese puhul näitab kaaluks 65 kilo.   
 
 Arusaadavatel põhjustel on testi valiidsus äärmiselt oluline ning psühholoogiliste testide valiidsuse hindamine on olnud üks psühhomeetria põhilistest uurimisobjektidest. Sellega seoses on palju tööd tehtud ka valiidsuse definitsiooni täpsemaks muutmisega, võrreldes selle paragrahvi alguses antud väga intuitiivse definitsiooniga. Kuna valiidsus on selle töö raames vajalik vaid taustinfona probleemi mõttestamisel tundub antud lihtne definitsioon aga sobivaim. 
 
-\subsection{Testi reliaablus}
+\subsection{Küsimustiku reliaablus}
 
-Testi \textbf{reliaablus} on testi omadust saada sama subjekti erinevatel mõõtmistel sama testiga sama tulemus ehk testi stabiilsus. Nagu valiidsus, on ka reliaablus reeglina määratud intervall skaalal, nulli ja ühe vahel. 
+Küsimustiku \textbf{reliaablus} on küsimustiku omadus saada sama subjekti erinevatel mõõtmistel sama küsimustikuga sama tulemus ehk küsimustiku stabiilsus. Nagu valiidsus, on ka reliaablus reeglina määratud intervall skaalal, nulli ja ühe vahel. 
 
 Näitena, kaal mis näitab 75 kilo kaaluva inimese kaaluks 74,5 kilo igal kaalumisel omab kõrgemat reliaablust kui kaal, mis näitab juhuslikult kas 74,5 kilo või 75,5 kilo. 
 
@@ -256,7 +330,7 @@ Valiidsuse ja reliaabluse suhestamisel kerkib kiiresti üles loomulik küsimus -
 \caption{Kaalumiste tulemused kahe erineva kaaluga kolmel katsel}
 \end{figure}
 
-Kui mõista valiidsust kui testi keskmist tulemust, siis võime väita, et esimene kaal on väiksema reliaabluse aga suurema valiidsusega. Selline valiidsuse mõttestamine aga ei ole küsimustike modeleleerimise korral otstarbekas - katsete kordamine on enamasti keeruline ning väheste mõõtmistulemuste põhjal ei ole võimalik tegeliku väikese reliaablusega testi tulemust välja selgitada. 
+Kui mõista valiidsust kui küsimusitku keskmist tulemust, siis võime väita, et esimene kaal on väiksema reliaabluse aga suurema valiidsusega. Selline valiidsuse mõttestamine aga ei ole küsimustike modeleleerimise korral otstarbekas - katsete kordamine on enamasti keeruline ning väheste mõõtmistulemuste põhjal ei ole võimalik tegeliku väikese reliaablusega testi tulemust välja selgitada. 
 
 Seega, meie vaadeldava olukorra - psühholoogiliste testide - korral on mingi valiidsuse taseme jaoks tarvilik tingimus mingi reliaabluse tase.    
 
@@ -265,7 +339,7 @@ Seega, meie vaadeldava olukorra - psühholoogiliste testide - korral on mingi va
 
 Reliaabluse kui termini probleemiks on tema mitmetähenduslikus. Toome siinkohal ära ühe mõiste,  mida tihti samuti reliaablusena tuntakse.
 
-Sisemine järjepidavus (\textit{internal consistency} on testi karrakteristik, mis iseloomustab testi erinevate k\"usimuste vastuste järjepidevust ehk seda, kui hästi on kooskõlas \"uhist  konstruktsiooni hindavad k\"usimused\cite[177] {Henson2001}. Piltlikult väljendudes, olgu meil järgnev k\"usimustik: 
+Sisemine järjepidavus (\textit{internal consistency} on küsimustiku karrakteristik, mis iseloomustab testi erinevate k\"usimuste vastuste järjepidevust ehk seda, kui hästi on kooskõlas \"uhist  konstruktsiooni hindavad k\"usimused\cite[177] {Henson2001}. Piltlikult väljendudes, olgu meil järgnev k\"usimustik: 
 
 \begin{figure}[H]
 
@@ -359,9 +433,8 @@ Märgime, et lisaks toodud kahele definitsioonile on ka teisi reliaabluse defini
 \subsection{Probleemi püstitus}
 
 Käesoleva tööga üritame pakkuda lahendust järgnevale praktilisele probleemile - kas on võimalik leida paremat hinnangut küsimustiku reliaablusele kui seda on tihti kasutatav Guttmani $\lambda_3$ (rohkem tuntud kui Cronbachi $\alpha$)?  
-Kasutama sellele probleemile lähenemiseks kahte erinevat viisi. Esiteks uurime, kas on olemas paremaid hinnanguid kui seda on $\lambda_3$. Teiseks vaatleme, kas küsimustike vastuste alteratiivne tõlgendamine võimaldab meil saavutada paremaid hinnanguid kasutades praktikutele tutavat hinnangut $\lambda_3$.
  
-Kõigepealt on meil vaja aga rangemat lähenemist reliaablusele ning selleks vaatleme reliaablust ühe matemaatilise raamistiku - klassikalise testiteooria - kontekstis.
+Küsimusele vastamiseks on meil vaja  rangemat lähenemist reliaablusele ning selleks vaatleme reliaablust ühe matemaatilise raamistiku - klassikalise testiteooria - kontekstis.
 
 
 \pagebreak
@@ -659,7 +732,7 @@ Kuna testi tegelik tulemus on suurus, mida me prakikas ei tea ning ka paralleels
 
 
 
-\subsection{Vajalikud taustteadimesd reliaabluse hindamiseks}
+\subsection{Vajalikud taustteadmised reliaabluse hindamiseks}
 
 Järgnev käsitlus tugineb Jacksoni ja Anguwamba 1977. aasta artiklile.\cite{Jackson1977}
 Olgu meil vastajate populatsioon $I$, üle mille me vaatleme küsimustiku, milles on $k$ k\"usimust. Vaatleme seda küsimustiku klassikalise testiteooria raames ning olgu $X$ küsimustiku vaadeldav tulemus, $T$ küsimustiku tegelik tulemus ning $E$ küsimustiku mõõtmisviga. Vaatleme iga küsimust kui ühest küsimusest koosnevat alamküsimustiku ja tähistama fikseeritud k\"usimuse $ i \in \left\lbrace 1,2,\ldots,k \right\rbrace$ vaadeltavat tulemust kui $X_i$, tegeliku tulemust kui $T_i$ ning mõõtmisviga $E_i$. Seega $X = \sum \limits_{i=0}^{k} X_i$, $T = \sum \limits_{i=0}^{k} T_i$ ja $E = \sum \limits_{i=0}^{k} E_i$ . Paneme tähele, et kui eelnevas peatükkis tähistasime alaindeksiga küsimusele vastajat siis edaspidi tähistama sellega kindlat küsimust. 
@@ -899,6 +972,7 @@ c_{1i} + \alpha c_{1j} \\
 \vdots \\
 a_{ni} + \alpha c_{nj} 
 \end{pmatrix}
+= \\
 = c_{ii} + \alpha c_{ij} + \alpha c_{ji} + \alpha^2 c_{jj} = c_{ii} + 2 \alpha c_{ij} + \alpha^2 c_{jj} \text{.}
 \end{gathered}
 \end{equation*}
@@ -950,10 +1024,12 @@ Märgime, et kuna kovariatsioon on definitsioon põhjal sümmeetriline siis on k
 
 Eelnevalt käsitletud algebralise samasuse ning kovariatsioonimaatriksite mitte-negatiivselt määratuse ja sümmetrilisuse põhjal kehtib
 
+\small
 \begin{gather*}
 \sum \limits_{i=1}^k t_{ii} = \sqrt{\frac{\sum \limits_{i=1}^k  \left( \sum \limits_{j=1}^{i-1} (t_{ii} - t_{jj})^2 + \sum \limits_{m=i+1}^k ({t_{ii}} - {t_{mm}})^2 \right) +  2 k \sum \limits_{i=1}^k  \left( \sum \limits_{j=1}^{i-1} t_{ii} t_{jj} + \sum \limits_{m=i+1}^k {t_{ii}}{t_{mm}} \right)}{2 \left( k -1 \right)}} \geq \\ 
 \geq  \sqrt{\frac{ k \sum \limits_{i=1}^k  \left( \sum \limits_{j=1}^{i-1} t_{ii} t_{jj} + \sum \limits_{m=i+1}^k {t_{ii}}{t_{mm}} \right)}{\left( k -1 \right)}}
 \end{gather*}
+\normalsize
 
 Arvestades, et kovariatsioonimaatriks on mitte-negatiivselt määratud ning seda, et kui $i \neq j$ siis $t_{ij} = x_{ij}$ , saame eelnevalt tõestatud abitulemuse põhjal väita, et
 
@@ -963,9 +1039,11 @@ Arvestades, et kovariatsioonimaatriks on mitte-negatiivselt määratud ning seda
 
 Selle taustal saame defineerida alumise tõkke reliaablusele, mida tähistame $\lambda_2$:
 
+\small
 \begin{equation*}
 \lambda_2 = 1 - \frac{\sum \limits_{i=1}^k x_{ii} - \sqrt{\frac{ k \sum \limits_{i=1}^k  \left( \sum \limits_{j=1}^{i-1} x_{ij}^2 + \sum \limits_{m=i+1}^k {x_{im}^2} \right)}{\left( k -1 \right)}}}{\sum \limits_{i=1}^k \sum \limits_{j=1}^k x_{ij}} \leq 1 - \frac{\sum \limits_{i=1}^k x_{ii}- \sum \limits_{i=1}^k t_{ii}}{\sum \limits_{i=1}^k \sum \limits_{j=1}^k x_{ij}} =   1 - \frac{\sum \limits_{i=1}^k \theta_i}{\sum \limits_{i=1}^k \sum \limits_{j=1}^k x_{ij}} =  1 - \frac{D \left[ E \right]}{D \left[ X \right]} \text{.}
 \end{equation*}
+\normalsize
 
 Paneme tähele, et 
 \begin{equation*}
@@ -974,7 +1052,7 @@ Paneme tähele, et
 
 ning seega $\lambda_1 \leq \lambda_2$.
 
-\subsection{Alumine tõke $\lambda3$}
+\subsection{Alumine tõke $\lambda_3$}
 
 
 
@@ -1006,9 +1084,10 @@ mis on samaväärne sellega, et
 
 
 Eelneva põhjal olema oleme saanud järgmise alumise tõkke reliaablusele -  
-\begin{equation*}
-\lambda_3 = 1 - \frac{\sum \limits_{i=1}^k x_{ii} -  \frac{1}{k - 1} \sum \limits_{i=1}^k  \left( \sum \limits_{j=1}^{i-1} x_{ij} + \sum \limits_{m=i+1}^k {x_{im}} \right)}{\sum \limits_{i=1}^k \sum \limits_{j=1}^k x_{ij}} \leq  1 - \frac{\sum \limits_{i=1}^k x_{ii} - \sum \limits_{i=1}^k  t_{ii}}{\sum \limits_{i=1}^k \sum \limits_{j=1}^k x_{ij}} =   1 - \frac{\sum \limits_{i=1}^k \theta_i}{\sum \limits_{i=1}^k \sum \limits_{j=1}^k x_{ij}} =  1 - \frac{D \left[ E \right]}{D \left[ X \right]} \text{.}
-\end{equation*}
+\begin{gather*}
+\lambda_3 = 1 - \frac{\sum \limits_{i=1}^k x_{ii} -  \frac{1}{k - 1} \sum \limits_{i=1}^k  \left( \sum \limits_{j=1}^{i-1} x_{ij} + \sum \limits_{m=i+1}^k {x_{im}} \right)}{\sum \limits_{i=1}^k \sum \limits_{j=1}^k x_{ij}} \leq \\
+\leq 1 - \frac{\sum \limits_{i=1}^k x_{ii} - \sum \limits_{i=1}^k  t_{ii}}{\sum \limits_{i=1}^k \sum \limits_{j=1}^k x_{ij}} =   1 - \frac{\sum \limits_{i=1}^k \theta_i}{\sum \limits_{i=1}^k \sum \limits_{j=1}^k x_{ij}} =  1 - \frac{D \left[ E \right]}{D \left[ X \right]} \text{.}
+\end{gather*}
 
 Tõkke teisendamisel saame, et
 
@@ -1112,7 +1191,7 @@ Seega, kui küsimustiku analüüsia mõtestab küsimustiku klassikalise testiteo
 
 
 
-
+\begin{comment}
 
 \section{Intervallskaal alternatiivne tõlgendamine}
 
@@ -1227,6 +1306,7 @@ Esiteks, kas selline lähenemine tagab meile kõrgema küsimustiku kõrgema reli
 Küll aga kerkib siinkohal esile praktilisem probleem seoses $\lambda_3$ kasutamisega reliaabluse hindamisel. Nimelt võib leida aset olukord, kus meie poolt pakutava tõlgenduse korral on $\lambda_3$ kõrgem, kui vaikimisi tõlgenduse puhul kuid mõni tihedam alumine tõke on madalam. Illustreerime seda olukorda näitega.
  
 \begin{figure}[H]
+\begin{naide}
 \begin{tikzpicture}
 \draw (0,0) -- (35em,0);
 \draw (2em,0.5em) -- (2em,-0.5em) node [label=below:$0$] {}; 
@@ -1245,6 +1325,7 @@ Küll aga kerkib siinkohal esile praktilisem probleem seoses $\lambda_3$ kasutam
 	\filldraw[thin,draw=black!60] (\y em,-5em) -- ( \y em + 1em,-4em);
 \draw (22em,-4em) -- (33em,-4em);
 \end{tikzpicture}
+\end{naide}
 \caption{Olukord, kus alternatiivne tõlgendus suurendab alumist tõket $\lambda_3$ ja vähendab alumist tõket $glb$}
 \end{figure}
 
@@ -1402,15 +1483,15 @@ Olgu meil tõenäosuste maatriks $P$, kusjuures
 \begin{equation*}
 P =
 \begin{pmatrix}
-p_{(11)(11)}&p_{(11)(12)}&\cdots &p_{(11)(1l)}&p_{(11)(21)}& p_{(11)(22)} & \cdots&p_{(11)(nl)} \\
-p_{(12)(11)}&p_{(12)(12)}& \cdots &p_{(12)(1l)} & p_{(12)(21)} & p_{(12)(22)} & \cdots& p_{(12)(nl)} \\
+p_{(11)(11)}&p_{(11)(12)}&\cdots &p_{(11)(1l)}&p_{(11)(21)}& p_{(11)(22)} & \cdots&p_{(11)(kl)} \\
+p_{(12)(11)}&p_{(12)(12)}& \cdots &p_{(12)(1l)} & p_{(12)(21)} & p_{(12)(22)} & \cdots& p_{(12)(kl)} \\
 \vdots&\vdots&\vdots&\vdots&\vdots&\vdots&\ddots&\vdots \\
-p_{(nl)(11)}&p_{(nl)(12)}&\cdots&p_{(nl)(1l)}&p_{(nl)(21)}& p_{(nl)(22)} &\cdots&p_{(nl)(nl)} \\
+p_{(kl)(11)}&p_{(kl)(12)}&\cdots&p_{(kl)(1l)}&p_{(kl)(21)}& p_{(kl)(22)} &\cdots&p_{(kl)(kl)} \\
 \end{pmatrix} 
 \end{equation*}
 \end{tightcenter}
 
-kus  $p_{(i \alpha) (j \beta)}, i,j \in  \lbrace 1,2,...,n \rbrace, \alpha , \beta \in \lbrace 1,2,\ldots,l \rbrace$ tähistab tõenäosust, et juhuslik suurus $K_i$ saab väärtuse $\alpha$ ja juhuslik suurus $K_j$ saab väärtuse $\beta$. 
+kus  $p_{(i \alpha) (j \beta)}, i,j \in  \lbrace 1,2,...,k \rbrace, \alpha , \beta \in \lbrace 1,2,\ldots,l \rbrace$ tähistab tõenäosust, et juhuslik suurus $K_i$ saab väärtuse $\alpha$ ja juhuslik suurus $K_j$ saab väärtuse $\beta$. 
 
 
 Defineerime  vektori $x$, nii et
@@ -1429,7 +1510,7 @@ Siis $xPx^T = \sum \limits_{i=1}^n \sum \limits_{j=1}^n cov(M_i,M_j)$. Veendume 
 \begin{gathered}
 xPx^T =
 \begin{pmatrix}
-\mu_{11} & \mu_{12} & \cdots & \mu_{nl} 
+\mu_{11} & \mu_{12} & \cdots & \mu_{kl} 
 \end{pmatrix}
 \begin{pmatrix}
 p_{(11)(11)}&p_{(11)(12)}&\cdots&p_{(11)(nl)} \\
@@ -1558,7 +1639,9 @@ I_k & Q_i^T x \\
 \end{pmatrix} \succeq 0 \notag
 \end{gather}
 
-\section{Teek}
+\end{comment}
+
+\section{Programmiteek}
 
 Põhjendan siin ka lühidalt Pythoni eeliseid teegi realiseerimisel, alternatiividega (näiteks Java või MATLAB) võrreldes:
 \begin{enumerate}
@@ -1568,10 +1651,277 @@ Põhjendan siin ka lühidalt Pythoni eeliseid teegi realiseerimisel, alternatiiv
 \item Python on vabavara ning kõigile tasuta kasutatav.
 \end{enumerate}
 
+Meetoditest, mis leiavad $\lambda_1$, $\lambda_2$, $\lambda_3$ ja $\lambda_4$ on implementeeritud versioonid nii Python 2 kui ka Python 3 jaoks. Kasutatud on teeke SciPy \cite{JonesE.;OliphantT;Peterson} ja CVXPY \cite{DiamondS;ChuE;Boyd2014}.
+
+
+Järgnevalt on ära toodud hinnagutu implementatsioonid Python 2 jaoks.
 
 
 \pagebreak
-\section{Lisa}
+
+\begin{customFloatWrap}
+\begin{minted}[bgcolor=background_example, tabsize=2, fontsize=\footnotesize , linenos=true, numberblanklines=false]{python}
+
+
+def calculate_lambda_1(cov_matrix):
+    u""" 
+    Based on Guttman,1945, for calculations using Jackson,
+    Aguvwamba,1977,[569].
+    """
+    n = check_that_matrix_is_square_and_fix_n(cov_matrix)
+    def sum_of_main_diagonal():
+        summ = 0
+        for i in xrange(n):
+            summ += cov_matrix[i,i]
+        return summ
+
+    return 1 - (sum_of_main_diagonal()/
+    	calculate_sum_of_covariance_matrix_elements(cov_matrix, n))
+
+\end{minted}
+\captionof{Programm}{Funktsioon hinnangu $\lambda_1$ leidmiseks}
+\end{customFloatWrap}
+
+\vspace{10pt}
+
+
+\begin{customFloatWrap}
+\begin{minted}[bgcolor=background_example, tabsize=2, fontsize=\footnotesize ,  linenos=true, numberblanklines=false]{python}
+def calculate_lambda_2(cov_matrix):
+    u"""
+    Using Guttman,1945,[259] definition.
+    """
+    def sum_of_squares_of_non_diagonal_matrix_elements():
+        summ = 0
+        for i in xrange(n):
+            for j in xrange(i):
+                    summ += cov_matrix[i,j]**2 
+        return 2*summ
+    
+    n = len(cov_matrix)
+    l1 = calculate_lambda_1(cov_matrix)
+    sum_of_squares = sum_of_squares_of_non_diagonal_matrix_elements()
+    under_square_root =((n)/(n-1)* sum_of_squares)**(1/2)
+    return l1 + (under_square_root/
+        calculate_sum_of_covariance_matrix_elements(cov_matrix))
+\end{minted}
+\captionof{Programm}{Funktsioon hinnangu $\lambda_2$ leidmiseks}
+\end{customFloatWrap}
+
+
+\vspace{10pt}
+
+\begin{customFloatWrap}
+\begin{minted}[bgcolor=background_example, tabsize=2, fontsize=\footnotesize ,  linenos=true, numberblanklines=false]{python}
+def calculate_lambda_3(cov_matrix):
+    number_of_items = len(cov_matrix)
+    return (number_of_items/(number_of_items-1))*calculate_lambda_1(cov_matrix)      
+  
+\end{minted}
+\captionof{Programm}{Funktsioon hinnangu $\lambda_3$ leidmiseks}
+\end{customFloatWrap}
+
+\vspace{10pt}
+        
+\begin{customFloatWrap}
+\begin{minted}[bgcolor=background_example, tabsize=2, fontsize=\footnotesize , linenos=true, numberblanklines=false]{python}
+
+import numpy as np
+
+def calculate_lambda_4(cov_matrix):
+    u"""
+    Lambda 4, based on Guttman, 1945, using the implementation of Jackson,
+    Agunwamba, 1977.
+    Based on idea that we try to best possible split (u is a vector,
+     with elements either 1 or -1, ones will be in one split, 
+     minus ones in another) .
+    NAIVE IMPLEMENTATION, works with relativiely low N, 
+    better approches available,  see Benton, 2013.
+    """
+    
+    def objective_function(u):
+        return u.T.dot(cov_matrix.dot(u))
+
+    
+    def try_vectors():
+        u"""
+        Idea : generate half of all possible vectors of length n,
+         such that if vector v is in, vector -v is not. 
+        Using binary representation as string,
+         from 2**(n-1) to 2**n, coding "0" to "-1"
+        """
+        smallest = np.Infinity
+        result_vector = []
+        l = []
+        for i in xrange(2**(n-1),2**n):
+            binary_of_i = np.binary_repr(i,width=n)
+            binary_of_i_int = [ 1 if x == u"1" else -1 for x in binary_of_i]
+            u = np.array(binary_of_i_int)
+            result = objective_function(u)
+            if result < smallest:
+                smallest = result
+                result_vector = u
+        return smallest
+             
+    def calc_lambda(smallest):
+        return 1 - (smallest/
+            util.calculate_sum_of_covariance_matrix_elements(cov_matrix, n))
+        
+    n = util.check_that_matrix_is_square_and_fix_n(cov_matrix)
+    return calc_lambda(try_vectors())
+
+\end{minted}
+\captionof{Programm}{Funktsioon hinnangu $\lambda_4$ leidmiseks}
+\end{customFloatWrap}
+
+\vspace{10pt}
+
+\begin{customFloatWrap}
+\begin{minted}[bgcolor=background_example, tabsize=2, fontsize=\footnotesize , linenos=true, numberblanklines=false]{python}
+
+import cvxpy as cv
+import numpy as np
+
+u""""
+Idea: Observed covariance matrix  is of observed scores. 
+That matrix is sum of true score coviarance matrix and error covariance matrix.
+As errors don't correlate with anything else than themselves,
+ the last is diagonal matrix. So, C_obs = C_true + C_error
+We look to maximize error (to find the worst possible case), 
+that is the same as minimizing the trace of C_true.
+More can be found in Jackson,Agunwamba,1977 and Woodhouse,Jakson, 1977.
+"""
+
+class Glb(object):
+    def __init__(self,cov_matrix):
+        self._cov_matrix = cov_matrix
+        self._constraints = []
+        self._n = util.check_that_matrix_is_square_and_fix_n(cov_matrix)
+        self._cov_matrix = np.matrix(cov_matrix)
+        self._generate_matrix_variables()
+        self._divide_covariance_matrix_of_into_error_and_true_score()
+        self._fix_error_cov_matrix_diagonal_fields_constraints()
+        self._error_cov_matrix_non_diagonal_fields_are_0()
+        self._prepare_program()
+        self._solve_program()
+        self._answer = self._calculate_Glb()
+
+    def _generate_matrix_variables(self):
+        self._true_cov_matrix = cv.semidefinite(self._n,
+             name=u"true_cov_matrix")
+        self._error_cov_matrix = cv.Variable(self._n, self._n, 
+            name=u"error_cov_matrix") 
+    
+    
+    def _divide_covariance_matrix_of_into_error_and_true_score(self):
+        u"""
+        Constraint that C_obs = C_true + C_error
+        """
+        self._constraints.append(self._error_cov_matrix+
+            self._true_cov_matrix == self._cov_matrix)
+        
+    def _fix_error_cov_matrix_diagonal_fields_constraints(self):
+        u"""
+        Error covariance matrix must be semidefinite,
+         meaning that all elements on the diagonal must be positive.
+        """
+        for i in xrange(self._n):
+            self._constraints.append(self._error_cov_matrix[i,i] >= 0)
+
+    def _error_cov_matrix_non_diagonal_fields_are_0(self):
+        u"""
+        Covariance between different errors is 0
+        """
+        for i in xrange(self._n):
+            for j in xrange(self._n):
+                if (i != j):
+                    self._constraints.append(
+                        self._error_cov_matrix[i,j] == 0) 
+
+        
+        
+    def _prepare_program(self):
+        u"""
+        Minimize trace of true score covariance matrix
+        """
+        self._p = cv.Problem(cv.Minimize(sum(
+            [self._true_cov_matrix[i,i] for i in xrange(self._n)])),
+            self._constraints)
+        if self._p.is_dcp():
+            logging.debug(u"Problem is DCP")
+        else:
+            raise Exception(u"Non-DCP glb, something went terrible wrong")
+            
+            
+    def _solve_program(self):
+
+        try:
+            self._p.solve()
+        except:
+            logging.critical(u"Runnig CVXOPT went wrong")
+        
+    
+    def _calculate_Glb(self):
+        return 1 - (sum(
+        	[self._error_cov_matrix.value[i,i] for i in xrange(self._n)])/
+            util.calculate_sum_of_covariance_matrix_elements(
+                self._cov_matrix,self._n)
+        
+
+    def get_answer(self):
+        return self._answer
+        
+\end{minted}
+\captionof{Programm}{Klass hinnangu $glb$ leidmiseks}
+\end{customFloatWrap}
+
+\vspace{10pt}
+
+\begin{customFloatWrap}
+\begin{minted}[bgcolor=background_example, tabsize=2, fontsize=\footnotesize]{python}
+
+def check_that_matrix_is_square_and_fix_n(input_matrix):      
+    def check_that_matrix_is_square():   
+        for row in input_matrix:
+            if len(row) != n:
+                raise Exception(u"Matrix not square or missing data")  
+    n = len(input_matrix) 
+    check_that_matrix_is_square()
+    return n
+
+def fix_number_of_rows(input_matrix):
+    def check_that_matrix_is_complete():   
+        for row in input_matrix:
+            if len(row) != n:
+                raise Exception(u"Matrix not square or missing data")
+    n = len(input_matrix[0])
+    check_that_matrix_is_complete()
+    return n
+    
+
+def calculate_sum_of_covariance_matrix_elements(cov_matrix,n = None):
+    if n == None:
+        n = check_that_matrix_is_square_and_fix_n(cov_matrix)
+    summ = 0
+    for i in xrange(n):
+        for j in xrange(n):
+            summ += cov_matrix[i,j]
+    return summ
+
+\end{minted}
+\captionof{Programm}{Eelnevates programmides kasutatutd abifunktsioonid}
+\end{customFloatWrap}
+
+
+
+
+\pagebreak
+\bibliography{mata_baka}{}
+\bibliographystyle{plain}
+
+
+\section*{Lisa}
+
 
 \begin{figure}[H]
 \centering
@@ -1588,10 +1938,45 @@ Põhjendan siin ka lühidalt Pythoni eeliseid teegi realiseerimisel, alternatiiv
 \end{figure}
 
 
+\makeatletter
+\newpage
+\pagestyle{empty}
+\selectlanguage{estonian}
+\section*{Litsents}
 
-\pagebreak
-\bibliography{mata_baka}{}
-\bibliographystyle{plain}
+\textbf{Lihtlitsents lõputöö reprodutseerimiseks ja
+lõputöö üldsusele kätte\-saadavaks tegemiseks.}
 
+
+Mina, \@author\ (sünnikuupäev: 11.11.1988)
+\begin{enumerate}
+\item annan Tartu Ülikoolile tasuta loa (lihtlitsentsi)
+enda loodud teose
+\begin{center}
+\@title,
+\end{center}
+mille juhendaja on Margus Niitsoo,
+\begin{enumerate}
+\item reprodutseerimiseks säilitamise ja üldsusele
+kättesaadavaks tegemise eesmärgil, sealhulgas
+digitaalarhiivi DSpace'i lisamise eesmärgil kuni
+autoriõiguse kehtivuse tähtaja lõppemiseni;
+\item üldsusele kättesaadavaks tegemiseks Tartu Ülikooli
+veebikeskkonna kaudu, sealhulgas digitaalarhiivi
+DSpace'i kaudu kuni autoriõiguse kehti\-vuse tähtaja lõppemiseni.
+\end{enumerate}
+\item olen teadlik, et punktis 1 nimetatud õigused jäävad
+alles ka autorile.
+\item kinnitan, et lihtlitsentsi andmisega ei rikuta teiste
+isikute intellektuaal\-o\-mandi ega isikuandmete kaitse
+seadusest tulenevaid õigusi.
+\end{enumerate}
+
+\vfill
+
+\begin{center}
+Tartu,  \today
+\end{center}
+\makeatother
 
 \end{document}

@@ -3,49 +3,48 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: Bakatoo_Vootele_Rotov.aux
 The style file: plain.bst
 Database file #1: mata_baka.bib
-Warning--there's a number but no series in DeGruijter2005
+Warning--empty journal in Cronbach1951
 Warning--empty publisher in Lord1968
-Warning--empty journal in Streiner2010
-Warning--there's a number but no volume in Streiner2010
-You've used 18 entries,
+Warning--empty journal in Zimmerman1975
+You've used 19 entries,
             2118 wiz_defined-function locations,
-            618 strings with 6586 characters,
-and the built_in function-call counts, 4653 in all, are:
-= -- 462
-> -- 156
-< -- 1
-+ -- 64
-- -- 46
-* -- 278
-:= -- 789
-add.period$ -- 54
-call.type$ -- 18
-change.case$ -- 74
+            618 strings with 6553 characters,
+and the built_in function-call counts, 5160 in all, are:
+= -- 513
+> -- 168
+< -- 0
++ -- 69
+- -- 50
+* -- 336
+:= -- 867
+add.period$ -- 55
+call.type$ -- 19
+change.case$ -- 80
 chr.to.int$ -- 0
 cite$ -- 22
-duplicate$ -- 177
-empty$ -- 429
-format.name$ -- 46
-if$ -- 971
+duplicate$ -- 198
+empty$ -- 474
+format.name$ -- 50
+if$ -- 1066
 int.to.chr$ -- 0
-int.to.str$ -- 18
-missing$ -- 15
-newline$ -- 92
-num.names$ -- 36
-pop$ -- 97
+int.to.str$ -- 19
+missing$ -- 17
+newline$ -- 96
+num.names$ -- 38
+pop$ -- 91
 preamble$ -- 1
-purify$ -- 59
+purify$ -- 63
 quote$ -- 0
-skip$ -- 127
+skip$ -- 140
 stack$ -- 0
-substring$ -- 272
+substring$ -- 358
 swap$ -- 18
-text.length$ -- 1
+text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 66
-warning$ -- 4
-while$ -- 53
-width$ -- 20
-write$ -- 187
-(There were 4 warnings)
+type$ -- 72
+warning$ -- 3
+while$ -- 61
+width$ -- 21
+write$ -- 195
+(There were 3 warnings)

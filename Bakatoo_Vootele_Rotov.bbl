@@ -5,39 +5,32 @@ Lee~J. Cronbach.
 \newblock {Test "Reliability": Its Meaning and Determination}.
 \newblock {\em Psychometrika}, 12(1):1--16, 1947.
 
+\bibitem{Cronbach1951}
+Lee~J. Cronbach.
+\newblock {Coefficient Alpha and the Internal Structure of Tests}.
+\newblock 16(3):297--330, 1951.
+
 \bibitem{Cronbach2004}
 Lee~J. Cronbach and Richard~J. Shavelson.
 \newblock {My Current Thoughts on Coefficient Alpha and Successor Procedures}.
 \newblock {\em Educational and Psychological Measurement}, 64(3):391--418, June
   2004.
 
-\bibitem{DeGruijter2005}
-Dato N.~M. de~Gruijter and Leo J.~Th. van~der Kamp.
-\newblock {\em {Statistical Test Theory For Education And Psychology}}.
-\newblock Number October. Taylor \& Francis, 2007.
-
-\bibitem{Dilmen2008}
-N.~Dilmen.
-\newblock {Reliability and Validity}, 2008.
+\bibitem{DiamondS;ChuE;Boyd2014}
+S.~{Diamond, S; Chu, E; Boyd}.
+\newblock {CVXPY: A Python-Embedded Modeling Language for Convex Optimization},
+  2014.
 
 \bibitem{Edmondson}
 Diane~R. Edmondson.
 \newblock {Likert Scales: A History}.
-\newblock
-  http://faculty.quinnipiac.edu/charm/CHARM\%20proceedings/CHARM\%20article\%20archive\%20pdf\%20format/Volume\%2012\%202005/127\%20edmondson.pdf,
-  2005.
-
-\bibitem{Epelman2007}
-M.~A. Epelman.
-\newblock {Introduction to Semidefinite Programming ( SDP )}.
-\newblock
-  http://www-personal.umich.edu/\~{}mepelman/teaching/IOE511/Handouts/511notes07-16.pdf,
-  2007.
+\newblock In {\em Conference on Historical Analysis \& Research in Marketing
+  Proceedings}, 2005.
 
 \bibitem{Guttman1945}
 Louis Guttman.
 \newblock {A Basis for Analyzing Test-Retest Reliability}.
-\newblock {\em PSYCHOMETRIKA}, 1[(4):255--282, 1945.
+\newblock {\em Psychometrika}, 10(4):255--282, 1945.
 
 \bibitem{Henson2001}
 Robin~K. Henson.
@@ -50,17 +43,16 @@ Robin~K. Henson.
 Paul~H Jackson and Christian~C. Agunwamba.
 \newblock {Lower Bounds for the Reliability of the Total Score on a Test
   Composed of Non-Homogeneous Items: I: Algebraic Lower Bounds}.
-\newblock {\em PSYCHOMETRIKA}, 42(2):567--578, 1977.
+\newblock {\em Psychometrika}, 42(2):567--578, 1977.
 
 \bibitem{Jamieson2004}
 Susan Jamieson.
 \newblock {Likert scales: how to (ab)use them.}
 \newblock {\em Medical education}, 38(12):1217--8, December 2004.
 
-\bibitem{Laurent2012}
-Monique Laurent and Frank Vallentin.
-\newblock {Semidefinite Optimization}.
-\newblock http://page.mi.fu-berlin.de/fmario/sdp/laurentv.pdf, 2012.
+\bibitem{JonesE.;OliphantT;Peterson}
+Eric Jones, Travis Oliphant, and Pearu Peterson.
+\newblock {SciPy: Open Source Scientific Tools for Python}.
 
 \bibitem{Lord1968}
 F.M. Lord and M.R Novick.
@@ -72,23 +64,26 @@ Melvin~R. Novick.
 \newblock {The axioms and principal results of classical test theory}.
 \newblock {\em Journal of Mathematical Psychology}, 3(1):1--18, February 1966.
 
+\bibitem{Revelle2008}
+William Revelle and Richard~E. Zinbarg.
+\newblock {Coefficients Alpha, Beta, Omega, and the glb: Comments on Sijtsma}.
+\newblock {\em Psychometrika}, 74(1):145--154, December 2008.
+
 \bibitem{Sijtsma2009}
 Klaas Sijtsma.
 \newblock {On the use, the misuse, and the very limited usefulness of
   cronbach’s alpha}.
-\newblock {\em PSYCHOMETRIKA}, 74(1):107--120, 2009.
+\newblock {\em Psychometrika}, 74(1):107--120, 2009.
+
+\bibitem{Sijtsma2009a}
+Klaas Sijtsma.
+\newblock {Reliability Beyond Theory and Into Practice}.
+\newblock {\em Psychometrika}, 74(1):169--173, 2009.
 
 \bibitem{Smith}
 Nicholas Smith.
 \newblock {Example of Likert Scale}.
 \newblock http://en.wikipedia.org/wiki/File:Example\_Likert\_Scale.svg.
-
-\bibitem{Streiner2010}
-David~L Streiner.
-\newblock {Starting at the Beginning : An Introduction to Coefficient Alpha and
-  Internal Consistency Starting at the Beginning : An Introduction to
-  Coefficient Alpha and Internal Consistency}.
-\newblock (February 2013):37--41, 2010.
 
 \bibitem{Tammeraid1999}
 Ivar Tammeraid.
@@ -99,5 +94,10 @@ Ivar Tammeraid.
 UT.
 \newblock {\~{O}isi tagasiside}.
 \newblock http://is.ut.ee.
+
+\bibitem{Zimmerman1975}
+D.~W. Zimmerman.
+\newblock {Probability spaces, hilbert spaces, and the axioms of test theory}.
+\newblock 40(3):395--412, 1975.
 
 \end{thebibliography}
