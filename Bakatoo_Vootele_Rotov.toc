@@ -19,6 +19,13 @@
 \contentsline {subsection}{\numberline {4.4}Alumine t\IeC {\~o}ke $\lambda _4$}{28}{subsection.4.4}
 \contentsline {subsection}{\numberline {4.5}Alumine t\IeC {\~o}ke $glb$}{28}{subsection.4.5}
 \contentsline {subsection}{\numberline {4.6}Hinnangute kasutatavus praktikas}{29}{subsection.4.6}
-\contentsline {section}{\numberline {5}Programmiteek}{31}{section.5}
-\contentsline {section}{Viited}{37}{section*.14}
+\contentsline {section}{\numberline {5}Intervallskaal alternatiivne t\IeC {\~o}lgendamine}{30}{section.5}
+\contentsline {subsection}{\numberline {5.1}Vastuste t\IeC {\~o}lgendamine intervallskaalal}{30}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Reliaabluse hindamine}{31}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.3}L\IeC {\"a}henemise korrektsus}{31}{subsection.5.3}
+\contentsline {subsection}{\numberline {5.4}Alternatiivse t\IeC {\~o}lgenduse matemaatiline s\IeC {\~o}nastus}{32}{subsection.5.4}
+\contentsline {section}{\numberline {6}Lahenduse idee}{36}{section.6}
+\contentsline {section}{\numberline {7}Teisendus \textit {QCQP} t\"u\"upi \"ulesandelt \textit {SDP} t\"u\"upi \"ulesandele}{36}{section.7}
+\contentsline {section}{\numberline {8}Programmiteek}{38}{section.8}
+\contentsline {section}{Viited}{44}{section*.18}
 \select@language {estonian}

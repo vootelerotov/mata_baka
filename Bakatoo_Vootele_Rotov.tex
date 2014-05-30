@@ -138,15 +138,7 @@
 \begin{flushright}
 {\large Juhendaja: Margus Niitsoo}
 \end{flushright}
-
-\vfill
-
-\begin{flushleft}
-{\large
-Autor: \dotfill ``.....'' juuni \the\year \\
-Juhendaja: \dotfill ``.....'' juuni \the\year
-}
-\end{flushleft}
+ ho
 
 \vfill
 
@@ -1292,10 +1284,6 @@ Seega, kui küsimustiku analüüsia mõtestab küsimustiku klassikalise testiteo
 
 
 
-
-
-\begin{comment}
-
 \section{Intervallskaal alternatiivne tõlgendamine}
 
 Läheneme nüüd reliaabluse hinnangu parandamisele teisest suunast ning vaatleme, millist mõju avaldab hinnangule $\lambda_3$ vastuste teistsugune tõlgendamine intervallskaalal.
@@ -1742,8 +1730,6 @@ I_k & Q_i^T x \\
 \end{pmatrix} \succeq 0 \notag
 \end{gather}
 
-\end{comment}
-
 \pagebreak
 
 \section{Programmiteek}
@@ -1943,17 +1929,14 @@ class Glb(object):
                         self._error_cov_matrix[i,j] == 0) 
 
         
-        
     def _prepare_program(self):
         u"""
-        Minimize trace of true score covariance matrix
+        Minimize trace of true score covirance matrix
         """
-        self._p = cv.Problem(cv.Minimize(sum(
-            [self._true_cov_matrix[i,i] for i in xrange(self._n)])),
+        self._p = cv.Problem(cv.Minimize(
+            sum([self._true_cov_matrix[i,i] for i in xrange(self._n)])),
             self._constraints)
-        if self._p.is_dcp():
-            logging.debug(u"Problem is DCP")
-        else:
+        if not self._p.is_dcp():
             raise Exception(u"Non-DCP glb, something went terrible wrong")
             
             
@@ -1962,7 +1945,7 @@ class Glb(object):
         try:
             self._p.solve()
         except:
-            logging.critical(u"Runnig CVXOPT went wrong")
+            raise Exception(u"Program was unable to find glb")
         
     
     def _calculate_Glb(self):
