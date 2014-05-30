@@ -1,24 +1,24 @@
 \select@language {estonian}
-\contentsline {section}{Sisukord}{1}{section*.3}
-\contentsline {section}{\numberline {1}Sissejuhatus}{3}{section.1}
-\contentsline {section}{\numberline {2}Taustinfo ja probleemip\IeC {\"u}stitus}{4}{section.2}
-\contentsline {subsection}{\numberline {2.1}K\IeC {\"u}simustik, k\IeC {\"u}simus ja Likerti skaala}{4}{subsection.2.1}
-\contentsline {subsection}{\numberline {2.2}Likerti skaala t\IeC {\~o}lgendamine intervallskaalana}{4}{subsection.2.2}
-\contentsline {subsection}{\numberline {2.3}K\IeC {\"u}simustiku valiidsus}{5}{subsection.2.3}
-\contentsline {subsection}{\numberline {2.4}K\IeC {\"u}simustiku reliaablus}{5}{subsection.2.4}
-\contentsline {subsection}{\numberline {2.5}Valiidsuse ja reliaabluse suhe}{6}{subsection.2.5}
-\contentsline {subsection}{\numberline {2.6}Sisemine j\IeC {\"a}rjepidevus}{6}{subsection.2.6}
-\contentsline {subsection}{\numberline {2.7}Probleemi p\IeC {\"u}stitus}{7}{subsection.2.7}
-\contentsline {section}{\numberline {3}Reliaablus klassikalises testiteoorias}{8}{section.3}
-\contentsline {subsection}{\numberline {3.1}Reliaabluse definitsioon}{8}{subsection.3.1}
-\contentsline {subsection}{\numberline {3.2}Vajalikud taustteadmised reliaabluse hindamiseks}{15}{subsection.3.2}
-\contentsline {section}{\numberline {4}Alumised t\IeC {\~o}kked reliaablusele}{19}{section.4}
-\contentsline {subsection}{\numberline {4.1}Alumine t\IeC {\~o}ke $\lambda _1$}{19}{subsection.4.1}
-\contentsline {subsection}{\numberline {4.2}Alumine t\IeC {\~o}ke $\lambda _2$}{20}{subsection.4.2}
-\contentsline {subsection}{\numberline {4.3}Alumine t\IeC {\~o}ke $\lambda _3$}{23}{subsection.4.3}
-\contentsline {subsection}{\numberline {4.4}Alumine t\IeC {\~o}ke $\lambda _4$}{26}{subsection.4.4}
-\contentsline {subsection}{\numberline {4.5}Alumine t\IeC {\~o}ke $glb$}{26}{subsection.4.5}
-\contentsline {subsection}{\numberline {4.6}Hinnangute kasutatavus praktikas}{27}{subsection.4.6}
-\contentsline {section}{\numberline {5}Programmiteek}{28}{section.5}
-\contentsline {section}{Viited}{34}{section*.10}
+\contentsline {section}{Sisukord}{3}{section*.7}
+\contentsline {section}{\numberline {1}Sissejuhatus}{4}{section.1}
+\contentsline {section}{\numberline {2}Taustinfo ja probleemip\IeC {\"u}stitus}{5}{section.2}
+\contentsline {subsection}{\numberline {2.1}K\IeC {\"u}simustik, k\IeC {\"u}simus ja Likerti skaala}{5}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Likerti skaala t\IeC {\~o}lgendamine intervallskaalana}{5}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}K\IeC {\"u}simustiku valiidsus}{6}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.4}K\IeC {\"u}simustiku reliaablus}{6}{subsection.2.4}
+\contentsline {subsection}{\numberline {2.5}Valiidsuse ja reliaabluse suhe}{7}{subsection.2.5}
+\contentsline {subsection}{\numberline {2.6}Sisemine j\IeC {\"a}rjepidevus}{7}{subsection.2.6}
+\contentsline {subsection}{\numberline {2.7}Probleemi p\IeC {\"u}stitus}{8}{subsection.2.7}
+\contentsline {section}{\numberline {3}Reliaablus klassikalises testiteoorias}{9}{section.3}
+\contentsline {subsection}{\numberline {3.1}Reliaabluse definitsioon}{9}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Vajalikud taustteadmised reliaabluse hindamiseks}{16}{subsection.3.2}
+\contentsline {section}{\numberline {4}Alumised t\IeC {\~o}kked reliaablusele}{21}{section.4}
+\contentsline {subsection}{\numberline {4.1}Alumine t\IeC {\~o}ke $\lambda _1$}{21}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Alumine t\IeC {\~o}ke $\lambda _2$}{22}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Alumine t\IeC {\~o}ke $\lambda _3$}{25}{subsection.4.3}
+\contentsline {subsection}{\numberline {4.4}Alumine t\IeC {\~o}ke $\lambda _4$}{28}{subsection.4.4}
+\contentsline {subsection}{\numberline {4.5}Alumine t\IeC {\~o}ke $glb$}{28}{subsection.4.5}
+\contentsline {subsection}{\numberline {4.6}Hinnangute kasutatavus praktikas}{29}{subsection.4.6}
+\contentsline {section}{\numberline {5}Programmiteek}{31}{section.5}
+\contentsline {section}{Viited}{37}{section*.14}
 \select@language {estonian}

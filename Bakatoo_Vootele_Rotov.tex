@@ -56,6 +56,9 @@
 %E0DCDE
 
 
+\newcommand{\nocontentsline}[3]{}
+\newcommand{\tocless}[2]{\bgroup\let\addcontentsline=\nocontentsline#1{#2}\egroup}
+
 %\setlength\parindent{0pt}
 \newenvironment{tightcenter}{%
   \setlength\topsep{0pt}
@@ -155,17 +158,46 @@ Juhendaja: \dotfill ``.....'' juuni \the\year
 
 \pagebreak
 
+\makeatletter
+\tocless{\subsection*{\@title}}
 
-\section*{Lühikokkuvõte}
-Käesolev bakalaureusetöö vaatleb erinevaid võimalusi valikvastustega küsimustike reliaabluse hindamiseks ühe küsimustike läbiviimise põhjal. Töö käigus antakse lugejale vajaminevad taustteadmised valikvastustega küsimustikest ning nende karakteristikutest, defineeritakse reliaablus klassikalise testiteooria kontekstis, antakse vajalik matemaatiline baas reliaabluse hinnangute tuletamiseks, tuletatakse viis hinnangut reliaablusele ja tutvustatakse programmiteeki, mis sisaldab programme tuletatud hinnangute leidmiseks testi läbiviimisel saadud andmete põhjal.
+\tocless{\subsubsection*{\@author}}
 
-\textsc{võtmesõnad:} Psühhomeetria, klassikaline testiteooria,  reliaablus, valikvastustega küsimustik, Cronbachi alfa, Guttmani lambda, glb. 
+\tocless{\subsubsection*{Lühikokkuvõte}}
+
+\makeatother
+
+Käesolev bakalaureusetöö vaatleb erinevaid võimalusi valikvastustega küsimustike reliaabluse hindamiseks küsimustiku ühekordse läbiviimise põhjal. 
+
+Töö käigus antakse lugejale vajaminevad taustteadmised valikvastustega küsimustikest ning nende karakteristikutest, defineeritakse reliaablus klassikalise testiteooria raamistikus ja antakse vajalik matemaatiline baas reliaabluse hinnangute tuletamiseks. Seejärel tuletatakse viis hinnangut reliaablusele, hinnatakse nende kasutatavust praktikas ja tutvustatakse autori poolt loodud programmiteeki, mis sisaldab programme tuletatud hinnangute leidmiseks testi läbiviimisel saadud andmete põhjal.
+
+Töö annab eesti keelse ülevaate klassikalisest testiteooriat alustest matemaatilisest vaatepunktist lähtudes ning tutvustab praktikule erinevaid võimalusi testi reliaabluse hindamiseks, kusjuures tutvustatake meetodeid, mis annavad paremaid tulemusi, kui hetkel enamlevinud meetodid. 
+
+
+\textsc{võtmesõnad:} psühhomeetria, klassikaline testiteooria,  valikvastustega küsimustikud, reliaablus, reliaabluse hindamine,  Cronbachi alfa, Guttmani lambdad, glb. 
+
+\pagebreak
+
+\makeatletter
+\tocless{\subsection*{On the Reliability of Likert Scale Questionaries}}
+
+\tocless{\subsubsection*{\@author}}
+
+\tocless{\subsubsection*{Abstract}}
 
 
 
-\section*{Abstract}
+\makeatother
 
+This bachelor's thesis is to give an overview of different possibilites of estimating reliability of Likert scale questionaries based on single admission.
 
+The thesis contains a short overview of neccesary background information about Likert scales and their characteristics, definition of reliability in context of Classical Test Theory and mathematical basis for deriving  estimations of reliabiliby. Also, five estimates are derived and their usability in practise is discussed. Finally author gives a short overview of programming library that implements methods for finding derived estimates based on data gathered from admissioning the questionarie.
+
+Thesis gives an overview of foundation of Classical Test Theory in Estonian from mathematical viewpoint and introduces different possibilites for estimating the reliability of questionarie, some of what give better results than the ones in widespeard use today.
+
+\textsc{keywords:}  psychometrics, classical test theory, Likert scale questionaries, reliability, estimating reliability, Cronbach's alfa, Guttman's lambdas, glb.
+
+\pagebreak
 
 
 \tableofcontents
@@ -864,6 +896,7 @@ Seega $v^T \Sigma_X v \geq 0$ ning kuna $v$ oli valitud suvaliselt siis on $\Sig
 Sellega oleme andund reliaablusele matemaatilise definitsiooni ning mõtestanud lahti vajaminevad taustteadmised reliaabluse hindamiseks. Järgnevalt tuletame mõned alumised tõkked reliaablusele.   
 
   
+\pagebreak
 
 
 \section{Alumised tõkked reliaablusele}
@@ -1641,6 +1674,8 @@ I_k & Q_i^T x \\
 
 \end{comment}
 
+\pagebreak
+
 \section{Programmiteek}
 
 Põhjendan siin ka lühidalt Pythoni eeliseid teegi realiseerimisel, alternatiividega (näiteks Java või MATLAB) võrreldes:
@@ -1651,13 +1686,12 @@ Põhjendan siin ka lühidalt Pythoni eeliseid teegi realiseerimisel, alternatiiv
 \item Python on vabavara ning kõigile tasuta kasutatav.
 \end{enumerate}
 
-Meetoditest, mis leiavad $\lambda_1$, $\lambda_2$, $\lambda_3$ ja $\lambda_4$ on implementeeritud versioonid nii Python 2 kui ka Python 3 jaoks. Kasutatud on teeke SciPy \cite{JonesE.;OliphantT;Peterson} ja CVXPY \cite{DiamondS;ChuE;Boyd2014}.
+Meetoditest, mis leiavad $\lambda_1$, $\lambda_2$, $\lambda_3$ ja $\lambda_4$ on implementeeritud nii programeerimiskeeles Python 2 kui ka programeerimiskeeles Python 3. Klass, mille abil saab leida $glb$, on implementeeritud sõltuvate teekide piirangute tõttu ainult programeerimiskeeles Python 2.  Kasutatud on teeke SciPy \cite{JonesE.;OliphantT;Peterson} ja CVXPY \cite{DiamondS;ChuE;Boyd2014}.
+Progarmmiteek on kättesaadav aadressil : {\color{red} SIIA AADRESS}
+
+Järgnevalt on ära toodud hinnagutu implementatsioonid programmeerimiskeeres Python 2.
 
 
-Järgnevalt on ära toodud hinnagutu implementatsioonid Python 2 jaoks.
-
-
-\pagebreak
 
 \begin{customFloatWrap}
 \begin{minted}[bgcolor=background_example, tabsize=2, fontsize=\footnotesize , linenos=true, numberblanklines=false]{python}
