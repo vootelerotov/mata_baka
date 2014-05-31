@@ -166,11 +166,11 @@
 
 \makeatother
 
-Käesolev bakalaureusetöö vaatleb erinevaid võimalusi valikvastustega küsimustike reliaabluse hindamiseks küsimustiku ühekordse läbiviimise põhjal. 
+Käesolevas bakalaureusetöös vaadeldakse erinevaid võimalusi valikvastustega küsimustike reliaabluse hindamiseks küsimustiku ühekordse läbiviimise põhjal. 
 
-Töö käigus antakse lugejale vajaminevad taustteadmised valikvastustega küsimustikest ning nende karakteristikutest, defineeritakse reliaablus klassikalise testiteooria raamistikus ja antakse vajalik matemaatiline baas reliaabluse hinnangute tuletamiseks. Seejärel tuletatakse viis hinnangut reliaablusele, hinnatakse nende kasutatavust praktikas ja tutvustatakse autori poolt loodud programmiteeki, mis sisaldab programme tuletatud hinnangute leidmiseks testi läbiviimisel saadud andmete põhjal.
+Töö käigus antakse lugejale vajaminevad taustteadmised valikvastustega küsimustike ning nende karakteristikute kohta, defineeritakse reliaablus klassikalise testiteooria raamistikus ja antakse vajalik matemaatiline baas reliaabluse hinnangute tuletamiseks. Seejärel tuletatakse viis hinnangut reliaablusele, hinnatakse nende kasutatavust praktikas ja tutvustatakse autori loodud programmiteeki, mis sisaldab programme tuletatud hinnangute leidmiseks testi läbiviimisel saadud andmete põhjal.
 
-Töö annab eesti keelse ülevaate klassikalisest testiteooriat alustest matemaatilisest vaatepunktist lähtudes ning tutvustab praktikule erinevaid võimalusi testi reliaabluse hindamiseks, kusjuures tutvustatake meetodeid, mis annavad paremaid tulemusi, kui hetkel enamlevinud meetodid. 
+Töö annab eesti keelse ülevaate klassikalise testiteooria alustest matemaatilisest vaatepunktist lähtudes, ning tutvustab praktikule erinevaid võimalusi testi reliaabluse hindamiseks, sealjuures tutvustatake meetodeid, mis annavad paremaid tulemusi, kui hetkel enamlevinud meetodid. 
 
 
 \textsc{võtmesõnad:} psühhomeetria, klassikaline testiteooria,  valikvastustega küsimustikud, reliaablus, reliaabluse hindamine,  Cronbachi alfa, Guttmani lambdad, glb. 
@@ -178,7 +178,7 @@ Töö annab eesti keelse ülevaate klassikalisest testiteooriat alustest matemaa
 \pagebreak
 
 \makeatletter
-\tocless{\subsection*{On the Reliability of Likert Scale Questionaries}}
+\tocless{\subsection*{On the Reliability of Likert Scale Questionnaires}}
 
 \tocless{\subsubsection*{\@author}}
 
@@ -188,13 +188,13 @@ Töö annab eesti keelse ülevaate klassikalisest testiteooriat alustest matemaa
 
 \makeatother
 
-This bachelor's thesis is to give an overview of different possibilites of estimating reliability of Likert scale questionaries based on single admission.
+This bachelor's thesis is to give an overview of different possibilities of estimating reliability of Likert scale questionnaires based on a single admission.
 
-The thesis contains a short overview of neccesary background information about Likert scales and their characteristics, definition of reliability in context of Classical Test Theory and mathematical basis for deriving  estimations of reliabiliby. Also, five estimates are derived and their usability in practise is discussed. Finally author gives a short overview of programming library that implements methods for finding derived estimates based on data gathered from admissioning the questionarie.
+The thesis contains a short overview of necessary background information about Likert scales and their characteristics, definition of reliability in the context of the Classical Test Theory and mathematical basis for deriving estimations of reliability. Also, five estimates are derived and their usability in practise is discussed. Finally, the author gives a short overview of a programming library that implements methods for finding derived estimates based on data gathered from admissioning the questionnaire.
 
-Thesis gives an overview of foundation of Classical Test Theory in Estonian from mathematical viewpoint and introduces different possibilites for estimating the reliability of questionarie, some of what give better results than the ones in widespeard use today.
+The thesis gives an overview of the foundation of the Classical Test Theory in Estonian from mathematical viewpoint and introduces different possibilities for estimating the reliability of a questionnaire, some of which give better results than the ones in widespread use today.
 
-\textsc{keywords:}  psychometrics, classical test theory, Likert scale questionaries, reliability, estimating reliability, Cronbach's alfa, Guttman's lambdas, glb.
+\textsc{keywords:}  psychometrics, classical test theory, Likert scale questionnaires, reliability, estimating reliability, Cronbach's alfa, Guttman's lambdas, glb.
 
 \pagebreak
 
@@ -205,13 +205,13 @@ Thesis gives an overview of foundation of Classical Test Theory in Estonian from
 
 \section{Sissejuhatus}
 
-Käesolev bakalaureusetöö on motiveeritud psühholoogide probleemist - kuidas hinnata nende töövaldkonnas tihti kasutatavate valikvastustega küsimustike usaldusväärsust. 
+Käesolev bakalaureusetöö on ajendatud psühholoogide probleemist -- kuidas hinnata nende töövaldkonnas tihti kasutatavate valikvastustega küsimustike usaldusväärsust. 
 
-Sellest lähtuvalt on töö põhieesmärgiks pakkuda valikvastustega küsimustike hindamiseks lihtsasti kasutatavaid kvantitatiivseid meetodeid. Lisaks sellele loodab autor pakkuda eestikeelset ülevaadet ühest valikvastustega testidega seotud matemaatiliselt raamistikust - olemasolevad käsitlused on pigem praktilised abivahendid psühholoogidele. 
+Sellest lähtuvalt on töö peamiseks eesmärgiks pakkuda valikvastustega küsimustike hindamiseks lihtsasti kasutatavaid kvantitatiivseid meetodeid. Lisaks sellele loodab autor pakkuda eestikeelset ülevaadet ühest valikvastustega testidega seotud matemaatiliselt raamistikust -- olemasolevad käsitlused on pigem praktilised abivahendid psühholoogidele. 
 
-Töö esimeses osas anname vajaliku taustinfo, definitsioonid ja probleemipüstituse. Seejärel ehitame üles meile vajamineva osa probleemi vaatlemiseks sobivast matemaatilisest teooriast - defineerime testi usaldusväärsuse ning rajame vundamendi selle hindamiseks. Järgnevalt tuletame mõningaid erinevad usaldusväärsuse hinnangud. Töö viimases osas tutvustame autori poolt loodud programmiteeki, mis sisaldab eelnevalt tutvustatud hinnangute implementatsioone.
+Töö esimeses osas esitame vajaliku taustinfo, definitsioonid ja probleemipüstituse. Seejärel ehitame üles meile vajamineva osa probleemi vaatlemiseks sobivast matemaatilisest teooriast -- defineerime testi usaldusväärsuse ning rajame vundamendi selle hindamiseks. Järgnevalt tuletame mõningad erinevad usaldusväärsuse hinnangud. Töö viimases osas tutvustame autori loodud programmiteeki, mis sisaldab eelnevalt tutvustatud hinnangute implementatsioone.
 
-Autori eesmärgiks on see, et antud tekst oleks lihtsasti järgitav keskmisele bakalaureuseõpe läbinud matemaatikatudengile - valdkonna spetsiifilised matemaatilised definitsioonid ja tulemused on meeldetuletuseks töö käigus jooksvalt ära toodud. 
+Autori eesmärgiks on, et antud tekst oleks lihtsasti järgitav keskmisele bakalaureuseõppe läbinud matemaatikatudengile -- meeldetuletuseks on valdkonna spetsiifilised matemaatilised definitsioonid ja tulemused töö käigus jooksvalt ära toodud. 
 
 Lisaks loodab autor, et loodud programmiteek pakkub huvi ka psühholoogidele. 
 
@@ -226,11 +226,11 @@ Lisaks loodab autor, et loodud programmiteek pakkub huvi ka psühholoogidele.
 
 \section{Taustinfo ja probleemipüstitus}
 
-Järgnevalt anname vajalikud taustateadmised probleemi mõtestamiseks ning peatüki lõpetuseks püstitame käesoleva töö keskse probleemi.
+Järgnevalt anname probleemi mõtestamiseks vajalikud taustateadmised ning peatüki lõpetuseks püstitame käesoleva töö keskse probleemi.
 
 \subsection{Küsimustik, küsimus ja Likerti skaala}
 
-Käesolev uurimus tegeleb k\"usimustikega (\textit{Likert scale}),  milles soovitakse hinnanguid teatud arvule küsimustele (\textit{Likert item}) $n$ pallisel Likerti skaalal \cite{Edmondson}, kus $n$ jääb enamasi kahe ja kümne vahele.  Käsitleme Likerti skaalasid, mis on sümmeetrilised, see tähendab, et positiivsete ja negatiivsete vastuse variantide arv on sama. Näiteks:\footnote{Näited terviklikest k\"usimustikest on lisades, \hyperref[likert1]{joonisel \ref*{likert1}} ja \hyperref[likert2]{ \ref*{likert2}}}
+Käesolev uurimus tegeleb k\"usimustikega (\textit{Likert scale}),  milles soovitakse hinnan\-guid teatud arvule küsimustele (\textit{Likert item}) $n$-pallisel Likerti skaalal \cite{Edmondson}, kus $n$ jääb enamasi kahe ja kümne vahele.  Käsitleme Likerti skaalasid, mis on sümmeetrilised, see tähendab, et positiivsete ja negatiivsete vastusevariantide arv on sama. Näiteks:\footnote{Terviklike k\"usimustike näited on esitatud lisades, \hyperref[likert1]{joonisel \ref*{likert1}} ja \hyperref[likert2]{\ref*{likert2}}}
 
 \vspace{10pt}
 
@@ -265,7 +265,7 @@ Käesoleva bakalaureusetöö \"ulesehitus on loogiline.
 
 \subsection{Likerti skaala tõlgendamine intervallskaalana}
 
-Likerti skaala tõlgendamisel intervallksaalana on väljakujunenud tava seada valikvastustele vastavusse järjestatud täisarvud, kusjuures mida posiitiivsem vastuseevariant, seda suurem temale vastavusse seatud arv. Reeglina kasutatakse kas arve alates ühest kuni valikvastuste arvuni või valitakse välja täisarvud nii, et neutraalsele vastusevariandile vastab null.
+Likerti skaala tõlgendamisel intervallksaalana on välja kujunenud tava seada valikvastustele vastavusse järjestatud täisarvud, kusjuures mida positiivsem on vastuse variant, seda suurem on temale vastavusse seatud arv. Reeglina kasutatakse kas arve alates ühest kuni valikvastuste arvuni või valitakse välja täisarvud nii, et neutraalsele vastusevariandile vastab null.
 
 \begin{figure}[H]
 
@@ -311,29 +311,29 @@ Käesoleva bakalaureusetöö \"ulesehitus on loogiline.
 \label{likert_question}
 \end{figure}
 
-Lugejal võib tekkida õigustatud k\"usimus, kuidas põhjendab autor Likerti skaala käsitlemist intervallskaalana, kui Likerti skaala on olemuseslt järjestikskaala ning selle tõlgendamises intervallskaalana on vastuoluline küsimus, näiteks \cite{Jamieson2004}. Siinkohal tõdeme, et Likerti skaala tõlgendamine intervallksaalana on praktikas piisavalt levinud, et selle valdkonna uurimine õigustatud oleks - olenamat selle teoreetilisest põhjendatusest.  Siinkohal väärib autori silmis esile toomist kriitikute \"uks levinumaid argumente -  "`hea"'  ja "`väga hea"'  keskmine ei ole  loomulikul viisil tõlgendatav kui "`hea + pool"' ehk pole mingit põhjust eeldada, et kõikide küsimuste omavaheline kaugus on mingil põhjusel võrdne. 
+Lugejal võib tekkida õigustatud k\"usimus, kuidas põhjendab autor Likerti skaala käsitlemist intervallskaalana, kui Likerti skaala on olemuselt järjestikskaala ning selle tõlgendamine intervallskaalana on vastuoluline küsimus, näiteks \cite{Jamieson2004}. Siinkohal tõdeme, et Likerti skaala tõlgendamine intervallksaalana on praktikas piisavalt levinud, et selle valdkonna uurimine oleks õigustatud, olenemata selle teoreetilisest põhjendatusest.  Siinkohal väärib autori silmis esile toomist kriitikute \"uks levinumaid argumente: "`hea"' ja "`väga hea"'  keskmine ei ole  loomulikul viisil tõlgendatav kui "`hea + pool"' ehk pole põhjust eeldada, et kõikide küsimuste omavaheline kaugus on mingil põhjusel võrdne. 
 
 
 
 \subsection{Küsimustiku valiidsus}
 
-Küsimustiku \textbf{valiidsus} on küsimustiku karakteristik, mis iseloomustab testi võimet mõõta seda, mida ta disainiti mõõtma. Enamikes käsitlustes vaadeltakse valiidsust kui väärtust intervall skaalal nulli ja ühe vahel.
+Küsimustiku \textbf{valiidsus} on küsimustiku karakteristik, mis iseloomustab testi võimet mõõta seda, mida see kujundati mõõtma. Enamikes käsitlustes vaadeldakse valiidsust kui väärtust intervallskaalal nulli ja ühe vahel.
 
-Näitena, olgu meil küsimustikuks kaal, mille näitu vaatleme kui küsimustiku tulemust kaalutava isiku puhul. Kaal, mis näitab 75 kilo kaaluva inimese kaaluks 74,5 kilo omab kõrgemat valiidsust kui kaal, mis sama inimese puhul näitab kaaluks 65 kilo.   
+Näitena olgu meil küsimustikuks kaal, mille näitu vaatleme kui küsimustiku tulemust kaalutava isiku puhul. Kaal, mis näitab 75 kilo kaaluva inimese kaaluks 74,5 kilo, omab kõrgemat valiidsust, kui kaal, mis sama inimese puhul näitab kaaluks 65 kilo.   
 
-Arusaadavatel põhjustel on testi valiidsus äärmiselt oluline ning psühholoogiliste testide valiidsuse hindamine on olnud üks psühhomeetria põhilistest uurimisobjektidest. Sellega seoses on palju tööd tehtud ka valiidsuse definitsiooni täpsemaks muutmisega, võrreldes selle paragrahvi alguses antud väga intuitiivse definitsiooniga. Kuna valiidsus on selle töö raames vajalik vaid taustinfona probleemi mõttestamisel tundub antud lihtne definitsioon aga sobivaim. 
+Arusaadavatel põhjustel on testi valiidsus äärmiselt oluline ning psühholoogiliste testide valiidsuse hindamine on olnud üks psühhomeetria põhilistest uurimisobjektidest. Sellega seoses on tehtud palju tööd  ka valiidsuse definitsiooni täpsemaks muutmisega, võrreldes selle paragrahvi alguses antud väga intuitiivse definitsiooniga. Kuna valiidsus on käesoleva töö raames vajalik vaid taustinfona probleemi mõtestamiseks, tundub antud lihtne definitsioon aga sobivaim. 
 
 \subsection{Küsimustiku reliaablus}
 
-Küsimustiku \textbf{reliaablus} on küsimustiku karakteristik, mis kirjeldab, kui järjepidevad on subjekti erinevated mõõtmised sama küsimustikuga ehk küsimustiku stabiilsus. Nagu valiidsus, on ka reliaablus reeglina määratud intervall skaalal, nulli ja ühe vahel. 
+Küsimustiku \textbf{reliaablus} on küsimustiku karakteristik, mis kirjeldab, kui järjepidevad on subjekti erinevad mõõtmised sama küsimustikuga. Nii nagu valiidsus, on ka reliaablus reeglina määratud intervallskaalal nulli ja ühe vahel. 
 
-Näitena, kaal mis näitab 75 kilo kaaluva inimese kaaluks 74,5 kilo igal kaalumisel omab kõrgemat reliaablust kui kaal, mis näitab juhuslikult kas 74,5 kilo või 75,5 kilo. 
+Näiteks kaal, mis näitab igal kaalumisel 75 kilo kaaluva inimese kaaluks 74,5 kilo, omab kõrgemat reliaablust, kui kaal, mis näitab juhuslikult kas 74,5 kilo või 75,5 kilo. 
 
 Reliaabluse täpsema, matemaatilise definitsioone anname edaspidi. 
 
 \subsection{Valiidsuse ja reliaabluse suhe}
 
-Valiidsuse ja reliaabluse suhestamisel kerkib kiiresti üles loomulik küsimus - kas test võib olla samaaegselt suure valiidsuse ja väikse reliaablusega? Eelpool antud definitsioonid jättavad selle küsimuse lahtiseks - vaatleme järgmist olukorda:
+Valiidsuse ja reliaabluse suhestamisel kerkib kiiresti üles loomulik küsimus -- kas test võib olla samaaegselt suure valiidsuse ja väikse reliaablusega? Eelpool antud definitsioonid jätavad selle küsimuse lahtiseks. Vaatleme järgmist olukorda:
 
 \begin{figure}[H]
 \colorbox{background_example}{\parbox{\textwidth}{
@@ -348,11 +348,11 @@ Valiidsuse ja reliaabluse suhestamisel kerkib kiiresti üles loomulik küsimus -
   \filldraw[fill=blue!60,draw=blue!70] (10em,0) circle [radius = 0.4em];
   \filldraw[fill=blue!20,draw=blue!60] (10em,0) circle [radius = 0.3em];
   \filldraw[fill=green!75,draw=green!30!black] (1.5 em, -3em) circle [radius = 0.4em];
-  \node[label=right: - Kaalu $1$ tulemused] at (1.5 em, -3em) {};
+  \node[label=right:  Kaalu $1$ tulemused] at (1.5 em, -3em) {};
   \filldraw[fill=blue!60,draw=blue!70!black] (15em,-3em) circle [radius = 0.4em];
-  \node[label=right: - Kaalu $2$ tulemused] at (15 em, -3em) {};
+  \node[label=right:  Kaalu $2$ tulemused] at (15 em, -3em) {};
   \filldraw[fill=red!60,draw=blue!80!black] (27.5em,-3em) circle [radius = 0.4em];
-  \node[label=right: - Tegelik kaal] at (27.5 em, -3em) {};
+  \node[label=right:  Tegelik kaal] at (27.5 em, -3em) {};
   
   
   
@@ -361,16 +361,16 @@ Valiidsuse ja reliaabluse suhestamisel kerkib kiiresti üles loomulik küsimus -
 \caption{Kaalumiste tulemused kahe erineva kaaluga kolmel katsel}
 \end{figure}
 
-Kui mõista valiidsust kui küsimusitku keskmist tulemust, siis võime väita, et esimene kaal on väiksema reliaabluse aga suurema valiidsusega. Selline valiidsuse mõttestamine aga ei ole küsimustike modeleleerimise korral otstarbekas - katsete kordamine on enamasti keeruline ning väheste mõõtmistulemuste põhjal ei ole võimalik tegeliku väikese reliaablusega testi tulemust välja selgitada. 
+Kui mõista valiidsust kui küsimustiku keskmist tulemust, siis võime väita, et esimene kaal on väiksema reliaabluse, aga suurema valiidsusega. Selline valiidsuse mõtestamine  ei ole aga küsimustike modelleerimise korral otstarbekas -- katsete kordamine on enamasti keeruline ning väheste mõõtmistulemuste põhjal ei ole võimalik tegeliku väikese reliaablusega testi tulemust välja selgitada. 
 
-Seega, meie vaadeldava olukorra - psühholoogiliste testide - korral on mingi valiidsuse taseme jaoks tarvilik tingimus mingi reliaabluse tase.    
+Seega, meie vaadeldava olukorra -- psühholoogiliste testide -- korral on mingi valiidsuse taseme jaoks tarvilik tingimus mingi reliaabluse tase.    
 
 
 \subsection{Sisemine järjepidevus}
 
-Reliaabluse kui termini probleemiks on tema mitmetähenduslikus. Toome siinkohal ära ühe mõiste,  mida tihti samuti reliaablusena või sisemise järjepidevuse reliaablusena tuntakse.
+Reliaabluse kui termini probleemiks on tema mitmetähenduslikkus. Toome siinkohal ära ühe mõiste,  mida tihti samuti reliaablusena või sisemise järjepidevuse reliaablusena tuntakse.
 
-Sisemine järjepidavus (\textit{internal consistency}) on küsimustiku karrakteristik, mis iseloomustab testi erinevate k\"usimuste vastuste järjepidevust ehk seda, kui hästi on kooskõlas  vastused \"uhist  konstruktsiooni hindavatele k\"usimustele \cite[177] {Henson2001}. Paneme tähele, et erinevalt eelnevalt toodud reliaabluse definitsioonist, on sisemine järjepidevus ühe testi läbiviimise keskne. Piltlikult väljendudes, olgu meil järgnev k\"usimustik: 
+Sisemine järjepidavus (\textit{internal consistency}) on küsimustiku karakteristik, mis iseloomustab testi erinevate k\"usimuste vastuste järjepidevust ehk seda, kui hästi on   vastused \"uhist  konstruktsiooni hindavatele k\"usimustele kooskõlas \cite[177] {Henson2001}. Paneme tähele, et erinevalt eelnevalt toodud reliaabluse definitsioonist, on sisemine järjepidevus ühe testi läbiviimise keskne. Piltlikult väljendudes olgu meil järgnev k\"usimustik: 
 
 
 \begin{figure}[H]
@@ -397,7 +397,7 @@ Käesoleva bakalaureusetöö \"ulesehitus on loogiline.
 
 \vspace{10pt}
 
-Mulle meedlib käesoleva bakalaureusetöö ülesehitus.
+Mulle meeldib käesoleva bakalaureusetöö ülesehitus.
 
 \vspace{5pt}
 
@@ -526,34 +526,34 @@ Käesolevat bakalaureusetööd on lihtne lugeda.
 
 Siin on mõõdetavaks konstruktsiooniks käesoleva bakalaureusetöö \"ulesehitus ning kõrgeks sisemiseks reliaabluseks on vajalik kolmele näites toodud k\"usimusele antud vastuste kooskõla. 
 
-Selleks, et sisemine järjepidavus oleks mõtestatud peavad meil küsimustikus olema mingi kindla konstruktsiooni mõõtmiseks rohkem kui üks küsimus - vastasel juhul on iga küsimus täielikus kooskõlas kõikide sama konstruktsiooni mõõtvate küsimustega, ehk iseendaga. Rõhutame, et see nõue ei laiene eelnevalt defineeritud reliaablusele. 
+Selleks, et sisemine järjepidavus oleks mõtestatud, peavad meil küsimustikus olema mingi kindla konstruktsiooni mõõtmiseks rohkem kui üks küsimus -- vastasel juhul on iga küsimus täielikus kooskõlas kõikide sama konstruktsiooni mõõtvate küsimustega, ehk iseendaga. Rõhutame, et see nõue ei laiene eelnevalt defineeritud reliaablusele. 
 
-Sisemise järjepidavuse mõõtmiseks on võimalik kasutada sisemise järjepidavuse teste. Segadust suurendab veelgi see, et üks nendest testidest leiab kasutamist ka meie poolt defineeritud reliaabluse hindamisel. Loodame, et nende kahe karakterisitku eristamine aitab lugejal käesolevas töös kergemini orienteeruda.
+Sisemise järjepidavuse mõõtmiseks on võimalik kasutada sisemise järjepidavuse teste. Segadust suurendab veelgi see, et üks nendest testidest leiab kasutamist ka meie poolt defineeritud reliaabluse hindamisel. Loodame, et nende kahe karakteristiku eristamine aitab lugejal käesolevas töös kergemini orienteeruda.
 
-Märgime, et lisaks toodud kahele definitsioonile on ka teisi reliaabluse käsitlusi \cite{Cronbach1947}, mis aga selle töö kontekstis ei tohiks segadust tekitada ning  mille äratoomist siin ei ole autor pidanud vajalikus.
+Märgime, et lisaks siintoodud kahele definitsioonile on ka teisi reliaabluse käsitlusi \cite{Cronbach1947}, mis aga selle töö kontekstis ei tohiks segadust tekitada ning  mille äratoomist  ei ole autor pidanud siinkohal vajalikus.
 
 
 \subsection{Probleemi püstitus}
 
-Käesoleva tööga üritame pakkuda lahendust järgnevale praktilisele probleemile - kas on võimalik leida paremat hinnangut küsimustiku reliaablusele kui seda on tihti kasutatav Guttmani $\lambda_3$ (rohkem tuntud kui Cronbachi $\alpha$)?  
+Käesoleva tööga üritame pakkuda lahendust järgmisele praktilisele probleemile: kas on võimalik leida paremat hinnangut küsimustiku reliaabluse kohta, kui seda on tihti kasutatav Guttmani $\lambda_3$ (rohkem tuntud kui Cronbachi $\alpha$)?  
  
-Küsimusele vastamiseks on meil vaja  rangemat lähenemist reliaablusele ning selleks vaatleme reliaablust ühe matemaatilise raamistiku - klassikalise testiteooria - kontekstis.
+Küsimusele vastamiseks on meil vaja  rangemat lähenemist reliaablusele ning selleks vaatleme reliaablust ühe matemaatilise raamistiku -- klassikalise testiteooria -- kontekstis.
 
 
 \pagebreak
 
 
 \section{Reliaablus klassikalises testiteoorias}
-Järgevas võtame aluseks Melvin Novicki klassikalise testiteooria \cite{Novick1966a}\cite{Lord1968} ja selle tõlgenduse Klaas Sijtsma poolt. \cite[109]{Sijtsma2009}
+Järgnevas võtame aluseks Melvin Novicki klassikalise testiteooria \cite{Novick1966a}\cite{Lord1968} ja selle tõlgenduse Klaas Sijtsma poolt. \cite[109]{Sijtsma2009}
 
 \subsection{Reliaabluse definitsioon}
 
 \begin{meeldetuletus}
 \begin{elementaarsyndmus}
-\textit{Elementaarsündmuseks} nimetatakse juhusliku katse võimaliku tulemust.
+\textit{Elementaarsündmuseks} nimetatakse juhusliku katse võimalikku tulemust.
 \end{elementaarsyndmus}
 \begin{toenaosus}
-\textit{Tõenäosuseks} nimetatakse funktsiooni $P$, mis igale sündmusele $A \in 2^{\Omega}$, kus $\Omega$ on mingi juhusliku katse kõikvõimalikke elementaarsündmuste hulk, seab vastavusse arvu $P(A)$, nii et on täidetud järgmised nõuded:
+\textit{Tõenäosuseks} nimetatakse funktsiooni $P$, mis igale sündmusele $A \in 2^{\Omega}$, kus $\Omega$ on mingi juhusliku katse kõikvõimalike elementaarsündmuste hulk, seab vastavusse arvu $P(A)$, nii et on täidetud järgmised nõuded:
 \begin{enumerate}
 \item $P(A) \geq 0, \forall A \in 2^{\Omega}$,
 \item $P(\Omega) =1$, $P(\emptyset) = 0$,
@@ -564,11 +564,11 @@ Järgevas võtame aluseks Melvin Novicki klassikalise testiteooria \cite{Novick1
 \end{enumerate}
 \end{toenaosus}
 \begin{juhuslik_suurus}
-\textit{Diskreetseks juhuslikus suuruseks} nimetatakse funktsiooni $X : \Omega \to \mathbb{R}$, mis võtab kas lõpliku või loenduva arvu erinevaid väärtusi $x_1,x_2,...(x_n)$.
+\textit{Diskreetseks juhuslikuks suuruseks} nimetatakse funktsiooni $X : \Omega \to \mathbb{R}$, mis võtab kas lõpliku või loenduva arvu erinevaid väärtusi $x_1,x_2,...(x_n)$.
 \end{juhuslik_suurus}
 \end{meeldetuletus}
 
-Olgu meil mingi kogum $I$ testile vastajaid ning küsimustik, milles on $k$ k\"usimust, kus iga küsimus on $l$-pallisel Likerti skaalal. Nummerdame küsimused naturaalarvudega $1$ kuni $k$. On loomulik eeldada, et nii vastajate arv, küsimuste arv kui ka Likerti skaala suurus on lõplikud. Me võime vaadelda testi läbiviimist kui juhusliku katset ning kõiki erinevaid võimalikke vastuste kombinatsioone küsimustikule kui elementaarsündmusi, tähistame saadud elementaarsündmuste hulga kui $\Omega$ ning elementaarsündmusi kui $\omega$. Eeldame ka tõenäosuste $P_i : 2^{\Omega} \to \mathbb{R}$ olemasolu, mida tõlgendame kui testi tulemuste esinemissagededust vastaja $i$ korral. 
+Olgu meil mingi kogum $I$ testile vastajaid ning küsimustik, milles on $k$ k\"usimust, kus iga küsimus on $l$-pallisel Likerti skaalal. Nummerdame küsimused naturaalarvudega $1$ kuni $k$. On loomulik eeldada, et nii vastajate arv, küsimuste arv kui ka Likerti skaala suurus on lõplikud. Me võime vaadelda testi läbiviimist kui juhuslikku katset ning kõiki erinevaid võimalike vastuste kombinatsioone küsimustikule kui elementaarsündmusi, tähistades saadud elementaarsündmuste hulga kui $\Omega$ ning elementaarsündmuse kui $\omega$. Eeldame ka tõenäosuste $P_i : 2^{\Omega} \to \mathbb{R}$ olemasolu, mida tõlgendame kui testi tulemuste esinemissagededust vastaja $i$ korral. 
 
 \begin{figure}[H]
 \begin{naide}
@@ -587,14 +587,14 @@ C & Ei nõustu & Nõustun osaliselt & Nii ja naa \\
 \caption{Näited elementaarsündmustest }
 \end{figure}
 
-Olgu $X_{i}^{j}$ hulgal $\Omega$ määratud juhuslik suurus, mille võimalike väärtusi vaatleme kui vastaja $i$ poolt k\"usimusele $j$ antud vastuse arvulist tõlgendust. On selge, et sellise tõlgenduse korral on juhusliku suuruse $X_{i}^{j}$ muutumispiirkond lõplik - selle hulga võimsus ei ole suurem kui $l$ ning järelikult on juhuslik suurus $X_{i}^{j}$ diskreetne. Defineerime vastaja $i$ testi tulemuse $X_{i}$ kui 
+Olgu $X_{i}^{j}$ hulgal $\Omega$ määratud juhuslik suurus, mille võimalikke väärtusi vaatleme kui vastaja $i$ poolt k\"usimusele $j$ antud vastuse arvulist tõlgendust. On selge, et sellise tõlgenduse korral on juhusliku suuruse $X_{i}^{j}$ muutumispiirkond lõplik - selle hulga võimsus ei ole suurem kui $l$ ning järelikult on juhuslik suurus $X_{i}^{j}$ diskreetne. Defineerime vastaja $i$ testi tulemuse $X_{i}$ kui 
 
 \begin{equation*}
 X_{i} = \sum \limits_{j=1}^k X_{i}^{j} \text{.}
 \end{equation*}
 
 
-Paneme tähele, et $X_{i}$ on samuti diskreetne juhuslik suurus - tõepoolest, kuna tegemist on diskreetsete juhuslike suuruste summaga, siis on ta funktsioon hulgast $\Omega$ hulka $\mathbb{R}$. Lisaks, kuna kõikide liidetavate muutumispiirkond on tõkkestatud arvuga $l$ ning liidetavaid on $k$, siis ei saa funktsiooni muutumispiirkonna võimsus olla suurem kui $l^k$.
+Paneme tähele, et $X_{i}$ on samuti diskreetne juhuslik suurus -- tõepoolest, kuna tegemist on diskreetsete juhuslike suuruste summaga, siis on ta funktsioon hulgast $\Omega$ hulka $\mathbb{R}$. Lisaks, kuna kõikide liidetavate muutumispiirkond on tõkestatud arvuga $l$ ning liidetavaid on $k$, siis ei saa funktsiooni muutumispiirkonna võimsus olla suurem kui $l^k$.
 
 
 \begin{meeldetuletus}
@@ -615,19 +615,19 @@ Juhusliku suuruse $X$ \textit{dispersiooniks} nimetatakse arvu $DX = \epsilon \l
 Triviaalse juhu vältimiseks eeldame edaspidi, et juhuslike suuruste $X_{i}$ dispersioonid on  nullist erinevad. Defineerime küsimustiku tegeliku tulemuse vastaja $i$ jaoks kui testi tulemuse keskväärtuse  ehk
 
 \begin{equation*}
-t_i = \epsilon  \left[ X_{i} \right] \text{.}\footnote{Tähistame keskväärtuse tähega $\epsilon$ kuna tavapärane tähistus $E$ leiab antud käsitluses teistsuguse rolli.}
+t_i = \epsilon  \left[ X_{i} \right] \text{.}\footnote{Tähistame keskväärtuse tähega $\epsilon$, kuna tavapärane tähistus $E$ omab antud käsitluses teistsugust tähendust.}
 \end{equation*}
 
-Kuna juhusliku suuruse $X_{i}$ võimalike väärtuste arv on lõplik on ka tema keskväärtus $t_i$ lõplik. 
+Kuna juhusliku suuruse $X_{i}$ võimalike väärtuste arv on lõplik, on ka tema keskväärtus $t_i$ lõplik. 
 
 
-Tõlgendame vastaja $i$ testi tulemuse ja tegeliku tulemuse vahet mõõtmisveana, tähistame seda $E_i$. Seega $X_{i} = t_i + E_i$.
+Tõlgendame vastaja $i$ testi tulemuse ja tegeliku tulemuse vahet mõõtmisveana, tähistame seda kui $E_i$. Seega $X_{i} = t_i + E_i$.
 
 
 \begin{meeldetuletus}
 \begin{keskvaartus_konstant}
 \thlabel{keskvaartus_konstant}
-Kui $X$ on diskreetne juhuslik suurus, jaotusega $K$, kus $K$ on paaride komplekt $k_i =(x_i,p_i), i=1,2,...$  ning $c$ on mingi konstant siis \linebreak $\epsilon(X+c) = \epsilon(X)+c$
+Kui $X$ on diskreetne juhuslik suurus, jaotusega $K$, kus $K$ on paaride komplekt $k_i =(x_i,p_i), i=1,2,...$  ning $c$ on mingi konstant, siis \linebreak $\epsilon(X+c) = \epsilon(X)+c$
 \end{keskvaartus_konstant}
 \begin{proof}
 \begin{gather*}
@@ -636,7 +636,7 @@ Kui $X$ on diskreetne juhuslik suurus, jaotusega $K$, kus $K$ on paaride komplek
 \end{proof}
 \begin{dispersioon_konstant}
 \thlabel{dispersioon_konstant}
-Juhuslikule suurusele konstandi liitmine ei muuda dispersiooni : $D(X + c) = DX$
+Juhuslikule suurusele konstandi liitmine ei muuda dispersiooni: $D(X + c) = DX$
 \end{dispersioon_konstant}
 \begin{proof}
 \begin{equation*}
@@ -662,15 +662,15 @@ Vaatleme elementaarsündmustena hulga $I \times \Omega$ elemente ning eeldame, e
 \begin{equation*}
 P_p : 2^{I \times \Omega} \to \mathbb{R} \text{,}
 \end{equation*} 
-kus funktsiooni $P_p$ tõlgendame kui isiku $i \in I$ ja testi tulemuse $\omega \in \Omega$ koos esinemis sagedust.   
+kus funktsiooni $P_p$ tõlgendame kui isiku $i \in I$ ja testi tulemuse $\omega \in \Omega$ koos esinemis sagedust.  {\color{red}vaata üle} 
 
 
-Paneme tähele, et sellel elemntaarsündmuste hulgal võime määrata diskreetse juhusliku suuruse $T$, nii et
+Paneme tähele, et sellel elementaarsündmuste hulgal võime määrata diskreetse juhusliku suuruse $T$, nii et
 \begin{equation*}
 T\left((i, \omega)\right) = t_i, i \in I \text{.}
 \end{equation*}
 
-Seda juhuliku suurust tõlgendame kui küsimustiku tegelikku tulemust. Defineerime testi vaadeldava tulemuse kui diskreetse juhusliku suuruse $X$, nii et
+Seda juhulikku suurust tõlgendame kui küsimustiku tegelikku tulemust. Defineerime testi vaadeldava tulemuse kui diskreetse juhusliku suuruse $X$, nii et
 
 \begin{equation*}
 X \left (i, \omega) \right) = X_i (\omega) 
@@ -682,13 +682,13 @@ ja testi vea kui diskreetse juhusliku suuruse $E$, nii et
 E \left( (i, \omega) \right) = E_i (\omega) \text{.}
 \end{equation*}
 
-Paneme tähele, et kehtib $X = E + T$, tõepoolest olgu meil suvaline paar $\left(i, \omega \right) \in I \times \Omega$, siis 
+Paneme tähele, et kehtib $X = E + T$. Tõepoolest, olgu meil suvaline paar $\left(i, \omega \right) \in I \times \Omega$, siis 
 
 \begin{equation*}
 X \left( ( i, \omega ) \right) = X_i (\omega) \overset{def}{=}  t_i + E_i(\omega) = T \left( (i, \omega) \right) + E \left( ( i, \omega ) \right) \text{.} 
 \end{equation*}
 
-Eeldame edaspidises, et $X$ ei ole konstante juhuslik suurus - kui $X$ on konstante, siis .
+Eeldame edaspidises, et $X$ ei ole konstante juhuslik suurus -- kui $X$ on konstantne, siis {\color{red}vaata üle}.
 
 
 
@@ -707,12 +707,12 @@ Juhusliku suuruste $X$ ja $Y$ \textit{korrelatsioonikordajaks} nimetatakse suuru
 \end{korrelatsioon}
 \end{meeldetuletus}
 
-Esitame nüüd meie poolt üles ehitatud mudeli omaduse, mis osutub väga kasulikus. Olgu meil kaks suvalist küsimustiku, mille vaadeldavad tulemused on vastavalt $X = T + E$ ja $X' = T' + E'$ , siis kehtib 
+Esitame nüüd meie poolt üles ehitatud mudeli omaduse, mis osutub väga kasulikus. Olgu meil kaks suvalist küsimustikku, mille vaadeldavad tulemused on vastavalt $X = T + E$ ja $X' = T' + E'$, siis kehtib 
 \begin{equation}
 \label{eq:cov_zero}
-cov(T,E') = 0 \text{,}
+cov(T,E') = 0 \text{.}
 \end{equation} 
-ehk mingi küsimustiku tegeliku tulemuse ja mingi küsimustiku mõõtmisvea vahel ei ole korrelatsiooni. See omadus muudab mudeli rakendamise palju lihtsamaks, kuna me ei pea eeldame, et meie poolt koostatud küsimustikul on selline omadus. Tõestus sellele omadusele kahjuks käesoleva töö raamidesse ei mahu, rangest tõestusest huvitatutele soovitame tutvuda Donald Zimmermani mudeli ülesehitusega \cite{Zimmerman1975}.
+Teisisõnu, küsimustiku tegeliku tulemuse ja küsimustiku mõõtmisvea vahel ei ole korrelatsiooni. See omadus muudab mudeli rakendamise palju lihtsamaks, kuna me ei pea eeldama, et meie koostatud küsimustikul on selline omadus. Tõestus sellele omadusele kahjuks käesoleva töö raamidesse ei mahu, rangest tõestusest huvitatutele soovitame tutvuda Donald Zimmermani mudeli ülesehitusega \cite{Zimmerman1975}.
 
 Paneme tähele, et kuna me ei seadunud mingeid kitsendusi testide $X$ ja $X'$ jaoks, siis ka $cov(T,E) = 0$.  
 
