@@ -25,6 +25,12 @@
 \usepackage[parfill]{parskip}
 \usepackage{verbatim}
 \usepackage{tocbibind}
+\usepackage[toc,titletoc]{appendix}
+
+\renewcommand{\appendixtocname}{Lisad}
+\renewcommand{\appendixtocname}{Lisad}
+
+\renewcommand{\setthesubsection}{\Alph{subsection}}
 
 \DeclareCaptionType{mytype}[Typename][List of mytype]
 
@@ -119,6 +125,7 @@
 \begin{document}
 
 
+
 \makeatletter
 \begin{titlepage}
 \begin{center}
@@ -138,7 +145,7 @@
 \begin{flushright}
 {\large Juhendaja: Margus Niitsoo}
 \end{flushright}
- ho
+ 
 
 \vfill
 
@@ -206,7 +213,7 @@ Töö esimeses osas anname vajaliku taustinfo, definitsioonid ja probleemipüsti
 
 Autori eesmärgiks on see, et antud tekst oleks lihtsasti järgitav keskmisele bakalaureuseõpe läbinud matemaatikatudengile - valdkonna spetsiifilised matemaatilised definitsioonid ja tulemused on meeldetuletuseks töö käigus jooksvalt ära toodud. 
 
-Autor loodab, et loodud programmiteek leiab psühholoogide poolt kasutamist. 
+Lisaks loodab autor, et loodud programmiteek pakkub huvi ka psühholoogidele. 
 
 
 
@@ -318,7 +325,7 @@ Arusaadavatel põhjustel on testi valiidsus äärmiselt oluline ning psühholoog
 
 \subsection{Küsimustiku reliaablus}
 
-Küsimustiku \textbf{reliaablus} on küsimustiku omadus saada sama subjekti erinevatel mõõtmistel sama küsimustikuga sama tulemus ehk küsimustiku stabiilsus. Nagu valiidsus, on ka reliaablus reeglina määratud intervall skaalal, nulli ja ühe vahel. 
+Küsimustiku \textbf{reliaablus} on küsimustiku karakteristik, mis kirjeldab, kui järjepidevad on subjekti erinevated mõõtmised sama küsimustikuga ehk küsimustiku stabiilsus. Nagu valiidsus, on ka reliaablus reeglina määratud intervall skaalal, nulli ja ühe vahel. 
 
 Näitena, kaal mis näitab 75 kilo kaaluva inimese kaaluks 74,5 kilo igal kaalumisel omab kõrgemat reliaablust kui kaal, mis näitab juhuslikult kas 74,5 kilo või 75,5 kilo. 
 
@@ -361,9 +368,9 @@ Seega, meie vaadeldava olukorra - psühholoogiliste testide - korral on mingi va
 
 \subsection{Sisemine järjepidevus}
 
-Reliaabluse kui termini probleemiks on tema mitmetähenduslikus. Toome siinkohal ära ühe mõiste,  mida tihti samuti reliaablusena tuntakse.
+Reliaabluse kui termini probleemiks on tema mitmetähenduslikus. Toome siinkohal ära ühe mõiste,  mida tihti samuti reliaablusena või sisemise järjepidevuse reliaablusena tuntakse.
 
-Sisemine järjepidavus (\textit{internal consistency} on küsimustiku karrakteristik, mis iseloomustab testi erinevate k\"usimuste vastuste järjepidevust ehk seda, kui hästi on kooskõlas \"uhist  konstruktsiooni hindavad k\"usimused\cite[177] {Henson2001}. Piltlikult väljendudes, olgu meil järgnev k\"usimustik: 
+Sisemine järjepidavus (\textit{internal consistency}) on küsimustiku karrakteristik, mis iseloomustab testi erinevate k\"usimuste vastuste järjepidevust ehk seda, kui hästi on kooskõlas  vastused \"uhist  konstruktsiooni hindavatele k\"usimustele \cite[177] {Henson2001}. Paneme tähele, et erinevalt eelnevalt toodud reliaabluse definitsioonist, on sisemine järjepidevus ühe testi läbiviimise keskne. Piltlikult väljendudes, olgu meil järgnev k\"usimustik: 
 
 
 \begin{figure}[H]
@@ -517,11 +524,13 @@ Käesolevat bakalaureusetööd on lihtne lugeda.
 
 \end{comment}
 
-Siin on mõõdetavaks konstruktsiooniks käesoleva bakalaureusetöö \"ulesehitus ning sisemiseks reliaabluseks on vajalik kolmele näites toodud k\"usimusele antud vastuste kooskõla.
+Siin on mõõdetavaks konstruktsiooniks käesoleva bakalaureusetöö \"ulesehitus ning kõrgeks sisemiseks reliaabluseks on vajalik kolmele näites toodud k\"usimusele antud vastuste kooskõla. 
 
-Selle karrakteristiku mõõtmiseks võimalik kasutada sisemise järjepidavuse teste. Segadust suurendab veelgi see, et üks nendest testidest leiab kasutamist ka meie poolt defineeritud reliaabluse hindamisel. Loodame, et nende kahe karakterisitku eristamine aitab lugejal käesolevas töös kergemini orienteeruda.
+Selleks, et sisemine järjepidavus oleks mõtestatud peavad meil küsimustikus olema mingi kindla konstruktsiooni mõõtmiseks rohkem kui üks küsimus - vastasel juhul on iga küsimus täielikus kooskõlas kõikide sama konstruktsiooni mõõtvate küsimustega, ehk iseendaga. Rõhutame, et see nõue ei laiene eelnevalt defineeritud reliaablusele. 
 
-Märgime, et lisaks toodud kahele definitsioonile on ka teisi reliaabluse definitsioone \cite{Cronbach1947}, mis aga selle töö kontekstis ei tohiks segadust tekitada ning  mille äratoomist siin ei ole autor pidanud vajalikus.
+Sisemise järjepidavuse mõõtmiseks on võimalik kasutada sisemise järjepidavuse teste. Segadust suurendab veelgi see, et üks nendest testidest leiab kasutamist ka meie poolt defineeritud reliaabluse hindamisel. Loodame, et nende kahe karakterisitku eristamine aitab lugejal käesolevas töös kergemini orienteeruda.
+
+Märgime, et lisaks toodud kahele definitsioonile on ka teisi reliaabluse käsitlusi \cite{Cronbach1947}, mis aga selle töö kontekstis ei tohiks segadust tekitada ning  mille äratoomist siin ei ole autor pidanud vajalikus.
 
 
 \subsection{Probleemi püstitus}
@@ -1275,9 +1284,11 @@ Panemet tähele, et kuna $z$ on maksimaalne vea dispersioon fikseeritud $\Sigma_
 
 \subsection{Hinnangute kasutatavus praktikas}
 
-Püstitasime töö alguses probleemi - kas võimalik leida reliaablusele parem hinnang kui seda on $\lambda_3$? Käsitletud hinnangutest on nii $glb$ kui $\lambda_2$ reliaabluse alumised tõkked ning samas vähemalt sama suured kui $\lambda_3$, seega ka paremad hinnangud reliaablusele kui seda on $\lambda_3$. Kuigi $\lambda_4$ ei ole tingimata suurem, kui $\lambda_3$, on raske leida empiirilist näidet, kus $\lambda_4$ oleks väiksem kui $\lambda_3$.
+Püstitasime töö alguses probleemi - kas võimalik leida reliaablusele parem hinnang kui seda on $\lambda_3$? Käsitletud hinnangutest on nii $glb$ kui $\lambda_2$ reliaabluse alumised tõkked ning samas vähemalt sama suured kui $\lambda_3$, seega ka paremad hinnangud reliaablusele kui seda on $\lambda_3$. Samuti on raske leida empiirilist näidet, kus  $\lambda_4$ ei ole tingimata suurem oleks väiksem kui $\lambda_3$.
 
-Paneme tähele, et $\lambda_3$ leidmine on väga lihtne ning eelmise sajandi keskel, olukorras kus arvutuslik võimsus oli tagashoidlik, oli tegemist olulise eelisega. Tänapäeval on $\lambda_3$ lihtsus pea olematu eelis, arvestades, et ka väga suurte küsimustike puhul ei valmista paremate hinnangute leidmine probleeme. 
+Paneme tähele, et $\lambda_3$ leidmine on väga lihtne ning eelmise sajandi keskel, olukorras kus arvutuslik võimsus oli tagashoidlik, oli tegemist olulise eelisega. Tänapäeval on $\lambda_3$ lihtsus pea olematu eelis, arvestades, et ka väga suurte küsimustike puhul ei valmista paremate hinnangute leidmine optimiseeritud programmi korral probleeme. 
+
+Lisas \ref{appendix:empiric} ära toodud näidete põhjal võ
 
 Seega, kui küsimustiku analüüsia mõtestab küsimustiku klassikalise testiteooria raamistikus, siis ei näe autor mingit põhjust, miks peaks kasutama reliaabluse hindamiseks $\lambda_3$ ning soovitab eelistada teisi, kõrgemaid, hinnaguid. Autor märgib siinkohal, et tegemist tundub olevat valdkonna ekpertide seas levinud arvamusega.  \cite{Revelle2008} \cite{Sijtsma2009a} \cite{Cronbach2004}
 
@@ -1730,6 +1741,7 @@ I_k & Q_i^T x \\
 \end{pmatrix} \succeq 0 \notag
 \end{gather}
 
+
 \pagebreak
 
 \section{Programmiteek}
@@ -2002,12 +2014,20 @@ def calculate_sum_of_covariance_matrix_elements(cov_matrix,n = None):
 
 
 
+
+
+
 \pagebreak
 \bibliography{mata_baka}{}
 \bibliographystyle{plain}
 
 
+
 \section*{Lisa}
+\addcontentsline{toc}{section}{Lisa}
+
+\begin{subappendices}
+\subsection{Näited küsimustikust Likerti skaalal}
 
 
 \begin{figure}[H]
@@ -2025,11 +2045,125 @@ def calculate_sum_of_covariance_matrix_elements(cov_matrix,n = None):
 \end{figure}
 
 
+
+\subsection{Empiirilised näited}
+\label{appendix:empiric}
+
+\begin{scriptsize} \begin{table}[htdp]\caption{df2latex}
+\begin{center}
+\begin{tabular} { r r r r r r r r r r r r r }
+ \multicolumn{ 12 }{l}{ A table from the psych package in R } \cr
+ \hline 
+
+    3.00  &   1.52  &   1.73  &   1.21  &   0.69  &   1.40  &  -0.53  &  -0.64  &  -0.75  &  -0.56  &  -0.57  &  -0.83 \cr 
+      1.52  &   3.25  &   1.37  &   0.70  &   0.78  &   1.01  &  -0.31  &  -0.21  &  -0.17  &  -0.39  &  -0.29  &  -0.65 \cr 
+      1.73  &   1.37  &   3.25  &   1.43  &   0.85  &   1.62  &  -0.71  &  -0.77  &  -0.94  &  -0.98  &  -0.65  &  -1.20 \cr 
+     1.21  &   0.70  &   1.43  &   2.79  &   0.16  &   1.00  &  -1.03  &  -1.23  &  -0.98  &  -0.87  &  -0.82  &  -0.85 \cr 
+     0.69  &   0.78  &   0.85  &   0.16  &   2.67  &   0.82  &  -0.11  &   0.20  &  -0.10  &   0.10  &   0.40  &  -0.09 \cr 
+      1.40  &   1.01  &   1.62  &   1.00  &   0.82  &   2.37  &  -0.52  &  -0.48  &  -0.84  &  -0.55  &  -0.37  &  -0.73 \cr 
+     -0.53  &  -0.31  &  -0.71  &  -1.03  &  -0.11  &  -0.52  &   1.59  &   1.25  &   0.52  &   0.87  &   0.65  &   0.93 \cr 
+     -0.64  &  -0.21  &  -0.77  &  -1.23  &   0.20  &  -0.48  &   1.25  &   2.38  &   0.77  &   1.12  &   0.92  &   1.02 \cr 
+     -0.75  &  -0.17  &  -0.94  &  -0.98  &  -0.10  &  -0.84  &   0.52  &   0.77  &   2.30  &   0.81  &   0.75  &   0.68 \cr 
+     -0.56  &  -0.39  &  -0.98  &  -0.87  &   0.10  &  -0.55  &   0.87  &   1.12  &   0.81  &   2.14  &   1.00  &   1.25 \cr 
+     -0.57  &  -0.29  &  -0.65  &  -0.82  &   0.40  &  -0.37  &   0.65  &   0.92  &   0.75  &   1.00  &   2.09  &   0.69 \cr 
+     -0.83  &  -0.65  &  -1.20  &  -0.85  &  -0.09  &  -0.73  &   0.93  &   1.02  &   0.68  &   1.25  &   0.69  &   2.03 \cr 
+ \hline 
+\end{tabular}
+\end{center}
+\label{default}
+\end{table} 
+\end{scriptsize}
+
+
+0.389845603215
+
+0.600993443356
+
+0.425286112598
+
+0.731241250149
+
+0.765503667053
+
+\begin{scriptsize} \begin{table}[htdp]\caption{df2latex}
+\begin{center}
+\begin{tabular} { r r r r r r r r r r r r r }
+ \multicolumn{ 12 }{l}{ A table from the psych package in R } \cr 
+ \hline Variable  &   1  &  2  &  3  &  4  &  5  &  6  &  7  &  8  &  9  &  10  &  11  &  12 \cr 
+  \hline 
+  &  3.00  &  1.52  &  1.73  &  1.21  &  0.69  &  1.40  &  1.39  &  0.90  &  1.27  &  1.15  &  0.58  &  0.83 \cr 
+   &  1.52  &  3.25  &  1.37  &  0.70  &  0.78  &  1.01  &  1.10  &  1.73  &  0.94  &  0.85  &  0.56  &  0.70 \cr 
+   &  1.73  &  1.37  &  3.25  &  1.43  &  0.85  &  1.62  &  1.19  &  0.61  &  1.85  &  1.28  &  0.61  &  0.85 \cr 
+   &  1.21  &  0.70  &  1.43  &  2.79  &  0.16  &  1.00  &  0.64  &  0.26  &  0.93  &  1.49  &  0.14  &  0.53 \cr 
+   &  0.69  &  0.78  &  0.85  &  0.16  &  2.67  &  0.82  &  0.77  &  0.99  &  0.64  &  0.10  &  1.61  &  0.56 \cr 
+   &  1.40  &  1.01  &  1.62  &  1.00  &  0.82  &  2.37  &  0.98  &  0.74  &  1.17  &  1.02  &  0.74  &  0.90 \cr 
+   &  1.39  &  1.10  &  1.19  &  0.64  &  0.77  &  0.98  &  2.39  &  1.26  &  1.12  &  0.66  &  0.61  &  0.72 \cr 
+   &  0.90  &  1.73  &  0.61  &  0.26  &  0.99  &  0.74  &  1.26  &  2.91  &  0.55  &  0.43  &  0.82  &  0.77 \cr 
+   &  1.27  &  0.94  &  1.85  &  0.93  &  0.64  &  1.17  &  1.12  &  0.55  &  2.52  &  0.81  &  0.45  &  0.80 \cr 
+   &  1.15  &  0.85  &  1.28  &  1.49  &  0.10  &  1.02  &  0.66  &  0.43  &  0.81  &  2.19  &  0.25  &  0.55 \cr 
+   &  0.58  &  0.56  &  0.61  &  0.14  &  1.61  &  0.74  &  0.61  &  0.82  &  0.45  &  0.25  &  2.43  &  0.54 \cr 
+   &  0.83  &  0.70  &  0.85  &  0.53  &  0.56  &  0.90  &  0.72  &  0.77  &  0.80  &  0.55  &  0.54  &  1.35 \cr 
+ \hline 
+\end{tabular}
+\end{center}
+\label{default}
+\end{table} 
+\end{scriptsize}
+
+0.792086222424
+
+0.870887152456
+
+0.864094060827
+
+0.932154107284
+
+0.934744552629
+
+
+\begin{scriptsize} \begin{table}[htdp]\caption{df2latex}
+\begin{center}
+\begin{tabular} { r r r r r r r r r r r r r }
+ \multicolumn{ 12 }{l}{ A table from the psych package in R } \cr 
+
+  \hline 
+    1.99  &   0.39  &   0.37  &   0.98  &   0.85  &   0.70  &  -0.48  &  -0.49  &  -0.39  &  -0.43  &  -0.25  &  -0.27 \cr 
+     0.39  &   2.15  &   0.38  &   0.79  &   0.50  &   0.28  &  -0.60  &  -0.39  &  -0.27  &  -0.05  &  -0.19  &  -0.05 \cr 
+     0.37  &   0.38  &   2.12  &   0.45  &   0.74  &   0.70  &  -0.41  &  -0.10  &  -0.06  &   0.06  &  -0.02  &   0.07 \cr 
+     0.98  &   0.79  &   0.45  &   3.06  &   0.95  &   0.34  &  -0.59  &  -0.64  &  -0.36  &  -0.14  &  -0.04  &   0.05 \cr 
+     0.85  &   0.50  &   0.74  &   0.95  &   2.90  &   0.77  &  -0.32  &  -0.58  &  -0.05  &   0.05  &   0.22  &   0.32 \cr 
+     0.70  &   0.28  &   0.70  &   0.34  &   0.77  &   2.65  &  -0.47  &  -0.45  &  -0.45  &  -0.37  &  -0.39  &  -0.38 \cr 
+    -0.48  &  -0.60  &  -0.41  &  -0.59  &  -0.32  &  -0.47  &   1.99  &   0.58  &   0.51  &   0.38  &   0.31  &   0.47 \cr 
+    -0.49  &  -0.39  &  -0.10  &  -0.64  &  -0.58  &  -0.45  &   0.58  &   1.86  &   0.59  &   0.30  &   0.03  &   0.31 \cr 
+    -0.39  &  -0.27  &  -0.06  &  -0.36  &  -0.05  &  -0.45  &   0.51  &   0.59  &   1.63  &   0.63  &   0.45  &   0.81 \cr 
+    -0.43  &  -0.05  &   0.06  &  -0.14  &   0.05  &  -0.37  &   0.38  &   0.30  &   0.63  &   1.41  &   0.63  &   1.01 \cr 
+    -0.25  &  -0.19  &  -0.02  &  -0.04  &   0.22  &  -0.39  &   0.31  &   0.03  &   0.45  &   0.63  &   1.79  &   1.11 \cr 
+    -0.27  &  -0.05  &   0.07  &   0.05  &   0.32  &  -0.38  &   0.47  &   0.31  &   0.81  &   1.01  &   1.11  &   2.33 \cr 
+ \hline 
+\end{tabular}
+\end{center}
+\label{default}
+\end{table} 
+\end{scriptsize}
+
+
+0.393173116992
+
+0.532690327639
+
+0.428916127628
+
+0.681124356489
+
+0.704017194856
+
+
+
 \makeatletter
 \newpage
 \pagestyle{empty}
 \selectlanguage{estonian}
-\section*{Litsents}
+\subsection{Litsents}
 
 \textbf{Lihtlitsents lõputöö reprodutseerimiseks ja
 lõputöö üldsusele kätte\-saadavaks tegemiseks.}
@@ -2065,5 +2199,7 @@ seadusest tulenevaid õigusi.
 Tartu,  \today
 \end{center}
 \makeatother
+
+\end{subappendices}
 
 \end{document}
