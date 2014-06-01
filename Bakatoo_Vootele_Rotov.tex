@@ -712,23 +712,23 @@ Esitame nüüd meie poolt üles ehitatud mudeli omaduse, mis osutub väga kasuli
 \label{eq:cov_zero}
 cov(T,E') = 0 \text{.}
 \end{equation} 
-Teisisõnu, küsimustiku tegeliku tulemuse ja küsimustiku mõõtmisvea vahel ei ole korrelatsiooni. See omadus muudab mudeli rakendamise palju lihtsamaks, kuna me ei pea eeldama, et meie koostatud küsimustikul on selline omadus. Tõestus sellele omadusele kahjuks käesoleva töö raamidesse ei mahu, rangest tõestusest huvitatutele soovitame tutvuda Donald Zimmermani mudeli ülesehitusega \cite{Zimmerman1975}.
+Teisisõnu, küsimustiku tegeliku tulemuse ja küsimustiku mõõtmisvea vahel ei ole korrelatsiooni. See omadus muudab mudeli rakendamise palju lihtsamaks, kuna me ei pea eeldama, et meie koostatud küsimustikul on selline omadus. Kahjuks ei mahu selle omaduse tõestus käesoleva töö raamidesse, rangest tõestusest huvitatutele soovitame tutvuda Donald Zimmermani mudeli ülesehitusega \cite{Zimmerman1975}.
 
-Paneme tähele, et kuna me ei seadunud mingeid kitsendusi testide $X$ ja $X'$ jaoks, siis ka $cov(T,E) = 0$.  
+Paneme tähele, et kuna me ei seadnud testidele $X$ ja $X'$ mingeid kitsendusi, siis ka $cov(T,E) = 0$.  
 
-Küll aga peame me tegema järgneva eelduse - olgu meil kaks erinevat küsimustiku, mille mõõtmisvead on vastavalt $E$ ja $E'$ siis 
+Küll aga peame tegema järgmise eelduse -- olgu meil kaks erinevat küsimustikku, mille mõõtmisvead on vastavalt $E$ ja $E'$, siis 
 \begin{equation}
 \label{eq:error_cov_0}
 cov(E,E') = 0 \text{.}
 \end{equation}
 
-Tehtud eeldus tähendab seda, et mõõtmisvead ei tohi olla süstemaatilised. Näiteks, jagades küsimustiku pooleks ning vaadeldes mõlemat osa kui eraldi küsimustiku, siis teades esimese mõõtmisviga ei tohiks see meile midagi öelda teise osa mõõtmisvea kohta. Paneme tähele, et see eeldus on siimaani tehtutest praktikas kõige raskemini tagatav ning on potensiaalne ohukoht testiteooria kasutamisel mingi küsimustiku mõtestamisel. 
+Tehtud eeldus tähendab seda, et mõõtmisvead ei tohi olla süstemaatilised. Näiteks, jagades küsimustiku pooleks ning vaadeldes mõlemat osa kui eraldi küsimustikku, siis  esimese mõõtmisviga teades ei tohiks see meile midagi öelda teise osa mõõtmisvea kohta. Paneme tähele, et see eeldus on siiamaani tehtutest praktikas kõige raskemini tagatav ning on potentsiaalne ohukoht testiteooria kasutamisel mingi küsimustiku mõtestamiseks.
 
 
 \begin{meeldetuletus}
 \begin{summa_dispersioon}
 \thlabel{summa_dispersioon}
-Juhuslikke suuruste $X$ ja $Y$ puhul kehtib 
+Juhuslike suuruste $X$ ja $Y$ puhul kehtib 
 \begin{equation*}
 D(X + Y) = D(X) + D(Y) + 2cov(X,Y)
 \end{equation*} 
@@ -742,7 +742,7 @@ D(X + Y) \overset{def}{=}\epsilon[X + Y - \epsilon(X + Y)]^2\overset{\text{$\eps
 \end{summa_dispersioon}
 \end{meeldetuletus}
 
-Järgnevalt tutvume paralleelse küsimustiku mõistega. Kaks küsimustiku, mille vaadeldavad tulemused üle kõigi vastajate kogumi $I$ on $X = T + E$ ja $X' = T' + E'$ ning mille vaadeldavad tulemused vastaja $i \in I$ jaoks on $X_i = t_i + E_i$ ja $X_i' = t_i' + E_i'$ ,  on paralleelsed parajasti siis, kui kehtivad järgmised väited :
+Järgnevalt tutvume paralleelse küsimustiku mõistega. Kaks küsimustikku, mille vaadeldavad tulemused üle kõigi vastajate kogumi $I$ on $X = T + E$ ja $X' = T' + E'$ ning mille vaadeldavad tulemused vastaja $i \in I$ jaoks on $X_i = t_i + E_i$ ja $X_i' = t_i' + E_i'$, on paralleelsed parajasti siis, kui kehtivad järgmised väited:
 \begin{enumerate}
 \item $t_i = t_i' ~ \forall i \in I  $,
 \item $D \left[ E \right] = D \left[ E' \right] $. 
@@ -752,13 +752,13 @@ Eelnevast järeldub lihtsalt, et
 \begin{equation}
 \label{eq:true_scores_eq}
 T = T' \text{.}
-\end{equation} Tõepoolest, olgu $(i,\omega)$ suvaline paar hulgast $I \times \Omega$ , siis kehtib
+\end{equation} Tõepoolest, olgu $(i,\omega)$ suvaline paar hulgast $I \times \Omega$, siis kehtib
 
 \begin{equation*}
 T((i, \omega) \overset{def}{=} t_i = t_i' = T'((i,\omega)) \text{.}
 \end{equation*}
 
-Paneme tähele, et kahe paraleelse küsimustiku $X$ ja $X'$ korral kehtib
+Paneme tähele, et kahe paralleelse küsimustiku $X$ ja $X'$ korral kehtib
 \begin{equation}
 \label{eq:par_dispersioon}
 D[X] = D[X'] \text{,}
@@ -792,7 +792,7 @@ cov(X+Y,Z) \overset{def}{=} \epsilon \left[(X+Y - \epsilon \left[ X + Y \right])
 \end{meeldetuletus}
 
 
-Paralleelse küsimustiku abil saame klassikalise testiteooria raames defineerida reliaabluse. Olgu meil kaks paralleelset küsimustiku, mille vaadeldavad tulemused \"ule vastajate kogumi $I$ on vastavalt $X = T + E$ ja $X' = T' + E'$. Testi, mille vaadeldav tulemus on $X$,  reliaablus \"ule vastajate kogumi $I$ on võrdne $X$ ja $X'$ korrelatsioonikordajaga, mida tähistame $\rho_{XX'}$, formaalselt
+Paralleelse küsimustiku abil saame klassikalise testiteooria raames defineerida reliaabluse. Olgu meil kaks paralleelset küsimustikku, mille vaadeldavad tulemused \"ule vastajate kogumi $I$ on vastavalt $X = T + E$ ja $X' = T' + E'$. Küsimustiku, mille vaadeldav tulemus on $X$,  reliaablus \"ule vastajate kogumi $I$ on võrdne $X$ ja $X'$ korrelatsioonikordajaga, mida tähistame $\rho_{XX'}$, teisisõnu
 
 \begin{equation*}
 \rho_{XX'} = corr \left( X,X' \right) \text{.}
@@ -822,30 +822,30 @@ Paneme tähele, kuna $D[X] = D[T] + D[E]$, siis eelneva põhjal $\rho_{XX'} \in 
 
 
 
-Eelneva põhjal on selge, et väide  ``testi  reliaablus on suurem'' on samaväärne järgmise kolme väitega:
+Eelneva põhjal on selge, et väide  {\color{red}``}küsimustiku  reliaablus on suurem'' on samaväärne järgmise kolme väitega:
 \begin{enumerate}
-\item testi korrellatsioon paralleelse testiga on suurem,
-\item testi tegeliku tulemuse dispersioon on suurem võrreldes testi vaadeldava tulemuse dispersiooniga,
-\item testi mõõtmisvea dispersioon on väiksem võrreldes testi vaadeldava tulemuse dispersiooniga.
+\item küsimustiku korrelatsioon paralleelse küsimustikuga on suurem,
+\item küsimustiku tegeliku tulemuse dispersioon on suurem võrreldes küsimustiku vaadeldava tulemuse dispersiooniga,
+\item küsimustiku mõõtmisvea dispersioon on väiksem võrreldes küsimustiku vaadeldava tulemuse dispersiooniga.
 \end{enumerate}
 
-Märgime, et klassikalise testiteooria raames defineeritud reliaablus sobib kokku eelmises peatükkis antud mitteformaalse definitsiooniga, kuna küsimustik on iseendaga paralleelne testiks võib lugeda ka sama testi uuesti läbiviimise sama vastajate kogumi peal. Paneme tähele, et tegemist on suhteliselt nõrku eeldusi vajava teooriaga, kõigi raskem on praktikas süstemaatiliste vigade puudumist. 
+Märgime, et klassikalise testiteooria raames defineeritud reliaablus sobib kokku eelmises peatükis antud mitteformaalse definitsiooniga, kuna küsimustik on iseendaga paralleelne {\color{red}võib lugeda ka sama testi uuesti läbiviimist sama vastajate kogumi peal}. Paneme tähele, et tegemist on suhteliselt nõrku eeldusi vajava teooriaga, kõige raskem on praktikas tagada süstemaatiliste vigade puudumine.
 
-Kuna testi tegelik tulemus on suurus, mida me prakikas ei tea ning ka paralleelsete testide läbiviimine ei ole tihti võimalik on kasutusele on üritatud on võimalus testi reliaablust hinnata meie jaoks oluline. Järgnevalt vaatleme, kuidas seda teha.
+{\color{red} Kuna küsimustiku tegelik tulemus on suurus, mida me praktikas ei tea, ning ka paralleelsete testide läbiviimine ei ole tihti võimalik, on kasutusele on üritatud on võimalus testi reliaablust hinnata meie jaoks oluline.} Järgnevalt vaatleme, kuidas seda teha.
 
 
 
 \subsection{Vajalikud taustteadmised reliaabluse hindamiseks}
 
 Järgnev käsitlus tugineb Jacksoni ja Anguwamba 1977. aasta artiklile.\cite{Jackson1977}
-Olgu meil vastajate populatsioon $I$, üle mille me vaatleme küsimustiku, milles on $k$ k\"usimust. Vaatleme seda küsimustiku klassikalise testiteooria raames ning olgu $X$ küsimustiku vaadeldav tulemus, $T$ küsimustiku tegelik tulemus ning $E$ küsimustiku mõõtmisviga. Vaatleme iga küsimust kui ühest küsimusest koosnevat alamküsimustiku ja tähistama fikseeritud k\"usimuse $ i \in \left\lbrace 1,2,\ldots,k \right\rbrace$ vaadeltavat tulemust kui $X_i$, tegeliku tulemust kui $T_i$ ning mõõtmisviga $E_i$. Seega $X = \sum \limits_{i=0}^{k} X_i$, $T = \sum \limits_{i=0}^{k} T_i$ ja $E = \sum \limits_{i=0}^{k} E_i$ . Paneme tähele, et kui eelnevas peatükkis tähistasime alaindeksiga küsimusele vastajat siis edaspidi tähistama sellega kindlat küsimust. 
+Olgu meil vastajate populatsioon $I$, üle mille vaatleme küsimustikku, milles on $k$ k\"usimust. Vaatleme seda küsimustikku klassikalise testiteooria raames ning olgu $X$ küsimustiku vaadeldav tulemus, $T$ küsimustiku tegelik tulemus ning $E$ küsimustiku mõõtmisviga. Vaatleme iga küsimust kui ühest küsimusest koosnevat alamküsimustikku ja tähistame fikseeritud k\"usimuse $ i \in \left\lbrace 1,2,\ldots,k \right\rbrace$ vaadeldava tulemuse kui $X_i$, tegeliku tulemuse kui $T_i$ ning mõõtmisvea $E_i$. Seega $X = \sum \limits_{i=0}^{k} X_i$, $T = \sum \limits_{i=0}^{k} T_i$ ja $E = \sum \limits_{i=0}^{k} E_i$ . Paneme tähele, et kui eelnevas peatükis tähistasime alaindeksiga küsimusele vastajat, siis edaspidi tähistame sellega kindlat küsimust. 
 
-Vaatleme testi k\"usimuste tulemuste ja mõõtmisvea vektoreid: $\left( X_1, X_2, X_3, \ldots, X_n \right)$, $\left( T_1, T_2, T_3, \ldots, T_n \right)$, $\left( E_1, E_2, E_3, \ldots, E_n \right)$. Tähistame nende vektorite kovariatsioonimaatriksid\footnote{Praktikas ei ole kovariatsioonimaatriksid meil teada, kuid meil on võimalik valimi põhjal saada hinnang vaadeldavate tulemuste kovariatsioonimaatriksile }, vastavalt $\Sigma_X, \Sigma_T, \Sigma_E$. Seega, 
+Vaatleme testi k\"usimuste tulemuste ja mõõtmisvea vektoreid: $\left( X_1, X_2, X_3, \ldots, X_n \right)$, $\left( T_1, T_2, T_3, \ldots, T_n \right)$, $\left( E_1, E_2, E_3, \ldots, E_n \right)$. Tähistame nende vektorite kovariatsioonimaatriksid\footnote{Praktikas ei ole kovariatsioonimaatriksid meile teada, kuid valimi põhjal on meil võimalik saada hinnang vaadeldavate tulemuste kovariatsioonimaatriksi kohta.} vastavalt $\Sigma_X, \Sigma_T, \Sigma_E$. Seega, 
 \small
 \begin{equation*}
 \Sigma_X = 
 \begin{pmatrix}
-cov \left(X_1,X_1 \right) && cov\left( X_1,X_2 \right) && cov \left( X_1,X_3 \right) && \cdots && cov \left( X_1,X_k \right) \\
+cov \left(X_1,X_1 \right) && cov\left( X_1,X_2 \right) && cov \left( X_1,X_3 \right) && \cdots && cov \left( X_1,{\color{red}X_k} \right) \\
 cov \left(X_2, X_1 \right) && cov \left(X_2, X_2 \right) && cov \left(X_2, X_3 \right) && \cdots && cov \left(X_2, X_n \right) \\
 cov \left(X_3, X_1 \right) && cov \left(X_3, X_2 \right) && cov \left(X_3, X_3 \right) && \cdots && cov \left(X_n, X_n \right) \\
 \vdots && \vdots && \vdots && \ddots && \vdots \\
@@ -861,7 +861,7 @@ Eelnevalt läbiviidud arutelu (vt. (\ref{eq:corr_equals_var_over_var})) põhjal 
 \Sigma_X = \Sigma_T + \Sigma_E \text{.}
 \end{equation}
 
-Lisaks kehtib eelduse (\ref{eq:error_cov_0}) põhjal saame, et et juhul kui $i \neq j$, siis $cov \left( E_i, E_j \right) = 0$.
+Lisaks kehtib eelduse (\ref{eq:error_cov_0}) põhjal, et juhul kui $i \neq j$, siis $cov \left( E_i, E_j \right) = 0$.
 Sellest tulenevalt kehtib
 
 \small
@@ -880,9 +880,9 @@ cov \left(E_1,E_1 \right) && 0 && 0 && \cdots && 0 \\
 
 Tähistame edaspidi maatriksi $\Sigma_X$ elemente  $x_{ij}$, maatriksi $\Sigma_T$ elemente $t_{ij}$ ning maatriksi $\Sigma_E$ peadiagonaali elemente $\theta_i$. Seega, kui $i \neq j$, siis $t_{ij} = x_{ij}$ ning $t_{ii} = x_{ii} - \theta_i$.
 
-Tuletame meelde, et eelmises peatükkis veendusime (\ref{eq:reliability}), et testi reliaablus võrdub avaldisega $1 - \frac{D \left[ E \right]}{D \left[ X \right]}$. 
+Tuletame meelde, et eelmises peatükis veendusime (\ref{eq:reliability}), et testi reliaablus võrdub avaldisega $1 - \frac{D \left[ E \right]}{D \left[ X \right]}$. 
 
-Veendume, et juhuslike suuruste summa summa dispersioon võrdub liidetavate kovariatsioonimaatriksi elementide summaga ehk kui $X = \sum \limits_{i=1}^k$  ja $\Sigma_X$ on vektori $(X_1,X_2,\ldots,X_K)$ kovariatsioonimaatriks siis
+Veendume, et juhuslike suuruste summa dispersioon võrdub liidetavate kovariatsioonimaatriksi elementide summaga, ehk kui $X = \sum \limits_{i=1}^k$  ja $\Sigma_X$ on vektori $(X_1,X_2,\ldots,X_K)$ kovariatsioonimaatriks, siis
 \begin{equation}
 \label{eq:var_sum_of_cov}
 D[X] = \sum \limits_{i=1}^k \sum \limits_{j=1}^k {x}_{ij} \text{.}
@@ -895,7 +895,7 @@ D[X] =  D[X_1 + X_2 + \ldots + X_k] \overset{\text{\thref{summa_dispersioon}}}{=
 + 2[ cov(X_1,X_2) + cov(X_1,X_3) + \ldots + cov(X_1,X_k)] \text{.}
 \end{gather*}
 
-Näeme, et tegemist on rekkurentse võrrandiga. Arvestades, et $cov(X,X) = D[X]$ (vt.(\ref{eq:corr_equals_var_over_var})), näeme, et igale liidetavale eelnevas summas vastab mingite kovariatsioonimaatriksite elementide summa, kusjuures kõik kovariatsioonimaatriksi elemendid kuuluvad täpselt ühte nendest summadest. Kovariatsiooni maatriksi jagunemist illustreerib järgnev tabel, kus sinisega on tähistatud $D[X_1]$, punasega liidetavad, mille summa on võrdne arvuga $2[ cov(X_1,X_2) + cov(X_1,X_3) + \ldots + cov(X_1,X_k)]$ ja rohelisega liikmed, mille summast moodustub $D[X_1 + X_2 + \ldots + X_k]$. Siinkohal meenutame, et kovariatsioon on sümmeetriline ning seega $cov(X_i,X_j) = cov(X_j,X_i)$.
+Näeme, et tegemist on rekurrentse võrrandiga. Arvestades, et $cov(X,X) = D[X]$ (vt.(\ref{eq:corr_equals_var_over_var})), näeme, et igale liidetavale eelnevas summas vastab mingite kovariatsioonimaatriksite elementide summa, kusjuures kõik kovariatsioonimaatriksi elemendid kuuluvad täpselt ühte nendest summadest. Kovariatsiooni maatriksi jagunemist illustreerib järgnev tabel, kus sinisega on tähistatud $D[X_1]$, punasega liidetavad, mille summa on võrdne arvuga $2[ cov(X_1,X_2) + cov(X_1,X_3) + \ldots + cov(X_1,X_k)]$ ja rohelisega liikmed, mille summast moodustub $D[X_1 + X_2 + \ldots + X_k]$. Siinkohal meenutame, et kovariatsioon on sümmeetriline ning seega $cov(X_i,X_j) = cov(X_j,X_i)$.
 
 
 \begin{figure}[H]
@@ -911,9 +911,9 @@ Näeme, et tegemist on rekkurentse võrrandiga. Arvestades, et $cov(X,X) = D[X]$
 \end{tabular}}
 \end{figure}
 
-Lisaks on sellel rekurentses võrandil on lihtne baasjuht, selleks on olukord, kus summa koosneb ainult ühest liidetavast. 
+Lisaks on sellel rekurrentsel võrrandil lihtne baasjuht: selleks on olukord, kus summa koosneb ainult ühest liidetavast. 
 
-Arvestades maatriksi \ref{eq:sigma_E} ehitust, saame võrduse 
+Arvestades maatriksi \ref{eq:sigma_E} struktuuri, saame võrduse 
 
 \begin{equation}
 \label{eq:reliability_cov}
@@ -921,7 +921,7 @@ Arvestades maatriksi \ref{eq:sigma_E} ehitust, saame võrduse
 \end{equation}
 
 \begin{meeldetuletus}
-\begin{mittenegatiivselt_maaratud} Maatriks $C \in Mat_k(\mathbb{R})$ on \textit{mittenegatiivselt määratud} kui iga maatriksi $v \in Mat_{k,1}(\mathbb{R})$ korral $v^T C v \geq 0$.
+\begin{mittenegatiivselt_maaratud} Maatriks $C \in Mat_k(\mathbb{R})$ on \textit{mittenegatiivselt määratud}, kui iga maatriksi $v \in Mat_{k,1}(\mathbb{R})$ korral $v^T C v \geq 0$.
 \end{mittenegatiivselt_maaratud}
 \end{meeldetuletus}
 
@@ -945,7 +945,7 @@ cov(X,\alpha Y) = \epsilon \left[ \left( X - \epsilon \left[ X \right] \right) \
 \end{proof}
 \end{meeldetuletus}
 
-Olgu meil suvaliste juhuslike suuruste vektor $X_1,X_2,\ldots,X_n$ , kun $n \in \mathbb{N}$ ja olgu $\Sigma_X$ selle vektori kovariatsioonimaatriks. Olgu meil suvaline $k$-vektor $v = (v_1,v_2,\ldots,v_n)$. Konstrueerime uue juhuslike suuruste vektori ($X_1',X_2',\ldots,X_n')$, kusjuures $X_i' = v_i X_i$ ning olgu $\Sigma_X'$ selle vektori kovariatsioonimaatriks. Vaatleme juhusliku suurust $X' = \sum \limits_{i=1}^n X_i'$. Kuna eelneva põhjal $D[X'] = \sum \limits_{i=1}^n \sum \limits_{j=1}^n {\Sigma_X'}_{ij} $ ja definitsiooni põhjal $D[X'] \geq 0$, siis $\sum \limits_{i=1}^n \sum \limits_{j=1}^n {\Sigma_X'}_{ij} \geq 0$. Kuna $\Sigma_X'$ on kovariatsioonimaatriks siis,
+Olgu meil suvaliste juhuslike suuruste vektor $X_1,X_2,\ldots,X_n$, kus $n \in \mathbb{N}$ ja olgu $\Sigma_X$ selle vektori kovariatsioonimaatriks. Olgu meil suvaline $k$-vektor $v = (v_1,v_2,\ldots,v_n)$. Konstrueerime uue juhuslike suuruste vektori ($X_1',X_2',\ldots,X_n')$, kusjuures $X_i' = v_i X_i$ ning olgu $\Sigma_X'$ selle vektori kovariatsioonimaatriks. Vaatleme juhuslikku suurust $X' = \sum \limits_{i=1}^n X_i'$. Kuna eelneva põhjal $D[X'] = \sum \limits_{i=1}^n \sum \limits_{j=1}^n {\Sigma_X'}_{ij} $ ja definitsiooni põhjal $D[X'] \geq 0$, siis $\sum \limits_{i=1}^n \sum \limits_{j=1}^n {\Sigma_X'}_{ij} \geq 0$. Kuna $\Sigma_X'$ on kovariatsioonimaatriks, siis
 \begin{equation}
 \label{eq:kov_maatriksi_summa}
 \sum \limits_{i=1}^n \sum \limits_{j=1}^n {\Sigma_X'}_{ij} = \sum \limits_{i=1}^n \sum \limits_{j=1}^n cov(v_iX_i,v_jX_j) \overset{\text{\thref{konstant_kovariatsioon}}}{=} \sum \limits_{i=1}^n \sum \limits_{j=1}^n v_i v_j cov(X_i,X_j) \text{.}
@@ -962,23 +962,23 @@ v_1 cov(X_2,X_1) + v_2 cov(X_2,X_2) + \hdots v_n cov(X_2,X_n) \\
 v_1 cov(X_k,X_1) + v_2 cov(X_k,X_2) + \ldots v_n cov(X_n,X_n) \\
 \end{pmatrix} v = \\  \sum \limits_{i=1}^n \sum \limits_{j=1}^n v_i v_j cov(X_i,X_j)  \overset{(\ref{eq:kov_maatriksi_summa})}{=} \sum \limits_{i=1}^n \sum \limits_{j=1}^n {\Sigma_X'}_{ij} = D[X']
 \end{gather*}
-Seega $v^T \Sigma_X v \geq 0$ ning kuna $v$ oli valitud suvaliselt siis on $\Sigma_X$ mittenegatiivselt määratud. Kuna $n$ ja $X_1,X_2,\ldots X_n$ olid valitud suvaliselt, siis on iga kovariatsioonimaatriks mittenegatiivselt määratud. 
+Seega $v^T \Sigma_X v \geq 0$, ning kuna $v$ oli valitud suvaliselt, siis  $\Sigma_X$ on mittenegatiivselt määratud. Kuna $n$ ja $X_1,X_2,\ldots X_n$ olid valitud suvaliselt, siis on iga kovariatsioonimaatriks mittenegatiivselt määratud. 
 
-Sellega oleme andund reliaablusele matemaatilise definitsiooni ning mõtestanud lahti vajaminevad taustteadmised reliaabluse hindamiseks. Järgnevalt tuletame mõned alumised tõkked reliaablusele.   
+Sellega oleme andnud reliaabluse matemaatilise definitsiooni ning mõtestanud lahti vajaminevad taustteadmised reliaabluse hindamiseks. Järgnevalt tuletame mõned reliaabluse alumised tõkked.   
 
   
 \pagebreak
 
 
-\section{Alumised tõkked reliaablusele}
+\section{Reliaabluse alumised tõkked}
 
-Järgnevalt vaatleme viite alumist tõket reliaablusele ning üritame pakkuda lahendust töö alguses püstitatud probleemile. Vaadeltavatest alumistest tõketest neli - $\lambda_1,\lambda_2,\lambda_3,\lambda_4$; pakkus aastal 1945 välja Louis Guttman \cite{Guttman1945}. Viienda vaadeldava tõkke pakkusid välja Jackson ja Anguwamba oma 1977 aasta artiklis \cite{Jackson1977}. Kõik tõkked tuletame tuginedes Jacksoni ja Anguwamba artiklile.
+Järgnevalt vaatleme reliaabluse viite alumist tõket  ning üritame pakkuda lahenduse töö alguses püstitatud probleemile. Vaadeldavatest alumistest tõketest neli -- $\lambda_1,\lambda_2,\lambda_3,\lambda_4$ -- pakkus  1945. aastal välja Louis Guttman \cite{Guttman1945}. Viienda vaadeldava tõkke pakkusid välja Jackson ja Anguwamba oma 1977. aasta artiklis \cite{Jackson1977}. Kõik tõkked tuletame  Jacksoni ja Anguwamba artiklile tuginedes.
 
-Olgu meil vastajate kogum $I$, üle mille me vaatleme $k$ küsimusest koosnev küsimustik, mille vaadeldav tulemus on $X$, tegelik tulemus on $T$ ja mõõtmisviga üle on $E$. Nummerdame küsimused arvudega $1$ kuni $k$. Vaatleme igat küsimust eraldi alamküsimustikuna, ning olgu $X_i$ küsimuse $i$ vaadeldav tulemus, $T_i$ küsimuse $i$ tegelik tulemus ja $E_i$ küsimuse $i$ mõõtmisviga. Analoogiliselt eelmise peatükiga tähistame vektorite $(X_1,X_2,\ldots X_k)$, $(T_1,T_2,\ldots,T_k)$ ja $(E_1,E_2,\ldots,E_k)$ kovariatsioonimaatrikseid kui $\Sigma_X,\Sigma_T,\Sigma_E \in Mat_{k}\left(\mathbb{R}\right)$. Nagu eelmises peatükkis, tähistame ka siin maatriksi $\Sigma_X$ elemente kui $x_{ij}$, maatriksi $\Sigma_T$ elemente kui $t_{ij}$ ning maatriksi $\Sigma_E$ peadiagonaali elemente $\theta_i$. Edaspidi vaatleme selles peatükkis küsimustiku, mille vaadeldav tulemus on $X$, reliaabluse alumisi tõkkeid.
+Olgu meil vastajate kogum $I$, üle mille vaatleme $k$ küsimusest koosnevat küsimustikku, mille vaadeldav tulemus on $X$, tegelik tulemus on $T$ ja mõõtmisviga on $E$. Nummerdame küsimused arvudega $1$ kuni $k$. Vaatleme iga küsimust eraldi alamküsimustikuna, ning olgu $X_i$ küsimuse $i$ vaadeldav tulemus, $T_i$ küsimuse $i$ tegelik tulemus ja $E_i$ küsimuse $i$ mõõtmisviga. Analoogiliselt eelmise peatükiga tähistame vektorite $(X_1,X_2,\ldots X_k)$, $(T_1,T_2,\ldots,T_k)$ ja $(E_1,E_2,\ldots,E_k)$ kovariatsioonimaatrikseid kui $\Sigma_X,\Sigma_T,\Sigma_E \in Mat_{k}\left(\mathbb{R}\right)$. Nagu eelmises peatükis, tähistame ka siin maatriksi $\Sigma_X$ elemente kui $x_{ij}$, maatriksi $\Sigma_T$ elemente kui $t_{ij}$ ning maatriksi $\Sigma_E$ peadiagonaali elemente kui $\theta_i$. Edaspidi vaatleme selles peatükis küsimustiku, mille vaadeldav tulemus on $X$, reliaabluse alumisi tõkkeid.
 
 \subsection{Alumine tõke $\lambda_1$}
 
-Vaatleme kovariatsioonimaatriksit $\Sigma_T$. Eeldame vastuväiteliselt, et maatriksi $\Sigma_T$ peadiagonaalil leidub element, mis on negatiivne. Olgu selleks elemendiiks  $t_{ii}$. Olgu $v$ vektor, millel on $k$ elementi, kusjuures 
+Vaatleme kovariatsioonimaatriksit $\Sigma_T$. Eeldame vastuväiteliselt, et maatriksi $\Sigma_T$ peadiagonaalil leidub element, mis on negatiivne. Olgu selleks elemendiks  $t_{ii}$. Olgu $v$ vektor, millel on $k$ elementi, kusjuures 
 \begin{equation*}
 v_j =
 \begin{cases}
@@ -994,11 +994,11 @@ v^T \Sigma_T v =
 \begin{pmatrix}
 t_{i1} & t_{i2} &  \hdots & t_{ik}\\
 \end{pmatrix} v = t_{ii} \text{.}
-\end{equation*} Seega ei ole maatriks enam positiivselt määratud, mis on eelmises peatükkis läbiviidud arutelu põhjal vastuolus sellega, et $\Sigma_T$ on kovariatsioonimaatriks .
+\end{equation*} Seega ei ole maatriks enam positiivselt määratud, mis on eelmises peatükis läbiviidud arutelu põhjal vastuolus sellega, et $\Sigma_T$ on kovariatsioonimaatriks.
 
-Seega iga $i$ peab kehtima $t_{ii} \geq 0$ ning kuna eelmise peatüki põhjal $\Sigma_X = \Sigma_T + \Sigma_E$, siis peab kehtima $\theta_i < x_{ii}$ iga $i, 1 \leq i \leq k$ korral.
+Seega iga $i$ korral peab kehtima $t_{ii} \geq 0$ ning kuna eelmise peatüki põhjal $\Sigma_X = \Sigma_T + \Sigma_E$, siis peab kehtima $\theta_i < x_{ii}$ iga $i, 1 \leq i \leq k$ korral.
 
-Seega ka $\sum \limits_{i=1}^k \theta_i \leq \sum \limits_{i=1}^k x_{ii}$. Võttes arvesse võrdust (\ref{eq:reliability_cov}), oleme saanud küsimustiku, mille vaadeldav tulemus on $X$,  reliaablusele alumise tõkke, mida tähistame kui $\lambda_1$, kus
+Seega ka $\sum \limits_{i=1}^k \theta_i \leq \sum \limits_{i=1}^k x_{ii}$. Võttes arvesse võrdust (\ref{eq:reliability_cov}), oleme saanud küsimustiku, mille vaadeldav tulemus on $X$,  reliaabluse alumise tõkke, mida tähistame kui $\lambda_1$, kus
 \begin{equation}
 \label{eq:lambda_1}
 \lambda_1 = 1 - \frac{ \sum \limits_{i=1}^k {x}_{ii}}{ \sum \limits_{i=1}^k \sum \limits_{j=1}^k {x}_{ij}} \leq  1 - \frac{ \sum \limits_{i=1}^k  {\theta}_{i}}{ \sum \limits_{i=1}^k \sum \limits_{j=1}^k {x}_{ij}} =  1 - \frac{D \left[ E \right]}{D \left[ X \right]}.
@@ -1006,7 +1006,7 @@ Seega ka $\sum \limits_{i=1}^k \theta_i \leq \sum \limits_{i=1}^k x_{ii}$. Võtt
 
 \subsection{Alumine tõke $\lambda_2$}
 
-Enne järgmise alumise tõke tuletamist, veendume et kehtivad kaks abitulemust.
+Enne järgmise alumise tõkke tuletamist veendume, et kehtivad kaks abitulemust.
 
 Olgu meil mitte-negatiivselt määratud s\"ummeetriline maatriks $C, C \in Mat_{n}(\mathbb{R})$. Näitame, et sellisel juhul kehtib väide, et iga $i,j$ korral
 \begin{equation*}
@@ -1023,7 +1023,7 @@ v_k =
 \end{cases} \text{.}
 \end{equation*}
 
-Kuna eelduste kohaselt on $C$ mitte-negatiivlet määratud, siis peab kehtima 
+Kuna eelduste kohaselt on $C$ mitte-negatiivselt määratud, siis peab kehtima 
 \begin{equation}
 \label{eq:sd-toestus-maatriks-korrutis}
 0 \leq v^{T}Cv = 
@@ -1044,7 +1044,7 @@ c_{n1} && \cdots && c_{nn}
 \end{pmatrix} \text{,}
 \end{equation}
 
-kus $\mathbf{0},\mathbf{0'},\mathbf{0''}$ on null vektorid pikkustega vastavalt $i-1,j-i-1, n -j$.
+kus $\mathbf{0},\mathbf{0'},\mathbf{0''}$ on nullvektorid pikkustega vastavalt $i-1,j-i-1, n-j$.
 
 
 
@@ -1082,11 +1082,11 @@ a_{ni} + \alpha c_{nj}
 \end{equation*}
 
 
-Seega saame, et $ 0 \leq c_{ii} + 2\alpha{c_ij} + c_{jj}$. See, et saadud ruutvõrratus on kehtib on samaväärne sellega, et selle ruutvõrrandi diskriminant ei ole nullist suurem. Seega,   
+Seega saame, et $ 0 \leq c_{ii} + 2\alpha{c_ij} + c_{jj}$. See, et saadud ruutvõrratus kehtib, on samaväärne sellega, et vaadeldava ruutvõrrandi diskriminant ei ole nullist suurem. Seega,   
 \begin{equation*}
 c_{ij}^2 - c_{i}c_{j} \leq 0 \text{,} 
 \end{equation*}
-milles me soovisimegi veenduda. Eelneva arutelu idee pärineb Ivar Tammeraidi õppikust. \cite{Tammeraid1999}.  
+milles me soovisimegi veenduda. Eelneva arutelu idee pärineb Ivar Tammeraidi õpikust. \cite{Tammeraid1999}.  
 
 
 Olgu meil mingid arvud $y_i, 1 \leq i  \leq n $. Paneme tähele, et siis kehtib järgvev võrdus 
@@ -1114,19 +1114,19 @@ Liidetavad teistmoodi grupeerides saame, et
 \end{gathered}
 \end{equation*}
 
-Vaatleme jällegi kovariatsiooni maatriksit $\Sigma_E$. Märkame, et kuna $x_{ii} = \theta_i + t_{ii}$ iga $ 1 \leq i \leq k$, siis kehtib järgnev:
+Vaatleme jällegi kovariatsiooni maatriksit $\Sigma_E$. Märkame, et kuna $x_{ii} = \theta_i + t_{ii}$ iga $ 1 \leq i \leq k$ korral, siis kehtib järgnev:
 
 \begin{equation*}
  \sum \limits_{i=1}^k \theta_i = \sum \limits_{i=1}^k x_{ii} - \sum \limits_{i=1}^k t_{ii} 
 \end{equation*}.
 
-Märgime, et kuna kovariatsioon on definitsioon põhjal sümmeetriline siis on ka vektori $(Y_1,Y_2,\ldots,Y_n)$ kovariatsioonimaatriks $\Sigma_Y$ sümmeetriline. Tõepoolest, iga $1 \leq i,j \leq n$ korral,  
+Märgime, et kuna kovariatsioon on definitsioon põhjal sümmeetriline, siis on ka vektori $(Y_1,Y_2,\ldots,Y_n)$ kovariatsioonimaatriks $\Sigma_Y$ sümmeetriline. Tõepoolest, iga $1 \leq i,j \leq n$ korral  
 
 \begin{equation*}
 {\Sigma_Y}_{ij} = cov(Y_i,Y_j) = cov(Y_j,Y_i) = {\Sigma_Y}_{ji} \text{.}
 \end{equation*} 
 
-Eelnevalt käsitletud algebralise samasuse ning kovariatsioonimaatriksite mitte-negatiivselt määratuse ja sümmetrilisuse põhjal kehtib
+Eelnevalt käsitletud algebralise samasuse ning kovariatsioonimaatriksite mitte-negatiivselt määratuse ja sümmeetrilisuse põhjal kehtib
 
 \small
 \begin{gather*}
@@ -1135,13 +1135,13 @@ Eelnevalt käsitletud algebralise samasuse ning kovariatsioonimaatriksite mitte-
 \end{gather*}
 \normalsize
 
-Arvestades, et kovariatsioonimaatriks on mitte-negatiivselt määratud ning seda, et kui $i \neq j$ siis $t_{ij} = x_{ij}$ , saame eelnevalt tõestatud abitulemuse põhjal väita, et
+Arvestades, et kovariatsioonimaatriks on mitte-negatiivselt määratud ning seda, et kui $i \neq j$, siis $t_{ij} = x_{ij}$, saame eelnevalt tõestatud abitulemuse põhjal väita, et
 
 \begin{equation*}
 \sum \limits_{i=1}^k t_{ii}  \geq \sqrt{\frac{ k \sum \limits_{i=1}^k  \left( \sum \limits_{j=1}^{i-1} t_{ii} t_{jj} + \sum \limits_{m=i+1}^k {t_{ii}}{t_{mm}} \right)}{\left( k -1 \right)}} \geq \sqrt{\frac{ k \sum \limits_{i=1}^k  \left( \sum \limits_{j=1}^{i-1} x_{ij}^2 + \sum \limits_{m=i+1}^k {x_{im}^2} \right)}{\left( k -1 \right)}}
 \end{equation*} 
 
-Selle taustal saame defineerida alumise tõkke reliaablusele, mida tähistame $\lambda_2$:
+Selle taustal saame defineerida reliaabluse alumise tõkke, mida tähistame $\lambda_2$:
 
 \small
 \begin{equation*}
@@ -1160,7 +1160,7 @@ ning seega $\lambda_1 \leq \lambda_2$.
 
 
 
-Vaatleme jällegi kovariatsioonimaatriksit $\Sigma_T$. Olgu meil arvud $i,j$, nii et $1 \leq i,j  \leq k$ ning olgu meil $k$-vektor $v$, mille elment kohal $i$ on $1$ ja element kohal $1 \leq j \leq k, j \neq i$ on $-1$. Kuna kovariatsioonimaatriks peab olema mittenegatiivselt määratud siis peab kehtima
+Vaatleme jällegi kovariatsioonimaatriksit $\Sigma_T$. Olgu meil arvud $i,j$, nii et $1 \leq i,j  \leq k, j \neq i$ ning olgu meil $k$-vektor $v$, mille element kohal $i$ on $1$ ja element kohal $j$ on $-1$. Kuna kovariatsioonimaatriks peab olema mitte-negatiivselt määratud, siis peab kehtima
 
 \begin{equation*}
 \label{eq:psd 1 -1 vector}
@@ -1171,12 +1171,12 @@ t_{2i} - t_{2j} \\
 \vdots \\
 t_{ki} - t{kj} \\
 \end{pmatrix}
-= t_{ii} + t_{jj} - 2 t_{ij} \text{,}
+= t_{ii} + t_{jj} - 2 t_{ij} \text{.}
 \end{equation*}
 
-võttes arvesse seda, et kui $i \neq j$, siis $x_{ij} = t_{ij}$ saame, et $t_{ii} + t_{jj} \geq 2 x_{ij}$. 
+Võttes arvesse, et kui $i \neq j$, siis $x_{ij} = t_{ij}$, saame, et $t_{ii} + t_{jj} \geq 2 x_{ij}$. 
 
-Teame, et võimalusi valida $i$ ja $j$ nii, et $i \neq j$ on $k \left( k -1 \right)$. Summeerides kõikide võimalike $i$ ja $j$ valikul saadud võrratused saame, et
+Teame, et võimalusi valida $i$ ja $j$ nii, et $i \neq j$ on $k \left( k -1 \right)$ tükki. Summeerides kõikide võimalike $i$ ja $j$ valikul saadud võrratused saame, et
 \begin{equation*}
 2 \left( k - 1 \right) \sum \limits_{i=1}^k t_{ii} \geq 2  \sum \limits_{i=1}^k  \left( \sum \limits_{j=1}^{i-1} x_{ij} + \sum \limits_{m=i+1}^k {x_{im}} \right),
 \end{equation*}
@@ -1187,7 +1187,7 @@ mis on samaväärne sellega, et
 \end{equation*}
 
 
-Eelneva põhjal olema oleme saanud järgmise alumise tõkke reliaablusele -  
+Eelneva põhjal oleme saanud järgmise reliaabluse alumise tõkke:   
 \begin{gather*}
 \lambda_3 = 1 - \frac{\sum \limits_{i=1}^k x_{ii} -  \frac{1}{k - 1} \sum \limits_{i=1}^k  \left( \sum \limits_{j=1}^{i-1} x_{ij} + \sum \limits_{m=i+1}^k {x_{im}} \right)}{\sum \limits_{i=1}^k \sum \limits_{j=1}^k x_{ij}} \leq \\
 \leq 1 - \frac{\sum \limits_{i=1}^k x_{ii} - \sum \limits_{i=1}^k  t_{ii}}{\sum \limits_{i=1}^k \sum \limits_{j=1}^k x_{ij}} =   1 - \frac{\sum \limits_{i=1}^k \theta_i}{\sum \limits_{i=1}^k \sum \limits_{j=1}^k x_{ij}} =  1 - \frac{D \left[ E \right]}{D \left[ X \right]} \text{.}
@@ -1214,9 +1214,9 @@ Tuletades meelde tõkke $\lambda_1$ definitsiooni (\ref{eq:lambda_1}) on ilmne, 
 ja seega $\lambda_1 \leq \lambda_3$. Lisaks on võimalik näidata, et $\lambda_3 \leq \lambda_2$, näiteks \cite[148-149]{Revelle2008}.
 
 
-Reliaabluse alumine tõke $\lambda_3$ on enam tuntud kui Cronbachi $\alpha$, nimetatud Lee Cronbachi järgi, kes seda oma 1951 aasta artiklis\cite{Cronbach1951} kasutas ning on ilmselt enim kasutatud hinnang reliaablusele. Käesolevas töös jääme siiski selle alumise tõkku nimetamisel $\lambda_3$ juurde - nii nimetates tuletatud tõket Louis Guttman oma kuus aastat varem ilmunud artiklis\cite{Guttman1945}.
+Reliaabluse alumine tõke $\lambda_3$ on enam tuntud kui Cronbachi $\alpha$, mis on nimetatud Lee Cronbachi järgi, kes kasutas seda oma 1951. aasta artiklis\cite{Cronbach1951}, ning see on ilmselt enim kasutatud reliaabluse hinnang. Käesolevas töös jääme  selle alumise tõkke nimetamisel siiski $\lambda_3$ juurde -- nii nimetas tuletatud tõket Louis Guttman oma kuus aastat varem ilmunud artiklis\cite{Guttman1945}.
 
-Siinkohal märgima ka ära, et $\lambda_3$ kasutatakse tihti ka hinnanguna testi sisemisele järjepidavusele ning sellega kokku puutudes tuleb kindlasti välja selgitada, mida autor reliaabluse all mõistab.
+Siinkohal märgime ka ära, et $\lambda_3$ kasutatakse tihti ka  testi sisemise järjepidavuse hinnanguna ning sellega kokku puutudes tuleb kindlasti välja selgitada, mida autor reliaabluse all mõistab.
 
 
  
@@ -1224,33 +1224,33 @@ Siinkohal märgima ka ära, et $\lambda_3$ kasutatakse tihti ka hinnanguna testi
  
 \subsection{Alumine tõke $\lambda_4$}
 
-Vaatleme kovariatsioonimaatriksit $\Sigma_T$. Vaatleme $k$ vektorite hulka $V = \lbrace v : \lvert {v_i} \rvert = 1 ~ \forall i, 1 \leq i \leq k \rbrace$.  Olgu meil suvaline vektor $v \in V$, kuna $\Sigma_T$ on mittenegatiivselt määratud, siis teame, et kehtib
+Vaatleme kovariatsioonimaatriksit $\Sigma_T$. Vaatleme $k$ vektorite hulka $V = \lbrace v : \lvert {v_i} \rvert = 1 ~ \forall i, 1 \leq i \leq k \rbrace$.  Olgu meil suvaline vektor $v \in V$. Kuna $\Sigma_T$ on mitte-negatiivselt määratud, siis teame, et kehtib
 \begin{equation*}
-0 \leq v^{T} \Sigma_T v,
+0 \leq v^{T} \Sigma_T v.
 \end{equation*}
- arvestades kovariatsioonimaatriksi $\Sigma_E$ omadusi saame võrduse \eqref{eq:sigma_x_=_sigma_t_+_sigma_e} põhjal 
+Arvestades kovariatsioonimaatriksi $\Sigma_E$ omadusi, saame võrduse \eqref{eq:sigma_x_=_sigma_t_+_sigma_e} põhjal 
 
 \begin{equation*}
 \sum \limits_{i=1}^k \theta_i = \sum \limits_{i=1} v_{i}^{2} \theta_i = v^{T} \Sigma_E v \leq v^{T} \Sigma_X v \text{.}
 \end{equation*}
 
-Seega, iga $v \in V$ korral saame alumise tõkke reliaablusele. Tõepoolest, \eqref{eq:reliability_cov} põhjal iga vektori $v \in V$ korral,  
+Seega, iga $v \in V$ korral saame reliaabluse alumise tõkke. Tõepoolest, \eqref{eq:reliability_cov} põhjal iga vektori $v \in V$ korral 
 \begin{equation*}
 1 - \frac{v^T \Sigma_X v}{\sum \limits_{i=1}^k \sum \limits_{j=1}^k x_{ij}} \leq 1 - \frac{\sum \limits_{i=1}^k \theta_i}{\sum \limits_{i=1}^k \sum \limits_{j=1}^k x_{ij}} = 1 - \frac{D \left[ E \right]}{ D \left[X \right]  } \text{.}
 \end{equation*} 
-Defineerime alumise tõkke $\lambda_4$ kui maksimumi kõikidest sellistest tõkketest, seega
+Defineerime alumise tõkke $\lambda_4$ kui maksimumi kõikidest sellistest tõketest, seega
 
 \begin{equation*}
 \lambda_4  = \underset{v \in V}{max} \left( 1 - \frac{v^{T} \Sigma_X v}{\sum \limits_{i=1}^k \sum \limits_{j=1}^k x_{ij}} \right).
 \end{equation*}
 
 
-\subsection{Alumine tõke $glb$}
+\subsection{Alumine tõke glb}
 
 
-Paneme tähele, et tänu $\Sigma_E$ struktuurile ( \ref{eq:sigma_E} ) on tema mittenegatiivselt määratus samaväärne sellega, et $0 \leq \theta_i$ iga $1 \leq i \leq k$ korral.
+Paneme tähele, et $\Sigma_E$ struktuuri  ( \ref{eq:sigma_E} ) tõttu on tema mitte-negatiivselt määratus samaväärne sellega, et $0 \leq \theta_i$ iga $1 \leq i \leq k$ korral.
 
-Tõepoolest, olgu $\Sigma_E$ mittenegatiivselt määratud ning oletame vastuväiteliselt, et leidub $i, 1 \leq i \leq k$ nii, et $0 > \theta_i $. Olgu $v$ $k$-vektor, nii et
+Tõepoolest, olgu $\Sigma_E$ mitte-negatiivselt määratud, ning oletame vastuväiteliselt, et leidub $i, 1 \leq i \leq k$ nii, et $0 > \theta_i $. Olgu $v$ $k$-vektor, nii et
 \begin{equation*}
 v_j = \begin{cases}
  1, j = i \\
@@ -1258,11 +1258,11 @@ v_j = \begin{cases}
 \end{cases} \text{.}
 \end{equation*}
 
-Siis $v^T \Sigma_E v = \theta_i < 0$, mis on aga vastuolu sellega, et $\Sigma_E$ on mittenegatiivselt määratud. Teistpidi, kehtigu $0 \leq \theta_i$ iga $1 \leq i \leq k$ korral. Olgu $v$ suvaline $k$-vektor. Siis $v^T \Sigma_E v = \sum \limits_{i=1}^k v_{i}^{2} \theta_i \geq 0$. Kuna $v$ oli suvaline, siis on $\Sigma_E$ vastavalt definitsioonile mittenegatiivselt määratud.
+Siis $v^T \Sigma_E v = \theta_i < 0$, mis on aga vastuolu sellega, et $\Sigma_E$ on mitte-negatiivselt määratud. Teistpidi, kehtigu $0 \leq \theta_i$ iga $1 \leq i \leq k$ korral. Olgu $v$ suvaline $k$-vektor. Siis $v^T \Sigma_E v = \sum \limits_{i=1}^k v_{i}^{2} \theta_i \geq 0$. Kuna $v$ oli suvaline, siis on $\Sigma_E$ vastavalt definitsioonile mitte-negatiivselt määratud.
 
  
 
-\"Uritame n\"u\"ud  leida vea suurimat võimaliku dispersiooni, mis on \eqref{eq:reliability} põhjal samaväärne summaga $\sum \limits_{i=1}^k \theta_i$, arvestades eelnevalt kirjeldatud piiranguid. Saame selle panna kirja järgneva optimiseerimis\"ulesandena:
+\"Uritame n\"u\"ud  leida vea suurimat võimalikku dispersiooni, mis on \eqref{eq:reliability} põhjal samaväärne summaga $\sum \limits_{i=1}^k \theta_i$. Arvestades eelnevalt kirjeldatud piiranguid, saame selle  kirja panna järgneva optimiseerimis\"ulesandena:
 \begin{equation}
 \begin{gathered}
 max \sum_i \theta_i \\
@@ -1272,25 +1272,25 @@ max \sum_i \theta_i \\
 \end{gathered} 
 \end{equation} 
 
-kus kirjapilt $\Sigma_T \succeq 0$ tähistab tingimust "$\Sigma_T$ on mittenegatiivselt määratud". 
+kus kirjapilt $\Sigma_T \succeq 0$ tähistab tingimust "$\Sigma_T$ on mitte-negatiivselt määratud". 
 
-Olgu $z$ eelneva optimiseerimis\"ulesande lahend $\Sigma_X$ korral. Tähistame tähekombinatsiooniga $glb$, mis tuleneb fraasist \textit{greatest lower bound}, lahendi $z$ abil saadud alumise tõkke reliaablusele, kus 
+Olgu $z$ eelneva optimiseerimis\"ulesande lahend $\Sigma_X$ korral. Tähistame tähe\-kombi\-natsiooniga $glb$, mis tuleb fraasist \textit{greatest lower bound}, lahendi $z$ abil saadud reliaabluse alumise tõkke, kus 
 
 \begin{equation*}
 glb = 1 - \frac{z}{\sum \limits_{i=1}^k \sum \limits_{j=1}^k x_{ij}} \text{.}
 \end{equation*}  
 
-Panemet tähele, et kuna $z$ on maksimaalne vea dispersioon fikseeritud $\Sigma_X$ korral, siis on alumine tõke $glb$ minimaalne võimalik reliaablus. Siit aga saame, et iga teine reliaabluse alumine tõke peab olema väiksem võrdne tõkega $glb$. Seega on $glb$ suurim võimalik alumine tõke. 
+Paneme tähele, et kuna $z$ on maksimaalne vea dispersioon fikseeritud $\Sigma_X$ korral, siis on alumine tõke $glb$ minimaalne võimalik reliaablus. Siit aga saame, et iga teine reliaabluse alumine tõke peab olema tõkkest $glb$ väiksem või sellega võrdne. Seega on $glb$ suurim võimalik alumine tõke. 
 
 \subsection{Hinnangute kasutatavus praktikas}
 
-Püstitasime töö alguses probleemi - kas võimalik leida reliaablusele parem hinnang kui seda on $\lambda_3$? Käsitletud hinnangutest on nii $glb$ kui $\lambda_2$ reliaabluse alumised tõkked ning samas vähemalt sama suured kui $\lambda_3$, seega ka paremad hinnangud reliaablusele kui seda on $\lambda_3$. Samuti on raske leida empiirilist näidet, kus  $\lambda_4$ ei ole tingimata suurem oleks väiksem kui $\lambda_3$.
+Püstitasime töö alguses küsimuse, kas on võimalik leida paremat reliaabluse hinnangut kui $\lambda_3$. Käsitletud hinnangutest on nii $glb$ kui $\lambda_2$ reliaabluse alumised tõkked ning samas vähemalt sama suured kui $\lambda_3$, seega on need ka paremad reliaabluse hinnangud kui $\lambda_3$. Samuti on raske leida empiirilist näidet, kus  $\lambda_4$ ei ole tingimata suurem oleks väiksem kui $\lambda_3$.
 
-Paneme tähele, et $\lambda_3$ leidmine on väga lihtne ning eelmise sajandi keskel, olukorras kus arvutuslik võimsus oli tagashoidlik, oli tegemist olulise eelisega. Tänapäeval on $\lambda_3$ lihtsus pea olematu eelis, arvestades, et ka väga suurte küsimustike puhul ei valmista paremate hinnangute leidmine optimiseeritud programmi korral probleeme. 
+Paneme tähele, et $\lambda_3$ leidmine on väga lihtne, ning eelmise sajandi keskel, mil arvutuslik võimsus oli tagashoidlik, oli tegemist olulise eelisega. Tänapäeval on $\lambda_3$ lihtsus peaaegu olematu eelis, arvestades, et ka väga suurte küsimustike puhul ei valmista paremate hinnangute leidmine optimiseeritud programmi korral probleeme. 
 
 Lisas \ref{appendix:empiric} ära toodud näidete põhjal võ
 
-Seega, kui küsimustiku analüüsia mõtestab küsimustiku klassikalise testiteooria raamistikus, siis ei näe autor mingit põhjust, miks peaks kasutama reliaabluse hindamiseks $\lambda_3$ ning soovitab eelistada teisi, kõrgemaid, hinnaguid. Autor märgib siinkohal, et tegemist tundub olevat valdkonna ekpertide seas levinud arvamusega.  \cite{Revelle2008} \cite{Sijtsma2009a} \cite{Cronbach2004}
+Seega, kui küsimustikku mõtestada klassikalise testiteooria raamistikus, siis ei näe autor põhjust, miks peaks kasutama reliaabluse hindamiseks $\lambda_3$ ning soovitab eelistada teisi, kõrgemaid hinnaguid. Autor märgib siinkohal, et tegemist tundub olevat valdkonna ekspertide seas levinud arvamusega.  \cite{Revelle2008} \cite{Sijtsma2009a} \cite{Cronbach2004}
 
 
 
@@ -1302,9 +1302,9 @@ Läheneme nüüd reliaabluse hinnangu parandamisele teisest suunast ning vaatlem
 
 \subsection{Vastuste tõlgendamine intervallskaalal}
 
-Käesoleva töö sissejuhatuses kirjeldasime viisi, kuidas vaikimisi paigutakse intervallskaalal erinevaid vastuseid Likerti skaalalt. Märgime, et selline tõlgendus ei ole põhjendatud - meil ei ole mingit teoreetilist põhjust eeldada, et kõik vastused on üksteisest sama "kaugel". 
+Käesoleva töö sissejuhatuses kirjeldasime viisi, kuidas vaikimisi teisendatakse vastused Likerti skaalalt  intervallskaalale. {\color{red}Märgime, et selline tõlgendus ei ole põhjendatud -- meil ei ole mingit teoreetilist põhjust eeldada, et kõik vastused on üksteisest sama "kaugel".}
 
-Sellest tähelepanekust lähtub järgmine küsimus - kas on võimalik leida parem vastuste paigutus intervallskaalal kui vaikimisi meetod?  Vaatleme kahte näidet:
+Sellest tähelepanekust lähtub järgmine küsimus -- kas on võimalik leida paremat vastuste paigutust intervallskaalal kui vaikimisi meetod? Vaatleme kahte näidet:
 
 
 \begin{figure}[H]
@@ -1344,7 +1344,7 @@ Sellest tähelepanekust lähtub järgmine küsimus - kas on võimalik leida pare
 		}
 		
 	}
-\caption{Näide, kuidas hinnangud skaalal  vaikimisi meetodit kasutades paigutuvad}
+\caption{Näide sellest, kuidas paigutuvad hinnangud skaalal vaikimisi meetodit kasutades}
 \label{quiz}
 
 \end{figure}
@@ -1392,20 +1392,20 @@ Sellest tähelepanekust lähtub järgmine küsimus - kas on võimalik leida pare
 \end{figure}
 
 
-Kui me tahame välja pakkuda alternatiive vaikimisi tõlgendusele, peab meil olema mingi karakteristik, mille alusel tõlgendust hinnata. Pakume välja järgmise idee : 
-\"uritame leida hinnangute paiknemist skaalal nii, et k\"usimustiku reliaablus oleks võimalikult suur. Seame endale loomuliku piirangu - vastuste esialgne järjestus ei tohi muutuda. 
+Vaikimisi tõlgendusele alternatiive välja pakkudes peab meil olema mingi karakteristik, mille alusel tõlgendust hinnata. Esitame järgmise idee: 
+\"uritame leida hinnangute paiknemist skaalal nii, et k\"usimustiku reliaablus oleks võimalikult suur. Seame endale loomuliku piirangu: vastuste esialgne järjestus ei tohi muutuda. 
 
 \subsection{Reliaabluse hindamine}
 
-Kuna küsimustiku reliaabluse leidmin ei ole praktiliselt võimalik, siis kasutame selle lähendusena eelmises peatükkis käsitletud alumisi tõkkeid. On selge, et parimi tulemuse annab võimalikult täpse alumise tõkku kasutamine. Kuid kuna sobiva tõlgenduse leidmine taandub optimiseerimisülesandeks, siis kasutame siinkohal ühte konservatiivsemat alumist tõket, $\lambda_3$ - selle arvutamise lihtsus, mis ei omanud fikseeritud tõlgenduse korral tänapäevase aruvutusvõimuse juures erilist tähtsust osutub siin oluliseks eeliseks.
+Kuna küsimustiku reliaabluse leidmine ei ole praktiliselt võimalik, siis kasutame selle lähendusena eelmises peatükis käsitletud alumisi tõkkeid. On selge, et parima tulemuse annab võimalikult täpse alumise tõkke kasutamine. Kuna sobiva tõlgenduse leidmine taandub optimiseerimisülesandele, siis kasutame siinkohal konservatiivsemat alumist tõket $\lambda_3$: selle arvutamise lihtsus, mis ei omanud fikseeritud tõlgenduse korral tänapäevase aruvutusvõimuse juures erilist tähtsust, osutub siin oluliseks eeliseks.
 
 \subsection{Lähenemise korrektsus}
 
 Lugejal võib siinkohal tekkida kaks küsimust lähenemise korrektuse kohta.
 
-Esiteks, kas selline lähenemine tagab meile kõrgema küsimustiku kõrgema reliaabluse? Vastus sellele küsimusele on kahjuks eitav - tõepoolest, on võimalik, et me saame teistsuguse tõlgendusega küsimustiku, mille reliaabluse alumine tõke on suurem kui vaikimisi tõlgendusega küsimustiku puhul kuid mille reliaablus on samal ajal madalam. Kuna aga meil ei ole võimalik reliaablust täpselt mõõta, ei ole meil ka otsest põhjust uskuda, et ühe tõlgendusega saadud reliaablus on parem kui teisega.
+Esiteks, kas selline lähenemine tagab meile küsimustiku kõrgema reliaabluse? Vastus sellele küsimusele on kahjuks eitav -- tõepoolest, on võimalik, et me saame teistsuguse tõlgendusega küsimustiku, mille reliaabluse alumine tõke on suurem kui vaikimisi tõlgendusega küsimustiku puhul, kuid mille reliaablus on samal ajal madalam. Kuna meil aga ei ole võimalik reliaablust täpselt mõõta, siis ei ole meil ka otsest põhjust uskuda, et ühe tõlgendusega saadud reliaablus on parem kui teisega.
 
-Küll aga kerkib siinkohal esile praktilisem probleem seoses $\lambda_3$ kasutamisega reliaabluse hindamisel. Nimelt võib leida aset olukord, kus meie poolt pakutava tõlgenduse korral on $\lambda_3$ kõrgem, kui vaikimisi tõlgenduse puhul kuid mõni tihedam alumine tõke on madalam. Illustreerime seda olukorda näitega.
+Küll aga kerkib siinkohal esile praktilisem probleem seoses $\lambda_3$ kasutamisega reliaabluse hindamiseks. Nimelt võib leida aset olukord, kus meie pakutava tõlgenduse korral on $\lambda_3$ kõrgem kui vaikimisi tõlgenduse korral, kuid mõni tihedam alumine tõke on madalam. Illustreerime seda olukorda näitega.
  
 \begin{figure}[H]
 \begin{naide}
@@ -1428,21 +1428,21 @@ Küll aga kerkib siinkohal esile praktilisem probleem seoses $\lambda_3$ kasutam
 \draw (22em,-4em) -- (33em,-4em);
 \end{tikzpicture}
 \end{naide}
-\caption{Olukord, kus alternatiivne tõlgendus suurendab alumist tõket $\lambda_3$ ja vähendab alumist tõket $glb$}
+\caption{Olukord, kus alternatiivne tõlgendus suurendab alumist tõket $\lambda_3$ ja vähendab alumist tõket $glb$.}
 \end{figure}
 
-Joonisel kujutatud olukord on kindlasti ebasoovitav. Lihtsam võimalik lahendus on uue tõlgenduse korral leida teised alumised tõkked ning juhul, kui parim alumine tõke vaikimisi tõlgendusele on kõrgem kui leitud tõlgendusele, siis jääda vaikimisi tõlgenduse juurde. Keerukam lahendus oleks kasutada mõnda optimiseerimisel mõnda paremat alumist tõket - selle lähenemise puuduseks on aga kaasnev vajadus lahendada keerukam optimiseerimisülesanne.
+Joonisel kujutatud olukord on kindlasti ebasoovitav. Lihtsam võimalik lahendus on uue tõlgenduse korral leida teised alumised tõkked ning juhul, kui kõige tihedam alumine tõke on vaikimisi tõlgenduse korral suurem kui leitud tõlgenduse korral, siis jääda vaikimisi tõlgenduse juurde. Keerukam lahendus oleks kasutada optimiseerimisel mõnda tihedamat alumist tõket -- selle lähenemise puuduseks on aga vajadus lahendada keerukam optimiseerimisülesanne.
 
-Teiseks, kuidas mõjutab vastuste tavapärasest erinev tõlgendus testi valiidsust? Sellele küsimusele märgime ära, et kuigi vaikimisi definitsioon on laialdaselt leivund, on ta siiski täiesti arbitraarne ning seega samaväärne meie poolt pakutud tõlgendusega - meil ei ole mingit kindlati põhjust uskuda, et ühe tõlgenduse korral on valiidsus parem kui teise korral. Ühelt poolt on selline vastus mitterahuldav - meie poolt pakutud lahendus ei pruugi olla parem kui olemasolev. Teiselt poolt - vaikimisi kasutatav tõlgendus ei pruugi olla parem kui meie poolt pakutav. 
+Teiseks, kuidas mõjutab vastuste tavapärasest erinev tõlgendus küsimustiku valiidsust? Selle küsimuse korral märgime ära, et kuigi vaikimisi definitsioon on laialdaselt levinud, on ta siiski täiesti arbitraarne ning seega samaväärne meie poolt pakutud tõlgendusega -- meil ei ole mingit kindlat põhjust uskuda, et ühe tõlgenduse korral on valiidsus parem kui teise korral. Ühelt poolt on selline vastus mitterahuldav -- meie pakutud lahendus ei pruugi olla parem kui olemasolev. Teisalt ei pruugi vaikimisi kasutatav tõlgendus olla parem kui meie poolt pakutav. 
 
-Meie poolt paktuava tõlgenduse väikese eelisena võib siiski ära tuua järgneva. 
-Kuna enamike valiidsuse definitsioonide korral on valiidsus ülevalt tõkesatud mingi funktsiooniga reliaablusest (kõige levinuma definitsiooni korral on tõkkeks reliaabluse positiivne ruutjuur), siis reliaabluse alumise tõkke abil saame me midagi öelda valiidsuse kõige väiksema võimaliku ülemise tõkke kohta. Paneme tähele, et kuna me teame ainult reliaabluse alumist tõket ja mitte reliaablust ennast, ei ole meil mingit põhjust väita, et vähim võimalik ülemine tõke ka on küsimustiku valiidsuse ülemiseks tõkkeks.
+Meie pakutava tõlgenduse väikese eelisena võib siiski ära tuua järgneva. 
+Kuna enamiku valiidsuse definitsioonide korral on valiidsus ülevalt tõkestatud mingi reliaablusest sõltuva funktsiooniga (kõige levinuma definitsiooni korral on tõkkeks reliaabluse positiivne ruutjuur), siis reliaabluse alumise tõkke abil saame midagi öelda valiidsuse kõige väiksema võimaliku ülemise tõkke kohta. Paneme tähele, et kuna teame ainult reliaabluse alumist tõket ja mitte reliaablust ennast, siis ei ole meil mingit põhjust väita, et vähim võimalik ülemine tõke on ka küsimustiku valiidsuse ülemiseks tõkkeks.
  
 
 \subsection{Alternatiivse tõlgenduse matemaatiline sõnastus}
 
 
-Olgu meil populatsioon $I$ ning $k$ küsimusega küsimustik, kus iga küsimuse kohta palutakse hinnangut $l$-palli Likerti skaalal. Nummerdama küsimused naturaalarvudega $1$ kuna $k$ Olgu meil juhuslikud suurused $K_1,K_2,...,K_k$, mille määramispiirkonnaks on kõik erinevad võimalikud vastuste kombinatsioonid küsimustikule ning muutumispiirkonnaks on hulk $\lbrace 1,2,\ldots,l \rbrace$ ning tõlgendame juhusliku suurust kui küsimusele $k$ antud vastuse tõlgendust vaikimisi kasutataval intervallskaalal.  Toome sisse ka tähistused $p_{i \alpha}, i \in \{1,2,...,n\}, \alpha \in \lbrace 1,2,\ldots,l \rbrace $, kus $p_{i \alpha}$ tähistab põhjal tõenäosusust, et juhusliku suuruse $K_i$ väärtus on $\alpha$. 
+Olgu meil  $I$ populatsiooni ning $k$ küsimusega küsimustik, kus iga küsimuse kohta palutakse hinnangut $l$-pallisel Likerti skaalal. Nummerdame küsimused naturaalarvudega $1$ kuni $k$. Olgu meil juhuslikud suurused $K_1,K_2,...,K_k$, mille määramis\-piir\-konnaks on kõik erinevad võimalikud vastuste kombinatsioonid küsimustikule ning muutumispiirkonnaks on hulk $\lbrace 1,2,\ldots,l \rbrace$ ning tõlgendame juhuslikku suurust kui küsimusele $k$ antud vastuse tõlgendust vaikimisi kasutataval intervallskaalal.  Toome sisse ka tähistused $p_{i \alpha}, i \in \{1,2,...,n\}, \alpha \in \lbrace 1,2,\ldots,l \rbrace $, kus $p_{i \alpha}$ tähistab tõenäosusust, et juhusliku suuruse $K_i$ väärtus on $\alpha$. 
 
 Tuletame meelde $\lambda_3$ definitsiooni üle vektori $\left( K_1, K_2, \ldots,K_k \right)$ kovariatsioonimaatriksi $\Sigma_K$: 
 
@@ -1450,7 +1450,7 @@ Tuletame meelde $\lambda_3$ definitsiooni üle vektori $\left( K_1, K_2, \ldots,
 \lambda_3 = (\frac{k}{k-1})( 1 - \frac{\sum \limits_{i=1}^k {\Sigma_K}_{ii} }{ \sum \limits_{i=1}^k \sum \limits_{j=1}^k {\Sigma_K}_{ij}})
 \end{equation*}
 
-Paneme tähele, et võttes arvesse  seda, et ${\Sigma_K}_{ij} = cov(K_i,K_j)$ ja  definitsiooni järgi $cov(X,X) = \epsilon \left[ (X - \epsilon \left[X \right]) (X - \epsilon \left[X \right]) \right]$, saame, et 
+Võttes arvesse, et ${\Sigma_K}_{ij} = cov(K_i,K_j)$, ning definitsiooni järgi $cov(X,X) = \epsilon \left[ (X - \epsilon \left[X \right]) (X - \epsilon \left[X \right]) \right]$, saame, et 
 
  
 \begin{equation*}
@@ -1458,7 +1458,7 @@ Paneme tähele, et võttes arvesse  seda, et ${\Sigma_K}_{ij} = cov(K_i,K_j)$ ja
 {\sum \limits_{1=0}^k D(K_i)}{\sum \limits_{i=1}^k \sum \limits_{j=1}^k cov(K_i,K_j)}\right)
 \end{equation*}
 
-Soovime leida sellise viisi vastute tõlgendamiseks, et $\lambda_3$ oleks maksimaalne. Kujutame juhuslikud suurused $K_1,K_2,\ldots,K_n$ juhuslikeks suurusteks $M_1, M_2,M_2,\ldots,M_n$, kusjuures juhusliku suuruse $M_i$ määramispiirkond ühtib suuruse $K_i$ määramispiirkonnaga ning $M_i$ saab väärtusi hulgast $M_i = \lbrace \mu_{1i},\mu_{2i},\ldots,\mu_{li} \rbrace ~ i \in {1,2,...n}$. Lisaks kehtigu järgnevad kitsendused: 
+Soovime leida sellise viisi vastuste tõlgendamiseks, et $\lambda_3$ oleks maksimaalne. Kujutame juhuslikud suurused $K_1,K_2,\ldots,K_n$ juhuslikeks suurusteks $M_1, M_2,M_2,\ldots,M_n$, kusjuures juhusliku suuruse $M_i$ määramispiirkond ühtib suuruse $K_i$ määramispiirkonnaga ning $M_i$ saab väärtusi hulgast $M_i = \lbrace \mu_{1i},\mu_{2i},\ldots,\mu_{li} \rbrace ~ i \in {1,2,...n}$. Lisaks kehtigu järgnevad kitsendused: 
 
 \begin{equation*}
 \mu_{i1} < \mu_{i2}  < \ldots  < \mu_{il} \text{,}
@@ -1469,7 +1469,7 @@ Soovime leida sellise viisi vastute tõlgendamiseks, et $\lambda_3$ oleks maksim
 K_i(\omega) = j \implies M_i(\omega) = \mu_{ij} , \forall j ,  1 \leq j \leq l \text{.}
 \end{equation*}
 
-Siinkohal märgime, et hinnangute tõlgenduste juures ei huvita meid mitte absoluutne, vaid suhteline paigutus. Seda arvesse võttes lisame järgnevad normaliseerivad kitsendused:
+Siinkohal märgime, et hinnangute tõlgenduste juures ei huvita meid absoluutne, vaid suhteline paigutus. Seda arvesse võttes lisame järgnevad normaliseerivad kitsendused:
 
 
 \begin{equation}
@@ -1482,7 +1482,7 @@ D(L_i) = \sum \limits_{j=1}^l p_{ij} (\mu_{ij} - E(L_i))^2 = \sum \limits_{j=1}^
 \end{equation}
 
 
-Paneme tähele, et selliste piirangute korral  esitub $\lambda_3$ lihtsamal kujul. Tõepoolest , 
+Paneme tähele, et selliste piirangute korral esitub $\lambda_3$ lihtsamal kujul. Tõepoolest, 
 
 \begin{equation*}
 \lambda_3 = \frac{k}{k-1}\left(1 - \frac
@@ -1575,12 +1575,12 @@ Siit näeme, et sellisel juhul taandub $\lambda_3$ maksimeerimine avaldise $\sum
 		}
 		
 	}
-\caption{Üks võimalik näide sellest, kuidas suhestudad hulgad $ran(K_i)$ ja $ran(M_i)$  }
+\caption{Näide hulkade $ran(K_i)$ ja $ran(M_i)$ suhestumisest}
 \label{projection}
 \end{figure}
 
 
-Olgu meil tõenäosuste maatriks $P$, kusjuures
+Olgu meil tõenäosuste maatriks
 \begin{tightcenter}
 \begin{equation*}
 P =
@@ -1589,7 +1589,7 @@ p_{(11)(11)}&p_{(11)(12)}&\cdots &p_{(11)(1l)}&p_{(11)(21)}& p_{(11)(22)} & \cdo
 p_{(12)(11)}&p_{(12)(12)}& \cdots &p_{(12)(1l)} & p_{(12)(21)} & p_{(12)(22)} & \cdots& p_{(12)(kl)} \\
 \vdots&\vdots&\vdots&\vdots&\vdots&\vdots&\ddots&\vdots \\
 p_{(kl)(11)}&p_{(kl)(12)}&\cdots&p_{(kl)(1l)}&p_{(kl)(21)}& p_{(kl)(22)} &\cdots&p_{(kl)(kl)} \\
-\end{pmatrix} 
+\end{pmatrix}\text{,} 
 \end{equation*}
 \end{tightcenter}
 
@@ -1746,18 +1746,18 @@ I_k & Q_i^T x \\
 
 \section{Programmiteek}
 
-Põhjendan siin ka lühidalt Pythoni eeliseid teegi realiseerimisel, alternatiividega (näiteks Java või MATLAB) võrreldes:
+Järgnevalt põhjendan lühidalt Pythoni eeliseid teegi realiseerimisel võrreldes selliste alternatiividega nagu Java või MATLAB:
 \begin{enumerate}
-\item Python on hetkel keel, millega programeerimisalased õppingud tavaliselt algavad. Näiteks Tartu Ülikoolis õpetatakse programeerimist keeles Python nii matemaatika-informaatika teaduskonnale suunatud aines kui ka teistele huvilistele suunatud aines "Programeerimise alused", mida 2013/2014 aasta kevadel kuulas 150 inimest. Autor loodab, et nende seas on ka mõned psühholoogia tudengid.
-\item Pythonil on läbi NumPy ja SciPy teekide väga hea arvutuslik tugi soovitud hinnangute implementeerimiseks.
-\item Pythoni teek on väga lihte integreerida mõne veebiraamistikuga, mis võiks olla loodava teegi üks rakenduskohti.
-\item Python on vabavara ning kõigile tasuta kasutatav.
+\item Python on keel, millega programeerimisalased õpingud tavaliselt algavad. Näiteks Tartu Ülikoolis õpetatakse programeerimist keeles Python nii matemaatika-informaatika teaduskonna tudengitele suunatud aines kui ka teistele huvilistele suunatud aines "Programeerimise alused", mida 2013/2014 aasta kevadel kuulas 150 inimest. Autor loodab, et nende seas on ka mõned psühholoogia tudengid.
+\item Pythonil on NumPy ja SciPy teekide näol väga hea arvutuslik tugi soovitud hinnangute implementeerimiseks.
+\item Pythoni teeki on väga lihte integreerida mõne veebiraamistikuga, mis võiks olla loodava teegi üks rakenduskohti.
+\item Python on vabavaraline ning tasuta kasutatav.
 \end{enumerate}
 
-Meetoditest, mis leiavad $\lambda_1$, $\lambda_2$, $\lambda_3$ ja $\lambda_4$ on implementeeritud nii programeerimiskeeles Python 2 kui ka programeerimiskeeles Python 3. Klass, mille abil saab leida $glb$, on implementeeritud sõltuvate teekide piirangute tõttu ainult programeerimiskeeles Python 2.  Kasutatud on teeke SciPy \cite{JonesE.;OliphantT;Peterson} ja CVXPY \cite{DiamondS;ChuE;Boyd2014}.
-Progarmmiteek on kättesaadav aadressil : {\color{red} SIIA AADRESS}
+Meetodid, mis leiavad $\lambda_1$, $\lambda_2$, $\lambda_3$ ja $\lambda_4$, on implementeeritud nii programeerimiskeeles Python 2 kui ka programeerimiskeeles Python 3. Klass, mille abil saab leida $glb$, on implementeeritud sõltuvate teekide piirangute tõttu ainult programeerimiskeeles Python 2.  Programmiteegi loomisel on kasutatud teeke SciPy \cite{JonesE.;OliphantT;Peterson} ja CVXPY \cite{DiamondS;ChuE;Boyd2014}.
+Progarammiteek on kättesaadav aadressil {\color{red} SIIA AADRESS}
 
-Järgnevalt on ära toodud hinnagutu implementatsioonid programmeerimiskeeres Python 2.
+Järgnevalt esitame hinnangute implementatsioonid programmeerimiskeeles Python 2.
 
 
 
@@ -2008,7 +2008,7 @@ def calculate_sum_of_covariance_matrix_elements(cov_matrix,n = None):
     return summ
 
 \end{minted}
-\captionof{Programm}{Eelnevates programmides kasutatutd abifunktsioonid}
+\captionof{Programm}{Eelnevates programmides kasutatud abifunktsioonid}
 \end{customFloatWrap}
 
 
@@ -2040,7 +2040,7 @@ def calculate_sum_of_covariance_matrix_elements(cov_matrix,n = None):
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.5\textwidth, height = 0.7\textwidth]{Example_Likert_Scale.png}
-\caption{Näide k\"usimustikust, kus on rakendatud Likerti skaalat; k\"usimused on paigutatud nende järjestikulisuse rõhutamiseks teljele\cite{Smith}}
+\caption{Näide k\"usimustikust, kus on rakendatud Likerti skaalat; k\"usimused on paigutatud nende järjestikkuse rõhutamiseks teljele\cite{Smith}}
 \label{likert2}
 \end{figure}
 
@@ -2166,7 +2166,7 @@ def calculate_sum_of_covariance_matrix_elements(cov_matrix,n = None):
 \subsection{Litsents}
 
 \textbf{Lihtlitsents lõputöö reprodutseerimiseks ja
-lõputöö üldsusele kätte\-saadavaks tegemiseks.}
+lõputöö üldsusele kätte\-saa\-davaks tegemiseks.}
 
 
 Mina, \@author\ (sünnikuupäev: 11.11.1988)
@@ -2189,7 +2189,7 @@ DSpace'i kaudu kuni autoriõiguse kehti\-vuse tähtaja lõppemiseni.
 \item olen teadlik, et punktis 1 nimetatud õigused jäävad
 alles ka autorile.
 \item kinnitan, et lihtlitsentsi andmisega ei rikuta teiste
-isikute intellektuaal\-o\-mandi ega isikuandmete kaitse
+isikute intellektuaal\-omandi ega isikuandmete kaitse
 seadusest tulenevaid õigusi.
 \end{enumerate}
 

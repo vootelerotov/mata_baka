@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.4.27)  31 MAY 2014 18:11
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.4.27)  1 JUN 2014 15:31
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1961,8 +1961,14 @@ Package mdframed Info: You first box width is to small
 (mdframed)              on input line 708.
 [13]
 Overfull \hbox (6.76552pt too wide) in paragraph at lines 725--726
-\OT1/cmr/m/n/12 siis tea-des esi-m-ese m[]o[]otmisviga ei to-hiks see mei-le mi
+\OT1/cmr/m/n/12 siis esi-m-ese m[]o[]otmisviga tea-des ei to-hiks see mei-le mi
 -da-gi []oelda tei-se osa m[]o[]otmisvea
+ []
+
+
+Overfull \hbox (4.8072pt too wide) in paragraph at lines 725--726
+\OT1/cmr/m/n/12 ni ta-ga-tav ning on po-tent-siaal-ne ohu-koht tes-ti-teoo-ria 
+ka-su-ta-misel min-gi k[]usimustiku
  []
 
 
@@ -2829,10 +2835,17 @@ Package mdframed Warning: correct box splittet fails
 Package mdframed Info: You first box width is to small
  mdframed fixed it
 (mdframed)              on input line 792.
-[15] [16] [17]
-Overfull \hbox (4.15706pt too wide) in paragraph at lines 883--884
-[]\OT1/cmr/m/n/12 Tuletame meel-de, et eel-mises peat[]ukkis veen-dus-i-me ([]3
-.10[]), et tes-ti re-liaab-lus v[]ordub
+[15] [16]
+Overfull \hbox (3.3377pt too wide) in paragraph at lines 825--827
+[]\OT1/cmr/m/n/12 Eelneva p[]ohjal on sel-ge, et v[]aide []``[]k[]usimustiku re
+-liaab-lus on suu-rem'' on sa-mav[]a[]arne
+ []
+
+[17]
+Overfull \hbox (27.76454pt too wide) in paragraph at lines 885--886
+\OT1/cmr/m/n/12 sioo-ni-maat-rik-si ele-men-ti-de sum-ma-ga, ehk kui $\OML/cmm/
+m/it/12 X \OT1/cmr/m/n/12 = []$ ja $^^F[]$ on vek-to-ri $(\OML/cmm/m/it/12 X[];
+ X[]; [] ; X[]\OT1/cmr/m/n/12 )$
  []
 
 [18]
@@ -2863,17 +2876,24 @@ Overfull \hbox (1.88602pt too wide) in paragraph at lines 946--946
 
 [19]
 Package mdframed Info: Not enough space on this page on input line 946.
- [20] [21]
-Overfull \hbox (10.6592pt too wide) in paragraph at lines 977--978
+
+Overfull \hbox (4.1967pt too wide) in paragraph at lines 948--949
+\OT1/cmr/m/n/12 sel-le vek-to-ri kova-riat-sioo-ni-maat-riks. Ol-gu meil su-va-
+li-ne $\OML/cmm/m/it/12 k$\OT1/cmr/m/n/12 -vektor $\OML/cmm/m/it/12 v \OT1/cmr/
+m/n/12 = (\OML/cmm/m/it/12 v[]; v[]; [] ; v[]\OT1/cmr/m/n/12 )$.
+ []
+
+[20] [21]
+Overfull \hbox (15.55498pt too wide) in paragraph at lines 977--978
 []\OT1/cmr/m/n/12 Olgu meil vas-ta-ja-te ko-gum $\OML/cmm/m/it/12 I$\OT1/cmr/m/
-n/12 , []ule mil-le me vaat-le-me $\OML/cmm/m/it/12 k$ \OT1/cmr/m/n/12 k[]usimu
-sest koos-nev k[]usimustik,
+n/12 , []ule mil-le vaat-le-me $\OML/cmm/m/it/12 k$ \OT1/cmr/m/n/12 k[]usimuses
+t koos-ne-vat k[]usimustikku,
  []
 
 
-Overfull \hbox (36.77626pt too wide) in paragraph at lines 977--978
+Overfull \hbox (32.20686pt too wide) in paragraph at lines 977--978
 \OT1/cmr/m/n/12 mer-da-me k[]usimused ar-vu-de-ga $1$ kuni $\OML/cmm/m/it/12 k$
-\OT1/cmr/m/n/12 . Vaat-le-me igat k[]usimust eral-di alamk[]usimustikuna,
+\OT1/cmr/m/n/12 . Vaat-le-me iga k[]usimust eral-di alamk[]usimustikuna,
  []
 
 
@@ -2893,9 +2913,9 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 979.
 
 
-Overfull \hbox (14.66536pt too wide) in paragraph at lines 997--998
+Overfull \hbox (8.46404pt too wide) in paragraph at lines 997--998
 \OT1/cmr/m/n/12 Seega ei ole maat-riks enam po-si-tiiv-selt m[]a[]aratud, mis o
-n eel-mises peat[]ukkis l[]abiviidud
+n eel-mises peat[]ukis l[]abiviidud
  []
 
 [22]
@@ -2916,9 +2936,9 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 1007.
 
 
-Overfull \hbox (9.77267pt too wide) in paragraph at lines 1009--1010
-\OT1/cmr/m/n/12 Enne j[]argmise alu-mise t[]oke tu-le-ta-mist, veen-du-me et ke
-h-tivad kaks abi-tu-le-must. 
+Overfull \hbox (15.974pt too wide) in paragraph at lines 1009--1010
+\OT1/cmr/m/n/12 Enne j[]argmise alu-mise t[]okke tu-le-ta-mist veen-du-me, et k
+eh-tivad kaks abi-tu-le-must. 
  []
 
 [23] [24]
@@ -2927,12 +2947,6 @@ Overfull \hbox (45.77086pt too wide) in paragraph at lines 1135--1135
  []
 
 [25]
-Overfull \hbox (3.91728pt too wide) in paragraph at lines 1144--1145
-[]\OT1/cmr/m/n/12 Selle taus-tal saa-me de-fi-nee-ri-da alu-mise t[]okke re-lia
-ab-lu-se-le, mi-da t[]ahistame $\OML/cmm/m/it/12 ^^U[]$\OT1/cmr/m/n/12 : 
- []
-
-
 Overfull \hbox (19.2433pt too wide) detected at line 1149
 \OML/cmm/m/it/10.95 ^^U[] \OT1/cmr/m/n/10.95 = 1 \OMS/cmsy/m/n/10.95 ^^@ [] ^^T
  \OT1/cmr/m/n/10.95 1 \OMS/cmsy/m/n/10.95 ^^@ [] \OT1/cmr/m/n/10.95 = 1 \OMS/cm
@@ -2972,23 +2986,25 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 1225.
 
-[28]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1248.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1248.
-
-[29]
-Overfull \hbox (37.78197pt too wide) in paragraph at lines 1277--1278
-[]\OT1/cmr/m/n/12 Olgu $\OML/cmm/m/it/12 z$ \OT1/cmr/m/n/12 eel-ne-va op-ti-mi-
-see-ri-mis[]ulesande la-hend $^^F[]$ kor-ral. T[]ahistame t[]ahekombinatsioonig
-a
+[28] [29]
+Overfull \hbox (0.6163pt too wide) in paragraph at lines 1275--1276
+[]\OT1/cmr/m/n/12 kus kir-ja-pilt $^^F[] \OMS/cmsy/m/n/12 ^^W \OT1/cmr/m/n/12 0
+$ t[]ahistab tin-gi-must "$^^F[]$ on mitte-negatiivselt m[]a[]aratud". 
  []
 
 [30]
+Overfull \hbox (18.93608pt too wide) in paragraph at lines 1305--1306
+\OT1/cmr/m/n/12 tused Li-ker-ti skaa-lalt in-ter-vall-skaa-la-le. []M[]argime, 
+et sel-li-ne t[]olgendus ei ole p[]ohjendatud
+ []
+
+
+Overfull \hbox (13.19763pt too wide) in paragraph at lines 1307--1308
+\OT1/cmr/m/n/12 vas-tus-te pai-gu-tust in-ter-vall-skaa-lal kui vai-ki-mi-si me
+e-tod? Vaat-le-me kah-te n[]aidet: 
+ []
+
+
 Overfull \hbox (2.8449pt too wide) in paragraph at lines 1346--1346
 [][] 
  []
@@ -3018,35 +3034,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 1430--1431
 
  []
 
-[32]
-Overfull \hbox (20.76086pt too wide) in paragraph at lines 1445--1446
-\OT1/cmr/m/n/12 de-ga $1$ ku-na $\OML/cmm/m/it/12 k$ \OT1/cmr/m/n/12 Ol-gu meil
- ju-hus-li-kud suu-ru-sed $\OML/cmm/m/it/12 K[]; K[]; :::; K[]$\OT1/cmr/m/n/12 
-, mil-le m[]a[]aramispiirkonnaks
+[32] [33]
+Overfull \hbox (93.88481pt too wide) in paragraph at lines 1453--1454
+[]\OT1/cmr/m/n/12 V[]ottes ar-ves-se, et $[][] = \OML/cmm/m/it/12 cov\OT1/cmr/m
+/n/12 (\OML/cmm/m/it/12 K[]; K[]\OT1/cmr/m/n/12 )$, ning de-fi-nit-sioo-ni j[]a
+rgi $\OML/cmm/m/it/12 cov\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 X; X\OT1/cmr/m/n/12 
+) = \OML/cmm/m/it/12 ^^O []$\OT1/cmr/m/n/12 ,
  []
 
 
-Overfull \hbox (12.4003pt too wide) in paragraph at lines 1445--1446
-\OT1/cmr/m/n/12 mis-piir-kon-naks on hulk $\OMS/cmsy/m/n/12 f\OT1/cmr/m/n/12 1\
-OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2\OML/cmm/m/it/12 ; [] ; l\OMS/cmsy/m/n/12 g$
- \OT1/cmr/m/n/12 ning t[]olgendame ju-hus-li-ku suu-rust kui k[]usimusele
- []
-
-
-Overfull \hbox (8.99628pt too wide) in paragraph at lines 1445--1446
-\OT1/cmr/m/n/12 t[]ahistused $\OML/cmm/m/it/12 p[]; i \OMS/cmsy/m/n/12 2 f\OT1/
-cmr/m/n/12 1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2\OML/cmm/m/it/12 ; :::; n\OMS/c
-msy/m/n/12 g\OML/cmm/m/it/12 ;  \OMS/cmsy/m/n/12 2 f\OT1/cmr/m/n/12 1\OML/cmm/
-m/it/12 ; \OT1/cmr/m/n/12 2\OML/cmm/m/it/12 ; [] ; l\OMS/cmsy/m/n/12 g$\OT1/cmr
-/m/n/12 , kus $\OML/cmm/m/it/12 p[]$ \OT1/cmr/m/n/12 t[]ahistab p[]ohjal t[]oen
-[]aosusust,
- []
-
-[33]
-Overfull \hbox (3.07365pt too wide) in paragraph at lines 1461--1462
-\OT1/cmr/m/n/12 me ju-hus-li-kud suu-ru-sed $\OML/cmm/m/it/12 K[]; K[]; [] ; K[
-]$ \OT1/cmr/m/n/12 ju-hus-likeks suu-rus-teks $\OML/cmm/m/it/12 M[]; M[]; M[]; 
-[] ; M[]$\OT1/cmr/m/n/12 ,
+Overfull \hbox (13.51799pt too wide) in paragraph at lines 1461--1462
+\OT1/cmr/m/n/12 ta-me ju-hus-li-kud suu-ru-sed $\OML/cmm/m/it/12 K[]; K[]; [] ;
+ K[]$ \OT1/cmr/m/n/12 ju-hus-likeks suu-rus-teks $\OML/cmm/m/it/12 M[]; M[]; M[
+]; [] ; M[]$\OT1/cmr/m/n/12 ,
  []
 
 
@@ -3057,6 +3057,12 @@ mr/m/n/12 m[]a[]aramispiirkonnaga
  []
 
 [34]
+Overfull \hbox (16.15598pt too wide) in paragraph at lines 1485--1486
+[]\OT1/cmr/m/n/12 Paneme t[]ahele, et sel-lis-te piiran-gu-te kor-ral esi-tub $
+\OML/cmm/m/it/12 ^^U[]$ \OT1/cmr/m/n/12 liht-sa-mal ku-jul. T[]oepoolest, 
+ []
+
+
 Overfull \hbox (9.4855pt too wide) in paragraph at lines 1494--1495
 []\OT1/cmr/m/n/12 Siit n[]aeme, et sel-li-sel ju-hul taan-dub $\OML/cmm/m/it/12
  ^^U[]$ \OT1/cmr/m/n/12 mak-si-mee-ri-mi-ne aval-di-se $[] [] \OML/cmm/m/it/12 
@@ -3098,12 +3104,16 @@ le ala-ti []uheselt m[]a[]aratud.[]
 LaTeX Warning: Citation `Laurent2012' on page 38 undefined on input line 1720.
 
 [38]
+Overfull \hbox (32.96387pt too wide) in paragraph at lines 1751--1752
+\OT1/cmr/m/n/12 N[]aiteks Tar-tu []Ulikoolis []opetatakse prog-ra-mee-ri-mist k
+ee-les Pyt-hon nii matemaatika-
+ []
+
 \openout4 = `Bakatoo_Vootele_Rotov.pyg'.
 
 runsystem(pygmentize -l python -f latex -F tokenmerge            -P linenos -P 
 "verboptions= ,tabsize=2,fontsize=\footnotesize ,numberblanklines=false" -o Bak
 atoo_Vootele_Rotov.out.pyg Bakatoo_Vootele_Rotov.pyg)...executed.
-
 
 
 Package mdframed Warning: Unknown definedstyle default
@@ -3295,9 +3305,9 @@ Overfull \hbox (23.4099pt too wide) in paragraph at lines 2126--2144
  []
 
 [47 <./Example_Likert_Scale.png>] [48] [49]
-Overfull \hbox (23.85196pt too wide) in paragraph at lines 2169--2170
-\OT1/cmr/bx/n/12 Lihtlitsents l[]oput[]o[]o rep-ro-dut-see-ri-miseks ja l[]oput
-[]o[]o []uldsusele k[]atte-saadavaks
+Overfull \hbox (0.17384pt too wide) in paragraph at lines 2191--2194
+[]\OT1/cmr/m/n/12 kinnitan, et liht-lit-sent-si and-mi-se-ga ei ri-ku-ta teis-t
+e isi-ku-te intellektuaal-omandi
  []
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2205.
@@ -3308,7 +3318,7 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 2205.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2205.
 
 Package rerunfilecheck Info: File `Bakatoo_Vootele_Rotov.out' has not changed.
-(rerunfilecheck)             Checksum: 1C1755A193FE893E23AC889FA294167F;2404.
+(rerunfilecheck)             Checksum: EFEF9CE1E4C393EA3B27C0035069D01F;2402.
 
 
 LaTeX Warning: There were undefined references.
@@ -3320,7 +3330,7 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  25715 strings out of 494428
  456992 string characters out of 6165567
- 575673 words of memory out of 5000000
+ 575650 words of memory out of 5000000
  28237 multiletter control sequences out of 15000+600000
  20170 words of font info for 75 fonts, out of 8000000 for 9000
  372 hyphenation exceptions out of 8191
@@ -3346,7 +3356,7 @@ t/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/font
 s/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type
 1/public/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1
 /urw/zapfding/uzdr.pfb>
-Output written on Bakatoo_Vootele_Rotov.pdf (51 pages, 539269 bytes).
+Output written on Bakatoo_Vootele_Rotov.pdf (51 pages, 539077 bytes).
 PDF statistics:
  771 PDF objects out of 1000 (max. 8388607)
  176 named destinations out of 1000 (max. 500000)
