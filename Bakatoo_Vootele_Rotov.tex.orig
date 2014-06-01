@@ -321,6 +321,7 @@ Küsimustiku \textbf{valiidsus} on küsimustiku karakteristik, mis iseloomustab 
 
 Näitena olgu meil küsimustikuks kaal, mille näitu vaatleme kui küsimustiku tulemust kaalutava isiku puhul. Kaal, mis näitab 75 kilo kaaluva inimese kaaluks 74,5 kilo, omab kõrgemat valiidsust, kui kaal, mis sama inimese puhul näitab kaaluks 65 kilo.   
 
+<<<<<<< HEAD
 Küsimustiku valiidsuse mõtestamisel võime kasutada analoogiat täpsuslaskmisega - kui vaatleme küsimustikke kui laskureid, siis tähendaks see, et laskuri $A$ valiidus on kõrgem kui lasukuril $B$, seda, et tema tabamused asuksid märklaua keskkohale lähemal. Olukorda illustreerib järgnev joonis:
 
 \begin{figure}[H]
@@ -370,7 +371,10 @@ Küsimustiku valiidsuse mõtestamisel võime kasutada analoogiat täpsuslaskmise
 \end{figure}
 
 
+Arusaadavatel põhjustel on testi valiidsus äärmiselt oluline ning psühholoogiliste testide valiidsuse hindamine on olnud üks psühhomeetria põhilistest uurimisobjektidest. Sellega seoses on palju tööd tehtud ka valiidsuse definitsiooni täpsemaks muutmisega, võrreldes selle paragrahvi alguses antud väga intuitiivse definitsiooniga. Kuna valiidsus on selle töö raames vajalik vaid taustinfona probleemi mõttestamisel tundub antud lihtne definitsioon aga sobivaim. 
+=======
 Arusaadavatel põhjustel on testi valiidsus äärmiselt oluline ning psühholoogiliste testide valiidsuse hindamine on olnud üks psühhomeetria põhilistest uurimisobjektidest. Sellega seoses on tehtud palju tööd  ka valiidsuse definitsiooni täpsemaks muutmisega, võrreldes selle paragrahvi alguses antud väga intuitiivse definitsiooniga. Kuna valiidsus on käesoleva töö raames vajalik vaid taustinfona probleemi mõtestamiseks, tundub antud lihtne definitsioon aga sobivaim. 
+>>>>>>> proof-read
 
 \subsection{Küsimustiku reliaablus}
 
@@ -459,7 +463,8 @@ Valiidsuse ja reliaabluse suhestamisel kerkib kiiresti üles loomulik küsimus -
 \caption{Kaalumiste tulemused kahe erineva kaaluga kolmel katsel}
 \end{figure}
 
-Kui mõista valiidsust kui küsimustiku keskmist tulemust, siis võime väita, et esimene kaal on väiksema reliaabluse, aga suurema valiidsusega. Selline valiidsuse mõtestamine  ei ole aga küsimustike modelleerimise korral otstarbekas -- katsete kordamine on enamasti keeruline ning väheste mõõtmistulemuste põhjal ei ole võimalik tegeliku väikese reliaablusega testi tulemust välja selgitada. 
+<<<<<<< HEAD
+Kui mõista valiidsust kui küsimusitku keskmist tulemust, siis võime väita, et esimene kaal on väiksema reliaabluse aga suurema valiidsusega. Selline valiidsuse mõttestamine aga ei ole küsimustike modeleleerimise korral otstarbekas - katsete kordamine on enamasti keeruline ning väheste mõõtmistulemuste põhjal ei ole võimalik tegeliku väikese reliaablusega testi tulemust välja selgitada.
 
 Alternaativeselt võime ka siin vaadelda olukorda kasutades täpsuslaskmise analoogiat. Olgu meil laskur $A$, kelle lasud paiknevad märklaua erinevates punktides, kuid nende geomeetriline keskpuntk asub märklaua keskel. Intuitiivselt on selge, et kui laskude arv on piiratud, ei ole selline definitsioon, mille korral laskuri $A$ valiidsus oleks suur, otstarbekas. Kirjeldatud olukorda illustreerib järgnev joonis:
 
@@ -493,6 +498,9 @@ Alternaativeselt võime ka siin vaadelda olukorda kasutades täpsuslaskmise anal
 \caption{Küsimistik, mille reliaablus on väike ja ``valiidsus'' suur}
 \end{figure}
  
+=======
+Kui mõista valiidsust kui küsimustiku keskmist tulemust, siis võime väita, et esimene kaal on väiksema reliaabluse, aga suurema valiidsusega. Selline valiidsuse mõtestamine  ei ole aga küsimustike modelleerimise korral otstarbekas -- katsete kordamine on enamasti keeruline ning väheste mõõtmistulemuste põhjal ei ole võimalik tegeliku väikese reliaablusega testi tulemust välja selgitada. 
+>>>>>>> proof-read
 
 Seega, meie vaadeldava olukorra -- psühholoogiliste testide -- korral on mingi valiidsuse taseme jaoks tarvilik tingimus mingi reliaabluse tase.    
 
@@ -1418,27 +1426,29 @@ Paneme tähele, et kuna $z$ on maksimaalne vea dispersioon fikseeritud $\Sigma_X
 Püstitasime töö alguses küsimuse, kas on võimalik leida paremat reliaabluse hinnangut kui $\lambda_3$. Käsitletud hinnangutest on nii $glb$ kui $\lambda_2$ reliaabluse alumised tõkked ning samas vähemalt sama suured kui $\lambda_3$, seega on need ka paremad reliaabluse hinnangud kui $\lambda_3$. Samuti on raske leida empiirilist näidet, kus  $\lambda_4$ ei ole tingimata suurem oleks väiksem kui $\lambda_3$.
 
 Paneme tähele, et $\lambda_3$ leidmine on väga lihtne, ning eelmise sajandi keskel, mil arvutuslik võimsus oli tagashoidlik, oli tegemist olulise eelisega. Tänapäeval on $\lambda_3$ lihtsus peaaegu olematu eelis, arvestades, et ka väga suurte küsimustike puhul ei valmista paremate hinnangute leidmine optimiseeritud programmi korral probleeme. 
-{\color{green}Lisas \ref{appendix:empiric} ära toodud näidete põhjal näeme, et praktikas võivad hinnangud olla väga erinevad, näiteks joonisel \ref{emp:second} kujutatud kovariatsoonimaatriksi korral erineb on $glb$ võrreldes hinnanguga $\lambda_3$ oluliselt suurem, vastavalt $0,77$ ja $0,43$. Joonisel \ref{emp:second} on aga näha, et isegi juhul, kui $\lambda_3$ on suur, annavad nii $glb, \lambda_4$ kui ka $\lambda_3$ suuremaid hinnanguid. 
-}
+
+Lisas \ref{appendix:empiric} ära toodud näidete põhjal näeme, et praktikas võivad hinnangud olla väga erinevad, näiteks joonisel \ref{emp:second} kujutatud kovariatsoonimaatriksi korral erineb on $glb$ võrreldes hinnanguga $\lambda_3$ oluliselt suurem, vastavalt $0,77$ ja $0,43$. Joonisel \ref{emp:second} on aga näha, et isegi juhul, kui $\lambda_3$ on suur, annavad nii $glb, \lambda_4$ kui ka $\lambda_3$ suuremaid hinnanguid. 
+
 Seega, kui küsimustikku mõtestada klassikalise testiteooria raamistikus, siis ei näe autor põhjust, miks peaks kasutama reliaabluse hindamiseks $\lambda_3$ ning soovitab eelistada teisi, kõrgemaid hinnaguid. Autor märgib siinkohal, et tegemist tundub olevat valdkonna ekspertide seas levinud arvamusega.  \cite{Revelle2008} \cite{Sijtsma2009a} \cite{Cronbach2004}
 
-{\color{green} Mainime siinkohal ära, et hinnangud $glb$ ja $\lambda_4$ võivad teatud tingimustel olla nihkega, probleem mis esineb praktikas, kui me kasutame kovariatsiooni maatriksi asemel tema valimi põhjal saadud hinnangut. Tõkke $glb$ korral vaata näiteks \cite{TenBerge2004}, $\lambda_4$ puhul \cite{Benton2013}.  
-}
+Mainime siinkohal ära, et hinnangud $glb$ ja $\lambda_4$ võivad teatud tingimustel olla nihkega, probleem mis esineb praktikas, kui me kasutame kovariatsiooni maatriksi asemel tema valimi põhjal saadud hinnangut. Tõkke $glb$ korral vaata näiteks \cite{TenBerge2004}, $\lambda_4$ puhul \cite{Benton2013}.  
+
 
 \section{Programmiteek}
 
-Järgnevalt põhjendan lühidalt Pythoni eeliseid teegi realiseerimisel võrreldes selliste alternatiividega nagu Java või MATLAB:
+Põhjendan siin ka lühidalt Pythoni eeliseid teegi realiseerimisel, alternatiividega (näiteks Java või MATLAB) võrreldes:
 \begin{enumerate}
-\item Python on keel, millega programeerimisalased õpingud tavaliselt algavad. Näiteks Tartu Ülikoolis õpetatakse programeerimist keeles Python nii matemaatika-informaatika teaduskonna tudengitele suunatud aines kui ka teistele huvilistele suunatud aines "Programeerimise alused", mida 2013/2014 aasta kevadel kuulas 150 inimest. Autor loodab, et nende seas on ka mõned psühholoogia tudengid.
-\item Pythonil on NumPy ja SciPy teekide näol väga hea arvutuslik tugi soovitud hinnangute implementeerimiseks.
-\item Pythoni teeki on väga lihte integreerida mõne veebiraamistikuga, mis võiks olla loodava teegi üks rakenduskohti.
-\item Python on vabavaraline ning tasuta kasutatav.
+\item Python on hetkel keel, millega programeerimisalased õppingud tavaliselt algavad. Näiteks Tartu Ülikoolis õpetatakse programeerimist keeles Python nii matemaatika-informaatika teaduskonnale suunatud aines kui ka teistele huvilistele suunatud aines "Programeerimise alused", mida 2013/2014 aasta kevadel kuulas 150 inimest. Autor loodab, et nende seas on ka mõned psühholoogia tudengid.
+\item Pythonil on läbi NumPy ja SciPy teekide väga hea arvutuslik tugi soovitud hinnangute implementeerimiseks.
+\item Pythoni teek on väga lihte integreerida mõne veebiraamistikuga, mis võiks olla loodava teegi üks rakenduskohti.
+\item Python on vabavara ning kõigile tasuta kasutatav.
 \end{enumerate}
 
-Meetodid, mis leiavad $\lambda_1$, $\lambda_2$, $\lambda_3$ ja $\lambda_4$, on implementeeritud nii programeerimiskeeles Python 2 kui ka programeerimiskeeles Python 3. Klass, mille abil saab leida $glb$, on implementeeritud sõltuvate teekide piirangute tõttu ainult programeerimiskeeles Python 2.  Programmiteegi loomisel on kasutatud teeke SciPy \cite{JonesE.;OliphantT;Peterson} ja CVXPY \cite{DiamondS;ChuE;Boyd2014}.
-Progarammiteek on kättesaadav aadressil {\color{red} SIIA AADRESS}
+Meetoditest, mis leiavad $\lambda_1$, $\lambda_2$, $\lambda_3$ ja $\lambda_4$ on implementeeritud nii programeerimiskeeles Python 2 kui ka programeerimiskeeles Python 3. Klass, mille abil saab leida $glb$, on implementeeritud sõltuvate teekide piirangute tõttu ainult programeerimiskeeles Python 2.  Kasutatud on teeke SciPy \cite{JonesE.;OliphantT;Peterson} ja CVXPY \cite{DiamondS;ChuE;Boyd2014}.
+Programmiteek on kättesaadav aadressil : {\color{red} SIIA AADRESS}
 
-Järgnevalt esitame hinnangute implementatsioonid programmeerimiskeeles Python 2.
+Lisas \ref{appendix:code} on ära toodud programmiteegi implementatsioon programeerimiskeeles Python 2.
+
 
 
 \section{Intervallskaal alternatiivne tõlgendamine}
@@ -1589,7 +1599,7 @@ Kuna enamiku valiidsuse definitsioonide korral on valiidsus ülevalt tõkestatud
 \subsection{Alternatiivse tõlgenduse matemaatiline sõnastus}
 
 
-Olgu meil populatsioon $I$ ning $k$ küsimusega küsimustik, kus iga küsimuse kohta palutakse hinnangut $l$-palli Likerti skaalal. Nummerdama küsimused naturaalarvudega $1$ kuna $k$ Olgu meil juhuslikud suurused $K_1,K_2,...,K_k$, mille määramispiirkonnaks on kõik erinevad võimalikud vastuste kombinatsioonid küsimustikule ning muutumispiirkonnaks on hulk $\lbrace 1,2,\ldots,l \rbrace$ ning tõlgendame juhusliku suurust kui küsimusele $k$ antud vastuse tõlgendust vaikimisi kasutataval intervallskaalal.  Toome sisse ka tähistused $p_{i \alpha}, i \in \{1,2,...,n\}, \alpha \in \lbrace 1,2,\ldots,l \rbrace $, kus $p_{i \alpha}$ tähistab põhjal tõenäosusust, et juhusliku suuruse $K_i$ väärtus on $\alpha$. 
+Olgu meil  $I$ populatsiooni ning $k$ küsimusega küsimustik, kus iga küsimuse kohta palutakse hinnangut $l$-pallisel Likerti skaalal. Nummerdame küsimused naturaalarvudega $1$ kuni $k$. Olgu meil juhuslikud suurused $K_1,K_2,...,K_k$, mille määramis\-piir\-konnaks on kõik erinevad võimalikud vastuste kombinatsioonid küsimustikule ning muutumispiirkonnaks on hulk $\lbrace 1,2,\ldots,l \rbrace$ ning tõlgendame juhuslikku suurust kui küsimusele $k$ antud vastuse tõlgendust vaikimisi kasutataval intervallskaalal.  Toome sisse ka tähistused $p_{i \alpha}, i \in \{1,2,...,n\}, \alpha \in \lbrace 1,2,\ldots,l \rbrace $, kus $p_{i \alpha}$ tähistab tõenäosusust, et juhusliku suuruse $K_i$ väärtus on $\alpha$. 
 
 Tuletame meelde $\lambda_3$ definitsiooni üle vektori $\left( K_1, K_2, \ldots,K_k \right)$ kovariatsioonimaatriksi $\Sigma_K$: 
 
@@ -1727,7 +1737,7 @@ Siit näeme, et sellisel juhul taandub $\lambda_3$ maksimeerimine avaldise $\sum
 \end{figure}
 
 
-Olgu meil tõenäosuste maatriks $P$, kusjuures
+Olgu meil tõenäosuste maatriks
 \begin{tightcenter}
 \begin{equation*}
 P =
@@ -1891,8 +1901,23 @@ I_k & Q_i^T x \\
 \pagebreak
 
 
+<<<<<<< HEAD
 
 
+=======
+Järgnevalt põhjendan lühidalt Pythoni eeliseid teegi realiseerimisel võrreldes selliste alternatiividega nagu Java või MATLAB:
+\begin{enumerate}
+\item Python on keel, millega programeerimisalased õpingud tavaliselt algavad. Näiteks Tartu Ülikoolis õpetatakse programeerimist keeles Python nii matemaatika-informaatika teaduskonna tudengitele suunatud aines kui ka teistele huvilistele suunatud aines "Programeerimise alused", mida 2013/2014 aasta kevadel kuulas 150 inimest. Autor loodab, et nende seas on ka mõned psühholoogia tudengid.
+\item Pythonil on NumPy ja SciPy teekide näol väga hea arvutuslik tugi soovitud hinnangute implementeerimiseks.
+\item Pythoni teeki on väga lihte integreerida mõne veebiraamistikuga, mis võiks olla loodava teegi üks rakenduskohti.
+\item Python on vabavaraline ning tasuta kasutatav.
+\end{enumerate}
+
+Meetodid, mis leiavad $\lambda_1$, $\lambda_2$, $\lambda_3$ ja $\lambda_4$, on implementeeritud nii programeerimiskeeles Python 2 kui ka programeerimiskeeles Python 3. Klass, mille abil saab leida $glb$, on implementeeritud sõltuvate teekide piirangute tõttu ainult programeerimiskeeles Python 2.  Programmiteegi loomisel on kasutatud teeke SciPy \cite{JonesE.;OliphantT;Peterson} ja CVXPY \cite{DiamondS;ChuE;Boyd2014}.
+Progarammiteek on kättesaadav aadressil {\color{red} SIIA AADRESS}
+
+Järgnevalt esitame hinnangute implementatsioonid programmeerimiskeeles Python 2.
+>>>>>>> proof-read
 
 
 
@@ -2324,6 +2349,160 @@ def calculate_sum_of_covariance_matrix_elements(cov_matrix,n = None):
 
 \pagebreak 
 
+<<<<<<< HEAD
+=======
+
+
+
+
+
+\pagebreak
+\bibliography{mata_baka}{}
+\bibliographystyle{plain}
+
+
+
+\section*{Lisa}
+\addcontentsline{toc}{section}{Lisa}
+
+\begin{subappendices}
+\subsection{Näited küsimustikust Likerti skaalal}
+
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{ois_tagasiside_toodeldud.png}
+\caption{Näide Tartu \"Ulikooli õppeinfo s\"usteemi tagasiside ankeedist, kus rakendatakse Likerti skaalat \cite{UT}}
+\label{likert1}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.5\textwidth, height = 0.7\textwidth]{Example_Likert_Scale.png}
+\caption{Näide k\"usimustikust, kus on rakendatud Likerti skaalat; k\"usimused on paigutatud nende järjestikkuse rõhutamiseks teljele\cite{Smith}}
+\label{likert2}
+\end{figure}
+
+
+
+\subsection{Empiirilised näited}
+\label{appendix:empiric}
+
+\begin{scriptsize} \begin{table}[htdp]\caption{df2latex}
+\begin{center}
+\begin{tabular} { r r r r r r r r r r r r r }
+ \multicolumn{ 12 }{l}{ A table from the psych package in R } \cr
+ \hline 
+
+    3.00  &   1.52  &   1.73  &   1.21  &   0.69  &   1.40  &  -0.53  &  -0.64  &  -0.75  &  -0.56  &  -0.57  &  -0.83 \cr 
+      1.52  &   3.25  &   1.37  &   0.70  &   0.78  &   1.01  &  -0.31  &  -0.21  &  -0.17  &  -0.39  &  -0.29  &  -0.65 \cr 
+      1.73  &   1.37  &   3.25  &   1.43  &   0.85  &   1.62  &  -0.71  &  -0.77  &  -0.94  &  -0.98  &  -0.65  &  -1.20 \cr 
+     1.21  &   0.70  &   1.43  &   2.79  &   0.16  &   1.00  &  -1.03  &  -1.23  &  -0.98  &  -0.87  &  -0.82  &  -0.85 \cr 
+     0.69  &   0.78  &   0.85  &   0.16  &   2.67  &   0.82  &  -0.11  &   0.20  &  -0.10  &   0.10  &   0.40  &  -0.09 \cr 
+      1.40  &   1.01  &   1.62  &   1.00  &   0.82  &   2.37  &  -0.52  &  -0.48  &  -0.84  &  -0.55  &  -0.37  &  -0.73 \cr 
+     -0.53  &  -0.31  &  -0.71  &  -1.03  &  -0.11  &  -0.52  &   1.59  &   1.25  &   0.52  &   0.87  &   0.65  &   0.93 \cr 
+     -0.64  &  -0.21  &  -0.77  &  -1.23  &   0.20  &  -0.48  &   1.25  &   2.38  &   0.77  &   1.12  &   0.92  &   1.02 \cr 
+     -0.75  &  -0.17  &  -0.94  &  -0.98  &  -0.10  &  -0.84  &   0.52  &   0.77  &   2.30  &   0.81  &   0.75  &   0.68 \cr 
+     -0.56  &  -0.39  &  -0.98  &  -0.87  &   0.10  &  -0.55  &   0.87  &   1.12  &   0.81  &   2.14  &   1.00  &   1.25 \cr 
+     -0.57  &  -0.29  &  -0.65  &  -0.82  &   0.40  &  -0.37  &   0.65  &   0.92  &   0.75  &   1.00  &   2.09  &   0.69 \cr 
+     -0.83  &  -0.65  &  -1.20  &  -0.85  &  -0.09  &  -0.73  &   0.93  &   1.02  &   0.68  &   1.25  &   0.69  &   2.03 \cr 
+ \hline 
+\end{tabular}
+\end{center}
+\label{default}
+\end{table} 
+\end{scriptsize}
+
+
+0.389845603215
+
+0.600993443356
+
+0.425286112598
+
+0.731241250149
+
+0.765503667053
+
+\begin{scriptsize} \begin{table}[htdp]\caption{df2latex}
+\begin{center}
+\begin{tabular} { r r r r r r r r r r r r r }
+ \multicolumn{ 12 }{l}{ A table from the psych package in R } \cr 
+ \hline Variable  &   1  &  2  &  3  &  4  &  5  &  6  &  7  &  8  &  9  &  10  &  11  &  12 \cr 
+  \hline 
+  &  3.00  &  1.52  &  1.73  &  1.21  &  0.69  &  1.40  &  1.39  &  0.90  &  1.27  &  1.15  &  0.58  &  0.83 \cr 
+   &  1.52  &  3.25  &  1.37  &  0.70  &  0.78  &  1.01  &  1.10  &  1.73  &  0.94  &  0.85  &  0.56  &  0.70 \cr 
+   &  1.73  &  1.37  &  3.25  &  1.43  &  0.85  &  1.62  &  1.19  &  0.61  &  1.85  &  1.28  &  0.61  &  0.85 \cr 
+   &  1.21  &  0.70  &  1.43  &  2.79  &  0.16  &  1.00  &  0.64  &  0.26  &  0.93  &  1.49  &  0.14  &  0.53 \cr 
+   &  0.69  &  0.78  &  0.85  &  0.16  &  2.67  &  0.82  &  0.77  &  0.99  &  0.64  &  0.10  &  1.61  &  0.56 \cr 
+   &  1.40  &  1.01  &  1.62  &  1.00  &  0.82  &  2.37  &  0.98  &  0.74  &  1.17  &  1.02  &  0.74  &  0.90 \cr 
+   &  1.39  &  1.10  &  1.19  &  0.64  &  0.77  &  0.98  &  2.39  &  1.26  &  1.12  &  0.66  &  0.61  &  0.72 \cr 
+   &  0.90  &  1.73  &  0.61  &  0.26  &  0.99  &  0.74  &  1.26  &  2.91  &  0.55  &  0.43  &  0.82  &  0.77 \cr 
+   &  1.27  &  0.94  &  1.85  &  0.93  &  0.64  &  1.17  &  1.12  &  0.55  &  2.52  &  0.81  &  0.45  &  0.80 \cr 
+   &  1.15  &  0.85  &  1.28  &  1.49  &  0.10  &  1.02  &  0.66  &  0.43  &  0.81  &  2.19  &  0.25  &  0.55 \cr 
+   &  0.58  &  0.56  &  0.61  &  0.14  &  1.61  &  0.74  &  0.61  &  0.82  &  0.45  &  0.25  &  2.43  &  0.54 \cr 
+   &  0.83  &  0.70  &  0.85  &  0.53  &  0.56  &  0.90  &  0.72  &  0.77  &  0.80  &  0.55  &  0.54  &  1.35 \cr 
+ \hline 
+\end{tabular}
+\end{center}
+\label{default}
+\end{table} 
+\end{scriptsize}
+
+0.792086222424
+
+0.870887152456
+
+0.864094060827
+
+0.932154107284
+
+0.934744552629
+
+
+\begin{scriptsize} \begin{table}[htdp]\caption{df2latex}
+\begin{center}
+\begin{tabular} { r r r r r r r r r r r r r }
+ \multicolumn{ 12 }{l}{ A table from the psych package in R } \cr 
+
+  \hline 
+    1.99  &   0.39  &   0.37  &   0.98  &   0.85  &   0.70  &  -0.48  &  -0.49  &  -0.39  &  -0.43  &  -0.25  &  -0.27 \cr 
+     0.39  &   2.15  &   0.38  &   0.79  &   0.50  &   0.28  &  -0.60  &  -0.39  &  -0.27  &  -0.05  &  -0.19  &  -0.05 \cr 
+     0.37  &   0.38  &   2.12  &   0.45  &   0.74  &   0.70  &  -0.41  &  -0.10  &  -0.06  &   0.06  &  -0.02  &   0.07 \cr 
+     0.98  &   0.79  &   0.45  &   3.06  &   0.95  &   0.34  &  -0.59  &  -0.64  &  -0.36  &  -0.14  &  -0.04  &   0.05 \cr 
+     0.85  &   0.50  &   0.74  &   0.95  &   2.90  &   0.77  &  -0.32  &  -0.58  &  -0.05  &   0.05  &   0.22  &   0.32 \cr 
+     0.70  &   0.28  &   0.70  &   0.34  &   0.77  &   2.65  &  -0.47  &  -0.45  &  -0.45  &  -0.37  &  -0.39  &  -0.38 \cr 
+    -0.48  &  -0.60  &  -0.41  &  -0.59  &  -0.32  &  -0.47  &   1.99  &   0.58  &   0.51  &   0.38  &   0.31  &   0.47 \cr 
+    -0.49  &  -0.39  &  -0.10  &  -0.64  &  -0.58  &  -0.45  &   0.58  &   1.86  &   0.59  &   0.30  &   0.03  &   0.31 \cr 
+    -0.39  &  -0.27  &  -0.06  &  -0.36  &  -0.05  &  -0.45  &   0.51  &   0.59  &   1.63  &   0.63  &   0.45  &   0.81 \cr 
+    -0.43  &  -0.05  &   0.06  &  -0.14  &   0.05  &  -0.37  &   0.38  &   0.30  &   0.63  &   1.41  &   0.63  &   1.01 \cr 
+    -0.25  &  -0.19  &  -0.02  &  -0.04  &   0.22  &  -0.39  &   0.31  &   0.03  &   0.45  &   0.63  &   1.79  &   1.11 \cr 
+    -0.27  &  -0.05  &   0.07  &   0.05  &   0.32  &  -0.38  &   0.47  &   0.31  &   0.81  &   1.01  &   1.11  &   2.33 \cr 
+ \hline 
+\end{tabular}
+\end{center}
+\label{default}
+\end{table} 
+\end{scriptsize}
+
+
+0.393173116992
+
+0.532690327639
+
+0.428916127628
+
+0.681124356489
+
+0.704017194856
+
+
+
+\makeatletter
+\newpage
+\pagestyle{empty}
+\selectlanguage{estonian}
+>>>>>>> proof-read
 \subsection{Litsents}
 
 \textbf{Lihtlitsents lõputöö reprodutseerimiseks ja
