@@ -168,7 +168,7 @@
 
 Käesolevas bakalaureusetöös vaadeldakse erinevaid võimalusi valikvastustega küsimustike reliaabluse hindamiseks küsimustiku ühekordse läbiviimise põhjal. 
 
-Töö käigus antakse lugejale vajaminevad taustteadmised valikvastustega küsimustike ning nende karakteristikute kohta, defineeritakse reliaablus klassikalise testiteooria raamistikus ja antakse vajalik matemaatiline baas reliaabluse hinnangute tuletamiseks. Seejärel tuletatakse viis hinnangut reliaablusele, hinnatakse nende kasutatavust praktikas ja tutvustatakse autori loodud programmiteeki, mis sisaldab programme tuletatud hinnangute leidmiseks testi läbiviimisel saadud andmete põhjal. Töö viimases osas tutvustab autor ühte võimaliku viisi küsimustike arvulise tõlgenduse parandamiseks.
+Töö käigus antakse lugejale vajaminevad taustteadmised valikvastustega küsimustike ning nende karakteristikute kohta, defineeritakse reliaablus klassikalise testiteooria raamistikus ja antakse vajalik matemaatiline baas reliaabluse hinnangute tuletamiseks. Seejärel tuletatakse viis reliaabluse hinnangut, hinnatakse nende kasutatavust praktikas ja tutvustatakse autori loodud programmiteeki, mis sisaldab programme tuletatud hinnangute leidmiseks küsimustiku läbiviimisel saadud andmete põhjal. Töö viimases osas tutvustab autor üht võimalikku viisi küsimustike arvulise tõlgenduse parandamiseks.
 
 Töö annab eesti keelse ülevaate klassikalise testiteooria alustest matemaatilisest vaatepunktist lähtudes, ning tutvustab praktikule erinevaid võimalusi testi reliaabluse hindamiseks, sealjuures tutvustatake meetodeid, mis annavad paremaid tulemusi, kui hetkel enamlevinud meetodid. 
 
@@ -190,7 +190,7 @@ Töö annab eesti keelse ülevaate klassikalise testiteooria alustest matemaatil
 
 This bachelor's thesis is to give an overview of different possibilities of estimating reliability of Likert scale questionnaires based on a single admission.
 
-The thesis contains a short overview of necessary background information about Likert scales and their characteristics, definition of reliability in the context of the Classical Test Theory and mathematical basis for deriving estimations of reliability. Also, five estimates are derived and their usability in practise is discussed. Afterwards, the author gives a short overview of a programming library that implements methods for finding derived estimates based on data gathered from admissioning the questionnaire. Finally, the author offers out a possible way for improving the quantitive intepretation of a questionnaire.
+The thesis contains a short overview of the necessary background information about Likert scales and their characteristics, definition of reliability in the context of the Classical Test Theory and mathematical basis for deriving estimations of reliability. Also, five estimates are derived and their usability in practise is discussed. Afterwards, the author gives a short overview of a programming library that implements methods for finding derived estimates based on data gathered from the administrated questionnaire. Finally, the author proposes an approach for improving the quantitative interpretation of a questionnaire.
 
 The thesis gives an overview of the foundation of the Classical Test Theory in Estonian from mathematical viewpoint and introduces different possibilities for estimating the reliability of a questionnaire, some of which give better results than the ones in widespread use today.
 
@@ -210,7 +210,7 @@ Käesolev bakalaureusetöö on ajendatud psühholoogide probleemist -- kuidas hi
 
 Sellest lähtuvalt on töö peamiseks eesmärgiks pakkuda valikvastustega küsimustike hindamiseks lihtsasti kasutatavaid kvantitatiivseid meetodeid. Lisaks sellele loodab autor pakkuda eestikeelset ülevaadet ühest valikvastustega testidega seotud matemaatiliselt raamistikust -- olemasolevad käsitlused on pigem praktilised abivahendid psühholoogidele. 
 
-Töö esimeses osas esitame vajaliku taustinfo, definitsioonid ja probleemipüstituse. Seejärel ehitame üles meile vajamineva osa probleemi vaatlemiseks sobivast matemaatilisest teooriast -- defineerime testi usaldusväärsuse ning rajame vundamendi selle hindamiseks. Järgnevalt tuletame mõningad erinevad usaldusväärsuse hinnangud. Seejärel tutvustame autori loodud programmiteeki, mis sisaldab eelnevalt tutvustatud hinnangute implementatsioone. Töö viimases osas pakub autor välja alteratiivse lähenemise küsimustiku vastuste arvulistel tõlgendamisel.
+Töö esimeses osas esitame vajaliku taustinfo, definitsioonid ja probleemipüstituse. Seejärel ehitame üles meile vajamineva osa probleemi vaatlemiseks sobivast matemaatilisest teooriast -- defineerime testi usaldusväärsuse ning rajame vundamendi selle hindamiseks. Järgnevalt tuletame mõningad erinevad usaldusväärsuse hinnangud. Seejärel tutvustame autori loodud programmiteeki, mis sisaldab eelnevalt tutvustatud hinnangute implementatsioone. Töö viimases osas pakub autor välja alternatiivse lähenemise küsimustiku vastuste arvulisele tõlgendamisele.
 
 Autori eesmärgiks on, et antud tekst oleks lihtsasti järgitav keskmisele bakalaureuseõppe läbinud matemaatikatudengile -- meeldetuletuseks on valdkonna spetsiifilised matemaatilised definitsioonid ja tulemused töö käigus jooksvalt ära toodud. 
 
@@ -322,8 +322,8 @@ Küsimustiku \textbf{valiidsus} on küsimustiku karakteristik, mis iseloomustab 
 
 Näitena olgu meil küsimustikuks kaal, mille näitu vaatleme kui küsimustiku tulemust kaalutava isiku puhul. Kaal, mis näitab 75 kilo kaaluva inimese kaaluks 74,5 kilo, omab kõrgemat valiidsust, kui kaal, mis sama inimese puhul näitab kaaluks 65 kilo.   
 
-{\color{green}
-Küsimustiku valiidsuse mõtestamisel võime kasutada analoogiat täpsuslaskmisega - kui vaatleme küsimustikke kui laskureid, siis tähendaks see, et laskuri $A$ valiidus on kõrgem kui lasukuril $B$, seda, et tema tabamused asuksid märklaua keskkohale lähemal. Olukorda illustreerib järgnev joonis:}
+
+Küsimustiku valiidsuse mõtestamisel võime kasutada analoogiat täpsuslaskmisega. Kui vaatleme küsimustikke kui laskureid, siis tähendab see, et laskuri $A$ valiidus on kõrgem kui laskuri $B$ oma seda,et tema tabamused asuvad märklaua keskkohale lähemal. Olukorda illustreerib järgnev joonis:
 
 \begin{figure}[H]
 \begin{naide}
@@ -368,7 +368,7 @@ Küsimustiku valiidsuse mõtestamisel võime kasutada analoogiat täpsuslaskmise
 
 \end{tikzpicture}
 \end{naide}
-\caption{Kahe küsimustiku valiiduse võrdlus}
+\caption{Kahe küsimustiku valiidsuse võrdlus}
 \end{figure}
 
 
@@ -380,7 +380,7 @@ Küsimustiku \textbf{reliaablus} on küsimustiku karakteristik, mis kirjeldab, k
 
 Näiteks kaal, mis näitab igal kaalumisel 75 kilo kaaluva inimese kaaluks 74,5 kilo, omab kõrgemat reliaablust, kui kaal, mis näitab juhuslikult kas 74,5 kilo või 75,5 kilo. 
 
-{{\color{green}Ka küsimustiku reliaabluse mõtestamisel saame kasutada analoogiat täpsuslaskmisega - sellisel juhul tähendaks see, et laskuri $A$ reliaablus on suurem kui laskuril $B$ seda, et laskuri $A$ tabamused asuvad üksteisele lähemal kui laskuri $B$ omad. Olukorda illustreerib järgnev joonis:}
+Ka küsimustiku reliaabluse mõtestamisel saame kasutada analoogiat täpsuslaskmisega. Sellisel juhul tähendab see, et laskuri $A$ reliaablus on suurem kui laskuri $B$ oma seda, et laskuri $A$ tabamused asuvad teineteisele lähemal, kui laskuri $B$ tabamused. Olukorda illustreerib järgnev joonis:
 
 \begin{figure}[H]
 \begin{naide}
@@ -461,10 +461,8 @@ Valiidsuse ja reliaabluse suhestamisel kerkib kiiresti üles loomulik küsimus -
 \caption{Kaalumiste tulemused kahe erineva kaaluga kolmel katsel}
 \end{figure}
 
-Kui mõista valiidsust kui küsimustiku keskmist tulemust, siis võime väita, et esimene kaal on väiksema reliaabluse, aga suurema valiidsusega. Selline valiidsuse mõtestamine  ei ole aga küsimustike modelleerimise korral otstarbekas -- katsete kordamine on enamasti keeruline ning väheste mõõtmistulemuste põhjal ei ole võimalik tegeliku väikese reliaablusega testi tulemust välja selgitada. 
-{\color{green}
-Alternaativeselt võime ka siin vaadelda olukorda kasutades täpsuslaskmise analoogiat. Olgu meil laskur $A$, kelle lasud paiknevad märklaua erinevates punktides, kuid nende geomeetriline keskpuntk asub märklaua keskel. Intuitiivselt on selge, et kui laskude arv on piiratud, ei ole selline definitsioon, mille korral laskuri $A$ valiidsus oleks suur, otstarbekas. Kirjeldatud olukorda illustreerib järgnev joonis:
-}
+Kui mõista valiidsust kui küsimustiku keskmist tulemust, siis võime väita, et esimene kaal on väiksema reliaabluse, aga suurema valiidsusega. Selline valiidsuse mõtestamine  ei ole aga küsimustike modelleerimise korral otstarbekas -- katsete kordamine on enamasti keeruline ning väheste mõõtmistulemuste põhjal ei ole võimalik tegeliku väikese reliaablusega testi tulemust välja selgitada. Alternatiivselt võime ka siin vaadelda olukorda  täpsuslaskmise analoogiat kasutades. Olgu meil laskur $A$, kelle lasud paiknevad märklaua erinevates punktides, kuid nende geomeetriline keskpunkt asub märklaua keskel. Intuitiivselt on selge, et kui laskude arv on piiratud, ei ole selline definitsioon, mille korral laskuri $A$ valiidsus oleks suur, otstarbekas. Kirjeldatud olukorda illustreerib järgnev joonis:
+
 
 \begin{figure}[H]
 \begin{naide}
@@ -492,11 +490,11 @@ Alternaativeselt võime ka siin vaadelda olukorda kasutades täpsuslaskmise anal
 
 \end{tikzpicture}
 \end{naide}
-\caption{Küsimistik, mille reliaablus on väike ja ``valiidsus'' suur}
+\caption{Küsimistik, mille reliaablus on väike ja "`valiidsus"' suur}
 \end{figure}
  
 
-Seega, meie vaadeldava olukorra -- psühholoogiliste testide -- korral on mingi valiidsuse taseme jaoks tarvilik tingimus mingi reliaabluse tase.    
+Seega, meie vaadeldava olukorra -- psühholoogiliste testide -- puhul on mingi valiidsuse taseme jaoks tarvilik tingimus mingi reliaabluse tase.    
 
 
 \subsection{Sisemine järjepidevus}
@@ -683,7 +681,7 @@ Järgnevas võtame aluseks Melvin Novicki klassikalise testiteooria \cite{Novick
 
 \begin{meeldetuletus}
 \begin{elementaarsyndmus}
-\textit{Elementaarsündmuseks} nimetatakse juhusliku katse võimalikku tulemust. \footnote{ {\color{green}Siin ja edaspidi toetume tõenäosusteooria definitsioonide ja tulemuste sõnastamisel Kalev Pärna õpikule \cite{Parna2013}.} }
+\textit{Elementaarsündmuseks} nimetatakse juhusliku katse võimalikku tulemust. \footnote{ Siin ja edaspidi toetume tõenäosusteooria definitsioonide ja tulemuste sõnastamisel Kalev Pärna õpikule \cite{Parna2013}.}
 \end{elementaarsyndmus}
 \begin{toenaosus}
 \textit{Tõenäosuseks} nimetatakse funktsiooni $P$, mis igale sündmusele $A \in 2^{\Omega}$, kus $\Omega$ on mingi juhusliku katse kõikvõimalike elementaarsündmuste hulk, seab vastavusse arvu $P(A)$, nii et on täidetud järgmised nõuded:
@@ -731,7 +729,7 @@ Paneme tähele, et $X_{i}$ on samuti diskreetne juhuslik suurus -- tõepoolest, 
 
 
 \begin{meeldetuletus}
-\begin{jaotus} Disktreetse juhusliku suuruse $X$ \textit{jaotuseks} nimetatakse paaride komplekti $\left(x_i,p_i \right), i=1,2,...$, kus $x_i$ on juhusliku suuruse võimalik väärtus ning $p_i = P(\left\lbrace \omega | X(\omega) = x_i, \omega \in \Omega \right\rbrace)$. 
+\begin{jaotus} Diskreetse juhusliku suuruse $X$ \textit{jaotuseks} nimetatakse paaride komplekti $\left(x_i,p_i \right), i=1,2,...$, kus $x_i$ on juhusliku suuruse võimalik väärtus ning $p_i = P(\left\lbrace \omega | X(\omega) = x_i, \omega \in \Omega \right\rbrace)$. 
 \end{jaotus}
 \begin{keskvaartus}
 Diskreetse juhusliku suuruse $X$, mille jaotuseks $K$ on paaride komplekt $k_i = \left(x_i,p_i \right), i=1,2,...$, \textit{keskväärtuseks} nimetatakse arvu
@@ -961,7 +959,7 @@ Eelneva põhjal on selge, et väide  "`küsimustiku  reliaablus on suurem"' on s
 
 Märgime, et klassikalise testiteooria raames defineeritud reliaablus sobib kokku eelmises peatükis antud mitteformaalse definitsiooniga, kuna küsimustik on iseendaga paralleelne. Paneme tähele, et tegemist on suhteliselt nõrku eeldusi vajava teooriaga, kõige raskem on praktikas tagada süstemaatiliste vigade puudumine.
 
-{\color{green} Kuna küsimustiku tegelik tulemus on suurus, mida me praktikas ei tea, ning ka küsimustikuga paralleelse küsimustiku läbiviimine ei ole tihti võimalik, on kasutusele võetud erinevad võimalused testi reliaablust ühe läbiviimise käigus saadud informatsiooni põhjal hinnata.} Järgnevalt vaatleme, kuidas seda teha.
+Kuna küsimustiku tegelik tulemus on suurus, mida me praktikas ei tea, ning ka paralleelse küsimustiku läbiviimine ei ole tihti võimalik, on kasutusele võetud erinevad meetodid testi reliaabluse hindamiseks küsimustiku ühekordse läbiviimise käigus saadud informatsiooni põhjal. Järgnevalt vaatleme, kuidas seda teha.
 
 
 
@@ -1417,12 +1415,11 @@ Paneme tähele, et kuna $z$ on maksimaalne vea dispersioon fikseeritud $\Sigma_X
 Püstitasime töö alguses küsimuse, kas on võimalik leida paremat reliaabluse hinnangut kui $\lambda_3$. Käsitletud hinnangutest on nii $glb$ kui $\lambda_2$ reliaabluse alumised tõkked ning samas vähemalt sama suured kui $\lambda_3$, seega on need ka paremad reliaabluse hinnangud kui $\lambda_3$. Samuti on raske leida empiirilist näidet, kus  $\lambda_4$ ei ole tingimata suurem oleks väiksem kui $\lambda_3$.
 
 Paneme tähele, et $\lambda_3$ leidmine on väga lihtne, ning eelmise sajandi keskel, mil arvutuslik võimsus oli tagashoidlik, oli tegemist olulise eelisega. Tänapäeval on $\lambda_3$ lihtsus peaaegu olematu eelis, arvestades, et ka väga suurte küsimustike puhul ei valmista paremate hinnangute leidmine optimiseeritud programmi korral probleeme. 
-{\color{green}Lisas \ref{appendix:empiric} ära toodud näidete põhjal näeme, et praktikas võivad hinnangud olla väga erinevad, näiteks joonisel \ref{emp:second} kujutatud kovariatsoonimaatriksi korral erineb on $glb$ võrreldes hinnanguga $\lambda_3$ oluliselt suurem, vastavalt $0,77$ ja $0,43$. Joonisel \ref{emp:second} on aga näha, et isegi juhul, kui $\lambda_3$ on suur, annavad nii $glb, \lambda_4$ kui ka $\lambda_3$ suuremaid hinnanguid. 
-}
-Seega, kui küsimustikku mõtestada klassikalise testiteooria raamistikus, siis ei näe autor põhjust, miks peaks kasutama reliaabluse hindamiseks $\lambda_3$ ning soovitab eelistada teisi, kõrgemaid hinnaguid. Autor märgib siinkohal, et tegemist tundub olevat valdkonna ekspertide seas levinud arvamusega.  \cite{Revelle2008} \cite{Sijtsma2009a} \cite{Cronbach2004}
+Lisas \ref{appendix:empiric} esitatud näidete põhjal näeme, et praktikas võivad hinnangud olla väga erinevad: näiteks joonisel \ref{emp:second} kujutatud kovariatsoonimaatriksi korral on $glb$ hinnangust $\lambda_3$ oluliselt suurem, vastavalt $0,77$ ja $0,43$. Joonisel \ref{emp:second} on aga näha, et isegi juhul, kui $\lambda_3$ on suur, annavad nii $glb,\lambda_4$ kui ka $\lambda_3$ suuremaid hinnanguid. 
+Seega, kui küsimustikku mõtestada klassikalise testiteooria raamistikus, siis ei näe autor põhjust, miks peaks kasutama reliaabluse hindamiseks $\lambda_3$, ning soovitab eelistada teisi, kõrgemaid hinnanguid. Autor märgib siinkohal, et tegemist tundub olevat valdkonna ekspertide seas levinud arvamusega.  \cite{Revelle2008} \cite{Sijtsma2009a} \cite{Cronbach2004}
 
-{\color{green} Mainime siinkohal ära, et hinnangud $glb$ ja $\lambda_4$ võivad teatud tingimustel olla nihkega, probleem mis esineb praktikas, kui me kasutame kovariatsiooni maatriksi asemel tema valimi põhjal saadud hinnangut. Tõkke $glb$ korral vaata näiteks \cite{TenBerge2004}, $\lambda_4$ puhul \cite{Benton2013}.  
-}
+Mainime siinkohal ära, et hinnangud $glb$ ja $\lambda_4$ võivad teatud tingimustes olla nihkega. See on probleem, mis esineb praktikas, kui kasutame kovariatsiooni maatriksi asemel tema valimi põhjal saadud hinnangut. Tõkke $glb$ korral vaata näiteks \cite{TenBerge2004}, $\lambda_4$ puhul \cite{Benton2013}.  
+
 
 \section{Programmiteek}
 
@@ -1447,8 +1444,8 @@ Läheneme nüüd reliaabluse hinnangu parandamisele teisest suunast ning vaatlem
 
 \subsection{Vastuste tõlgendamine intervallskaalal}
 
-{\color{green}Käesoleva töö sissejuhatuses kirjeldasime viisi, kuidas vaikimisi teisendatakse vastused Likerti skaalalt  intervallskaalale.
-Märgime, et selline tõlgendus eeldab, vastused asuvad üksteisest sama  "` kaugel'". Usume, et paljudel juhtudel ei pea see eeldus paika. }
+Käesoleva töö sissejuhatuses kirjeldasime viisi, kuidas vaikimisi teisendatakse vastused Likerti skaalalt  intervallskaalale.
+Märgime, et selline tõlgendus eeldab, et vastused asuvad teineteisest sama  "`kaugel'". Arvame, et paljudel juhtudel ei pea see eeldus paika. 
 
 Sellest tähelepanekust lähtub järgmine küsimus -- kas on võimalik leida paremat vastuste paigutust intervallskaalal kui vaikimisi meetod? Vaatleme kahte näidet:
 
@@ -1543,7 +1540,7 @@ Vaikimisi tõlgendusele alternatiive välja pakkudes peab meil olema mingi karak
 
 \subsection{Reliaabluse hindamine}
 
-Kuna küsimustiku reliaabluse leidmine ei ole praktiliselt võimalik, siis kasutame selle lähendusena eelmises peatükis käsitletud alumisi tõkkeid. On selge, et parima tulemuse annab võimalikult täpse alumise tõkke kasutamine. Kuna sobiva tõlgenduse leidmine taandub optimiseerimisülesandele, siis kasutame siinkohal konservatiivsemat alumist tõket $\lambda_3$: selle arvutamise lihtsus, mis ei omanud fikseeritud tõlgenduse korral tänapäevase aruvutusvõimuse juures erilist tähtsust, osutub siin oluliseks eeliseks. {\color{green}Lisaks on $\lambda_3$ psühholoogide seas laialt tuntud ning seda kasutava meetodi juurutamine praktikas oleks ilmselt lihtsam, kui mõne nende jaoks tundmatut hinnangut kasutava meetodi juurutamine.} 
+Kuna küsimustiku reliaabluse leidmine ei ole praktiliselt võimalik, siis kasutame selle lähendusena eelmises peatükis käsitletud alumisi tõkkeid. On selge, et parima tulemuse annab võimalikult täpse alumise tõkke kasutamine. Kuna sobiva tõlgenduse leidmine taandub optimiseerimisülesandele, siis kasutame siinkohal konservatiivsemat alumist tõket $\lambda_3$: selle arvutamise lihtsus, mis ei omanud fikseeritud tõlgenduse korral tänapäevase aruvutusvõimuse juures erilist tähtsust, osutub siin oluliseks eeliseks. Lisaks on $\lambda_3$ psühholoogide seas laialt tuntud ning seda kasutava meetodi juurutamine praktikas oleks ilmselt lihtsam, kui mõne nende jaoks tundmatut hinnangut kasutava meetodi juurutamine.
 
 \subsection{Lähenemise korrektsus}
 
@@ -1747,7 +1744,7 @@ Defineerime  vektori $x$, nii et
 
 \begin{tightcenter}
 \begin{equation*}
-x = (\mu_{11},\mu_{12},\ldots,\mu_{1l},\mu_{21},\mu_{22},\ldots,\mu_{nl})
+x = (\mu_{11},\mu_{12},\ldots,\mu_{1l},\mu_{21},\mu_{22},\ldots,\mu_{kl})\text{.}
 \end{equation*}
 \end{tightcenter}
 
@@ -1775,35 +1772,35 @@ p_{(kl)(11)}&p_{(kl)(12)}&\cdots&p_{(kl)(kl)} \\
 = \\
 = 
 \begin{pmatrix}
-\sum \limits_{j=1}^n \sum \limits_{r=1}^l \lambda_{jr}p_{(jr)(11)} & \sum \limits_{j=1}^n \sum \limits_{r=1}^l \lambda_{jr}p_{(jr)(12)} & \cdots &  \sum \limits_{j=1}^n \sum \limits_{r=1}^l \lambda_{jr}p_{(jr)(nl)} \\
+\sum \limits_{j=1}^n \sum \limits_{r=1}^l \lambda_{jr}p_{(jr)(11)} & \sum \limits_{j=1}^n \sum \limits_{r=1}^l \lambda_{jr}p_{(jr)(12)} & \cdots &  \sum \limits_{j=1}^n \sum \limits_{r=1}^l \lambda_{jr}p_{(jr)(kl)} \\
 \end{pmatrix}
 \begin{pmatrix}
 \mu_{11} \\
 \mu_{12} \\
 \vdots \\
-\mu_{nl}
+\mu_{kl}
 \end{pmatrix}
 =\\
 =
-\sum \limits_{j=1}^n \sum \limits_{r=1}^l \lambda_{jr}p_{(jr)(11)} + \sum \limits_{j=1}^n \sum \limits_{r=1}^l \lambda_{jr}p_{(jr)(12)} + \cdots +  \sum \limits_{j=1}^n \sum \limits_{r=1}^l \lambda_{jr}p_{(jr)(nl)}=\\
-= \sum \limits_{i=1}^{n} \sum \limits_{k=1}^{l} \sum \limits_{j=1}^n \sum \limits_{r=1}^l \lambda_{jr}p_{(jr)(ik)} \lambda_{ik} 
-= \sum \limits_{i=1}^{n}  \sum \limits_{j=1}^n \sum \limits_{k=1}^{l} \sum \limits_{r=1}^l \lambda_{jr}p_{(jr)(ik)} \lambda_{ik} =
-\sum \limits_{i=1}^{n} \sum \limits_{j=1}^n E(M_iM_j) = \\
-\underset{\text{(\ref{eq:e_is_0})}}{=} \sum \limits_{i=1}^{n} \sum \limits_{j=1}^n E(M_iM_j) - E(M_i)E(M_j) = \sum \limits_{i=1}^{n} \sum \limits_{j=1}^n cov(M_i,M_j)
+\sum \limits_{j=1}^n \sum \limits_{r=1}^l \lambda_{jr}p_{(jr)(11)} + \sum \limits_{j=1}^n \sum \limits_{r=1}^l \lambda_{jr}p_{(jr)(12)} + \cdots +  \sum \limits_{j=1}^n \sum \limits_{r=1}^l \lambda_{jr}p_{(jr)(kl)}=\\
+= \sum \limits_{i=1}^{k} \sum \limits_{s=1}^{l} \sum \limits_{j=1}^k \sum \limits_{r=1}^l \lambda_{jr}p_{(jr)(is)} \lambda_{is} 
+= \sum \limits_{i=1}^{k}  \sum \limits_{j=1}^k \sum \limits_{s=1}^{l} \sum \limits_{r=1}^l \lambda_{jr}p_{(jr)(is)} \lambda_{is} =
+\sum \limits_{i=1}^{k} \sum \limits_{j=1}^k E(M_iM_j) = \\
+\underset{\text{(\ref{eq:e_is_0})}}{=} \sum \limits_{i=1}^{k} \sum \limits_{j=1}^k E(M_iM_j) - E(M_i)E(M_j) = \sum \limits_{i=1}^{k} \sum \limits_{j=1}^k cov(M_i,M_j)
 \end{gathered}
 \end{equation*}
 \end{tightcenter}
 
 
-Eelneva põhjal piisab meile,arvestades eelnevalt äratoodud piiranguid $L_i$ keskväärtusele ja dispersioonile, suurima võimaliku $\lambda_3$ leidmiseks ruutvõrrandi $xPx^T$ maksimiseerimisest.
-Seega saame püstitada järgneva optimiseerimisprobleemi, mille lahendus annab meile otsitavad tõlgendused.  
+{\color{red}Eelneva põhjal piisab meile, arvestades eelnevalt äratoodud piiranguid $L_i$ keskväärtusele ja dispersioonile, suurima võimaliku $\lambda_3$ leidmiseks ruutvõrrandi $xPx^T$ maksimiseerimisest.
+Seega saame püstitada järgneva optimiseerimisprobleemi, mille lahendus annab meile otsitavad tõlgendused. } 
 
 
 
 \begin{gather}
 min ~ x^T(-P)x  \notag \\
 R_i^Tx = 0,  i \in {1,2,\ldots ,k} \notag \\
- R_i = (\underbrace{0,0,\ldots 0,0}_{(i-1)*l}p_{i1},p_{i2},p_{i3},p_{i4},\ldots,p_{il}, \underbrace{0,0, \ldots ,0,0}_{(n-i)*l})  \displaybreak[1] \\
+ R_i = (\underbrace{0,0,\ldots 0,0}_{(i-1)*l}p_{i1},p_{i2},p_{i3},p_{i4},\ldots,p_{il}, \underbrace{0,0, \ldots ,0,0}_{(k-i)*l})  \displaybreak[1] \\
 x^TQ_ix = 1, i \in \{1,2,...,k\}, ~
 Q_i =
 \begin{pmatrix}
@@ -1823,9 +1820,9 @@ p_{ik} & i = j
 
 \subsection{Hinnang saadud tõlgendusele}
 
-Selles peatükis välja pakutud idee kasutamise esimeseks eelduseks on püstitatud optimiseerimis ülesande lahendamine. Kahjuks on ülesanna sellist tüüpi, mille lahendamine üldjuhul on raske \footnote{Täpsemalt, tegemist on $NP-Hard$ probleemiga, ehk kui sellele ülesandele leidub polünomiaalse keerukusega lahendusalgoritmi, siis leidub selline algoritm ka paljudele teistele keerukatele probleemidele}. Küll on sellist tüüpi ülesandeid võimalik lõdvendada, levinud lõdvenduseks on probleemi teisendamine mittenegatiivseks optimiseerimisülesandeks \cite[2]{Aspremont2003} --  see lõdvendus ostuts antud probleemi puhul aga liiga lõdvaks.
+Selles peatükis välja pakutud idee kasutamise esimeseks eelduseks on püstitatud optimiseerimisülesande lahendamine. Kahjuks on ülesanne sellist tüüpi, mille lahendamine on üldjuhul raske \footnote{ Täpsemalt on tegemist \textit{NP-Hard} probleemiga: kui sellele ülesandele leidub polünomiaalse keerukusega lahendusalgoritm, siis leidub polünomiaalse keerukusega algoritm ka paljudele teistele rasketele probleemidele}. Küll on sellist tüüpi ülesandeid võimalik lõdvendada, levinud lõdvenduseks on probleemi teisendamine mittenegatiivseks optimiseerimisülesandeks \cite[2]{Aspremont2003} --  see lõdvendus osutus antud probleemi puhul aga liiga lõdvaks.
 
-Autor usub, et juhul kui õnnestub leida efektiivne viis optimiseerimisülesande lähendamiseks, väärib tutvusatud idee edasist uurimist - $\lambda_3$ tuntus tähendab seda, et juhul kui on põhjust uskuda, et  optimiseerimisülesande lahendamisel saadud tõlgendused suurendavad testi reliaablust, võib loota, et välja pakutud meetod leiab ka praktikas kasutamist.
+Autor leiab, et juhul, kui õnnestub leida efektiivne viis optimiseerimisülesande lähendamiseks, väärib tutvustatud idee edasist uurimist -- $\lambda_3$ tuntus tähendab seda, et juhul, kui on põhjust uskuda, et  optimiseerimisülesande lahendamisel saadud tõlgendused suurendavad testi reliaablust, võib loota, et väljapakutud meetod leiab ka praktikas kasutamist.
 
 \pagebreak
 
@@ -1834,12 +1831,12 @@ Autor usub, et juhul kui õnnestub leida efektiivne viis optimiseerimisülesande
 \addcontentsline{toc}{section}{Kokkuvõte}
 
 
-Antud bakalaureusetöös üritasime lahendada praktilist probleemi - kas reliaabluse hindamiseks leidub paremat hinnangut kui hetkel praktikas kastutav $\lambda_3$, tuntud ka kui Cronbachi $\alpha$?
+Antud bakalaureusetöös üritasime lahendada praktilist probleemi -- kas reliaabluse hindamiseks leidub paremat hinnangut, kui hetkel praktikas kasutatav $\lambda_3$, tuntud ka kui Cronbachi $\alpha$?
 
-Töö esimeses osas tutvustasime lugejale küsimustikega seotud terminoloogiat, sealhulgal valiidsuse ja reliaabluse mõisteid ning andsime vajalike taustinfo probleemi mõtestamiseks. Teises peatükkis jõudsime reliaabluse matemaatilise definitsioonini ning tutvustasime ühtlasi lugejale klassikalise testiteooria põhitulemus. Lisaks vaatlesime kuidas seostub küsimustiku vaadeldavate tulemuste, tegelike tulemuste ja mõõtevigade kovariatsioonimaatriksid tema reliaablusega. Kolmandas osas tuletasime viis reliaabluse alumist tõket - $\lambda_1$, $\lambda_2$, $\lambda_3$, $\lambda_4$ ja $glb$. Järgnevalt kirjeldasime töö käigus loodud programmiteeki ning põhjendasime selle implementeerimisel tehtud valikud. Töö viimases osas vaatlesime ühte võimaliku viisi küsimustiku reliaabluse parandamiseks - leides vastuste sobivama paigutuse intervallskaalal. 
+Töö esimeses osas tutvustasime lugejale küsimustikega seotud terminoloogiat, sealhulgas valiidsuse ja reliaabluse mõisteid ning esitasime vajaliku taustinfo probleemi mõtestamiseks. Teises peatükis jõudsime reliaabluse matemaatilise definitsioonini ning tutvustasime lugejale ühtlasi klassikalise testiteooria põhitulemus. Lisaks vaatlesime, kuidas seostuvad küsimustiku vaadeldavate tulemuste, tegelike tulemuste ja mõõtevigade kovariatsioonimaatriksid küsimustiku reliaablusega. Kolmandas osas tuletasime viis reliaabluse alumist tõket: $\lambda_1$, $\lambda_2$, $\lambda_3$, $\lambda_4$ ja $glb$. Järgnevalt kirjeldasime töö käigus loodud programmiteeki ning põhjendasime selle implementeerimisel tehtud valikuid. Töö viimases osas vaatlesime ühte võimalikku viisi küsimustiku reliaabluse parandamiseks, leides vastuste sobivama paigutuse intervallskaalal. 
 
 
-Autor loodab, et töö pakkus midagi nii psühholoogidele kui ka matemaatikutele. Psühholoogidel võib abi olla töös tutvustatud reliaabluse hinnangutest ning nende hinnangute praktikas leidmiseks loodud programmiteegist. Matemaatikute jaoks pakkus loodetavasti huvi nii töös tutvustatud  klassikaline testiteooria, mis pakkub matemaatiliselt ilusa raamistiku küsimustike analüüsimiseks kui ka töö viimases osas välja toodud idee küsimustike reliaabluse suurendamiseks.    
+Autor loodab, et töö pakkus midagi nii psühholoogidele kui ka matemaatikutele. Psühholoogidel võib abi olla töös tutvustatud reliaabluse hinnangutest ning nende hinnangute praktikas leidmiseks loodud programmiteegist. Matemaatikute jaoks pakkus loodetavasti huvi nii töös tutvustatud  klassikaline testiteooria, mis annab matemaatiliselt ilusa raamistiku nii küsimustike analüüsimiseks kui ka töö viimases osas esitatud idee küsimustike reliaabluse suurendamiseks.    
    
 
 
