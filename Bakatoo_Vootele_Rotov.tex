@@ -168,7 +168,7 @@
 
 Käesolevas bakalaureusetöös vaadeldakse erinevaid võimalusi valikvastustega küsimustike reliaabluse hindamiseks küsimustiku ühekordse läbiviimise põhjal. 
 
-Töö käigus antakse lugejale vajaminevad taustteadmised valikvastustega küsimustike ning nende karakteristikute kohta, defineeritakse reliaablus klassikalise testiteooria raamistikus ja antakse vajalik matemaatiline baas reliaabluse hinnangute tuletamiseks. Seejärel tuletatakse viis hinnangut reliaablusele, hinnatakse nende kasutatavust praktikas ja tutvustatakse autori loodud programmiteeki, mis sisaldab programme tuletatud hinnangute leidmiseks testi läbiviimisel saadud andmete põhjal.
+Töö käigus antakse lugejale vajaminevad taustteadmised valikvastustega küsimustike ning nende karakteristikute kohta, defineeritakse reliaablus klassikalise testiteooria raamistikus ja antakse vajalik matemaatiline baas reliaabluse hinnangute tuletamiseks. Seejärel tuletatakse viis hinnangut reliaablusele, hinnatakse nende kasutatavust praktikas ja tutvustatakse autori loodud programmiteeki, mis sisaldab programme tuletatud hinnangute leidmiseks testi läbiviimisel saadud andmete põhjal. Töö viimases osas tutvustab autor ühte võimaliku viisi küsimustike arvulise tõlgenduse parandamiseks.
 
 Töö annab eesti keelse ülevaate klassikalise testiteooria alustest matemaatilisest vaatepunktist lähtudes, ning tutvustab praktikule erinevaid võimalusi testi reliaabluse hindamiseks, sealjuures tutvustatake meetodeid, mis annavad paremaid tulemusi, kui hetkel enamlevinud meetodid. 
 
@@ -190,7 +190,7 @@ Töö annab eesti keelse ülevaate klassikalise testiteooria alustest matemaatil
 
 This bachelor's thesis is to give an overview of different possibilities of estimating reliability of Likert scale questionnaires based on a single admission.
 
-The thesis contains a short overview of necessary background information about Likert scales and their characteristics, definition of reliability in the context of the Classical Test Theory and mathematical basis for deriving estimations of reliability. Also, five estimates are derived and their usability in practise is discussed. Finally, the author gives a short overview of a programming library that implements methods for finding derived estimates based on data gathered from admissioning the questionnaire.
+The thesis contains a short overview of necessary background information about Likert scales and their characteristics, definition of reliability in the context of the Classical Test Theory and mathematical basis for deriving estimations of reliability. Also, five estimates are derived and their usability in practise is discussed. Afterwards, the author gives a short overview of a programming library that implements methods for finding derived estimates based on data gathered from admissioning the questionnaire. Finally, the author offers out a possible way for improving the quantitive intepretation of a questionnaire.
 
 The thesis gives an overview of the foundation of the Classical Test Theory in Estonian from mathematical viewpoint and introduces different possibilities for estimating the reliability of a questionnaire, some of which give better results than the ones in widespread use today.
 
@@ -203,13 +203,14 @@ The thesis gives an overview of the foundation of the Classical Test Theory in E
 
 \pagebreak
 
-\section{Sissejuhatus}
+\section*{Sissejuhatus}
+\addcontentsline{toc}{section}{Sissejuhatus}
 
 Käesolev bakalaureusetöö on ajendatud psühholoogide probleemist -- kuidas hinnata nende töövaldkonnas tihti kasutatavate valikvastustega küsimustike usaldusväärsust. 
 
 Sellest lähtuvalt on töö peamiseks eesmärgiks pakkuda valikvastustega küsimustike hindamiseks lihtsasti kasutatavaid kvantitatiivseid meetodeid. Lisaks sellele loodab autor pakkuda eestikeelset ülevaadet ühest valikvastustega testidega seotud matemaatiliselt raamistikust -- olemasolevad käsitlused on pigem praktilised abivahendid psühholoogidele. 
 
-Töö esimeses osas esitame vajaliku taustinfo, definitsioonid ja probleemipüstituse. Seejärel ehitame üles meile vajamineva osa probleemi vaatlemiseks sobivast matemaatilisest teooriast -- defineerime testi usaldusväärsuse ning rajame vundamendi selle hindamiseks. Järgnevalt tuletame mõningad erinevad usaldusväärsuse hinnangud. Töö viimases osas tutvustame autori loodud programmiteeki, mis sisaldab eelnevalt tutvustatud hinnangute implementatsioone.
+Töö esimeses osas esitame vajaliku taustinfo, definitsioonid ja probleemipüstituse. Seejärel ehitame üles meile vajamineva osa probleemi vaatlemiseks sobivast matemaatilisest teooriast -- defineerime testi usaldusväärsuse ning rajame vundamendi selle hindamiseks. Järgnevalt tuletame mõningad erinevad usaldusväärsuse hinnangud. Seejärel tutvustame autori loodud programmiteeki, mis sisaldab eelnevalt tutvustatud hinnangute implementatsioone. Töö viimases osas pakub autor välja alteratiivse lähenemise küsimustiku vastuste arvulistel tõlgendamisel.
 
 Autori eesmärgiks on, et antud tekst oleks lihtsasti järgitav keskmisele bakalaureuseõppe läbinud matemaatikatudengile -- meeldetuletuseks on valdkonna spetsiifilised matemaatilised definitsioonid ja tulemused töö käigus jooksvalt ära toodud. 
 
@@ -794,7 +795,7 @@ Vaatleme elementaarsündmustena hulga $I \times \Omega$ elemente ning eeldame, e
 \begin{equation*}
 P_p : 2^{I \times \Omega} \to \mathbb{R} \text{,}
 \end{equation*} 
-kus funktsiooni $P_p$ tõlgendame kui isiku $i \in I$ ja testi tulemuse $\omega \in \Omega$ koos esinemis sagedust.  {\color{red}vaata üle} 
+kus funktsiooni $P_p$  tõlgendame kui isiku $i \in I$ ja testi tulemuse $\omega \in \Omega$ koosesinemise sagedus.
 
 
 Paneme tähele, et sellel elementaarsündmuste hulgal võime määrata diskreetse juhusliku suuruse $T$, nii et
@@ -819,9 +820,6 @@ Paneme tähele, et kehtib $X = E + T$. Tõepoolest, olgu meil suvaline paar $\le
 \begin{equation*}
 X \left( ( i, \omega ) \right) = X_i (\omega) \overset{def}{=}  t_i + E_i(\omega) = T \left( (i, \omega) \right) + E \left( ( i, \omega ) \right) \text{.} 
 \end{equation*}
-
-Eeldame edaspidises, et $X$ ei ole konstante juhuslik suurus -- kui $X$ on konstantne, siis {\color{red}vaata üle}.
-
 
 
 \begin{meeldetuletus}
@@ -954,16 +952,16 @@ Paneme tähele, kuna $D[X] = D[T] + D[E]$, siis eelneva põhjal $\rho_{XX'} \in 
 
 
 
-Eelneva põhjal on selge, et väide  {\color{red}``}küsimustiku  reliaablus on suurem'' on samaväärne järgmise kolme väitega:
+Eelneva põhjal on selge, et väide  "`küsimustiku  reliaablus on suurem"' on samaväärne järgmise kolme väitega:
 \begin{enumerate}
 \item küsimustiku korrelatsioon paralleelse küsimustikuga on suurem,
 \item küsimustiku tegeliku tulemuse dispersioon on suurem võrreldes küsimustiku vaadeldava tulemuse dispersiooniga,
 \item küsimustiku mõõtmisvea dispersioon on väiksem võrreldes küsimustiku vaadeldava tulemuse dispersiooniga.
 \end{enumerate}
 
-Märgime, et klassikalise testiteooria raames defineeritud reliaablus sobib kokku eelmises peatükis antud mitteformaalse definitsiooniga, kuna küsimustik on iseendaga paralleelne {\color{red}võib lugeda ka sama testi uuesti läbiviimist sama vastajate kogumi peal}. Paneme tähele, et tegemist on suhteliselt nõrku eeldusi vajava teooriaga, kõige raskem on praktikas tagada süstemaatiliste vigade puudumine.
+Märgime, et klassikalise testiteooria raames defineeritud reliaablus sobib kokku eelmises peatükis antud mitteformaalse definitsiooniga, kuna küsimustik on iseendaga paralleelne. Paneme tähele, et tegemist on suhteliselt nõrku eeldusi vajava teooriaga, kõige raskem on praktikas tagada süstemaatiliste vigade puudumine.
 
-{\color{red} Kuna küsimustiku tegelik tulemus on suurus, mida me praktikas ei tea, ning ka paralleelsete testide läbiviimine ei ole tihti võimalik, on kasutusele on üritatud on võimalus testi reliaablust hinnata meie jaoks oluline.} Järgnevalt vaatleme, kuidas seda teha.
+{\color{green} Kuna küsimustiku tegelik tulemus on suurus, mida me praktikas ei tea, ning ka küsimustikuga paralleelse küsimustiku läbiviimine ei ole tihti võimalik, on kasutusele võetud erinevad võimalused testi reliaablust ühe läbiviimise käigus saadud informatsiooni põhjal hinnata.} Järgnevalt vaatleme, kuidas seda teha.
 
 
 
@@ -972,16 +970,16 @@ Märgime, et klassikalise testiteooria raames defineeritud reliaablus sobib kokk
 Järgnev käsitlus tugineb Jacksoni ja Anguwamba 1977. aasta artiklile.\cite{Jackson1977}
 Olgu meil vastajate populatsioon $I$, üle mille vaatleme küsimustikku, milles on $k$ k\"usimust. Vaatleme seda küsimustikku klassikalise testiteooria raames ning olgu $X$ küsimustiku vaadeldav tulemus, $T$ küsimustiku tegelik tulemus ning $E$ küsimustiku mõõtmisviga. Vaatleme iga küsimust kui ühest küsimusest koosnevat alamküsimustikku ja tähistame fikseeritud k\"usimuse $ i \in \left\lbrace 1,2,\ldots,k \right\rbrace$ vaadeldava tulemuse kui $X_i$, tegeliku tulemuse kui $T_i$ ning mõõtmisvea $E_i$. Seega $X = \sum \limits_{i=0}^{k} X_i$, $T = \sum \limits_{i=0}^{k} T_i$ ja $E = \sum \limits_{i=0}^{k} E_i$ . Paneme tähele, et kui eelnevas peatükis tähistasime alaindeksiga küsimusele vastajat, siis edaspidi tähistame sellega kindlat küsimust. 
 
-Vaatleme testi k\"usimuste tulemuste ja mõõtmisvea vektoreid: $\left( X_1, X_2, X_3, \ldots, X_n \right)$, $\left( T_1, T_2, T_3, \ldots, T_n \right)$, $\left( E_1, E_2, E_3, \ldots, E_n \right)$. Tähistame nende vektorite kovariatsioonimaatriksid\footnote{Praktikas ei ole kovariatsioonimaatriksid meile teada, kuid valimi põhjal on meil võimalik saada hinnang vaadeldavate tulemuste kovariatsioonimaatriksi kohta.} vastavalt $\Sigma_X, \Sigma_T, \Sigma_E$. Seega, 
+Vaatleme testi k\"usimuste tulemuste ja mõõtmisvea vektoreid: $\left( X_1, X_2, X_3, \ldots, X_k \right)$, $\left( T_1, T_2, T_3, \ldots, T_k \right)$, $\left( E_1, E_2, E_3, \ldots, E_k \right)$. Tähistame nende vektorite kovariatsioonimaatriksid\footnote{Praktikas ei ole kovariatsioonimaatriksid meile teada, kuid valimi põhjal on meil võimalik saada hinnang vaadeldavate tulemuste kovariatsioonimaatriksi kohta.} vastavalt $\Sigma_X, \Sigma_T, \Sigma_E$. Seega, 
 \small
 \begin{equation*}
 \Sigma_X = 
 \begin{pmatrix}
-cov \left(X_1,X_1 \right) && cov\left( X_1,X_2 \right) && cov \left( X_1,X_3 \right) && \cdots && cov \left( X_1,{\color{red}X_k} \right) \\
-cov \left(X_2, X_1 \right) && cov \left(X_2, X_2 \right) && cov \left(X_2, X_3 \right) && \cdots && cov \left(X_2, X_n \right) \\
-cov \left(X_3, X_1 \right) && cov \left(X_3, X_2 \right) && cov \left(X_3, X_3 \right) && \cdots && cov \left(X_n, X_n \right) \\
+cov \left(X_1,X_1 \right) && cov\left( X_1,X_2 \right) && cov \left( X_1,X_3 \right) && \cdots && cov \left( X_1,X_k \right) \\
+cov \left(X_2, X_1 \right) && cov \left(X_2, X_2 \right) && cov \left(X_2, X_3 \right) && \cdots && cov \left(X_2, X_k \right) \\
+cov \left(X_3, X_1 \right) && cov \left(X_3, X_2 \right) && cov \left(X_3, X_3 \right) && \cdots && cov \left(X_3, X_k \right) \\
 \vdots && \vdots && \vdots && \ddots && \vdots \\
-cov \left(X_n, X_1 \right) && cov \left(X_n, X_2 \right) && cov \left(X_n, X_3 \right) && \cdots && cov \left(X_n, X_n \right) \\
+cov \left(X_k, X_1 \right) && cov \left(X_k, X_2 \right) && cov \left(X_k, X_3 \right) && \cdots && cov \left(X_k, X_k \right) \\
 \end{pmatrix}.
 \end{equation*}
 \normalsize
@@ -1005,12 +1003,12 @@ cov \left(E_1,E_1 \right) && 0 && 0 && \cdots && 0 \\
 0 && cov \left(E_2, E_2 \right) && 0 && \cdots && 0 \\
 0 && 0 && cov \left(E_3, E_3 \right) && \cdots && 0 \\
 \vdots && \vdots && \vdots && \ddots && \vdots \\
-0 && 0 &&  0 && \cdots && cov \left(E_n, E_n \right) \\
+0 && 0 &&  0 && \cdots && cov \left(E_k, E_x \right) \\
 \end{pmatrix}.
 \end{equation}
 \normalsize
 
-Tähistame edaspidi maatriksi $\Sigma_X$ elemente  $x_{ij}$, maatriksi $\Sigma_T$ elemente $t_{ij}$ ning maatriksi $\Sigma_E$ peadiagonaali elemente $\theta_i$. Seega, kui $i \neq j$, siis $t_{ij} = x_{ij}$ ning $t_{ii} = x_{ii} - \theta_i$.
+Tähistame edaspidi maatriksi $\Sigma_X$ elemente kui  $x_{ij}$, maatriksi $\Sigma_T$ elemente  kui $t_{ij}$ ning maatriksi $\Sigma_E$ peadiagonaali elemente kui $\theta_i$. Seega, kui $i \neq j$, siis $t_{ij} = x_{ij}$ ning $t_{ii} = x_{ii} - \theta_i$.
 
 Tuletame meelde, et eelmises peatükis veendusime (\ref{eq:reliability}), et testi reliaablus võrdub avaldisega $1 - \frac{D \left[ E \right]}{D \left[ X \right]}$. 
 
@@ -1437,9 +1435,9 @@ Järgnevalt põhjendan lühidalt Pythoni eeliseid teegi realiseerimisel võrreld
 \end{enumerate}
 
 Meetodid, mis leiavad $\lambda_1$, $\lambda_2$, $\lambda_3$ ja $\lambda_4$, on implementeeritud nii programeerimiskeeles Python 2 kui ka programeerimiskeeles Python 3. Klass, mille abil saab leida $glb$, on implementeeritud sõltuvate teekide piirangute tõttu ainult programeerimiskeeles Python 2.  Programmiteegi loomisel on kasutatud teeke SciPy \cite{JonesE.;OliphantT;Peterson} ja CVXPY \cite{DiamondS;ChuE;Boyd2014}.
-Progarammiteek on kättesaadav aadressil {\color{red} SIIA AADRESS}
+Progarammiteek on kättesaadav aadressil \url{https://github.com/vootelerotov/CTT-reliability-estimates}.
 
-Järgnevalt esitame hinnangute implementatsioonid programmeerimiskeeles Python 2.
+Lisas \ref{appendix:code} on ära toodud hinnangute implementatsioonid programmeerimiskeeles Python 2.
 
 
 \section{Intervallskaal alternatiivne tõlgendamine}
@@ -1449,7 +1447,8 @@ Läheneme nüüd reliaabluse hinnangu parandamisele teisest suunast ning vaatlem
 
 \subsection{Vastuste tõlgendamine intervallskaalal}
 
-Käesoleva töö sissejuhatuses kirjeldasime viisi, kuidas vaikimisi teisendatakse vastused Likerti skaalalt  intervallskaalale. {\color{red}Märgime, et selline tõlgendus ei ole põhjendatud -- meil ei ole mingit teoreetilist põhjust eeldada, et kõik vastused on üksteisest sama "kaugel".}
+{\color{green}Käesoleva töö sissejuhatuses kirjeldasime viisi, kuidas vaikimisi teisendatakse vastused Likerti skaalalt  intervallskaalale.
+Märgime, et selline tõlgendus eeldab, vastused asuvad üksteisest sama  "` kaugel'". Usume, et paljudel juhtudel ei pea see eeldus paika. }
 
 Sellest tähelepanekust lähtub järgmine küsimus -- kas on võimalik leida paremat vastuste paigutust intervallskaalal kui vaikimisi meetod? Vaatleme kahte näidet:
 
@@ -1544,7 +1543,7 @@ Vaikimisi tõlgendusele alternatiive välja pakkudes peab meil olema mingi karak
 
 \subsection{Reliaabluse hindamine}
 
-Kuna küsimustiku reliaabluse leidmine ei ole praktiliselt võimalik, siis kasutame selle lähendusena eelmises peatükis käsitletud alumisi tõkkeid. On selge, et parima tulemuse annab võimalikult täpse alumise tõkke kasutamine. Kuna sobiva tõlgenduse leidmine taandub optimiseerimisülesandele, siis kasutame siinkohal konservatiivsemat alumist tõket $\lambda_3$: selle arvutamise lihtsus, mis ei omanud fikseeritud tõlgenduse korral tänapäevase aruvutusvõimuse juures erilist tähtsust, osutub siin oluliseks eeliseks.
+Kuna küsimustiku reliaabluse leidmine ei ole praktiliselt võimalik, siis kasutame selle lähendusena eelmises peatükis käsitletud alumisi tõkkeid. On selge, et parima tulemuse annab võimalikult täpse alumise tõkke kasutamine. Kuna sobiva tõlgenduse leidmine taandub optimiseerimisülesandele, siis kasutame siinkohal konservatiivsemat alumist tõket $\lambda_3$: selle arvutamise lihtsus, mis ei omanud fikseeritud tõlgenduse korral tänapäevase aruvutusvõimuse juures erilist tähtsust, osutub siin oluliseks eeliseks. {\color{green}Lisaks on $\lambda_3$ psühholoogide seas laialt tuntud ning seda kasutava meetodi juurutamine praktikas oleks ilmselt lihtsam, kui mõne nende jaoks tundmatut hinnangut kasutava meetodi juurutamine.} 
 
 \subsection{Lähenemise korrektsus}
 
@@ -1752,7 +1751,6 @@ x = (\mu_{11},\mu_{12},\ldots,\mu_{1l},\mu_{21},\mu_{22},\ldots,\mu_{nl})
 \end{equation*}
 \end{tightcenter}
 
- {\color{red}- - - SIIA MAANI REFAKTOREERITUD! EDASI OMAL VASTUTUSEL! - - - -} 
 
 Siis $xPx^T = \sum \limits_{i=1}^n \sum \limits_{j=1}^n cov(M_i,M_j)$. Veendume selles:
 \begin{tightcenter}
@@ -1823,70 +1821,27 @@ p_{ik} & i = j
 
 
 
-\section{Lahenduse idee}
-{\color{cyan} Kas probleem on SDP t\"u\"upi või SDP? Miidlale kirjutan vast nendes k\"usimustes. Mingi sissejuhatav jutt QCQP ja SDP kohta, kas algusessse taust peat\"ukki või pigem teksti sisse ?}
-P\"ustitatud optimeerimis probleemi lahendamiseks teisendame probleemi \textit{semidefinite programming(SDP)} t\"u\"upi optimeerimis\"ulesandeks ning seejärel lahendame saadud \"ulesande.
+\subsection{Hinnang saadud tõlgendusele}
 
-\section{Teisendus \textit{QCQP} t\"u\"upi \"ulesandelt \textit{SDP} t\"u\"upi \"ulesandele}
+Selles peatükis välja pakutud idee kasutamise esimeseks eelduseks on püstitatud optimiseerimis ülesande lahendamine. Kahjuks on ülesanna sellist tüüpi, mille lahendamine üldjuhul on raske \footnote{Täpsemalt, tegemist on $NP-Hard$ probleemiga, ehk kui sellele ülesandele leidub polünomiaalse keerukusega lahendusalgoritmi, siis leidub selline algoritm ka paljudele teistele keerukatele probleemidele}. Küll on sellist tüüpi ülesandeid võimalik lõdvendada, levinud lõdvenduseks on probleemi teisendamine mittenegatiivseks optimiseerimisülesandeks \cite[2]{Aspremont2003} --  see lõdvendus ostuts antud probleemi puhul aga liiga lõdvaks.
 
-Esiteks teisendame saadud \textit{QCQP} standartkujule. {\color{cyan} Siia vaja selgitusi, mis ja kuidas}
+Autor usub, et juhul kui õnnestub leida efektiivne viis optimiseerimisülesande lähendamiseks, väärib tutvusatud idee edasist uurimist - $\lambda_3$ tuntus tähendab seda, et juhul kui on põhjust uskuda, et  optimiseerimisülesande lahendamisel saadud tõlgendused suurendavad testi reliaablust, võib loota, et välja pakutud meetod leiab ka praktikas kasutamist.
 
-\begin{gather}
-min ~ -\theta  \notag \\
-x^T P x -\theta \leq 0 \notag \\
-R_i^Tx \leq 0,  i \in {1,2,...,n} \notag \\
--R_i^Tx \leq 0,  i \in {1,2,...,n} \notag \\
- R_i = (\underbrace{0,0,...0,0}_{(i-1)*5}p_ia,p_ib,p_ic,p_id,p_ie, \underbrace{0,0,...,0,0}_{(n-i)*5})  \displaybreak[1] \\
-x^T P_i x - 1 \leq 0, i \in \{1,2,...,n\} \notag \\
--(x^T P_i x - 1) \leq 0, i \in \{1,2,...,n\} \notag \\
-P_i =
-\begin{pmatrix}
-p_{ja}&0&\cdots &0 \\
-0&p_{jb}&\cdots &0 \\
-\vdots & \vdots & \ddots & \vdots \\
-0&0&\cdots & p_{je} \\
-\end{pmatrix} \notag \\
-p_j\alpha = 
-\begin{cases} 
-0 &  j \neq i  \\ 
-p_i\alpha & i = j 
-\end{cases}
-, \alpha \in \{a,b,c,d,e\} \notag
-\end{gather}\cite[116]{Epelman2007}
- 
-Paneme tähele, et kuna maatriksid $P,R_i,P_i$ on s\"ummeetrilised ja mittenegatiivselt määratud, siis  leiduvad maatrikisd $Q,S_i,Q_i$ nii, et $P = QQ^T, R_i= S_i S_i^T, P_i = Q_i Q_i^T$. Nende maatriksite leidmiseks saab kasutada Cholesky lahutust.   \cite[151]{Tammeraid1999} {\color{cyan}raamatus juhj positiivselt määratud maatriksi korral, mittenegatiivselt määratud maatriksi korral sellied maatriksid leiduvad, kuid ei ole alati \"uheselt määratud.}
+\pagebreak
 
-Olgu A mittenegatiivselt määratud maatriks, olgu $A = LL^{T}$.Märkame,  et kehtib järgnev:
 
-\begin{equation}
-\label{quadric_to_semidef}
-x^T A x \leq b^T x + c \iff \begin{pmatrix}
-I_k & L^T x \\
-x^T L & b^Tx+c \\
-\end{pmatrix} \succeq 0
-\end{equation}\cite[31]{Laurent2012}
+\section*{Kokkuvõte}
+\addcontentsline{toc}{section}{Kokkuvõte}
 
-Seega saame anda oma optimeerimisprobleemile järgneva kuju:
 
-\begin{gather}
-min ~ -\theta  \notag \\
-\begin{pmatrix}
-I_k & Q^Tx \\
-x^T Q & \theta \\
-\end{pmatrix} 
-\succeq 0 \notag \\
-R_i^Tx \leq 0,  i \in {1,2,...,n} \notag \\
--R_i^Tx \leq 0,  i \in {1,2,...,n} \notag \\
- R_i = (\underbrace{0,0,...0,0}_{(i-1)*5}p_ia,p_ib,p_ic,p_id,p_ie, \underbrace{0,0,...,0,0}_{(n-i)*5})  \displaybreak[1] \\
-\begin{pmatrix}
-I_k & Q_i^Tx \\
-t^T & 1 \\
-\end{pmatrix} \succeq 0 \notag \\
-\begin{pmatrix}
-I_k & Q_i^T x \\
--x^T Q_i & -1 \\
-\end{pmatrix} \succeq 0 \notag
-\end{gather}
+Antud bakalaureusetöös üritasime lahendada praktilist probleemi - kas reliaabluse hindamiseks leidub paremat hinnangut kui hetkel praktikas kastutav $\lambda_3$, tuntud ka kui Cronbachi $\alpha$?
+
+Töö esimeses osas tutvustasime lugejale küsimustikega seotud terminoloogiat, sealhulgal valiidsuse ja reliaabluse mõisteid ning andsime vajalike taustinfo probleemi mõtestamiseks. Teises peatükkis jõudsime reliaabluse matemaatilise definitsioonini ning tutvustasime ühtlasi lugejale klassikalise testiteooria põhitulemus. Lisaks vaatlesime kuidas seostub küsimustiku vaadeldavate tulemuste, tegelike tulemuste ja mõõtevigade kovariatsioonimaatriksid tema reliaablusega. Kolmandas osas tuletasime viis reliaabluse alumist tõket - $\lambda_1$, $\lambda_2$, $\lambda_3$, $\lambda_4$ ja $glb$. Järgnevalt kirjeldasime töö käigus loodud programmiteeki ning põhjendasime selle implementeerimisel tehtud valikud. Töö viimases osas vaatlesime ühte võimaliku viisi küsimustiku reliaabluse parandamiseks - leides vastuste sobivama paigutuse intervallskaalal. 
+
+
+Autor loodab, et töö pakkus midagi nii psühholoogidele kui ka matemaatikutele. Psühholoogidel võib abi olla töös tutvustatud reliaabluse hinnangutest ning nende hinnangute praktikas leidmiseks loodud programmiteegist. Matemaatikute jaoks pakkus loodetavasti huvi nii töös tutvustatud  klassikaline testiteooria, mis pakkub matemaatiliselt ilusa raamistiku küsimustike analüüsimiseks kui ka töö viimases osas välja toodud idee küsimustike reliaabluse suurendamiseks.    
+   
+
 
 
 \pagebreak
@@ -1923,7 +1878,7 @@ I_k & Q_i^T x \\
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=1\textwidth]{Example_Likert_Scale.png}
+\includegraphics[width=0.85\textwidth]{Example_Likert_Scale.png}
 \caption{Näide k\"usimustikust, kus on rakendatud Likerti skaalat; k\"usimused on paigutatud nende järjestikulisuse rõhutamiseks teljele\cite{Smith}}
 \label{likert2}
 \end{figure}
@@ -2064,10 +2019,7 @@ Järgnevad kovariatsioonimaatriksid on leitud ühe psühholoogilise küsimustiku
 
 
 
-\makeatletter
-\newpage
-\pagestyle{empty}
-\selectlanguage{estonian}
+
 
 \subsection{Programmiteegi implementatsioon}
 \label{appendix:code}
@@ -2323,9 +2275,16 @@ def calculate_sum_of_covariance_matrix_elements(cov_matrix,n = None):
 \captionof{Programm}{Eelnevates programmides kasutatud abifunktsioonid}
 \end{customFloatWrap}
 
+
 \pagebreak 
 
+\makeatletter
+\newpage
+\pagestyle{empty}
+\selectlanguage{estonian}
+\begin{titlepage}
 \subsection{Litsents}
+
 
 \textbf{Lihtlitsents lõputöö reprodutseerimiseks ja
 lõputöö üldsusele kätte\-saa\-davaks tegemiseks.}
@@ -2360,8 +2319,9 @@ seadusest tulenevaid õigusi.
 \begin{center}
 Tartu,  \today
 \end{center}
+
+\end{titlepage}
 \makeatother
 
 \end{subappendices}
-
 \end{document}

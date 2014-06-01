@@ -1,37 +1,36 @@
 \select@language {estonian}
 \contentsline {section}{Sisukord}{3}{section*.7}
-\contentsline {section}{\numberline {1}Sissejuhatus}{5}{section.1}
-\contentsline {section}{\numberline {2}Taustinfo ja probleemip\IeC {\"u}stitus}{6}{section.2}
-\contentsline {subsection}{\numberline {2.1}K\IeC {\"u}simustik, k\IeC {\"u}simus ja Likerti skaala}{6}{subsection.2.1}
-\contentsline {subsection}{\numberline {2.2}Likerti skaala t\IeC {\~o}lgendamine intervallskaalana}{6}{subsection.2.2}
-\contentsline {subsection}{\numberline {2.3}K\IeC {\"u}simustiku valiidsus}{7}{subsection.2.3}
-\contentsline {subsection}{\numberline {2.4}K\IeC {\"u}simustiku reliaablus}{8}{subsection.2.4}
-\contentsline {subsection}{\numberline {2.5}Valiidsuse ja reliaabluse suhe}{9}{subsection.2.5}
-\contentsline {subsection}{\numberline {2.6}Sisemine j\IeC {\"a}rjepidevus}{10}{subsection.2.6}
-\contentsline {subsection}{\numberline {2.7}Probleemi p\IeC {\"u}stitus}{11}{subsection.2.7}
-\contentsline {section}{\numberline {3}Reliaablus klassikalises testiteoorias}{12}{section.3}
-\contentsline {subsection}{\numberline {3.1}Reliaabluse definitsioon}{12}{subsection.3.1}
-\contentsline {subsection}{\numberline {3.2}Vajalikud taustteadmised reliaabluse hindamiseks}{19}{subsection.3.2}
-\contentsline {section}{\numberline {4}Reliaabluse alumised t\IeC {\~o}kked}{24}{section.4}
-\contentsline {subsection}{\numberline {4.1}Alumine t\IeC {\~o}ke $\lambda _1$}{24}{subsection.4.1}
-\contentsline {subsection}{\numberline {4.2}Alumine t\IeC {\~o}ke $\lambda _2$}{25}{subsection.4.2}
-\contentsline {subsection}{\numberline {4.3}Alumine t\IeC {\~o}ke $\lambda _3$}{28}{subsection.4.3}
-\contentsline {subsection}{\numberline {4.4}Alumine t\IeC {\~o}ke $\lambda _4$}{31}{subsection.4.4}
-\contentsline {subsection}{\numberline {4.5}Alumine t\IeC {\~o}ke glb}{31}{subsection.4.5}
-\contentsline {subsection}{\numberline {4.6}Hinnangute kasutatavus praktikas}{32}{subsection.4.6}
-\contentsline {section}{\numberline {5}Programmiteek}{33}{section.5}
-\contentsline {section}{\numberline {6}Intervallskaal alternatiivne t\IeC {\~o}lgendamine}{34}{section.6}
-\contentsline {subsection}{\numberline {6.1}Vastuste t\IeC {\~o}lgendamine intervallskaalal}{34}{subsection.6.1}
-\contentsline {subsection}{\numberline {6.2}Reliaabluse hindamine}{35}{subsection.6.2}
-\contentsline {subsection}{\numberline {6.3}L\IeC {\"a}henemise korrektsus}{35}{subsection.6.3}
-\contentsline {subsection}{\numberline {6.4}Alternatiivse t\IeC {\~o}lgenduse matemaatiline s\IeC {\~o}nastus}{36}{subsection.6.4}
-\contentsline {section}{\numberline {7}Lahenduse idee}{40}{section.7}
-\contentsline {section}{\numberline {8}Teisendus \textit {QCQP} t\"u\"upi \"ulesandelt \textit {SDP} t\"u\"upi \"ulesandele}{40}{section.8}
-\contentsline {section}{Viited}{42}{section*.21}
-\contentsline {section}{Lisa}{44}{section*.22}
+\contentsline {section}{Sissejuhatus}{5}{section*.8}
+\contentsline {section}{\numberline {1}Taustinfo ja probleemip\IeC {\"u}stitus}{6}{section.1}
+\contentsline {subsection}{\numberline {1.1}K\IeC {\"u}simustik, k\IeC {\"u}simus ja Likerti skaala}{6}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}Likerti skaala t\IeC {\~o}lgendamine intervallskaalana}{6}{subsection.1.2}
+\contentsline {subsection}{\numberline {1.3}K\IeC {\"u}simustiku valiidsus}{7}{subsection.1.3}
+\contentsline {subsection}{\numberline {1.4}K\IeC {\"u}simustiku reliaablus}{8}{subsection.1.4}
+\contentsline {subsection}{\numberline {1.5}Valiidsuse ja reliaabluse suhe}{9}{subsection.1.5}
+\contentsline {subsection}{\numberline {1.6}Sisemine j\IeC {\"a}rjepidevus}{10}{subsection.1.6}
+\contentsline {subsection}{\numberline {1.7}Probleemi p\IeC {\"u}stitus}{11}{subsection.1.7}
+\contentsline {section}{\numberline {2}Reliaablus klassikalises testiteoorias}{12}{section.2}
+\contentsline {subsection}{\numberline {2.1}Reliaabluse definitsioon}{12}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Vajalikud taustteadmised reliaabluse hindamiseks}{19}{subsection.2.2}
+\contentsline {section}{\numberline {3}Reliaabluse alumised t\IeC {\~o}kked}{24}{section.3}
+\contentsline {subsection}{\numberline {3.1}Alumine t\IeC {\~o}ke $\lambda _1$}{24}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Alumine t\IeC {\~o}ke $\lambda _2$}{25}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Alumine t\IeC {\~o}ke $\lambda _3$}{28}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.4}Alumine t\IeC {\~o}ke $\lambda _4$}{31}{subsection.3.4}
+\contentsline {subsection}{\numberline {3.5}Alumine t\IeC {\~o}ke glb}{31}{subsection.3.5}
+\contentsline {subsection}{\numberline {3.6}Hinnangute kasutatavus praktikas}{32}{subsection.3.6}
+\contentsline {section}{\numberline {4}Programmiteek}{33}{section.4}
+\contentsline {section}{\numberline {5}Intervallskaal alternatiivne t\IeC {\~o}lgendamine}{34}{section.5}
+\contentsline {subsection}{\numberline {5.1}Vastuste t\IeC {\~o}lgendamine intervallskaalal}{34}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Reliaabluse hindamine}{35}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.3}L\IeC {\"a}henemise korrektsus}{35}{subsection.5.3}
+\contentsline {subsection}{\numberline {5.4}Alternatiivse t\IeC {\~o}lgenduse matemaatiline s\IeC {\~o}nastus}{36}{subsection.5.4}
+\contentsline {subsection}{\numberline {5.5}Hinnang saadud t\IeC {\~o}lgendusele}{40}{subsection.5.5}
+\contentsline {section}{Kokkuv\IeC {\~o}te}{41}{section*.22}
+\contentsline {section}{Viited}{42}{section*.23}
+\contentsline {section}{Lisa}{44}{section*.24}
 \contentsline {subsection}{Lisa \numberline {A}N\IeC {\"a}ited k\IeC {\"u}simustikust Likerti skaalal}{44}{subsection.1.A}
 \contentsline {subsection}{Lisa \numberline {B}Empiirilised n\IeC {\"a}ited}{46}{subsection.1.B}
+\contentsline {subsection}{Lisa \numberline {C}Programmiteegi implementatsioon}{47}{subsection.1.C}
 \select@language {estonian}
-\contentsline {subsection}{Lisa \numberline {C}Programmiteegi implementatsioon}{48}{subsection.1.C}
-\contentsline {subsection}{Lisa \numberline {D}Litsents}{53}{subsection.1.D}
-\select@language {estonian}
+\contentsline {subsection}{Lisa \numberline {D}Litsents}{1}{subsection.1.D}
