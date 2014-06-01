@@ -321,6 +321,55 @@ Küsimustiku \textbf{valiidsus} on küsimustiku karakteristik, mis iseloomustab 
 
 Näitena, olgu meil küsimustikuks kaal, mille näitu vaatleme kui küsimustiku tulemust kaalutava isiku puhul. Kaal, mis näitab 75 kilo kaaluva inimese kaaluks 74,5 kilo omab kõrgemat valiidsust kui kaal, mis sama inimese puhul näitab kaaluks 65 kilo.   
 
+Küsimustiku valiidsuse mõtestamisel võime kasutada analoogiat täpsuslaskmisega - kui vaatleme küsimustikke kui laskureid, siis tähendaks see, et laskuri $A$ valiidus on kõrgem kui lasukuril $B$, seda, et tema tabamused asuksid märklaua keskkohale lähemal. Olukorda illustreerib järgnev joonis:
+
+\begin{figure}[H]
+\begin{naide}
+\begin{tikzpicture}
+ \path[use as bounding box] (-6em,7.5em) rectangle (30em,-8em);
+\filldraw[fill=red!80, draw=red!80] (5em,0) circle [radius=5.5em]; 
+\filldraw[fill=white!80, draw=white!80] (5em,0) circle [radius=5em];
+\filldraw[fill=red!80, draw=red!80] (5em,0) circle [radius=4.5em]; 
+\filldraw[fill=white!80, draw=white!80] (5em,0) circle [radius=4em];
+\filldraw[fill=red!80, draw=red!80] (5em,0) circle [radius=3.5em]; 
+\filldraw[fill=white!80, draw=white!80] (5em,0) circle [radius=3em];
+\filldraw[fill=red!80, draw=red!80] (5em,0) circle [radius=2.5em]; 
+\filldraw[fill=white!80, draw=white!80] (5em,0) circle [radius=2em];
+\filldraw[fill=red!80, draw=red!80] (5em,0) circle [radius=1.5em]; 
+\filldraw[fill=white!80, draw=white!80] (5em,0) circle [radius=1em];
+\filldraw[fill=red!80, draw=red!80] (5em,0) circle [radius=0.5em]; 
+
+
+\filldraw[fill=red!80, draw=red!80] (20em,0) circle [radius=5.5em]; 
+\filldraw[fill=white!80, draw=white!80] (20em,0) circle [radius=5em];
+\filldraw[fill=red!80, draw=red!80] (20em,0) circle [radius=4.5em]; 
+\filldraw[fill=white!80, draw=white!80] (20em,0) circle [radius=4em];
+\filldraw[fill=red!80, draw=red!80] (20em,0) circle [radius=3.5em]; 
+\filldraw[fill=white!80, draw=white!80] (20em,0) circle [radius=3em];
+\filldraw[fill=red!80, draw=red!80] (20em,0) circle [radius=2.5em]; 
+\filldraw[fill=white!80, draw=white!80] (20em,0) circle [radius=2em];
+\filldraw[fill=red!80, draw=red!80] (20em,0) circle [radius=1.5em]; 
+\filldraw[fill=white!80, draw=white!80] (20em,0) circle [radius=1em];
+\filldraw[fill=red!80, draw=red!80] (20em,0) circle [radius=0.5em]; 
+
+\foreach \x/\y in {5/0.75, 3.8/-0.45, 3.5/0, 5/0, 3.75/0.75, 4/1.25}
+	\filldraw[fill=black, draw=black] (\x em,\y em) circle [radius=0.2em];
+
+\foreach \x/\y in {17/0.75, 15.8/-0.45, 15.5/0, 17/0, 15.75/0.75, 16/1.25}
+	\filldraw[fill=black, draw=black] (\x em,\y em) circle [radius=0.2em];
+
+\node[label=below: A] at (5em,-6em) {};
+
+\node[label=below: B] at (20em,-6em) {};
+
+
+
+\end{tikzpicture}
+\end{naide}
+\caption{Kahe küsimustiku valiiduse võrdlus}
+\end{figure}
+
+
 Arusaadavatel põhjustel on testi valiidsus äärmiselt oluline ning psühholoogiliste testide valiidsuse hindamine on olnud üks psühhomeetria põhilistest uurimisobjektidest. Sellega seoses on palju tööd tehtud ka valiidsuse definitsiooni täpsemaks muutmisega, võrreldes selle paragrahvi alguses antud väga intuitiivse definitsiooniga. Kuna valiidsus on selle töö raames vajalik vaid taustinfona probleemi mõttestamisel tundub antud lihtne definitsioon aga sobivaim. 
 
 \subsection{Küsimustiku reliaablus}
@@ -328,6 +377,55 @@ Arusaadavatel põhjustel on testi valiidsus äärmiselt oluline ning psühholoog
 Küsimustiku \textbf{reliaablus} on küsimustiku karakteristik, mis kirjeldab, kui järjepidevad on subjekti erinevated mõõtmised sama küsimustikuga ehk küsimustiku stabiilsus. Nagu valiidsus, on ka reliaablus reeglina määratud intervall skaalal, nulli ja ühe vahel. 
 
 Näitena, kaal mis näitab 75 kilo kaaluva inimese kaaluks 74,5 kilo igal kaalumisel omab kõrgemat reliaablust kui kaal, mis näitab juhuslikult kas 74,5 kilo või 75,5 kilo. 
+
+Ka küsimustiku reliaabluse mõtestamisel saame kasutada analoogiat täpsuslaskmisega - sellisel juhul tähendaks see, et laskuri $A$ reliaablus on suurem kui laskuril $B$ seda, et laskuri $A$ tabamused asuvad üksteisele lähemal kui laskuri $B$ omad. Olukorda illustreerib järgnev joonis:
+
+\begin{figure}[H]
+\begin{naide}
+\begin{tikzpicture}
+ \path[use as bounding box] (-6em,7.5em) rectangle (30em,-8em);
+\filldraw[fill=red!80, draw=red!80] (5em,0) circle [radius=5.5em]; 
+\filldraw[fill=white!80, draw=white!80] (5em,0) circle [radius=5em];
+\filldraw[fill=red!80, draw=red!80] (5em,0) circle [radius=4.5em]; 
+\filldraw[fill=white!80, draw=white!80] (5em,0) circle [radius=4em];
+\filldraw[fill=red!80, draw=red!80] (5em,0) circle [radius=3.5em]; 
+\filldraw[fill=white!80, draw=white!80] (5em,0) circle [radius=3em];
+\filldraw[fill=red!80, draw=red!80] (5em,0) circle [radius=2.5em]; 
+\filldraw[fill=white!80, draw=white!80] (5em,0) circle [radius=2em];
+\filldraw[fill=red!80, draw=red!80] (5em,0) circle [radius=1.5em]; 
+\filldraw[fill=white!80, draw=white!80] (5em,0) circle [radius=1em];
+\filldraw[fill=red!80, draw=red!80] (5em,0) circle [radius=0.5em]; 
+
+
+\filldraw[fill=red!80, draw=red!80] (20em,0) circle [radius=5.5em]; 
+\filldraw[fill=white!80, draw=white!80] (20em,0) circle [radius=5em];
+\filldraw[fill=red!80, draw=red!80] (20em,0) circle [radius=4.5em]; 
+\filldraw[fill=white!80, draw=white!80] (20em,0) circle [radius=4em];
+\filldraw[fill=red!80, draw=red!80] (20em,0) circle [radius=3.5em]; 
+\filldraw[fill=white!80, draw=white!80] (20em,0) circle [radius=3em];
+\filldraw[fill=red!80, draw=red!80] (20em,0) circle [radius=2.5em]; 
+\filldraw[fill=white!80, draw=white!80] (20em,0) circle [radius=2em];
+\filldraw[fill=red!80, draw=red!80] (20em,0) circle [radius=1.5em]; 
+\filldraw[fill=white!80, draw=white!80] (20em,0) circle [radius=1em];
+\filldraw[fill=red!80, draw=red!80] (20em,0) circle [radius=0.5em]; 
+
+\foreach \x/\y in {6/4, 5.5/4.4, 6.4/3.5, 5.7/3.6, 6.7/4, 6.5/4.5}
+	\filldraw[fill=black, draw=black] (\x em,\y em) circle [radius=0.2em];
+
+\foreach \x/\y in {18/4, 17/3, 18/2, 19/4, 18.75/1.25, 21/2.25}
+	\filldraw[fill=black, draw=black] (\x em,\y em) circle [radius=0.2em];
+
+\node[label=below: A] at (5em,-6em) {};
+
+\node[label=below: B] at (20em,-6em) {};
+
+
+\end{tikzpicture}
+\end{naide}
+\caption{Kahe küsimustiku reliaabluse võrdlus}
+\end{figure}
+
+Paneme tähele, et kõrgem reliaablus ei tähenda tingimata seda, et testi valiidsus on suurem.
 
 Reliaabluse täpsema, matemaatilise definitsioone anname edaspidi. 
 
@@ -361,7 +459,40 @@ Valiidsuse ja reliaabluse suhestamisel kerkib kiiresti üles loomulik küsimus -
 \caption{Kaalumiste tulemused kahe erineva kaaluga kolmel katsel}
 \end{figure}
 
-Kui mõista valiidsust kui küsimusitku keskmist tulemust, siis võime väita, et esimene kaal on väiksema reliaabluse aga suurema valiidsusega. Selline valiidsuse mõttestamine aga ei ole küsimustike modeleleerimise korral otstarbekas - katsete kordamine on enamasti keeruline ning väheste mõõtmistulemuste põhjal ei ole võimalik tegeliku väikese reliaablusega testi tulemust välja selgitada. 
+Kui mõista valiidsust kui küsimusitku keskmist tulemust, siis võime väita, et esimene kaal on väiksema reliaabluse aga suurema valiidsusega. Selline valiidsuse mõttestamine aga ei ole küsimustike modeleleerimise korral otstarbekas - katsete kordamine on enamasti keeruline ning väheste mõõtmistulemuste põhjal ei ole võimalik tegeliku väikese reliaablusega testi tulemust välja selgitada.
+
+Alternaativeselt võime ka siin vaadelda olukorda kasutades täpsuslaskmise analoogiat. Olgu meil laskur $A$, kelle lasud paiknevad märklaua erinevates punktides, kuid nende geomeetriline keskpuntk asub märklaua keskel. Intuitiivselt on selge, et kui laskude arv on piiratud, ei ole selline definitsioon, mille korral laskuri $A$ valiidsus oleks suur, otstarbekas. Kirjeldatud olukorda illustreerib järgnev joonis:
+
+
+\begin{figure}[H]
+\begin{naide}
+\begin{tikzpicture}
+ \path[use as bounding box] (-12.5em,6em) rectangle (30em,-7.5em);
+\filldraw[fill=red!80, draw=red!80] (5em,0) circle [radius=5.5em]; 
+\filldraw[fill=white!80, draw=white!80] (5em,0) circle [radius=5em];
+\filldraw[fill=red!80, draw=red!80] (5em,0) circle [radius=4.5em]; 
+\filldraw[fill=white!80, draw=white!80] (5em,0) circle [radius=4em];
+\filldraw[fill=red!80, draw=red!80] (5em,0) circle [radius=3.5em]; 
+\filldraw[fill=white!80, draw=white!80] (5em,0) circle [radius=3em];
+\filldraw[fill=red!80, draw=red!80] (5em,0) circle [radius=2.5em]; 
+\filldraw[fill=white!80, draw=white!80] (5em,0) circle [radius=2em];
+\filldraw[fill=red!80, draw=red!80] (5em,0) circle [radius=1.5em]; 
+\filldraw[fill=white!80, draw=white!80] (5em,0) circle [radius=1em];
+\filldraw[fill=red!80, draw=red!80] (5em,0) circle [radius=0.5em]; 
+
+
+
+\foreach \x/\y in {7/4, 3/-4, 3/0, 7/0, 4/1, 6/-1}
+	\filldraw[fill=black, draw=black] (\x em,\y em) circle [radius=0.2em];
+
+\node[label=below: A] at (5em,-6em) {};
+
+
+\end{tikzpicture}
+\end{naide}
+\caption{Küsimistik, mille reliaablus on väike ja ``valiidsus'' suur}
+\end{figure}
+ 
 
 Seega, meie vaadeldava olukorra - psühholoogiliste testide - korral on mingi valiidsuse taseme jaoks tarvilik tingimus mingi reliaabluse tase.    
 
@@ -1295,6 +1426,20 @@ Seega, kui küsimustiku analüüsia mõtestab küsimustiku klassikalise testiteo
 Mainime siinkohal ära, et hinnangud $glb$ ja $\lambda_4$ võivad teatud tingimustel olla nihkega, probleem mis esineb praktikas, kui me kasutame kovariatsiooni maatriksi asemel tema valimi põhjal saadud hinnangut. Tõkke $glb$ korral vaata näiteks \cite{TenBerge2004}, $\lambda_4$ puhul \cite{Benton2013}.  
 
 
+\section{Programmiteek}
+
+Põhjendan siin ka lühidalt Pythoni eeliseid teegi realiseerimisel, alternatiividega (näiteks Java või MATLAB) võrreldes:
+\begin{enumerate}
+\item Python on hetkel keel, millega programeerimisalased õppingud tavaliselt algavad. Näiteks Tartu Ülikoolis õpetatakse programeerimist keeles Python nii matemaatika-informaatika teaduskonnale suunatud aines kui ka teistele huvilistele suunatud aines "Programeerimise alused", mida 2013/2014 aasta kevadel kuulas 150 inimest. Autor loodab, et nende seas on ka mõned psühholoogia tudengid.
+\item Pythonil on läbi NumPy ja SciPy teekide väga hea arvutuslik tugi soovitud hinnangute implementeerimiseks.
+\item Pythoni teek on väga lihte integreerida mõne veebiraamistikuga, mis võiks olla loodava teegi üks rakenduskohti.
+\item Python on vabavara ning kõigile tasuta kasutatav.
+\end{enumerate}
+
+Meetoditest, mis leiavad $\lambda_1$, $\lambda_2$, $\lambda_3$ ja $\lambda_4$ on implementeeritud nii programeerimiskeeles Python 2 kui ka programeerimiskeeles Python 3. Klass, mille abil saab leida $glb$, on implementeeritud sõltuvate teekide piirangute tõttu ainult programeerimiskeeles Python 2.  Kasutatud on teeke SciPy \cite{JonesE.;OliphantT;Peterson} ja CVXPY \cite{DiamondS;ChuE;Boyd2014}.
+Programmiteek on kättesaadav aadressil : {\color{red} SIIA AADRESS}
+
+Lisas \ref{appendix:code} on ära toodud programmiteegi implementatsioon programeerimiskeeles Python 2.
 
 
 
@@ -1413,6 +1558,7 @@ Küll aga kerkib siinkohal esile praktilisem probleem seoses $\lambda_3$ kasutam
 \begin{figure}[H]
 \begin{naide}
 \begin{tikzpicture}
+\draw (0,2em);
 \draw (0,0) -- (35em,0);
 \draw (2em,0.5em) -- (2em,-0.5em) node [label=below:$0$] {}; 
 \draw (33em,1em) -- (33em,-0.5em) node [label=below:$1$] {}; 
@@ -1652,8 +1798,8 @@ p_{(kl)(11)}&p_{(kl)(12)}&\cdots&p_{(kl)(kl)} \\
 \end{tightcenter}
 
 
-Eelneva põhjal piisab meile,arvestades eelnevalt äratoodud piiranguid $L_i$ keskväärtusele ja dispersioonile, suurima võimaliku $\lambda_3$ leidmiseks ruutvõrrandi $xPx^T$ maksimeerimisest.
-Seega saame püstitada järgneva optimeerimisprobleemi, mille lahendus annab meile otsitavad tõlgendused.  
+Eelneva põhjal piisab meile,arvestades eelnevalt äratoodud piiranguid $L_i$ keskväärtusele ja dispersioonile, suurima võimaliku $\lambda_3$ leidmiseks ruutvõrrandi $xPx^T$ maksimiseerimisest.
+Seega saame püstitada järgneva optimiseerimisprobleemi, mille lahendus annab meile otsitavad tõlgendused.  
 
 
 
@@ -1746,20 +1892,6 @@ I_k & Q_i^T x \\
 
 \pagebreak
 
-\section{Programmiteek}
-
-Põhjendan siin ka lühidalt Pythoni eeliseid teegi realiseerimisel, alternatiividega (näiteks Java või MATLAB) võrreldes:
-\begin{enumerate}
-\item Python on hetkel keel, millega programeerimisalased õppingud tavaliselt algavad. Näiteks Tartu Ülikoolis õpetatakse programeerimist keeles Python nii matemaatika-informaatika teaduskonnale suunatud aines kui ka teistele huvilistele suunatud aines "Programeerimise alused", mida 2013/2014 aasta kevadel kuulas 150 inimest. Autor loodab, et nende seas on ka mõned psühholoogia tudengid.
-\item Pythonil on läbi NumPy ja SciPy teekide väga hea arvutuslik tugi soovitud hinnangute implementeerimiseks.
-\item Pythoni teek on väga lihte integreerida mõne veebiraamistikuga, mis võiks olla loodava teegi üks rakenduskohti.
-\item Python on vabavara ning kõigile tasuta kasutatav.
-\end{enumerate}
-
-Meetoditest, mis leiavad $\lambda_1$, $\lambda_2$, $\lambda_3$ ja $\lambda_4$ on implementeeritud nii programeerimiskeeles Python 2 kui ka programeerimiskeeles Python 3. Klass, mille abil saab leida $glb$, on implementeeritud sõltuvate teekide piirangute tõttu ainult programeerimiskeeles Python 2.  Kasutatud on teeke SciPy \cite{JonesE.;OliphantT;Peterson} ja CVXPY \cite{DiamondS;ChuE;Boyd2014}.
-Programmiteek on kättesaadav aadressil : {\color{red} SIIA AADRESS}
-
-Lisas \ref{appendix:code} on ära toodud programmiteegi implementatsioon programeerimiskeeles Python 2.
 
 
 

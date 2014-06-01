@@ -5,33 +5,33 @@
 \contentsline {subsection}{\numberline {2.1}K\IeC {\"u}simustik, k\IeC {\"u}simus ja Likerti skaala}{6}{subsection.2.1}
 \contentsline {subsection}{\numberline {2.2}Likerti skaala t\IeC {\~o}lgendamine intervallskaalana}{6}{subsection.2.2}
 \contentsline {subsection}{\numberline {2.3}K\IeC {\"u}simustiku valiidsus}{7}{subsection.2.3}
-\contentsline {subsection}{\numberline {2.4}K\IeC {\"u}simustiku reliaablus}{7}{subsection.2.4}
-\contentsline {subsection}{\numberline {2.5}Valiidsuse ja reliaabluse suhe}{8}{subsection.2.5}
-\contentsline {subsection}{\numberline {2.6}Sisemine j\IeC {\"a}rjepidevus}{8}{subsection.2.6}
-\contentsline {subsection}{\numberline {2.7}Probleemi p\IeC {\"u}stitus}{9}{subsection.2.7}
-\contentsline {section}{\numberline {3}Reliaablus klassikalises testiteoorias}{10}{section.3}
-\contentsline {subsection}{\numberline {3.1}Reliaabluse definitsioon}{10}{subsection.3.1}
-\contentsline {subsection}{\numberline {3.2}Vajalikud taustteadmised reliaabluse hindamiseks}{17}{subsection.3.2}
-\contentsline {section}{\numberline {4}Alumised t\IeC {\~o}kked reliaablusele}{22}{section.4}
-\contentsline {subsection}{\numberline {4.1}Alumine t\IeC {\~o}ke $\lambda _1$}{22}{subsection.4.1}
-\contentsline {subsection}{\numberline {4.2}Alumine t\IeC {\~o}ke $\lambda _2$}{23}{subsection.4.2}
-\contentsline {subsection}{\numberline {4.3}Alumine t\IeC {\~o}ke $\lambda _3$}{26}{subsection.4.3}
-\contentsline {subsection}{\numberline {4.4}Alumine t\IeC {\~o}ke $\lambda _4$}{29}{subsection.4.4}
-\contentsline {subsection}{\numberline {4.5}Alumine t\IeC {\~o}ke $glb$}{29}{subsection.4.5}
-\contentsline {subsection}{\numberline {4.6}Hinnangute kasutatavus praktikas}{30}{subsection.4.6}
-\contentsline {section}{\numberline {5}Intervallskaal alternatiivne t\IeC {\~o}lgendamine}{31}{section.5}
-\contentsline {subsection}{\numberline {5.1}Vastuste t\IeC {\~o}lgendamine intervallskaalal}{31}{subsection.5.1}
-\contentsline {subsection}{\numberline {5.2}Reliaabluse hindamine}{32}{subsection.5.2}
-\contentsline {subsection}{\numberline {5.3}L\IeC {\"a}henemise korrektsus}{32}{subsection.5.3}
-\contentsline {subsection}{\numberline {5.4}Alternatiivse t\IeC {\~o}lgenduse matemaatiline s\IeC {\~o}nastus}{34}{subsection.5.4}
-\contentsline {section}{\numberline {6}Lahenduse idee}{37}{section.6}
-\contentsline {section}{\numberline {7}Teisendus \textit {QCQP} t\"u\"upi \"ulesandelt \textit {SDP} t\"u\"upi \"ulesandele}{37}{section.7}
-\contentsline {section}{\numberline {8}Programmiteek}{40}{section.8}
-\contentsline {section}{Viited}{41}{section*.18}
-\contentsline {section}{Lisa}{43}{section*.19}
-\contentsline {subsection}{Lisa \numberline {A}N\IeC {\"a}ited k\IeC {\"u}simustikust Likerti skaalal}{43}{subsection.1.A}
-\contentsline {subsection}{Lisa \numberline {B}Empiirilised n\IeC {\"a}ited}{45}{subsection.1.B}
+\contentsline {subsection}{\numberline {2.4}K\IeC {\"u}simustiku reliaablus}{8}{subsection.2.4}
+\contentsline {subsection}{\numberline {2.5}Valiidsuse ja reliaabluse suhe}{9}{subsection.2.5}
+\contentsline {subsection}{\numberline {2.6}Sisemine j\IeC {\"a}rjepidevus}{10}{subsection.2.6}
+\contentsline {subsection}{\numberline {2.7}Probleemi p\IeC {\"u}stitus}{11}{subsection.2.7}
+\contentsline {section}{\numberline {3}Reliaablus klassikalises testiteoorias}{12}{section.3}
+\contentsline {subsection}{\numberline {3.1}Reliaabluse definitsioon}{12}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Vajalikud taustteadmised reliaabluse hindamiseks}{19}{subsection.3.2}
+\contentsline {section}{\numberline {4}Alumised t\IeC {\~o}kked reliaablusele}{24}{section.4}
+\contentsline {subsection}{\numberline {4.1}Alumine t\IeC {\~o}ke $\lambda _1$}{24}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Alumine t\IeC {\~o}ke $\lambda _2$}{25}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Alumine t\IeC {\~o}ke $\lambda _3$}{28}{subsection.4.3}
+\contentsline {subsection}{\numberline {4.4}Alumine t\IeC {\~o}ke $\lambda _4$}{31}{subsection.4.4}
+\contentsline {subsection}{\numberline {4.5}Alumine t\IeC {\~o}ke $glb$}{31}{subsection.4.5}
+\contentsline {subsection}{\numberline {4.6}Hinnangute kasutatavus praktikas}{32}{subsection.4.6}
+\contentsline {section}{\numberline {5}Programmiteek}{33}{section.5}
+\contentsline {section}{\numberline {6}Intervallskaal alternatiivne t\IeC {\~o}lgendamine}{34}{section.6}
+\contentsline {subsection}{\numberline {6.1}Vastuste t\IeC {\~o}lgendamine intervallskaalal}{34}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}Reliaabluse hindamine}{35}{subsection.6.2}
+\contentsline {subsection}{\numberline {6.3}L\IeC {\"a}henemise korrektsus}{35}{subsection.6.3}
+\contentsline {subsection}{\numberline {6.4}Alternatiivse t\IeC {\~o}lgenduse matemaatiline s\IeC {\~o}nastus}{36}{subsection.6.4}
+\contentsline {section}{\numberline {7}Lahenduse idee}{40}{section.7}
+\contentsline {section}{\numberline {8}Teisendus \textit {QCQP} t\"u\"upi \"ulesandelt \textit {SDP} t\"u\"upi \"ulesandele}{40}{section.8}
+\contentsline {section}{Viited}{42}{section*.21}
+\contentsline {section}{Lisa}{44}{section*.22}
+\contentsline {subsection}{Lisa \numberline {A}N\IeC {\"a}ited k\IeC {\"u}simustikust Likerti skaalal}{44}{subsection.1.A}
+\contentsline {subsection}{Lisa \numberline {B}Empiirilised n\IeC {\"a}ited}{46}{subsection.1.B}
 \select@language {estonian}
-\contentsline {subsection}{Lisa \numberline {C}Programmiteegi implementatsioon}{47}{subsection.1.C}
-\contentsline {subsection}{Lisa \numberline {D}Litsents}{52}{subsection.1.D}
+\contentsline {subsection}{Lisa \numberline {C}Programmiteegi implementatsioon}{48}{subsection.1.C}
+\contentsline {subsection}{Lisa \numberline {D}Litsents}{53}{subsection.1.D}
 \select@language {estonian}
