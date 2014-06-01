@@ -26,6 +26,7 @@
 \usepackage{verbatim}
 \usepackage{tocbibind}
 \usepackage[toc,titletoc]{appendix}
+\usepackage{afterpage}
 
 \renewcommand{\appendixtocname}{Lisad}
 \renewcommand{\appendixtocname}{Lisad}
@@ -2278,8 +2279,8 @@ def calculate_sum_of_covariance_matrix_elements(cov_matrix,n = None):
 \makeatletter
 \newpage
 \pagestyle{empty}
-\selectlanguage{estonian}
-\begin{titlepage}
+\thispagestyle{empty}
+
 \subsection{Litsents}
 
 
@@ -2317,8 +2318,8 @@ seadusest tulenevaid õigusi.
 Tartu,  \today
 \end{center}
 
-\end{titlepage}
 \makeatother
+
 
 \end{subappendices}
 \end{document}

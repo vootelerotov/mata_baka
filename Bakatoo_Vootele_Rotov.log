@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.4.27)  1 JUN 2014 23:49
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.4.24)  2 JUN 2014 00:12
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
 **Bakatoo_Vootele_Rotov.tex
 (./Bakatoo_Vootele_Rotov.tex
 LaTeX2e <2011/06/27>
-Babel <3.9h> and hyphenation patterns for 28 languages loaded.
+Babel <3.9f> and hyphenation patterns for 26 languages loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
@@ -359,7 +359,7 @@ Package: enumerate 1999/03/05 v3.00 enumerate extensions (DPC)
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
 Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
 
-(/etc/texmf/tex/latex/config/color.cfg
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package color Info: Driver file: pdftex.def on input line 130.
@@ -384,8 +384,8 @@ Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
-(/etc/texmf/tex/latex/config/graphics.cfg
-File: graphics.cfg 2009/08/28 v1.8 graphics configuration of TeX Live
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
 )
 Package graphics Info: Driver file: pdftex.def on input line 91.
 )
@@ -393,13 +393,13 @@ Package graphics Info: Driver file: pdftex.def on input line 91.
 \Gin@req@width=\dimen121
 )
 (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2013/12/03 3.9h The Babel package
+Package: babel 2013/05/16 v3.9f The Babel package
 
 (/usr/share/texlive/texmf-dist/tex/generic/babel-estonian/estonian.ldf
 Language: estonian 2009/03/08 v1.0k Estonian support from the babel system
 
 (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
-File: babel.def 2013/12/03 3.9h Babel common definitions
+File: babel.def 2013/05/16 v3.9f Babel common definitions
 \babel@savecnt=\count103
 \U@D=\dimen122
 )
@@ -409,7 +409,7 @@ Warning: Hyphenation would work better for the T1 encoding.
 (/usr/share/texmf/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
 
-(/etc/texmf/tex/latex/config/color.cfg
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package xcolor Info: Package option `usenames' ignored on input line 216.
@@ -530,7 +530,7 @@ Package hyperref Info: Bookmarks ON on input line 4688.
 
 (/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip11
-Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5041.
 \XeTeXLinkMargin=\dimen124
@@ -802,26 +802,26 @@ Package: mdframed 2013/07/01 1.9b: mdframed
 (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
 (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3names.sty
 (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3bootstrap.sty
-Package: l3bootstrap 2014/01/04 v4640 L3 Experimental bootstrap code
+Package: l3bootstrap 2013/01/08 v4420 L3 Experimental bootstrap code
 )
-Package: l3names 2014/01/04 v4640 L3 Namespace for primitives
+Package: l3names 2012/12/07 v4346 L3 Namespace for primitives
 )
-Package: expl3 2014/01/07 v4646 L3 Experimental code bundle wrapper
+Package: expl3 2013/07/12 v4544 L3 Experimental code bundle wrapper
 
 (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3basics.sty
-Package: l3basics 2014/01/04 v4642 L3 Basic definitions
+Package: l3basics 2013/07/09 v4521 L3 Basic definitions
 )
 (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3expan.sty
-Package: l3expan 2014/01/04 v4642 L3 Argument expansion
+Package: l3expan 2013/07/09 v4521 L3 Argument expansion
 )
 (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3tl.sty
-Package: l3tl 2013/12/27 v4625 L3 Token lists
+Package: l3tl 2013/04/24 v4482 L3 Token lists
 )
 (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3seq.sty
-Package: l3seq 2013/12/14 v4623 L3 Sequences and stacks
+Package: l3seq 2013/05/26 v4500 L3 Sequences and stacks
 )
 (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3int.sty
-Package: l3int 2013/08/02 v4583 L3 Integers
+Package: l3int 2013/04/24 v4482 L3 Integers
 \c_max_int=\count137
 \l_tmpa_int=\count138
 \l_tmpb_int=\count139
@@ -829,26 +829,26 @@ Package: l3int 2013/08/02 v4583 L3 Integers
 \g_tmpb_int=\count141
 )
 (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3quark.sty
-Package: l3quark 2013/12/14 v4623 L3 Quarks
+Package: l3quark 2013/07/09 v4521 L3 Quarks
 )
 (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3prg.sty
-Package: l3prg 2014/01/04 v4642 L3 Control structures
+Package: l3prg 2013/04/24 v4482 L3 Control structures
 \g__prg_map_int=\count142
 )
 (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3clist.sty
-Package: l3clist 2013/07/28 v4581 L3 Comma separated lists
+Package: l3clist 2013/05/26 v4500 L3 Comma separated lists
 )
 (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3token.sty
-Package: l3token 2013/08/25 v4587 L3 Experimental token manipulation
+Package: l3token 2013/04/24 v4482 L3 Experimental token manipulation
 )
 (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3prop.sty
-Package: l3prop 2013/12/14 v4623 L3 Property lists
+Package: l3prop 2013/01/09 v4423 L3 Property lists
 )
 (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3msg.sty
-Package: l3msg 2013/07/28 v4581 L3 Messages
+Package: l3msg 2013/01/08 v4412 L3 Messages
 )
 (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3file.sty
-Package: l3file 2013/10/13 v4596 L3 File and I/O operations
+Package: l3file 2013/05/01 v4483 L3 File and I/O operations
 \l_iow_line_count_int=\count143
 \l__iow_target_count_int=\count144
 \l__iow_current_line_int=\count145
@@ -856,7 +856,7 @@ Package: l3file 2013/10/13 v4596 L3 File and I/O operations
 \l__iow_current_indentation_int=\count147
 )
 (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3skip.sty
-Package: l3skip 2013/07/28 v4581 L3 Dimensions and skips
+Package: l3skip 2013/01/13 v4444 L3 Dimensions and skips
 \c_zero_dim=\dimen174
 \c_max_dim=\dimen175
 \l_tmpa_dim=\dimen176
@@ -877,12 +877,12 @@ Package: l3skip 2013/07/28 v4581 L3 Dimensions and skips
 \g_tmpb_muskip=\muskip17
 )
 (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3keys.sty
-Package: l3keys 2013/12/08 v4614 L3 Experimental key-value interfaces
+Package: l3keys 2013/07/12 v4544 L3 Experimental key-value interfaces
 \g__keyval_level_int=\count148
 \l_keys_choice_int=\count149
 )
 (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3fp.sty
-Package: l3fp 2014/01/04 v4642 L3 Floating points
+Package: l3fp 2013/07/09 v4521 L3 Floating points
 \c__fp_leading_shift_int=\count150
 \c__fp_middle_shift_int=\count151
 \c__fp_trailing_shift_int=\count152
@@ -894,7 +894,7 @@ Package: l3fp 2014/01/04 v4642 L3 Floating points
 \c__fp_Bigg_trailing_shift_int=\count158
 )
 (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3box.sty
-Package: l3box 2013/07/28 v4581 L3 Experimental boxes
+Package: l3box 2013/04/24 v4482 L3 Experimental boxes
 \c_empty_box=\box39
 \l_tmpa_box=\box40
 \l_tmpb_box=\box41
@@ -902,7 +902,7 @@ Package: l3box 2013/07/28 v4581 L3 Experimental boxes
 \g_tmpb_box=\box43
 )
 (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3coffins.sty
-Package: l3coffins 2013/12/14 v4624 L3 Coffin code layer
+Package: l3coffins 2012/09/09 v4212 L3 Coffin code layer
 \l__coffin_internal_box=\box44
 \l__coffin_internal_dim=\dimen180
 \l__coffin_offset_x_dim=\dimen181
@@ -927,12 +927,12 @@ Package: l3coffins 2013/12/14 v4624 L3 Coffin code layer
 Package: l3color 2012/08/29 v4156 L3 Experimental color support
 )
 (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3luatex.sty
-Package: l3luatex 2013/07/28 v4581 L3 Experimental LuaTeX-specific functions
+Package: l3luatex 2012/08/03 v4049 L3 Experimental LuaTeX-specific functions
 \g__cctab_allocate_int=\count159
 \g__cctab_stack_int=\count160
 )
 (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3candidates.sty
-Package: l3candidates 2014/01/06 v4643 L3 Experimental additions to l3kernel
+Package: l3candidates 2013/07/09 v4521 L3 Experimental additions to l3kernel
 \l__box_top_dim=\dimen190
 \l__box_bottom_dim=\dimen191
 \l__box_left_dim=\dimen192
@@ -951,7 +951,7 @@ Normal \dimen register pool exhausted, switching to extended pool.
 \l__coffin_scaled_total_height_dim=\dimen257
 \l__coffin_scaled_width_dim=\dimen258
 ))
-Package: xparse 2013/12/31 v4634 L3 Experimental document command parser
+Package: xparse 2013/07/12 v4544 L3 Experimental document command parser
 \l__xparse_current_arg_int=\count161
 \l__xparse_m_args_int=\count162
 \l__xparse_mandatory_args_int=\count163
@@ -1078,10 +1078,10 @@ Package zref Info: New property: mdf@pagevalue on input line 895.
 Package: diagbox 2011/11/23 v2.0 Making table heads with diagonal lines
 
 (/usr/share/texlive/texmf-dist/tex/latex/pict2e/pict2e.sty
-Package: pict2e 2014/01/12 v0.2z Improved picture commands (HjG,RN,JT)
+Package: pict2e 2011/04/05 v0.2y Improved picture commands (HjG,RN,JT)
 
-(/etc/texmf/tex/latex/pict2e/pict2e.cfg
-File: pict2e.cfg 2009/08/05 v0.1s pict2e configuration for teTeX/TeXLive
+(/usr/share/texlive/texmf-dist/tex/latex/pict2e/pict2e.cfg
+File: pict2e.cfg 2011/04/05 v0.1t pict2e configuration for teTeX/TeXLive
 )
 Package pict2e Info: Driver file: pdftex.def on input line 119.
 Package pict2e Info: Driver file for pict2e: p2e-pdftex.def on input line 121.
@@ -1269,16 +1269,22 @@ Package: appendix 2009/09/02 v1.2b extra appendix facilities
 \c@@ppsavesec=\count193
 \c@@ppsaveapp=\count194
 )
+(/usr/share/texlive/texmf-dist/tex/latex/tools/afterpage.sty
+Package: afterpage 1995/10/27 v1.08 After-Page Package (DPC)
+\AP@output=\toks48
+\AP@partial=\box64
+\AP@footins=\box65
+)
 (/usr/share/texlive/texmf-dist/tex/latex/caption/newfloat.sty
 Package: newfloat 2013/05/11 v1.1-91 Defining new floating environments (AR)
 )
-Package newfloat Info: New float `mytype' with options `' on input line 35.
+Package newfloat Info: New float `mytype' with options `' on input line 36.
 \c@mytype=\count195
-Package newfloat Info: float type `mytype'=8 on input line 35.
-\@float@every@Programm=\toks48
+Package newfloat Info: float type `mytype'=8 on input line 36.
+\@float@every@Programm=\toks49
 \c@Programm=\count196
-\thisOne=\box64
-\boxTwo=\box65
+\thisOne=\box66
+\boxTwo=\box67
 
 (./Bakatoo_Vootele_Rotov.aux
 
@@ -1287,20 +1293,20 @@ LaTeX Warning: Label `likert_question' multiply defined.
 )
 \openout1 = `Bakatoo_Vootele_Rotov.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 125.
-LaTeX Font Info:    ... okay on input line 125.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 125.
-LaTeX Font Info:    ... okay on input line 125.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 125.
-LaTeX Font Info:    ... okay on input line 125.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 125.
-LaTeX Font Info:    ... okay on input line 125.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 125.
-LaTeX Font Info:    ... okay on input line 125.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 125.
-LaTeX Font Info:    ... okay on input line 125.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 125.
-LaTeX Font Info:    ... okay on input line 125.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 126.
+LaTeX Font Info:    ... okay on input line 126.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 126.
+LaTeX Font Info:    ... okay on input line 126.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 126.
+LaTeX Font Info:    ... okay on input line 126.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 126.
+LaTeX Font Info:    ... okay on input line 126.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 126.
+LaTeX Font Info:    ... okay on input line 126.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 126.
+LaTeX Font Info:    ... okay on input line 126.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 126.
+LaTeX Font Info:    ... okay on input line 126.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1340,20 +1346,35 @@ LaTeX Font Info:    ... okay on input line 125.
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count197
 \scratchdimen=\dimen277
-\scratchbox=\box66
+\scratchbox=\box68
 \nofMPsegments=\count198
 \nofMParguments=\count199
-\everyMPshowfont=\toks49
+\everyMPshowfont=\toks50
 \MPscratchCnt=\count200
 \MPscratchDim=\dimen278
 \MPnumerator=\count201
 Normal \count register pool exhausted, switching to extended pool.
 \makeMPintoPDFobject=\count277
-\everyMPtoPDFconversion=\toks50
+\everyMPtoPDFconversion=\toks51
+) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
 )
-\AtBeginShipoutBox=\box67
-Package hyperref Info: Link coloring OFF on input line 125.
- (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+\AtBeginShipoutBox=\box69
+Package hyperref Info: Link coloring OFF on input line 126.
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
@@ -1361,9 +1382,9 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count278
 )
-LaTeX Info: Redefining \ref on input line 125.
-LaTeX Info: Redefining \pageref on input line 125.
-LaTeX Info: Redefining \nameref on input line 125.
+LaTeX Info: Redefining \ref on input line 126.
+LaTeX Info: Redefining \pageref on input line 126.
+LaTeX Info: Redefining \nameref on input line 126.
 
 (./Bakatoo_Vootele_Rotov.out) (./Bakatoo_Vootele_Rotov.out)
 \@outlinefile=\write6
@@ -1380,19 +1401,19 @@ Package caption Info: End \AtBeginDocument code.
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-Overfull \hbox (32.48053pt too wide) in paragraph at lines 169--170
+Overfull \hbox (32.48053pt too wide) in paragraph at lines 170--171
 []\OT1/cmr/m/n/12 K[]aesolevas ba-ka-lau-reuset[]o[]os vaa-del-dak-se eri-ne-va
 id v[]oimalusi va-lik-vas-tus-te-ga k[]usimustike
  []
 
 
-Overfull \hbox (9.83354pt too wide) in paragraph at lines 171--172
+Overfull \hbox (9.83354pt too wide) in paragraph at lines 172--173
 []\OT1/cmr/m/n/12 T[]o[]o k[]aigus an-tak-se lu-ge-ja-le vaja-mi-ne-vad taust-t
 ead-mised va-lik-vas-tus-te-ga k[]usimustike
  []
 
 
-Overfull \hbox (17.87236pt too wide) in paragraph at lines 176--177
+Overfull \hbox (17.87236pt too wide) in paragraph at lines 177--178
 []\OT1/cmr/m/sc/12 v[]otmes[]onad: \OT1/cmr/m/n/12 ps[]uhhomeetria, klas-si-ka-
 li-ne tes-ti-teoo-ria, va-lik-vas-tus-te-ga k[]usimustikud,
  []
@@ -1401,7 +1422,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.179 
+l.180 
        [1] [2] (./Bakatoo_Vootele_Rotov.toc
 LaTeX Font Info:    Try loading font information for U+msa on input line 5.
 
@@ -1417,1551 +1438,1551 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 \openout7 = `Bakatoo_Vootele_Rotov.toc'.
 
  [4]
-Overfull \hbox (10.94766pt too wide) in paragraph at lines 217--218
+Overfull \hbox (10.94766pt too wide) in paragraph at lines 218--219
 []\OT1/cmr/m/n/12 Lisaks loo-dab au-tor, et loo-dud prog-ram-mi-teek pak-kub hu
 -vi ka ps[]uhholoogidele. 
  []
 
 [5]
-Overfull \hbox (9.47244pt too wide) in paragraph at lines 230--231
+Overfull \hbox (9.47244pt too wide) in paragraph at lines 231--232
 \OT1/cmr/m/n/12 J[]argnevalt an-na-me prob-lee-mi m[]otestamiseks va-ja-li-kud 
 taus-ta-tead-mised ning peat[]uki
  []
 
 
-Overfull \hbox (36.19167pt too wide) in paragraph at lines 234--235
+Overfull \hbox (36.19167pt too wide) in paragraph at lines 235--236
 \OT1/cmr/m/n/12 see t[]ahendab, et po-si-tiiv-se-te ja ne-ga-tiiv-se-te vas-tu-
 se-va-rian-ti-de arv on sa-ma. N[]aiteks:[][][] 
  []
 
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 262--263
+Overfull \hbox (6.0pt too wide) in paragraph at lines 263--264
 [][][][][][][] 
  []
 
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 310--311
+Overfull \hbox (6.0pt too wide) in paragraph at lines 311--312
 [][][][][][][] 
  []
 
 [6]
-Overfull \hbox (4.74193pt too wide) in paragraph at lines 369--370
+Overfull \hbox (4.74193pt too wide) in paragraph at lines 370--371
 [][] 
  []
 
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 370--371
+Overfull \hbox (6.0pt too wide) in paragraph at lines 371--372
 [][][][][][][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 370--371
+Underfull \hbox (badness 10000) in paragraph at lines 371--372
 
  []
 
 [7]
-Overfull \hbox (9.93677pt too wide) in paragraph at lines 379--380
+Overfull \hbox (9.93677pt too wide) in paragraph at lines 380--381
 \OT1/cmr/m/n/12 K[]usimustiku \OT1/cmr/bx/n/12 re-liaab-lus \OT1/cmr/m/n/12 on 
 k[]usimustiku ka-rak-te-ris-tik, mis kir-jel-dab, kui j[]arjepidevad
  []
 
 
-Overfull \hbox (18.51123pt too wide) in paragraph at lines 383--384
+Overfull \hbox (18.51123pt too wide) in paragraph at lines 384--385
 []\OT1/cmr/m/n/12 Ka k[]usimustiku re-liaab-lu-se m[]otestamisel saa-me ka-su-t
 a-da ana-loo-giat t[]apsuslaskmisega.
  []
 
 
-Overfull \hbox (4.74193pt too wide) in paragraph at lines 425--426
+Overfull \hbox (4.74193pt too wide) in paragraph at lines 426--427
 [][] 
  []
 
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 426--427
+Overfull \hbox (6.0pt too wide) in paragraph at lines 427--428
 [][][][][][][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 426--427
+Underfull \hbox (badness 10000) in paragraph at lines 427--428
 
  []
 
 [8]
-Overfull \hbox (6.0pt too wide) in paragraph at lines 460--461
+Overfull \hbox (6.0pt too wide) in paragraph at lines 461--462
 [][][][][][][] 
  []
 
 
-Overfull \hbox (81.11613pt too wide) in paragraph at lines 491--492
+Overfull \hbox (81.11613pt too wide) in paragraph at lines 492--493
 [][] 
  []
 
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 492--493
+Overfull \hbox (6.0pt too wide) in paragraph at lines 493--494
 [][][][][][][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 492--493
+Underfull \hbox (badness 10000) in paragraph at lines 493--494
 
  []
 
 [9]
-Overfull \hbox (6.0pt too wide) in paragraph at lines 565--566
+Overfull \hbox (6.0pt too wide) in paragraph at lines 566--567
 [][][][][][][] 
  []
 
 [10] [11]
-Underfull \hbox (badness 10000) in paragraph at lines 682--683
+Underfull \hbox (badness 10000) in paragraph at lines 683--684
 []\OT1/cmr/m/sc/8 meeldetuletuseks
  []
 
 
-LaTeX Warning: Citation `Parna2013' on page 12 undefined on input line 684.
+LaTeX Warning: Citation `Parna2013' on page 12 undefined on input line 685.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 684--685
+Underfull \hbox (badness 10000) in paragraph at lines 685--686
 []\OT1/cmr/bx/n/12 Definitsioon. []\OT1/cmr/m/it/12 Ele-men-taars[]undmuseks \O
 T1/cmr/m/n/12 ni-me-ta-tak-se ju-hus-li-ku kat-se
  []
 
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 700.
+(mdframed)              on input line 701.
 
-Overfull \hbox (1.88602pt too wide) in paragraph at lines 700--700
+Overfull \hbox (1.88602pt too wide) in paragraph at lines 701--701
 [][] 
  []
 
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 717--718
+Overfull \hbox (6.0pt too wide) in paragraph at lines 718--719
 [][][][][][][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 717--718
+Underfull \hbox (badness 10000) in paragraph at lines 718--719
 
  []
 
 [12]
-Underfull \hbox (badness 10000) in paragraph at lines 731--732
+Underfull \hbox (badness 10000) in paragraph at lines 732--733
 []\OT1/cmr/m/sc/8 meeldetuletuseks
  []
 
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 744.
+(mdframed)              on input line 745.
 
-Overfull \hbox (1.88602pt too wide) in paragraph at lines 744--744
+Overfull \hbox (1.88602pt too wide) in paragraph at lines 745--745
 [][] 
  []
 
 [13]
-Overfull \hbox (6.52646pt too wide) in paragraph at lines 752--753
+Overfull \hbox (6.52646pt too wide) in paragraph at lines 753--754
 []\OT1/cmr/m/n/12 Kuna ju-hus-li-ku suu-ru-se $\OML/cmm/m/it/12 X[]$ \OT1/cmr/m
 /n/12 v[]oimalike v[]a[]artuste arv on l[]oplik, on ka te-ma keskv[]a[]artus
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 758--759
+Underfull \hbox (badness 10000) in paragraph at lines 759--760
 []\OT1/cmr/m/sc/8 meeldetuletuseks
  []
 
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 777.
+(mdframed)              on input line 778.
 
-Overfull \hbox (1.88602pt too wide) in paragraph at lines 777--777
+Overfull \hbox (1.88602pt too wide) in paragraph at lines 778--778
 [][] 
  []
 
 [14]
-Underfull \hbox (badness 10000) in paragraph at lines 823--824
+Underfull \hbox (badness 10000) in paragraph at lines 824--825
 []\OT1/cmr/m/sc/8 meeldetuletuseks
  []
 
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 836.
+(mdframed)              on input line 837.
 
-Overfull \hbox (1.88602pt too wide) in paragraph at lines 836--836
+Overfull \hbox (1.88602pt too wide) in paragraph at lines 837--837
 [][] 
  []
 
 
-Overfull \vbox (13.46864pt too high) detected at line 836
+Overfull \vbox (13.46864pt too high) detected at line 837
  []
 
 Package mdframed Info: Box was splittet wrong
  starting loop to iterate the splitting point
-(mdframed)              on input line 836.
+(mdframed)              on input line 837.
 
-Overfull \vbox (14.46864pt too high) detected at line 836
+Overfull \vbox (14.46864pt too high) detected at line 837
  []
 
 
-Overfull \vbox (15.46864pt too high) detected at line 836
+Overfull \vbox (15.46864pt too high) detected at line 837
  []
 
 
-Overfull \vbox (16.46864pt too high) detected at line 836
+Overfull \vbox (16.46864pt too high) detected at line 837
  []
 
 
-Overfull \vbox (17.46864pt too high) detected at line 836
+Overfull \vbox (17.46864pt too high) detected at line 837
  []
 
 
-Overfull \vbox (18.46864pt too high) detected at line 836
+Overfull \vbox (18.46864pt too high) detected at line 837
  []
 
 
-Overfull \vbox (19.46864pt too high) detected at line 836
+Overfull \vbox (19.46864pt too high) detected at line 837
  []
 
 
-Overfull \vbox (20.46864pt too high) detected at line 836
+Overfull \vbox (20.46864pt too high) detected at line 837
  []
 
 
-Overfull \vbox (21.46864pt too high) detected at line 836
+Overfull \vbox (21.46864pt too high) detected at line 837
  []
 
 
-Overfull \vbox (22.46864pt too high) detected at line 836
+Overfull \vbox (22.46864pt too high) detected at line 837
  []
 
 
-Overfull \vbox (23.46864pt too high) detected at line 836
+Overfull \vbox (23.46864pt too high) detected at line 837
  []
 
 
-Overfull \vbox (24.46864pt too high) detected at line 836
+Overfull \vbox (24.46864pt too high) detected at line 837
  []
 
 
-Overfull \vbox (25.46864pt too high) detected at line 836
+Overfull \vbox (25.46864pt too high) detected at line 837
  []
 
 
-Overfull \vbox (26.46864pt too high) detected at line 836
+Overfull \vbox (26.46864pt too high) detected at line 837
  []
 
 
-Overfull \vbox (27.46864pt too high) detected at line 836
+Overfull \vbox (27.46864pt too high) detected at line 837
  []
 
 
-Overfull \vbox (28.46864pt too high) detected at line 836
+Overfull \vbox (28.46864pt too high) detected at line 837
  []
 
 
-Overfull \vbox (29.46864pt too high) detected at line 836
+Overfull \vbox (29.46864pt too high) detected at line 837
  []
 
 
-Overfull \vbox (30.46864pt too high) detected at line 836
+Overfull \vbox (30.46864pt too high) detected at line 837
  []
 
 
-Overfull \vbox (31.46864pt too high) detected at line 836
+Overfull \vbox (31.46864pt too high) detected at line 837
  []
 
 
-Overfull \vbox (32.46864pt too high) detected at line 836
+Overfull \vbox (32.46864pt too high) detected at line 837
  []
 
 
-Overfull \vbox (33.46864pt too high) detected at line 836
+Overfull \vbox (33.46864pt too high) detected at line 837
  []
 
 
-Overfull \vbox (34.46864pt too high) detected at line 836
+Overfull \vbox (34.46864pt too high) detected at line 837
  []
 
 
-Overfull \vbox (35.46864pt too high) detected at line 836
+Overfull \vbox (35.46864pt too high) detected at line 837
  []
 
 
-Overfull \vbox (36.46864pt too high) detected at line 836
+Overfull \vbox (36.46864pt too high) detected at line 837
  []
 
 
-Overfull \vbox (37.46864pt too high) detected at line 836
+Overfull \vbox (37.46864pt too high) detected at line 837
  []
 
 
-Overfull \vbox (38.46864pt too high) detected at line 836
+Overfull \vbox (38.46864pt too high) detected at line 837
  []
 
 
-Overfull \vbox (39.46864pt too high) detected at line 836
+Overfull \vbox (39.46864pt too high) detected at line 837
  []
 
 
-Overfull \vbox (40.46864pt too high) detected at line 836
+Overfull \vbox (40.46864pt too high) detected at line 837
  []
 
 
-Overfull \vbox (41.46864pt too high) detected at line 836
+Overfull \vbox (41.46864pt too high) detected at line 837
  []
 
 
-Overfull \vbox (42.46864pt too high) detected at line 836
+Overfull \vbox (42.46864pt too high) detected at line 837
  []
 
 
-Overfull \vbox (43.46864pt too high) detected at line 836
+Overfull \vbox (43.46864pt too high) detected at line 837
  []
 
 
-Overfull \vbox (44.46864pt too high) detected at line 836
+Overfull \vbox (44.46864pt too high) detected at line 837
  []
 
 
-Overfull \vbox (45.46864pt too high) detected at line 836
+Overfull \vbox (45.46864pt too high) detected at line 837
  []
 
 
-Overfull \vbox (46.46864pt too high) detected at line 836
+Overfull \vbox (46.46864pt too high) detected at line 837
  []
 
 
-Overfull \vbox (47.46864pt too high) detected at line 836
+Overfull \vbox (47.46864pt too high) detected at line 837
  []
 
 
-Overfull \vbox (48.46864pt too high) detected at line 836
+Overfull \vbox (48.46864pt too high) detected at line 837
  []
 
 
-Overfull \vbox (49.46864pt too high) detected at line 836
+Overfull \vbox (49.46864pt too high) detected at line 837
  []
 
 
-Overfull \vbox (50.46864pt too high) detected at line 836
+Overfull \vbox (50.46864pt too high) detected at line 837
  []
 
 
-Overfull \vbox (51.46864pt too high) detected at line 836
+Overfull \vbox (51.46864pt too high) detected at line 837
  []
 
 
-Overfull \vbox (52.46864pt too high) detected at line 836
+Overfull \vbox (52.46864pt too high) detected at line 837
  []
 
 
-Overfull \vbox (53.46864pt too high) detected at line 836
+Overfull \vbox (53.46864pt too high) detected at line 837
  []
 
 
-Overfull \vbox (54.46864pt too high) detected at line 836
+Overfull \vbox (54.46864pt too high) detected at line 837
  []
 
 
-Overfull \vbox (55.46864pt too high) detected at line 836
+Overfull \vbox (55.46864pt too high) detected at line 837
  []
 
 
-Overfull \vbox (56.46864pt too high) detected at line 836
+Overfull \vbox (56.46864pt too high) detected at line 837
  []
 
 
-Overfull \vbox (57.46864pt too high) detected at line 836
+Overfull \vbox (57.46864pt too high) detected at line 837
  []
 
 
-Overfull \vbox (58.46864pt too high) detected at line 836
+Overfull \vbox (58.46864pt too high) detected at line 837
  []
 
 
-Overfull \vbox (59.46864pt too high) detected at line 836
+Overfull \vbox (59.46864pt too high) detected at line 837
  []
 
 
-Overfull \vbox (60.46864pt too high) detected at line 836
+Overfull \vbox (60.46864pt too high) detected at line 837
  []
 
 
-Overfull \vbox (61.46864pt too high) detected at line 836
+Overfull \vbox (61.46864pt too high) detected at line 837
  []
 
 
-Overfull \vbox (62.46864pt too high) detected at line 836
+Overfull \vbox (62.46864pt too high) detected at line 837
  []
 
 
-Overfull \vbox (63.46864pt too high) detected at line 836
+Overfull \vbox (63.46864pt too high) detected at line 837
  []
 
 
-Overfull \vbox (64.46864pt too high) detected at line 836
+Overfull \vbox (64.46864pt too high) detected at line 837
  []
 
 
-Overfull \vbox (65.46864pt too high) detected at line 836
+Overfull \vbox (65.46864pt too high) detected at line 837
  []
 
 
-Overfull \vbox (66.46864pt too high) detected at line 836
+Overfull \vbox (66.46864pt too high) detected at line 837
  []
 
 
-Overfull \vbox (67.46864pt too high) detected at line 836
+Overfull \vbox (67.46864pt too high) detected at line 837
  []
 
 
-Overfull \vbox (68.46864pt too high) detected at line 836
+Overfull \vbox (68.46864pt too high) detected at line 837
  []
 
 
-Overfull \vbox (69.46864pt too high) detected at line 836
+Overfull \vbox (69.46864pt too high) detected at line 837
  []
 
 
-Overfull \vbox (70.46864pt too high) detected at line 836
+Overfull \vbox (70.46864pt too high) detected at line 837
  []
 
 
-Overfull \vbox (71.46864pt too high) detected at line 836
+Overfull \vbox (71.46864pt too high) detected at line 837
  []
 
 
-Overfull \vbox (72.46864pt too high) detected at line 836
+Overfull \vbox (72.46864pt too high) detected at line 837
  []
 
 
-Overfull \vbox (73.46864pt too high) detected at line 836
+Overfull \vbox (73.46864pt too high) detected at line 837
  []
 
 
-Overfull \vbox (74.46864pt too high) detected at line 836
+Overfull \vbox (74.46864pt too high) detected at line 837
  []
 
 
-Overfull \vbox (75.46864pt too high) detected at line 836
+Overfull \vbox (75.46864pt too high) detected at line 837
  []
 
 
-Overfull \vbox (76.46864pt too high) detected at line 836
+Overfull \vbox (76.46864pt too high) detected at line 837
  []
 
 
-Overfull \vbox (77.46864pt too high) detected at line 836
+Overfull \vbox (77.46864pt too high) detected at line 837
  []
 
 
-Overfull \vbox (78.46864pt too high) detected at line 836
+Overfull \vbox (78.46864pt too high) detected at line 837
  []
 
 
-Overfull \vbox (79.46864pt too high) detected at line 836
+Overfull \vbox (79.46864pt too high) detected at line 837
  []
 
 
-Overfull \vbox (80.46864pt too high) detected at line 836
+Overfull \vbox (80.46864pt too high) detected at line 837
  []
 
 
-Overfull \vbox (81.46864pt too high) detected at line 836
+Overfull \vbox (81.46864pt too high) detected at line 837
  []
 
 
-Overfull \vbox (82.46864pt too high) detected at line 836
+Overfull \vbox (82.46864pt too high) detected at line 837
  []
 
 
-Overfull \vbox (83.46864pt too high) detected at line 836
+Overfull \vbox (83.46864pt too high) detected at line 837
  []
 
 
-Overfull \vbox (84.46864pt too high) detected at line 836
+Overfull \vbox (84.46864pt too high) detected at line 837
  []
 
 
-Overfull \vbox (85.46864pt too high) detected at line 836
+Overfull \vbox (85.46864pt too high) detected at line 837
  []
 
 
-Overfull \vbox (86.46864pt too high) detected at line 836
+Overfull \vbox (86.46864pt too high) detected at line 837
  []
 
 
-Overfull \vbox (87.46864pt too high) detected at line 836
+Overfull \vbox (87.46864pt too high) detected at line 837
  []
 
 
-Overfull \vbox (88.46864pt too high) detected at line 836
+Overfull \vbox (88.46864pt too high) detected at line 837
  []
 
 
-Overfull \vbox (89.46864pt too high) detected at line 836
+Overfull \vbox (89.46864pt too high) detected at line 837
  []
 
 
-Overfull \vbox (90.46864pt too high) detected at line 836
+Overfull \vbox (90.46864pt too high) detected at line 837
  []
 
 
-Overfull \vbox (91.46864pt too high) detected at line 836
+Overfull \vbox (91.46864pt too high) detected at line 837
  []
 
 
-Overfull \vbox (92.46864pt too high) detected at line 836
+Overfull \vbox (92.46864pt too high) detected at line 837
  []
 
 
-Overfull \vbox (93.46864pt too high) detected at line 836
+Overfull \vbox (93.46864pt too high) detected at line 837
  []
 
 
-Overfull \vbox (94.46864pt too high) detected at line 836
+Overfull \vbox (94.46864pt too high) detected at line 837
  []
 
 
-Overfull \vbox (95.46864pt too high) detected at line 836
+Overfull \vbox (95.46864pt too high) detected at line 837
  []
 
 
-Overfull \vbox (96.46864pt too high) detected at line 836
+Overfull \vbox (96.46864pt too high) detected at line 837
  []
 
 
-Overfull \vbox (97.46864pt too high) detected at line 836
+Overfull \vbox (97.46864pt too high) detected at line 837
  []
 
 
-Overfull \vbox (98.46864pt too high) detected at line 836
+Overfull \vbox (98.46864pt too high) detected at line 837
  []
 
 
-Overfull \vbox (99.46864pt too high) detected at line 836
+Overfull \vbox (99.46864pt too high) detected at line 837
  []
 
 
-Overfull \vbox (100.46864pt too high) detected at line 836
+Overfull \vbox (100.46864pt too high) detected at line 837
  []
 
 
-Overfull \vbox (101.46864pt too high) detected at line 836
+Overfull \vbox (101.46864pt too high) detected at line 837
  []
 
 
-Overfull \vbox (102.46864pt too high) detected at line 836
+Overfull \vbox (102.46864pt too high) detected at line 837
  []
 
 
-Overfull \vbox (103.46864pt too high) detected at line 836
+Overfull \vbox (103.46864pt too high) detected at line 837
  []
 
 
-Overfull \vbox (104.46864pt too high) detected at line 836
+Overfull \vbox (104.46864pt too high) detected at line 837
  []
 
 
-Overfull \vbox (105.46864pt too high) detected at line 836
+Overfull \vbox (105.46864pt too high) detected at line 837
  []
 
 
-Overfull \vbox (106.46864pt too high) detected at line 836
+Overfull \vbox (106.46864pt too high) detected at line 837
  []
 
 
-Overfull \vbox (107.46864pt too high) detected at line 836
+Overfull \vbox (107.46864pt too high) detected at line 837
  []
 
 
-Overfull \vbox (108.46864pt too high) detected at line 836
+Overfull \vbox (108.46864pt too high) detected at line 837
  []
 
 
-Overfull \vbox (109.46864pt too high) detected at line 836
+Overfull \vbox (109.46864pt too high) detected at line 837
  []
 
 
-Overfull \vbox (110.46864pt too high) detected at line 836
+Overfull \vbox (110.46864pt too high) detected at line 837
  []
 
 
-Overfull \vbox (111.46864pt too high) detected at line 836
+Overfull \vbox (111.46864pt too high) detected at line 837
  []
 
 
-Overfull \vbox (112.46864pt too high) detected at line 836
+Overfull \vbox (112.46864pt too high) detected at line 837
  []
 
 
-Overfull \vbox (113.46864pt too high) detected at line 836
+Overfull \vbox (113.46864pt too high) detected at line 837
  []
 
 
-Overfull \vbox (114.46864pt too high) detected at line 836
+Overfull \vbox (114.46864pt too high) detected at line 837
  []
 
 
 Package mdframed Warning: correct box splittet fails
  It seems you are using a non splittable contents
-(mdframed)                 on input line 836.
+(mdframed)                 on input line 837.
 
 Package mdframed Info: You first box width is to small
  mdframed fixed it
-(mdframed)              on input line 836.
+(mdframed)              on input line 837.
 [15]
-Overfull \hbox (6.76552pt too wide) in paragraph at lines 853--854
+Overfull \hbox (6.76552pt too wide) in paragraph at lines 854--855
 \OT1/cmr/m/n/12 siis esi-m-ese m[]o[]otmisviga tea-des ei to-hiks see mei-le mi
 -da-gi []oelda tei-se osa m[]o[]otmisvea
  []
 
 
-Overfull \hbox (4.8072pt too wide) in paragraph at lines 853--854
+Overfull \hbox (4.8072pt too wide) in paragraph at lines 854--855
 \OT1/cmr/m/n/12 ni ta-ga-tav ning on po-tent-siaal-ne ohu-koht tes-ti-teoo-ria 
 ka-su-ta-misel min-gi k[]usimustiku
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 856--857
+Underfull \hbox (badness 10000) in paragraph at lines 857--858
 []\OT1/cmr/m/sc/8 meeldetuletuseks
  []
 
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 871.
+(mdframed)              on input line 872.
 
-Overfull \hbox (1.88602pt too wide) in paragraph at lines 871--871
+Overfull \hbox (1.88602pt too wide) in paragraph at lines 872--872
 [][] 
  []
 
 
-Overfull \vbox (95.0037pt too high) detected at line 871
+Overfull \vbox (95.0037pt too high) detected at line 872
  []
 
 Package mdframed Info: Box was splittet wrong
  starting loop to iterate the splitting point
-(mdframed)              on input line 871.
+(mdframed)              on input line 872.
 
-Overfull \vbox (96.0037pt too high) detected at line 871
+Overfull \vbox (96.0037pt too high) detected at line 872
  []
 
 
-Overfull \vbox (97.0037pt too high) detected at line 871
+Overfull \vbox (97.0037pt too high) detected at line 872
  []
 
 
-Overfull \vbox (98.0037pt too high) detected at line 871
+Overfull \vbox (98.0037pt too high) detected at line 872
  []
 
 
-Overfull \vbox (99.0037pt too high) detected at line 871
+Overfull \vbox (99.0037pt too high) detected at line 872
  []
 
 
-Overfull \vbox (100.0037pt too high) detected at line 871
+Overfull \vbox (100.0037pt too high) detected at line 872
  []
 
 
-Overfull \vbox (101.0037pt too high) detected at line 871
+Overfull \vbox (101.0037pt too high) detected at line 872
  []
 
 
-Overfull \vbox (102.0037pt too high) detected at line 871
+Overfull \vbox (102.0037pt too high) detected at line 872
  []
 
 
-Overfull \vbox (103.0037pt too high) detected at line 871
+Overfull \vbox (103.0037pt too high) detected at line 872
  []
 
 
-Overfull \vbox (104.0037pt too high) detected at line 871
+Overfull \vbox (104.0037pt too high) detected at line 872
  []
 
 
-Overfull \vbox (105.0037pt too high) detected at line 871
+Overfull \vbox (105.0037pt too high) detected at line 872
  []
 
 
-Overfull \vbox (106.0037pt too high) detected at line 871
+Overfull \vbox (106.0037pt too high) detected at line 872
  []
 
 
-Overfull \vbox (107.0037pt too high) detected at line 871
+Overfull \vbox (107.0037pt too high) detected at line 872
  []
 
 
-Overfull \vbox (108.0037pt too high) detected at line 871
+Overfull \vbox (108.0037pt too high) detected at line 872
  []
 
 
-Overfull \vbox (109.0037pt too high) detected at line 871
+Overfull \vbox (109.0037pt too high) detected at line 872
  []
 
 
-Overfull \vbox (110.0037pt too high) detected at line 871
+Overfull \vbox (110.0037pt too high) detected at line 872
  []
 
 
-Overfull \vbox (111.0037pt too high) detected at line 871
+Overfull \vbox (111.0037pt too high) detected at line 872
  []
 
 
-Overfull \vbox (112.0037pt too high) detected at line 871
+Overfull \vbox (112.0037pt too high) detected at line 872
  []
 
 
-Overfull \vbox (113.0037pt too high) detected at line 871
+Overfull \vbox (113.0037pt too high) detected at line 872
  []
 
 
-Overfull \vbox (114.0037pt too high) detected at line 871
+Overfull \vbox (114.0037pt too high) detected at line 872
  []
 
 
-Overfull \vbox (115.0037pt too high) detected at line 871
+Overfull \vbox (115.0037pt too high) detected at line 872
  []
 
 
-Overfull \vbox (116.0037pt too high) detected at line 871
+Overfull \vbox (116.0037pt too high) detected at line 872
  []
 
 
-Overfull \vbox (117.0037pt too high) detected at line 871
+Overfull \vbox (117.0037pt too high) detected at line 872
  []
 
 
-Overfull \vbox (118.0037pt too high) detected at line 871
+Overfull \vbox (118.0037pt too high) detected at line 872
  []
 
 
-Overfull \vbox (119.0037pt too high) detected at line 871
+Overfull \vbox (119.0037pt too high) detected at line 872
  []
 
 
-Overfull \vbox (120.0037pt too high) detected at line 871
+Overfull \vbox (120.0037pt too high) detected at line 872
  []
 
 
-Overfull \vbox (121.0037pt too high) detected at line 871
+Overfull \vbox (121.0037pt too high) detected at line 872
  []
 
 
-Overfull \vbox (122.0037pt too high) detected at line 871
+Overfull \vbox (122.0037pt too high) detected at line 872
  []
 
 
-Overfull \vbox (123.0037pt too high) detected at line 871
+Overfull \vbox (123.0037pt too high) detected at line 872
  []
 
 
-Overfull \vbox (124.0037pt too high) detected at line 871
+Overfull \vbox (124.0037pt too high) detected at line 872
  []
 
 
-Overfull \vbox (125.0037pt too high) detected at line 871
+Overfull \vbox (125.0037pt too high) detected at line 872
  []
 
 
-Overfull \vbox (126.0037pt too high) detected at line 871
+Overfull \vbox (126.0037pt too high) detected at line 872
  []
 
 
-Overfull \vbox (127.0037pt too high) detected at line 871
+Overfull \vbox (127.0037pt too high) detected at line 872
  []
 
 
-Overfull \vbox (128.0037pt too high) detected at line 871
+Overfull \vbox (128.0037pt too high) detected at line 872
  []
 
 
-Overfull \vbox (129.0037pt too high) detected at line 871
+Overfull \vbox (129.0037pt too high) detected at line 872
  []
 
 
-Overfull \vbox (130.0037pt too high) detected at line 871
+Overfull \vbox (130.0037pt too high) detected at line 872
  []
 
 
-Overfull \vbox (131.0037pt too high) detected at line 871
+Overfull \vbox (131.0037pt too high) detected at line 872
  []
 
 
-Overfull \vbox (132.0037pt too high) detected at line 871
+Overfull \vbox (132.0037pt too high) detected at line 872
  []
 
 
-Overfull \vbox (133.0037pt too high) detected at line 871
+Overfull \vbox (133.0037pt too high) detected at line 872
  []
 
 
-Overfull \vbox (134.0037pt too high) detected at line 871
+Overfull \vbox (134.0037pt too high) detected at line 872
  []
 
 
-Overfull \vbox (135.0037pt too high) detected at line 871
+Overfull \vbox (135.0037pt too high) detected at line 872
  []
 
 
-Overfull \vbox (136.0037pt too high) detected at line 871
+Overfull \vbox (136.0037pt too high) detected at line 872
  []
 
 
-Overfull \vbox (137.0037pt too high) detected at line 871
+Overfull \vbox (137.0037pt too high) detected at line 872
  []
 
 
-Overfull \vbox (138.0037pt too high) detected at line 871
+Overfull \vbox (138.0037pt too high) detected at line 872
  []
 
 
-Overfull \vbox (139.0037pt too high) detected at line 871
+Overfull \vbox (139.0037pt too high) detected at line 872
  []
 
 
-Overfull \vbox (140.0037pt too high) detected at line 871
+Overfull \vbox (140.0037pt too high) detected at line 872
  []
 
 
-Overfull \vbox (141.0037pt too high) detected at line 871
+Overfull \vbox (141.0037pt too high) detected at line 872
  []
 
 
-Overfull \vbox (142.0037pt too high) detected at line 871
+Overfull \vbox (142.0037pt too high) detected at line 872
  []
 
 
-Overfull \vbox (143.0037pt too high) detected at line 871
+Overfull \vbox (143.0037pt too high) detected at line 872
  []
 
 
-Overfull \vbox (144.0037pt too high) detected at line 871
+Overfull \vbox (144.0037pt too high) detected at line 872
  []
 
 
-Overfull \vbox (145.0037pt too high) detected at line 871
+Overfull \vbox (145.0037pt too high) detected at line 872
  []
 
 
-Overfull \vbox (146.0037pt too high) detected at line 871
+Overfull \vbox (146.0037pt too high) detected at line 872
  []
 
 
-Overfull \vbox (147.0037pt too high) detected at line 871
+Overfull \vbox (147.0037pt too high) detected at line 872
  []
 
 
-Overfull \vbox (148.0037pt too high) detected at line 871
+Overfull \vbox (148.0037pt too high) detected at line 872
  []
 
 
-Overfull \vbox (149.0037pt too high) detected at line 871
+Overfull \vbox (149.0037pt too high) detected at line 872
  []
 
 
-Overfull \vbox (150.0037pt too high) detected at line 871
+Overfull \vbox (150.0037pt too high) detected at line 872
  []
 
 
-Overfull \vbox (151.0037pt too high) detected at line 871
+Overfull \vbox (151.0037pt too high) detected at line 872
  []
 
 
-Overfull \vbox (152.0037pt too high) detected at line 871
+Overfull \vbox (152.0037pt too high) detected at line 872
  []
 
 
-Overfull \vbox (153.0037pt too high) detected at line 871
+Overfull \vbox (153.0037pt too high) detected at line 872
  []
 
 
-Overfull \vbox (154.0037pt too high) detected at line 871
+Overfull \vbox (154.0037pt too high) detected at line 872
  []
 
 
-Overfull \vbox (155.0037pt too high) detected at line 871
+Overfull \vbox (155.0037pt too high) detected at line 872
  []
 
 
-Overfull \vbox (156.0037pt too high) detected at line 871
+Overfull \vbox (156.0037pt too high) detected at line 872
  []
 
 
-Overfull \vbox (157.0037pt too high) detected at line 871
+Overfull \vbox (157.0037pt too high) detected at line 872
  []
 
 
-Overfull \vbox (158.0037pt too high) detected at line 871
+Overfull \vbox (158.0037pt too high) detected at line 872
  []
 
 
-Overfull \vbox (159.0037pt too high) detected at line 871
+Overfull \vbox (159.0037pt too high) detected at line 872
  []
 
 
-Overfull \vbox (160.0037pt too high) detected at line 871
+Overfull \vbox (160.0037pt too high) detected at line 872
  []
 
 
-Overfull \vbox (161.0037pt too high) detected at line 871
+Overfull \vbox (161.0037pt too high) detected at line 872
  []
 
 
-Overfull \vbox (162.0037pt too high) detected at line 871
+Overfull \vbox (162.0037pt too high) detected at line 872
  []
 
 
-Overfull \vbox (163.0037pt too high) detected at line 871
+Overfull \vbox (163.0037pt too high) detected at line 872
  []
 
 
-Overfull \vbox (164.0037pt too high) detected at line 871
+Overfull \vbox (164.0037pt too high) detected at line 872
  []
 
 
-Overfull \vbox (165.0037pt too high) detected at line 871
+Overfull \vbox (165.0037pt too high) detected at line 872
  []
 
 
-Overfull \vbox (166.0037pt too high) detected at line 871
+Overfull \vbox (166.0037pt too high) detected at line 872
  []
 
 
-Overfull \vbox (167.0037pt too high) detected at line 871
+Overfull \vbox (167.0037pt too high) detected at line 872
  []
 
 
-Overfull \vbox (168.0037pt too high) detected at line 871
+Overfull \vbox (168.0037pt too high) detected at line 872
  []
 
 
-Overfull \vbox (169.0037pt too high) detected at line 871
+Overfull \vbox (169.0037pt too high) detected at line 872
  []
 
 
-Overfull \vbox (170.0037pt too high) detected at line 871
+Overfull \vbox (170.0037pt too high) detected at line 872
  []
 
 
-Overfull \vbox (171.0037pt too high) detected at line 871
+Overfull \vbox (171.0037pt too high) detected at line 872
  []
 
 
-Overfull \vbox (172.0037pt too high) detected at line 871
+Overfull \vbox (172.0037pt too high) detected at line 872
  []
 
 
-Overfull \vbox (173.0037pt too high) detected at line 871
+Overfull \vbox (173.0037pt too high) detected at line 872
  []
 
 
-Overfull \vbox (174.0037pt too high) detected at line 871
+Overfull \vbox (174.0037pt too high) detected at line 872
  []
 
 
-Overfull \vbox (175.0037pt too high) detected at line 871
+Overfull \vbox (175.0037pt too high) detected at line 872
  []
 
 
-Overfull \vbox (176.0037pt too high) detected at line 871
+Overfull \vbox (176.0037pt too high) detected at line 872
  []
 
 
-Overfull \vbox (177.0037pt too high) detected at line 871
+Overfull \vbox (177.0037pt too high) detected at line 872
  []
 
 
-Overfull \vbox (178.0037pt too high) detected at line 871
+Overfull \vbox (178.0037pt too high) detected at line 872
  []
 
 
-Overfull \vbox (179.0037pt too high) detected at line 871
+Overfull \vbox (179.0037pt too high) detected at line 872
  []
 
 
-Overfull \vbox (180.0037pt too high) detected at line 871
+Overfull \vbox (180.0037pt too high) detected at line 872
  []
 
 
-Overfull \vbox (181.0037pt too high) detected at line 871
+Overfull \vbox (181.0037pt too high) detected at line 872
  []
 
 
-Overfull \vbox (182.0037pt too high) detected at line 871
+Overfull \vbox (182.0037pt too high) detected at line 872
  []
 
 
-Overfull \vbox (183.0037pt too high) detected at line 871
+Overfull \vbox (183.0037pt too high) detected at line 872
  []
 
 
-Overfull \vbox (184.0037pt too high) detected at line 871
+Overfull \vbox (184.0037pt too high) detected at line 872
  []
 
 
-Overfull \vbox (185.0037pt too high) detected at line 871
+Overfull \vbox (185.0037pt too high) detected at line 872
  []
 
 
-Overfull \vbox (186.0037pt too high) detected at line 871
+Overfull \vbox (186.0037pt too high) detected at line 872
  []
 
 
-Overfull \vbox (187.0037pt too high) detected at line 871
+Overfull \vbox (187.0037pt too high) detected at line 872
  []
 
 
-Overfull \vbox (188.0037pt too high) detected at line 871
+Overfull \vbox (188.0037pt too high) detected at line 872
  []
 
 
-Overfull \vbox (189.0037pt too high) detected at line 871
+Overfull \vbox (189.0037pt too high) detected at line 872
  []
 
 
-Overfull \vbox (190.0037pt too high) detected at line 871
+Overfull \vbox (190.0037pt too high) detected at line 872
  []
 
 
-Overfull \vbox (191.0037pt too high) detected at line 871
+Overfull \vbox (191.0037pt too high) detected at line 872
  []
 
 
-Overfull \vbox (192.0037pt too high) detected at line 871
+Overfull \vbox (192.0037pt too high) detected at line 872
  []
 
 
-Overfull \vbox (193.0037pt too high) detected at line 871
+Overfull \vbox (193.0037pt too high) detected at line 872
  []
 
 
-Overfull \vbox (194.0037pt too high) detected at line 871
+Overfull \vbox (194.0037pt too high) detected at line 872
  []
 
 
-Overfull \vbox (195.0037pt too high) detected at line 871
+Overfull \vbox (195.0037pt too high) detected at line 872
  []
 
 
-Overfull \vbox (196.0037pt too high) detected at line 871
+Overfull \vbox (196.0037pt too high) detected at line 872
  []
 
 
 Package mdframed Warning: correct box splittet fails
  It seems you are using a non splittable contents
-(mdframed)                 on input line 871.
+(mdframed)                 on input line 872.
 
 Package mdframed Info: You first box width is to small
  mdframed fixed it
-(mdframed)              on input line 871.
+(mdframed)              on input line 872.
 [16]
-Underfull \hbox (badness 10000) in paragraph at lines 900--901
+Underfull \hbox (badness 10000) in paragraph at lines 901--902
 []\OT1/cmr/m/sc/8 meeldetuletuseks
  []
 
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 920.
+(mdframed)              on input line 921.
 
-Overfull \hbox (1.88602pt too wide) in paragraph at lines 920--920
+Overfull \hbox (1.88602pt too wide) in paragraph at lines 921--921
 [][] 
  []
 
 
-Overfull \vbox (167.6672pt too high) detected at line 920
+Overfull \vbox (167.6672pt too high) detected at line 921
  []
 
 Package mdframed Info: Box was splittet wrong
  starting loop to iterate the splitting point
-(mdframed)              on input line 920.
+(mdframed)              on input line 921.
 
-Overfull \vbox (168.6672pt too high) detected at line 920
+Overfull \vbox (168.6672pt too high) detected at line 921
  []
 
 
-Overfull \vbox (169.6672pt too high) detected at line 920
+Overfull \vbox (169.6672pt too high) detected at line 921
  []
 
 
-Overfull \vbox (170.6672pt too high) detected at line 920
+Overfull \vbox (170.6672pt too high) detected at line 921
  []
 
 
-Overfull \vbox (171.6672pt too high) detected at line 920
+Overfull \vbox (171.6672pt too high) detected at line 921
  []
 
 
-Overfull \vbox (172.6672pt too high) detected at line 920
+Overfull \vbox (172.6672pt too high) detected at line 921
  []
 
 
-Overfull \vbox (173.6672pt too high) detected at line 920
+Overfull \vbox (173.6672pt too high) detected at line 921
  []
 
 
-Overfull \vbox (174.6672pt too high) detected at line 920
+Overfull \vbox (174.6672pt too high) detected at line 921
  []
 
 
-Overfull \vbox (175.6672pt too high) detected at line 920
+Overfull \vbox (175.6672pt too high) detected at line 921
  []
 
 
-Overfull \vbox (176.6672pt too high) detected at line 920
+Overfull \vbox (176.6672pt too high) detected at line 921
  []
 
 
-Overfull \vbox (177.6672pt too high) detected at line 920
+Overfull \vbox (177.6672pt too high) detected at line 921
  []
 
 
-Overfull \vbox (178.6672pt too high) detected at line 920
+Overfull \vbox (178.6672pt too high) detected at line 921
  []
 
 
-Overfull \vbox (179.6672pt too high) detected at line 920
+Overfull \vbox (179.6672pt too high) detected at line 921
  []
 
 
-Overfull \vbox (180.6672pt too high) detected at line 920
+Overfull \vbox (180.6672pt too high) detected at line 921
  []
 
 
-Overfull \vbox (181.6672pt too high) detected at line 920
+Overfull \vbox (181.6672pt too high) detected at line 921
  []
 
 
-Overfull \vbox (182.6672pt too high) detected at line 920
+Overfull \vbox (182.6672pt too high) detected at line 921
  []
 
 
-Overfull \vbox (183.6672pt too high) detected at line 920
+Overfull \vbox (183.6672pt too high) detected at line 921
  []
 
 
-Overfull \vbox (184.6672pt too high) detected at line 920
+Overfull \vbox (184.6672pt too high) detected at line 921
  []
 
 
-Overfull \vbox (185.6672pt too high) detected at line 920
+Overfull \vbox (185.6672pt too high) detected at line 921
  []
 
 
-Overfull \vbox (186.6672pt too high) detected at line 920
+Overfull \vbox (186.6672pt too high) detected at line 921
  []
 
 
-Overfull \vbox (187.6672pt too high) detected at line 920
+Overfull \vbox (187.6672pt too high) detected at line 921
  []
 
 
-Overfull \vbox (188.6672pt too high) detected at line 920
+Overfull \vbox (188.6672pt too high) detected at line 921
  []
 
 
-Overfull \vbox (189.6672pt too high) detected at line 920
+Overfull \vbox (189.6672pt too high) detected at line 921
  []
 
 
-Overfull \vbox (190.6672pt too high) detected at line 920
+Overfull \vbox (190.6672pt too high) detected at line 921
  []
 
 
-Overfull \vbox (191.6672pt too high) detected at line 920
+Overfull \vbox (191.6672pt too high) detected at line 921
  []
 
 
-Overfull \vbox (192.6672pt too high) detected at line 920
+Overfull \vbox (192.6672pt too high) detected at line 921
  []
 
 
-Overfull \vbox (193.6672pt too high) detected at line 920
+Overfull \vbox (193.6672pt too high) detected at line 921
  []
 
 
-Overfull \vbox (194.6672pt too high) detected at line 920
+Overfull \vbox (194.6672pt too high) detected at line 921
  []
 
 
-Overfull \vbox (195.6672pt too high) detected at line 920
+Overfull \vbox (195.6672pt too high) detected at line 921
  []
 
 
-Overfull \vbox (196.6672pt too high) detected at line 920
+Overfull \vbox (196.6672pt too high) detected at line 921
  []
 
 
-Overfull \vbox (197.6672pt too high) detected at line 920
+Overfull \vbox (197.6672pt too high) detected at line 921
  []
 
 
-Overfull \vbox (198.6672pt too high) detected at line 920
+Overfull \vbox (198.6672pt too high) detected at line 921
  []
 
 
-Overfull \vbox (199.6672pt too high) detected at line 920
+Overfull \vbox (199.6672pt too high) detected at line 921
  []
 
 
-Overfull \vbox (200.6672pt too high) detected at line 920
+Overfull \vbox (200.6672pt too high) detected at line 921
  []
 
 
-Overfull \vbox (201.6672pt too high) detected at line 920
+Overfull \vbox (201.6672pt too high) detected at line 921
  []
 
 
-Overfull \vbox (202.6672pt too high) detected at line 920
+Overfull \vbox (202.6672pt too high) detected at line 921
  []
 
 
-Overfull \vbox (203.6672pt too high) detected at line 920
+Overfull \vbox (203.6672pt too high) detected at line 921
  []
 
 
-Overfull \vbox (204.6672pt too high) detected at line 920
+Overfull \vbox (204.6672pt too high) detected at line 921
  []
 
 
-Overfull \vbox (205.6672pt too high) detected at line 920
+Overfull \vbox (205.6672pt too high) detected at line 921
  []
 
 
-Overfull \vbox (206.6672pt too high) detected at line 920
+Overfull \vbox (206.6672pt too high) detected at line 921
  []
 
 
-Overfull \vbox (207.6672pt too high) detected at line 920
+Overfull \vbox (207.6672pt too high) detected at line 921
  []
 
 
-Overfull \vbox (208.6672pt too high) detected at line 920
+Overfull \vbox (208.6672pt too high) detected at line 921
  []
 
 
-Overfull \vbox (209.6672pt too high) detected at line 920
+Overfull \vbox (209.6672pt too high) detected at line 921
  []
 
 
-Overfull \vbox (210.6672pt too high) detected at line 920
+Overfull \vbox (210.6672pt too high) detected at line 921
  []
 
 
-Overfull \vbox (211.6672pt too high) detected at line 920
+Overfull \vbox (211.6672pt too high) detected at line 921
  []
 
 
-Overfull \vbox (212.6672pt too high) detected at line 920
+Overfull \vbox (212.6672pt too high) detected at line 921
  []
 
 
-Overfull \vbox (213.6672pt too high) detected at line 920
+Overfull \vbox (213.6672pt too high) detected at line 921
  []
 
 
-Overfull \vbox (214.6672pt too high) detected at line 920
+Overfull \vbox (214.6672pt too high) detected at line 921
  []
 
 
-Overfull \vbox (215.6672pt too high) detected at line 920
+Overfull \vbox (215.6672pt too high) detected at line 921
  []
 
 
-Overfull \vbox (216.6672pt too high) detected at line 920
+Overfull \vbox (216.6672pt too high) detected at line 921
  []
 
 
-Overfull \vbox (217.6672pt too high) detected at line 920
+Overfull \vbox (217.6672pt too high) detected at line 921
  []
 
 
-Overfull \vbox (218.6672pt too high) detected at line 920
+Overfull \vbox (218.6672pt too high) detected at line 921
  []
 
 
-Overfull \vbox (219.6672pt too high) detected at line 920
+Overfull \vbox (219.6672pt too high) detected at line 921
  []
 
 
-Overfull \vbox (220.6672pt too high) detected at line 920
+Overfull \vbox (220.6672pt too high) detected at line 921
  []
 
 
-Overfull \vbox (221.6672pt too high) detected at line 920
+Overfull \vbox (221.6672pt too high) detected at line 921
  []
 
 
-Overfull \vbox (222.6672pt too high) detected at line 920
+Overfull \vbox (222.6672pt too high) detected at line 921
  []
 
 
-Overfull \vbox (223.6672pt too high) detected at line 920
+Overfull \vbox (223.6672pt too high) detected at line 921
  []
 
 
-Overfull \vbox (224.6672pt too high) detected at line 920
+Overfull \vbox (224.6672pt too high) detected at line 921
  []
 
 
-Overfull \vbox (225.6672pt too high) detected at line 920
+Overfull \vbox (225.6672pt too high) detected at line 921
  []
 
 
-Overfull \vbox (226.6672pt too high) detected at line 920
+Overfull \vbox (226.6672pt too high) detected at line 921
  []
 
 
-Overfull \vbox (227.6672pt too high) detected at line 920
+Overfull \vbox (227.6672pt too high) detected at line 921
  []
 
 
-Overfull \vbox (228.6672pt too high) detected at line 920
+Overfull \vbox (228.6672pt too high) detected at line 921
  []
 
 
-Overfull \vbox (229.6672pt too high) detected at line 920
+Overfull \vbox (229.6672pt too high) detected at line 921
  []
 
 
-Overfull \vbox (230.6672pt too high) detected at line 920
+Overfull \vbox (230.6672pt too high) detected at line 921
  []
 
 
-Overfull \vbox (231.6672pt too high) detected at line 920
+Overfull \vbox (231.6672pt too high) detected at line 921
  []
 
 
-Overfull \vbox (232.6672pt too high) detected at line 920
+Overfull \vbox (232.6672pt too high) detected at line 921
  []
 
 
-Overfull \vbox (233.6672pt too high) detected at line 920
+Overfull \vbox (233.6672pt too high) detected at line 921
  []
 
 
-Overfull \vbox (234.6672pt too high) detected at line 920
+Overfull \vbox (234.6672pt too high) detected at line 921
  []
 
 
-Overfull \vbox (235.6672pt too high) detected at line 920
+Overfull \vbox (235.6672pt too high) detected at line 921
  []
 
 
-Overfull \vbox (236.6672pt too high) detected at line 920
+Overfull \vbox (236.6672pt too high) detected at line 921
  []
 
 
-Overfull \vbox (237.6672pt too high) detected at line 920
+Overfull \vbox (237.6672pt too high) detected at line 921
  []
 
 
-Overfull \vbox (238.6672pt too high) detected at line 920
+Overfull \vbox (238.6672pt too high) detected at line 921
  []
 
 
-Overfull \vbox (239.6672pt too high) detected at line 920
+Overfull \vbox (239.6672pt too high) detected at line 921
  []
 
 
-Overfull \vbox (240.6672pt too high) detected at line 920
+Overfull \vbox (240.6672pt too high) detected at line 921
  []
 
 
-Overfull \vbox (241.6672pt too high) detected at line 920
+Overfull \vbox (241.6672pt too high) detected at line 921
  []
 
 
-Overfull \vbox (242.6672pt too high) detected at line 920
+Overfull \vbox (242.6672pt too high) detected at line 921
  []
 
 
-Overfull \vbox (243.6672pt too high) detected at line 920
+Overfull \vbox (243.6672pt too high) detected at line 921
  []
 
 
-Overfull \vbox (244.6672pt too high) detected at line 920
+Overfull \vbox (244.6672pt too high) detected at line 921
  []
 
 
-Overfull \vbox (245.6672pt too high) detected at line 920
+Overfull \vbox (245.6672pt too high) detected at line 921
  []
 
 
-Overfull \vbox (246.6672pt too high) detected at line 920
+Overfull \vbox (246.6672pt too high) detected at line 921
  []
 
 
-Overfull \vbox (247.6672pt too high) detected at line 920
+Overfull \vbox (247.6672pt too high) detected at line 921
  []
 
 
-Overfull \vbox (248.6672pt too high) detected at line 920
+Overfull \vbox (248.6672pt too high) detected at line 921
  []
 
 
-Overfull \vbox (249.6672pt too high) detected at line 920
+Overfull \vbox (249.6672pt too high) detected at line 921
  []
 
 
-Overfull \vbox (250.6672pt too high) detected at line 920
+Overfull \vbox (250.6672pt too high) detected at line 921
  []
 
 
-Overfull \vbox (251.6672pt too high) detected at line 920
+Overfull \vbox (251.6672pt too high) detected at line 921
  []
 
 
-Overfull \vbox (252.6672pt too high) detected at line 920
+Overfull \vbox (252.6672pt too high) detected at line 921
  []
 
 
-Overfull \vbox (253.6672pt too high) detected at line 920
+Overfull \vbox (253.6672pt too high) detected at line 921
  []
 
 
-Overfull \vbox (254.6672pt too high) detected at line 920
+Overfull \vbox (254.6672pt too high) detected at line 921
  []
 
 
-Overfull \vbox (255.6672pt too high) detected at line 920
+Overfull \vbox (255.6672pt too high) detected at line 921
  []
 
 
-Overfull \vbox (256.6672pt too high) detected at line 920
+Overfull \vbox (256.6672pt too high) detected at line 921
  []
 
 
-Overfull \vbox (257.6672pt too high) detected at line 920
+Overfull \vbox (257.6672pt too high) detected at line 921
  []
 
 
-Overfull \vbox (258.6672pt too high) detected at line 920
+Overfull \vbox (258.6672pt too high) detected at line 921
  []
 
 
-Overfull \vbox (259.6672pt too high) detected at line 920
+Overfull \vbox (259.6672pt too high) detected at line 921
  []
 
 
-Overfull \vbox (260.6672pt too high) detected at line 920
+Overfull \vbox (260.6672pt too high) detected at line 921
  []
 
 
-Overfull \vbox (261.6672pt too high) detected at line 920
+Overfull \vbox (261.6672pt too high) detected at line 921
  []
 
 
-Overfull \vbox (262.6672pt too high) detected at line 920
+Overfull \vbox (262.6672pt too high) detected at line 921
  []
 
 
-Overfull \vbox (263.6672pt too high) detected at line 920
+Overfull \vbox (263.6672pt too high) detected at line 921
  []
 
 
-Overfull \vbox (264.6672pt too high) detected at line 920
+Overfull \vbox (264.6672pt too high) detected at line 921
  []
 
 
-Overfull \vbox (265.6672pt too high) detected at line 920
+Overfull \vbox (265.6672pt too high) detected at line 921
  []
 
 
-Overfull \vbox (266.6672pt too high) detected at line 920
+Overfull \vbox (266.6672pt too high) detected at line 921
  []
 
 
-Overfull \vbox (267.6672pt too high) detected at line 920
+Overfull \vbox (267.6672pt too high) detected at line 921
  []
 
 
-Overfull \vbox (268.6672pt too high) detected at line 920
+Overfull \vbox (268.6672pt too high) detected at line 921
  []
 
 
 Package mdframed Warning: correct box splittet fails
  It seems you are using a non splittable contents
-(mdframed)                 on input line 920.
+(mdframed)                 on input line 921.
 
 Package mdframed Info: You first box width is to small
  mdframed fixed it
-(mdframed)              on input line 920.
+(mdframed)              on input line 921.
 [17] [18]
-Overfull \hbox (2.8678pt too wide) in paragraph at lines 953--955
+Overfull \hbox (2.8678pt too wide) in paragraph at lines 954--956
 []\OT1/cmr/m/n/12 Eelneva p[]ohjal on sel-ge, et v[]aide []k[]usimustiku re-lia
 ab-lus on suu-rem\ on sa-mav[]a[]arne
  []
 
 [19]
-Overfull \hbox (27.76454pt too wide) in paragraph at lines 1013--1014
+Overfull \hbox (27.76454pt too wide) in paragraph at lines 1014--1015
 \OT1/cmr/m/n/12 sioo-ni-maat-rik-si ele-men-ti-de sum-ma-ga, ehk kui $\OML/cmm/
 m/it/12 X \OT1/cmr/m/n/12 = []$ ja $^^F[]$ on vek-to-ri $(\OML/cmm/m/it/12 X[];
  X[]; [] ; X[]\OT1/cmr/m/n/12 )$
  []
 
 [20]
-Underfull \hbox (badness 10000) in paragraph at lines 1051--1052
+Underfull \hbox (badness 10000) in paragraph at lines 1052--1053
 []\OT1/cmr/m/sc/8 meeldetuletuseks
  []
 
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 1054.
+(mdframed)              on input line 1055.
 
-Overfull \hbox (1.88602pt too wide) in paragraph at lines 1054--1054
+Overfull \hbox (1.88602pt too wide) in paragraph at lines 1055--1055
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1059--1060
+Underfull \hbox (badness 10000) in paragraph at lines 1060--1061
 []\OT1/cmr/m/sc/8 meeldetuletuseks
  []
 
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 1074.
+(mdframed)              on input line 1075.
 
-Overfull \hbox (1.88602pt too wide) in paragraph at lines 1074--1074
+Overfull \hbox (1.88602pt too wide) in paragraph at lines 1075--1075
 [][] 
  []
 
 [21]
-Package mdframed Info: Not enough space on this page on input line 1074.
+Package mdframed Info: Not enough space on this page on input line 1075.
 
-Overfull \hbox (4.1967pt too wide) in paragraph at lines 1076--1077
+Overfull \hbox (4.1967pt too wide) in paragraph at lines 1077--1078
 \OT1/cmr/m/n/12 sel-le vek-to-ri kova-riat-sioo-ni-maat-riks. Ol-gu meil su-va-
 li-ne $\OML/cmm/m/it/12 k$\OT1/cmr/m/n/12 -vektor $\OML/cmm/m/it/12 v \OT1/cmr/
 m/n/12 = (\OML/cmm/m/it/12 v[]; v[]; [] ; v[]\OT1/cmr/m/n/12 )$.
  []
 
 [22] [23]
-Overfull \hbox (15.55498pt too wide) in paragraph at lines 1105--1106
+Overfull \hbox (15.55498pt too wide) in paragraph at lines 1106--1107
 []\OT1/cmr/m/n/12 Olgu meil vas-ta-ja-te ko-gum $\OML/cmm/m/it/12 I$\OT1/cmr/m/
 n/12 , []ule mil-le vaat-le-me $\OML/cmm/m/it/12 k$ \OT1/cmr/m/n/12 k[]usimuses
 t koos-ne-vat k[]usimustikku,
  []
 
 
-Overfull \hbox (32.20686pt too wide) in paragraph at lines 1105--1106
+Overfull \hbox (32.20686pt too wide) in paragraph at lines 1106--1107
 \OT1/cmr/m/n/12 mer-da-me k[]usimused ar-vu-de-ga $1$ kuni $\OML/cmm/m/it/12 k$
 \OT1/cmr/m/n/12 . Vaat-le-me iga k[]usimust eral-di alamk[]usimustikuna,
  []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1107.
+(hyperref)                removing `math shift' on input line 1108.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\lambda' on input line 1107.
+(hyperref)                removing `\lambda' on input line 1108.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 1107.
+(hyperref)                removing `subscript' on input line 1108.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1107.
+(hyperref)                removing `math shift' on input line 1108.
 
 
-Overfull \hbox (8.46404pt too wide) in paragraph at lines 1125--1126
+Overfull \hbox (8.46404pt too wide) in paragraph at lines 1126--1127
 \OT1/cmr/m/n/12 Seega ei ole maat-riks enam po-si-tiiv-selt m[]a[]aratud, mis o
 n eel-mises peat[]ukis l[]abiviidud
  []
@@ -2969,33 +2990,33 @@ n eel-mises peat[]ukis l[]abiviidud
 [24]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1135.
+(hyperref)                removing `math shift' on input line 1136.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\lambda' on input line 1135.
+(hyperref)                removing `\lambda' on input line 1136.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 1135.
+(hyperref)                removing `subscript' on input line 1136.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1135.
+(hyperref)                removing `math shift' on input line 1136.
 
 
-Overfull \hbox (15.974pt too wide) in paragraph at lines 1137--1138
+Overfull \hbox (15.974pt too wide) in paragraph at lines 1138--1139
 \OT1/cmr/m/n/12 Enne j[]argmise alu-mise t[]okke tu-le-ta-mist veen-du-me, et k
 eh-tivad kaks abi-tu-le-must. 
  []
 
 [25] [26]
-Overfull \hbox (45.77086pt too wide) in paragraph at lines 1263--1263
+Overfull \hbox (45.77086pt too wide) in paragraph at lines 1264--1264
 [] 
  []
 
 [27]
-Overfull \hbox (19.2433pt too wide) detected at line 1277
+Overfull \hbox (19.2433pt too wide) detected at line 1278
 \OML/cmm/m/it/10.95 ^^U[] \OT1/cmr/m/n/10.95 = 1 \OMS/cmsy/m/n/10.95 ^^@ [] ^^T
  \OT1/cmr/m/n/10.95 1 \OMS/cmsy/m/n/10.95 ^^@ [] \OT1/cmr/m/n/10.95 = 1 \OMS/cm
 sy/m/n/10.95 ^^@ [] \OT1/cmr/m/n/10.95 = 1 \OMS/cmsy/m/n/10.95 ^^@ [][]
@@ -3003,109 +3024,109 @@ sy/m/n/10.95 ^^@ [] \OT1/cmr/m/n/10.95 = 1 \OMS/cmsy/m/n/10.95 ^^@ [][]
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1287.
+(hyperref)                removing `math shift' on input line 1288.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\lambda' on input line 1287.
+(hyperref)                removing `\lambda' on input line 1288.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 1287.
+(hyperref)                removing `subscript' on input line 1288.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1287.
+(hyperref)                removing `math shift' on input line 1288.
 
 [28] [29]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1353.
+(hyperref)                removing `math shift' on input line 1354.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\lambda' on input line 1353.
+(hyperref)                removing `\lambda' on input line 1354.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 1353.
+(hyperref)                removing `subscript' on input line 1354.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1353.
+(hyperref)                removing `math shift' on input line 1354.
 
 [30] [31]
-Overfull \hbox (0.6163pt too wide) in paragraph at lines 1403--1404
+Overfull \hbox (0.6163pt too wide) in paragraph at lines 1404--1405
 []\OT1/cmr/m/n/12 kus kir-ja-pilt $^^F[] \OMS/cmsy/m/n/12 ^^W \OT1/cmr/m/n/12 0
 $ t[]ahistab tin-gi-must "$^^F[]$ on mitte-negatiivselt m[]a[]aratud". 
  []
 
 [32]
 
-LaTeX Warning: Citation `TenBerge2004' on page 33 undefined on input line 1421.
+LaTeX Warning: Citation `TenBerge2004' on page 33 undefined on input line 1422.
 
 
 
-LaTeX Warning: Citation `Benton2013' on page 33 undefined on input line 1421.
+LaTeX Warning: Citation `Benton2013' on page 33 undefined on input line 1422.
 
 
-Overfull \hbox (32.96387pt too wide) in paragraph at lines 1428--1429
+Overfull \hbox (32.96387pt too wide) in paragraph at lines 1429--1430
 \OT1/cmr/m/n/12 N[]aiteks Tar-tu []Ulikoolis []opetatakse prog-ra-mee-ri-mist k
 ee-les Pyt-hon nii matemaatika-
  []
 
 [33]
-Overfull \hbox (13.19763pt too wide) in paragraph at lines 1450--1451
+Overfull \hbox (13.19763pt too wide) in paragraph at lines 1451--1452
 \OT1/cmr/m/n/12 vas-tus-te pai-gu-tust in-ter-vall-skaa-lal kui vai-ki-mi-si me
 e-tod? Vaat-le-me kah-te n[]aidet: 
  []
 
 
-Overfull \hbox (2.8449pt too wide) in paragraph at lines 1489--1489
+Overfull \hbox (2.8449pt too wide) in paragraph at lines 1490--1490
 [][] 
  []
 
 
-Overfull \hbox (9.91663pt too wide) in paragraph at lines 1489--1490
+Overfull \hbox (9.91663pt too wide) in paragraph at lines 1490--1491
 [][][][][][][] 
  []
 
 
-Overfull \hbox (2.8449pt too wide) in paragraph at lines 1530--1530
+Overfull \hbox (2.8449pt too wide) in paragraph at lines 1531--1531
 [][] 
  []
 
 
-Overfull \hbox (9.91663pt too wide) in paragraph at lines 1530--1531
+Overfull \hbox (9.91663pt too wide) in paragraph at lines 1531--1532
 [][][][][][][] 
  []
 
 [34]
-Overfull \hbox (6.0pt too wide) in paragraph at lines 1574--1575
+Overfull \hbox (6.0pt too wide) in paragraph at lines 1575--1576
 [][][][][][][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1574--1575
+Underfull \hbox (badness 10000) in paragraph at lines 1575--1576
 
  []
 
 [35]
-Overfull \hbox (20.76086pt too wide) in paragraph at lines 1589--1590
+Overfull \hbox (20.76086pt too wide) in paragraph at lines 1590--1591
 \OT1/cmr/m/n/12 de-ga $1$ ku-na $\OML/cmm/m/it/12 k$ \OT1/cmr/m/n/12 Ol-gu meil
  ju-hus-li-kud suu-ru-sed $\OML/cmm/m/it/12 K[]; K[]; :::; K[]$\OT1/cmr/m/n/12 
 , mil-le m[]a[]aramispiirkonnaks
  []
 
 
-Overfull \hbox (12.4003pt too wide) in paragraph at lines 1589--1590
+Overfull \hbox (12.4003pt too wide) in paragraph at lines 1590--1591
 \OT1/cmr/m/n/12 mis-piir-kon-naks on hulk $\OMS/cmsy/m/n/12 f\OT1/cmr/m/n/12 1\
 OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2\OML/cmm/m/it/12 ; [] ; l\OMS/cmsy/m/n/12 g$
  \OT1/cmr/m/n/12 ning t[]olgendame ju-hus-li-ku suu-rust kui k[]usimusele
  []
 
 
-Overfull \hbox (8.99628pt too wide) in paragraph at lines 1589--1590
+Overfull \hbox (8.99628pt too wide) in paragraph at lines 1590--1591
 \OT1/cmr/m/n/12 t[]ahistused $\OML/cmm/m/it/12 p[]; i \OMS/cmsy/m/n/12 2 f\OT1/
 cmr/m/n/12 1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2\OML/cmm/m/it/12 ; :::; n\OMS/c
 msy/m/n/12 g\OML/cmm/m/it/12 ;  \OMS/cmsy/m/n/12 2 f\OT1/cmr/m/n/12 1\OML/cmm/
@@ -3115,7 +3136,7 @@ m/it/12 ; \OT1/cmr/m/n/12 2\OML/cmm/m/it/12 ; [] ; l\OMS/cmsy/m/n/12 g$\OT1/cmr
  []
 
 [36]
-Overfull \hbox (93.88481pt too wide) in paragraph at lines 1597--1598
+Overfull \hbox (93.88481pt too wide) in paragraph at lines 1598--1599
 []\OT1/cmr/m/n/12 V[]ottes ar-ves-se, et $[][] = \OML/cmm/m/it/12 cov\OT1/cmr/m
 /n/12 (\OML/cmm/m/it/12 K[]; K[]\OT1/cmr/m/n/12 )$, ning de-fi-nit-sioo-ni j[]a
 rgi $\OML/cmm/m/it/12 cov\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 X; X\OT1/cmr/m/n/12 
@@ -3123,49 +3144,49 @@ rgi $\OML/cmm/m/it/12 cov\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 X; X\OT1/cmr/m/n/12
  []
 
 
-Overfull \hbox (13.51799pt too wide) in paragraph at lines 1605--1606
+Overfull \hbox (13.51799pt too wide) in paragraph at lines 1606--1607
 \OT1/cmr/m/n/12 ta-me ju-hus-li-kud suu-ru-sed $\OML/cmm/m/it/12 K[]; K[]; [] ;
  K[]$ \OT1/cmr/m/n/12 ju-hus-likeks suu-rus-teks $\OML/cmm/m/it/12 M[]; M[]; M[
 ]; [] ; M[]$\OT1/cmr/m/n/12 ,
  []
 
 
-Overfull \hbox (32.17552pt too wide) in paragraph at lines 1605--1606
+Overfull \hbox (32.17552pt too wide) in paragraph at lines 1606--1607
 \OT1/cmr/m/n/12 kus-juu-res ju-hus-li-ku suu-ru-se $\OML/cmm/m/it/12 M[]$ \OT1/
 cmr/m/n/12 m[]a[]aramispiirkond []uhtib suu-ru-se $\OML/cmm/m/it/12 K[]$ \OT1/c
 mr/m/n/12 m[]a[]aramispiirkonnaga
  []
 
 [37]
-Overfull \hbox (16.15598pt too wide) in paragraph at lines 1629--1630
+Overfull \hbox (16.15598pt too wide) in paragraph at lines 1630--1631
 []\OT1/cmr/m/n/12 Paneme t[]ahele, et sel-lis-te piiran-gu-te kor-ral esi-tub $
 \OML/cmm/m/it/12 ^^U[]$ \OT1/cmr/m/n/12 liht-sa-mal ku-jul. T[]oepoolest, 
  []
 
 
-Overfull \hbox (9.4855pt too wide) in paragraph at lines 1638--1639
+Overfull \hbox (9.4855pt too wide) in paragraph at lines 1639--1640
 []\OT1/cmr/m/n/12 Siit n[]aeme, et sel-li-sel ju-hul taan-dub $\OML/cmm/m/it/12
  ^^U[]$ \OT1/cmr/m/n/12 mak-si-mee-ri-mi-ne aval-di-se $[] [] \OML/cmm/m/it/12 
 COV\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 M[]; M[]\OT1/cmr/m/n/12 )$
  []
 
 
-Overfull \hbox (2.8449pt too wide) in paragraph at lines 1721--1721
+Overfull \hbox (2.8449pt too wide) in paragraph at lines 1722--1722
 [][] 
  []
 
 
-Overfull \hbox (9.91663pt too wide) in paragraph at lines 1721--1722
+Overfull \hbox (9.91663pt too wide) in paragraph at lines 1722--1723
 [][][][][][][] 
  []
 
 [38]
-Overfull \hbox (10.53716pt too wide) detected at line 1791
+Overfull \hbox (10.53716pt too wide) detected at line 1792
 [] []
  []
 
 
-Overfull \hbox (24.7787pt too wide) in paragraph at lines 1795--1797
+Overfull \hbox (24.7787pt too wide) in paragraph at lines 1796--1798
 []\OT1/cmr/m/n/12 Eelneva p[]ohjal pii-sab mei-le, ar-ves-ta-des eel-ne-valt []
 aratoodud piiran-gu-id $\OML/cmm/m/it/12 L[]$ \OT1/cmr/m/n/12 keskv[]a[]artusel
 e
@@ -3173,17 +3194,17 @@ e
 
 [39]
 
-LaTeX Warning: Citation `Aspremont2003' on page 40 undefined on input line 1823
+LaTeX Warning: Citation `Aspremont2003' on page 40 undefined on input line 1824
 .
 
 
-Overfull \hbox (6.58202pt too wide) in paragraph at lines 1823--1824
+Overfull \hbox (6.58202pt too wide) in paragraph at lines 1824--1825
 \OT1/cmr/m/n/12 hen-da-mi-ne on []uldjuhul ras-ke [][][]. K[]ull on sel-list t[
 ]u[]upi []ulesandeid v[]oimalik l[]odvendada,
  []
 
 
-Overfull \hbox (31.5212pt too wide) in paragraph at lines 1823--1824
+Overfull \hbox (31.5212pt too wide) in paragraph at lines 1824--1825
 \OT1/cmr/m/n/12 mis[]ulesandeks [\OT1/cmr/bx/n/12 ?\OT1/cmr/m/n/12 , 2] -- see 
 l[]odvendus osu-tus an-tud prob-lee-mi pu-hul aga lii-ga l[]odvaks. 
  []
@@ -3193,31 +3214,31 @@ Underfull \hbox (badness 10000) in paragraph at lines 84--87
 []\OT1/cmr/m/n/12 Nicholas Smith.  Examp-le of Li-kert Sca-le.
  []
 
-) [43] <ois_tagasiside_toodeldud.png, id=623, 1139.25626pt x 542.025pt>
+) [43] <ois_tagasiside_toodeldud.png, id=628, 1139.25626pt x 542.025pt>
 File: ois_tagasiside_toodeldud.png Graphic file (type png)
 
 <use ois_tagasiside_toodeldud.png>
-Package pdftex.def Info: ois_tagasiside_toodeldud.png used on input line 1871.
+Package pdftex.def Info: ois_tagasiside_toodeldud.png used on input line 1872.
 (pdftex.def)             Requested size: 418.25368pt x 198.99123pt.
 
-<Example_Likert_Scale.png, id=626, 1003.75pt x 1525.7pt>
+<Example_Likert_Scale.png, id=631, 1003.75pt x 1525.7pt>
 File: Example_Likert_Scale.png Graphic file (type png)
 
 <use Example_Likert_Scale.png>
-Package pdftex.def Info: Example_Likert_Scale.png used on input line 1878.
+Package pdftex.def Info: Example_Likert_Scale.png used on input line 1879.
 (pdftex.def)             Requested size: 355.51817pt x 540.3818pt.
  [44 <./ois_tagasiside_toodeldud.png>]
-Overfull \hbox (3.14653pt too wide) in paragraph at lines 1894--1912
+Overfull \hbox (3.14653pt too wide) in paragraph at lines 1895--1913
  [] 
  []
 
 [45 <./Example_Likert_Scale.png>]
-Overfull \hbox (10.91872pt too wide) in paragraph at lines 1937--1955
+Overfull \hbox (10.91872pt too wide) in paragraph at lines 1938--1956
  [] 
  []
 
 
-Overfull \hbox (3.14653pt too wide) in paragraph at lines 1979--1997
+Overfull \hbox (3.14653pt too wide) in paragraph at lines 1980--1998
  [] 
  []
 
@@ -3233,11 +3254,11 @@ atoo_Vootele_Rotov.out.pyg Bakatoo_Vootele_Rotov.pyg)...executed.
 Package mdframed Warning: Unknown definedstyle default
  You have to define a style 
  via \mdfdefinedstyle
-(mdframed)                 on input line 2044.
+(mdframed)                 on input line 2045.
 
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 2044.
+(mdframed)              on input line 2045.
 (./Bakatoo_Vootele_Rotov.out.pyg
 LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <10> not available
 (Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 2.
@@ -3249,11 +3270,11 @@ runsystem(rm Bakatoo_Vootele_Rotov.pyg)...executed.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 2045.
+(caption)                particular \caption on input line 2046.
 See the caption package documentation for explanation.
 
 Package hyperref Info: bookmark level for unknown Programm defaults to 0 on inp
-ut line 2045.
+ut line 2046.
 \openout4 = `Bakatoo_Vootele_Rotov.pyg'.
 
 runsystem(pygmentize -l python -f latex -F tokenmerge            -P linenos -P 
@@ -3264,11 +3285,11 @@ atoo_Vootele_Rotov.out.pyg Bakatoo_Vootele_Rotov.pyg)...executed.
 Package mdframed Warning: Unknown definedstyle default
  You have to define a style 
  via \mdfdefinedstyle
-(mdframed)                 on input line 2070.
+(mdframed)                 on input line 2071.
 
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 2070.
+(mdframed)              on input line 2071.
 (./Bakatoo_Vootele_Rotov.out.pyg) [47]
 runsystem(rm Bakatoo_Vootele_Rotov.out.pyg)...executed.
 
@@ -3277,7 +3298,7 @@ runsystem(rm Bakatoo_Vootele_Rotov.pyg)...executed.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 2071.
+(caption)                particular \caption on input line 2072.
 See the caption package documentation for explanation.
 
 \openout4 = `Bakatoo_Vootele_Rotov.pyg'.
@@ -3290,11 +3311,11 @@ atoo_Vootele_Rotov.out.pyg Bakatoo_Vootele_Rotov.pyg)...executed.
 Package mdframed Warning: Unknown definedstyle default
  You have to define a style 
  via \mdfdefinedstyle
-(mdframed)                 on input line 2083.
+(mdframed)                 on input line 2084.
 
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 2083.
+(mdframed)              on input line 2084.
 (./Bakatoo_Vootele_Rotov.out.pyg)
 runsystem(rm Bakatoo_Vootele_Rotov.out.pyg)...executed.
 
@@ -3303,7 +3324,7 @@ runsystem(rm Bakatoo_Vootele_Rotov.pyg)...executed.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 2084.
+(caption)                particular \caption on input line 2085.
 See the caption package documentation for explanation.
 
 \openout4 = `Bakatoo_Vootele_Rotov.pyg'.
@@ -3316,11 +3337,11 @@ atoo_Vootele_Rotov.out.pyg Bakatoo_Vootele_Rotov.pyg)...executed.
 Package mdframed Warning: Unknown definedstyle default
  You have to define a style 
  via \mdfdefinedstyle
-(mdframed)                 on input line 2136.
+(mdframed)                 on input line 2137.
 
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 2136.
+(mdframed)              on input line 2137.
 (./Bakatoo_Vootele_Rotov.out.pyg) [48]
 runsystem(rm Bakatoo_Vootele_Rotov.out.pyg)...executed.
 
@@ -3329,7 +3350,7 @@ runsystem(rm Bakatoo_Vootele_Rotov.pyg)...executed.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 2137.
+(caption)                particular \caption on input line 2138.
 See the caption package documentation for explanation.
 
 \openout4 = `Bakatoo_Vootele_Rotov.pyg'.
@@ -3342,11 +3363,11 @@ atoo_Vootele_Rotov.out.pyg Bakatoo_Vootele_Rotov.pyg)...executed.
 Package mdframed Warning: Unknown definedstyle default
  You have to define a style 
  via \mdfdefinedstyle
-(mdframed)                 on input line 2234.
+(mdframed)                 on input line 2235.
 
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 2234.
+(mdframed)              on input line 2235.
 (./Bakatoo_Vootele_Rotov.out.pyg) [49] [50]
 runsystem(rm Bakatoo_Vootele_Rotov.out.pyg)...executed.
 
@@ -3355,7 +3376,7 @@ runsystem(rm Bakatoo_Vootele_Rotov.pyg)...executed.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 2235.
+(caption)                particular \caption on input line 2236.
 See the caption package documentation for explanation.
 
 \openout4 = `Bakatoo_Vootele_Rotov.pyg'.
@@ -3368,11 +3389,11 @@ o_Vootele_Rotov.pyg)...executed.
 Package mdframed Warning: Unknown definedstyle default
  You have to define a style 
  via \mdfdefinedstyle
-(mdframed)                 on input line 2271.
+(mdframed)                 on input line 2272.
 
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 2271.
+(mdframed)              on input line 2272.
 (./Bakatoo_Vootele_Rotov.out.pyg)
 runsystem(rm Bakatoo_Vootele_Rotov.out.pyg)...executed.
 
@@ -3381,26 +3402,21 @@ runsystem(rm Bakatoo_Vootele_Rotov.pyg)...executed.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 2272.
+(caption)                particular \caption on input line 2273.
 See the caption package documentation for explanation.
 
 [51]
-Overfull \hbox (0.17384pt too wide) in paragraph at lines 2309--2312
+Overfull \hbox (0.17384pt too wide) in paragraph at lines 2310--2313
 []\OT1/cmr/m/n/12 kinnitan, et liht-lit-sent-si and-mi-se-ga ei ri-ku-ta teis-t
 e isi-ku-te intellektuaal-omandi
  []
 
-pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.2320 \end{titlepage}
-                       [1]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2324.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 2324.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2325.
+[52]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 2325.
  (./Bakatoo_Vootele_Rotov.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 2324.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2324.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 2325.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2325.
 
 Package rerunfilecheck Info: File `Bakatoo_Vootele_Rotov.out' has not changed.
 (rerunfilecheck)             Checksum: AFC729E3199185997013904B08B08AD2;2465.
@@ -3413,13 +3429,13 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 25760 strings out of 494428
- 457759 string characters out of 6165567
- 577866 words of memory out of 5000000
- 28274 multiletter control sequences out of 15000+600000
+ 25736 strings out of 494468
+ 447645 string characters out of 6166395
+ 575016 words of memory out of 5000000
+ 28228 multiletter control sequences out of 15000+600000
  20977 words of font info for 78 fonts, out of 8000000 for 9000
- 372 hyphenation exceptions out of 8191
- 56i,20n,81p,10455b,1011s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 350 hyphenation exceptions out of 8191
+ 56i,20n,81p,956b,1011s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/tex
@@ -3444,9 +3460,10 @@ amsfonts/cm/cmti8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
 s/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
 mtt12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/ms
 bm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on Bakatoo_Vootele_Rotov.pdf (53 pages, 585261 bytes).
+Output written on Bakatoo_Vootele_Rotov.pdf (53 pages, 500954 bytes).
 PDF statistics:
- 807 PDF objects out of 1000 (max. 8388607)
- 180 named destinations out of 1000 (max. 500000)
+ 818 PDF objects out of 1000 (max. 8388607)
+ 669 compressed objects within 7 object streams
+ 181 named destinations out of 1000 (max. 500000)
  417 words of extra memory for PDF output out of 10000 (max. 10000000)
 

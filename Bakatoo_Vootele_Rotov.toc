@@ -32,5 +32,4 @@
 \contentsline {subsection}{Lisa \numberline {A}N\IeC {\"a}ited k\IeC {\"u}simustikust Likerti skaalal}{44}{subsection.1.A}
 \contentsline {subsection}{Lisa \numberline {B}Empiirilised n\IeC {\"a}ited}{46}{subsection.1.B}
 \contentsline {subsection}{Lisa \numberline {C}Programmiteegi implementatsioon}{47}{subsection.1.C}
-\select@language {estonian}
-\contentsline {subsection}{Lisa \numberline {D}Litsents}{1}{subsection.1.D}
+\contentsline {subsection}{Lisa \numberline {D}Litsents}{52}{subsection.1.D}
