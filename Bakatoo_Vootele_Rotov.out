@@ -1,0 +1,34 @@
+\BOOKMARK [1][-]{section*.7}{Sisukord}{}% 1
+\BOOKMARK [1][-]{section*.8}{Sissejuhatus}{}% 2
+\BOOKMARK [1][-]{section.1}{Taustinfo ja probleemip\374stitus}{}% 3
+\BOOKMARK [2][-]{subsection.1.1}{K\374simustik, k\374simus ja Likerti skaala}{section.1}% 4
+\BOOKMARK [2][-]{subsection.1.2}{Likerti skaala t\365lgendamine intervallskaalana}{section.1}% 5
+\BOOKMARK [2][-]{subsection.1.3}{K\374simustiku valiidsus}{section.1}% 6
+\BOOKMARK [2][-]{subsection.1.4}{K\374simustiku reliaablus}{section.1}% 7
+\BOOKMARK [2][-]{subsection.1.5}{Valiidsuse ja reliaabluse suhe}{section.1}% 8
+\BOOKMARK [2][-]{subsection.1.6}{Sisemine j\344rjepidevus}{section.1}% 9
+\BOOKMARK [2][-]{subsection.1.7}{Probleemi p\374stitus}{section.1}% 10
+\BOOKMARK [1][-]{section.2}{Reliaablus klassikalises testiteoorias}{}% 11
+\BOOKMARK [2][-]{subsection.2.1}{Reliaabluse definitsioon}{section.2}% 12
+\BOOKMARK [2][-]{subsection.2.2}{Vajalikud taustteadmised reliaabluse hindamiseks}{section.2}% 13
+\BOOKMARK [1][-]{section.3}{Reliaabluse alumised t\365kked}{}% 14
+\BOOKMARK [2][-]{subsection.3.1}{Alumine t\365ke 1}{section.3}% 15
+\BOOKMARK [2][-]{subsection.3.2}{Alumine t\365ke 2}{section.3}% 16
+\BOOKMARK [2][-]{subsection.3.3}{Alumine t\365ke 3}{section.3}% 17
+\BOOKMARK [2][-]{subsection.3.4}{Alumine t\365ke 4}{section.3}% 18
+\BOOKMARK [2][-]{subsection.3.5}{Alumine t\365ke glb}{section.3}% 19
+\BOOKMARK [2][-]{subsection.3.6}{Hinnangute kasutatavus praktikas}{section.3}% 20
+\BOOKMARK [1][-]{section.4}{Programmiteek}{}% 21
+\BOOKMARK [1][-]{section.5}{Intervallskaal alternatiivne t\365lgendamine}{}% 22
+\BOOKMARK [2][-]{subsection.5.1}{Vastuste t\365lgendamine intervallskaalal}{section.5}% 23
+\BOOKMARK [2][-]{subsection.5.2}{Reliaabluse hindamine}{section.5}% 24
+\BOOKMARK [2][-]{subsection.5.3}{L\344henemise korrektsus}{section.5}% 25
+\BOOKMARK [2][-]{subsection.5.4}{Alternatiivse t\365lgenduse matemaatiline s\365nastus}{section.5}% 26
+\BOOKMARK [2][-]{subsection.5.5}{Hinnang saadud t\365lgendusele}{section.5}% 27
+\BOOKMARK [1][-]{section*.23}{Kokkuv\365te}{}% 28
+\BOOKMARK [1][-]{section*.24}{Viited}{}% 29
+\BOOKMARK [1][-]{section*.25}{Lisad}{}% 30
+\BOOKMARK [2][-]{subsection.1.A}{Lisa N\344ited k\374simustikust Likerti skaalal}{section*.25}% 31
+\BOOKMARK [2][-]{subsection.1.B}{Lisa Empiirilised n\344ited}{section*.25}% 32
+\BOOKMARK [2][-]{subsection.1.C}{Lisa Programmiteegi implementatsioon}{section*.25}% 33
+\BOOKMARK [2][-]{subsection.1.D}{Lisa Litsents}{section*.25}% 34

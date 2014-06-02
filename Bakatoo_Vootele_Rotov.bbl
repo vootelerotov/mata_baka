@@ -1,103 +1,139 @@
 \begin{thebibliography}{10}
 
+\bibitem{Aspremont2003}
+{\sc Aspremont, A.; Boyd, S.}
+\newblock {Relaxations and Randomized Methods for Nonconvex QCQPs}.
+\newblock http://www.stanford.edu/class/ee392o/relaxations.pdf, 2003.
+
+\bibitem{Benton2013}
+{\sc Benton, T.}
+\newblock {An empirical assessment of Guttman ' s Lambda 4 reliability
+  coefficient}.
+\newblock
+  http://www.cambridgeassessment.org.uk/Images/141299-an-empirical-assessment-of-guttman-s-lambda-4-reliability-coefficient.pdf,
+  2013.
+
 \bibitem{Cronbach1947}
-Lee~J. Cronbach.
+{\sc Cronbach, L.~J.}
 \newblock {Test "Reliability": Its Meaning and Determination}.
-\newblock {\em Psychometrika}, 12(1):1--16, 1947.
+\newblock {\em Psychometrika 12}, 1 (1947), 1--16.
 
 \bibitem{Cronbach1951}
-Lee~J. Cronbach.
+{\sc Cronbach, L.~J.}
 \newblock {Coefficient Alpha and the Internal Structure of Tests}.
-\newblock 16(3):297--330, 1951.
+\newblock {\em Psychometrika 16}, 3 (1951), 297--330.
 
 \bibitem{Cronbach2004}
-Lee~J. Cronbach and Richard~J. Shavelson.
+{\sc Cronbach, L.~J.; Shavelson, R.~J.}
 \newblock {My Current Thoughts on Coefficient Alpha and Successor Procedures}.
-\newblock {\em Educational and Psychological Measurement}, 64(3):391--418, June
-  2004.
+\newblock {\em Educational and Psychological Measurement 64}, 3 (June 2004),
+  391--418.
 
 \bibitem{DiamondS;ChuE;Boyd2014}
-S.~{Diamond, S; Chu, E; Boyd}.
+{\sc Diamond, S., Chu, E.; Boyd, S.}
 \newblock {CVXPY: A Python-Embedded Modeling Language for Convex Optimization},
   2014.
 
 \bibitem{Edmondson}
-Diane~R. Edmondson.
+{\sc Edmondson, D.~R.}
 \newblock {Likert Scales: A History}.
 \newblock In {\em Conference on Historical Analysis \& Research in Marketing
-  Proceedings}, 2005.
+  Proceedings\/} (2005).
 
 \bibitem{Guttman1945}
-Louis Guttman.
+{\sc Guttman, L.}
 \newblock {A Basis for Analyzing Test-Retest Reliability}.
-\newblock {\em Psychometrika}, 10(4):255--282, 1945.
+\newblock {\em Psychometrika 10}, 4 (1945), 255--282.
 
 \bibitem{Henson2001}
-Robin~K. Henson.
+{\sc Henson, R.~K.}
 \newblock {Understanding Internal Consistency Reliability Estimates: A
   Conceptual Primer on Coefficient Alpha}.
-\newblock {\em Measurement \& Evaluation in Counseling \& Development},
-  34(3):177, 2001.
+\newblock {\em Measurement \& Evaluation in Counseling \& Development 34}, 3
+  (2001), 177.
 
 \bibitem{Jackson1977}
-Paul~H Jackson and Christian~C. Agunwamba.
+{\sc Jackson, P.~H.; Agunwamba, C.~C.}
 \newblock {Lower Bounds for the Reliability of the Total Score on a Test
   Composed of Non-Homogeneous Items: I: Algebraic Lower Bounds}.
-\newblock {\em Psychometrika}, 42(2):567--578, 1977.
+\newblock {\em Psychometrika 42}, 2 (1977), 567--578.
 
 \bibitem{Jamieson2004}
-Susan Jamieson.
+{\sc Jamieson, S.}
 \newblock {Likert scales: how to (ab)use them.}
-\newblock {\em Medical education}, 38(12):1217--8, December 2004.
+\newblock {\em Medical education 38}, 12 (Dec. 2004), 1217--8.
 
 \bibitem{JonesE.;OliphantT;Peterson}
-Eric Jones, Travis Oliphant, and Pearu Peterson.
+{\sc Jones, E., Oliphant, T.; Peterson, P.}
 \newblock {SciPy: Open Source Scientific Tools for Python}.
 
 \bibitem{Lord1968}
-F.M. Lord and M.R Novick.
+{\sc Lord, F.; Novick, M.}
 \newblock {\em {Statistical theories of mental test scores.}}
 \newblock 1968.
 
 \bibitem{Novick1966a}
-Melvin~R. Novick.
+{\sc Novick, M.~R.}
 \newblock {The axioms and principal results of classical test theory}.
-\newblock {\em Journal of Mathematical Psychology}, 3(1):1--18, February 1966.
+\newblock {\em Journal of Mathematical Psychology 3}, 1 (Feb. 1966), 1--18.
+
+\bibitem{Parna2013}
+{\sc P\"{a}rna, K.}
+\newblock {\em {T\~{o}en\"{a}osusteooria algkursus}}.
+\newblock Tartu \"{U}likooli kirjastus, Tartu, 2013.
+
+\bibitem{Revelle2014}
+{\sc Revelle, W.}
+\newblock {\em {psych: Procedures for Psychological, Psychometric, and
+  Personality Research}}.
+\newblock Northwestern University, Evanston, Illinois, 2014.
 
 \bibitem{Revelle2008}
-William Revelle and Richard~E. Zinbarg.
+{\sc Revelle, W.; Zinbarg, R.~E.}
 \newblock {Coefficients Alpha, Beta, Omega, and the glb: Comments on Sijtsma}.
-\newblock {\em Psychometrika}, 74(1):145--154, December 2008.
+\newblock {\em Psychometrika 74}, 1 (Dec. 2008), 145--154.
 
 \bibitem{Sijtsma2009}
-Klaas Sijtsma.
+{\sc Sijtsma, K.}
 \newblock {On the use, the misuse, and the very limited usefulness of
   cronbach’s alpha}.
-\newblock {\em Psychometrika}, 74(1):107--120, 2009.
+\newblock {\em Psychometrika 74}, 1 (2009), 107--120.
 
 \bibitem{Sijtsma2009a}
-Klaas Sijtsma.
+{\sc Sijtsma, K.}
 \newblock {Reliability Beyond Theory and Into Practice}.
-\newblock {\em Psychometrika}, 74(1):169--173, 2009.
+\newblock {\em Psychometrika 74}, 1 (2009), 169--173.
 
 \bibitem{Smith}
-Nicholas Smith.
+{\sc Smith, N.}
 \newblock {Example of Likert Scale}.
 \newblock http://en.wikipedia.org/wiki/File:Example\_Likert\_Scale.svg.
 
 \bibitem{Tammeraid1999}
-Ivar Tammeraid.
+{\sc Tammeraid, I.}
 \newblock {\em {Lineaaralgebra rakendused}}.
 \newblock TT\"{U} Kirjastus, Tallinn, 1999.
 
+\bibitem{TenBerge2004}
+{\sc {Ten Berge}, J.~M.; Socan, G.}
+\newblock {The Greatest Lower Bound to the Reliability of a Test and the
+  Hypothesis of Unidimensionality}.
+\newblock {\em Psychometrika 69}, 4 (2004), 613--625.
+
 \bibitem{UT}
-UT.
+{\sc UT}.
 \newblock {\~{O}isi tagasiside}.
 \newblock http://is.ut.ee.
 
 \bibitem{Zimmerman1975}
-D.~W. Zimmerman.
+{\sc Zimmerman, D.~W.}
 \newblock {Probability spaces, hilbert spaces, and the axioms of test theory}.
-\newblock 40(3):395--412, 1975.
+\newblock {\em Psychometrika 40}, 3 (1975), 395--412.
+
+\bibitem{Zimmerman1976}
+{\sc Zimmerman, D.~W.}
+\newblock {Test Theory With Minimal Assumptions}.
+\newblock {\em Educational and Psychological Measurement 36}, 1 (Apr. 1976),
+  85--96.
 
 \end{thebibliography}
