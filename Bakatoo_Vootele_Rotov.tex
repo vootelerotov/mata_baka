@@ -226,6 +226,8 @@ Autori eesmärgiks on, et antud tekst oleks lihtsasti järgitav keskmisele bakal
 
 Lisaks loodab autor, et loodud programmiteek pakkub huvi ka psühholoogidele. 
 
+Autor soovib tänada Margus Niitsood konstruktiivse juhendamise eest ning Timo Aavat ja Kadi Kähär-Petersoni abi eest käesolevas bakalaureusetöös kasutatud artiklite kättesaadavaks tegemisel.    
+
 
 
 
@@ -854,9 +856,8 @@ Esitame nüüd meie poolt üles ehitatud mudeli omaduse, mis osutub väga kasuli
 cov(T,E') = 0 \text{.}
 \end{equation} 
 
-{\color{green}
-Teisisõnu, küsimustiku tegeliku tulemuse ja küsimustiku mõõtmisvea vahel ei ole korrelatsiooni. Paneme tähele, et kuna me ei kitsendanud $X$ ja $X'$ valikut, siis ka $cov(T,E) = 0$. See omadus muudab mudeli rakendamise palju lihtsamaks, kuna me ei pea eeldama, et meie koostatud küsimustikul on selline omadus. Selle omaduse, mille kehtimine ei ole intuitiivne, tõestus on mittetriviaalne ning ei mahu käesoleva töö raamidesse, rangest tõestusest huvitatutele soovitame tutvuda Donald Zimmermani mudeli ülesehitusega \cite{Zimmerman1976}. Lugejale võib olla huvipakkuv see, et tegemist tundub olevat saadud omadus järeldub väga üldistest Hilberti ruumides kehtivatest omadustest \cite{Zimmerman1975}.
-}
+Teisisõnu, küsimustiku tegeliku tulemuse ja küsimustiku mõõtmisvea vahel ei ole korrelatsiooni. Paneme tähele, et kuna me ei kitsendanud $X$ ja $X'$ valikut, siis ka $cov(T,E) = 0$. See omadus muudab mudeli rakendamise palju lihtsamaks, kuna me ei pea eeldama, et meie koostatud küsimustikul on selline omadus. Selle omaduse, mille kehtimine ei ole intuitiivne, tõestus on mittetriviaalne ning ei mahu käesoleva töö raamidesse. Rangest tõestusest huvitatutele soovitame tutvuda Donald Zimmermani mudeli ülesehitusega \cite{Zimmerman1976}. Lugejale võib olla huvipakkuv see, et kõnealune omadus järeldub väga üldistest Hilberti ruumides kehtivatest omadustest \cite{Zimmerman1975}.
+
 
 Küll aga peame tegema järgmise eelduse -- olgu meil kaks erinevat küsimustikku, mille mõõtmisvead on vastavalt $E$ ja $E'$, siis 
 \begin{equation}
@@ -885,8 +886,8 @@ D(X + Y) \overset{def}{=}\epsilon[X + Y - \epsilon(X + Y)]^2\overset{\text{$\eps
 \end{meeldetuletus}
 
 
-{\color{green}
-Järgnevalt tutvume paralleelse küsimustiku mõistega, mida võime tõlgendada kui sama küsimustiku sõltumatud kordusmõõtmist samades tingimustes. Kaks küsimustikku, mille vaadeldavad tulemused üle kõigi vastajate kogumi $I$ on $X = T + E$ ja $X' = T' + E'$ ning mille vaadeldavad tulemused vastaja $i \in I$ jaoks on $X_i = t_i + E_i$ ja $X_i' = t_i' + E_i'$, on paralleelsed parajasti siis, kui kehtivad järgmised väited:
+
+Järgnevalt tutvume paralleelse küsimustiku mõistega, mida võime tõlgendada kui sama küsimustiku sõltumatut kordusmõõtmist samades tingimustes. Kaks küsimustikku, mille vaadeldavad tulemused üle kõigi vastajate kogumi $I$ on $X = T + E$ ja $X' = T' + E'$ ning mille vaadeldavad tulemused vastaja $i \in I$ jaoks on $X_i = t_i + E_i$ ja $X_i' = t_i' + E_i'$, on paralleelsed parajasti siis, kui kehtivad järgmised väited:
 \begin{enumerate}
 \item $t_i = t_i' ~ \forall i \in I  $,
 \item $D \left[ E \right] = D \left[ E' \right] $. 
@@ -896,15 +897,15 @@ Eelnevast järeldub lihtsalt, et
 \begin{equation}
 \label{eq:true_scores_eq}
 T = T' \text{.}
-\end{equation} Tõepoolest, olgu $(i,\omega)$ suvaline paar hulgast $I \times \Omega$, siis kehtib
+\end{equation} Tõepoolest, olgu $(i,\omega)$ suvaline paar hulgast $I \times \Omega$. Siis kehtib
 
 \begin{equation*}
 T((i, \omega) \overset{def}{=} t_i = t_i' = T'((i,\omega)) \text{.}
 \end{equation*}
 
-Seega nõuame me, et kahe paralleelse küsimustiku korral vastajate tegelikud tulemused alati ühtiksid ning vea dispersioonid oleksid võrdsed - need nõudmised sobivad hästi kirjeldamaks sama küsimustikuga sooritatud kordusmõõtmist. }
+Seega nõuame, et kahe paralleelse küsimustiku korral vastajate tegelikud tulemused alati ühtiksid ning vea dispersioonid oleksid võrdsed -- need nõudmised sobivad hästi kirjeldama sama küsimustikuga sooritatud kordusmõõtmist. 
 
-Paneme tähele, et kahe paralleelse küsimustiku, mille vaadeldavad tulemused on  $X$ ja $X'$ korral kehtib
+Paneme tähele, et kahe paralleelse küsimustiku, mille vaadeldavad tulemused on  $X$ ja $X'$, korral kehtib
 \begin{equation}
 \label{eq:par_dispersioon}
 D[X] = D[X'] \text{,}
@@ -958,9 +959,7 @@ Eelneva põhjal saame näidata, et kehtib
 \end{gathered}
 \end{equation}
 
-{\color{green}
-Tõestatud tulemus on huvitav - tuleb välja, et me saame öelda midagi küsimustiku ja temaga paralleelse küsimustiku korrelatsiooni kohta, teadmata midagi paralleelse küsimustiku kohta. 
-}
+Tõestatud tulemus on huvitav -- ilmneb, et saame öelda midagi küsimustiku ja sellega paralleelse küsimustiku korrelatsiooni kohta, teadmata midagi paralleelse küsimustiku kohta. 
 
  Samuti märgime, et kuna $T = X - E$, siis kehtib
  \begin{equation}
@@ -982,14 +981,13 @@ Eelneva põhjal on selge, et väide  "`küsimustiku  reliaablus on suurem"' on s
 \item küsimustiku mõõtmisvea dispersioon on väiksem võrreldes küsimustiku vaadeldava tulemuse dispersiooniga.
 \end{enumerate}
 
-{\color{green} 
-Märgime, et klassikalise testiteooria raames defineeritud reliaablus sobib  kokku eelmises peatükis antud mitteformaalse definitsiooniga, kui võtta arvesse paralleelse küsimustiku semantilist tähendust. }
+Märgime, et klassikalise testiteooria raames defineeritud reliaablus sobib  kokku eelmises peatükis antud mitteformaalse definitsiooniga, kui võtta arvesse paralleelse küsimustiku semantilist tähendust. 
 
 Paneme tähele, et tegemist on suhteliselt nõrku eeldusi vajava teooriaga, kõige raskem on praktikas tagada süstemaatiliste vigade puudumine.
 
 
-{\color{green}
-Kuna küsimustiku korduvmõõtmiste läbiviimine on ei ole tihti võimalik, on kasutusele võetud erinevad meetodid testi reliaabluse hindamiseks küsimustiku ühekordse läbiviimise käigus saadud informatsiooni põhjal, mis kasutavad ära punktides (\ref{eq:corr_equals_var_over_var}) ja (\ref{eq:reliability}). Järgnevalt vaatleme, kuidas need meetodid on tuletatud.}
+
+Kuna küsimustiku korduvmõõtmiste läbiviimine ei ole tihti võimalik, on kasutusele võetud erinevad meetodid testi reliaabluse hindamiseks küsimustiku ühekordse läbiviimise käigus saadud informatsiooni põhjal, kus kasutatakse punktides (\ref{eq:corr_equals_var_over_var}) ja (\ref{eq:reliability}) toodud omadusi. Järgnevalt vaatleme, kuidas need meetodid on tuletatud.
 
 
 
@@ -998,7 +996,7 @@ Kuna küsimustiku korduvmõõtmiste läbiviimine on ei ole tihti võimalik, on k
 Järgnev käsitlus tugineb Jacksoni ja Anguwamba 1977. aasta artiklile.\cite{Jackson1977}
 Olgu meil vastajate populatsioon $I$, üle mille vaatleme küsimustikku, milles on $k$ k\"usimust. Vaatleme seda küsimustikku klassikalise testiteooria raames ning olgu $X$ küsimustiku vaadeldav tulemus, $T$ küsimustiku tegelik tulemus ning $E$ küsimustiku mõõtmisviga. Vaatleme iga küsimust kui ühest küsimusest koosnevat alamküsimustikku ja tähistame fikseeritud k\"usimuse $ i \in \left\lbrace 1,2,\ldots,k \right\rbrace$ vaadeldava tulemuse kui $X_i$, tegeliku tulemuse kui $T_i$ ning mõõtmisvea $E_i$. Seega $X = \sum \limits_{i=0}^{k} X_i$, $T = \sum \limits_{i=0}^{k} T_i$ ja $E = \sum \limits_{i=0}^{k} E_i$ . Paneme tähele, et kui eelnevas peatükis tähistasime alaindeksiga küsimusele vastajat, siis edaspidi tähistame sellega kindlat küsimust. 
 
-Vaatleme testi k\"usimuste tulemuste ja mõõtmisvea vektoreid: $\left( X_1, X_2, X_3, \ldots, X_k \right)$, $\left( T_1, T_2, T_3, \ldots, T_k \right)$, $\left( E_1, E_2, E_3, \ldots, E_k \right)$. Tähistame nende vektorite kovariatsioonimaatriksid\footnote{Praktikas ei ole kovariatsioonimaatriksid meile teada, kuid valimi põhjal on meil võimalik saada hinnang vaadeldavate tulemuste kovariatsioonimaatriksi kohta.} vastavalt $\Sigma_X, \Sigma_T, \Sigma_E$. Seega, 
+Vaatleme testi k\"usimuste tulemuste ja mõõtmisvea vektoreid: $\left( X_1, X_2, X_3, \ldots, X_k \right)$, $\left( T_1, T_2, T_3, \ldots, T_k \right)$, $\left( E_1, E_2, E_3, \ldots, E_k \right)$. Tähistame nende vektorite kovariatsioonimaatriksid\footnote{ Praktikas ei ole kovariatsioonimaatriksid meile teada, kuid valimi põhjal on meil võimalik saada hinnang vaadeldavate tulemuste kovariatsioonimaatriksi kohta.} vastavalt $\Sigma_X, \Sigma_T, \Sigma_E$. Seega, 
 \small
 \begin{equation*}
 \Sigma_X = 
@@ -1161,10 +1159,10 @@ Järelikult ka
 
 \begin{equation}
 \label{eq:lambda_1}
-\lambda_1 = 1 - \frac{ \sum \limits_{i=1}^k {x}_{ii}}{ \sum \limits_{i=1}^k \sum \limits_{j=1}^k {x}_{ij}} \leq  1 - \frac{ \sum \limits_{i=1}^k  {\theta}_{i}}{ \sum \limits_{i=1}^k \sum \limits_{j=1}^k {x}_{ij}} =  1 - \frac{D \left[ E \right]}{D \left[ X \right]}.
+ 1 - \frac{ \sum \limits_{i=1}^k {x}_{ii}}{ \sum \limits_{i=1}^k \sum \limits_{j=1}^k {x}_{ij}} \leq  1 - \frac{ \sum \limits_{i=1}^k  {\theta}_{i}}{ \sum \limits_{i=1}^k \sum \limits_{j=1}^k {x}_{ij}} =  1 - \frac{D \left[ E \right]}{D \left[ X \right]}.
 \end{equation} 
 
-Seeg, võttes arvesse võrdust (\ref{eq:reliability_cov}), oleme tõestanud järgimse lemma:
+Seega, võttes arvesse võrdust (\ref{eq:reliability_cov}), oleme tõestanud järgmise lemma:
 
 
 \vspace{10pt}
@@ -1268,13 +1266,13 @@ Seega saame, et $ 0 \leq c_{ii} + 2\alpha{c_{ij}} + c_{jj}$. See, et saadud ruut
 \begin{equation*}
 c_{ij}^2 - c_{i}c_{j} \leq 0 \text{,} 
 \end{equation*}
-milles me soovisimegi veenduda. \footnote{Eelneva arutelu idee pärineb Ivar Tammeraidi õpikust. \cite{Tammeraid1999}}.
+milles soovisimegi veenduda. \footnote{ Eelneva arutelu idee pärineb Ivar Tammeraidi õpikust. \cite{Tammeraid1999}}.
 \end{proof}  
 
 
 \begin{helper_2}
 \thlabel{helper_2}
-Olgu meil mingid arvud $y_i, 1 \leq i  \leq n $.  Siis kehtib järgvev võrdus 
+Olgu meil mingid arvud $y_i, 1 \leq i  \leq n $.  Siis kehtib järgnev võrdus 
 \begin{equation*}
 2 \left( n-1 \right) \left( \sum \limits_{i=1}^n y_{i} \right)^2  = \sum \limits_{i=1}^n   \sum \limits_{\substack{j=1 \\ j \neq i}}^{n} (y_{i} - y_{j})^2  +  2 n \sum \limits_{i=1}^n \sum \limits_{\substack{j=1 \\ j \neq i}}^{n} y_{i} y_{j} \text{.}
 \end{equation*}
@@ -1312,13 +1310,13 @@ Selles aga soovisimegi veenduda.
 \end{proof}
 
 
-Vaatleme jällegi kovariatsiooni maatriksit $\Sigma_E = diag \left( \theta_i \right) $. Märkame, et eelmise peatüki põhjal $x_{ii} = \theta_i + t_{ii}$ iga $ 1 \leq i \leq k$ korral, siis kehtib järgnev:
+Vaatleme jällegi kovariatsiooni maatriksit $\Sigma_E = diag \left( \theta_i \right) $. Märkame, et eelmise peatüki põhjal kehtib $x_{ii} = \theta_i + t_{ii}$ iga $ 1 \leq i \leq k$ korral. Siis kehtib ka järgnev:
 
 \begin{equation*}
  \sum \limits_{i=1}^k \theta_i = \sum \limits_{i=1}^k x_{ii} - \sum \limits_{i=1}^k t_{ii} \text{.}
 \end{equation*}.
 
-Märgime, et kuna kovariatsioon on definitsioon põhjal sümmeetriline, siis on ka suvalis juhuslike suuruste vektori $(Y_1,Y_2,\ldots,Y_n)$ kovariatsioonimaatriks $\Sigma_Y$  on sümmeetriline. Tõepoolest, iga $1 \leq i,j \leq n$ korral  
+Märgime, et kuna kovariatsioon on definitsiooni põhjal sümmeetriline, siis on ka suvaliste juhuslike suuruste vektori $(Y_1,Y_2,\ldots,Y_n)$ kovariatsioonimaatriks $\Sigma_Y$ sümmeetriline. Tõepoolest, iga $1 \leq i,j \leq n$ korral  
 
 \begin{equation*}
 {\Sigma_Y}_{ij} = cov(Y_i,Y_j) = cov(Y_j,Y_i) = {\Sigma_Y}_{ji} \text{.}
@@ -1331,7 +1329,7 @@ Arvestades  kovariatsioonimaatriksite mitte-negatiivselt määratust ja sümmeet
  \sqrt{\frac{ k \sum \limits_{i=1}^k   \sum \limits_{\substack{j=1 \\ j \neq i}}^{k} t_{ii} t_{jj} }{ \left( k -1 \right)}} \text{.}
 \end{gather*}
 
-Arvestades veel lisaks seda, et  kui $i \neq j$, siis $t_{ij} = x_{ij}$, saame eelnevalt tõestatud abitulemuse põhjal väita, et
+Eelnevalt tõestatud abitulemuse ja selle, et kui $i \neq j$, siis $t_{ij} = x_{ij}$, põhjal saame väita, et
 
 \begin{equation*}
 \sum \limits_{i=1}^k t_{ii}  \geq \sqrt{\frac{ k \sum \limits_{i=1}^k  \sum \limits_{\substack{j=1 \\ j \neq i}}^{k} t_{ii} t_{jj}}{\left( k -1 \right)}} \overset{\text{\thref{helper_1}}}{\geq} \sqrt{\frac{ k \sum \limits_{i=1}^k   \sum \limits_{\substack{j=1 \\ j \neq i}}^{k} t_{ij}^2 }{\left( k -1 \right)}} = \sqrt{\frac{ k \sum \limits_{i=1}^k   \sum \limits_{\substack{j=1 \\ j \neq i}}^{k} x_{ij}^2 }{\left( k -1 \right)}}
@@ -1346,6 +1344,8 @@ Paneme tähele, et eelneva põhjal kehtib:
 
 
 Seega kehtib järgnev  lemma.
+
+\vspace{10pt}
 
 \begin{lambda_2}
 Küsimustiku, mille vaadeldav tulemus on $X$, reliaabluse alumiseks tõkkeks on $\lambda_2$, kus 
@@ -1426,7 +1426,7 @@ Tõkke teisendamisel saame, et
 Tuletades meelde tõkke $\lambda_1$ definitsiooni (lemma \ref{lambda_1}) on ilmne, et
 \begin{equation}
 \label{eq:lambda_3_from_lambda_1}
-\lambda_3 = \frac{k\ \lambda_1}{k-1}.
+\lambda_3 = \frac{k\ \lambda_1}{k-1}
 \end{equation}
 
 ja seega $\lambda_1 \leq \lambda_3$. Lisaks on võimalik näidata, et $\lambda_3 \leq \lambda_2$, näiteks \cite[148-149]{Revelle2008}.
@@ -1459,6 +1459,8 @@ Seega, iga $v \in V$ korral saame reliaabluse alumise tõkke. Tõepoolest, \eqre
 
 Defineerime  uue alumise tõkke kui maksimumi kõikidest sellistest tõketest.
 
+\vspace{10pt}
+
 \begin{lambda_4}
 Küsimustiku, mille vaadeldav tulemus on $X$, reliaabluse alumiseks tõkkeks on $\lambda_4$, kus 
 
@@ -1471,7 +1473,7 @@ Küsimustiku, mille vaadeldav tulemus on $X$, reliaabluse alumiseks tõkkeks on 
 \subsection{Alumine tõke glb}
 
 
-Paneme tähele, et $\Sigma_E=diag(\theta_i$ struktuuri  ( \ref{eq:sigma_E} ) tõttu on tema mitte-negatiivselt määratus samaväärne sellega, et $0 \leq \theta_i$ iga $1 \leq i \leq k$ korral - fakti tõestus on analoogiline alumise tõkke $\lambda_1$ tuletamisel läbitehtuga.
+Paneme tähele, et $\Sigma_E=diag(\theta_i$ struktuuri  ( \ref{eq:sigma_E} ) tõttu on tema mitte-negatiivselt määratus samaväärne sellega, et $0 \leq \theta_i$ iga $1 \leq i \leq k$ korral -- selle tulemuse tõestus on analoogiline alumise tõkke $\lambda_1$ tuletamisel läbitehtuga.
 
  
 \"Uritame n\"u\"ud  leida vea suurimat võimalikku dispersiooni, mis on \eqref{eq:reliability} põhjal samaväärne summaga $\sum \limits_{i=1}^k \theta_i$. Arvestades eelnevalt kirjeldatud piiranguid, saame selle  kirja panna järgneva optimiseerimis\"ulesandena:
@@ -1486,8 +1488,8 @@ max \sum_i \theta_i \\
 
 kus kirjapilt $\Sigma_T \succeq 0$ tähistab tingimust "$\Sigma_T$ on mitte-negatiivselt määratud". 
 
-Olgu $z$ eelneva optimiseerimis\"ulesande lahend $\Sigma_X$ korral. Oleme saanud veel ühe alumise tõkke küsimustike reliaablusele.
-
+Olgu $z$ eelneva optimiseerimis\"ulesande lahend $\Sigma_X$ korral. Oleme saanud küsimustiku reliaabluse järgmise alumise tõkke.
+\vspace{10pt}
 \begin{glb}
 Küsimustiku, mille vaadeldav tulemus on $X$, reliaabluse alumiseks tõkkeks on $glb$ (\textit{greatest lower bound}), kus 
 \begin{equation*}
@@ -1499,28 +1501,29 @@ Paneme tähele, et kuna $z$ on maksimaalne vea dispersioon fikseeritud $\Sigma_X
 
 \subsection{Hinnangute kasutatavus praktikas}
 
-Püstitasime töö alguses küsimuse, kas on võimalik leida paremat reliaabluse hinnangut kui $\lambda_3$. Käsitletud hinnangutest on nii $glb$ kui $\lambda_2$ reliaabluse alumised tõkked ning samas vähemalt sama suured kui $\lambda_3$, seega on need ka paremad reliaabluse hinnangud kui $\lambda_3$. Samuti on raske leida empiirilist näidet, kus  $\lambda_4$ ei ole tingimata suurem oleks väiksem kui $\lambda_3$.
+Püstitasime töö alguses küsimuse, kas on võimalik leida paremat reliaabluse hinnangut kui $\lambda_3$. Käsitletud hinnangutest on nii $glb$ kui $\lambda_2$ reliaabluse alumised tõkked ning samas vähemalt sama suured kui $\lambda_3$, seega on need ka paremad reliaabluse hinnangud kui $\lambda_3$. {\color{red}Samuti on raske leida empiirilist näidet, kus  $\lambda_4$ ei ole tingimata suurem oleks väiksem kui $\lambda_3$.}
 
-Paneme tähele, et $\lambda_3$ leidmine on väga lihtne, ning eelmise sajandi keskel, mil arvutuslik võimsus oli tagashoidlik, oli tegemist olulise eelisega. Tänapäeval on $\lambda_3$ lihtsus peaaegu olematu eelis, arvestades, et ka väga suurte küsimustike puhul ei valmista paremate hinnangute leidmine optimiseeritud programmi korral probleeme. 
-Lisas \ref{appendix:empiric} esitatud näidete põhjal näeme, et praktikas võivad hinnangud olla väga erinevad -  näiteks joonisel \ref{emp:second} kujutatud kovariatsoonimaatriksi korral on tulemused järgnevad:
+Paneme tähele, et $\lambda_3$ leidmine on väga lihtne, ning eelmise sajandi keskel, mil arvutuslik võimsus oli tagashoidlik, oli tegemist olulise eelisega. Tänapäeval on $\lambda_3$ lihtsus peaaegu olematu eelis, arvestades, et ka väga suurte küsimustike puhul ei valmista paremate hinnangute leidmine optimiseeritud programmi korral probleeme.
+ 
+Lisas \ref{appendix:empiric} esitatud näidete põhjal näeme, et praktikas võivad hinnangud olla väga erinevad -- näiteks joonisel \ref{emp:first} kujutatud kovariatsoonimaatriksi korral on tulemused järgnevad:
 \begin{figure}[H]
 \begin{center}
-\begin{tabular}{r | r r r r r}
+\begin{tabular}{l | r r r r r}
 \hline
  Hinnang & $\lambda_1$ & $\lambda_2$ & $\lambda_3$ & $\lambda_4$ & $glb$ \cr
- Väärtus & 0.39 & 0.53 & 0.43 & 0.68 & 0.70 \cr 
+ Väärtus & 0.39 & 0.60 & 0.43 & 0.73 & 0.77 \cr 
  \hline
  \end{tabular}
  \end{center}
- \caption{Joonisel \ref{emp:second} kujutatud kovariatsioonimaatriksi reliaabluse hinnangud}
+ \caption{Joonisel \ref{emp:first} kujutatud kovariatsioonimaatriksi reliaabluse hinnangud}
 \end{figure}
 
-On lihtne märgata, et võrreldes tõketega $lambda_4$ ja $glb$ alahindab $\lambda_3$ reliaablust oluliselt. Samuti on märgatav vahe hinnangutel $\lambda_2$ ja $\lambda_3$. Tuletades meelde hinnangute definitsioonid, võime üritada hinnangute erinevust -  hinnangud kasutavad kovariatsioonimaatriksitelt erineva hulga informatsiooni. Kui $\lambda_3$ kasutab ära ainult peadiagonaalil asetseva informatsiooni, siis tõke $glb$ kasutab ära tervet kovariatsioonimaatriksit.  
+On lihtne märgata, et võrreldes tõketega $\lambda_4$ ja $glb$ alahindab $\lambda_3$ reliaablust oluliselt. Samuti on märgatav vahe hinnangutel $\lambda_2$ ja $\lambda_3$. Tuletades meelde hinnangute definitsioonid, võime üritada põhjendada hinnangute erinevust --  hinnangud kasutavad kovariatsioonimaatriksitest erineva hulga informatsiooni. Kui $\lambda_3$ kasutab ainult peadiagonaalil asetsevat informatsiooni, siis tõke $glb$ kasutab kogu kovariatsioonimaatriksis leiduvat teavet.  
 
  Joonisel \ref{emp:second} on aga näha, et isegi juhul, kui $\lambda_3$ on suur, annavad nii $glb,\lambda_4$ kui ka $\lambda_3$ suuremaid hinnanguid. 
 Seega, kui küsimustikku mõtestada klassikalise testiteooria raamistikus, siis ei näe autor põhjust, miks peaks kasutama reliaabluse hindamiseks $\lambda_3$, ning soovitab eelistada teisi, kõrgemaid hinnanguid. Autor märgib siinkohal, et tegemist tundub olevat valdkonna ekspertide seas levinud arvamusega.  \cite{Revelle2008} \cite{Sijtsma2009a} \cite{Cronbach2004}
 
-Mainime siinkohal ära, et hinnangud $glb$ ja $\lambda_4$ võivad teatud tingimustes olla nihkega. See on probleem, mis esineb praktikas, kui kasutame kovariatsiooni maatriksi asemel tema valimi põhjal saadud hinnangut. Tõkke $glb$ korral vaata näiteks \cite{TenBerge2004}, $\lambda_4$ puhul \cite{Benton2013}.  
+Mainime siinkohal ära, et hinnangud $glb$ ja $\lambda_4$ võivad teatud tingimustes olla nihkega. See on probleem, mis esineb praktikas, kui kasutame kovariatsioonimaatriksi asemel tema valimi põhjal saadud hinnangut. Tõkke $glb$ korral vaata \cite{TenBerge2004}, $\lambda_4$ korral \cite{Benton2013}.  
 
 
 \section{Programmiteek}
@@ -1531,13 +1534,13 @@ Järgnevalt põhjendan lühidalt Pythoni eeliseid teegi realiseerimisel võrreld
 \item Pythonil on NumPy ja SciPy teekide näol väga hea arvutuslik tugi soovitud hinnangute implementeerimiseks.
 \item Pythoni teeki on väga lihte integreerida mõne veebiraamistikuga, mis võiks olla loodava teegi üks rakenduskohti.
 \item Python on vabavaraline ning tasuta kasutatav.
-\item Sarnased programmiteegid on juba implementeeritud  keeles R \cite{Revelle2014}.
+\item Sarnane programmiteek on juba implementeeritud  keeles R \cite{Revelle2014}.
 \end{enumerate}
 
 Meetodid, mis leiavad $\lambda_1$, $\lambda_2$, $\lambda_3$ ja $\lambda_4$, on implementeeritud nii programeerimiskeeles Python 2 kui ka programeerimiskeeles Python 3. Klass, mille abil saab leida $glb$, on implementeeritud sõltuvate teekide piirangute tõttu ainult programeerimiskeeles Python 2.  Programmiteegi loomisel on kasutatud teeke SciPy \cite{JonesE.;OliphantT;Peterson} ja CVXPY \cite{DiamondS;ChuE;Boyd2014}.
 Progarammiteek on kättesaadav aadressil \url{https://github.com/vootelerotov/CTT-reliability-estimates}.
 
-Autor märgib, et programmi, mis leiab hinnangu $\lambda_4$ ajaline keerukus on $O \left( 2^n \right)$, mis tähendab, et suurte küsimuste hulga korral ei ole selle kasutamine võimalik - küll on aga sellisel juhul kasutada programmi, mis leiavad lähendi hinnangule $\lambda_4$, vaata \cite{Benton2013}. Ülejäänud programmide keerukus on polünoomialne. 
+Autor märgib, et programmi, mis leiab hinnangu $\lambda_4$, ajaline keerukus on $O \left( 2^n \right)$, mis tähendab, et suurte küsimuste hulga korral ei ole selle kasutamine võimalik. Küll on aga sellisel juhul võimalik kasutada programme, mis leiavad lähendi hinnangule $\lambda_4$ (vaata \cite{Benton2013}). Ülejäänud programmide keerukus on polünomiaalne. 
 
 Lisas \ref{appendix:code} on ära toodud hinnangute implementatsioonid programmeerimiskeeles Python 2.
 
@@ -1545,7 +1548,8 @@ Lisas \ref{appendix:code} on ära toodud hinnangute implementatsioonid programme
 \section{Intervallskaal alternatiivne tõlgendamine}
 
 
-Antud töö alguses püstitasime küsimuse, kas reliaablusele leidub paremaid hinnanguid kui seda on $\lambda_3$?  
+Antud töö alguses püstitasime küsimuse, kas leidub paremaid reliaabluse hinnanguid kui $\lambda_3$.  
+
 Läheneme nüüd reliaabluse hinnangu parandamisele teisest suunast ning vaatleme, millist mõju avaldab hinnangule $\lambda_3$ vastuste teistsugune tõlgendamine intervallskaalal.
 
 
@@ -1927,7 +1931,7 @@ p_{ik} & i = j
 
 \subsection{Hinnang saadud tõlgendusele}
 
-Selles peatükis välja pakutud idee kasutamise esimeseks eelduseks on püstitatud optimiseerimisülesande lahendamine. Antud ülesande puhul tegemist ruutkitsendustega ruutprogrameermis ülesandega,  mille lahendamine on üldjuhul raske \footnote{ Täpsemalt on tegemist \textit{NP-Hard} probleemiga: kui sellele ülesandele leidub polünomiaalse keerukusega lahendusalgoritm, siis leidub polünomiaalse keerukusega algoritm ka paljudele teistele rasketele probleemidele}. Lisaks tundub, et antud ülesanne ei kuulu mõnda lihtsamasse alamülesannete klassi.
+Selles peatükis välja pakutud idee kasutamise esimeseks eelduseks on püstitatud optimiseerimisülesande lahendamine. Antud ülesande puhul on tegemist ruutkitsendustega ruutprogrameermisülesandega,  mille lahendamine on üldjuhul raske\footnote{ Täpsemalt on tegemist \textit{NP-Hard} probleemiga: kui sellele ülesandele leidub polünomiaalse keerukusega lahendusalgoritm, siis leidub polünomiaalse keerukusega algoritm ka paljudele teistele rasketele probleemidele}. Lisaks tundub, et antud ülesanne ei kuulu mõnda lihtsamasse alamülesannete klassi.
 
  Küll on sellist tüüpi ülesandeid võimalik lõdven\-dada, levinud lõdvenduseks on probleemi teisendamine mittenegatiivseks optimiseerimisülesandeks \cite[2]{Aspremont2003} --  see konkreetne lõdvendus osutus antud probleemi puhul aga liiga lõdvaks.
 
@@ -1968,8 +1972,8 @@ Autor loodab, et töö pakkus midagi nii psühholoogidele kui ka matemaatikutele
 
 \pagebreak
 
-\section*{Lisa}
-\addcontentsline{toc}{section}{Lisa}
+\section*{Lisad}
+\addcontentsline{toc}{section}{Lisad}
 
 \begin{subappendices}
 \subsection{Näited küsimustikust Likerti skaalal}
@@ -2024,7 +2028,7 @@ Järgnevad kovariatsioonimaatriksid on leitud ühe Tartu ülikooli psühholoogid
 
 
 
-\begin{tabular}{r | r r r r r}
+\begin{tabular}{l | r r r r r}
 \hline
  Hinnang & $\lambda_1$ & $\lambda_2$ & $\lambda_3$ & $\lambda_4$ & $glb$ \cr
  Väärtus & 0.39 & 0.60 & 0.43 & 0.73 & 0.77 \cr 
@@ -2067,7 +2071,7 @@ Järgnevad kovariatsioonimaatriksid on leitud ühe Tartu ülikooli psühholoogid
 
 
 
-\begin{tabular}{r | r r r r r}
+\begin{tabular}{l | r r r r r}
 \hline
  Hinnang & $\lambda_1$ & $\lambda_2$ & $\lambda_3$ & $\lambda_4$ & $glb$ \cr
  Väärtus & 0.79 & 0.87 & 0.86 & 0.93 & 0.93 \cr 
@@ -2109,7 +2113,7 @@ Järgnevad kovariatsioonimaatriksid on leitud ühe Tartu ülikooli psühholoogid
 
 
 
-\begin{tabular}{r | r r r r r}
+\begin{tabular}{l | r r r r r}
 \hline
  Hinnang & $\lambda_1$ & $\lambda_2$ & $\lambda_3$ & $\lambda_4$ & $glb$ \cr
  Väärtus & 0.39 & 0.53 & 0.43 & 0.68 & 0.70 \cr 
