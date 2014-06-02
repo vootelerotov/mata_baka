@@ -1101,24 +1101,24 @@ cov(X,\alpha Y) = \epsilon \left[ \left( X - \epsilon \left[ X \right] \right) \
 \end{proof}
 \end{meeldetuletus}
 
-Olgu meil suvaliste juhuslike suuruste vektor $X_1,X_2,\ldots,X_n$, kus $n \in \mathbb{N}$ ja olgu $\Sigma_X$ selle vektori kovariatsioonimaatriks. Olgu meil suvaline $k$-vektor $v = (v_1,v_2,\ldots,v_n)$. Konstrueerime uue juhuslike suuruste vektori ($X_1',X_2',\ldots,X_n')$, kusjuures $X_i' = v_i X_i$ ning olgu $\Sigma_X'$ selle vektori kovariatsioonimaatriks. Vaatleme juhuslikku suurust $X' = \sum \limits_{i=1}^n X_i'$. Kuna eelneva põhjal $D[X'] = \sum \limits_{i=1}^n \sum \limits_{j=1}^n {\Sigma_X'}_{ij} $ ja definitsiooni põhjal $D[X'] \geq 0$, siis $\sum \limits_{i=1}^n \sum \limits_{j=1}^n {\Sigma_X'}_{ij} \geq 0$. Kuna $\Sigma_X'$ on kovariatsioonimaatriks, siis
+Olgu meil suvaliste juhuslike suuruste vektor $(Y_1,Y_2,\ldots,Y_n)$, kus $n \in \mathbb{N}$ ja olgu $\Sigma_Y$ selle vektori kovariatsioonimaatriks. Olgu meil suvaline $n$-vektor $v = (v_1,v_2,\ldots,v_n)$. Konstrueerime uue juhuslike suuruste vektori ($Y_1',Y_2',\ldots,Y_n')$, kusjuures $Y_i' = v_i Y_i$ ning olgu $\Sigma_Y'$ selle vektori kovariatsioonimaatriks. Vaatleme juhuslikku suurust $Y' = \sum \limits_{i=1}^n Y_i'$. Kuna eelneva põhjal $D[Y'] = \sum \limits_{i=1}^n \sum \limits_{j=1}^n {\Sigma_Y'}_{ij} $ ja definitsiooni põhjal $D[Y'] \geq 0$, siis $\sum \limits_{i=1}^n \sum \limits_{j=1}^n {\Sigma_Y'}_{ij} \geq 0$. Kuna $\Sigma_Y'$ on kovariatsioonimaatriks, siis
 \begin{equation}
 \label{eq:kov_maatriksi_summa}
-\sum \limits_{i=1}^n \sum \limits_{j=1}^n {\Sigma_X'}_{ij} = \sum \limits_{i=1}^n \sum \limits_{j=1}^n cov(v_iX_i,v_jX_j) \overset{\text{\thref{konstant_kovariatsioon}}}{=} \sum \limits_{i=1}^n \sum \limits_{j=1}^n v_i v_j cov(X_i,X_j) \text{.}
+\sum \limits_{i=1}^n \sum \limits_{j=1}^n {\Sigma_Y'}_{ij} = \sum \limits_{i=1}^n \sum \limits_{j=1}^n cov(v_i Y_i,v_j Y_j) \overset{\text{\thref{konstant_kovariatsioon}}}{=} \sum \limits_{i=1}^n \sum \limits_{j=1}^n v_i v_j cov(Y_i,Y_j) \text{.}
 \end{equation}
 
 Paneme tähele, et 
 
 \begin{gather*}
-v^T \Sigma_X v = \\
+v^T \Sigma_Y v = \\
 = \begin{pmatrix}
-v_1 cov(X_1,X_1) + v_2 cov(X_1,X_2) + \hdots v_n cov(X_1,X_n) \\
-v_1 cov(X_2,X_1) + v_2 cov(X_2,X_2) + \hdots v_n cov(X_2,X_n) \\
+v_1 cov(Y_1,Y_1) + v_2 cov(Y_1,Y_2) + \hdots v_n cov(Y_1,Y_n) \\
+v_1 cov(Y_2,Y_1) + v_2 cov(Y_2,Y_2) + \hdots v_n cov(Y_2,Y_n) \\
 \vdots \\
-v_1 cov(X_k,X_1) + v_2 cov(X_k,X_2) + \ldots v_n cov(X_n,X_n) \\
-\end{pmatrix} v = \\  \sum \limits_{i=1}^n \sum \limits_{j=1}^n v_i v_j cov(X_i,X_j)  \overset{(\ref{eq:kov_maatriksi_summa})}{=} \sum \limits_{i=1}^n \sum \limits_{j=1}^n {\Sigma_X'}_{ij} = D[X']
+v_1 cov(Y_n,Y_1) + v_2 cov(Y_n,Y_2) + \ldots v_n cov(Y_n,Y_n) \\
+\end{pmatrix} v = \\  \sum \limits_{i=1}^n \sum \limits_{j=1}^n v_i v_j cov(Y_i,Y_j)  \overset{(\ref{eq:kov_maatriksi_summa})}{=} \sum \limits_{i=1}^n \sum \limits_{j=1}^n {\Sigma_Y'}_{ij} = D[Y']
 \end{gather*}
-Seega $v^T \Sigma_X v \geq 0$, ning kuna $v$ oli valitud suvaliselt, siis  $\Sigma_X$ on mittenegatiivselt määratud. Kuna $n$ ja $X_1,X_2,\ldots X_n$ olid valitud suvaliselt, siis on iga kovariatsioonimaatriks mittenegatiivselt määratud. 
+Seega $v^T \Sigma_Y v \geq 0$, ning kuna $v$ oli valitud suvaliselt, siis  $\Sigma_Y$ on mittenegatiivselt määratud. Kuna $n$ ja $Y_1,Y_2,\ldots Y_n$ olid valitud suvaliselt, siis on iga kovariatsioonimaatriks mittenegatiivselt määratud. 
 
 Sellega oleme andnud reliaabluse matemaatilise definitsiooni ning mõtestanud lahti vajaminevad taustteadmised reliaabluse hindamiseks. Järgnevalt tuletame mõned reliaabluse alumised tõkked.   
 
@@ -1501,7 +1501,8 @@ Paneme tähele, et kuna $z$ on maksimaalne vea dispersioon fikseeritud $\Sigma_X
 
 \subsection{Hinnangute kasutatavus praktikas}
 
-Püstitasime töö alguses küsimuse, kas on võimalik leida paremat reliaabluse hinnangut kui $\lambda_3$. Käsitletud hinnangutest on nii $glb$ kui $\lambda_2$ reliaabluse alumised tõkked ning samas vähemalt sama suured kui $\lambda_3$, seega on need ka paremad reliaabluse hinnangud kui $\lambda_3$. {\color{red}Samuti on raske leida empiirilist näidet, kus  $\lambda_4$ ei ole tingimata suurem oleks väiksem kui $\lambda_3$.}
+Püstitasime töö alguses küsimuse, kas on võimalik leida paremat reliaabluse hinnangut kui $\lambda_3$. Käsitletud hinnangutest on nii $glb$ kui $\lambda_2$ reliaabluse alumised tõkked ning samas vähemalt sama suured kui $\lambda_3$, seega on need ka paremad reliaabluse hinnangud kui $\lambda_3$. Empiiriliselt on ka $\lambda_4$ suurel enamikel juhtudest suurem kui $\lambda_3$.
+
 
 Paneme tähele, et $\lambda_3$ leidmine on väga lihtne, ning eelmise sajandi keskel, mil arvutuslik võimsus oli tagashoidlik, oli tegemist olulise eelisega. Tänapäeval on $\lambda_3$ lihtsus peaaegu olematu eelis, arvestades, et ka väga suurte küsimustike puhul ei valmista paremate hinnangute leidmine optimiseeritud programmi korral probleeme.
  

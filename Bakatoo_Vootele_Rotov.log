@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.4.27)  3 JUN 2014 01:17
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.4.24)  3 JUN 2014 01:38
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
 **Bakatoo_Vootele_Rotov.tex
 (./Bakatoo_Vootele_Rotov.tex
 LaTeX2e <2011/06/27>
-Babel <3.9h> and hyphenation patterns for 28 languages loaded.
+Babel <3.9f> and hyphenation patterns for 26 languages loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
@@ -359,7 +359,7 @@ Package: enumerate 1999/03/05 v3.00 enumerate extensions (DPC)
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
 Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
 
-(/etc/texmf/tex/latex/config/color.cfg
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package color Info: Driver file: pdftex.def on input line 130.
@@ -384,8 +384,8 @@ Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
-(/etc/texmf/tex/latex/config/graphics.cfg
-File: graphics.cfg 2009/08/28 v1.8 graphics configuration of TeX Live
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
 )
 Package graphics Info: Driver file: pdftex.def on input line 91.
 )
@@ -393,13 +393,13 @@ Package graphics Info: Driver file: pdftex.def on input line 91.
 \Gin@req@width=\dimen121
 )
 (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2013/12/03 3.9h The Babel package
+Package: babel 2013/05/16 v3.9f The Babel package
 
 (/usr/share/texlive/texmf-dist/tex/generic/babel-estonian/estonian.ldf
 Language: estonian 2009/03/08 v1.0k Estonian support from the babel system
 
 (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
-File: babel.def 2013/12/03 3.9h Babel common definitions
+File: babel.def 2013/05/16 v3.9f Babel common definitions
 \babel@savecnt=\count103
 \U@D=\dimen122
 )
@@ -409,7 +409,7 @@ Warning: Hyphenation would work better for the T1 encoding.
 (/usr/share/texmf/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
 
-(/etc/texmf/tex/latex/config/color.cfg
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package xcolor Info: Package option `usenames' ignored on input line 216.
@@ -530,7 +530,7 @@ Package hyperref Info: Bookmarks ON on input line 4688.
 
 (/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip11
-Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5041.
 \XeTeXLinkMargin=\dimen124
@@ -802,26 +802,26 @@ Package: mdframed 2013/07/01 1.9b: mdframed
 (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
 (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3names.sty
 (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3bootstrap.sty
-Package: l3bootstrap 2014/01/04 v4640 L3 Experimental bootstrap code
+Package: l3bootstrap 2013/01/08 v4420 L3 Experimental bootstrap code
 )
-Package: l3names 2014/01/04 v4640 L3 Namespace for primitives
+Package: l3names 2012/12/07 v4346 L3 Namespace for primitives
 )
-Package: expl3 2014/01/07 v4646 L3 Experimental code bundle wrapper
+Package: expl3 2013/07/12 v4544 L3 Experimental code bundle wrapper
 
 (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3basics.sty
-Package: l3basics 2014/01/04 v4642 L3 Basic definitions
+Package: l3basics 2013/07/09 v4521 L3 Basic definitions
 )
 (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3expan.sty
-Package: l3expan 2014/01/04 v4642 L3 Argument expansion
+Package: l3expan 2013/07/09 v4521 L3 Argument expansion
 )
 (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3tl.sty
-Package: l3tl 2013/12/27 v4625 L3 Token lists
+Package: l3tl 2013/04/24 v4482 L3 Token lists
 )
 (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3seq.sty
-Package: l3seq 2013/12/14 v4623 L3 Sequences and stacks
+Package: l3seq 2013/05/26 v4500 L3 Sequences and stacks
 )
 (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3int.sty
-Package: l3int 2013/08/02 v4583 L3 Integers
+Package: l3int 2013/04/24 v4482 L3 Integers
 \c_max_int=\count137
 \l_tmpa_int=\count138
 \l_tmpb_int=\count139
@@ -829,26 +829,26 @@ Package: l3int 2013/08/02 v4583 L3 Integers
 \g_tmpb_int=\count141
 )
 (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3quark.sty
-Package: l3quark 2013/12/14 v4623 L3 Quarks
+Package: l3quark 2013/07/09 v4521 L3 Quarks
 )
 (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3prg.sty
-Package: l3prg 2014/01/04 v4642 L3 Control structures
+Package: l3prg 2013/04/24 v4482 L3 Control structures
 \g__prg_map_int=\count142
 )
 (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3clist.sty
-Package: l3clist 2013/07/28 v4581 L3 Comma separated lists
+Package: l3clist 2013/05/26 v4500 L3 Comma separated lists
 )
 (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3token.sty
-Package: l3token 2013/08/25 v4587 L3 Experimental token manipulation
+Package: l3token 2013/04/24 v4482 L3 Experimental token manipulation
 )
 (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3prop.sty
-Package: l3prop 2013/12/14 v4623 L3 Property lists
+Package: l3prop 2013/01/09 v4423 L3 Property lists
 )
 (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3msg.sty
-Package: l3msg 2013/07/28 v4581 L3 Messages
+Package: l3msg 2013/01/08 v4412 L3 Messages
 )
 (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3file.sty
-Package: l3file 2013/10/13 v4596 L3 File and I/O operations
+Package: l3file 2013/05/01 v4483 L3 File and I/O operations
 \l_iow_line_count_int=\count143
 \l__iow_target_count_int=\count144
 \l__iow_current_line_int=\count145
@@ -856,7 +856,7 @@ Package: l3file 2013/10/13 v4596 L3 File and I/O operations
 \l__iow_current_indentation_int=\count147
 )
 (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3skip.sty
-Package: l3skip 2013/07/28 v4581 L3 Dimensions and skips
+Package: l3skip 2013/01/13 v4444 L3 Dimensions and skips
 \c_zero_dim=\dimen174
 \c_max_dim=\dimen175
 \l_tmpa_dim=\dimen176
@@ -877,12 +877,12 @@ Package: l3skip 2013/07/28 v4581 L3 Dimensions and skips
 \g_tmpb_muskip=\muskip17
 )
 (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3keys.sty
-Package: l3keys 2013/12/08 v4614 L3 Experimental key-value interfaces
+Package: l3keys 2013/07/12 v4544 L3 Experimental key-value interfaces
 \g__keyval_level_int=\count148
 \l_keys_choice_int=\count149
 )
 (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3fp.sty
-Package: l3fp 2014/01/04 v4642 L3 Floating points
+Package: l3fp 2013/07/09 v4521 L3 Floating points
 \c__fp_leading_shift_int=\count150
 \c__fp_middle_shift_int=\count151
 \c__fp_trailing_shift_int=\count152
@@ -894,7 +894,7 @@ Package: l3fp 2014/01/04 v4642 L3 Floating points
 \c__fp_Bigg_trailing_shift_int=\count158
 )
 (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3box.sty
-Package: l3box 2013/07/28 v4581 L3 Experimental boxes
+Package: l3box 2013/04/24 v4482 L3 Experimental boxes
 \c_empty_box=\box39
 \l_tmpa_box=\box40
 \l_tmpb_box=\box41
@@ -902,7 +902,7 @@ Package: l3box 2013/07/28 v4581 L3 Experimental boxes
 \g_tmpb_box=\box43
 )
 (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3coffins.sty
-Package: l3coffins 2013/12/14 v4624 L3 Coffin code layer
+Package: l3coffins 2012/09/09 v4212 L3 Coffin code layer
 \l__coffin_internal_box=\box44
 \l__coffin_internal_dim=\dimen180
 \l__coffin_offset_x_dim=\dimen181
@@ -927,12 +927,12 @@ Package: l3coffins 2013/12/14 v4624 L3 Coffin code layer
 Package: l3color 2012/08/29 v4156 L3 Experimental color support
 )
 (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3luatex.sty
-Package: l3luatex 2013/07/28 v4581 L3 Experimental LuaTeX-specific functions
+Package: l3luatex 2012/08/03 v4049 L3 Experimental LuaTeX-specific functions
 \g__cctab_allocate_int=\count159
 \g__cctab_stack_int=\count160
 )
 (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3candidates.sty
-Package: l3candidates 2014/01/06 v4643 L3 Experimental additions to l3kernel
+Package: l3candidates 2013/07/09 v4521 L3 Experimental additions to l3kernel
 \l__box_top_dim=\dimen190
 \l__box_bottom_dim=\dimen191
 \l__box_left_dim=\dimen192
@@ -951,7 +951,7 @@ Normal \dimen register pool exhausted, switching to extended pool.
 \l__coffin_scaled_total_height_dim=\dimen257
 \l__coffin_scaled_width_dim=\dimen258
 ))
-Package: xparse 2013/12/31 v4634 L3 Experimental document command parser
+Package: xparse 2013/07/12 v4544 L3 Experimental document command parser
 \l__xparse_current_arg_int=\count161
 \l__xparse_m_args_int=\count162
 \l__xparse_mandatory_args_int=\count163
@@ -1078,10 +1078,10 @@ Package zref Info: New property: mdf@pagevalue on input line 895.
 Package: diagbox 2011/11/23 v2.0 Making table heads with diagonal lines
 
 (/usr/share/texlive/texmf-dist/tex/latex/pict2e/pict2e.sty
-Package: pict2e 2014/01/12 v0.2z Improved picture commands (HjG,RN,JT)
+Package: pict2e 2011/04/05 v0.2y Improved picture commands (HjG,RN,JT)
 
-(/etc/texmf/tex/latex/pict2e/pict2e.cfg
-File: pict2e.cfg 2009/08/05 v0.1s pict2e configuration for teTeX/TeXLive
+(/usr/share/texlive/texmf-dist/tex/latex/pict2e/pict2e.cfg
+File: pict2e.cfg 2011/04/05 v0.1t pict2e configuration for teTeX/TeXLive
 )
 Package pict2e Info: Driver file: pdftex.def on input line 119.
 Package pict2e Info: Driver file for pict2e: p2e-pdftex.def on input line 121.
@@ -1357,10 +1357,25 @@ Normal \count register pool exhausted, switching to extended pool.
 \MPnumerator=\count277
 \makeMPintoPDFobject=\count278
 \everyMPtoPDFconversion=\toks51
+) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
 )
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
 \AtBeginShipoutBox=\box69
 Package hyperref Info: Link coloring OFF on input line 134.
- (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
@@ -2490,9 +2505,9 @@ Overfull \hbox (1.88602pt too wide) in paragraph at lines 1102--1102
  []
 
 
-Overfull \hbox (4.1967pt too wide) in paragraph at lines 1104--1105
+Overfull \hbox (4.69667pt too wide) in paragraph at lines 1104--1105
 \OT1/cmr/m/n/12 sel-le vek-to-ri kova-riat-sioo-ni-maat-riks. Ol-gu meil su-va-
-li-ne $\OML/cmm/m/it/12 k$\OT1/cmr/m/n/12 -vektor $\OML/cmm/m/it/12 v \OT1/cmr/
+li-ne $\OML/cmm/m/it/12 n$\OT1/cmr/m/n/12 -vektor $\OML/cmm/m/it/12 v \OT1/cmr/
 m/n/12 = (\OML/cmm/m/it/12 v[]; v[]; [] ; v[]\OT1/cmr/m/n/12 )$.
  []
 
@@ -2594,69 +2609,69 @@ see-ri-mis[]ulesande la-hend $^^F[]$ kor-ral. Ole-me saa-nud k[]usimustiku
 
 [32]
 
-LaTeX Warning: Citation `TenBerge2004' on page 33 undefined on input line 1526.
+LaTeX Warning: Citation `TenBerge2004' on page 33 undefined on input line 1527.
 
 
 
-LaTeX Warning: Citation `Benton2013' on page 33 undefined on input line 1526.
+LaTeX Warning: Citation `Benton2013' on page 33 undefined on input line 1527.
 
 [33]
 
-LaTeX Warning: Citation `Revelle2014' on page 34 undefined on input line 1537.
+LaTeX Warning: Citation `Revelle2014' on page 34 undefined on input line 1538.
 
 
-LaTeX Warning: Citation `Benton2013' on page 34 undefined on input line 1543.
+LaTeX Warning: Citation `Benton2013' on page 34 undefined on input line 1544.
 
 [34]
-Overfull \hbox (13.19763pt too wide) in paragraph at lines 1561--1562
+Overfull \hbox (13.19763pt too wide) in paragraph at lines 1562--1563
 \OT1/cmr/m/n/12 vas-tus-te pai-gu-tust in-ter-vall-skaa-lal kui vai-ki-mi-si me
 e-tod? Vaat-le-me kah-te n[]aidet: 
  []
 
 
-Overfull \hbox (9.91663pt too wide) in paragraph at lines 1600--1601
+Overfull \hbox (9.91663pt too wide) in paragraph at lines 1601--1602
 [][][][][][][] 
  []
 
 
-Overfull \hbox (9.91663pt too wide) in paragraph at lines 1641--1642
+Overfull \hbox (9.91663pt too wide) in paragraph at lines 1642--1643
 [][][][][][][] 
  []
 
 [35]
-Overfull \hbox (6.0pt too wide) in paragraph at lines 1685--1686
+Overfull \hbox (6.0pt too wide) in paragraph at lines 1686--1687
 [][][][][][][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1685--1686
+Underfull \hbox (badness 10000) in paragraph at lines 1686--1687
 
  []
 
 [36] [37]
-Overfull \hbox (9.4855pt too wide) in paragraph at lines 1749--1750
+Overfull \hbox (9.4855pt too wide) in paragraph at lines 1750--1751
 []\OT1/cmr/m/n/12 Siit n[]aeme, et sel-li-sel ju-hul taan-dub $\OML/cmm/m/it/12
  ^^U[]$ \OT1/cmr/m/n/12 mak-si-mee-ri-mi-ne aval-di-se $[] [] \OML/cmm/m/it/12 
 COV\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 M[]; M[]\OT1/cmr/m/n/12 )$
  []
 
 
-Overfull \hbox (2.8449pt too wide) in paragraph at lines 1832--1832
+Overfull \hbox (2.8449pt too wide) in paragraph at lines 1833--1833
 [][] 
  []
 
 
-Overfull \hbox (9.91663pt too wide) in paragraph at lines 1832--1833
+Overfull \hbox (9.91663pt too wide) in paragraph at lines 1833--1834
 [][][][][][][] 
  []
 
 [38]
-Overfull \hbox (10.53716pt too wide) detected at line 1902
+Overfull \hbox (10.53716pt too wide) detected at line 1903
 [] []
  []
 
 [39]
-Overfull \hbox (24.7787pt too wide) in paragraph at lines 1906--1908
+Overfull \hbox (24.7787pt too wide) in paragraph at lines 1907--1909
 []\OT1/cmr/m/n/12 Eelneva p[]ohjal pii-sab mei-le, ar-ves-ta-des eel-ne-valt []
 aratoodud piiran-gu-id $\OML/cmm/m/it/12 L[]$ \OT1/cmr/m/n/12 keskv[]a[]artusel
 e
@@ -2664,7 +2679,7 @@ e
 
 [40]
 
-LaTeX Warning: Citation `Aspremont2003' on page 41 undefined on input line 1936
+LaTeX Warning: Citation `Aspremont2003' on page 41 undefined on input line 1937
 .
 
 [41] [42] (./Bakatoo_Vootele_Rotov.bbl [43]
@@ -2672,31 +2687,31 @@ Underfull \hbox (badness 10000) in paragraph at lines 84--87
 []\OT1/cmr/m/n/12 Nicholas Smith.  Examp-le of Li-kert Sca-le.
  []
 
-) [44] <ois_tagasiside_toodeldud.png, id=659, 1139.25626pt x 542.025pt>
+) [44] <ois_tagasiside_toodeldud.png, id=664, 1139.25626pt x 542.025pt>
 File: ois_tagasiside_toodeldud.png Graphic file (type png)
 
 <use ois_tagasiside_toodeldud.png>
-Package pdftex.def Info: ois_tagasiside_toodeldud.png used on input line 1984.
+Package pdftex.def Info: ois_tagasiside_toodeldud.png used on input line 1985.
 (pdftex.def)             Requested size: 418.25368pt x 198.99123pt.
 
-<Example_Likert_Scale.png, id=662, 1003.75pt x 1525.7pt>
+<Example_Likert_Scale.png, id=667, 1003.75pt x 1525.7pt>
 File: Example_Likert_Scale.png Graphic file (type png)
 
 <use Example_Likert_Scale.png>
-Package pdftex.def Info: Example_Likert_Scale.png used on input line 1991.
+Package pdftex.def Info: Example_Likert_Scale.png used on input line 1992.
 (pdftex.def)             Requested size: 355.51817pt x 540.3818pt.
  [45 <./ois_tagasiside_toodeldud.png>] [46 <./Example_Likert_Scale.png>]
-Overfull \hbox (3.14653pt too wide) in paragraph at lines 2007--2025
+Overfull \hbox (3.14653pt too wide) in paragraph at lines 2008--2026
  [] 
  []
 
 
-Overfull \hbox (10.91872pt too wide) in paragraph at lines 2050--2068
+Overfull \hbox (10.91872pt too wide) in paragraph at lines 2051--2069
  [] 
  []
 
 [47]
-Overfull \hbox (3.14653pt too wide) in paragraph at lines 2092--2110
+Overfull \hbox (3.14653pt too wide) in paragraph at lines 2093--2111
  [] 
  []
 
@@ -2710,12 +2725,12 @@ atoo_Vootele_Rotov.out.pyg Bakatoo_Vootele_Rotov.pyg)...executed.
 Package mdframed Warning: Unknown definedstyle default
  You have to define a style 
  via \mdfdefinedstyle
-(mdframed)                 on input line 2157.
+(mdframed)                 on input line 2158.
 
 [48]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 2157.
+(mdframed)              on input line 2158.
  (./Bakatoo_Vootele_Rotov.out.pyg
 LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <10> not available
 (Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 2.
@@ -2727,11 +2742,11 @@ runsystem(rm Bakatoo_Vootele_Rotov.pyg)...executed.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 2158.
+(caption)                particular \caption on input line 2159.
 See the caption package documentation for explanation.
 
 Package hyperref Info: bookmark level for unknown Programm defaults to 0 on inp
-ut line 2158.
+ut line 2159.
 \openout4 = `Bakatoo_Vootele_Rotov.pyg'.
 
 runsystem(pygmentize -l python -f latex -F tokenmerge            -P linenos -P 
@@ -2742,11 +2757,11 @@ atoo_Vootele_Rotov.out.pyg Bakatoo_Vootele_Rotov.pyg)...executed.
 Package mdframed Warning: Unknown definedstyle default
  You have to define a style 
  via \mdfdefinedstyle
-(mdframed)                 on input line 2183.
+(mdframed)                 on input line 2184.
 
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 2183.
+(mdframed)              on input line 2184.
 (./Bakatoo_Vootele_Rotov.out.pyg)
 runsystem(rm Bakatoo_Vootele_Rotov.out.pyg)...executed.
 
@@ -2755,7 +2770,7 @@ runsystem(rm Bakatoo_Vootele_Rotov.pyg)...executed.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 2184.
+(caption)                particular \caption on input line 2185.
 See the caption package documentation for explanation.
 
 \openout4 = `Bakatoo_Vootele_Rotov.pyg'.
@@ -2768,11 +2783,11 @@ atoo_Vootele_Rotov.out.pyg Bakatoo_Vootele_Rotov.pyg)...executed.
 Package mdframed Warning: Unknown definedstyle default
  You have to define a style 
  via \mdfdefinedstyle
-(mdframed)                 on input line 2196.
+(mdframed)                 on input line 2197.
 
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 2196.
+(mdframed)              on input line 2197.
 (./Bakatoo_Vootele_Rotov.out.pyg)
 runsystem(rm Bakatoo_Vootele_Rotov.out.pyg)...executed.
 
@@ -2781,7 +2796,7 @@ runsystem(rm Bakatoo_Vootele_Rotov.pyg)...executed.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 2197.
+(caption)                particular \caption on input line 2198.
 See the caption package documentation for explanation.
 
 \openout4 = `Bakatoo_Vootele_Rotov.pyg'.
@@ -2794,13 +2809,13 @@ atoo_Vootele_Rotov.out.pyg Bakatoo_Vootele_Rotov.pyg)...executed.
 Package mdframed Warning: Unknown definedstyle default
  You have to define a style 
  via \mdfdefinedstyle
-(mdframed)                 on input line 2249.
+(mdframed)                 on input line 2250.
 
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 2249.
+(mdframed)              on input line 2250.
 (./Bakatoo_Vootele_Rotov.out.pyg) [49]
-Package mdframed Info: Not enough space on this page on input line 2249.
+Package mdframed Info: Not enough space on this page on input line 2250.
 runsystem(rm Bakatoo_Vootele_Rotov.out.pyg)...executed.
 
 runsystem(rm Bakatoo_Vootele_Rotov.pyg)...executed.
@@ -2808,7 +2823,7 @@ runsystem(rm Bakatoo_Vootele_Rotov.pyg)...executed.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 2250.
+(caption)                particular \caption on input line 2251.
 See the caption package documentation for explanation.
 
 \openout4 = `Bakatoo_Vootele_Rotov.pyg'.
@@ -2821,13 +2836,13 @@ atoo_Vootele_Rotov.out.pyg Bakatoo_Vootele_Rotov.pyg)...executed.
 Package mdframed Warning: Unknown definedstyle default
  You have to define a style 
  via \mdfdefinedstyle
-(mdframed)                 on input line 2347.
+(mdframed)                 on input line 2348.
 
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 2347.
+(mdframed)              on input line 2348.
 (./Bakatoo_Vootele_Rotov.out.pyg) [50]
-Package mdframed Info: Not enough space on this page on input line 2347.
+Package mdframed Info: Not enough space on this page on input line 2348.
  [51]
 runsystem(rm Bakatoo_Vootele_Rotov.out.pyg)...executed.
 
@@ -2836,7 +2851,7 @@ runsystem(rm Bakatoo_Vootele_Rotov.pyg)...executed.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 2348.
+(caption)                particular \caption on input line 2349.
 See the caption package documentation for explanation.
 
 \openout4 = `Bakatoo_Vootele_Rotov.pyg'.
@@ -2849,11 +2864,11 @@ o_Vootele_Rotov.pyg)...executed.
 Package mdframed Warning: Unknown definedstyle default
  You have to define a style 
  via \mdfdefinedstyle
-(mdframed)                 on input line 2384.
+(mdframed)                 on input line 2385.
 
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 2384.
+(mdframed)              on input line 2385.
 (./Bakatoo_Vootele_Rotov.out.pyg) [52]
 runsystem(rm Bakatoo_Vootele_Rotov.out.pyg)...executed.
 
@@ -2862,21 +2877,21 @@ runsystem(rm Bakatoo_Vootele_Rotov.pyg)...executed.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 2385.
+(caption)                particular \caption on input line 2386.
 See the caption package documentation for explanation.
 
 [53]
-Overfull \hbox (0.17384pt too wide) in paragraph at lines 2422--2425
+Overfull \hbox (0.17384pt too wide) in paragraph at lines 2423--2426
 []\OT1/cmr/m/n/12 kinnitan, et liht-lit-sent-si and-mi-se-ga ei ri-ku-ta teis-t
 e isi-ku-te intellektuaal-omandi
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2437.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2438.
 [54]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 2437.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 2438.
  (./Bakatoo_Vootele_Rotov.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 2437.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2437.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 2438.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2438.
 
 Package rerunfilecheck Info: File `Bakatoo_Vootele_Rotov.out' has not changed.
 (rerunfilecheck)             Checksum: 0F136C2739D8A9D0EF161B1FE78BB77E;2466.
@@ -2889,13 +2904,13 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 25809 strings out of 494428
- 458287 string characters out of 6165567
- 575920 words of memory out of 5000000
- 28309 multiletter control sequences out of 15000+600000
+ 25766 strings out of 494468
+ 447883 string characters out of 6166395
+ 572579 words of memory out of 5000000
+ 28248 multiletter control sequences out of 15000+600000
  20276 words of font info for 76 fonts, out of 8000000 for 9000
- 372 hyphenation exceptions out of 8191
- 56i,20n,81p,10455b,1011s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 350 hyphenation exceptions out of 8191
+ 56i,20n,81p,960b,1011s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/tex
@@ -2920,9 +2935,10 @@ amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
 ts/cm/cmtt12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/sym
 bols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/zapfding/uzdr.pf
 b>
-Output written on Bakatoo_Vootele_Rotov.pdf (55 pages, 584557 bytes).
+Output written on Bakatoo_Vootele_Rotov.pdf (55 pages, 497433 bytes).
 PDF statistics:
- 849 PDF objects out of 1000 (max. 8388607)
+ 857 PDF objects out of 1000 (max. 8388607)
+ 693 compressed objects within 7 object streams
  193 named destinations out of 1000 (max. 500000)
  417 words of extra memory for PDF output out of 10000 (max. 10000000)
 
